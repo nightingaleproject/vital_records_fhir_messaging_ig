@@ -7,12 +7,19 @@ canonical: http://mitre.org/fhir/vital-records-fhir-messaging
 name: VitalRecordsFHIRMessagingIG
 status: draft
 version: 0.1.0
-fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
   name: CDC NCHS
   url: http://example.org/example-publisher
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core: 4.0.0
+parameters:
+  show-inherited-invariants: false
+  version-comparison: n/a
+  path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
