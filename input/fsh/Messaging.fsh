@@ -76,11 +76,11 @@ CodeSystem: SystemRejectCodesCS
 Id: VRDR-SystemRejectCodes-cs
 Title: "System Reject Codes Values"
 Description: "System Reject Codes Values"
-* #ACMEReject "ACME Reject" "ACME Reject"
-* #MICARRejectDdictionaryMatch "MICAR Reject - dictionary match" "MICAR Reject - dictionary match"
-* #MICARRejectRuleApplication "MICAR Reject - Rule Application" "MICAR Reject - Rule Application"
-* #NotRejected "Not Rejected" "Not Rejected"
-* #RecordReviewed "Record Reviewed" "Record Reviewed"
+* #ACMEReject "ACMEReject" "ACME Reject"
+* #MICARRejectDdictionaryMatch "MICARRejectDictionaryMatch" "MICAR Reject - Dictionary match"
+* #MICARRejectRuleApplication "MICARRejectRuleApplication" "MICAR Reject - Rule Application"
+* #NotRejected "NotRejected" "Not Rejected"
+* #RecordReviewed "RecordReviewed" "Record Reviewed"
 
 ValueSet: SystemRejectCodesVS
 Id: VRDR-SystemRejectCodes-vs
@@ -177,24 +177,29 @@ Title:  "Extraction Error Header"
 * response.details only Reference(DeathMessageOutcome)
 * focus only Reference(DeathMessageParameters)
 
-RuleSet: BaseMessageParameterSlices
-* insert ParameterNameType(jurisdiction_id, string)
-* parameter[jurisdiction_id].value[x] from VRDRJurisdictionVS (required)
-* insert ParameterNameType(cert_no, unsignedInt) // parameter[cert_no].name = "cert_no"
-* insert ParameterNameType(death_year, unsignedInt) //* parameter[death_year].name = "death_year"
-* insert ParameterNameType(state_auxiliary_id, string) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
 
 
-RuleSet: ParameterName(name)
+RuleSet: ParameterName(name,short,def)
 * parameter[{name}].name = "{name}"
+* parameter[{name}].name = "{name}"
+* parameter[{name}].name = "{name}"
+* parameter[{name}] ^short = "{short}"
+* parameter[{name}] ^definition = "{def}"
 
-RuleSet: ParameterNameType(name, type)
-* insert ParameterName({name})
+RuleSet: ParameterNameType(name, type, short, def)
+* insert ParameterName({name},{short}, {def})
 * parameter[{name}].value[x] only {type}
 * parameter[{name}].value[x] 1..1
 * parameter[{name}].resource 0..0
 * parameter[{name}].part 0..0
 
+RuleSet: BaseMessageParameterSlices
+* insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
+* parameter[jurisdiction_id].value[x] from VRDRJurisdictionVS (required)
+* insert ParameterNameType(cert_no, unsignedInt,death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
+* insert ParameterNameType(death_year, unsignedInt, death year, four digit death year) //* parameter[death_year].name = "death_year"
+* insert ParameterNameType(state_auxiliary_id, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
+* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
 
 
 Profile:  DeathMessageParameters
@@ -206,6 +211,7 @@ Title:  "Death Message Parameters"
 // cert_no
 // death_year
 // state_auxiliary_id
+// block_count -- only for void messages with a block_count
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
@@ -214,15 +220,16 @@ Title:  "Death Message Parameters"
     jurisdiction_id 1..1 and
     cert_no 1..1 and
     death_year 1..1 and
-    state_auxiliary_id 0..1 MS
+    state_auxiliary_id 0..1 MS and
+    block_count 0..1 MS   // only for void messages
 * insert BaseMessageParameterSlices
 
 Profile: DeathMessageVoidParameters
 Parent: DeathMessageParameters
 Id: VRDR-DeathMessageVoidParameters
-* parameter contains
-    block_count 1..1
-* insert ParameterNameType(block_count, unsignedInt)
+//* parameter contains
+//    block_count 1..1
+//* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
 
 
 CodeSystem: ACMETRANSAXCodingStatusCS
@@ -268,24 +275,24 @@ Title:  "Coding Message Parameters"
     manner 0..1 and // string
     injpl 0..1 and   // string
     other_specified_place 0..1 // string
-* insert ParameterNameType(rec_yr, unsignedInt)
-* insert ParameterNameType(rec_mo, unsignedInt)
-* insert ParameterNameType(rec_dy, unsignedInt)
-* insert ParameterNameType(cs, CodeableConcept)
+* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
+* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
 * parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
-* insert ParameterNameType(ship, string)
-* insert ParameterNameType(sys_rej, string)
+* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
+* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
 * parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
-* insert ParameterNameType(int_rej, string)
-* insert ParameterName(ethnicity)
-* insert ParameterName(race)
-* insert ParameterNameType(underlying_cause_of_death, CodeableConcept)
+* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
+* insert ParameterName(ethnicity, ethnicity, ethnicity)
+* insert ParameterName(race, race, race)
+* insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
 * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
-* insert ParameterName(record_cause_of_death)
-* insert ParameterName(entity_axis_code)
-* insert ParameterNameType(manner, string)
-* insert ParameterNameType(injpl, string)
-* insert ParameterNameType(other_specified_place, string)
+* insert ParameterName(record_cause_of_death, Recorded Cause of Death, Recorded Cause of Death)
+* insert ParameterName(entity_axis_code, entity axis code, entity axis code)
+* insert ParameterNameType(manner, string, Manner of Death, Manner of Death)
+* insert ParameterNameType(injpl, string, Injury Place, Injury Place)
+* insert ParameterNameType(other_specified_place, string, Other specified place, Other specified place)
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string
 * parameter[ethnicity].part.name from EthnicCodesVS (required)
@@ -310,10 +317,15 @@ Title:  "Coding Message Parameters"
 * parameter[entity_axis_code].part contains
       lineNumber 1..1 and
       coding 1..*
+* parameter[entity_axis_code].part[lineNumber] ^definition = "containing a value between 1 and 6 that codes the line number of the death certificate that corresponds to the axis entry"
+* parameter[entity_axis_code].part[lineNumber] ^short = "line number"
+* parameter[entity_axis_code].part[coding] ^definition = "Coding of the cause of death"
+* parameter[entity_axis_code].part[coding] ^short = "Coding of the cause of death"
 * parameter[entity_axis_code].part[lineNumber].name = "lineNumber"
 * parameter[entity_axis_code].part[lineNumber].value[x] only string
 * parameter[entity_axis_code].part[coding].name = "coding"
 * parameter[entity_axis_code].part[coding].value[x] only CodeableConcept
+* parameter[entity_axis_code].part[coding].valueCodeableConcept.text 0..0
 * parameter[entity_axis_code].part[coding].valueCodeableConcept.coding.system = $icd-10
 * parameter[record_cause_of_death].value[x] 0..0
 * parameter[record_cause_of_death].resource 0..0

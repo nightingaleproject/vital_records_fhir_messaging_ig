@@ -1,3 +1,121 @@
-# VitalRecordsFHIRMessagingIG
+### Background
 
-Feel free to modify this index page with your own awesome content!
+Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
+
+The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
+
+[FHIR Messaging](http://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
+
+1. Submission of VRDR documents from vital records jurisdictions to NCHS, and
+2. Return of coded causes of death, race, and ethnicity information from NCHS to vital records jurisdictions.
+
+Questions or comments regarding this document should be directed to the ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1]. This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.
+
+[^1]: https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR
+
+### Requirements
+
+#### Performance Expectations
+
+Historical data shows that NCHS receives up to 7M unique records per year across all areas of vital records reporting. However, the same record can be submitted more than 3 times per year resulting in 21M submissions per year. Submissions are not linearly distributed over the year and there are peaks of up to 350k submissions per day, of which 25% are new. In response, NCHS can send up to 500k return records per day. Approximately 60% of records represent mortality data.
+
+While the majority of submissions can be coded automatically, some will require nosologist intervention for manual coding. This will require asynchrony between submission and the return of coding information.
+
+#### Death Report Submission
+
+Vital records jurisdictions need a mechanism to submit VRDR Death Certificate Documents to NCHS. Vital records jurisdictions should not be required to wait for a death report submission to be acknowledged or coded before submitting additional death reports, there may be many outstanding death report submissions at any time.
+
+Vital records jurisdictions need a mechanism to update VRDR Death Certificate Documents previously submitted to NCHS and this should not rely on patient matching algorithms but instead use embedded identifiers for record correlation.
+
+Vital records jurisdictions need a mechanism to void a single or a block of death certificates. Voiding may target previously submitted documents or may be used to inform NCHS that a specific set of certificate numbers will not be used in the future.
+
+#### Coding Response
+
+NCHS needs a mechanism to send coded causes of death as well as coded race and ethnicity information to vital records jurisdictions in response to receipt of a VRDR Death Certificate Document. NCHS also needs a mechanism to update previously-sent coding information. Causes of death codings may be sent separately from race and ethnicity codings. Updates to either may also be sent separately.
+
+The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [`Cause Of Death Condition`](http://hl7.org/fhir/us/vrdr/2019May/CauseOfDeathCondition.html) resource in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf)).
+
+The race and ethnicity information in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
+
+#### Delivery Status
+
+Vital records jurisdictions need a mechanism to determine that submissions to NCHS, such as VRDR Death Certificate Documents, were successfully received by NCHS. NCHS needs a mechanism to determine that data returned to vital records jurisdictions, such as causes of death coding and race and ethnicity coding, were successfully received by vital records jurisdictions.
+
+#### Reliability
+
+NCHS and vital records jurisdictions need a mechanism to automatically recover from messages that are lost during exchange in either direction.
+
+#### Error Reporting
+
+NCHS needs a mechanism to report errors to vital records jurisdictions in response to receipt of VRDR Death Certificate Documents that could not be processed. Vital records jurisdictions need a mechanism to report errors to NCHS in response to coded causes of death, race, and ethnicity that could not be processed.
+
+### FHIR Messaging
+
+As described earlier, the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/STU1) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
+
+1. A standard [MessageHeader](http://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
+    a. An id that is useful for correlating requests and replies,
+    b. Source and sender information that is useful for addressing replies,
+    c. Destination information that is useful for routing,
+    d. Event information that is useful for capturing the reason that a message was created, and
+    e. Information about the subject or topic of the message that is useful for providing context.
+
+2. Patterns for synchronous and asynchronous exchange of messages.
+
+3. A standard FHIR process message operation and an alternate pattern for exchange of messages using the FHIR REST API for messaging.
+
+5. A pattern for reliable message exchange over unreliable channels.
+
+The remainder of this document describes how these capabilities can be applied to submission of death records to NCHS and the return of coded cause of death, race and ethnicity information to vital records jurisdictions.
+
+### High Level Architecture of a FHIR Messaging Based NVSS
+
+![High level architecture](images/LayeredArchitecture.png){ width=80% }
+
+Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
+
+- __Death Registration System__: Jurisdiction systems that process death records
+
+- __FHIR Adaptor__: Functionality to convert between native data formats and FHIR representations of that data
+
+- __FHIR Messaging Infrastructure__: Functionality to:
+  - Package payloads in FHIR messages
+  - Send and receive FHIR messages
+  - Extract payloads from FHIR messages
+  - Acknowledge receipt of FHIR messages
+  - Report errors if FHIR messages are malformed
+
+- __NVSS__: NCHS systems for processing and coding death reports
+
+- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html)
+
+- __FHIR Coding or Error__: A FHIR representation of either:
+  - Causes of death coding, races and ethnicities coding, or both
+  - An error that occurred when processing a FHIR message or its contents
+
+The flow of information is illustrated using numbered steps as follows:
+
+1. A jurisdiction death registration system generates a death report that is mapped to a FHIR VRDR document by a FHIR adaptor and submitted to the FHIR messaging infrastructure for delivery to NCHS.
+
+2. The FHIR messaging infrastructure wraps the VRDR document in a FHIR message and sends it to the NCHS FHIR messaging infrastructure.
+
+3. The NCHS FHIR messaging infrastructure validates the syntax of the received FHIR message and extracts the VRDR document. The NCHS FHIR messaging infrastructure does one of:
+    a. Acknowledges the message in the case that the VRDR document could be extracted successfully, or
+    b. Reports an error in the case that the VRDR document could not be extracted successfully.
+
+4. The NCHS FHIR messaging infrastructure submits the VRDR document to NVSS for processing. The NVSS FHIR adaptor converts the VRDR document into the desired internal format for processing.
+
+5. NVSS analyzes the death report:
+    a. If the death report can be processed, NVSS codes the cause of death and races and ethnicities of the decedent and generates one or two responses^[Cause of death coding can be undertaken separately to race and ethnicity coding and responses for the two activities can be delivered separately.] for delivery to the jurisdiction.
+    b. If the death report cannot be processed, NVSS generates an error report response.
+    c. In either case the NVSS FHIR adaptor maps the response to FHIR and submits it to the NCHS FHIR messaging infrastructure for delivery.
+
+6. The NCHS FHIR messaging infrastructure wraps the response in a FHIR message and sends it to the jurisdiction FHIR messaging infrastructure.
+
+7. The jurisdiction FHIR messaging infrastructure acknowledges the coded response or error report
+
+8. The jurisdiction FHIR messaging infrastructure unwraps the content of the message and submits it to the jurisdiction death registration system whose FHIR adaptor converts it into the required internal format for processing.
+
+The above sequence describes the general process for exchange of information between vital records jurisdictions and NCHS. Section 4 (below) describes more specific information exchanges for various success and failure scenarios.
+
+Note that the FHIR messaging infrastructure is logically separated from both NVSS and jurisdiction death registration systems and it is this system that provides reliable delivery of death reports and coded responses (or errors) between jurisdictions and NVSS. The mechanics of reliable delivery (acknowledgements and retransmissions) are largely hidden from NVSS and jurisdiction death registration systems.
