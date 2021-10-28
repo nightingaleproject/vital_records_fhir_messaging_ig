@@ -24,6 +24,23 @@ parameters:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+  message.md:
+    title: Messages
+  artifacts.html:
+    title: Artifacts Summary
+  downloads.md:
+    title: Download Specification
+  change_log.md:
+    title: Change Log
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts:
+    All FHIR Artifacts: artifacts.html
+    Messages: message.html
+    Other Downloads: downloads.html
+  History:
+    Change Log: change_log.html
+    Other Versions: http://hl7.org/fhir/us/mcode/history.html
