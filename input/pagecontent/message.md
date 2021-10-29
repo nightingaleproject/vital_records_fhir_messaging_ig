@@ -129,9 +129,11 @@ In either scenarion, the recipient of the Extraction Error Response would need t
   * [DeathRecordSubmissionMessage] -same as update, just different header flags
     * [DeathRecordSubmissionHeader]
     * [DeathMessageParameters]
+    * [DeathCertificateDocument] - defined in VRDR IG
   * [DeathRecordUpdateMessage] -same as submission, just different header flags
     * [DeathRecordUpdateHeader]
     * [DeathMessageParameters]
+    * [DeathCertificateDocument] - defined in VRDR IG
   * [DeathRecordVoidMessage]
     * [DeathRecordVoidHeader]
     * [DeathRecordVoidParameters]

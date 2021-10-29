@@ -23,3 +23,4 @@
 [AcknowledgementMessageHeader]: StructureDefinition-VRDR-AcknowledgementMessageHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRDR-ExtractionErrorMessage.html
 [ExtractionErrorHeader]:    StructureDefinition-VRDR-ExtractionErrorHeader.html
+[DeathCertificateDocument]: StructureDefinition-VRDR-Death-Certificate-Document.html
