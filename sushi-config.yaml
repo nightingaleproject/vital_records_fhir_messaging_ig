@@ -5,6 +5,7 @@
 id: vital-records-fhir-messaging
 canonical: http://mitre.org/fhir/vital-records-fhir-messaging
 name: VitalRecordsFHIRMessagingIG
+title: Vital Records FHIR Messaging IG
 status: draft
 version: 0.1.0
 copyrightYear: 2021+
@@ -35,10 +36,9 @@ pages:
     title: Change Log
 menu:
   Home: index.html
+  Messages: message.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    Messages: message.html
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
-    Other Versions: http://hl7.org/fhir/us/mcode/history.html

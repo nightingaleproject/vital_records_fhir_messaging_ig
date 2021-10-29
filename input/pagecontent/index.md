@@ -70,7 +70,12 @@ The remainder of this document describes how these capabilities can be applied t
 
 ### High Level Architecture of a FHIR Messaging Based NVSS
 
-![High level architecture](images/LayeredArchitecture.png){ width=80% }
+<!-- ![High level architecture](images/LayeredArchitecture.png){ width=80% } -->
+<figure style="align:middle">
+    <img alt = "High level architecture" style="width:75%;height:auto;float:none;align:middle;" src="LayeredArchitecture.png"/>
+    <figcaption style="bold">Figure 1: High level architecture</figcaption>
+</figure>
+&nbsp;
 
 Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
 
