@@ -4,7 +4,8 @@ The following subsections illustrate message exchange patterns between vital rec
 
 #### Successful Death Record Submission
 
-![Message exchange pattern for successful death record submission](submission.png){ width=40% }
+<!-- ![Message exchange pattern for successful death record submission](submission.png){ width=40% } -->
+<img alt = "Message exchange pattern for successful death record submission" style="width:40%;height:auto;float:none;align:middle;" src="submission.png"/>
 
 Figure 2 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing, no in-depth validation is expected at this point. The code step includes in-depth validation and coding of the death record.
 
@@ -16,39 +17,42 @@ The purpose of acknowledgement messages is to support reliability in the exchang
 
 #### Updating Prior Death Record Submission
 
-![Message exchange pattern for updating a prior death record submission](update.png){ width=40% }
-
+<!-- ![Message exchange pattern for updating a prior death record submission](update.png){ width=40% } -->
+<img alt = "Message exchange pattern for updating a prior death record submission" style="width:40%;height:auto;float:none;align:middle;" src="update.png"/>
 Figure 3 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently updated. The initial submission of a new record should use a Death Record Submission message, subsequent updates should use a Death Record Update message.
 
 As shown in figure 3, depending on timing (whether coding was complete prior to submission of the Death Record Update), the initial submission may result in a Coding Response or not. If a Coding Response is sent prior to the Death Record Update then a Coding Update will be sent following the Death Record Update.
 
 #### Updating Prior Coding Response
 
-![Message exchange pattern for updating a prior coding response](recode.png){ width=40% }
-
+<!-- ![Message exchange pattern for updating a prior coding response](recode.png){ width=40% } -->
+<img alt = "Message exchange pattern for updating a prior coding response" style="width:40%;height:auto;float:none;align:middle;" src="recode.png"/>
 Figure 4 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when a prior Coding Response needs to be subsequently updated.
 
 #### Voiding Death Records
 
-![Message exchange pattern for voiding a prior death record submission](void.png | width=40% )
-
+<!-- ![Message exchange pattern for voiding a prior death record submission](void.png | width=40% ) -->
+<img alt = "Message exchange pattern for voiding a prior death record submission" style="width:40%;height:auto;float:none;align:middle;" src="void.png"/>
 Figure 5 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently voided. Depending on timing, the initial submission may result in a Coding Response or not.
 
 Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement".
 
 #### Retrying Requests {#retries}
 
-![Message exchange pattern for retrying an unacknowledged death record submission](retry.png){ width=40% }
+<!-- ![Message exchange pattern for retrying an unacknowledged death record submission](retry.png){ width=40% } -->
+<img alt = "Message exchange pattern for retrying an unacknowledged death record submission" style="width:40%;height:auto;float:none;align:middle;" src="retry.png"/>
 
 Figure 6 illustrates the case where the vital records jurisdiction does not receive a timely Acknowledgement to the Death Record Submission. Submissions can be retried providing the restrictions on Message and Header ids described in section 5 are followed.
 
 It is recommended that retries follow an "exponential backoff" approach where the time between retries is increased for each retry of a given message. This approach prevents retries from overloading NVSS in the case of transient outages.
 
-![Message exchange pattern for retrying an unacknowledged coding response](retry2.png){ width=40% }
+<!-- ![Message exchange pattern for retrying an unacknowledged coding response](retry2.png){ width=40% } -->
+<img alt = "Message exchange pattern for retrying an unacknowledged coding response" style="width:40%;height:auto;float:none;align:middle;" src="retry2.png"/>
 
 Figure 7 illustrates the case where the vital records jurisdiction does not receive a Coding Response. NVSS will not receive the expected Acknowledgement and this will trigger resending of the Coding Response.
 
-![Message exchange pattern for retrying an unacknowledged coding update](retry3.png){ width=40% }
+<!-- ![Message exchange pattern for retrying an unacknowledged coding update](retry3.png){ width=40% } -->
+<img alt = "Message exchange pattern for retrying an unacknowledged coding update" style="width:40%;height:auto;float:none;align:middle;" src="retry3.png"/>
 
 Figure 8 illustrates the case where the Acknowledgement of a Coding Update message is not received by NVSS. NVSS resends the Coding Update message, the jurisdiction resends the Acknowledgement and ignores the duplicate message.
 
@@ -58,7 +62,8 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 
 #### Message Extraction Failures
 
-![Message exchange patterns for failed message extractions](error.png){ width=40% }
+<!-- ![Message exchange patterns for failed message extractions](error.png){ width=40% } -->
+<img alt = "Message exchange patterns for failed message extractions" style="width:40%;height:auto;float:none;align:middle;" src="error.png"/>
 
 Figure 9 illustrates two message extraction failures:
 
