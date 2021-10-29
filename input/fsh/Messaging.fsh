@@ -116,6 +116,7 @@ Description: "CodingMessageHeader URI Values"
 
 Profile:  DeathMessageSubmissionHeader
 Parent: MessageHeader
+Description:   "Death Message Submission Header"
 Id: VRDR-DeathMessageSubmissionHeader
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmission (exactly)
@@ -125,6 +126,7 @@ Title:  "Death Message Header"
 Profile:  DeathRecordUpdateHeader
 Parent: MessageHeader
 Id: VRDR-DeathRecordUpdateHeader
+Description:   "Death Message Update Header"
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrupdate (exactly)
 * insert CommonHeaderStuff
@@ -134,6 +136,7 @@ Profile:  DeathMessageVoidHeader
 Parent: MessageHeader
 Id: VRDR-DeathMessageVoidHeader
 Title:  "Death Message Void Header"
+Description:   "Death Message Void Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmissionvoid (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageVoidParameters)
@@ -142,6 +145,7 @@ Profile:  CodingMessageHeader
 Parent: MessageHeader
 Id: VRDR-CodingMessageHeader
 Title:  "Coding Message Header"
+Description:   "Death Message Coding Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcoding (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CodingMessageParameters)
@@ -150,6 +154,7 @@ Profile:  CodingMessageUpdateHeader
 Parent: MessageHeader
 Id: VRDR-CodingMessageUpdateHeader
 Title:  "Coding Message Update Header"
+Description:   "Death Message Update Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcodingupdate (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CodingMessageParameters)
@@ -158,6 +163,7 @@ Profile:  AcknowledgementMessageHeader
 Parent: MessageHeader
 Id: VRDR-AcknowledgementMessageHeader
 Title:  "Acknowledgement Message Header"
+Description:   "Acknowledgement Message Header"
 * eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdracknowledgement (exactly)
 * insert CommonHeaderStuff
 * response.identifier 1..1
@@ -169,6 +175,7 @@ Profile:  ExtractionErrorHeader
 Parent: MessageHeader
 Id: VRDR-ExtractionErrorHeader
 Title:  "Extraction Error Header"
+Description:   "Extraction Error Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrextractionerror (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
@@ -205,7 +212,8 @@ RuleSet: BaseMessageParameterSlices
 Profile:  DeathMessageParameters
 Parent: Parameters
 Id: VRDR-DeathMessageParameters
-Title:  "Death Message Parameters"
+Description:   "Death Message Parameters"
+Title:  "Base parameter set for most Messages"
 * id MS
 // jurisdiction_id
 // cert_no
@@ -227,6 +235,7 @@ Title:  "Death Message Parameters"
 Profile: DeathMessageVoidParameters
 Parent: DeathMessageParameters
 Id: VRDR-DeathMessageVoidParameters
+Description:   "Parameters for a Void Death Message"
 //* parameter contains
 //    block_count 1..1
 //* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
@@ -258,6 +267,7 @@ Profile:  CodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-CodingMessageParameters
 Title:  "Coding Message Parameters"
+Description:   "Parameters for a Coding Message"
 
 * parameter contains
     rec_yr 0..1 and           //uint
@@ -341,6 +351,7 @@ Profile: DeathRecordSubmissionMessage
 Parent: Bundle
 Id: VRDR-DeathRecordSubmissionMessage
 Title: "Death Record Submission Message "
+Description:   "Message for submitting death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageSubmissionHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, DeathMessageParameters)
@@ -351,6 +362,7 @@ Profile: DeathRecordUpdateMessage
 Parent: Bundle
 Id: VRDR-DeathRecordUpdateMessage
 Title: "Death Record Update Message"
+Description:   "Message for updating death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathRecordUpdateHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, DeathMessageParameters)
@@ -361,6 +373,7 @@ Profile: DeathRecordVoidMessage
 Parent: Bundle
 Id: VRDR-DeathRecordVoidMessage
 Title: "Death Record Void Message "
+Description:   "Message for voiding death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageVoidHeader)
@@ -370,6 +383,7 @@ Profile: CodingMessage
 Parent: Bundle
 Id: VRDR-CodingMessage
 Title: "Coding Message"
+Description:   "Message for coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageHeader)
@@ -380,6 +394,7 @@ Profile: CodingUpdateMessage
 Parent: Bundle
 Id: VRDR-CodingUpdateMessage
 Title: "Coding Update Message"
+Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageUpdateHeader)
@@ -390,6 +405,7 @@ Profile: AcknowledgementMessage
 Parent: Bundle
 Id: VRDR-AcknowledgementMessage
 Title: "Acknowledgement Message"
+Description:   "Acknowledgement Message"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Acknowledgement Message Header , Acknowledgement Message Header, AcknowledgementMessageHeader)
 * insert BundleEntry(acknowledgementParameters, 1, 1, Acknowledgement Message Parameters, Acknowledgement Parameters, DeathMessageParameters)
@@ -399,6 +415,7 @@ Profile: ExtractionErrorMessage
 Parent: Bundle
 Id: VRDR-ExtractionErrorMessage
 Title: "Extraction Error Message"
+Description:   "Message for Errors during content extraction"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Extraction Error Message Header , Extraction Error Message Header, ExtractionErrorHeader)
 * insert BundleEntry(extractionErrorParameters, 0, 1, Extraction Error Message Parameters, Extraction Error Parameters, DeathMessageParameters)
