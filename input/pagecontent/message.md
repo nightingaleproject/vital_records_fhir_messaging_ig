@@ -124,7 +124,7 @@ For a given Death Record Submission or Coding Response:
 
 In either scenarion, the recipient of the Extraction Error Response would need to investigate the cause of the failure using the information provided in the Extraction Error Response message.
 
-### Message, Header, and Parameter Profiles
+### Message Structure and Content
 * Death Messages (EDRS->Jurisdiction)
   * [DeathRecordSubmissionMessage] -same as update, just different header flags
     * [DeathRecordSubmissionHeader]
