@@ -1,6 +1,6 @@
 ### Message Exchange Patterns
 
-The following subsections illustrate message exchange patterns between vital records jurisdictions and NVSS. The structure and content of the messages exchanged is described in section 5. Note that the interactions illustrate patterns of message exchange between jurisdiction and NCHS FHIR Messaging Infrastructure as shown in figure 1. Interactions between jurisdiction FHIR Messaging Infrastructure and other jurisdiction systems, or between NCHS FHIR Messaging Infrastructure and other NCHS systems, are not shown.
+The following subsections illustrate message exchange patterns between vital records jurisdictions and NVSS. The structure and content of the messages exchanged is described in section 5. Note that the interactions illustrate patterns of message exchange between jurisdiction and NCHS FHIR Messaging Infrastructure as as described in the [high level architecture](index.html#high-level-architecture-of-a-fhir-messaging-based-nvss). Interactions between jurisdiction FHIR Messaging Infrastructure and other jurisdiction systems, or between NCHS FHIR Messaging Infrastructure and other NCHS systems, are not shown.
 
 #### Successful Death Record Submission
 
@@ -24,7 +24,7 @@ The purpose of acknowledgement messages is to support reliability in the exchang
 <!-- ![Message exchange pattern for updating a prior death record submission](update.png){ width=25% } -->
 <figure style="align:middle">
     <img alt = "Message exchange pattern for updating a prior death record submission" style="width:25%;height:auto;float:none;align:middle;" src="update.png"/>
-    <figcaption style="bold">Figure 2: "Message exchange pattern for updating a prior death record submission</figcaption>
+    <figcaption style="bold">Figure 2: Message exchange pattern for updating a prior death record submission</figcaption>
 </figure>
 &nbsp;
 
@@ -38,7 +38,7 @@ As shown in figure 2, depending on timing (whether coding was complete prior to 
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for updating a prior coding response" style="width:25%;height:auto;float:none;align:middle;" src="recode.png"/>
-    <figcaption style="bold">Figure 3: "Message exchange pattern for updating a prior coding response</figcaption>
+    <figcaption style="bold">Figure 3: Message exchange pattern for updating a prior coding response</figcaption>
 </figure>
 &nbsp;
 
@@ -50,7 +50,7 @@ Figure 3 illustrates the sequence of message exchanges between a vital records j
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for voiding a prior death record submission" style="width:25%;height:auto;float:none;align:middle;" src="void.png"/>
-    <figcaption style="bold">Figure 4: "Message exchange pattern for voiding a prior death record submission</figcaption>
+    <figcaption style="bold">Figure 4: Message exchange pattern for voiding a prior death record submission</figcaption>
 </figure>
 &nbsp;
 
@@ -65,7 +65,7 @@ Records can also be pre-voided to inform NCHS that a specific set of certificate
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for retrying an unacknowledged death record submission" style="width:25%;height:auto;float:none;align:middle;" src="retry.png"/>
-    <figcaption style="bold">Figure 5: "Message exchange pattern for retrying an unacknowledged death record submission</figcaption>
+    <figcaption style="bold">Figure 5: Message exchange pattern for retrying an unacknowledged death record submission</figcaption>
 </figure>
 &nbsp;
 
@@ -79,7 +79,7 @@ It is recommended that retries follow an "exponential backoff" approach where th
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for retrying an unacknowledged coding response" style="width:25%;height:auto;float:none;align:middle;" src="retry2.png"/>
-    <figcaption style="bold">Figure 6: "Message exchange pattern for retrying an unacknowledged coding response</figcaption>
+    <figcaption style="bold">Figure 6: Message exchange pattern for retrying an unacknowledged coding response</figcaption>
 </figure>
 &nbsp;
 
@@ -90,7 +90,7 @@ Figure 6 illustrates the case where the vital records jurisdiction does not rece
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for retrying an unacknowledged coding update" style="width:25%;height:auto;float:none;align:middle;" src="retry3.png"/>
-    <figcaption style="bold">Figure 7: "Message exchange pattern for retrying an unacknowledged coding response</figcaption>
+    <figcaption style="bold">Figure 7: Message exchange pattern for retrying an unacknowledged coding response</figcaption>
 </figure>
 &nbsp;
 
@@ -107,7 +107,7 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 <!-- ![Message exchange patterns for failed message extractions](error.png){ width=25% } -->
 <figure style="align:middle">
 <img alt = "Message exchange patterns for failed message extractions" style="width:25%;height:auto;float:none;align:middle;" src="error.png"/>
-    <figcaption style="bold">Figure 8: "Message exchange patterns for failed message extractions</figcaption>
+    <figcaption style="bold">Figure 8: Message exchange patterns for failed message extractions</figcaption>
 </figure>
 &nbsp;
 
