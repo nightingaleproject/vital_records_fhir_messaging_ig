@@ -124,3 +124,38 @@ The flow of information is illustrated using numbered steps as follows:
 The above sequence describes the general process for exchange of information between vital records jurisdictions and NCHS. Section 4 (below) describes more specific information exchanges for various success and failure scenarios.
 
 Note that the FHIR messaging infrastructure is logically separated from both NVSS and jurisdiction death registration systems and it is this system that provides reliable delivery of death reports and coded responses (or errors) between jurisdictions and NVSS. The mechanics of reliable delivery (acknowledgements and retransmissions) are largely hidden from NVSS and jurisdiction death registration systems.
+
+### Open Questions and Additional Considerations
+
+This section captures open questions and issues.
+
+#### Bulk Submissions
+
+While the message exchange patterns included in this document focus on individual message exchanges, it would be possible to batch messages together to reduce the number of transfers. E.g. a single transfer from a vital records jurisdiction to NCHS could batch together a set of death record submissions, and acknowledgements for previously received coding response messages. On receipt, NVSS could process each individual message in the batch and create a new batch to  return to the jurisdiction.
+
+### Understanding this Guide
+
+The Vital Records FHIR Messaging Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained [in the FHIR documentation](https://www.hl7.org/fhir/formats.html). In viewing a profile page, note that there are multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide. The "Snapshot Table" represents the entire profile, with all elements.
+
+In the event there are differences between the page renderings in this IG and the associated FHIR artifacts, the FHIR artifacts should be taken as the source of truth. In the unlikely event that an artifact's snapshot is inconsistent with its differential, the differential should be taken as the source of truth.
+
+### Contributions
+
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the [Nightingale Github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig). Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in [FHIR Shorthand](http://hl7.org/fhir/uv/shorthand/) and all narrative content in markdown (specifically, [Kramdown](https://kramdown.gettalong.org/)). We suggest using the [Visual Studio Code editor](https://code.visualstudio.com/) with the [FHIR Shorthand plug-in](https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh). For more information on how to get started with IG development, visit the [FSH School](https://fshschool.org/).
+
+If you have questions or comments about this guide, please reach out on ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1].
+
+### Credits
+
+This IG is based on the [FHIR Messaging for NVSS](https://github.com/nightingaleproject/vital_records_fhir_messaging/releases/download/v3.1.0/fhir_messaging_for_nvss.pdf) authored by Marc Hadley (MITRE). The data element descriptions in that document have now been captured as a FHIR specification in this guide, which incorporates all of the content from the original guide.
+
+This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](http://hl7.org/fhir/uv/shorthand/) and [SUSHI](https://fshschool.org), a free, open source toolchain from [MITRE Corporation](https://www.mitre.org/).
+
+### Contact Information
+
+| Topic | Who | Role | Email |
+|----|---|---|------|
+|   |  |  |  |
+|  |  | |  |
+|  |  |  |  |
+{: .grid }
