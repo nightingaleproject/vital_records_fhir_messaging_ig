@@ -30,7 +30,7 @@ Figure 4 illustrates the sequence of message exchanges between a vital records j
 
 #### Voiding Death Records
 
-![Message exchange pattern for voiding a prior death record submission](void.png){ width=40% }
+![Message exchange pattern for voiding a prior death record submission](void.png | width=40% )
 
 Figure 5 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently voided. Depending on timing, the initial submission may result in a Coding Response or not.
 
