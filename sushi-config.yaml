@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: vital-records-fhir-messaging
-canonical: http://cdc.gov/nchs/fhir/vital-records-fhir-messaging
+canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging IG
 status: draft
