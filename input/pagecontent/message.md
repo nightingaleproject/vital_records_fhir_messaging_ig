@@ -128,8 +128,8 @@ In either scenarion, the recipient of the Extraction Error Response would need t
 
 <!-- ![Message exchange patterns for failed message extractions](alias.png){ width=25% } -->
 <figure style="align:middle">
-<img alt = "Message exchange patterns for submission of alias message" style="width:25%;height:auto;float:none;align:middle;" src="error.png"/>
-    <figcaption style="bold">Figure 8: Message exchange patterns for submission of alias message</figcaption>
+<img alt = "Message exchange patterns for submission of alias message" style="width:25%;height:auto;float:none;align:middle;" src="alias.png"/>
+    <figcaption style="bold">Figure 9: Message exchange patterns for submission of alias message</figcaption>
 </figure>
 &nbsp;
 Alias records are optional records that are submitted only for National Death Index purposes and contain alternate spellings or “AKA”s captured on some death certificates.  Some Alias records are literally just a mixed case or upper case version of the original record with no real significant differences.  States vary in whether they even can report Aliases or not, and many never do. Alias records are accumulated, and cannot be voided or deleted separate from their accompaassociated ying death record.
