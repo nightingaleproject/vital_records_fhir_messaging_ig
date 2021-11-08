@@ -416,7 +416,7 @@ Description:   "Message for aliasing death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageAliasHeader)
-* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Alias Parameters, Death Record Aias Parameters, DeathMessageAliasParameters)
+* insert BundleEntry(aliasParameters, 1, 1, Death Message Alias Parameters, Death Record Aias Parameters, DeathMessageAliasParameters)
 
 Profile: CodingMessage
 Parent: Bundle
