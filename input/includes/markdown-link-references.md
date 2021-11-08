@@ -24,3 +24,6 @@
 [ExtractionErrorMessage]: StructureDefinition-VRDR-ExtractionErrorMessage.html
 [ExtractionErrorHeader]:    StructureDefinition-VRDR-ExtractionErrorHeader.html
 [DeathCertificateDocument]: StructureDefinition-VRDR-Death-Certificate-Document.html
+[DeathRecordAliasHeader]: StructureDefinition-VRDR-DeathMessageAliasHeader.html
+[DeathRecordAliasMessage]: StructureDefinition-VRDR-DeathRecordAliasMessage.html
+[DeathRecordAliasParameters]: StructureDefinition-VRDR-DeathMessageAliasParameters.html

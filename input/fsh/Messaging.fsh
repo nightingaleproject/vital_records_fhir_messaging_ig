@@ -94,11 +94,12 @@ Title: "MessageHeader URI Values"
 Description: "MessageHeader URI Values"
 * #http://nchs.cdc.gov/vrdrsubmission "VRDR Submission" "Indicates that the payload is aninitial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
 Document"
-* #http://nchs.cdc.gov/vrdrsubmissionupdate "VRDR Update" "Indicates thisis  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document "
-* #http://nchs.cdc.gov/vrdrsubmissionvoid   "VRDR Void" "Indicates thisis  void  of  a  VRDR  DeathCertificate Document "
-* #http://nchs.cdc.gov/vrdracknowledgement  "VRDR Acknowledgement" "Indicates thisis  an  acknowledgement "
-* #http://nchs.cdc.gov/vrdrcodingupdate     "VRDR Coding Update" "Indicates thisis  an  coding update "
-* #http://nchs.cdc.gov/vrdrcoding "VRDR Coding" " Initial Coding Response"
+* #http://nchs.cdc.gov/vrdrsubmissionupdate "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document "
+* #http://nchs.cdc.gov/vrdrsubmissionvoid   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document "
+* #http://nchs.cdc.gov/vrdracknowledgement  "VRDR Acknowledgement" "Indicates this is  an  acknowledgement "
+* #http://nchs.cdc.gov/vrdrcodingupdate     "VRDR Coding Update" "Indicates this is  an  coding update "
+* #http://nchs.cdc.gov/vrdrcoding "VRDR Coding" "Inidicates that this is an initial coding"
+* #http://nchs.cdc.gov/vrdralias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 
 ValueSet: DeathMessageHeaderURIVS
 Id: VRDR-DeathMessageHeaderURI-vs
@@ -158,6 +159,15 @@ Description:   "Death Message Update Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcodingupdate (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CodingMessageParameters)
+
+Profile:  DeathMessageAliasHeader
+Parent: MessageHeader
+Id: VRDR-DeathMessageAliasHeader
+Title:  "Death Message Alias Header"
+Description:   "Death Message Alias Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdralias (exactly)
+* insert CommonHeaderStuff
+* focus only Reference(DeathMessageAliasParameters)
 
 Profile:  AcknowledgementMessageHeader
 Parent: MessageHeader
@@ -239,6 +249,25 @@ Description:   "Parameters for a Void Death Message"
 //* parameter contains
 //    block_count 1..1
 //* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
+
+Profile: DeathMessageAliasParameters
+Parent: DeathMessageParameters
+Id: VRDR-DeathMessageAliasParameters
+Description:   "Parameters for an Alias Message"
+* parameter contains
+    alias_decedent_first_name 0..1 and
+    alias_decedent_last_name 0..1 and
+    alias_decedent_middle_name 0..1 and
+    alias_decedent_name_suffix 0..1 and
+    alias_father_surname 0..1 and
+    alias_social_security_number 0..1
+* insert ParameterNameType(alias_decedent_first_name, string, ALIAS: Decendent first name, ALIAS: Decendent first name.)
+* insert ParameterNameType(alias_decedent_last_name, string, ALIAS: Decedent last Name, ALIAS: Decedent Last Name.)
+* insert ParameterNameType(alias_decedent_middle_name, string, ALIAS: Decedent Middle Name, ALIAS: Decedent Middle Name.)
+* insert ParameterNameType(alias_decedent_name_suffix, string, ALIAS: Decedent Name Suffix, ALIAS: Decedent Name Suffix.)
+* insert ParameterNameType(alias_father_surname, string, ALIAS: Father Surname, ALIAS: Father Surname.)
+* insert ParameterNameType(alias_social_security_number, string, ALIAS: Social Security Number, ALIAS: Social Security Number.)
+
 
 
 CodeSystem: ACMETRANSAXCodingStatusCS
@@ -378,6 +407,16 @@ Description:   "Message for voiding death records"
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageVoidHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Void Parameters, Death Record Void Parameters, DeathMessageVoidParameters)
+
+Profile: DeathRecordAliasMessage
+Parent: Bundle
+Id: VRDR-DeathRecordAliasMessage
+Title: "Death Record VoAliasid Message "
+Description:   "Message for aliasing death records"
+* insert CommonBundleStuff
+// * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
+* insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageAliasHeader)
+* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Alias Parameters, Death Record Aias Parameters, DeathMessageAliasParameters)
 
 Profile: CodingMessage
 Parent: Bundle

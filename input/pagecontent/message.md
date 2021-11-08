@@ -124,6 +124,25 @@ For a given Death Record Submission or Coding Response:
 
 In either scenarion, the recipient of the Extraction Error Response would need to investigate the cause of the failure using the information provided in the Extraction Error Response message.
 
+#### Alias
+
+<!-- ![Message exchange patterns for failed message extractions](alias.png){ width=25% } -->
+<figure style="align:middle">
+<img alt = "Message exchange patterns for submission of alias message" style="width:25%;height:auto;float:none;align:middle;" src="error.png"/>
+    <figcaption style="bold">Figure 8: Message exchange patterns for submission of alias message</figcaption>
+</figure>
+&nbsp;
+Alias records are optional records that are submitted only for National Death Index purposes and contain alternate spellings or “AKA”s captured on some death certificates.  Some Alias records are literally just a mixed case or upper case version of the original record with no real significant differences.  States vary in whether they even can report Aliases or not, and many never do. Alias records are accumulated, and cannot be voided or deleted separate from their accompaassociated ying death record.
+
+Figure 8 illustrates the submission of a death message followed by an alias message.
+Alias messages can contain aliases for one or more of the following fields:
+* Decedent’s First Name
+* Decedent’s Middle Initial
+* Decedent’s Last Name
+* Decedent’s Name Suffix
+* Father’s Surname
+* Social Security Number
+
 ### Message Structure and Content
 * Death Messages (EDRS->Jurisdiction)
   * [DeathRecordSubmissionMessage] -same as update, just different header flags
@@ -137,6 +156,9 @@ In either scenarion, the recipient of the Extraction Error Response would need t
   * [DeathRecordVoidMessage]
     * [DeathRecordVoidHeader]
     * [DeathRecordVoidParameters]
+  * [DeathRecordAliasMessage]
+    * [DeathRecordAliasHeader]
+    * [DeathRecordAliasParameters]
 * Coding Messages (NCHS->Jurisdiction)
   * [CodingMessage]
     * [CodingMessageHeader]

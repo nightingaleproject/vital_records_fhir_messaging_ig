@@ -243,3 +243,32 @@ Description: "Example of death record submission mesage"
 * entry[=].fullUrl = "urn:oid:MessageParameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "urn:oid:7a4613cc-b306-49b2-a428-9f8e67e67a85"
+
+Instance: DeathRecordAliasMessage-Example1
+InstanceOf: DeathRecordAliasMessage
+Usage: #example
+Description: "Example of void message"
+* timestamp = "2021-05-20T00:00:00Z"
+* entry[0].resource = AliasMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Message/AliasMessageHeader-Example1"
+// Other slices
+* entry[1].resource = AliasMessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/AliasMessageParameters-Example1"
+
+Instance: AliasMessageHeader-Example1
+InstanceOf: DeathMessageAliasHeader
+Usage: #example
+* eventUri = "http://nchs.cdc.gov/vrdralias"
+* destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* focus = Reference(AliasMessageParameters-Example1)
+
+Instance: AliasMessageParameters-Example1
+InstanceOf: DeathMessageAliasParameters
+Usage: #example
+* parameter[jurisdiction_id].valueString = "NH"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[alias_father_surname].valueString = "Shakespeare-Dostoyevsky"
+* parameter[alias_decedent_middle_name].valueString = "X"
