@@ -411,7 +411,7 @@ Description:   "Message for voiding death records"
 Profile: DeathRecordAliasMessage
 Parent: Bundle
 Id: VRDR-DeathRecordAliasMessage
-Title: "Death Record VoAliasid Message "
+Title: "Death Record Alias Message "
 Description:   "Message for aliasing death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)

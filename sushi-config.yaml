@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: vital-records-fhir-messaging
-canonical: http://mitre.org/fhir/vital-records-fhir-messaging
+canonical: http://cdc.gov/nchs/fhir/vital-records-fhir-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging IG
 status: draft
@@ -12,7 +12,7 @@ copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
   name: CDC NCHS
-  url: http://example.org/example-publisher
+  url: http://cdc.gov/nchs
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
