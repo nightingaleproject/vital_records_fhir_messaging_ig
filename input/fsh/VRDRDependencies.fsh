@@ -209,7 +209,7 @@ Description: "The Death Certificate Document profile is a bundle of resources co
 * entry.resource ^short = "resource"
 * entry.resource ^definition = "This entry SHALL contain exactly one [1..1] resource=\"VRDR Death Certificate\" (CONF:4393-360)."
 
-Instance: DeathCertificateDocument1
+Instance: DeathCertificateDocument-Example1
 InstanceOf: DeathCertificateDocument
 Title: "Death Certificate Document Example"
 Description: "An instance example of the VRDR-Death-Certificate-Document resource profile."

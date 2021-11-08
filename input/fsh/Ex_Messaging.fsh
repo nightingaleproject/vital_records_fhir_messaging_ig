@@ -1,7 +1,7 @@
 Alias: $codingstatus = ACMETRANSAXCodingStatusCS
 
 
-Instance: CodingMessageParameters1
+Instance: CodingMessageParameters-Example1
 InstanceOf: CodingMessageParameters
 Usage: #example
 * parameter[jurisdiction_id].name = "jurisdiction_id"
@@ -74,14 +74,14 @@ Usage: #example
 * parameter[entity_axis_code][=].part[lineNumber].valueString = "6"
 * parameter[entity_axis_code][=].part[coding].name = "coding"
 * parameter[entity_axis_code][=].part[coding].valueCodeableConcept = $icd-10#A04.7
-Instance: MessageParameters1
+Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
 Usage: #example
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 
-Instance: VoidMessageParameters1
+Instance: VoidMessageParameters-Example1
 InstanceOf: DeathMessageVoidParameters
 Usage: #example
 * parameter[jurisdiction_id].valueString = "NH"
@@ -90,7 +90,7 @@ Usage: #example
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[block_count].valueUnsignedInt = 10
 
-Instance: AcknowledgementMessageHeader1
+Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdracknowledgement"
@@ -98,51 +98,51 @@ Usage: #example
 * source.endpoint = "http://nchs.cdc.gov/vrdracknowledgement"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #ok
-* focus = Reference(MessageParameters1)   // Is this needed?  Same parameters as for VoidMessageHeader...
+* focus = Reference(MessageParameters-Example1)   // Is this needed?  Same parameters as for VoidMessageHeader...
 
-Instance: VoidMessageHeader1
+Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrsubmissionvoid"
 * destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
-* focus = Reference(VoidMessageParameters1)
+* focus = Reference(VoidMessageParameters-Example1)
 
-Instance: UpdateMessageHeader1
+Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrupdate"
 * destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
-* focus = Reference(DeathCertificateDocument1)
+* focus = Reference(DeathCertificateDocument-Example1)
 
-Instance: SubmissionMessageHeader1
+Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrsubmission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
-* focus = Reference(DeathCertificateDocument1)
+* focus = Reference(DeathCertificateDocument-Example1)
 
-Instance: CodingMessageHeader1
+Instance: CodingMessageHeader-Example1
 InstanceOf: CodingMessageHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrcoding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CodingMessageParameters1)
+* focus = Reference(CodingMessageParameters-Example1)
 
-Instance: CodingMessageUpdateHeader1
+Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrcodingupdate"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CodingMessageParameters1)
+* focus = Reference(CodingMessageParameters-Example1)
 
-Instance: ExtractionErrorHeader1
+Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
 * eventUri = "http://nchs.cdc.gov/vrdrextractionerror"
@@ -150,49 +150,49 @@ Usage: #example
 * source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #fatal-error
-* response.details = Reference(DeathMessageOutcome1)
-* focus = Reference(MessageParameters1)
+* response.details = Reference(DeathMessageOutcome-Example1)
+* focus = Reference(MessageParameters-Example1)
 
-Instance: DeathMessageOutcome1
+Instance: DeathMessageOutcome-Example1
 InstanceOf: DeathMessageOutcome
 Usage: #example
 * issue.severity = #error
 * issue.code = #structure
 * issue.diagnostics = "Expected 1 or more Cause of Death Condition resources, received 0."
 
-Instance: ExtractionErrorMessage1
+Instance: ExtractionErrorMessage-Example1
 InstanceOf: ExtractionErrorMessage
 Usage: #example
 Description: "Example of extraction error message"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = ExtractionErrorHeader1
+* entry[0].resource = ExtractionErrorHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/ExtractionErrorHeader1"
 // Other slices
-* entry[1].resource = MessageParameters1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters1"
-* entry[2].resource = DeathMessageOutcome1
-* entry[=].fullUrl = "http://example.org/fhir/OperationOutcome/DeathMessageOutcome1"
+* entry[1].resource = MessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
+* entry[2].resource = DeathMessageOutcome-Example1
+* entry[=].fullUrl = "http://example.org/fhir/OperationOutcome/DeathMessageOutcome-Example1"
 
-Instance: AcknowledgementMessage1
+Instance: AcknowledgementMessage-Example1
 InstanceOf: AcknowledgementMessage
 Usage: #example
 Description: "Example of acknowledgement message"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = AcknowledgementMessageHeader1
-* entry[=].fullUrl = "http://example.org/fhir/Message/AcknowledgementMessageHeader1"
+* entry[0].resource = AcknowledgementMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Message/AcknowledgementMessageHeader-Example1"
 // Other slices
-* entry[1].resource = MessageParameters1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters1"
+* entry[1].resource = MessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 
-Instance: CodingMessage1
+Instance: CodingMessage-Example1
 InstanceOf: CodingMessage
 Usage: #example
 Description: "Example of coding message"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageHeader1
-* entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader1"
+* entry[0].resource = CodingMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader-Example1"
 // Other slices
-* entry[1].resource = CodingMessageParameters1
+* entry[1].resource = CodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
 
 Instance: CodingUpdateMessage1
@@ -200,46 +200,46 @@ InstanceOf: CodingUpdateMessage
 Usage: #example
 Description: "Example of coding update message"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageUpdateHeader1
+* entry[0].resource = CodingMessageUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingUpdateHeader1"
 // Other slices
-* entry[1].resource = CodingMessageParameters1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
+* entry[1].resource = CodingMessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
 
 
-Instance: DeathRecordVoidMessage1
+Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage
 Usage: #example
 Description: "Example of void message"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = VoidMessageHeader1
-* entry[=].fullUrl = "http://example.org/fhir/Message/VoidMessageHeader1"
+* entry[0].resource = VoidMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Message/VoidMessageHeader-Example1"
 // Other slices
-* entry[1].resource = VoidMessageParameters1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/VoidMessageParameters1"
+* entry[1].resource = VoidMessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/VoidMessageParameters-Example1"
 
-Instance: DeathRecordSubmissionMessage1
+Instance: DeathRecordSubmissionMessage-Example1
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = SubmissionMessageHeader1
-* entry[=].fullUrl = "urn:oid:SubmissionHeader1"
+* entry[0].resource = SubmissionMessageHeader-Example1
+* entry[=].fullUrl = "urn:oid:SubmissionHeader-Example1"
 // Other slices
-* entry[1].resource = MessageParameters1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters1"
-* entry[+].resource = DeathCertificateDocument1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument1"
+* entry[1].resource = MessageParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
+* entry[+].resource = DeathCertificateDocument-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
-Instance: DeathRecordUpdateMessage1
+Instance: DeathRecordUpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage
 Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = UpdateMessageHeader1
-* entry[=].fullUrl = "urn:oid:UpdateHeader1"
+* entry[0].resource = UpdateMessageHeader-Example1
+* entry[=].fullUrl = "urn:oid:UpdateHeader-Example1"
 // Other slices
-* entry[1].resource = MessageParameters1
-* entry[=].fullUrl = "urn:oid:MessageParameters1"
-* entry[+].resource = DeathCertificateDocument1
+* entry[1].resource = MessageParameters-Example1
+* entry[=].fullUrl = "urn:oid:MessageParameters-Example1"
+* entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "urn:oid:7a4613cc-b306-49b2-a428-9f8e67e67a85"
