@@ -1,17 +1,3 @@
----
-#sponsor: 'National Center for Health Statistics'
-#security: 'Restricted Distribution'
-#project: 'Modernizing the National Vital Statistics System (NVSS)'
-#contract: 'HHSM500201200008I'
-#task_order: '2002016F91567'
-status: 'Draft' # Initial Draft, Draft or Final Draft
-title: 'FHIR Messaging for NVSS'
-version: 'v3.1.0'
-date: 'June 2, 2021'
-#author:    
-#- Marc Hadley
-keywords: [NVSS, NCHS, FHIR, VRDR, death, reporting, message, messaging]
----
 # Introduction
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
@@ -27,41 +13,7 @@ Questions or comments regarding this document should be directed to the ["Death 
 
 [^1]: https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR
 
-# Requirements
 
-## Performance Expectations
-
-Historical data shows that NCHS receives up to 7M unique records per year across all areas of vital records reporting. However, the same record can be submitted more than 3 times per year resulting in 21M submissions per year. Submissions are not linearly distributed over the year and there are peaks of up to 350k submissions per day, of which 25% are new. In response, NCHS can send up to 500k return records per day. Approximately 60% of records represent mortality data.
-
-While the majority of submissions can be coded automatically, some will require nosologist intervention for manual coding. This will require asynchrony between submission and the return of coding information.
-
-## Death Report Submission
-
-Vital records jurisdictions need a mechanism to submit VRDR Death Certificate Documents to NCHS. Vital records jurisdictions should not be required to wait for a death report submission to be acknowledged or coded before submitting additional death reports, there may be many outstanding death report submissions at any time.
-
-Vital records jurisdictions need a mechanism to update VRDR Death Certificate Documents previously submitted to NCHS and this should not rely on patient matching algorithms but instead use embedded identifiers for record correlation.
-
-Vital records jurisdictions need a mechanism to void a single or a block of death certificates. Voiding may target previously submitted documents or may be used to inform NCHS that a specific set of certificate numbers will not be used in the future.
- 
-## Coding Response
-
-NCHS needs a mechanism to send coded causes of death as well as coded race and ethnicity information to vital records jurisdictions in response to receipt of a VRDR Death Certificate Document. NCHS also needs a mechanism to update previously-sent coding information. Causes of death codings may be sent separately from race and ethnicity codings. Updates to either may also be sent separately.
-
-The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [`Cause Of Death Condition`](http://hl7.org/fhir/us/vrdr/2019May/CauseOfDeathCondition.html) resource in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf)).
-
-The race and ethnicity information in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
-
-## Delivery Status
-
-Vital records jurisdictions need a mechanism to determine that submissions to NCHS, such as VRDR Death Certificate Documents, were successfully received by NCHS. NCHS needs a mechanism to determine that data returned to vital records jurisdictions, such as causes of death coding and race and ethnicity coding, were successfully received by vital records jurisdictions.
-
-## Reliability
-
-NCHS and vital records jurisdictions need a mechanism to automatically recover from messages that are lost during exchange in either direction.
-
-## Error Reporting
-
-NCHS needs a mechanism to report errors to vital records jurisdictions in response to receipt of VRDR Death Certificate Documents that could not be processed. Vital records jurisdictions need a mechanism to report errors to NCHS in response to coded causes of death, race, and ethnicity that could not be processed.
 
 # FHIR Messaging
 
@@ -101,7 +53,7 @@ Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
 
 - __NVSS__: NCHS systems for processing and coding death reports
 
-- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html) 
+- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html)
 
 - __FHIR Coding or Error__: A FHIR representation of either:
   - Causes of death coding, races and ethnicities coding, or both
@@ -223,7 +175,7 @@ All messages defined in the specification share the following common elements. S
         -- Header [FHIR MessageHeader]
         |
         -- Record [FHIR Parameters]
-        
+
 `Message` property values:
 
 - `type` is fixed to `message`
@@ -306,46 +258,15 @@ Additional `Record` parameters:
 - For void message acknowledgements, `parameter.name` of `block_count` with a `valuePositiveInt` that contains the number of records voided starting at the certificate number specified by the `cert_no` parameter.
 
 ## Coding Response and Coding Update
+The most complex feature of this IG is the definition of coding responses and updated.
+* Coding Messages (NCHS->Jurisdiction)
+  * [CodingMessage]
+    * [CodingMessageHeader]
+    * [CodingMessageParameters]
+  * [CodingUpdateMessage] -- same as submission, just different header flags
+    * [CodingMessageUpdateHeader]
+    * [CodingMessageParameters]
 
-    Message [FHIR Bundle]
-    |
-    -- entry
-        |
-        -- Header [FHIR MessageHeader]
-        |
-        -- Record [FHIR Parameters]
-
-Additional and specific `Header` property values:
-
-- `eventUri` is one of
-  * `http://nchs.cdc.gov/vrdr_coding` to identify the initial coding response to a Death Record Submission or Update
-  * `http://nchs.cdc.gov/vrdr_coding_update` to identify updates to a prior Coding Response
-- `destination.endpoint` is the value of the `Header.source.endpoint` property of the message that is being acknowledged
-- `source.endpoint` is fixed to `http://nchs.cdc.gov/vrdr_submission`
-
-A coding response or coding update may contain cause of death coding information, race and ethnicity coding information or both. A complete example is included in section 6.
-Additional Optional `Record` parameters:
-
-- `rec_mo` is a `valueUnsignedInt` representing the month which NCHS received the record.
-- `rec_dy` is a `valueUnsignedInt` representing the day which NCHS received the record.
-- `rec_year` is a `valueUnsignedInt` representing the year which NCHS received the record.
-- `cs` is a `valueCoding` containing a valid code from Page 23 of the [PC-ACME/TRANSAX](https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Software/MICAR/Data_Entry_Software/ACME_TRANSAX/Documentation/auser.pdf) user guide.
-- `ship` is a `valueString` containing an AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts.
-- `sys_rej` is a `valueString` containing a valid code from [System Reject Codes (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=CFF72380-C37E-4947-A809-43B00ACB1EF9) with all whitespaces and dashes removed. For example: "MICAR Reject - Dictionary Match" should be "MICARRejectDictionaryMatch". A full list of strings can also be found in the [VRDR library](https://github.com/nightingaleproject/vrdr-dotnet/blob/8becd63/VRDR.Messaging/CodingResponseMessage.cs#L352-L362).
-- `int_rej` is a `valueCoding` containing a one-character reject codes from the [Instructions for Classifying Multiple Causes OF Death](https://www.cdc.gov/nchs/data/dvs/2b_2017.pdf) code document for values.
-
-A coding response or coding update may contain cause of death coding information, race and ethnicity coding information, manner of death coding information, place of injury coding information, or some combination of all four types of information. A complete example is included in section 6.
-
-### Race and Ethnicity Coding
-
-Additional `Record` property values for race and ethnicity coding:
-
-- One `parameter.name` of `ethnicity` with one or two `part` entries, each with
-  + `part.name` of `DETHNICE` or `DETHNIC5C`
-  + `part.valueCoding` containing a `code` from [NCHS Hispanic Codes](https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf)
-- One `parameter.name` of `race` with one or more `part` entries, each with
-  + `part.name` of `RACE1E`..`RACE8E` or `RACE16C`..`RACE23C` or `RACEBRG`
-  + `part.valueCoding` containing a race `code` from [NCHS Race Codes](https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf) or a bridge code (`RACEBRG` only) from [NCHS Bridge Codes](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
 
 ### Causes of Death Coding
 
@@ -400,7 +321,7 @@ Additional and specific `Header` property values:
   * `severity` from [issue-severity value set](http://hl7.org/fhir/valueset-issue-severity.html)
   * `code` from [issue-type value set](http://hl7.org/fhir/valueset-issue-type.html)
   * `diagnostics` is a human-readable description of the issue
-  
+
 # Examples
 
 ## Message

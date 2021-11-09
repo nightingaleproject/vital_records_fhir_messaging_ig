@@ -1,5 +1,3 @@
-Alias: $codingstatus = ACMETRANSAXCodingStatusCS
-
 
 Instance: CodingMessageParameters-Example1
 InstanceOf: CodingMessageParameters
