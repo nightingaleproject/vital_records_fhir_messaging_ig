@@ -45,3 +45,16 @@ Id: VRDR-ACMETRANSAXCodingStatus-vs
 Title: "ACMETRANSAX Coding StatusVS"
 Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation](https://ftp.cdc.gov/pub/HealthStatistics/NCHS/Software/MICAR/DataEntrySoftware/ACMETRANSAX/Documentation/auser.pdf)"
 * include codes from system ACMETRANSAXCodingStatusCS
+
+
+ValueSet: HispanicOriginVS
+Id: VRDR-HispanicOrigin-vs
+Title: "HispanicOrigin Value Set"
+Description: "HispanicOrigin from https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf"
+* include codes from system HispanicOriginCS
+
+ValueSet: RaceCodeListVS
+Id: VRDR-RaceCode-vs
+Title: "Race Code ListVS"
+Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
+* include codes from system RaceCodeListCS

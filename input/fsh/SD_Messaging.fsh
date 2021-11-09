@@ -180,11 +180,11 @@ Description:   "Parameters for a Coding Message"
 * parameter[ethnicity].part.name only string
 * parameter[ethnicity].part.name from EthnicCodesVS (required)
 * parameter[ethnicity].part.value[x] only string // bind to value set
-* parameter[ethnicity].part.value[x] from https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf
+* parameter[ethnicity].part.value[x] from HispanicOriginVS
 * parameter[race].part.name only string
 * parameter[race].part.name from RaceCodesVS (required)
 * parameter[race].part.value[x] only string
-* parameter[race].part.value[x] from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf
+* parameter[race].part.value[x] from RaceCodeListVS (required)
 * parameter[record_cause_of_death].part ^slicing.discriminator.type = #value
 * parameter[record_cause_of_death].part ^slicing.discriminator.path = "name"
 * parameter[record_cause_of_death].part ^slicing.rules = #closed
