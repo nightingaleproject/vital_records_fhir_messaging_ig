@@ -27,7 +27,7 @@ Usage: #example
 //* parameter[state_auxiliary_id].name = "state_auxiliary_id"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 //* parameter[underlying_cause_of_death].name = "underlying_cause_of_death"
-* parameter[underlying_cause_of_death].valueCodeableConcept = $icd-10#A04.7
+//* parameter[underlying_cause_of_death].valueCodeableConcept = $icd-10#A04.7
 * parameter[record_cause_of_death].name = "record_cause_of_death"
 * parameter[record_cause_of_death].part[coding][0].name = "coding"
 * parameter[record_cause_of_death].part[coding][0].valueCodeableConcept = $icd-10#A04.7

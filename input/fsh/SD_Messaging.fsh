@@ -152,9 +152,9 @@ Description:   "Parameters for a Coding Message"
     int_rej 0..1 and  // one character reject code --  1, 2, 3, 4, 5, 9
     ethnicity 0..1 and // part contains name=DETHNICE, codeable
     race 0..* and  // part contains list with name=RACE1E, etc and codeable
-    underlying_cause_of_death 0..1 and // icd10
+    // underlying_cause_of_death 0..1 and // icd10
     record_cause_of_death 0..1 and // part contains list of codeable concepts
-    entity_axis_code 0..* and // multiple parameters, each contains - part contains linenumber, codeable
+    entity_axis_code 0..20 and // multiple parameters, each contains - part contains linenumber, codeable
     manner 0..1 and // string
     injpl 0..1 and   // string
     other_specified_place 0..1 // string
@@ -169,8 +169,8 @@ Description:   "Parameters for a Coding Message"
 * insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
 * insert ParameterName(ethnicity, ethnicity, ethnicity)
 * insert ParameterName(race, race, race)
-* insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
-* parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
+// * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
+// * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
 * insert ParameterName(record_cause_of_death, Recorded Cause of Death, Recorded Cause of Death)
 * insert ParameterName(entity_axis_code, entity axis code, entity axis code)
 * insert ParameterNameType(manner, string, Manner of Death, Manner of Death)
@@ -190,7 +190,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[record_cause_of_death].part ^slicing.rules = #closed
 * parameter[record_cause_of_death].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 * parameter[record_cause_of_death].part contains
-      coding 1..*
+      coding 1..20
 * parameter[record_cause_of_death].part[coding].value[x] only CodeableConcept // bind to value set
 * parameter[record_cause_of_death].part[coding].valueCodeableConcept.coding.system = $icd-10
 * parameter[record_cause_of_death].part[coding].name = "coding"
