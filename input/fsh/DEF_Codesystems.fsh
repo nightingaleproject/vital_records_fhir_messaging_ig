@@ -57,7 +57,7 @@ Document"
 * #http://nchs.cdc.gov/vrdrcodingupdate     "VRDR Coding Update" "Indicates this is  an  coding update "
 * #http://nchs.cdc.gov/vrdrcoding "VRDR Coding" "Inidicates that this is an initial coding"
 * #http://nchs.cdc.gov/vrdralias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
-
+* #http://nchs.cdc.gov/vrdrextractionerror "VRDR Extraction Error" "Indicates that this is an extraction error"
 
 CodeSystem: ACMETRANSAXCodingStatusCS
 Id: VRDR-ACMETRANSAXCodingStatus-cs

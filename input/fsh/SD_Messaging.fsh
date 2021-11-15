@@ -21,7 +21,7 @@ Parent: MessageHeader
 Id: VRDR-DeathRecordUpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmissionupdate (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathCertificateDocument)
 
@@ -78,7 +78,7 @@ Parent: MessageHeader
 Id: VRDR-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrextractionerror (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrextractionerror  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
 * response.code = #fatal-error

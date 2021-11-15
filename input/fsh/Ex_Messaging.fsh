@@ -109,7 +109,7 @@ Usage: #example
 Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrupdate"
+* eventUri = "http://nchs.cdc.gov/vrdrsubmissionupdate"
 * destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
@@ -143,7 +143,7 @@ Usage: #example
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrextractionerror"
+* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdrextractionerror"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
