@@ -41,7 +41,7 @@ Title:  "Coding Message Header"
 Description:   "Death Message Coding Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcoding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CodingMessageParameters)
+* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters )
 
 Profile:  CodingMessageUpdateHeader
 Parent: MessageHeader
@@ -135,21 +135,33 @@ Description:   "Parameters for an Alias Message"
 * insert ParameterNameType(alias_father_surname, string, ALIAS: Father Surname, ALIAS: Father Surname.)
 * insert ParameterNameType(alias_social_security_number, string, ALIAS: Social Security Number, ALIAS: Social Security Number.)
 
+RuleSet: BasicParameters
+* parameter contains
+    rec_yr 0..1 and           //uint
+    rec_mo 0..1 and          //uint
+    rec_dy 0..1 and          //uint
+    cs 0..1 and    // codeable
+    ship 0..1 and // string
+    sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
+    int_rej 0..1   // one character reject code --  1, 2, 3, 4, 5, 9
+* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
+* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
+* parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
+* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
+* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
+* parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
+* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
+
 
 Profile:  CodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-CodingMessageParameters
 Title:  "Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
-
+* insert BasicParameters
 * parameter contains
-    rec_yr 0..1 and           //uint
-    rec_mo 0..1 and          //uint
-    rec_dy 0..1 and          //uint
-    cs 0..1 and    // codeable
-    ship 0..1 and // string
-    sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
-    int_rej 0..1 and  // one character reject code --  1, 2, 3, 4, 5, 9
     ethnicity 0..1 and // part contains name=DETHNICE, codeable
     race 0..* and  // part contains list with name=RACE1E, etc and codeable
     // underlying_cause_of_death 0..1 and // icd10
@@ -158,15 +170,6 @@ Description:   "Parameters for a Coding Message"
     manner 0..1 and // string
     injpl 0..1 and   // string
     other_specified_place 0..1 // string
-* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
-* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
-* parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
-* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
-* parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
-* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
 * insert ParameterName(ethnicity, ethnicity, ethnicity)
 * insert ParameterName(race, race, race)
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
@@ -221,40 +224,47 @@ Description:   "Parameters for a Coding Message"
 * parameter[race].value[x] 0..0
 * parameter[race].resource 0..0
 
-/*
+Profile:  DemographicCodingMessageParameters
+Parent: DeathMessageParameters
+Id: VRDR-DemographicCodingMessageParameters
+Title:  "Coding Message Parameters"
+Description:   "Parameters for a Coding Message"
+* insert BasicParameters
+* parameter contains
+     ethnicity 0..1 and // part contains name=DETHNICE, codeable
+     race 1..*   // part contains list with name=RACE1E, etc and codeable
+* insert ParameterName(ethnicity, ethnicity, ethnicity)
+* insert ParameterName(race, race, race)
+// * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
+* parameter[int_rej].value[x] from InternalRejectCodesVS (required)
+* parameter[ethnicity].part.name only string
+* parameter[ethnicity].part.name from EthnicCodesVS (required)
+* parameter[ethnicity].part.value[x] only string // bind to value set
+* parameter[ethnicity].part.value[x] from HispanicOriginVS
+* parameter[race].part.name only string
+* parameter[race].part.name from RaceCodesVS (required)
+* parameter[race].part.value[x] only string
+* parameter[race].part.value[x] from RaceCodeListVS (required)
+* parameter[ethnicity].value[x] 0..0
+* parameter[ethnicity].resource 0..0
+* parameter[race].value[x] 0..0
+* parameter[race].resource 0..0
+
+
+
 Profile:  CauseOfDeathCodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-CauseOfDeathCodingMessageParameters
 Title:  "Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
-
+* insert BasicParameters
 * parameter contains
-    rec_yr 0..1 and           //uint
-    rec_mo 0..1 and          //uint
-    rec_dy 0..1 and          //uint
-    cs 0..1 and    // codeable
-    ship 0..1 and // string
-    sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
-    int_rej 0..1 and  // one character reject code --  1, 2, 3, 4, 5, 9
-    ethnicity 0..1 and // part contains name=DETHNICE, codeable
-    race 0..* and  // part contains list with name=RACE1E, etc and codeable
-    // underlying_cause_of_death 0..1 and // icd10
+     // underlying_cause_of_death 0..1 and // icd10
     record_cause_of_death 0..1 and // part contains list of codeable concepts
     entity_axis_code 0..20 and // multiple parameters, each contains - part contains linenumber, codeable
     manner 0..1 and // string
     injpl 0..1 and   // string
     other_specified_place 0..1 // string
-* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
-* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
-* parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
-* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
-* parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
-* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
-* insert ParameterName(ethnicity, ethnicity, ethnicity)
-* insert ParameterName(race, race, race)
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
 // * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
 * insert ParameterName(record_cause_of_death, Recorded Cause of Death, Recorded Cause of Death)
@@ -263,14 +273,6 @@ Description:   "Parameters for a Coding Message"
 * insert ParameterNameType(injpl, string, Injury Place, Injury Place)
 * insert ParameterNameType(other_specified_place, string, Other specified place, Other specified place)
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
-* parameter[ethnicity].part.name only string
-* parameter[ethnicity].part.name from EthnicCodesVS (required)
-* parameter[ethnicity].part.value[x] only string // bind to value set
-* parameter[ethnicity].part.value[x] from HispanicOriginVS
-* parameter[race].part.name only string
-* parameter[race].part.name from RaceCodesVS (required)
-* parameter[race].part.value[x] only string
-* parameter[race].part.value[x] from RaceCodeListVS (required)
 * parameter[record_cause_of_death].part ^slicing.discriminator.type = #value
 * parameter[record_cause_of_death].part ^slicing.discriminator.path = "name"
 * parameter[record_cause_of_death].part ^slicing.rules = #closed
@@ -302,11 +304,8 @@ Description:   "Parameters for a Coding Message"
 * parameter[record_cause_of_death].resource 0..0
 * parameter[entity_axis_code].value[x] 0..0
 * parameter[entity_axis_code].resource 0..0
-* parameter[ethnicity].value[x] 0..0
-* parameter[ethnicity].resource 0..0
-* parameter[race].value[x] 0..0
-* parameter[race].resource 0..0
-*/
+
+
 Profile: DeathRecordSubmissionMessage
 Parent: Bundle
 Id: VRDR-DeathRecordSubmissionMessage
@@ -357,7 +356,7 @@ Description:   "Message for coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageHeader)
-* insert BundleEntry(codingParameters, 1, 1, Coding Message Parameters, Coding Parameters, CodingMessageParameters)
+* insert BundleEntry(codingParameters, 1, 1, Coding Message Parameters, Coding Parameters, CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters)
 
 
 Profile: CodingUpdateMessage
