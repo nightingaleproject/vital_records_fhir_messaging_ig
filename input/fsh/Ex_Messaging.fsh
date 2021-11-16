@@ -1,4 +1,5 @@
 
+/*
 Instance: CodingMessageParameters-Example1
 InstanceOf: CodingMessageParameters
 Usage: #example
@@ -72,7 +73,7 @@ Usage: #example
 * parameter[entity_axis_code][=].part[lineNumber].valueString = "6"
 * parameter[entity_axis_code][=].part[coding].name = "coding"
 * parameter[entity_axis_code][=].part[coding].valueCodeableConcept = $icd-10#A04.7
-
+*/
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
@@ -265,7 +266,7 @@ Description: "Example of coding message"
 * entry[0].resource = CodingMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader-Example1"
 // Other slices
-* entry[1].resource = CodingMessageParameters-Example1
+* entry[1].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
 
 Instance: CodingUpdateMessage1
@@ -276,7 +277,7 @@ Description: "Example of coding update message"
 * entry[0].resource = CodingMessageUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingUpdateHeader1"
 // Other slices
-* entry[1].resource = CodingMessageParameters-Example1
+* entry[1].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
 
 

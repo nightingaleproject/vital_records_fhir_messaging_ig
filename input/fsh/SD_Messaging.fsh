@@ -50,7 +50,7 @@ Title:  "Coding Message Update Header"
 Description:   "Death Message Update Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcodingupdate (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CodingMessageParameters)
+* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters)
 
 Profile:  DeathMessageAliasHeader
 Parent: MessageHeader
@@ -154,7 +154,7 @@ RuleSet: BasicParameters
 * parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
 * insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
 
-
+/*
 Profile:  CodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-CodingMessageParameters
@@ -223,11 +223,11 @@ Description:   "Parameters for a Coding Message"
 * parameter[ethnicity].resource 0..0
 * parameter[race].value[x] 0..0
 * parameter[race].resource 0..0
-
+*/
 Profile:  DemographicCodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-DemographicCodingMessageParameters
-Title:  "Coding Message Parameters"
+Title:  "Demographic Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
 * insert BasicParameters
 * parameter contains
@@ -255,7 +255,7 @@ Description:   "Parameters for a Coding Message"
 Profile:  CauseOfDeathCodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-CauseOfDeathCodingMessageParameters
-Title:  "Coding Message Parameters"
+Title:  "Cause of Death Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
 * insert BasicParameters
 * parameter contains
@@ -367,7 +367,7 @@ Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageUpdateHeader)
-* insert BundleEntry(codingParameters, 1, 1, Coding Message Parameters, Coding Parameters, CodingMessageParameters)
+* insert BundleEntry(codingParameters, 1, 1, Coding Message Parameters, Coding Parameters, DemographicCodingMessageParameters or CauseOfDeathCodingMessageParameters)
 
 
 Profile: AcknowledgementMessage

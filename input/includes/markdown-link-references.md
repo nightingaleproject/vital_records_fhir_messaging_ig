@@ -11,6 +11,8 @@
 [CodingUpdateMessage]: StructureDefinition-VRDR-CodingUpdateMessage.html
 [CodingMessageUpdateHeader]: StructureDefinition-VRDR-CodingMessageUpdateHeader.html
 [CodingMessageParameters]: StructureDefinition-VRDR-CodingMessageParameters.html
+[CauseOfDeathCodingMessageParameters]: StructureDefinition-VRDR-CauseOfDeathCodingMessageParameters.html
+[DemographicCodingMessageParameters]: StructureDefinition-VRDR-DemographicCodingMessageParameters.html
 [DeathRecordSubmissionHeader]: StructureDefinition-VRDR-DeathMessageSubmissionHeader.html
 [DeathMessageParameters]: StructureDefinition-VRDR-DeathMessageParameters.html
 [DeathRecordVoidHeader]: StructureDefinition-VRDR-DeathMessageVoidHeader.html

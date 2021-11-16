@@ -162,10 +162,10 @@ Alias messages can contain aliases for one or more of the following fields:
 * Coding Messages (NCHS->Jurisdiction)
   * [CodingMessage]
     * [CodingMessageHeader]
-    * [CodingMessageParameters]
+    * [CauseOfDeathCodingMessageParameters]
   * [CodingUpdateMessage] -- same as submission, just different header flags
     * [CodingMessageUpdateHeader]
-    * [CodingMessageParameters]
+    * [CauseofDeathCodingMessageParameters]
 * [AcknowledgementMessage] (Both directions)
   * [AcknowledgementMessageHeader]
   * [DeathMessageParameters]
