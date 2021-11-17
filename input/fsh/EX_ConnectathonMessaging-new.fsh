@@ -1,6 +1,7 @@
 
 Instance: Message-MA20323-TRX-000182-Example
 InstanceOf: CodingMessage
+Description: "Need a description"
 Usage: #example
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
@@ -12,6 +13,7 @@ Usage: #example
 Instance: Header-for-MA20323-TRX-000182-Example
 InstanceOf: CodingMessageHeader
 Usage: #inline
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -20,7 +22,7 @@ Usage: #inline
 Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
-* id = "2230a510-a5b9-474d-bf05-326d963aec34"
+Description: "Need a description"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "death_year"
@@ -56,6 +58,7 @@ Alias: $HispanicCodeTitles.pdf = https://www.cdc.gov/nchs/data/dvs/HispanicCodeT
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage
 Usage: #example
+Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
 * entry[0].fullUrl = "urn:uuid:cdbe3891-d434-40a1-9328-ee8b352d70f2"
@@ -66,6 +69,7 @@ Usage: #example
 Instance: Header-MA20323-MRE-000182-Example
 InstanceOf: CodingMessageHeader
 Usage: #inline
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -74,7 +78,7 @@ Usage: #inline
 Instance: Parameters-MA20323-MRE-000182-Example
 InstanceOf: DemographicCodingMessageParameters
 Usage: #inline
-* id = "2cabb753-8eaf-4e28-ac70-5b1431da63c9"
+Description: "Need a description"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "jurisdiction_id"
@@ -105,7 +109,6 @@ Usage: #example
 Instance: Header-MA20323-TRX-000181-Example
 InstanceOf: MessageHeader
 Usage: #inline
-* id = "68c694a4-7649-4f7b-9a54-b826712987b2"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -160,7 +163,6 @@ Usage: #example
 Instance: Header-MA20323-MRE-000181-Example
 InstanceOf: MessageHeader
 Usage: #inline
-* id = "1972f3a9-e6bd-4c95-a686-6bef277e40d2"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
