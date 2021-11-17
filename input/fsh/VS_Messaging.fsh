@@ -30,15 +30,15 @@ ValueSet: DeathMessageHeaderURIVS
 Id: VRDR-DeathMessageHeaderURI-vs
 Title: "DeathMessageHeader URI Values"
 Description: "DeathMessageHeader URI Values"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmission "VRDR Submission"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmissionupdate "VRDR Update"
+* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission "VRDR Submission"
+* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionupdate "VRDR Update"
 
 
 ValueSet: CodingMessageHeaderURIVS
 Title: "CodingMessageHeader URI Values"
 Description: "CodingMessageHeader URI Values"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdrcoding "VRDR Coding"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdrcodingupdate     "VRDR Coding Update"
+* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding "VRDR Coding"
+* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate     "VRDR Coding Update"
 
 ValueSet: ACMETRANSAXCodingStatusVS
 Id: VRDR-ACMETRANSAXCodingStatus-vs

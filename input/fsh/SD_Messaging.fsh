@@ -12,7 +12,7 @@ Parent: MessageHeader
 Description:   "Death Message Submission Header"
 Id: VRDR-DeathMessageSubmissionHeader
 Title:  "Death Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmission (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathCertificateDocument)
 
@@ -21,7 +21,7 @@ Parent: MessageHeader
 Id: VRDR-DeathRecordUpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmissionupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionupdate (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathCertificateDocument)
 
@@ -30,7 +30,7 @@ Parent: MessageHeader
 Id: VRDR-DeathMessageVoidHeader
 Title:  "Death Message Void Header"
 Description:   "Death Message Void Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrsubmissionvoid (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionvoid (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageVoidParameters)
 
@@ -39,7 +39,7 @@ Parent: MessageHeader
 Id: VRDR-CodingMessageHeader
 Title:  "Coding Message Header"
 Description:   "Death Message Coding Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcoding (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters )
 
@@ -48,7 +48,7 @@ Parent: MessageHeader
 Id: VRDR-CodingMessageUpdateHeader
 Title:  "Coding Message Update Header"
 Description:   "Death Message Update Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrcodingupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters)
 
@@ -57,7 +57,7 @@ Parent: MessageHeader
 Id: VRDR-DeathMessageAliasHeader
 Title:  "Death Message Alias Header"
 Description:   "Death Message Alias Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdralias (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_alias (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageAliasParameters)
 
@@ -66,7 +66,7 @@ Parent: MessageHeader
 Id: VRDR-AcknowledgementMessageHeader
 Title:  "Acknowledgement Message Header"
 Description:   "Acknowledgement Message Header"
-* eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdracknowledgement (exactly)
+* eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdr_acknowledgement (exactly)
 * insert CommonHeaderStuff
 * response.identifier 1..1
 * response.identifier ^short = "The value of the MessageHeader.id for the message that is being acknowledged"
@@ -78,7 +78,7 @@ Parent: MessageHeader
 Id: VRDR-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdrextractionerror  (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extractionerror  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
 * response.code = #fatal-error
@@ -102,9 +102,9 @@ Title:  "Base parameter set for most Messages"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 * parameter contains
-    jurisdiction_id 1..1 and
-    cert_no 1..1 and
-    death_year 1..1 and
+    jurisdiction_id 0..1 and
+    cert_no 0..1 and
+    death_year 0..1 and
     state_auxiliary_id 0..1 MS and
     block_count 0..1 MS   // only for void messages
 * insert BaseMessageParameterSlices
@@ -239,11 +239,11 @@ Description:   "Parameters for a Coding Message"
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string
 * parameter[ethnicity].part.name from EthnicCodesVS (required)
-* parameter[ethnicity].part.value[x] only string // bind to value set
-* parameter[ethnicity].part.value[x] from HispanicOriginVS
+* parameter[ethnicity].part.value[x] only CodeableConcept // bind to value set
+* parameter[ethnicity].part.value[x] from HispanicOriginVS (required)
 * parameter[race].part.name only string
 * parameter[race].part.name from RaceCodesVS (required)
-* parameter[race].part.value[x] only string
+* parameter[race].part.value[x] only CodeableConcept
 * parameter[race].part.value[x] from RaceCodeListVS (required)
 * parameter[ethnicity].value[x] 0..0
 * parameter[ethnicity].resource 0..0

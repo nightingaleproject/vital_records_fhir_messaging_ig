@@ -167,9 +167,9 @@ Usage: #example
 Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdracknowledgement"
+* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdracknowledgement"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #ok
 * focus = Reference(MessageParameters-Example1)   // Is this needed?  Same parameters as for VoidMessageHeader...
@@ -177,51 +177,51 @@ Usage: #example
 Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrsubmissionvoid"
-* destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* eventUri = "http://nchs.cdc.gov/vrdr_submissionvoid"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(VoidMessageParameters-Example1)
 
 Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrsubmissionupdate"
-* destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* eventUri = "http://nchs.cdc.gov/vrdr_submissionupdate"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
 
 Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrsubmission"
-* destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
 
 Instance: CodingMessageHeader-Example1
 InstanceOf: CodingMessageHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrcoding"
+* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodingMessageParameters-Example1)
 
 Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdrcodingupdate"
+* eventUri = "http://nchs.cdc.gov/vrdr_codingupdate"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodingMessageParameters-Example1)
 
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
-* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdrextractionerror"
+* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extractionerror"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #fatal-error
 * response.details = Reference(DeathMessageOutcome-Example1)
@@ -332,8 +332,8 @@ Description: "Example of void message"
 Instance: AliasMessageHeader-Example1
 InstanceOf: DeathMessageAliasHeader
 Usage: #example
-* eventUri = "http://nchs.cdc.gov/vrdralias"
-* destination.endpoint = "http://nchs.cdc.gov/vrdrsubmission"
+* eventUri = "http://nchs.cdc.gov/vrdr_alias"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(AliasMessageParameters-Example1)
 
