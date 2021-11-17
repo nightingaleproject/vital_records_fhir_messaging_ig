@@ -255,7 +255,7 @@ Description: "Example of acknowledgement message"
 * entry[0].resource = AcknowledgementMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/AcknowledgementMessageHeader-Example1"
 // Other slices
-* entry[1].resource = MessageParameters-Example1
+* entry[+].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 
 Instance: CodingMessage-Example1
@@ -266,7 +266,7 @@ Description: "Example of coding message"
 * entry[0].resource = CodingMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader-Example1"
 // Other slices
-* entry[1].resource = CauseOfDeathCodingMessageParameters-Example1
+* entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
 
 Instance: CodingUpdateMessage1
@@ -277,7 +277,7 @@ Description: "Example of coding update message"
 * entry[0].resource = CodingMessageUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingUpdateHeader1"
 // Other slices
-* entry[1].resource = CauseOfDeathCodingMessageParameters-Example1
+* entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
 
 
