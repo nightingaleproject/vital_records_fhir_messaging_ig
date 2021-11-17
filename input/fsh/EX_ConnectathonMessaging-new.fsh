@@ -38,17 +38,17 @@ Description: "Need a description"
 * parameter[=].part[=].valueCoding = $icd-10#I469
 * parameter[+].name = "entity_axis_code"
 * parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueId = "1"
+* parameter[=].part[=].valueInteger = 1
 * parameter[=].part[+].name = "coding"
 * parameter[=].part[=].valueCoding = $icd-10#I469
 * parameter[+].name = "entity_axis_code"
 * parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueId = "2"
+* parameter[=].part[=].valueInteger = 2
 * parameter[=].part[+].name = "coding"
 * parameter[=].part[=].valueCoding = $icd-10#O159
 * parameter[+].name = "entity_axis_code"
 * parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueId = "6"
+* parameter[=].part[=].valueInteger = 6
 * parameter[=].part[+].name = "coding"
 * parameter[=].part[=].valueCoding = $icd-10#O95
 
