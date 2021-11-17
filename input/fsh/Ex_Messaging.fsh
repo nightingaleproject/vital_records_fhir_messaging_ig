@@ -314,9 +314,9 @@ Description: "Example of death record submission mesage"
 * entry[=].fullUrl = "urn:oid:UpdateHeader-Example1"
 // Other slices
 * entry[1].resource = MessageParameters-Example1
-* entry[=].fullUrl = "urn:oid:MessageParameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
-* entry[=].fullUrl = "urn:oid:7a4613cc-b306-49b2-a428-9f8e67e67a85"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
 Instance: DeathRecordAliasMessage-Example1
 InstanceOf: DeathRecordAliasMessage

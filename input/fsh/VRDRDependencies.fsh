@@ -288,8 +288,6 @@ Usage: #inline
 * name[=].suffix = "Jr."
 * gender = #male
 * birthDate = "1941-02-19"
-* address.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Within-City-Limits-Indicator"
-* address.extension.valueCoding = $v2-0136#N "No"
 * address.line[0] = "101 Example Street"
 * address.line[+] = "Line 2"
 * address.city = "Bedford"
