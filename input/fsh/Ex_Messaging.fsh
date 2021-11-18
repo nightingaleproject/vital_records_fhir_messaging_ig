@@ -77,6 +77,7 @@ Usage: #example
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
+Description: "Need a description"
 * parameter[jurisdiction_id].name = "jurisdiction_id"
 * parameter[jurisdiction_id].valueString = "NH"
 //* parameter[cert_no].name = "cert_no"
@@ -151,6 +152,7 @@ Usage: #example
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
 Usage: #example
+Description: "Need a description"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -158,6 +160,7 @@ Usage: #example
 Instance: VoidMessageParameters-Example1
 InstanceOf: DeathMessageVoidParameters
 Usage: #example
+Description: "Need a description"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -167,6 +170,7 @@ Usage: #example
 Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
@@ -185,6 +189,7 @@ Usage: #example
 Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_submissionupdate"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -193,6 +198,7 @@ Usage: #example
 Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -201,6 +207,7 @@ Usage: #example
 Instance: CodingMessageHeader-Example1
 InstanceOf: CodingMessageHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -210,6 +217,7 @@ Usage: #example
 Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_codingupdate"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -219,6 +227,7 @@ Usage: #example
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extractionerror"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -230,6 +239,7 @@ Usage: #example
 Instance: DeathMessageOutcome-Example1
 InstanceOf: DeathMessageOutcome
 Usage: #example
+Description: "Need a description"
 * issue.severity = #error
 * issue.code = #structure
 * issue.diagnostics = "Expected 1 or more Cause of Death Condition resources, received 0."
@@ -311,10 +321,10 @@ Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = UpdateMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/Header-Example1"
 // Other slices
 * entry[1].resource = MessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/Parameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
@@ -332,6 +342,7 @@ Description: "Example of void message"
 Instance: AliasMessageHeader-Example1
 InstanceOf: DeathMessageAliasHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_alias"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -340,6 +351,7 @@ Usage: #example
 Instance: AliasMessageParameters-Example1
 InstanceOf: DeathMessageAliasParameters
 Usage: #example
+Description: "Need a description"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
