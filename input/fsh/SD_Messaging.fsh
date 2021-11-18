@@ -239,11 +239,11 @@ Description:   "Parameters for a Coding Message"
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string
 * parameter[ethnicity].part.name from EthnicCodesVS (required)
-* parameter[ethnicity].part.value[x] only CodeableConcept // bind to value set
+* parameter[ethnicity].part.value[x] only Coding // bind to value set
 * parameter[ethnicity].part.value[x] from HispanicOriginVS (required)
 * parameter[race].part.name only string
 * parameter[race].part.name from RaceCodesVS (required)
-* parameter[race].part.value[x] only CodeableConcept
+* parameter[race].part.value[x] only Coding
 * parameter[race].part.value[x] from RaceCodeListVS (required)
 * parameter[ethnicity].value[x] 0..0
 * parameter[ethnicity].resource 0..0
