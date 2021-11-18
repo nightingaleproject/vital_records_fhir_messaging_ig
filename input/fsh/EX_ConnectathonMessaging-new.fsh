@@ -23,6 +23,7 @@ Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
 Description: "Need a description"
+* meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "death_year"
@@ -59,9 +60,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
-* entry[0].fullUrl = "urn:uuid:cdbe3891-d434-40a1-9328-ee8b352d70f2"
+* entry[0].fullUrl = "Header-MA20323-MRE-000182-Example"
 * entry[=].resource = Header-MA20323-MRE-000182-Example
-* entry[+].fullUrl = "urn:uuid:2cabb753-8eaf-4e28-ac70-5b1431da63c9"
+* entry[+].fullUrl = "Header-MA20323-MRE-000182-Parameters"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
 Instance: Header-MA20323-MRE-000182-Example
@@ -77,6 +78,7 @@ Instance: Parameters-MA20323-MRE-000182-Example
 InstanceOf: DemographicCodingMessageParameters
 Usage: #inline
 Description: "Need a description"
+* meta.profile[0] = Canonical(DemographicCodingMessageParameters)
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "jurisdiction_id"

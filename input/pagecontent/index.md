@@ -2,7 +2,7 @@
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 
-The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
+The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/Introduction.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
 
 [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
 
@@ -31,9 +31,9 @@ Vital records jurisdictions need a mechanism to void a single or a block of deat
 
 NCHS needs a mechanism to send coded causes of death as well as coded race and ethnicity information to vital records jurisdictions in response to receipt of a VRDR Death Certificate Document. NCHS also needs a mechanism to update previously-sent coding information. Causes of death codings may be sent separately from race and ethnicity codings. Updates to either may also be sent separately.
 
-The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [`Cause Of Death Condition`](http://hl7.org/fhir/us/vrdr/2019May/CauseOfDeathCondition.html) resource in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf).
+The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [`Cause Of Death Condition`](http://hl7.org/fhir/us/vrdr//CauseOfDeathCondition.html) resource in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr//DeathCertificateDocument.html) may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf).
 
-The race and ethnicity information in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/2019May/DeathCertificateDocument.html) can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
+The race and ethnicity information in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr//DeathCertificateDocument.html) can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
 
 #### Delivery Status
 
@@ -90,7 +90,7 @@ Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
 
 - __NVSS__: NCHS systems for processing and coding death reports
 
-- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/2019May/Introduction.html)
+- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/Introduction.html)
 
 - __FHIR Coding or Error__: A FHIR representation of either:
   - Causes of death coding, races and ethnicities coding, or both

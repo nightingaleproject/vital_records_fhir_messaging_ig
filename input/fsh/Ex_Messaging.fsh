@@ -275,7 +275,7 @@ Description: "Example of coding message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader-Example1"
-// Other slices
+
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
 
@@ -286,7 +286,6 @@ Description: "Example of coding update message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Message/CodingUpdateHeader1"
-// Other slices
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
 
@@ -321,10 +320,9 @@ Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = UpdateMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/Header-Example1"
-// Other slices
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/updateHeader-Example1"
 * entry[1].resource = MessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/Parameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/UpdateParameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
