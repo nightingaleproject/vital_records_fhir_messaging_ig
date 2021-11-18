@@ -7,3 +7,6 @@
       * How is ‘pregnancy checkbox’ encoded?
 * Entity Axis Codes: (1..20)
   * lineNumber + ICD-10 code
+
+
+  ICD-10 codes are in the TRANSAX dialect of ICD-10.   I14.9 becomes I149.

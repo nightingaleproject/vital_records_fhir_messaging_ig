@@ -279,10 +279,11 @@ Description:   "Parameters for a Coding Message"
 * parameter[record_cause_of_death].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 * parameter[record_cause_of_death].part contains
       coding 1..20
-* parameter[record_cause_of_death].part[coding].value[x] only CodeableConcept // bind to value set
-* parameter[record_cause_of_death].part[coding].valueCodeableConcept.coding.system = $icd-10
+// * parameter[record_cause_of_death].part[coding].value[x] only CodeableConcept // bind to value set
+// * parameter[record_cause_of_death].part[coding].valueCodeableConcept.coding.system = $icd-10
 * parameter[record_cause_of_death].part[coding].name = "coding"
-
+* parameter[record_cause_of_death].part[coding].value[x] only string
+* parameter[record_cause_of_death] ^short = "Coding of the record axis cause of death in TRANSAX dialect of ICD10"
 * parameter[entity_axis_code].part ^slicing.discriminator.type = #value
 * parameter[entity_axis_code].part ^slicing.discriminator.path = "name"
 * parameter[entity_axis_code].part ^slicing.rules = #closed
@@ -292,14 +293,15 @@ Description:   "Parameters for a Coding Message"
       coding 1..*
 * parameter[entity_axis_code].part[lineNumber] ^definition = "containing a value between 1 and 6 that codes the line number of the death certificate that corresponds to the axis entry"
 * parameter[entity_axis_code].part[lineNumber] ^short = "line number"
-* parameter[entity_axis_code].part[coding] ^definition = "Coding of the cause of death"
-* parameter[entity_axis_code].part[coding] ^short = "Coding of the cause of death"
+* parameter[entity_axis_code].part[coding] ^definition = "Coding of the cause of death in TRANSAX dialect of ICD10"
+* parameter[entity_axis_code].part[coding] ^short = "Coding of the cause of death in TRANSAX dialect of ICD10"
 * parameter[entity_axis_code].part[lineNumber].name = "lineNumber"
 * parameter[entity_axis_code].part[lineNumber].value[x] only string
 * parameter[entity_axis_code].part[coding].name = "coding"
-* parameter[entity_axis_code].part[coding].value[x] only CodeableConcept
-* parameter[entity_axis_code].part[coding].valueCodeableConcept.text 0..0
-* parameter[entity_axis_code].part[coding].valueCodeableConcept.coding.system = $icd-10
+* parameter[entity_axis_code].part[coding].value[x] only string
+// * parameter[entity_axis_code].part[coding].value[x] only CodeableConcept
+// * parameter[entity_axis_code].part[coding].valueCodeableConcept.text 0..0
+// * parameter[entity_axis_code].part[coding].valueCodeableConcept.coding.system = $icd-10
 * parameter[record_cause_of_death].value[x] 0..0
 * parameter[record_cause_of_death].resource 0..0
 * parameter[entity_axis_code].value[x] 0..0
