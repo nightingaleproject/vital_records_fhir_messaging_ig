@@ -109,10 +109,10 @@ Description: "Need a description"
 * entry[=].resource.extension[=].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * entry[=].resource.extension[+].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * entry[=].resource.extension[=].valueCode = #F
-* entry[=].resource.extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-* entry[=].resource.extension[=].valueAddress.city = "Atlanta"
-* entry[=].resource.extension[=].valueAddress.state = "GA"
-* entry[=].resource.extension[=].valueAddress.country = "United States"
+// * entry[=].resource.extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+// * entry[=].resource.extension[=].valueAddress.city = "Atlanta"
+// * entry[=].resource.extension[=].valueAddress.state = "GA"
+// * entry[=].resource.extension[=].valueAddress.country = "United States"
 * entry[=].resource.identifier.type = $v2-0203#SB "Social Beneficiary Identifier"
 * entry[=].resource.identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * entry[=].resource.identifier.value = "555111234"
@@ -429,9 +429,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
-* entry[0].fullUrl = "urn:uuid:cdbe3891-d434-40a1-9328-ee8b352d70f2"
+* entry[0].fullUrl = "Header-MA20323-MRE-000182-Example-old"
 * entry[=].resource = Header-MA20323-MRE-000182-Example-old
-* entry[+].fullUrl = "urn:uuid:2cabb753-8eaf-4e28-ac70-5b1431da63c9"
+* entry[+].fullUrl = "Header-MA20323-MRE-000182-Example-old"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example-old
 
 Instance: Header-MA20323-MRE-000182-Example-old
@@ -447,7 +447,6 @@ Instance: Parameters-MA20323-MRE-000182-Example-old
 InstanceOf: Parameters
 Usage: #inline
 Description: "Need a description"
-* id = "2cabb753-8eaf-4e28-ac70-5b1431da63c9"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "jurisdiction_id"
@@ -480,7 +479,6 @@ Instance: Header-MA20323-TRX-000181-Example-old
 InstanceOf: MessageHeader
 Usage: #inline
 Description: "Need a description"
-* id = "68c694a4-7649-4f7b-9a54-b826712987b2"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -538,7 +536,6 @@ Instance: Header-MA20323-MRE-000181-Example-old
 InstanceOf: MessageHeader
 Usage: #inline
 Description: "Need a description"
-* id = "1972f3a9-e6bd-4c95-a686-6bef277e40d2"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -564,7 +561,7 @@ Description: "Need a description"
 * parameter[=].part.valueCoding = $HispanicCodeTitles.pdf#999
 
 
-
+/*
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -574,7 +571,7 @@ Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-t
 Alias: $list-order = http://terminology.hl7.org/CodeSystem/list-order
 Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
-
+*/
 Instance: Vivienne-Wright-182-Example-old
 InstanceOf: Bundle
 Usage: #example
@@ -601,7 +598,6 @@ Instance: Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-1
 InstanceOf: Parameters
 Usage: #inline
 Description: "Need a description"
-* id = "7e9fe93f-c9ea-484a-a98b-11ef21edd48a"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "death_year"
@@ -613,7 +609,6 @@ Instance: Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-2
 InstanceOf: Bundle
 Usage: #inline
 Description: "Need a description"
-* id = "19361ad2-fc61-4eef-9332-6bd31acedca7"
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Certificate-Document"
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
 * identifier.value = "2020MA000182"

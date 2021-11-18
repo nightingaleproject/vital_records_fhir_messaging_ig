@@ -355,7 +355,7 @@ Title: "Coding Message"
 Description:   "Message for coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
-* insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageHeader)
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
 * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
 * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicCodingMessageParameters)
 
@@ -367,8 +367,8 @@ Title: "Coding Update Message"
 Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
-* insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, CodingMessageUpdateHeader)
-* insert BundleEntry(codingParameters, 1, 1, Coding Message Parameters, Coding Parameters, DemographicCodingMessageParameters or CauseOfDeathCodingMessageParameters)
+* insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicCodingMessageParameters)
 
 
 Profile: AcknowledgementMessage
