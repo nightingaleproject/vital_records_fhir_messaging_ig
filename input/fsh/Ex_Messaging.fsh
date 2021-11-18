@@ -298,7 +298,7 @@ Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = SubmissionMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageHeader-Example1"
 // Other slices
 * entry[1].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
