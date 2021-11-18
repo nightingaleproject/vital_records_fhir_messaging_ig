@@ -2,6 +2,7 @@ CodeSystem: InternalRejectCodesCS
 Id: VRDR-InternalRejectCodes-cs
 Title: "System Reject Codes Values"
 Description: "System Reject Codes Values"
+* ^caseSensitive = true
 * #1 "Reject1" "Reject1"
 * #2 "Reject2" "Reject2"
 * #3 "Reject3" "Reject3"
@@ -17,6 +18,7 @@ CodeSystem: RaceCodesCS
 Id: VRDR-Race-cs
 Title: "Race Codes Values"
 Description: "Race Code Values"
+* ^caseSensitive = true
 // RACE1E..RACE8EorRACE16C..RACE23CorRACEBRG
 * #RACE1E "RACE1E" "RACE1E"
 * #RACE2E "RACE2E" "RACE2E"
@@ -39,6 +41,7 @@ CodeSystem: SystemRejectCodesCS
 Id: VRDR-SystemRejectCodes-cs
 Title: "System Reject Codes Values"
 Description: "System Reject Codes Values"
+* ^caseSensitive = true
 * #ACMEReject "ACMEReject" "ACME Reject"
 * #MICARRejectDdictionaryMatch "MICARRejectDictionaryMatch" "MICAR Reject - Dictionary match"
 * #MICARRejectRuleApplication "MICARRejectRuleApplication" "MICAR Reject - Rule Application"
@@ -49,12 +52,13 @@ CodeSystem: MessageHeaderURICS
 Id: VRDR-MessageHeaderURI-cs
 Title: "MessageHeader URI Values"
 Description: "MessageHeader URI Values"
+* ^caseSensitive = true
 * #http://nchs.cdc.gov/vrdr_submission "VRDR Submission" "Indicates that the payload is aninitial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
 Document"
-* #http://nchs.cdc.gov/vrdr_submissionupdate "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document "
-* #http://nchs.cdc.gov/vrdr_submissionvoid   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document "
-* #http://nchs.cdc.gov/vrdr_acknowledgement  "VRDR Acknowledgement" "Indicates this is  an  acknowledgement "
-* #http://nchs.cdc.gov/vrdr_codingupdate     "VRDR Coding Update" "Indicates this is  an  coding update "
+* #http://nchs.cdc.gov/vrdr_submissionupdate "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document"
+* #http://nchs.cdc.gov/vrdr_submissionvoid   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document"
+* #http://nchs.cdc.gov/vrdr_acknowledgement  "VRDR Acknowledgement" "Indicates this is  an  acknowledgement"
+* #http://nchs.cdc.gov/vrdr_codingupdate     "VRDR Coding Update" "Indicates this is  an  coding update"
 * #http://nchs.cdc.gov/vrdr_coding "VRDR Coding" "Inidicates that this is an initial coding"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 * #http://nchs.cdc.gov/vrdr_extractionerror "VRDR Extraction Error" "Indicates that this is an extraction error"
@@ -63,6 +67,7 @@ CodeSystem: ACMETRANSAXCodingStatusCS
 Id: VRDR-ACMETRANSAXCodingStatus-cs
 Title: "ACMETRANSAX Coding StatusCS"
 Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation](https://ftp.cdc.gov/pub/HealthStatistics/NCHS/Software/MICAR/DataEntrySoftware/ACMETRANSAX/Documentation/auser.pdf)"
+* ^caseSensitive = true
 * #0 "0" "0"
 * #1 "1" "1"
 * #2 "2" "2"
@@ -78,6 +83,7 @@ CodeSystem: EthnicCodesCS
 Id: VRDR-EthnicCodes-cs
 Title: "Ethnic Codes Values"
 Description: "EthnicCodes Values"
+* ^caseSensitive = true
 * #DETHNICE "DETHNICE" "DETHNICE"
 * #DETHNIC5C "DETHNIC5C"
 
@@ -85,6 +91,7 @@ CodeSystem: HispanicOriginCS
 Id: VRDR-HispanicOrigin-cs
 Title: "HispanicOrigin CS"
 Description: "HispanicOrigin from https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf"
+* ^caseSensitive = true
 // 100-199 Not Hispanic
 * #100 "Not Hispanic"
 * #200 "Spaniard"
@@ -168,6 +175,7 @@ CodeSystem: RaceCodeListCS
 Id: VRDR-RaceCodeList-cs
 Title: "Race Code List CS"
 Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
+* ^caseSensitive = true
 // WHITE (100-199) White
 * #101 "White"
 * #102 "Arab"
