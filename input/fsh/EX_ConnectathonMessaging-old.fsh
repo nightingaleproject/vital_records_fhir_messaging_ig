@@ -429,9 +429,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
-* entry[0].fullUrl = "Header-MA20323-MRE-000182-Example-old"
+* entry[0].fullUrl = "Header-MA20323-MRE-000182-Header-old"
 * entry[=].resource = Header-MA20323-MRE-000182-Example-old
-* entry[+].fullUrl = "Header-MA20323-MRE-000182-Example-old"
+* entry[+].fullUrl = "Header-MA20323-MRE-000182-Parameters-old"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example-old
 
 Instance: Header-MA20323-MRE-000182-Example-old
@@ -470,9 +470,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
-* entry[0].fullUrl = "urn:uuid:68c694a4-7649-4f7b-9a54-b826712987b2"
+* entry[0].fullUrl = "Header-MA20323-TRX-000182-Header-old"
 * entry[=].resource = Header-MA20323-TRX-000181-Example-old
-* entry[+].fullUrl = "urn:uuid:bd303372-79c9-44cd-965e-96fe3b1024ad"
+* entry[+].fullUrl = "Header-MA20323-TRX-000182-Parameters-old"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example-old
 
 Instance: Header-MA20323-TRX-000181-Example-old
