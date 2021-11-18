@@ -177,6 +177,7 @@ Title: "Race Code List CS"
 Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
 * ^caseSensitive = true
 // WHITE (100-199) White
+* #100 "White Checkbox"
 * #101 "White"
 * #102 "Arab"
 * #103 "English"
@@ -212,6 +213,7 @@ Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.p
 * #133 "BOSNIAN"
 * #134 "KOSOVIAN"
 * #199 "Multiple WHITE responses"
+* #200 "Black or African American"
 // BLACK OR AFRICAN AMERICAN (200-299) Black
 * #201 "Black"
 * #202 "African"
@@ -223,7 +225,6 @@ Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.p
 * #208 "Barbadian"
 * #209 "Botswana"
 * #213 "Ethiopian"
-// BLACK OR AFRICAN AMERICAN (200-299) Black
 * #214 "Haitian"
 * #215 "Jamaican"
 * #216 "Liberian"

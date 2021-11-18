@@ -52,8 +52,6 @@ Description: "Need a description"
 * parameter[=].part[+].name = "coding"
 * parameter[=].part[=].valueString = "O95"
 
-Alias: $RaceCodeList.pdf = https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf
-Alias: $HispanicCodeTitles.pdf = https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf
 
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage
@@ -87,14 +85,14 @@ Description: "Need a description"
 * parameter[=].valueUnsignedInt = 2020
 * parameter[+].name = "race"
 * parameter[=].part[0].name = "RACE1E"
-* parameter[=].part[=].valueCoding = $RaceCodeList.pdf#100
+* parameter[=].part[=].valueCoding = RaceCodeListCS#100
 * parameter[=].part[+].name = "RACE2E"
-* parameter[=].part[=].valueCoding = $RaceCodeList.pdf#300
+* parameter[=].part[=].valueCoding = RaceCodeListCS#300
 //* parameter[=].part[+].name = "RACEBRG"
-//* parameter[=].part[=].valueCoding = $RaceCodeList.pdf#21
+//* parameter[=].part[=].valueCoding = RaceCodeListCS#21
 * parameter[+].name = "ethnicity"
 * parameter[=].part.name = "DETHNICE"
-* parameter[=].part.valueCoding = $HispanicCodeTitles.pdf#999
+* parameter[=].part.valueCoding = VRDR-HispanicOrigin-cs#999
 
 /* Instance: Message-MA20323-TRX-000181-Example
 InstanceOf: Bundle
@@ -179,10 +177,10 @@ Usage: #inline
 * parameter[=].valueUnsignedInt = 2020
 * parameter[+].name = "race"
 * parameter[=].part[0].name = "RACE1E"
-* parameter[=].part[=].valueCoding = $RaceCodeList.pdf#400
+* parameter[=].part[=].valueCoding = VRDR-RaceCode-cs#400
 * parameter[=].part[+].name = "RACEBRG"
-* parameter[=].part[=].valueCoding = $RaceCodeList.pdf#04
+* parameter[=].part[=].valueCoding = VRDR-RaceCode-cs#04
 * parameter[+].name = "ethnicity"
 * parameter[=].part.name = "DETHNICE"
-* parameter[=].part.valueCoding = $HispanicCodeTitles.pdf#999
+* parameter[=].part.valueCoding = VRDR-HispanicOrigin-cs#999
 */
