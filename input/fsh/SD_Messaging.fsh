@@ -229,6 +229,8 @@ Parent: DeathMessageParameters
 Id: VRDR-DemographicCodingMessageParameters
 Title:  "Demographic Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
+* meta.profile 1..*
+* meta.profile = Canonical(DemographicCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
      ethnicity 0..1 and // part contains name=DETHNICE, codeable
@@ -257,6 +259,8 @@ Parent: DeathMessageParameters
 Id: VRDR-CauseOfDeathCodingMessageParameters
 Title:  "Cause of Death Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
+* meta.profile 1..*
+* meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
      // underlying_cause_of_death 0..1 and // icd10
@@ -311,7 +315,7 @@ Description:   "Parameters for a Coding Message"
 Profile: DeathRecordSubmissionMessage
 Parent: Bundle
 Id: VRDR-DeathRecordSubmissionMessage
-Title: "Death Record Submission Message "
+Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageSubmissionHeader)
@@ -333,7 +337,7 @@ Description:   "Message for updating death records"
 Profile: DeathRecordVoidMessage
 Parent: Bundle
 Id: VRDR-DeathRecordVoidMessage
-Title: "Death Record Void Message "
+Title: "Death Record Void Message"
 Description:   "Message for voiding death records"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
