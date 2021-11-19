@@ -94,7 +94,7 @@ Description: "Need a description"
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
 * entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-MRE-000182-Example"
 * entry[=].resource = Header-MA20323-MRE-000182-Example
-* entry[+].fullUrl = "http://example.org/Parameters/Header-MA20323-MRE-000182-Parameters"
+* entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-MRE-000182-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
 Instance: Header-MA20323-MRE-000182-Example
