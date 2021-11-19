@@ -216,7 +216,7 @@ Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* focus = Reference(Message-MA20323-MRE-000181-Example-old)
+* focus = Reference(Parameters-MA20323-MRE-000181-Example-old)
 
 Instance: Parameters-MA20323-MRE-000181-Example-old
 InstanceOf: Parameters

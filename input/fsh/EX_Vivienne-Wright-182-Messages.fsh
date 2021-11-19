@@ -37,9 +37,9 @@ Description: "Need a description"
 Usage: #example
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
-* entry[0].fullUrl = "urn:uuid:d570c223-492f-47c5-b030-0d52bbc70655"
+* entry[0].fullUrl = "http://example/org/MessageHeader/Header-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Header-for-MA20323-TRX-000182-Example
-* entry[+].fullUrl = "urn:uuid:2230a510-a5b9-474d-bf05-326d963aec34"
+* entry[+].fullUrl = "http://example.org/Parameters/Parameters-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
 Instance: Header-for-MA20323-TRX-000182-Example
