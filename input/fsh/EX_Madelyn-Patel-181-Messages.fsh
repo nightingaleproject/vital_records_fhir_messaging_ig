@@ -107,6 +107,7 @@ Usage: #inline
 Instance: Parameters-MA20323-MRE-000181-Example
 InstanceOf: DemographicCodingMessageParameters
 Usage: #inline
+* meta.profile[0] = Canonical(DemographicCodingMessageParameters)
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 181
 * parameter[+].name = "jurisdiction_id"
