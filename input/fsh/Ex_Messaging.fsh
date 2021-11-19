@@ -250,7 +250,7 @@ Usage: #example
 Description: "Example of extraction error message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = ExtractionErrorHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/ExtractionErrorHeader1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/ExtractionErrorHeader1"
 // Other slices
 * entry[1].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
@@ -263,7 +263,7 @@ Usage: #example
 Description: "Example of acknowledgement message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = AcknowledgementMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/AcknowledgementMessageHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/AcknowledgementMessageHeader-Example1"
 // Other slices
 * entry[+].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
@@ -274,7 +274,7 @@ Usage: #example
 Description: "Example of coding message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/CodingHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CodingHeader-Example1"
 
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
@@ -285,7 +285,7 @@ Usage: #example
 Description: "Example of coding update message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageUpdateHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/CodingUpdateHeader1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodingUpdateHeader1"
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
 
@@ -296,7 +296,7 @@ Usage: #example
 Description: "Example of void message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = VoidMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/VoidMessageHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/VoidMessageHeader-Example1"
 // Other slices
 * entry[1].resource = VoidMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/VoidMessageParameters-Example1"
@@ -307,8 +307,7 @@ Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = SubmissionMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageHeader-Example1"
-// Other slices
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/MessageHeader-Example1"
 * entry[1].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
@@ -317,12 +316,12 @@ Description: "Example of death record submission mesage"
 Instance: DeathRecordUpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage
 Usage: #example
-Description: "Example of death record submission mesage"
+Description: "Example of death record submission message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = UpdateMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/updateHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/UpdateHeader-Example1"
 * entry[1].resource = MessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/UpdateParameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/Parameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
@@ -332,7 +331,7 @@ Usage: #example
 Description: "Example of void message"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = AliasMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Message/AliasMessageHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/AliasMessageHeader-Example1"
 // Other slices
 * entry[1].resource = AliasMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/AliasMessageParameters-Example1"

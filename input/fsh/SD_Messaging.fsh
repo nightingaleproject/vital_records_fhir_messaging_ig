@@ -368,7 +368,7 @@ Id: VRDR-CodingUpdateMessage
 Title: "Coding Update Message"
 Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
-* insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
+* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
 * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
 * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicCodingMessageParameters)
 

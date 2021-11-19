@@ -470,9 +470,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
-* entry[0].fullUrl = "Header-MA20323-TRX-000182-Header-old"
+* entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-TRX-000182-Header-old"
 * entry[=].resource = Header-MA20323-TRX-000181-Example-old
-* entry[+].fullUrl = "Header-MA20323-TRX-000182-Parameters-old"
+* entry[+].fullUrl = "http://example.org/fhir/Parameters/Parameters-MA20323-TRX-000182-Parameters-old"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example-old
 
 Instance: Header-MA20323-TRX-000181-Example-old
@@ -527,9 +527,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.452214-05:00"
-* entry[0].fullUrl = "urn:uuid:1972f3a9-e6bd-4c95-a686-6bef277e40d2"
+* entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-MRE-000181-Example-old"
 * entry[=].resource = Header-MA20323-MRE-000181-Example-old
-* entry[+].fullUrl = "urn:uuid:ca694432-35a9-4295-b1e3-87c55f05d53f"
+* entry[+].fullUrl = "http://example.org/fhir/Parameters/Parameters-MA20323-MRE-000181-Example-old"
 * entry[=].resource = Parameters-MA20323-MRE-000181-Example-old
 
 Instance: Header-MA20323-MRE-000181-Example-old

@@ -90,7 +90,7 @@ Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
 
 - __NVSS__: NCHS systems for processing and coding death reports
 
-- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/Introduction.html)
+- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/index.html)
 
 - __FHIR Coding or Error__: A FHIR representation of either:
   - Causes of death coding, races and ethnicities coding, or both
