@@ -241,7 +241,8 @@ Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.p
 * #299 "Multiple BLACK or AFRICAN AMERICAN responses"
 // AMERICAN INDIAN AND ALASKA NATIVE (300-399, A01-R99) American Indian or Alaskan Native
 * #300 "American Indian Checkbox"
-// ASIAN (400-499) Asian Indian
+// ASIAN (400-499)
+* #400 "Asian"
 * #401 "Asian Indian"
 * #402 "Bangladeshi"
 * #403 "Bhutanese"
