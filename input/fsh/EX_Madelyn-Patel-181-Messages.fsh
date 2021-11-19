@@ -4,11 +4,11 @@ Usage: #example
 Description: "Need a Description"
 * type = #message
 * timestamp = "2020-11-17T16:39:48.847917-05:00"
-* entry[0].fullUrl = "http://examples.org/MessageHeader/Madelyn-Patel-181-Header-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Madelyn-Patel-181-Header-Example"
 * entry[=].resource = Madelyn-Patel-181-Header-Example
-* entry[+].fullUrl = "http://examples.org/Parameters/Madelyn-Patel-181-Parameters-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Madelyn-Patel-181-Parameters-Example"
 * entry[=].resource = Madelyn-Patel-181-Parameters-Example
-* entry[+].fullUrl = "http://examples.org/Bundle/Madelyn-Patel-181-Death-Certificate-Document-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Bundle/Madelyn-Patel-181-Death-Certificate-Document-Example"
 * entry[=].resource = Madelyn-Patel-181-Death-Certificate-Document-Example
 
 Instance: Madelyn-Patel-181-Header-Example

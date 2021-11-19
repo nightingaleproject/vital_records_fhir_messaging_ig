@@ -4,11 +4,11 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-17T16:39:54.658923-05:00"
-* entry[0].fullUrl = "http://example.org/MessageHeader/Vivienne-Wright-182-Header-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Vivienne-Wright-182-Header-Example"
 * entry[=].resource = Vivienne-Wright-182-Header-Example
-* entry[+].fullUrl = "http://example.org/Parameters/Vivienne-Wright-182-Parameters-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Vivienne-Wright-182-Parameters-Example"
 * entry[=].resource = Vivienne-Wright-182-Parameters-Example
-* entry[+].fullUrl = "http://example.org/Bundle/Vivienne-Wright-182-Death-Certificate-Document-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Bundle/Vivienne-Wright-182-Death-Certificate-Document-Example"
 * entry[=].resource = Vivienne-Wright-182-Death-Certificate-Document-Example
 
 Instance: Vivienne-Wright-182-Header-Example
@@ -37,9 +37,9 @@ Description: "Need a description"
 Usage: #example
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
-* entry[0].fullUrl = "http://example/org/MessageHeader/Header-for-MA20323-TRX-000182-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Header-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Header-for-MA20323-TRX-000182-Example
-* entry[+].fullUrl = "http://example.org/Parameters/Parameters-for-MA20323-TRX-000182-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
 Instance: Header-for-MA20323-TRX-000182-Example
@@ -92,9 +92,9 @@ Usage: #example
 Description: "Need a description"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
-* entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-MRE-000182-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Header-MA20323-MRE-000182-Example"
 * entry[=].resource = Header-MA20323-MRE-000182-Example
-* entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-MRE-000182-Example"
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-MA20323-MRE-000182-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
 Instance: Header-MA20323-MRE-000182-Example
