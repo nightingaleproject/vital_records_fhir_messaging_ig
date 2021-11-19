@@ -19,8 +19,8 @@ Description: "Need a description"
 * entry[=].resource = Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
 * entry[+].fullUrl = "urn:uuid:f12c77ee-c72b-4b69-bb17-93b2227185d3"
 * entry[=].resource = f12c77ee-c72b-4b69-bb17-93b2227185d3
-* entry[+].fullUrl = "urn:uuid:f2db4a81-f817-4cc7-b677-19410ce8d13f"
-* entry[=].resource = f2db4a81-f817-4cc7-b677-19410ce8d13f
+* entry[+].fullUrl = "http://example/org/Bundle/Janet-Page-180-Death-Certificate-Document-Example"
+* entry[=].resource = Janet-Page-180-Death-Certificate-Document-Example
 
 Instance: Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
 InstanceOf: MessageHeader
@@ -43,7 +43,7 @@ Description: "Need a description"
 * parameter[+].name = "jurisdiction_id"
 * parameter[=].valueString = "MA"
 
-Instance: f2db4a81-f817-4cc7-b677-19410ce8d13f
+Instance: Janet-Page-180-Death-Certificate-Document-Example
 InstanceOf: Bundle
 Usage: #inline
 Description: "Need a description"

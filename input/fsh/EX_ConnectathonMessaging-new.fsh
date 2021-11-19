@@ -1,3 +1,35 @@
+Instance: Vivienne-Wright-182-Example
+InstanceOf: DeathRecordSubmissionMessage
+Usage: #example
+Description: "Need a description"
+* type = #message
+* timestamp = "2020-11-17T16:39:54.658923-05:00"
+* entry[0].fullUrl = "http://example.org/MessageHeader/Vivienne-Wright-182-Header-Example"
+* entry[=].resource = Vivienne-Wright-182-Header-Example
+* entry[+].fullUrl = "http://example.org/Parameters/Vivienne-Wright-182-Parameters-Example"
+* entry[=].resource = Vivienne-Wright-182-Parameters-Example
+* entry[+].fullUrl = "urn:uuid:19361ad2-fc61-4eef-9332-6bd31acedca7"
+* entry[=].resource = Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-2
+
+Instance: Vivienne-Wright-182-Header-Example
+InstanceOf: DeathMessageSubmissionHeader
+Usage: #inline
+Description: "Need a description"
+* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "http://mitre.org/vrdr"
+* focus = Reference(urn:uuid:19361ad2-fc61-4eef-9332-6bd31acedca7)
+
+Instance: Vivienne-Wright-182-Parameters-Example
+InstanceOf: DeathMessageParameters
+Usage: #inline
+Description: "Need a description"
+* parameter[0].name = "cert_no"
+* parameter[=].valueUnsignedInt = 182
+* parameter[+].name = "death_year"
+* parameter[=].valueUnsignedInt = 2020
+* parameter[+].name = "jurisdiction_id"
+* parameter[=].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000182-Example
 InstanceOf: CodingMessage
