@@ -151,7 +151,7 @@ Description: "Need a description"
 
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
-Usage: #example
+Usage: #inline
 Description: "Need a description"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
@@ -308,7 +308,7 @@ Usage: #example
 Description: "Example of death record submission mesage"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = SubmissionMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/MessageHeader-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/SubmissionMessageHeader-Example1"
 * entry[1].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
@@ -322,7 +322,7 @@ Description: "Example of death record submission message"
 * entry[0].resource = UpdateMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/UpdateHeader-Example1"
 * entry[1].resource = MessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/Parameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
 
