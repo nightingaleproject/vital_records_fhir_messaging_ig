@@ -53,37 +53,21 @@ Instance: Parameters-MA20323-TRX-000181-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 181
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
+* parameter[cert_no].valueUnsignedInt = 181
+* parameter[death_year].valueUnsignedInt = 2020
+* parameter[jurisdiction_id].valueString = "MA"
 //* parameter[+].name = "underlying_cause_of_death"
 //* parameter[=].valueString = "X42"
-* parameter[+].name = "record_cause_of_death"
-* parameter[=].part[0].name = "coding"
-* parameter[=].part[=].valueString = "X42"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "I119"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "T405"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "T509"
-* parameter[+].name = "entity_axis_code"
-* parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueString = "1"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "T405"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "X42"
-* parameter[+].name = "entity_axis_code"
-* parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueString = "6"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "I119"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "T509"
+* parameter[record_cause_of_death].part[coding][0].valueString = "X42"
+* parameter[record_cause_of_death].part[coding][+].valueString = "I119"
+* parameter[record_cause_of_death].part[coding][+].valueString = "T405"
+* parameter[record_cause_of_death].part[coding][+].valueString = "T509"
+* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
+* parameter[entity_axis_code][=].part[coding][0].valueString = "T405"
+* parameter[entity_axis_code][=].part[coding][+].valueString = "X42"
+* parameter[entity_axis_code][+].part[lineNumber].valueString = "6"
+* parameter[entity_axis_code][=].part[coding][+].valueString = "I119"
+* parameter[entity_axis_code][=].part[coding][+].valueString = "T509"
 
 
 Instance: Message-MA20323-MRE-000181-Example
@@ -108,11 +92,8 @@ Instance: Parameters-MA20323-MRE-000181-Example
 InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 181
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
+* parameter[cert_no].valueUnsignedInt = 181
+* parameter[jurisdiction_id].valueString = "MA"
+* parameter[death_year].valueUnsignedInt = 2020
 * parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#400
 * parameter[ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
