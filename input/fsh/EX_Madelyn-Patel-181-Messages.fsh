@@ -59,8 +59,8 @@ Usage: #inline
 * parameter[=].valueUnsignedInt = 2020
 * parameter[+].name = "jurisdiction_id"
 * parameter[=].valueString = "MA"
-* parameter[+].name = "underlying_cause_of_death"
-* parameter[=].valueString = "X42"
+//* parameter[+].name = "underlying_cause_of_death"
+//* parameter[=].valueString = "X42"
 * parameter[+].name = "record_cause_of_death"
 * parameter[=].part[0].name = "coding"
 * parameter[=].part[=].valueString = "X42"
