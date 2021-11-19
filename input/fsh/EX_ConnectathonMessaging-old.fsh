@@ -269,7 +269,7 @@ Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
-* focus = Reference(urn:uuid:19361ad2-fc61-4eef-9332-6bd31acedca7)
+* focus = Reference(Vivienne-Wright-182-Death-Certificate-Document-Example)
 
 Instance: Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-1
 InstanceOf: Parameters
