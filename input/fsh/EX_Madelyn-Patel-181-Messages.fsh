@@ -18,7 +18,7 @@ Usage: #inline
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
-* focus = Reference(urn:uuid:e63a916a-b0fc-4540-bdd0-2c70fb9e4eb5)
+* focus = Reference(Madelyn-Patel-181-Death-Certificate-Document-Example)
 
 Instance: Madelyn-Patel-181-Parameters-Example
 InstanceOf: DeathMessageParameters

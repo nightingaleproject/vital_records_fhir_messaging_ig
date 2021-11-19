@@ -9,39 +9,39 @@ Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 
-Instance: Janet-Page-180-Example-old
-InstanceOf: Bundle
-Usage: #example
-Description: "Need a description"
-* type = #message
-* timestamp = "2020-11-17T16:39:40.54055-05:00"
-* entry[0].fullUrl = "urn:uuid:5a1bfcd1-de16-4d63-802a-38fcf19b9c08"
-* entry[=].resource = Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
-* entry[+].fullUrl = "urn:uuid:f12c77ee-c72b-4b69-bb17-93b2227185d3"
-* entry[=].resource = f12c77ee-c72b-4b69-bb17-93b2227185d3
-* entry[+].fullUrl = "http://example/org/Bundle/Janet-Page-180-Death-Certificate-Document-Example"
-* entry[=].resource = Janet-Page-180-Death-Certificate-Document-Example
+// Instance: Janet-Page-180-Example-old
+// InstanceOf: Bundle
+// Usage: #example
+// Description: "Need a description"
+// * type = #message
+// * timestamp = "2020-11-17T16:39:40.54055-05:00"
+// * entry[0].fullUrl = "urn:uuid:5a1bfcd1-de16-4d63-802a-38fcf19b9c08"
+// * entry[=].resource = Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
+// * entry[+].fullUrl = "urn:uuid:f12c77ee-c72b-4b69-bb17-93b2227185d3"
+// * entry[=].resource = f12c77ee-c72b-4b69-bb17-93b2227185d3
+// * entry[+].fullUrl = "http://example/org/Bundle/Janet-Page-180-Death-Certificate-Document-Example"
+// * entry[=].resource = Janet-Page-180-Death-Certificate-Document-Example
 
-Instance: Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
-InstanceOf: MessageHeader
-Usage: #inline
-Description: "Need a description"
-* id = "5a1bfcd1-de16-4d63-802a-38fcf19b9c08"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
-* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "http://mitre.org/vrdr"
-* focus = Reference(Janet-Page-180-Death-Certificate-Document-Example)
+// Instance: Inline-Instance-for-8285c9fe-0ff3-4a79-82f1-29fe82c4dd8c-1
+// InstanceOf: MessageHeader
+// Usage: #inline
+// Description: "Need a description"
+// * id = "5a1bfcd1-de16-4d63-802a-38fcf19b9c08"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
+// * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * source.endpoint = "http://mitre.org/vrdr"
+// * focus = Reference(Janet-Page-180-Death-Certificate-Document-Example)
 
-Instance: f12c77ee-c72b-4b69-bb17-93b2227185d3
-InstanceOf: Parameters
-Usage: #inline
-Description: "Need a description"
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 180
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
+// Instance: f12c77ee-c72b-4b69-bb17-93b2227185d3
+// InstanceOf: Parameters
+// Usage: #inline
+// Description: "Need a description"
+// * parameter[0].name = "cert_no"
+// * parameter[=].valueUnsignedInt = 180
+// * parameter[+].name = "death_year"
+// * parameter[=].valueUnsignedInt = 2020
+// * parameter[+].name = "jurisdiction_id"
+// * parameter[=].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000182-Example-old
 InstanceOf: Bundle
@@ -259,8 +259,8 @@ Description: "Need a description"
 * entry[=].resource = ce3a298c-4254-4cd3-890f-15864a6688c1
 * entry[+].fullUrl = "urn:uuid:7e9fe93f-c9ea-484a-a98b-11ef21edd48a"
 * entry[=].resource = Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-1
-* entry[+].fullUrl = "urn:uuid:19361ad2-fc61-4eef-9332-6bd31acedca7"
-* entry[=].resource = Inline-Instance-for-7df11989-9720-4ec4-ba87-0bb9abc8610e-2
+* entry[+].fullUrl = "http://examples/org/Bundle/Vivienne-Wright-182-Death-Certificate-Document-Example"
+* entry[=].resource = Vivienne-Wright-182-Death-Certificate-Document-Example
 
 Instance: ce3a298c-4254-4cd3-890f-15864a6688c1
 InstanceOf: MessageHeader
