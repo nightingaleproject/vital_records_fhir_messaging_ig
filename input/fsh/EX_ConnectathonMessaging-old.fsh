@@ -30,7 +30,7 @@ Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
-* focus = Reference(urn:uuid:f2db4a81-f817-4cc7-b677-19410ce8d13f)
+* focus = Reference(Janet-Page-180-Death-Certificate-Document-Example)
 
 Instance: f12c77ee-c72b-4b69-bb17-93b2227185d3
 InstanceOf: Parameters
