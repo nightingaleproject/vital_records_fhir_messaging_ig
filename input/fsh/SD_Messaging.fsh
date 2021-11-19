@@ -355,6 +355,10 @@ Parent: Bundle
 Id: VRDR-CodingMessage
 Title: "Coding Message"
 Description:   "Message for coding response to death records"
+* entry ^slicing.discriminator.type = #pattern
+* entry ^slicing.discriminator.path = "resource.meta.profile"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)

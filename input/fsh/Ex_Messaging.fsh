@@ -181,6 +181,7 @@ Description: "Need a description"
 Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
+Description: "Need a description"
 * eventUri = "http://nchs.cdc.gov/vrdr_submissionvoid"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
