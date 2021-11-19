@@ -105,18 +105,14 @@ Usage: #inline
 * focus = Reference(Parameters-MA20323-MRE-000181-Example)
 
 Instance: Parameters-MA20323-MRE-000181-Example
-InstanceOf: DemographicCodingMessageParameters
+InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
-* meta.profile[0] = Canonical(DemographicCodingMessageParameters)
+* meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 181
 * parameter[+].name = "jurisdiction_id"
 * parameter[=].valueString = "MA"
 * parameter[+].name = "death_year"
 * parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "race"
-* parameter[=].part[0].name = "RACE1E"
-* parameter[=].part[=].valueCoding = RaceCodeListCS#400
-* parameter[+].name = "ethnicity"
-* parameter[=].part.name = "DETHNICE"
-* parameter[=].part.valueCoding = HispanicOriginCS#999
+* parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#400
+* parameter[ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999

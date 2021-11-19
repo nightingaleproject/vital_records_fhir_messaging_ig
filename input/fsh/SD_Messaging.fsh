@@ -41,7 +41,7 @@ Title:  "Coding Message Header"
 Description:   "Death Message Coding Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters )
+* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters )
 
 Profile:  CodingMessageUpdateHeader
 Parent: MessageHeader
@@ -50,7 +50,7 @@ Title:  "Coding Message Update Header"
 Description:   "Death Message Update Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicCodingMessageParameters)
+* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
 
 Profile:  DeathMessageAliasHeader
 Parent: MessageHeader
@@ -154,83 +154,14 @@ RuleSet: BasicParameters
 * parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
 * insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
 
-/*
-Profile:  CodingMessageParameters
-Parent: DeathMessageParameters
-Id: VRDR-CodingMessageParameters
-Title:  "Coding Message Parameters"
-Description:   "Parameters for a Coding Message"
-* insert BasicParameters
-* parameter contains
-    ethnicity 0..1 and // part contains name=DETHNICE, codeable
-    race 0..* and  // part contains list with name=RACE1E, etc and codeable
-    // underlying_cause_of_death 0..1 and // icd10
-    record_cause_of_death 0..1 and // part contains list of codeable concepts
-    entity_axis_code 0..20 and // multiple parameters, each contains - part contains linenumber, codeable
-    manner 0..1 and // string
-    injpl 0..1 and   // string
-    other_specified_place 0..1 // string
-* insert ParameterName(ethnicity, ethnicity, ethnicity)
-* insert ParameterName(race, race, race)
-// * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
-// * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
-* insert ParameterName(record_cause_of_death, Recorded Cause of Death, Recorded Cause of Death)
-* insert ParameterName(entity_axis_code, entity axis code, entity axis code)
-* insert ParameterNameType(manner, string, Manner of Death, Manner of Death)
-* insert ParameterNameType(injpl, string, Injury Place, Injury Place)
-* insert ParameterNameType(other_specified_place, string, Other specified place, Other specified place)
-* parameter[int_rej].value[x] from InternalRejectCodesVS (required)
-* parameter[ethnicity].part.name only string
-* parameter[ethnicity].part.name from EthnicCodesVS (required)
-* parameter[ethnicity].part.value[x] only string // bind to value set
-* parameter[ethnicity].part.value[x] from HispanicOriginVS
-* parameter[race].part.name only string
-* parameter[race].part.name from RaceCodesVS (required)
-* parameter[race].part.value[x] only string
-* parameter[race].part.value[x] from RaceCodeListVS (required)
-* parameter[record_cause_of_death].part ^slicing.discriminator.type = #value
-* parameter[record_cause_of_death].part ^slicing.discriminator.path = "name"
-* parameter[record_cause_of_death].part ^slicing.rules = #closed
-* parameter[record_cause_of_death].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
-* parameter[record_cause_of_death].part contains
-      coding 1..20
-* parameter[record_cause_of_death].part[coding].value[x] only CodeableConcept // bind to value set
-* parameter[record_cause_of_death].part[coding].valueCodeableConcept.coding.system = $icd-10
-* parameter[record_cause_of_death].part[coding].name = "coding"
 
-* parameter[entity_axis_code].part ^slicing.discriminator.type = #value
-* parameter[entity_axis_code].part ^slicing.discriminator.path = "name"
-* parameter[entity_axis_code].part ^slicing.rules = #closed
-* parameter[entity_axis_code].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
-* parameter[entity_axis_code].part contains
-      lineNumber 1..1 and
-      coding 1..*
-* parameter[entity_axis_code].part[lineNumber] ^definition = "containing a value between 1 and 6 that codes the line number of the death certificate that corresponds to the axis entry"
-* parameter[entity_axis_code].part[lineNumber] ^short = "line number"
-* parameter[entity_axis_code].part[coding] ^definition = "Coding of the cause of death"
-* parameter[entity_axis_code].part[coding] ^short = "Coding of the cause of death"
-* parameter[entity_axis_code].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code].part[lineNumber].value[x] only string
-* parameter[entity_axis_code].part[coding].name = "coding"
-* parameter[entity_axis_code].part[coding].value[x] only CodeableConcept
-* parameter[entity_axis_code].part[coding].valueCodeableConcept.text 0..0
-* parameter[entity_axis_code].part[coding].valueCodeableConcept.coding.system = $icd-10
-* parameter[record_cause_of_death].value[x] 0..0
-* parameter[record_cause_of_death].resource 0..0
-* parameter[entity_axis_code].value[x] 0..0
-* parameter[entity_axis_code].resource 0..0
-* parameter[ethnicity].value[x] 0..0
-* parameter[ethnicity].resource 0..0
-* parameter[race].value[x] 0..0
-* parameter[race].resource 0..0
-*/
-Profile:  DemographicCodingMessageParameters
+Profile:  DemographicsCodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRDR-DemographicCodingMessageParameters
 Title:  "Demographic Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
 * meta.profile 1..*
-* meta.profile = Canonical(DemographicCodingMessageParameters)
+* meta.profile = Canonical(DemographicsCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
      ethnicity 0..1 and // part contains name=DETHNICE, codeable
@@ -240,13 +171,55 @@ Description:   "Parameters for a Coding Message"
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string
-* parameter[ethnicity].part.name from EthnicCodesVS (required)
 * parameter[ethnicity].part.value[x] only Coding // bind to value set
 * parameter[ethnicity].part.value[x] from HispanicOriginVS (required)
+* parameter[ethnicity].part ^slicing.discriminator.type = #value
+* parameter[ethnicity].part ^slicing.discriminator.path = "name"
+* parameter[ethnicity].part ^slicing.rules = #closed
+* parameter[ethnicity].part contains
+    DETHNICE 0..1 and
+    DETHNIC5C 0..1
+* parameter[ethnicity].part[DETHNICE].name = "DETHNICE"
+* parameter[ethnicity].part[DETHNIC5C].name = "DETHNIC5C"
 * parameter[race].part.name only string
-* parameter[race].part.name from RaceCodesVS (required)
+* parameter[race].part ^slicing.discriminator.type = #value
+* parameter[race].part ^slicing.discriminator.path = "name"
+* parameter[race].part ^slicing.rules = #closed
 * parameter[race].part.value[x] only Coding
 * parameter[race].part.value[x] from RaceCodeListVS (required)
+* parameter[race].part contains
+    RACE1E 0..1 and
+    RACE2E 0..1 and
+    RACE3E 0..1 and
+    RACE4E 0..1 and
+    RACE5E 0..1 and
+    RACE6E 0..1 and
+    RACE7E 0..1 and
+    RACE8E 0..1 and
+    RACE16C 0..1 and
+    RACE17C 0..1 and
+    RACE18C 0..1 and
+    RACE19C 0..1 and
+    RACE20C 0..1 and
+    RACE21C 0..1 and
+    RACE22C 0..1 and
+    RACE23C 0..1
+* parameter[race].part[RACE1E].name = "RACE1E"
+* parameter[race].part[RACE2E].name = "RACE2E"
+* parameter[race].part[RACE3E].name = "RACE3E"
+* parameter[race].part[RACE4E].name = "RACE4E"
+* parameter[race].part[RACE5E].name = "RACE5E"
+* parameter[race].part[RACE6E].name = "RACE6E"
+* parameter[race].part[RACE7E].name = "RACE7E"
+* parameter[race].part[RACE8E].name = "RACE8E"
+* parameter[race].part[RACE16C].name = "RACE16C"
+* parameter[race].part[RACE17C].name = "RACE17C"
+* parameter[race].part[RACE18C].name = "RACE18C"
+* parameter[race].part[RACE19C].name = "RACE19C"
+* parameter[race].part[RACE20C].name = "RACE20C"
+* parameter[race].part[RACE21C].name = "RACE21C"
+* parameter[race].part[RACE22C].name = "RACE22C"
+* parameter[race].part[RACE23C].name = "RACE23C"
 * parameter[ethnicity].value[x] 0..0
 * parameter[ethnicity].resource 0..0
 * parameter[race].value[x] 0..0
@@ -367,7 +340,7 @@ Description:   "Message for coding response to death records"
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
 * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicCodingMessageParameters)
+* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
 
 
 Profile: CodingUpdateMessage
@@ -378,7 +351,7 @@ Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
 * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicCodingMessageParameters)
+* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
 
 
 Profile: AcknowledgementMessage

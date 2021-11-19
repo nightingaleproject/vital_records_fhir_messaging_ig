@@ -1,108 +1,34 @@
 
-/*
-Instance: CodingMessageParameters-Example1
-InstanceOf: CodingMessageParameters
+Instance: DemographicsCodingMessageParameters-Example1
+InstanceOf: DemographicsCodingMessageParameters
 Usage: #example
-* parameter[jurisdiction_id].name = "jurisdiction_id"
+Description: "Need a description"
+* meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
-//* parameter[cert_no].name = "cert_no"
-* parameter[cert_no].valueUnsignedInt = 123456
-//* parameter[death_year].name = "death_year"
-* parameter[death_year].valueUnsignedInt = 2018
-//* parameter[rec_mo].name = "rec_mo"
-* parameter[rec_mo].valueUnsignedInt = 12
-//* parameter[rec_dy].name = "rec_dy"
-* parameter[rec_dy].valueUnsignedInt = 1
-//* parameter[rec_yr].name = "rec_yr"
-* parameter[rec_yr].valueUnsignedInt = 2018
-//* parameter[cs].name = "cs"
-* parameter[cs].valueCodeableConcept = $codingstatus#8
-//* parameter[ship].name = "ship"
-* parameter[ship].valueString = "B201901"
-//* parameter[sys_rej].name = "sys_rej"
-* parameter[sys_rej].valueString = "NotRejected"
-//* parameter[injpl].name = "injpl"
-* parameter[injpl].valueString = "OtherSpecifiedPlace"
-//* parameter[other_specified_place].name = "other_specified_place"
-* parameter[other_specified_place].valueString = "Unique Location"
-//* parameter[state_auxiliary_id].name = "state_auxiliary_id"
-* parameter[state_auxiliary_id].valueString = "abcdef10"
-//* parameter[underlying_cause_of_death].name = "underlying_cause_of_death"
-//* parameter[underlying_cause_of_death].valueString = "A04.7
-* parameter[record_cause_of_death].name = "record_cause_of_death"
-* parameter[record_cause_of_death].part[coding][0].name = "coding"
-* parameter[record_cause_of_death].part[coding][0].valueString = "A04.7
-//* parameter[record_cause_of_death].part[+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "A41.9
-//* parameter[record_cause_of_death].part[+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "J18.9
-* parameter[record_cause_of_death].part[coding][+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "J96.0
-* parameter[record_cause_of_death].part[coding][+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "N19
-* parameter[record_cause_of_death].part[coding][+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "R57.9
-* parameter[record_cause_of_death].part[coding][+].name = "coding"
-* parameter[record_cause_of_death].part[coding][=].valueString = "R68.8
-* parameter[entity_axis_code][0].name = "entity_axis_code"
-* parameter[entity_axis_code][=].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code][=].part[lineNumber].valueString = "1"
-* parameter[entity_axis_code][=].part[coding].name = "coding"
-* parameter[entity_axis_code][=].part[coding].valueString = "R68.8
-* parameter[entity_axis_code][+].name = "entity_axis_code"
-* parameter[entity_axis_code][=].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code][=].part[lineNumber].valueString = "2"
-* parameter[entity_axis_code][=].part[coding][0].name = "coding"
-* parameter[entity_axis_code][=].part[coding][=].valueString = "J96.0
-* parameter[entity_axis_code][=].part[coding][+].name = "coding"
-* parameter[entity_axis_code][=].part[coding][=].valueString = "R57.9
-* parameter[entity_axis_code][=].part[coding][+].name = "coding"
-* parameter[entity_axis_code][=].part[coding][=].valueString = "N19
-* parameter[entity_axis_code][+].name = "entity_axis_code"
-* parameter[entity_axis_code][=].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code][=].part[lineNumber].valueString = "3"
-* parameter[entity_axis_code][=].part[coding].name = "coding"
-* parameter[entity_axis_code][=].part[coding].valueString = "A41.9
-* parameter[entity_axis_code][+].name = "entity_axis_code"
-* parameter[entity_axis_code][=].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code][=].part[lineNumber].valueString = "4"
-* parameter[entity_axis_code][=].part[coding].name = "coding"
-* parameter[entity_axis_code][=].part[coding].valueString = "J18.9
-* parameter[entity_axis_code][+].name = "entity_axis_code"
-* parameter[entity_axis_code][=].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code][=].part[lineNumber].valueString = "6"
-* parameter[entity_axis_code][=].part[coding].name = "coding"
-* parameter[entity_axis_code][=].part[coding].valueString = "A04.7
-*/
+* parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#100
+* parameter[race].part[RACE2E].valueCoding = RaceCodeListCS#300
+//* parameter[=].part[+].name = "RACEBRG"
+//* parameter[=].part[=].valueCoding = RaceCodeListCS#21
+* parameter[ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
 Description: "Need a description"
+* meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[jurisdiction_id].name = "jurisdiction_id"
 * parameter[jurisdiction_id].valueString = "NH"
-//* parameter[cert_no].name = "cert_no"
 * parameter[cert_no].valueUnsignedInt = 123456
-//* parameter[death_year].name = "death_year"
 * parameter[death_year].valueUnsignedInt = 2018
-//* parameter[rec_mo].name = "rec_mo"
 * parameter[rec_mo].valueUnsignedInt = 12
-//* parameter[rec_dy].name = "rec_dy"
 * parameter[rec_dy].valueUnsignedInt = 1
-//* parameter[rec_yr].name = "rec_yr"
 * parameter[rec_yr].valueUnsignedInt = 2018
-//* parameter[cs].name = "cs"
 * parameter[cs].valueCodeableConcept = $codingstatus#8
-//* parameter[ship].name = "ship"
 * parameter[ship].valueString = "B201901"
-//* parameter[sys_rej].name = "sys_rej"
 * parameter[sys_rej].valueString = "NotRejected"
-//* parameter[injpl].name = "injpl"
 * parameter[injpl].valueString = "OtherSpecifiedPlace"
-//* parameter[other_specified_place].name = "other_specified_place"
 * parameter[other_specified_place].valueString = "Unique Location"
-//* parameter[state_auxiliary_id].name = "state_auxiliary_id"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
-//* parameter[underlying_cause_of_death].name = "underlying_cause_of_death"
 //* parameter[underlying_cause_of_death].valueString = "A04.7
 * parameter[record_cause_of_death].name = "record_cause_of_death"
 * parameter[record_cause_of_death].part[coding][0].valueString = "A047"
@@ -190,6 +116,16 @@ Description: "Need a description"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodingMessageParameters-Example1)
+
+Instance: CodingMessageHeader-Example2
+InstanceOf: CodingMessageHeader
+Usage: #example
+Description: "Need a description"
+* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+* focus = Reference(DemographicsCodingMessageParameters-Example1)
 
 Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
