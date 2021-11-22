@@ -1,7 +1,7 @@
 Instance: Vivienne-Wright-182-Example
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
-Description: "Need a description"
+Description: "Message for Record Submission: Vivienne Write (182)"
 * type = #message
 * timestamp = "2020-11-17T16:39:54.658923-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Vivienne-Wright-182-Header-Example"
@@ -14,7 +14,7 @@ Description: "Need a description"
 Instance: Vivienne-Wright-182-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #inline
-Description: "Need a description"
+Description: "Header for Record Submission: Vivienne Write (182)"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
@@ -23,7 +23,7 @@ Description: "Need a description"
 Instance: Vivienne-Wright-182-Parameters-Example
 InstanceOf: DeathMessageParameters
 Usage: #inline
-Description: "Need a description"
+Description: "Parameters for Record Submission: Vivienne Write (182)"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
 * parameter[+].name = "death_year"
@@ -33,7 +33,7 @@ Description: "Need a description"
 
 Instance: Message-MA20323-TRX-000182-Example
 InstanceOf: CodingMessage
-Description: "Need a description"
+Description: "Message for Cause of Death Coding: Vivienne Write (182)"
 Usage: #example
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
@@ -54,42 +54,28 @@ Description: "Need a description"
 Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
-Description: "Need a description"
+Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 182
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
+* parameter[cert_no].valueUnsignedInt = 182
+* parameter[death_year].valueUnsignedInt = 2020
+* parameter[jurisdiction_id].valueString = "MA"
 //* parameter[+].name = "underlying_cause_of_death"
 //* parameter[=].valueString = "O159"
 * parameter[+].name = "record_cause_of_death"
-* parameter[=].part[0].name = "coding"
-* parameter[=].part[=].valueString = "O159"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "I469"
+* parameter[record_cause_of_death].part[coding][0].valueString = "O159"
+* parameter[record_cause_of_death].part[coding][+].valueString = "I469"
 * parameter[+].name = "entity_axis_code"
-* parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueString = "1"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "I469"
-* parameter[+].name = "entity_axis_code"
-* parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueString = "2"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "O159"
-* parameter[+].name = "entity_axis_code"
-* parameter[=].part[0].name = "lineNumber"
-* parameter[=].part[=].valueString = "6"
-* parameter[=].part[+].name = "coding"
-* parameter[=].part[=].valueString = "O95"
-
+* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
+* parameter[entity_axis_code][0].part[coding].valueString = "I469"
+* parameter[entity_axis_code][1].part[lineNumber].valueString = "2"
+* parameter[entity_axis_code][1].part[coding].valueString = "O159"
+* parameter[entity_axis_code][2].part[lineNumber].valueString = "6"
+* parameter[entity_axis_code][2].part[coding].valueString = "O95"
 
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage
 Usage: #example
-Description: "Need a description"
+Description: "Message for Demographic Coding: Vivienne Write (182)"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Header-MA20323-MRE-000182-Example"
@@ -100,7 +86,7 @@ Description: "Need a description"
 Instance: Header-MA20323-MRE-000182-Example
 InstanceOf: CodingMessageHeader
 Usage: #inline
-Description: "Need a description"
+Description: "Header for Demographic Coding: Vivienne Write (182)"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -109,7 +95,7 @@ Description: "Need a description"
 Instance: Parameters-MA20323-MRE-000182-Example
 InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
-Description: "Need a description"
+Description: "Demographic Coding Parameters:Vivienne Write (182)"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 182
 * parameter[jurisdiction_id].valueString = "MA"

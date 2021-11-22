@@ -1,7 +1,7 @@
 Instance: Madelyn-Patel-181-Example
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
-Description: "Need a Description"
+Description: "Message for Record Submission: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-17T16:39:48.847917-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Madelyn-Patel-181-Header-Example"
@@ -13,7 +13,7 @@ Description: "Need a Description"
 
 Instance: Madelyn-Patel-181-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
-Description: "Need a Description"
+Description: "Header for Record Submission: Madelyn Patel (181)"
 Usage: #inline
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -22,7 +22,7 @@ Usage: #inline
 
 Instance: Madelyn-Patel-181-Parameters-Example
 InstanceOf: DeathMessageParameters
-Description: "Need a Description"
+Description: "Parameters for Record Submission: Madelyn Patel (181)"
 Usage: #inline
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 181
@@ -34,6 +34,7 @@ Usage: #inline
 Instance: Message-MA20323-TRX-000181-Example
 InstanceOf: CodingMessage
 Usage: #example
+Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
 * entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-TRX-000181-Example"
@@ -44,6 +45,7 @@ Usage: #example
 Instance: Header-MA20323-TRX-000181-Example
 InstanceOf: CodingMessageHeader
 Usage: #inline
+Description: "Header for Cause of Death Coding: Madelyn Patel (181)"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -52,6 +54,7 @@ Usage: #inline
 Instance: Parameters-MA20323-TRX-000181-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
+Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[death_year].valueUnsignedInt = 2020
@@ -73,6 +76,7 @@ Usage: #inline
 Instance: Message-MA20323-MRE-000181-Example
 InstanceOf: CodingMessage
 Usage: #example
+Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.452214-05:00"
 * entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-MRE-000181-Example"
@@ -82,6 +86,7 @@ Usage: #example
 
 Instance: Header-MA20323-MRE-000181-Example
 InstanceOf: CodingMessageHeader
+Description: "Header for Demographic Coding: Madelyn Patel (181)"
 Usage: #inline
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
@@ -91,6 +96,7 @@ Usage: #inline
 Instance: Parameters-MA20323-MRE-000181-Example
 InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
+Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"

@@ -2,7 +2,7 @@
 Instance: DemographicsCodingMessageParameters-Example1
 InstanceOf: DemographicsCodingMessageParameters
 Usage: #example
-Description: "Need a description"
+Description: "Parameters for Demographic Coding: Example"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#100
@@ -14,7 +14,7 @@ Description: "Need a description"
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
-Description: "Need a description"
+Description: "Parameters for Cause of Death Coding: Example"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[jurisdiction_id].name = "jurisdiction_id"
 * parameter[jurisdiction_id].valueString = "NH"
@@ -54,7 +54,7 @@ Description: "Need a description"
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
 Usage: #inline
-Description: "Need a description"
+Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -62,7 +62,7 @@ Description: "Need a description"
 Instance: VoidMessageParameters-Example1
 InstanceOf: DeathMessageVoidParameters
 Usage: #example
-Description: "Need a description"
+Description: "Parameters for Void: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -72,7 +72,7 @@ Description: "Need a description"
 Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
-Description: "Need a description"
+Description: "Acknowledgement Header: Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
@@ -83,7 +83,7 @@ Description: "Need a description"
 Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
-Description: "Need a description"
+Description: "Parameters for Void: Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_submissionvoid"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -92,7 +92,7 @@ Description: "Need a description"
 Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Update: Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_submissionupdate"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -101,7 +101,7 @@ Description: "Need a description"
 Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Submission - Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -110,7 +110,7 @@ Description: "Need a description"
 Instance: CodingMessageHeader-Example1
 InstanceOf: CodingMessageHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Cause of Death Coding Message - Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -120,7 +120,7 @@ Description: "Need a description"
 Instance: CodingMessageHeader-Example2
 InstanceOf: CodingMessageHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Demographic Coding Message - Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -130,7 +130,7 @@ Description: "Need a description"
 Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Demographic Coding Update Message - Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_codingupdate"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -140,7 +140,7 @@ Description: "Need a description"
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
-Description: "Need a description"
+Description: "Header for Extraction Error Message - Example"
 * eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extractionerror"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -152,7 +152,7 @@ Description: "Need a description"
 Instance: DeathMessageOutcome-Example1
 InstanceOf: DeathMessageOutcome
 Usage: #example
-Description: "Need a description"
+Description: "Extraction Error Outcome - Example"
 * issue.severity = #error
 * issue.code = #structure
 * issue.diagnostics = "Expected 1 or more Cause of Death Condition resources, received 0."
@@ -160,7 +160,7 @@ Description: "Need a description"
 Instance: ExtractionErrorMessage-Example1
 InstanceOf: ExtractionErrorMessage
 Usage: #example
-Description: "Example of extraction error message"
+Description: "Extraction error message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = ExtractionErrorHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/ExtractionErrorHeader1"
@@ -173,7 +173,7 @@ Description: "Example of extraction error message"
 Instance: AcknowledgementMessage-Example1
 InstanceOf: AcknowledgementMessage
 Usage: #example
-Description: "Example of acknowledgement message"
+Description: "Acknowledgement message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = AcknowledgementMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/AcknowledgementMessageHeader-Example1"
@@ -184,7 +184,7 @@ Description: "Example of acknowledgement message"
 Instance: CodingMessage-Example1
 InstanceOf: CodingMessage
 Usage: #example
-Description: "Example of coding message"
+Description: "Cause of death coding message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CodingHeader-Example1"
@@ -195,7 +195,7 @@ Description: "Example of coding message"
 Instance: CodingUpdateMessage1
 InstanceOf: CodingUpdateMessage
 Usage: #example
-Description: "Example of coding update message"
+Description: "Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CodingMessageUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CodingUpdateHeader1"
@@ -206,7 +206,7 @@ Description: "Example of coding update message"
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage
 Usage: #example
-Description: "Example of void message"
+Description: "Void message - example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = VoidMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/VoidMessageHeader-Example1"
@@ -217,7 +217,7 @@ Description: "Example of void message"
 Instance: DeathRecordSubmissionMessage-Example1
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
-Description: "Example of death record submission mesage"
+Description: "Submission mesage - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = SubmissionMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/SubmissionMessageHeader-Example1"
@@ -229,7 +229,7 @@ Description: "Example of death record submission mesage"
 Instance: DeathRecordUpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage
 Usage: #example
-Description: "Example of death record submission message"
+Description: "Update message - example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = UpdateMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/UpdateHeader-Example1"
@@ -241,7 +241,7 @@ Description: "Example of death record submission message"
 Instance: DeathRecordAliasMessage-Example1
 InstanceOf: DeathRecordAliasMessage
 Usage: #example
-Description: "Example of void message"
+Description: "Alias Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = AliasMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/MessageHeader/AliasMessageHeader-Example1"
@@ -252,7 +252,7 @@ Description: "Example of void message"
 Instance: AliasMessageHeader-Example1
 InstanceOf: DeathMessageAliasHeader
 Usage: #example
-Description: "Need a description"
+Description: "Alias Message Header- Example"
 * eventUri = "http://nchs.cdc.gov/vrdr_alias"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
@@ -261,7 +261,7 @@ Description: "Need a description"
 Instance: AliasMessageParameters-Example1
 InstanceOf: DeathMessageAliasParameters
 Usage: #example
-Description: "Need a description"
+Description:  "Alias Message Parameters- Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
