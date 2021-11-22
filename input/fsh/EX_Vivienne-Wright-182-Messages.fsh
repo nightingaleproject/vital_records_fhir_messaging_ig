@@ -44,7 +44,7 @@ Usage: #example
 
 Instance: Header-for-MA20323-TRX-000182-Example
 InstanceOf: CodingMessageHeader
-Usage: #inline
+// Usage: #inline
 Description: "Need a description"
 * meta.profile[0] = Canonical(CodingMessageHeader)
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
@@ -54,7 +54,7 @@ Description: "Need a description"
 
 Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
-Usage: #inline
+//Usage: #inline
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 182

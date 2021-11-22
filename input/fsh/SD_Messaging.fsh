@@ -237,7 +237,7 @@ Description:   "Parameters for a Coding Message"
 * insert BasicParameters
 * parameter contains
      // underlying_cause_of_death 0..1 and // icd10
-    record_cause_of_death 0..1 and // part contains list of codeable concepts
+    record_cause_of_death 0..20 and // part contains list of codeable concepts
     entity_axis_code 0..20 and // multiple parameters, each contains - part contains linenumber, codeable
     manner 0..1 and // string
     injpl 0..1 and   // string
