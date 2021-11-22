@@ -46,7 +46,7 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Instance: Message-MA20323-TRX-000182-Example-old
 InstanceOf: Bundle
 Usage: #example
-Description: "Need a description"
+Description: "Message for Cause of Death Coding: Vivienne Wright (182)-old"
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
 * entry[0].fullUrl = "urn:uuid:d570c223-492f-47c5-b030-0d52bbc70655"
@@ -103,7 +103,7 @@ Alias: $HispanicCodeTitles.pdf = https://www.cdc.gov/nchs/data/dvs/HispanicCodeT
 Instance: Message-MA20323-MRE-000182-Example-old
 InstanceOf: Bundle
 Usage: #example
-Description: "Need a description"
+Description: "Message for Demographic Coding: Vivienne Wright (182)-old"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
 * entry[0].fullUrl = "Header-MA20323-MRE-000182-Header-old"
@@ -144,7 +144,7 @@ Description: "Need a description"
 Instance: Message-MA20323-TRX-000181-Example-old
 InstanceOf: Bundle
 Usage: #example
-Description: "Need a description"
+Description: "Message for Cause of Death Coding: Madelyn Patel (181)-old"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
 * entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-TRX-000182-Header-old"
@@ -201,7 +201,7 @@ Description: "Need a description"
 Instance: Message-MA20323-MRE-000181-Example-old
 InstanceOf: Bundle
 Usage: #example
-Description: "Need a description"
+Description: "Message for Demographic Coding: Madelyn Patel (181)-old"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.452214-05:00"
 * entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-MRE-000181-Example-old"
@@ -252,7 +252,7 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Instance: Vivienne-Wright-182-Example-old
 InstanceOf: Bundle
 Usage: #example
-Description: "Need a description"
+Description: "Message for Record Submission: Vivienne Write (182)-old"
 * type = #message
 * timestamp = "2020-11-17T16:39:54.658923-05:00"
 * entry[0].fullUrl = "urn:uuid:ce3a298c-4254-4cd3-890f-15864a6688c1"
