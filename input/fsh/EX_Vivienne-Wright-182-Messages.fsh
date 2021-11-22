@@ -111,12 +111,9 @@ InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
 Description: "Need a description"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 182
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
+* parameter[cert_no].valueUnsignedInt = 182
+* parameter[jurisdiction_id].valueString = "MA"
+* parameter[death_year].valueUnsignedInt = 2020
 * parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#100
 * parameter[race].part[RACE2E].valueCoding = RaceCodeListCS#300
 //* parameter[=].part[+].name = "RACEBRG"
