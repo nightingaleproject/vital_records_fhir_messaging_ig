@@ -1,15 +1,3 @@
-ValueSet: RaceCodesVS
-Id: VRDR-Race-vs
-Title: "Race Codes Values"
-Description: "Race Code Values"
-* include codes from system RaceCodesCS
-
-
-ValueSet: EthnicCodesVS
-Id: VRDR-EthnicCodes-vs
-Title: "Ethnic Codes Values"
-Description: "EthnicCodes Values"
-* include codes from system EthnicCodesCS
 
 ValueSet: InternalRejectCodesVS
 Id: VRDR-InternalRejectCodes-vs

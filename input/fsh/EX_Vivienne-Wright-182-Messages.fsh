@@ -46,6 +46,7 @@ Instance: Header-for-MA20323-TRX-000182-Example
 InstanceOf: CodingMessageHeader
 Usage: #inline
 Description: "Need a description"
+* meta.profile[0] = Canonical(CodingMessageHeader)
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"

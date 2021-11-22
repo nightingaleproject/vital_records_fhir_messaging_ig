@@ -14,28 +14,6 @@ Description: "System Reject Codes Values"
 * #9 "Reject9" "Reject9"
 * #U "No Code" "No Code"
 
-CodeSystem: RaceCodesCS
-Id: VRDR-Race-cs
-Title: "Race Codes Values"
-Description: "Race Code Values"
-* ^caseSensitive = true
-// RACE1E..RACE8EorRACE16C..RACE23CorRACEBRG
-* #RACE1E "RACE1E" "RACE1E"
-* #RACE2E "RACE2E" "RACE2E"
-* #RACE3E "RACE3E" "RACE3E"
-* #RACE4E "RACE4E" "RACE4E"
-* #RACE5E "RACE5E" "RACE5E"
-* #RACE6E "RACE6E" "RACE6E"
-* #RACE7E "RACE7E" "RACE7E"
-* #RACE8E "RACE8E" "RACE8E"
-* #RACE16C "RACE16C" "RACE16C"
-* #RACE17C "RACE17C" "RACE17C"
-* #RACE18C "RACE18C" "RACE18C"
-* #RACE19C "RACE19C" "RACE19C"
-* #RACE20C "RACE20C" "RACE20C"
-* #RACE21C "RACE21C" "RACE21C"
-* #RACE22C "RACE22C" "RACE22C"
-* #RACE23C "RACE23C" "RACE23C"
 
 CodeSystem: SystemRejectCodesCS
 Id: VRDR-SystemRejectCodes-cs
@@ -79,13 +57,6 @@ Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation]
 * #8 "8" "8"
 * #9 "9" "9"
 
-CodeSystem: EthnicCodesCS
-Id: VRDR-EthnicCodes-cs
-Title: "Ethnic Codes Values"
-Description: "EthnicCodes Values"
-* ^caseSensitive = true
-* #DETHNICE "DETHNICE" "DETHNICE"
-* #DETHNIC5C "DETHNIC5C"
 
 CodeSystem: HispanicOriginCS
 Id: VRDR-HispanicOrigin-cs

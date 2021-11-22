@@ -147,9 +147,9 @@ Usage: #example
 Description: "Message for Cause of Death Coding: Madelyn Patel (181)-old"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
-* entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-TRX-000182-Header-old"
+* entry[0].fullUrl = "http://example.org/fhir/MessageHeader/Header-MA20323-TRX-000181-Header-old"
 * entry[=].resource = Header-MA20323-TRX-000181-Example-old
-* entry[+].fullUrl = "http://example.org/fhir/Parameters/Parameters-MA20323-TRX-000182-Parameters-old"
+* entry[+].fullUrl = "http://example.org/fhir/Parameters/Parameters-MA20323-TRX-000181-Parameters-old"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example-old
 
 Instance: Header-MA20323-TRX-000181-Example-old
