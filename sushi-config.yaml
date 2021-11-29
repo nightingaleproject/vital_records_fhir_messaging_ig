@@ -36,9 +36,12 @@ pages:
     title: Download Specification
   change_log.md:
     title: Change Log
+  appendix.md:
+    title: Appendices
 menu:
   Home: index.html
   Messages: message.html
+  Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
     Other Downloads: downloads.html
