@@ -10,7 +10,7 @@ The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/)
 2. Return of coded causes of death, race, and ethnicity information from NCHS to vital records jurisdictions.
 
 ## Relationship to Previous Work
-This FHIR Implementaiton Guide supersedes a previous descriptioin of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
+This FHIR Implementation Guide supersedes a previous descriptioin of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
 
 ## Browsing the FHIR Implementation Guide
 The built version of this FHIR Implementation Guide can be found [here](http://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/).
