@@ -11,11 +11,12 @@ The following subsections illustrate message exchange patterns between vital rec
 <!-- ![Message exchange pattern for successful death record submission](submission.png){ width=25% } -->
 &nbsp;
 
-Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing, no in-depth validation is expected at this point. The code step includes in-depth validation and coding of the death record.
+Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing, no in-depth validation is expected at this point. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
+Coding responses are sent using a [CodingMessage] and acknowledged using a [AcknowledgementMessage].
 
 The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.
 
-The second (optional) Code, Coding Update, Extract and Acknowledgement steps highlight that cause of death coding may be undertaken separately to race and ethnicity encoding. A single Death Record Submission message could result in both a  Coding Response and a Coding Update message, one for cause of death, the other for race and ethnicity coding. The first coding for a given record should be sent using a Coding Response message, subsequent codings for the same record should be sent using a Coding Update message. For brevity, this separation of coding for causes of death and race and ethnicity is omitted from subsequent diagrams but should be considered to be possible in all cases.
+The second (optional) Code, Coding Update, Extract and Acknowledgement steps highlight that cause of death coding may be undertaken separately to race and ethnicity encoding. A single Death Record Submission message could result in both a  Coding Response and a Coding Update message, one for cause of death, the other for race and ethnicity coding. The first coding for a given record should be sent using a Coding Response message, subsequent codings for the same record should be sent using a [CodingUpdateMessage]. For brevity, this separation of coding for causes of death and race and ethnicity is omitted from subsequent diagrams but should be considered to be possible in all cases.
 
 The purpose of acknowledgement messages is to support reliability in the exchange of death records and coding responses, see [Retrying Requests](#retries) for further details. Acknowledgements are a feature of the FHIR messaging system, they are not intended to be exposed to jurisdiction death registration systems or NVSS directly.
 
@@ -28,7 +29,7 @@ The purpose of acknowledgement messages is to support reliability in the exchang
 </figure>
 &nbsp;
 
-Figure 2 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently updated. The initial submission of a new record should use a Death Record Submission message, subsequent updates should use a Death Record Update message.
+Figure 2 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently updated. The initial submission of a new record should use a [DeathRecordSubmissionMessage], subsequent updates should use a [DeathRecordUpdateMessage].
 
 As shown in figure 2, depending on timing (whether coding was complete prior to submission of the Death Record Update), the initial submission may result in a Coding Response or not. If a Coding Response is sent prior to the Death Record Update then a Coding Update will be sent following the Death Record Update.
 
@@ -42,7 +43,7 @@ As shown in figure 2, depending on timing (whether coding was complete prior to 
 </figure>
 &nbsp;
 
-Figure 3 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when a prior Coding Response needs to be subsequently updated.
+Figure 3 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when a prior Coding Response needs to be subsequently updated.  Coding updates  should use a [CodingUpdateMessage].
 
 #### Voiding Death Records
 
@@ -56,7 +57,7 @@ Figure 3 illustrates the sequence of message exchanges between a vital records j
 
 Figure 4 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently voided. Depending on timing, the initial submission may result in a Coding Response or not.
 
-Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement".
+Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement". Voiding death records should use a [DeathRecordVoidHeader].
 
 #### Retrying Requests {#retries}
 
@@ -117,6 +118,8 @@ Figure 8 illustrates two message extraction failures:
 1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is returned instead of an Acknowledgement.
 2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.
 
+Extraction Error Response should use a [ExtractionErrorMessage].
+
 For a given Death Record Submission or Coding Response:
 
 - Extraction Error Response and Acknowledgment are mutually exclusive
@@ -143,6 +146,8 @@ Alias messages can contain aliases for one or more of the following fields:
 * Father’s Surname
 * Social Security Number
 
+Alias records should be sent using a [DeathRecordAliasMessage].
+
 ### Message Structure and Content
 * Death Messages (EDRS->Jurisdiction)
   * [DeathRecordSubmissionMessage] -same as update, just different header flags
@@ -163,9 +168,11 @@ Alias messages can contain aliases for one or more of the following fields:
   * [CodingMessage]
     * [CodingMessageHeader]
     * [CauseOfDeathCodingMessageParameters]
+    * [DemographicCodingMessageParameters]
   * [CodingUpdateMessage] -- same as submission, just different header flags
     * [CodingMessageUpdateHeader]
     * [CauseofDeathCodingMessageParameters]
+    * [DemographicCodingMessageParameters]
 * [AcknowledgementMessage] (Both directions)
   * [AcknowledgementMessageHeader]
   * [DeathMessageParameters]
