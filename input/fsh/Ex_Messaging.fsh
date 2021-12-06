@@ -53,7 +53,7 @@ Description: "Parameters for Cause of Death Coding: Example"
 
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
-Usage: #inline
+Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
