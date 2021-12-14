@@ -7,10 +7,10 @@ Description:   "Parameters for a Coding Message"
 * meta.profile = Canonical(DemographicsCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
-     ethnicity 0..1 and // part contains name=DETHNICE, codeable
-     race 1..*   // part contains list with name=RACE1E, etc and codeable
-* insert ParameterName(ethnicity, ethnicity, ethnicity)
-* insert ParameterName(race, race, race)
+     ethnicity 0..1 and // part contains name=DETHNICE or DETHNIC5C codeable
+     race 1..*   // part contains list with name=RACE1E-8E and RACE16C-23C, etc codeable
+* insert ParameterName(ethnicity, DETHNICE or DETHNIC5C ethnicity, ethnicity)
+* insert ParameterName(race, RACE1E-8E and RACE16C-23C race, race)
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
 * parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string

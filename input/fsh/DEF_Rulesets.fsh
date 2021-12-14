@@ -23,8 +23,6 @@ RuleSet: BundleEntry(name, min, max, short, def, class)
 
 RuleSet: ParameterName(name,short,def)
 * parameter[{name}].name = "{name}"
-* parameter[{name}].name = "{name}"
-* parameter[{name}].name = "{name}"
 * parameter[{name}] ^short = "{short}"
 * parameter[{name}] ^definition = "{def}"
 
