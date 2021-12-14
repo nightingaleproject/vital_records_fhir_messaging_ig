@@ -60,16 +60,16 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * parameter[cert_no].valueUnsignedInt = 182
 * parameter[death_year].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-//* parameter[+].name = "underlying_cause_of_death"
-//* parameter[=].valueString = "O159"
-* parameter[record_cause_of_death].part[coding][0].valueString = "O159"
-* parameter[record_cause_of_death].part[coding][+].valueString = "I469"
-* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
-* parameter[entity_axis_code][0].part[coding].valueString = "I469"
-* parameter[entity_axis_code][1].part[lineNumber].valueString = "2"
-* parameter[entity_axis_code][1].part[coding].valueString = "O159"
-* parameter[entity_axis_code][2].part[lineNumber].valueString = "6"
-* parameter[entity_axis_code][2].part[coding].valueString = "O95"
+* parameter[underlying_cause_of_death].valueString = "O159"
+* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "I469"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[coding].valueString = "O159"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "O95"
 
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage

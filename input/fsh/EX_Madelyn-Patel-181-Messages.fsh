@@ -59,18 +59,23 @@ Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[death_year].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-//* parameter[+].name = "underlying_cause_of_death"
-//* parameter[=].valueString = "X42"
+* parameter[underlying_cause_of_death].valueString = "X42"
 * parameter[record_cause_of_death].part[coding][0].valueString = "X42"
 * parameter[record_cause_of_death].part[coding][+].valueString = "I119"
 * parameter[record_cause_of_death].part[coding][+].valueString = "T405"
 * parameter[record_cause_of_death].part[coding][+].valueString = "T509"
-* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
-* parameter[entity_axis_code][=].part[coding][0].valueString = "T405"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "X42"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "6"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "I119"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "T509"
+* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "T405"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[coding].valueString = "X42"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "I119"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[coding].valueString = "T509"
 
 
 Instance: Message-MA20323-MRE-000181-Example

@@ -38,17 +38,27 @@ Description: "Parameters for Cause of Death Coding: Example"
 * parameter[record_cause_of_death].part[coding][+].valueString = "N19"
 * parameter[record_cause_of_death].part[coding][+].valueString = "R579"
 * parameter[record_cause_of_death].part[coding][+].valueString = "R688"
-* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
+* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "R688"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "2"
-* parameter[entity_axis_code][=].part[coding][0].valueString = "J960"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "J960"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding][+].valueString = "R579"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 3
 * parameter[entity_axis_code][=].part[coding][+].valueString = "N19"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "3"
+
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 3
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A419"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "4"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 4
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "J189"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "6"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A047"
 
 Instance: MessageParameters-Example1
