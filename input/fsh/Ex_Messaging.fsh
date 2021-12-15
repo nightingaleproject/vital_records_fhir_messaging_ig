@@ -41,32 +41,24 @@ Description: "Parameters for Cause of Death Coding: Example"
 * parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "R688"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "J960"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding][+].valueString = "R579"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 3
 * parameter[entity_axis_code][=].part[coding][+].valueString = "N19"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
-
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 3
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A419"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 4
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "J189"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A047"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters

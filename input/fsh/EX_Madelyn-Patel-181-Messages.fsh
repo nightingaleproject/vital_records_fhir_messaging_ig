@@ -67,19 +67,16 @@ Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "T405"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding].valueString = "X42"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "I119"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding].valueString = "T509"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
+* parameter[entity_axis_code][=].part[e-code-indicator].valueString = "&"
 
 Instance: Message-MA20323-MRE-000181-Example
 InstanceOf: CodingMessage

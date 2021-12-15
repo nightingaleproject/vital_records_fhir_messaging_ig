@@ -64,15 +64,12 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "I469"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding].valueString = "O159"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "O95"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueBoolean = false
 
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage
