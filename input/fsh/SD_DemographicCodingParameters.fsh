@@ -117,7 +117,7 @@ Description:   "Parameters for a Coding Message"
     RACE14 1..1 and
     RACE15 1..1
 * parameter[input-race-flags].part.value[x] only string
-* parameter[input-race-literals].part.valueString ^maxLength = 1
+* parameter[input-race-literals].part.value[x] ^maxLength = 1
 
 * parameter[input-race-flags].part[RACE1].name = "RACE1"
 * parameter[input-race-flags].part[RACE2].name = "RACE2"
@@ -151,10 +151,10 @@ Description:   "Parameters for a Coding Message"
 * parameter[input-ethnicity].part[DETHNIC4].name = "DETHNIC4"
 * parameter[input-ethnicity].part[DETHNIC5].name = "DETHNIC5"
 * parameter[input-ethnicity].part.value[x] only string
-* parameter[input-ethnicity].part[DETHNIC1].valueString ^maxLength = 1
-* parameter[input-ethnicity].part[DETHNIC2].valueString ^maxLength = 1
-* parameter[input-ethnicity].part[DETHNIC3].valueString ^maxLength = 1
-* parameter[input-ethnicity].part[DETHNIC4].valueString ^maxLength = 1
+* parameter[input-ethnicity].part[DETHNIC1].value[x] ^maxLength = 1
+* parameter[input-ethnicity].part[DETHNIC2].value[x] ^maxLength = 1
+* parameter[input-ethnicity].part[DETHNIC3].value[x] ^maxLength = 1
+* parameter[input-ethnicity].part[DETHNIC4].value[x] ^maxLength = 1
 
 * parameter[input-ethnicity].value[x] 0..0
 * parameter[input-ethnicity].resource 0..0

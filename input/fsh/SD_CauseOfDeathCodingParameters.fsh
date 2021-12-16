@@ -60,15 +60,15 @@ Description:   "Parameters for a Coding Message"
 * insert ParameterNameType(sur_dy, unsignedInt, SUR_MO Surgery Date --day, Surgery Date --day)
 * insert ParameterNameType(sur_yr, unsignedInt, SUR_MO Surgery Date --year, Surgery Date --year)
 * insert ParameterNameType(toi_unit, string, TOI_UNIT Time of Injury Unit-1, Time of Injury Unit)
-* parameter[manner].valueString ^maxLength = 1
-* parameter[injpl].valueString ^maxLength = 1
-* parameter[workinj].valueString ^maxLength = 1
-* parameter[toi_unit].valueString ^maxLength = 1
-* parameter[preg].valueString ^maxLength = 1
-* parameter[preg_bypass].valueString ^maxLength = 1
-* parameter[autop].valueString ^maxLength = 1
-* parameter[autopf].valueString ^maxLength = 1
-* parameter[trx_flg].valueString ^maxLength = 1
+* parameter[manner].value[x] ^maxLength = 1
+* parameter[injpl].value[x] ^maxLength = 1
+* parameter[workinj].value[x] ^maxLength = 1
+* parameter[toi_unit].value[x] ^maxLength = 1
+* parameter[preg].value[x] ^maxLength = 1
+* parameter[preg_bypass].value[x] ^maxLength = 1
+* parameter[autop].value[x] ^maxLength = 1
+* parameter[autopf].value[x] ^maxLength = 1
+* parameter[trx_flg].value[x] ^maxLength = 1
 * parameter[entity_axis_code].part ^slicing.discriminator.type = #value
 * parameter[entity_axis_code].part ^slicing.discriminator.path = "name"
 * parameter[entity_axis_code].part ^slicing.rules = #closed
@@ -95,7 +95,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[entity_axis_code].part[e-code-indicator].name = "e-code-indicator"
 * parameter[entity_axis_code].part[e-code-indicator].value[x] only string
 * parameter[entity_axis_code].part[e-code-indicator].valueString = "&"
-* parameter[entity_axis_code].part[e-code-indicator].valueString ^maxLength = 1
+* parameter[entity_axis_code].part[e-code-indicator].value[x] ^maxLength = 1
 
 * parameter[entity_axis_code].value[x] 0..0
 * parameter[entity_axis_code].resource 0..0
