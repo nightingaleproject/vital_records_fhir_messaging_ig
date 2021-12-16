@@ -105,7 +105,8 @@ Title:  "Base parameter set for most Messages"
     jurisdiction_id 0..1 and
     cert_no 0..1 and
     death_year 0..1 and
-    state_auxiliary_id 0..1 MS and
+    state_auxiliary_id 0..1 and
+    ssn 0..1 and //   needed?
     block_count 0..1 MS   // only for void messages
 * insert BaseMessageParameterSlices
 
@@ -144,13 +145,13 @@ RuleSet: BasicParameters
     ship 0..1 and // string
     sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
     int_rej 0..1   // one character reject code --  1, 2, 3, 4, 5, 9
-* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
-* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(cs, unsignedInt, ACMETRANSAX Coding Status 0-9 ,ACMETRANSAX Coding Status )
-* insert ParameterNameType(ship, string, NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(sys_rej, unsignedInt, system reject code 0-4, system reject code)
-* insert ParameterNameType(int_rej, unsignedInt, internal reject code 1-5 or 9, internal reject code)
+* insert ParameterNameType(rec_yr, unsignedInt, R_YR the year that NCHS received the record ,the year that NCHS received the record )
+* insert ParameterNameType(rec_mo, unsignedInt, R_MO the month that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(rec_dy, unsignedInt, R_DY the day that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(cs, unsignedInt, CS ACMETRANSAX Coding Status 0-9 ,ACMETRANSAX Coding Status )
+* insert ParameterNameType(ship, string, SHIP Needed? NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
+* insert ParameterNameType(sys_rej, unsignedInt, SYS_REJ system reject code 0-4, system reject code)
+* insert ParameterNameType(int_rej, unsignedInt, INT_REJ internal reject code 1-5 or 9, internal reject code)
 * parameter[ship].valueString ^maxLength = 3
 
 

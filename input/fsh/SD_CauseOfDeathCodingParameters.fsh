@@ -64,6 +64,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[injpl].valueString ^maxLength = 1
 * parameter[workinj].valueString ^maxLength = 1
 * parameter[toi_unit].valueString ^maxLength = 1
+* parameter[preg].valueString ^maxLength = 1
 * parameter[preg_bypass].valueString ^maxLength = 1
 * parameter[autop].valueString ^maxLength = 1
 * parameter[autopf].valueString ^maxLength = 1
@@ -94,6 +95,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[entity_axis_code].part[e-code-indicator].name = "e-code-indicator"
 * parameter[entity_axis_code].part[e-code-indicator].value[x] only string
 * parameter[entity_axis_code].part[e-code-indicator].valueString = "&"
+* parameter[entity_axis_code].part[e-code-indicator].valueString ^maxLength = 1
 
 * parameter[entity_axis_code].value[x] 0..0
 * parameter[entity_axis_code].resource 0..0
