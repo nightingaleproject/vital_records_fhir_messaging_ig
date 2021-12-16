@@ -140,19 +140,18 @@ RuleSet: BasicParameters
     rec_yr 0..1 and           //uint
     rec_mo 0..1 and          //uint
     rec_dy 0..1 and          //uint
-    cs 0..1 and    // codeable
+    cs 0..1 and    // string
     ship 0..1 and // string
     sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
     int_rej 0..1   // one character reject code --  1, 2, 3, 4, 5, 9
 * insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
 * insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
 * insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
-* parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
-* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
-* parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
-* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
+* insert ParameterNameType(cs, unsignedInt, ACMETRANSAX Coding Status 0-9 ,ACMETRANSAX Coding Status )
+* insert ParameterNameType(ship, string, NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
+* insert ParameterNameType(sys_rej, unsignedInt, system reject code 0-4, system reject code)
+* insert ParameterNameType(int_rej, unsignedInt, internal reject code 1-5 or 9, internal reject code)
+* parameter[ship].valueString ^maxLength = 3
 
 
 

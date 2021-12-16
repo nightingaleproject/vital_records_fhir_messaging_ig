@@ -16,21 +16,19 @@ InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Example"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[jurisdiction_id].name = "jurisdiction_id"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[rec_mo].valueUnsignedInt = 12
 * parameter[rec_dy].valueUnsignedInt = 1
 * parameter[rec_yr].valueUnsignedInt = 2018
-* parameter[cs].valueCodeableConcept = $codingstatus#8
-* parameter[ship].valueString = "B201901"
-* parameter[sys_rej].valueString = "NotRejected"
-* parameter[injpl].valueString = "OtherSpecifiedPlace"
+* parameter[cs].valueUnsignedInt = 8
+* parameter[ship].valueString = "191"
+* parameter[sys_rej].valueUnsignedInt = 0
+* parameter[injpl].valueString = "8"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[manual_underlying_cause_of_death].valueString = "A047"
 * parameter[acme_underlying_cause_of_death].valueString = "A047"
-* parameter[record_cause_of_death].name = "record_cause_of_death"
 * parameter[record_cause_of_death][0].valueString = "A047"
 * parameter[record_cause_of_death][+].valueString = "A419"
 * parameter[record_cause_of_death][+].valueString = "J189"

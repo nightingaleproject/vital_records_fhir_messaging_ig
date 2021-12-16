@@ -12,7 +12,6 @@ Description:   "Parameters for a Coding Message"
 * insert ParameterName(ethnicity, DETHNICE or DETHNIC5C ethnicity, ethnicity)
 * insert ParameterName(race, RACE1E-8E and RACE16C-23C race, race)
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
-* parameter[int_rej].value[x] from InternalRejectCodesVS (required)
 * parameter[ethnicity].part.name only string
 * parameter[ethnicity].part.value[x] only Coding // bind to value set
 * parameter[ethnicity].part.value[x] from HispanicOriginVS (required)
