@@ -60,7 +60,8 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * parameter[cert_no].valueUnsignedInt = 182
 * parameter[death_year].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-* parameter[underlying_cause_of_death].valueString = "O159"
+* parameter[acme_underlying_cause_of_death].valueString = "O159"
+* parameter[manual_underlying_cause_of_death].valueString = "O159"
 * parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "I469"
