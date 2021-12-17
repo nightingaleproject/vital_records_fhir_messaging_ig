@@ -41,3 +41,9 @@ RuleSet: BaseMessageParameterSlices
 * insert ParameterNameType(state_auxiliary_id, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
 * insert ParameterNameType(ssn, string, SSN Social Security Number, Social Security Number) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
 * insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
+
+RuleSet: ParameterPartSliceByName(slice)
+* parameter[{slice}].part ^slicing.discriminator.type = #value
+* parameter[{slice}].part ^slicing.discriminator.path = "name"
+* parameter[{slice}].part ^slicing.rules = #closed
+* parameter[{slice}].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"

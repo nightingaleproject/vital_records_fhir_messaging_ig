@@ -152,7 +152,7 @@ RuleSet: BasicParameters
 * insert ParameterNameType(ship, string, SHIP Needed? NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
 * insert ParameterNameType(sys_rej, unsignedInt, SYS_REJ system reject code 0-4, system reject code)
 * insert ParameterNameType(int_rej, unsignedInt, INT_REJ internal reject code 1-5 or 9, internal reject code)
-* parameter[ship].valueString ^maxLength = 3
+* parameter[ship].value[x] ^maxLength = 3
 
 
 

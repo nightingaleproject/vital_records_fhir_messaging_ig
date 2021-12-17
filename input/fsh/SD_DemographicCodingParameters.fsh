@@ -21,18 +21,14 @@ Description:   "Parameters for a Coding Message"
 * parameter[coded-ethnicity].part.name only string
 * parameter[coded-ethnicity].part.value[x] only Coding // bind to value set
 * parameter[coded-ethnicity].part.value[x] from HispanicOriginVS (required)
-* parameter[coded-ethnicity].part ^slicing.discriminator.type = #value
-* parameter[coded-ethnicity].part ^slicing.discriminator.path = "name"
-* parameter[coded-ethnicity].part ^slicing.rules = #closed
+* insert ParameterPartSliceByName(coded-ethnicity)
 * parameter[coded-ethnicity].part contains
     DETHNICE 0..1 and
     DETHNIC5C 0..1
 * parameter[coded-ethnicity].part[DETHNICE].name = "DETHNICE"
 * parameter[coded-ethnicity].part[DETHNIC5C].name = "DETHNIC5C"
 * parameter[coded-race].part.name only string
-* parameter[coded-race].part ^slicing.discriminator.type = #value
-* parameter[coded-race].part ^slicing.discriminator.path = "name"
-* parameter[coded-race].part ^slicing.rules = #closed
+* insert ParameterPartSliceByName(coded-race)
 * parameter[coded-race].part.value[x] only Coding
 * parameter[coded-race].part.value[x] from RaceCodeListVS (required)
 * parameter[coded-race].part contains
@@ -74,9 +70,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[coded-race].resource 0..0
 
 * parameter[input-race-literals].part.name only string
-* parameter[input-race-literals].part ^slicing.discriminator.type = #value
-* parameter[input-race-literals].part ^slicing.discriminator.path = "name"
-* parameter[input-race-literals].part ^slicing.rules = #closed
+* insert ParameterPartSliceByName(input-race-literals)
 * parameter[input-race-literals].part contains
     RACE16 0..1 and
     RACE17 0..1 and
@@ -97,9 +91,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[input-race-literals].part.value[x] only string
 
 * parameter[input-race-flags].part.name only string
-* parameter[input-race-flags].part ^slicing.discriminator.type = #value
-* parameter[input-race-flags].part ^slicing.discriminator.path = "name"
-* parameter[input-race-flags].part ^slicing.rules = #closed
+* insert ParameterPartSliceByName(input-race-flags)
 * parameter[input-race-flags].part contains
     RACE1 1..1 and
     RACE2 1..1 and
@@ -136,9 +128,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[input-race-flags].part[RACE15].name = "RACE15"
 
 * parameter[input-ethnicity].part.name only string
-* parameter[input-ethnicity].part ^slicing.discriminator.type = #value
-* parameter[input-ethnicity].part ^slicing.discriminator.path = "name"
-* parameter[input-ethnicity].part ^slicing.rules = #closed
+* insert ParameterPartSliceByName(input-ethnicity)
 * parameter[input-ethnicity].part contains
     DETHNIC1 0..1 and
     DETHNIC2 0..1 and

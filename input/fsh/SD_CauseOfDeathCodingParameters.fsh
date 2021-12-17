@@ -7,6 +7,7 @@ Description:   "Parameters for a Coding Message"
 * meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
+    input_causes_of_death 0..1 and
     manual_underlying_cause_of_death 0..1 and // icd10
     acme_underlying_cause_of_death 0..1 and // icd10
     record_cause_of_death 0..20 and // part contains list of codeable concepts
@@ -34,6 +35,7 @@ Description:   "Parameters for a Coding Message"
     toi_unit 0..1 // string -- Time of Injury Unit
     // other_specified_place 0..1 // string -- WHAT IS THIS?   What field is this???
 
+* insert ParameterName(input_causes_of_death, input causes of death: COD1A-D + INTERVAL1A-D + OTHERCONDITION, input causes of death)
 * insert ParameterNameType(acme_underlying_cause_of_death, string, ACME_UC ACME Underlying Cause of Death, Underlying Cause of Death)
 * insert ParameterNameType(manual_underlying_cause_of_death, string, MAN_UC Manual Underlying Cause of Death, Underlying Cause of Death)
 // * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
@@ -69,10 +71,23 @@ Description:   "Parameters for a Coding Message"
 * parameter[autop].value[x] ^maxLength = 1
 * parameter[autopf].value[x] ^maxLength = 1
 * parameter[trx_flg].value[x] ^maxLength = 1
-* parameter[entity_axis_code].part ^slicing.discriminator.type = #value
-* parameter[entity_axis_code].part ^slicing.discriminator.path = "name"
-* parameter[entity_axis_code].part ^slicing.rules = #closed
-* parameter[entity_axis_code].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+
+* insert ParameterName(input_causes_of_death, input causes of death: COD1A-D + INTERVAL1A-D + OTHERCONDITION, input causes of death)
+
+* insert ParameterPartSliceByName(input_causes_of_death)
+* parameter[input_causes_of_death].part contains
+      COD1A 1..1 and
+      COD1B 1..1 and
+      COD1C 1..1 and
+      COD1D 1..1 and
+      INVERVAL1A 1..1 and
+      INVERVAL1B 1..1 and
+      INVERVAL1C 1..1 and
+      INVERVAL1D 1..1 and
+      OTHERCONDITION 1..1
+* parameter[input_causes_of_death].part.value[x] only string
+
+* insert ParameterPartSliceByName(entity_axis_code)
 * parameter[entity_axis_code].part contains
       lineNumber 1..1 and
       position 1..1 and
@@ -94,8 +109,8 @@ Description:   "Parameters for a Coding Message"
 * parameter[entity_axis_code].part[position].value[x] only unsignedInt
 * parameter[entity_axis_code].part[e-code-indicator].name = "e-code-indicator"
 * parameter[entity_axis_code].part[e-code-indicator].value[x] only string
-* parameter[entity_axis_code].part[e-code-indicator].valueString = "&"
+* parameter[entity_axis_code].part[e-code-indicator].value[x] = "&"
 * parameter[entity_axis_code].part[e-code-indicator].value[x] ^maxLength = 1
 
-* parameter[entity_axis_code].value[x] 0..0
-* parameter[entity_axis_code].resource 0..0
+* parameter[input_causes_of_death].value[x] 0..0
+* parameter[input_causes_of_death].resource 0..0
