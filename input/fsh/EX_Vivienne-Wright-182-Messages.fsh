@@ -71,6 +71,29 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "O95"
+* parameter[input_causes_of_death].part[COD1A].valueString = "Cardiopulmonary arrest"
+* parameter[input_causes_of_death].part[COD1B].valueString = "Eclampsia"
+* parameter[input_causes_of_death].part[COD1C].valueString = ""
+* parameter[input_causes_of_death].part[COD1D].valueString = ""
+* parameter[input_causes_of_death].part[INTERVAL1A].valueString = "4 hr"
+* parameter[input_causes_of_death].part[INTERVAL1B].valueString = "3 month"
+* parameter[input_causes_of_death].part[INTERVAL1C].valueString = ""
+* parameter[input_causes_of_death].part[INTERVAL1D].valueString = ""
+* parameter[input_causes_of_death].part[OTHERCONDITION].valueString = ""
+* parameter[manner].valueString = "A" //Accidental
+* parameter[injpl].valueString = "0"
+* parameter[autop].valueString = "Y"
+* parameter[autopf].valueString = "Y"
+* parameter[tobac].valueString = "N"
+* parameter[preg].valueString = "1" //not pregnant in past year
+* parameter[doi_mo].valueUnsignedInt = 11
+* parameter[doi_dy].valueUnsignedInt = 02
+* parameter[doi_yr].valueUnsignedInt = 2019
+* parameter[toi_hr].valueUnsignedInt = 1300
+* parameter[toi_unit].valueString = "M" // military
+* parameter[workinj].valueString = "N"
+* parameter[certl].valueString = "M" // ME/Coronor
+
 
 Instance: Message-MA20323-MRE-000182-Example
 InstanceOf: CodingMessage
@@ -105,3 +128,23 @@ Description: "Demographic Coding Parameters:Vivienne Write (182)"
 //* parameter[=].part[+].name = "RACEBRG"
 //* parameter[=].part[=].valueCoding = RaceCodeListCS#21
 * parameter[coded-ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[input-race-flags].part[RACE1].valueString = "Y" // White
+* parameter[input-race-flags].part[RACE2].valueString = "N"
+* parameter[input-race-flags].part[RACE3].valueString = "Y"  // American Indian
+* parameter[input-race-flags].part[RACE4].valueString = "N"
+* parameter[input-race-flags].part[RACE5].valueString = "N"
+* parameter[input-race-flags].part[RACE6].valueString = "N"
+* parameter[input-race-flags].part[RACE7].valueString = "N"
+* parameter[input-race-flags].part[RACE8].valueString = "N"
+* parameter[input-race-flags].part[RACE9].valueString = "N"
+* parameter[input-race-flags].part[RACE10].valueString = "N"
+* parameter[input-race-flags].part[RACE11].valueString = "N"
+* parameter[input-race-flags].part[RACE12].valueString = "N"
+* parameter[input-race-flags].part[RACE13].valueString = "N"
+* parameter[input-race-flags].part[RACE14].valueString = "N"
+* parameter[input-race-flags].part[RACE15].valueString = "N"
+* parameter[input-race-literals].part[RACE16].valueString = "Fort Sill Apache"
+* parameter[input-ethnicity].part[DETHNIC1].valueString = "N"
+* parameter[input-ethnicity].part[DETHNIC2].valueString = "N"
+* parameter[input-ethnicity].part[DETHNIC3].valueString = "N"
+* parameter[input-ethnicity].part[DETHNIC4].valueString = "Y" // Unknown Hispanic Origin

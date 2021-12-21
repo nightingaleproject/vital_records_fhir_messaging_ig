@@ -80,13 +80,21 @@ Description:   "Parameters for a Coding Message"
       COD1B 1..1 and
       COD1C 1..1 and
       COD1D 1..1 and
-      INVERVAL1A 1..1 and
-      INVERVAL1B 1..1 and
-      INVERVAL1C 1..1 and
-      INVERVAL1D 1..1 and
+      INTERVAL1A 1..1 and
+      INTERVAL1B 1..1 and
+      INTERVAL1C 1..1 and
+      INTERVAL1D 1..1 and
       OTHERCONDITION 1..1
 * parameter[input_causes_of_death].part.value[x] only string
-
+* parameter[input_causes_of_death].part[COD1A].name = "COD1A"
+* parameter[input_causes_of_death].part[COD1B].name = "COD1B"
+* parameter[input_causes_of_death].part[COD1C].name = "COD1C"
+* parameter[input_causes_of_death].part[COD1D].name = "COD1D"
+* parameter[input_causes_of_death].part[INTERVAL1A].name = "INVERVAL1A"
+* parameter[input_causes_of_death].part[INTERVAL1B].name = "INVERVAL1B"
+* parameter[input_causes_of_death].part[INTERVAL1C].name = "INVERVAL1C"
+* parameter[input_causes_of_death].part[INTERVAL1D].name = "INVERVAL1D"
+* parameter[input_causes_of_death].part[OTHERCONDITION].name = "OTHERCONDITION"
 * insert ParameterPartSliceByName(entity_axis_code)
 * parameter[entity_axis_code].part contains
       lineNumber 1..1 and
