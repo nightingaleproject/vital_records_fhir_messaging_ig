@@ -13,7 +13,7 @@ Description: "Message for Record Submission: Vivienne Write (182)"
 
 Instance: Vivienne-Wright-182-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
-Usage: #inline
+Usage: #example
 Description: "Header for Record Submission: Vivienne Write (182)"
 * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -22,7 +22,7 @@ Description: "Header for Record Submission: Vivienne Write (182)"
 
 Instance: Vivienne-Wright-182-Parameters-Example
 InstanceOf: DeathMessageParameters
-Usage: #inline
+Usage: #example
 Description: "Parameters for Record Submission: Vivienne Write (182)"
 * parameter[0].name = "cert_no"
 * parameter[=].valueUnsignedInt = 182
@@ -44,7 +44,7 @@ Usage: #example
 
 Instance: Header-for-MA20323-TRX-000182-Example
 InstanceOf: CodingMessageHeader
-// Usage: #inline
+Usage: #example
 Description: "Need a description"
 * meta.profile[0] = Canonical(CodingMessageHeader)
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
@@ -54,7 +54,7 @@ Description: "Need a description"
 
 Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessageParameters
-//Usage: #inline
+Usage: #example
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 182
@@ -108,7 +108,7 @@ Description: "Message for Demographic Coding: Vivienne Write (182)"
 
 Instance: Header-MA20323-MRE-000182-Example
 InstanceOf: CodingMessageHeader
-Usage: #inline
+Usage: #example
 Description: "Header for Demographic Coding: Vivienne Write (182)"
 * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
@@ -117,7 +117,7 @@ Description: "Header for Demographic Coding: Vivienne Write (182)"
 
 Instance: Parameters-MA20323-MRE-000182-Example
 InstanceOf: DemographicsCodingMessageParameters
-Usage: #inline
+Usage: #example
 Description: "Demographic Coding Parameters:Vivienne Write (182)"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[cert_no].valueUnsignedInt = 182
