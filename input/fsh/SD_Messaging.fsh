@@ -2,7 +2,7 @@
 
 Profile: DeathMessageOutcome
 Parent: OperationOutcome
-Id: VRDR-DeathMessageOutcome
+Id: VRM-DeathMessageOutcome
 Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
 
@@ -10,7 +10,7 @@ Description: "Outcome profile to support profile-based slicing of bundles"
 Profile:  DeathMessageSubmissionHeader
 Parent: MessageHeader
 Description:   "Death Message Submission Header"
-Id: VRDR-DeathMessageSubmissionHeader
+Id: VRM-DeathMessageSubmissionHeader
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
@@ -18,7 +18,7 @@ Title:  "Death Message Header"
 
 Profile:  DeathRecordUpdateHeader
 Parent: MessageHeader
-Id: VRDR-DeathRecordUpdateHeader
+Id: VRM-DeathRecordUpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionupdate (exactly)
@@ -27,7 +27,7 @@ Title:  "Death Message Header"
 
 Profile:  DeathMessageVoidHeader
 Parent: MessageHeader
-Id: VRDR-DeathMessageVoidHeader
+Id: VRM-DeathMessageVoidHeader
 Title:  "Death Message Void Header"
 Description:   "Death Message Void Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionvoid (exactly)
@@ -36,7 +36,7 @@ Description:   "Death Message Void Header"
 
 Profile:  CodingMessageHeader
 Parent: MessageHeader
-Id: VRDR-CodingMessageHeader
+Id: VRM-CodingMessageHeader
 Title:  "Coding Message Header"
 Description:   "Death Message Coding Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
@@ -45,7 +45,7 @@ Description:   "Death Message Coding Header"
 
 Profile:  CodingMessageUpdateHeader
 Parent: MessageHeader
-Id: VRDR-CodingMessageUpdateHeader
+Id: VRM-CodingMessageUpdateHeader
 Title:  "Coding Message Update Header"
 Description:   "Death Message Update Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate (exactly)
@@ -54,7 +54,7 @@ Description:   "Death Message Update Header"
 
 Profile:  DeathMessageAliasHeader
 Parent: MessageHeader
-Id: VRDR-DeathMessageAliasHeader
+Id: VRM-DeathMessageAliasHeader
 Title:  "Death Message Alias Header"
 Description:   "Death Message Alias Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_alias (exactly)
@@ -63,7 +63,7 @@ Description:   "Death Message Alias Header"
 
 Profile:  AcknowledgementMessageHeader
 Parent: MessageHeader
-Id: VRDR-AcknowledgementMessageHeader
+Id: VRM-AcknowledgementMessageHeader
 Title:  "Acknowledgement Message Header"
 Description:   "Acknowledgement Message Header"
 * eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdr_acknowledgement (exactly)
@@ -75,7 +75,7 @@ Description:   "Acknowledgement Message Header"
 
 Profile:  ExtractionErrorHeader
 Parent: MessageHeader
-Id: VRDR-ExtractionErrorHeader
+Id: VRM-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extractionerror  (exactly)
@@ -88,7 +88,7 @@ Description:   "Extraction Error Message Header"
 
 Profile:  DeathMessageParameters
 Parent: Parameters
-Id: VRDR-DeathMessageParameters
+Id: VRM-DeathMessageParameters
 Description:   "Death Message Parameters"
 Title:  "Base parameter set for most Messages"
 * id MS
@@ -112,7 +112,7 @@ Title:  "Base parameter set for most Messages"
 
 Profile: DeathMessageVoidParameters
 Parent: DeathMessageParameters
-Id: VRDR-DeathMessageVoidParameters
+Id: VRM-DeathMessageVoidParameters
 Description:   "Parameters for a Void Death Message"
 //* parameter contains
 //    block_count 1..1
@@ -120,7 +120,7 @@ Description:   "Parameters for a Void Death Message"
 
 Profile: DeathMessageAliasParameters
 Parent: DeathMessageParameters
-Id: VRDR-DeathMessageAliasParameters
+Id: VRM-DeathMessageAliasParameters
 Description:   "Parameters for an Alias Message"
 * parameter contains
     alias_decedent_first_name 0..1 and
@@ -162,7 +162,7 @@ RuleSet: BasicParameters
 
 Profile: DeathRecordSubmissionMessage
 Parent: Bundle
-Id: VRDR-DeathRecordSubmissionMessage
+Id: VRM-DeathRecordSubmissionMessage
 Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert CommonBundleStuff
@@ -173,7 +173,7 @@ Description:   "Message for submitting death records"
 
 Profile: DeathRecordUpdateMessage
 Parent: Bundle
-Id: VRDR-DeathRecordUpdateMessage
+Id: VRM-DeathRecordUpdateMessage
 Title: "Death Record Update Message"
 Description:   "Message for updating death records"
 * insert CommonBundleStuff
@@ -184,7 +184,7 @@ Description:   "Message for updating death records"
 
 Profile: DeathRecordVoidMessage
 Parent: Bundle
-Id: VRDR-DeathRecordVoidMessage
+Id: VRM-DeathRecordVoidMessage
 Title: "Death Record Void Message"
 Description:   "Message for voiding death records"
 * insert CommonBundleStuff
@@ -194,7 +194,7 @@ Description:   "Message for voiding death records"
 
 Profile: DeathRecordAliasMessage
 Parent: Bundle
-Id: VRDR-DeathRecordAliasMessage
+Id: VRM-DeathRecordAliasMessage
 Title: "Death Record Alias Message"
 Description:   "Message for aliasing death records"
 * insert CommonBundleStuff
@@ -204,7 +204,7 @@ Description:   "Message for aliasing death records"
 
 Profile: CodingMessage
 Parent: Bundle
-Id: VRDR-CodingMessage
+Id: VRM-CodingMessage
 Title: "Coding Message"
 Description:   "Message for coding response to death records"
 * entry ^slicing.discriminator.type = #pattern
@@ -220,7 +220,7 @@ Description:   "Message for coding response to death records"
 
 Profile: CodingUpdateMessage
 Parent: Bundle
-Id: VRDR-CodingUpdateMessage
+Id: VRM-CodingUpdateMessage
 Title: "Coding Update Message"
 Description:   "Message for updating coding response to death records"
 * insert CommonBundleStuff
@@ -231,7 +231,7 @@ Description:   "Message for updating coding response to death records"
 
 Profile: AcknowledgementMessage
 Parent: Bundle
-Id: VRDR-AcknowledgementMessage
+Id: VRM-AcknowledgementMessage
 Title: "Acknowledgement Message"
 Description:   "Acknowledgement Message"
 * insert CommonBundleStuff
@@ -241,7 +241,7 @@ Description:   "Acknowledgement Message"
 
 Profile: ExtractionErrorMessage
 Parent: Bundle
-Id: VRDR-ExtractionErrorMessage
+Id: VRM-ExtractionErrorMessage
 Title: "Extraction Error Message"
 Description:   "Message for Errors during content extraction"
 * insert CommonBundleStuff

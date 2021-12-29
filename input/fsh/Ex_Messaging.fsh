@@ -5,11 +5,11 @@ Usage: #example
 Description: "Parameters for Demographic Coding: Example"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[coded-race].part[RACE1E].valueCoding = RaceCodeListCS#100
-* parameter[coded-race].part[RACE2E].valueCoding = RaceCodeListCS#300
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#100
+* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeListCS#300
 //* parameter[=].part[+].name = "RACEBRG"
 //* parameter[=].part[=].valueCoding = RaceCodeListCS#21
-* parameter[coded-ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
 
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
@@ -25,7 +25,7 @@ Description: "Parameters for Cause of Death Coding: Example"
 * parameter[cs].valueUnsignedInt = 8
 * parameter[ship].valueString = "191"
 * parameter[sys_rej].valueUnsignedInt = 0
-* parameter[injpl].valueString = "8"
+* parameter[input_misc_fields].part[injpl].valueString = "8"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[manual_underlying_cause_of_death].valueString = "A047"
 * parameter[acme_underlying_cause_of_death].valueString = "A047"

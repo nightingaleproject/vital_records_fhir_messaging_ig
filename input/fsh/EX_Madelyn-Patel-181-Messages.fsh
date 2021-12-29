@@ -77,7 +77,7 @@ Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
 * parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding].valueString = "T509"
-* parameter[entity_axis_code][=].part[e-code-indicator].valueString = "&"
+* parameter[entity_axis_code][=].part[e_code_indicator].valueString = "&"
 
 Instance: Message-MA20323-MRE-000181-Example
 InstanceOf: CodingMessage
@@ -107,5 +107,5 @@ Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[death_year].valueUnsignedInt = 2020
-* parameter[coded-race].part[RACE1E].valueCoding = RaceCodeListCS#400
-* parameter[coded-ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#400
+* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999

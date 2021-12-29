@@ -1,3 +1,4 @@
+/*
 CodeSystem: InternalRejectCodesCS
 Id: VRDR-InternalRejectCodes-cs
 Title: "System Reject Codes Values"
@@ -25,6 +26,7 @@ Description: "System Reject Codes Values"
 * #MICARRejectRuleApplication "MICARRejectRuleApplication" "MICAR Reject - Rule Application"
 * #NotRejected "NotRejected" "Not Rejected"
 * #RecordReviewed "RecordReviewed" "Record Reviewed"
+*/
 
 CodeSystem: MessageHeaderURICS
 Id: VRDR-MessageHeaderURI-cs
