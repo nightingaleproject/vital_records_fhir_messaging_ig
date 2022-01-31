@@ -25,7 +25,7 @@ RuleSet: ParameterName(name,short,def)
 * parameter[{name}].name = "{name}"
 * parameter[{name}] ^short = "{short}"
 * parameter[{name}] ^definition = "{def}"
-//* parameter[{name}].extension 0..0
+* parameter[{name}].extension 0..0
 
 RuleSet: ParameterNameType(name, type, short, def)
 * insert ParameterName({name},{short}, {def})
@@ -33,7 +33,7 @@ RuleSet: ParameterNameType(name, type, short, def)
 * parameter[{name}].value[x] 1..1
 * parameter[{name}].resource 0..0
 * parameter[{name}].part 0..0
-//* parameter[{name}].extension 0..0
+* parameter[{name}].extension 0..0
 
 RuleSet: ParameterNameTypeLength(name, type, short, def, length)
 * insert ParameterNameType({name}, {type}, {short}, {def})
@@ -59,7 +59,7 @@ RuleSet: ParameterPartSlice(slice, partslice, type, short, def )
 * parameter[{slice}].part[{partslice}].value[x] only {type}
 * parameter[{slice}].part[{partslice}] ^short = "{short}"
 * parameter[{slice}].part[{partslice}] ^definition = "{def}"
-//* parameter[{slice}].part[{partslice}].extension 0..0
+* parameter[{slice}].part[{partslice}].extension 0..0
 
 RuleSet: ParameterPartSliceLength(slice, partslice, type, short, def, length)
 * insert ParameterPartSlice({slice}, {partslice}, {type}, {short}, {def})
