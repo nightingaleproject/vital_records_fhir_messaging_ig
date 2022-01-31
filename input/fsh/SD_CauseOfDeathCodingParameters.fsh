@@ -25,15 +25,15 @@ Description:   "Parameters for a Coding Message"
 * insert ParameterName(input_causes_of_death, input causes of death: COD1A-D + INTERVAL1A-D + OTHERCONDITION, input causes of death)
 * insert ParameterPartSliceByName(input_causes_of_death)
 * parameter[input_causes_of_death].part contains
-      COD1A 1..1 and
-      COD1B 1..1 and
-      COD1C 1..1 and
-      COD1D 1..1 and
-      INTERVAL1A 1..1 and
-      INTERVAL1B 1..1 and
-      INTERVAL1C 1..1 and
-      INTERVAL1D 1..1 and
-      OTHERCONDITION 1..1
+      COD1A 0..1 and
+      COD1B 0..1 and
+      COD1C 0..1 and
+      COD1D 0..1 and
+      INTERVAL1A 0..1 and
+      INTERVAL1B 0..1 and
+      INTERVAL1C 0..1 and
+      INTERVAL1D 0..1 and
+      OTHERCONDITION 0..1
 * insert ParameterPartSlice(input_causes_of_death, COD1A, string, COD1A, COD1A )
 * insert ParameterPartSlice(input_causes_of_death, COD1B, string, COD1B, COD1B )
 * insert ParameterPartSlice(input_causes_of_death, COD1C, string, COD1C, COD1C )
