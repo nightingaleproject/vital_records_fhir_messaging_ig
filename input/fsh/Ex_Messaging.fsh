@@ -138,7 +138,7 @@ Instance: CodingMessageUpdateHeader-Example1
 InstanceOf: CodingMessageUpdateHeader
 Usage: #example
 Description: "Header for Demographic Coding Update Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_codingupdate"
+* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -148,7 +148,7 @@ Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
 Description: "Header for Extraction Error Message - Example"
-* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extractionerror"
+* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
