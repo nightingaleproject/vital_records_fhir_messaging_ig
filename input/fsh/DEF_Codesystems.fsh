@@ -35,13 +35,13 @@ Description: "MessageHeader URI Values"
 * ^caseSensitive = true
 * #http://nchs.cdc.gov/vrdr_submission "VRDR Submission" "Indicates that the payload is aninitial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
 Document"
-* #http://nchs.cdc.gov/vrdr_submissionupdate "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document"
-* #http://nchs.cdc.gov/vrdr_submissionvoid   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document"
+* #http://nchs.cdc.gov/vrdr_submission_update "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document"
+* #http://nchs.cdc.gov/vrdr_submission_void   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document"
 * #http://nchs.cdc.gov/vrdr_acknowledgement  "VRDR Acknowledgement" "Indicates this is  an  acknowledgement"
-* #http://nchs.cdc.gov/vrdr_codingupdate     "VRDR Coding Update" "Indicates this is  an  coding update"
+* #http://nchs.cdc.gov/vrdr_coding_update     "VRDR Coding Update" "Indicates this is  an  coding update"
 * #http://nchs.cdc.gov/vrdr_coding "VRDR Coding" "Inidicates that this is an initial coding"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
-* #http://nchs.cdc.gov/vrdr_extractionerror "VRDR Extraction Error" "Indicates that this is an extraction error"
+* #http://nchs.cdc.gov/vrdr_extraction_error "VRDR Extraction Error" "Indicates that this is an extraction error"
 
 CodeSystem: ACMETRANSAXCodingStatusCS
 Id: VRDR-ACMETRANSAXCodingStatus-cs

@@ -3,8 +3,8 @@ Parent: DeathMessageParameters
 Id: VRM-CauseOfDeathCodingMessageParameters
 Title:  "Cause of Death Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
+//* meta.profile 1..*
+//* meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
     input_causes_of_death 0..1 and
@@ -66,7 +66,7 @@ Description:   "Parameters for a Coding Message"
 
 * insert ParameterPartSliceByName(input_misc_fields)
 * parameter[input_misc_fields].part contains
-   manner 0..1 and // string
+    manner 0..1 and // string
     injpl 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     trx_flg 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     autop 0..1 and // string -- one character. Was Autopsy performed?

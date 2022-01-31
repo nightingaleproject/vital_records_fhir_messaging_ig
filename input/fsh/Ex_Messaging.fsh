@@ -91,7 +91,7 @@ Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
 Description: "Parameters for Void: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submissionvoid"
+* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(VoidMessageParameters-Example1)
@@ -100,7 +100,7 @@ Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
 Description: "Header for Update: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submissionupdate"
+* eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)

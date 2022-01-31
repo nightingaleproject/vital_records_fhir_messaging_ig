@@ -21,7 +21,7 @@ Parent: MessageHeader
 Id: VRM-DeathRecordUpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathCertificateDocument)
 
@@ -30,7 +30,7 @@ Parent: MessageHeader
 Id: VRM-DeathMessageVoidHeader
 Title:  "Death Message Void Header"
 Description:   "Death Message Void Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionvoid (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_void (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageVoidParameters)
 
@@ -48,7 +48,7 @@ Parent: MessageHeader
 Id: VRM-CodingMessageUpdateHeader
 Title:  "Coding Message Update Header"
 Description:   "Death Message Update Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
 
@@ -78,7 +78,7 @@ Parent: MessageHeader
 Id: VRM-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extractionerror  (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
 * response.code = #fatal-error
@@ -89,14 +89,13 @@ Description:   "Extraction Error Message Header"
 Profile:  DeathMessageParameters
 Parent: Parameters
 Id: VRM-DeathMessageParameters
-Description:   "Death Message Parameters"
-Title:  "Base parameter set for most Messages"
+Description:   "Base parameter set for most Messages"
+Title:  "Death Message Parameters"
 * id MS
 // jurisdiction_id
 // cert_no
 // death_year
 // state_auxiliary_id
-// block_count -- only for void messages with a block_count
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
@@ -106,17 +105,16 @@ Title:  "Base parameter set for most Messages"
     cert_no 0..1 and
     death_year 0..1 and
     state_auxiliary_id 0..1 and
-    ssn 0..1 and //   needed?
-    block_count 0..1 MS   // only for void messages
+    ssn 0..1 //   needed?
 * insert BaseMessageParameterSlices
 
 Profile: DeathMessageVoidParameters
 Parent: DeathMessageParameters
 Id: VRM-DeathMessageVoidParameters
 Description:   "Parameters for a Void Death Message"
-//* parameter contains
-//    block_count 1..1
-//* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
+* parameter contains
+    block_count 1..1
+* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
 
 Profile: DeathMessageAliasParameters
 Parent: DeathMessageParameters

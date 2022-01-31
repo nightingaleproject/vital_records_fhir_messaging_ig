@@ -3,8 +3,8 @@ Parent: DeathMessageParameters
 Id: VRM-DemographicCodingMessageParameters
 Title:  "Demographic Coding Message Parameters"
 Description:   "Parameters for a Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(DemographicsCodingMessageParameters)
+//* meta.profile 1..*
+//* meta.profile = Canonical(DemographicsCodingMessageParameters)
 * insert BasicParameters
 * parameter contains
      coded_ethnicity 0..1 and // part contains name=DETHNICE or DETHNIC5C codeable

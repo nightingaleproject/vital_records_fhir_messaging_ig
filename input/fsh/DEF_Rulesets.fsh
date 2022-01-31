@@ -25,7 +25,7 @@ RuleSet: ParameterName(name,short,def)
 * parameter[{name}].name = "{name}"
 * parameter[{name}] ^short = "{short}"
 * parameter[{name}] ^definition = "{def}"
-* parameter[{name}].extension 0..0
+//* parameter[{name}].extension 0..0
 
 RuleSet: ParameterNameType(name, type, short, def)
 * insert ParameterName({name},{short}, {def})
@@ -33,7 +33,7 @@ RuleSet: ParameterNameType(name, type, short, def)
 * parameter[{name}].value[x] 1..1
 * parameter[{name}].resource 0..0
 * parameter[{name}].part 0..0
-* parameter[{name}].extension 0..0
+//* parameter[{name}].extension 0..0
 
 RuleSet: ParameterNameTypeLength(name, type, short, def, length)
 * insert ParameterNameType({name}, {type}, {short}, {def})
@@ -46,7 +46,7 @@ RuleSet: BaseMessageParameterSlices
 * insert ParameterNameType(death_year, unsignedInt, death year, four digit death year) //* parameter[death_year].name = "death_year"
 * insert ParameterNameType(state_auxiliary_id, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
 * insert ParameterNameType(ssn, string, SSN Social Security Number, Social Security Number) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
+//* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
 
 RuleSet: ParameterPartSliceByName(slice)
 * parameter[{slice}].part ^slicing.discriminator.type = #value
@@ -59,7 +59,7 @@ RuleSet: ParameterPartSlice(slice, partslice, type, short, def )
 * parameter[{slice}].part[{partslice}].value[x] only {type}
 * parameter[{slice}].part[{partslice}] ^short = "{short}"
 * parameter[{slice}].part[{partslice}] ^definition = "{def}"
-* parameter[{slice}].part[{partslice}].extension 0..0
+//* parameter[{slice}].part[{partslice}].extension 0..0
 
 RuleSet: ParameterPartSliceLength(slice, partslice, type, short, def, length)
 * insert ParameterPartSlice({slice}, {partslice}, {type}, {short}, {def})
