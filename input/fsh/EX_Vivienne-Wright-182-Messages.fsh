@@ -15,7 +15,7 @@ Instance: Vivienne-Wright-182-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
 Description: "Header for Record Submission: Vivienne Write (182)"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
 * focus = Reference(Vivienne-Wright-182-Death-Certificate-Document-Example)
@@ -32,7 +32,7 @@ Description: "Parameters for Record Submission: Vivienne Write (182)"
 * parameter[=].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000182-Example
-InstanceOf: CodingMessage
+InstanceOf: CauseOfDeathCodingMessage
 Description: "Message for Cause of Death Coding: Vivienne Write (182)"
 Usage: #example
 * type = #message
@@ -43,11 +43,11 @@ Usage: #example
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
 Instance: Header-for-MA20323-TRX-000182-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: CauseOfDeathCodingMessageHeader
 Usage: #example
 Description: "Need a description"
-* meta.profile[0] = Canonical(CodingMessageHeader)
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* meta.profile[0] = Canonical(CauseOfDeathCodingMessageHeader)
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-for-MA20323-TRX-000182-Example)
@@ -98,7 +98,7 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 
 
 Instance: Message-MA20323-MRE-000182-Example
-InstanceOf: CodingMessage
+InstanceOf: DemographicsCodingMessage
 Usage: #example
 Description: "Message for Demographic Coding: Vivienne Write (182)"
 * type = #message
@@ -109,10 +109,10 @@ Description: "Message for Demographic Coding: Vivienne Write (182)"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
 Instance: Header-MA20323-MRE-000182-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: DemographicsCodingMessageHeader
 Usage: #example
 Description: "Header for Demographic Coding: Vivienne Write (182)"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-MA20323-MRE-000182-Example)

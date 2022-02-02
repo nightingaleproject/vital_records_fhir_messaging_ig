@@ -23,11 +23,11 @@ Description: "DeathMessageHeader URI Values"
 * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update "VRDR Update"
 
 
-ValueSet: CodingMessageHeaderURIVS
-Title: "CodingMessageHeader URI Values"
-Description: "CodingMessageHeader URI Values"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding "VRDR Coding"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update     "VRDR Coding Update"
+// ValueSet: CodingMessageHeaderURIVS
+// Title: "CodingMessageHeader URI Values"
+// Description: "CodingMessageHeader URI Values"
+// * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding "VRDR Coding"
+// * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update     "VRDR Coding Update"
 
 /*
 ValueSet: ACMETRANSAXCodingStatusVS

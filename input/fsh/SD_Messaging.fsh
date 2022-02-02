@@ -34,23 +34,59 @@ Description:   "Death Message Void Header"
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageVoidParameters)
 
-Profile:  CodingMessageHeader
+// Profile:  CodingMessageHeader
+// Parent: MessageHeader
+// Id: VRM-CodingMessageHeader
+// Title:  "Coding Message Header"
+// Description:   "Death Message Coding Header"
+// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
+// * insert CommonHeaderStuff
+// * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters )
+
+Profile:  DemographicsCodingMessageHeader
 Parent: MessageHeader
 Id: VRM-CodingMessageHeader
-Title:  "Coding Message Header"
-Description:   "Death Message Coding Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
+Title:  "Demographics Coding Message Header"
+Description:   "Demographics Coding Message Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters )
+* focus only Reference( DemographicsCodingMessageParameters )
 
-Profile:  CodingMessageUpdateHeader
+Profile:  CauseOfDeathCodingMessageHeader
 Parent: MessageHeader
-Id: VRM-CodingMessageUpdateHeader
-Title:  "Coding Message Update Header"
-Description:   "Death Message Update Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update (exactly)
+Id: VRM-CauseOfDeathCodingMessageHeader
+Title:  "Cause of Death Coding Message Header"
+Description:   "Cause of Death Coding Message Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
+* focus only Reference(CauseOfDeathCodingMessageParameters )
+
+Profile:  DemographicsCodingMessageUpdateHeader
+Parent: MessageHeader
+Id: VRM-DemographicsCodingMessageUpdateHeader
+Title:  "Demographics Coding Message Update Header"
+Description:   "Demographics Coding Message Update Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
+* insert CommonHeaderStuff
+* focus only Reference( DemographicsCodingMessageParameters )
+
+Profile:  CauseOfDeathCodingMessageUpdateHeader
+Parent: MessageHeader
+Id: VRM-CauseOfDeathCodingUpdateMessageHeader
+Title:  "Cause Of Death Coding Message Update Header"
+Description:   "Cause Of Death Death Coding Message Coding Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
+* insert CommonHeaderStuff
+* focus only Reference(CauseOfDeathCodingMessageParameters )
+
+// Profile:  CodingMessageUpdateHeader
+// Parent: MessageHeader
+// Id: VRM-CodingMessageUpdateHeader
+// Title:  "Coding Message Update Header"
+// Description:   "Death Message Update Header"
+// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update (exactly)
+// * insert CommonHeaderStuff
+// * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
 
 Profile:  DeathMessageAliasHeader
 Parent: MessageHeader
@@ -200,31 +236,75 @@ Description:   "Message for aliasing death records"
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageAliasHeader)
 * insert BundleEntry(aliasParameters, 1, 1, Death Message Alias Parameters, Death Record Aias Parameters, DeathMessageAliasParameters)
 
-Profile: CodingMessage
+// Profile: CodingMessage
+// Parent: Bundle
+// Id: VRM-CodingMessage
+// Title: "Coding Message"
+// Description:   "Message for coding response to death records"
+// * entry ^slicing.discriminator.type = #pattern
+// * entry ^slicing.discriminator.path = "resource.meta.profile"
+// * entry ^slicing.rules = #open
+// * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
+// * insert CommonBundleStuff
+// // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
+// * insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
+// * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+// * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: DemographicsCodingMessage
 Parent: Bundle
-Id: VRM-CodingMessage
+Id: VRM-DemographicsCodingMessage
 Title: "Coding Message"
-Description:   "Message for coding response to death records"
+Description:   "Message for demographics coding response to death records"
 * entry ^slicing.discriminator.type = #pattern
 * entry ^slicing.discriminator.path = "resource.meta.profile"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
-* insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
-* insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingMessageHeader)
+* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
 
-
-Profile: CodingUpdateMessage
+Profile: CauseOfDeathCodingMessage
 Parent: Bundle
-Id: VRM-CodingUpdateMessage
-Title: "Coding Update Message"
-Description:   "Message for updating coding response to death records"
+Id: VRM-CauseOfDeathCodingMessage
+Title: "Cause of Death Coding Message"
+Description:   "Message for cause of death coding response to death records"
+* entry ^slicing.discriminator.type = #pattern
+* entry ^slicing.discriminator.path = "resource.meta.profile"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
-* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
-* insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingMessageHeader)
+* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+
+// Profile: CodingUpdateMessage
+// Parent: Bundle
+// Id: VRM-CodingUpdateMessage
+// Title: "Coding Update Message"
+// Description:   "Message for updating coding response to death records"
+// * insert CommonBundleStuff
+// * insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
+// * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+// * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: DemographicsCodingUpdateMessage
+Parent: Bundle
+Id: VRM-DemographicsCodingUpdateMessage
+Title: "Demographics Coding Update Message"
+Description:   "Message for updating Demographics coding response to death records"
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, DemographicsCodingMessageUpdateHeader)
+* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: CauseOfDeathCodingUpdateMessage
+Parent: Bundle
+Id: VRM-CauseOfDeathCodingUpdateMessage
+Title: "Cause Of Death Coding Update Message"
+Description:   "Message for updating Cause Of Death coding response to death records"
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Cause Of Death Coding Message Update Header , Cause Of Death Coding Message Update Header, CauseOfDeathCodingMessageUpdateHeader)
+* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
 
 
 Profile: AcknowledgementMessage

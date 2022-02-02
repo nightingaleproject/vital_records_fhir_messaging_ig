@@ -80,7 +80,7 @@ Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
 Description: "Acknowledgement Header: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
+//* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -91,7 +91,7 @@ Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
 Description: "Parameters for Void: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(VoidMessageParameters-Example1)
@@ -100,7 +100,7 @@ Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
 Description: "Header for Update: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
@@ -109,36 +109,36 @@ Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
 Description: "Header for Submission - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
 
-Instance: CodingMessageHeader-Example1
-InstanceOf: CodingMessageHeader
+Instance: CauseOfDeathCodingMessageHeader-Example1
+InstanceOf: CauseOfDeathCodingMessageHeader
 Usage: #example
 Description: "Header for Cause of Death Coding Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodingMessageParameters-Example1)
 
-Instance: CodingMessageHeader-Example2
-InstanceOf: CodingMessageHeader
+Instance: DemographicsCodingMessageHeader-Example2
+InstanceOf: DemographicsCodingMessageHeader
 Usage: #example
 Description: "Header for Demographic Coding Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(DemographicsCodingMessageParameters-Example1)
 
-Instance: CodingMessageUpdateHeader-Example1
-InstanceOf: CodingMessageUpdateHeader
+Instance: CauseOfDeathCodingMessageUpdateHeader-Example1
+InstanceOf: CauseOfDeathCodingMessageUpdateHeader
 Usage: #example
-Description: "Header for Demographic Coding Update Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
+Description: "Header for Cause Of Death Coding Update Message - Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -148,7 +148,7 @@ Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
 Description: "Header for Extraction Error Message - Example"
-* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
+// * eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -188,26 +188,26 @@ Description: "Acknowledgement message - Example"
 * entry[+].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 
-Instance: CodingMessage-Example1
-InstanceOf: CodingMessage
+Instance: CauseOfDeathCodingMessage-Example1
+InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Cause of death coding message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CodingHeader-Example1"
+* entry[0].resource = CauseOfDeathCodingMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CauseOfDeathCodingHeader-Example1"
 
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingMessageParameters1"
 
-Instance: CodingUpdateMessage1
-InstanceOf: CodingUpdateMessage
+Instance: CauseOfDeathCodingUpdateMessage1
+InstanceOf: CauseOfDeathCodingUpdateMessage
 Usage: #example
-Description: "Coding update message - Example"
+Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageUpdateHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodingUpdateHeader1"
+* entry[0].resource = CauseOfDeathCodingMessageUpdateHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingMessageParameters-Example1"
 
 
 Instance: DeathRecordVoidMessage-Example1

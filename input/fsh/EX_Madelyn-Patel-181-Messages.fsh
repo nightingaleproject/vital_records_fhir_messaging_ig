@@ -15,7 +15,7 @@ Instance: Madelyn-Patel-181-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
 Description: "Header for Record Submission: Madelyn Patel (181)"
 Usage: #inline
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
 * focus = Reference(Madelyn-Patel-181-Death-Certificate-Document-Example)
@@ -32,7 +32,7 @@ Usage: #inline
 * parameter[=].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000181-Example
-InstanceOf: CodingMessage
+InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * type = #message
@@ -43,10 +43,10 @@ Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example
 
 Instance: Header-MA20323-TRX-000181-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: CauseOfDeathCodingMessageHeader
 Usage: #inline
 Description: "Header for Cause of Death Coding: Madelyn Patel (181)"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-MA20323-TRX-000181-Example)
@@ -80,7 +80,7 @@ Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * parameter[entity_axis_code][=].part[e_code_indicator].valueString = "&"
 
 Instance: Message-MA20323-MRE-000181-Example
-InstanceOf: CodingMessage
+InstanceOf: DemographicsCodingMessage
 Usage: #example
 Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * type = #message
@@ -91,10 +91,10 @@ Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * entry[=].resource = Parameters-MA20323-MRE-000181-Example
 
 Instance: Header-MA20323-MRE-000181-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: DemographicsCodingMessageHeader
 Description: "Header for Demographic Coding: Madelyn Patel (181)"
 Usage: #inline
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-MA20323-MRE-000181-Example)
