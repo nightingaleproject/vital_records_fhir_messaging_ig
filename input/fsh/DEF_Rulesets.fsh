@@ -23,10 +23,9 @@ RuleSet: BundleEntry(name, min, max, short, def, class)
 
 RuleSet: ParameterName(name,short,def)
 * parameter[{name}].name = "{name}"
-* parameter[{name}].name = "{name}"
-* parameter[{name}].name = "{name}"
 * parameter[{name}] ^short = "{short}"
 * parameter[{name}] ^definition = "{def}"
+* parameter[{name}].extension 0..0
 
 RuleSet: ParameterNameType(name, type, short, def)
 * insert ParameterName({name},{short}, {def})
@@ -34,6 +33,11 @@ RuleSet: ParameterNameType(name, type, short, def)
 * parameter[{name}].value[x] 1..1
 * parameter[{name}].resource 0..0
 * parameter[{name}].part 0..0
+* parameter[{name}].extension 0..0
+
+RuleSet: ParameterNameTypeLength(name, type, short, def, length)
+* insert ParameterNameType({name}, {type}, {short}, {def})
+* parameter[{name}].value[x] ^maxLength = {length}
 
 RuleSet: BaseMessageParameterSlices
 * insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
@@ -41,4 +45,22 @@ RuleSet: BaseMessageParameterSlices
 * insert ParameterNameType(cert_no, unsignedInt,death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
 * insert ParameterNameType(death_year, unsignedInt, death year, four digit death year) //* parameter[death_year].name = "death_year"
 * insert ParameterNameType(state_auxiliary_id, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
+* insert ParameterNameType(ssn, string, SSN Social Security Number, Social Security Number) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
+//* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
+
+RuleSet: ParameterPartSliceByName(slice)
+* parameter[{slice}].part ^slicing.discriminator.type = #value
+* parameter[{slice}].part ^slicing.discriminator.path = "name"
+* parameter[{slice}].part ^slicing.rules = #closed
+* parameter[{slice}].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+
+RuleSet: ParameterPartSlice(slice, partslice, type, short, def )
+* parameter[{slice}].part[{partslice}].name = "{partslice}"
+* parameter[{slice}].part[{partslice}].value[x] only {type}
+* parameter[{slice}].part[{partslice}] ^short = "{short}"
+* parameter[{slice}].part[{partslice}] ^definition = "{def}"
+* parameter[{slice}].part[{partslice}].extension 0..0
+
+RuleSet: ParameterPartSliceLength(slice, partslice, type, short, def, length)
+* insert ParameterPartSlice({slice}, {partslice}, {type}, {short}, {def})
+* parameter[{slice}].part[{partslice}].value[x] ^maxLength = {length}

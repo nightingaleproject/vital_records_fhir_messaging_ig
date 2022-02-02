@@ -2,7 +2,7 @@
 
 Profile: DeathMessageOutcome
 Parent: OperationOutcome
-Id: VRDR-DeathMessageOutcome
+Id: VRM-DeathMessageOutcome
 Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
 
@@ -10,7 +10,7 @@ Description: "Outcome profile to support profile-based slicing of bundles"
 Profile:  DeathMessageSubmissionHeader
 Parent: MessageHeader
 Description:   "Death Message Submission Header"
-Id: VRDR-DeathMessageSubmissionHeader
+Id: VRM-DeathMessageSubmissionHeader
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
@@ -18,43 +18,79 @@ Title:  "Death Message Header"
 
 Profile:  DeathRecordUpdateHeader
 Parent: MessageHeader
-Id: VRDR-DeathRecordUpdateHeader
+Id: VRM-DeathRecordUpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionupdate (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathCertificateDocument)
 
 Profile:  DeathMessageVoidHeader
 Parent: MessageHeader
-Id: VRDR-DeathMessageVoidHeader
+Id: VRM-DeathMessageVoidHeader
 Title:  "Death Message Void Header"
 Description:   "Death Message Void Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submissionvoid (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_void (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(DeathMessageVoidParameters)
 
-Profile:  CodingMessageHeader
-Parent: MessageHeader
-Id: VRDR-CodingMessageHeader
-Title:  "Coding Message Header"
-Description:   "Death Message Coding Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
-* insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters )
+// Profile:  CodingMessageHeader
+// Parent: MessageHeader
+// Id: VRM-CodingMessageHeader
+// Title:  "Coding Message Header"
+// Description:   "Death Message Coding Header"
+// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding (exactly)
+// * insert CommonHeaderStuff
+// * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters )
 
-Profile:  CodingMessageUpdateHeader
+Profile:  DemographicsCodingMessageHeader
 Parent: MessageHeader
-Id: VRDR-CodingMessageUpdateHeader
-Title:  "Coding Message Update Header"
-Description:   "Death Message Update Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_codingupdate (exactly)
+Id: VRM-CodingMessageHeader
+Title:  "Demographics Coding Message Header"
+Description:   "Demographics Coding Message Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
+* focus only Reference( DemographicsCodingMessageParameters )
+
+Profile:  CauseOfDeathCodingMessageHeader
+Parent: MessageHeader
+Id: VRM-CauseOfDeathCodingMessageHeader
+Title:  "Cause of Death Coding Message Header"
+Description:   "Cause of Death Coding Message Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding (exactly)
+* insert CommonHeaderStuff
+* focus only Reference(CauseOfDeathCodingMessageParameters )
+
+Profile:  DemographicsCodingMessageUpdateHeader
+Parent: MessageHeader
+Id: VRM-DemographicsCodingMessageUpdateHeader
+Title:  "Demographics Coding Message Update Header"
+Description:   "Demographics Coding Message Update Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
+* insert CommonHeaderStuff
+* focus only Reference( DemographicsCodingMessageParameters )
+
+Profile:  CauseOfDeathCodingMessageUpdateHeader
+Parent: MessageHeader
+Id: VRM-CauseOfDeathCodingUpdateMessageHeader
+Title:  "Cause Of Death Coding Message Update Header"
+Description:   "Cause Of Death Death Coding Message Coding Header"
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
+* insert CommonHeaderStuff
+* focus only Reference(CauseOfDeathCodingMessageParameters )
+
+// Profile:  CodingMessageUpdateHeader
+// Parent: MessageHeader
+// Id: VRM-CodingMessageUpdateHeader
+// Title:  "Coding Message Update Header"
+// Description:   "Death Message Update Header"
+// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_coding_update (exactly)
+// * insert CommonHeaderStuff
+// * focus only Reference(CauseOfDeathCodingMessageParameters or DemographicsCodingMessageParameters)
 
 Profile:  DeathMessageAliasHeader
 Parent: MessageHeader
-Id: VRDR-DeathMessageAliasHeader
+Id: VRM-DeathMessageAliasHeader
 Title:  "Death Message Alias Header"
 Description:   "Death Message Alias Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_alias (exactly)
@@ -63,7 +99,7 @@ Description:   "Death Message Alias Header"
 
 Profile:  AcknowledgementMessageHeader
 Parent: MessageHeader
-Id: VRDR-AcknowledgementMessageHeader
+Id: VRM-AcknowledgementMessageHeader
 Title:  "Acknowledgement Message Header"
 Description:   "Acknowledgement Message Header"
 * eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdr_acknowledgement (exactly)
@@ -75,10 +111,10 @@ Description:   "Acknowledgement Message Header"
 
 Profile:  ExtractionErrorHeader
 Parent: MessageHeader
-Id: VRDR-ExtractionErrorHeader
+Id: VRM-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extractionerror  (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
 * response.code = #fatal-error
@@ -88,15 +124,14 @@ Description:   "Extraction Error Message Header"
 
 Profile:  DeathMessageParameters
 Parent: Parameters
-Id: VRDR-DeathMessageParameters
-Description:   "Death Message Parameters"
-Title:  "Base parameter set for most Messages"
+Id: VRM-DeathMessageParameters
+Description:   "Base parameter set for most Messages"
+Title:  "Death Message Parameters"
 * id MS
 // jurisdiction_id
 // cert_no
 // death_year
 // state_auxiliary_id
-// block_count -- only for void messages with a block_count
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
@@ -105,21 +140,21 @@ Title:  "Base parameter set for most Messages"
     jurisdiction_id 0..1 and
     cert_no 0..1 and
     death_year 0..1 and
-    state_auxiliary_id 0..1 MS and
-    block_count 0..1 MS   // only for void messages
+    state_auxiliary_id 0..1 and
+    ssn 0..1 //   needed?
 * insert BaseMessageParameterSlices
 
 Profile: DeathMessageVoidParameters
 Parent: DeathMessageParameters
-Id: VRDR-DeathMessageVoidParameters
+Id: VRM-DeathMessageVoidParameters
 Description:   "Parameters for a Void Death Message"
-//* parameter contains
-//    block_count 1..1
-//* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
+* parameter contains
+    block_count 1..1
+* insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
 
 Profile: DeathMessageAliasParameters
 Parent: DeathMessageParameters
-Id: VRDR-DeathMessageAliasParameters
+Id: VRM-DeathMessageAliasParameters
 Description:   "Parameters for an Alias Message"
 * parameter contains
     alias_decedent_first_name 0..1 and
@@ -140,154 +175,28 @@ RuleSet: BasicParameters
     rec_yr 0..1 and           //uint
     rec_mo 0..1 and          //uint
     rec_dy 0..1 and          //uint
-    cs 0..1 and    // codeable
+    cs 0..1 and    // string
     ship 0..1 and // string
     sys_rej 0..1 and // sysrej -- value set of NotRjected and other things
     int_rej 0..1   // one character reject code --  1, 2, 3, 4, 5, 9
-* insert ParameterNameType(rec_yr, unsignedInt,the year that NCHS received the record ,the year that NCHS received the record )
-* insert ParameterNameType(rec_mo, unsignedInt, the month that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(rec_dy, unsignedInt, the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(cs, CodeableConcept, ACMETRANSAX Coding Status ,ACMETRANSAX Coding Status )
-* parameter[cs].value[x] from ACMETRANSAXCodingStatusVS (required)
-* insert ParameterNameType(ship, string, NCHS Shipment Number, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(sys_rej, string, system reject code, system reject code)
-* parameter[sys_rej].value[x] from  SystemRejectCodesVS (required)
-* insert ParameterNameType(int_rej, string, internal reject code, internal reject code)
-
-
-Profile:  DemographicsCodingMessageParameters
-Parent: DeathMessageParameters
-Id: VRDR-DemographicCodingMessageParameters
-Title:  "Demographic Coding Message Parameters"
-Description:   "Parameters for a Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(DemographicsCodingMessageParameters)
-* insert BasicParameters
-* parameter contains
-     ethnicity 0..1 and // part contains name=DETHNICE, codeable
-     race 1..*   // part contains list with name=RACE1E, etc and codeable
-* insert ParameterName(ethnicity, ethnicity, ethnicity)
-* insert ParameterName(race, race, race)
-// * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
-* parameter[int_rej].value[x] from InternalRejectCodesVS (required)
-* parameter[ethnicity].part.name only string
-* parameter[ethnicity].part.value[x] only Coding // bind to value set
-* parameter[ethnicity].part.value[x] from HispanicOriginVS (required)
-* parameter[ethnicity].part ^slicing.discriminator.type = #value
-* parameter[ethnicity].part ^slicing.discriminator.path = "name"
-* parameter[ethnicity].part ^slicing.rules = #closed
-* parameter[ethnicity].part contains
-    DETHNICE 0..1 and
-    DETHNIC5C 0..1
-* parameter[ethnicity].part[DETHNICE].name = "DETHNICE"
-* parameter[ethnicity].part[DETHNIC5C].name = "DETHNIC5C"
-* parameter[race].part.name only string
-* parameter[race].part ^slicing.discriminator.type = #value
-* parameter[race].part ^slicing.discriminator.path = "name"
-* parameter[race].part ^slicing.rules = #closed
-* parameter[race].part.value[x] only Coding
-* parameter[race].part.value[x] from RaceCodeListVS (required)
-* parameter[race].part contains
-    RACE1E 0..1 and
-    RACE2E 0..1 and
-    RACE3E 0..1 and
-    RACE4E 0..1 and
-    RACE5E 0..1 and
-    RACE6E 0..1 and
-    RACE7E 0..1 and
-    RACE8E 0..1 and
-    RACE16C 0..1 and
-    RACE17C 0..1 and
-    RACE18C 0..1 and
-    RACE19C 0..1 and
-    RACE20C 0..1 and
-    RACE21C 0..1 and
-    RACE22C 0..1 and
-    RACE23C 0..1
-* parameter[race].part[RACE1E].name = "RACE1E"
-* parameter[race].part[RACE2E].name = "RACE2E"
-* parameter[race].part[RACE3E].name = "RACE3E"
-* parameter[race].part[RACE4E].name = "RACE4E"
-* parameter[race].part[RACE5E].name = "RACE5E"
-* parameter[race].part[RACE6E].name = "RACE6E"
-* parameter[race].part[RACE7E].name = "RACE7E"
-* parameter[race].part[RACE8E].name = "RACE8E"
-* parameter[race].part[RACE16C].name = "RACE16C"
-* parameter[race].part[RACE17C].name = "RACE17C"
-* parameter[race].part[RACE18C].name = "RACE18C"
-* parameter[race].part[RACE19C].name = "RACE19C"
-* parameter[race].part[RACE20C].name = "RACE20C"
-* parameter[race].part[RACE21C].name = "RACE21C"
-* parameter[race].part[RACE22C].name = "RACE22C"
-* parameter[race].part[RACE23C].name = "RACE23C"
-* parameter[ethnicity].value[x] 0..0
-* parameter[ethnicity].resource 0..0
-* parameter[race].value[x] 0..0
-* parameter[race].resource 0..0
+* insert ParameterNameType(rec_yr, unsignedInt, R_YR the year that NCHS received the record ,the year that NCHS received the record )
+* insert ParameterNameType(rec_mo, unsignedInt, R_MO the month that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(rec_dy, unsignedInt, R_DY the day that NCHS received the record, the month that NCHS received the record)
+* insert ParameterNameType(cs, unsignedInt, CS ACMETRANSAX Coding Status 0-9 ,ACMETRANSAX Coding Status )
+* insert ParameterNameType(ship, string, SHIP Needed? NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
+* insert ParameterNameType(sys_rej, unsignedInt, SYS_REJ system reject code 0-4, system reject code)
+* insert ParameterNameType(int_rej, unsignedInt, INT_REJ internal reject code 1-5 or 9, internal reject code)
+* parameter[ship].value[x] ^maxLength = 3
 
 
 
-Profile:  CauseOfDeathCodingMessageParameters
-Parent: DeathMessageParameters
-Id: VRDR-CauseOfDeathCodingMessageParameters
-Title:  "Cause of Death Coding Message Parameters"
-Description:   "Parameters for a Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
-* insert BasicParameters
-* parameter contains
-     // underlying_cause_of_death 0..1 and // icd10
-    record_cause_of_death 0..20 and // part contains list of codeable concepts
-    entity_axis_code 0..20 and // multiple parameters, each contains - part contains linenumber, codeable
-    manner 0..1 and // string
-    injpl 0..1 and   // string
-    other_specified_place 0..1 // string
-// * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
-// * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
-* insert ParameterName(record_cause_of_death, Recorded Cause of Death, Recorded Cause of Death)
-* insert ParameterName(entity_axis_code, entity axis code, entity axis code)
-* insert ParameterNameType(manner, string, Manner of Death, Manner of Death)
-* insert ParameterNameType(injpl, string, Injury Place, Injury Place)
-* insert ParameterNameType(other_specified_place, string, Other specified place, Other specified place)
-* parameter[int_rej].value[x] from InternalRejectCodesVS (required)
-* parameter[record_cause_of_death].part ^slicing.discriminator.type = #value
-* parameter[record_cause_of_death].part ^slicing.discriminator.path = "name"
-* parameter[record_cause_of_death].part ^slicing.rules = #closed
-* parameter[record_cause_of_death].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
-* parameter[record_cause_of_death].part contains
-      coding 1..20
-// * parameter[record_cause_of_death].part[coding].value[x] only CodeableConcept // bind to value set
-// * parameter[record_cause_of_death].part[coding].valueCodeableConcept.coding.system = $icd-10
-* parameter[record_cause_of_death].part[coding].name = "coding"
-* parameter[record_cause_of_death].part[coding].value[x] only string
-* parameter[record_cause_of_death] ^short = "Coding of the record axis cause of death in TRANSAX dialect of ICD10"
-* parameter[entity_axis_code].part ^slicing.discriminator.type = #value
-* parameter[entity_axis_code].part ^slicing.discriminator.path = "name"
-* parameter[entity_axis_code].part ^slicing.rules = #closed
-* parameter[entity_axis_code].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
-* parameter[entity_axis_code].part contains
-      lineNumber 1..1 and
-      coding 1..*
-* parameter[entity_axis_code].part[lineNumber] ^definition = "containing a value between 1 and 6 that codes the line number of the death certificate that corresponds to the axis entry"
-* parameter[entity_axis_code].part[lineNumber] ^short = "line number"
-* parameter[entity_axis_code].part[coding] ^definition = "Coding of the cause of death in TRANSAX dialect of ICD10"
-* parameter[entity_axis_code].part[coding] ^short = "Coding of the cause of death in TRANSAX dialect of ICD10"
-* parameter[entity_axis_code].part[lineNumber].name = "lineNumber"
-* parameter[entity_axis_code].part[lineNumber].value[x] only string
-* parameter[entity_axis_code].part[coding].name = "coding"
-* parameter[entity_axis_code].part[coding].value[x] only string
-// * parameter[entity_axis_code].part[coding].value[x] only CodeableConcept
-// * parameter[entity_axis_code].part[coding].valueCodeableConcept.text 0..0
-// * parameter[entity_axis_code].part[coding].valueCodeableConcept.coding.system = $icd-10
-* parameter[record_cause_of_death].value[x] 0..0
-* parameter[record_cause_of_death].resource 0..0
-* parameter[entity_axis_code].value[x] 0..0
-* parameter[entity_axis_code].resource 0..0
+
+
 
 
 Profile: DeathRecordSubmissionMessage
 Parent: Bundle
-Id: VRDR-DeathRecordSubmissionMessage
+Id: VRM-DeathRecordSubmissionMessage
 Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert CommonBundleStuff
@@ -298,7 +207,7 @@ Description:   "Message for submitting death records"
 
 Profile: DeathRecordUpdateMessage
 Parent: Bundle
-Id: VRDR-DeathRecordUpdateMessage
+Id: VRM-DeathRecordUpdateMessage
 Title: "Death Record Update Message"
 Description:   "Message for updating death records"
 * insert CommonBundleStuff
@@ -309,7 +218,7 @@ Description:   "Message for updating death records"
 
 Profile: DeathRecordVoidMessage
 Parent: Bundle
-Id: VRDR-DeathRecordVoidMessage
+Id: VRM-DeathRecordVoidMessage
 Title: "Death Record Void Message"
 Description:   "Message for voiding death records"
 * insert CommonBundleStuff
@@ -319,7 +228,7 @@ Description:   "Message for voiding death records"
 
 Profile: DeathRecordAliasMessage
 Parent: Bundle
-Id: VRDR-DeathRecordAliasMessage
+Id: VRM-DeathRecordAliasMessage
 Title: "Death Record Alias Message"
 Description:   "Message for aliasing death records"
 * insert CommonBundleStuff
@@ -327,36 +236,80 @@ Description:   "Message for aliasing death records"
 * insert BundleEntry(messageHeader, 1, 1, Message Header , Message Header, DeathMessageAliasHeader)
 * insert BundleEntry(aliasParameters, 1, 1, Death Message Alias Parameters, Death Record Aias Parameters, DeathMessageAliasParameters)
 
-Profile: CodingMessage
+// Profile: CodingMessage
+// Parent: Bundle
+// Id: VRM-CodingMessage
+// Title: "Coding Message"
+// Description:   "Message for coding response to death records"
+// * entry ^slicing.discriminator.type = #pattern
+// * entry ^slicing.discriminator.path = "resource.meta.profile"
+// * entry ^slicing.rules = #open
+// * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
+// * insert CommonBundleStuff
+// // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
+// * insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
+// * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+// * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: DemographicsCodingMessage
 Parent: Bundle
-Id: VRDR-CodingMessage
+Id: VRM-DemographicsCodingMessage
 Title: "Coding Message"
-Description:   "Message for coding response to death records"
+Description:   "Message for demographics coding response to death records"
 * entry ^slicing.discriminator.type = #pattern
 * entry ^slicing.discriminator.path = "resource.meta.profile"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
-* insert BundleEntry(header, 1, 1, Message Header , Message Header, CodingMessageHeader)
-* insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingMessageHeader)
+* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
 
-
-Profile: CodingUpdateMessage
+Profile: CauseOfDeathCodingMessage
 Parent: Bundle
-Id: VRDR-CodingUpdateMessage
-Title: "Coding Update Message"
-Description:   "Message for updating coding response to death records"
+Id: VRM-CauseOfDeathCodingMessage
+Title: "Cause of Death Coding Message"
+Description:   "Message for cause of death coding response to death records"
+* entry ^slicing.discriminator.type = #pattern
+* entry ^slicing.discriminator.path = "resource.meta.profile"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
-* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
-* insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
-* insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingMessageHeader)
+* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+
+// Profile: CodingUpdateMessage
+// Parent: Bundle
+// Id: VRM-CodingUpdateMessage
+// Title: "Coding Update Message"
+// Description:   "Message for updating coding response to death records"
+// * insert CommonBundleStuff
+// * insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, CodingMessageUpdateHeader)
+// * insert BundleEntry(cod, 0, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
+// * insert BundleEntry(dem, 0, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: DemographicsCodingUpdateMessage
+Parent: Bundle
+Id: VRM-DemographicsCodingUpdateMessage
+Title: "Demographics Coding Update Message"
+Description:   "Message for updating Demographics coding response to death records"
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, DemographicsCodingMessageUpdateHeader)
+* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
+
+Profile: CauseOfDeathCodingUpdateMessage
+Parent: Bundle
+Id: VRM-CauseOfDeathCodingUpdateMessage
+Title: "Cause Of Death Coding Update Message"
+Description:   "Message for updating Cause Of Death coding response to death records"
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Cause Of Death Coding Message Update Header , Cause Of Death Coding Message Update Header, CauseOfDeathCodingMessageUpdateHeader)
+* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
 
 
 Profile: AcknowledgementMessage
 Parent: Bundle
-Id: VRDR-AcknowledgementMessage
+Id: VRM-AcknowledgementMessage
 Title: "Acknowledgement Message"
 Description:   "Acknowledgement Message"
 * insert CommonBundleStuff
@@ -366,7 +319,7 @@ Description:   "Acknowledgement Message"
 
 Profile: ExtractionErrorMessage
 Parent: Bundle
-Id: VRDR-ExtractionErrorMessage
+Id: VRM-ExtractionErrorMessage
 Title: "Extraction Error Message"
 Description:   "Message for Errors during content extraction"
 * insert CommonBundleStuff

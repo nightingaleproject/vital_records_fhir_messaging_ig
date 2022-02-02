@@ -180,10 +180,6 @@ Parent: Bundle
 Id: VRDR-Death-Certificate-Document
 Title: "VRDR Death Certificate Document"
 Description: "The Death Certificate Document profile is a bundle of resources comprising the death certificate composition. The Death Certificate Document builds upon the FHIR Document resource."
-* ^meta.versionId = "14"
-* ^meta.lastUpdated = "2020-08-18T06:29:51.027+00:00"
-* ^meta.source = "#TRof2eLh1VCPPrNl"
-* ^version = "1.0"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2020-05-09"
@@ -215,8 +211,6 @@ InstanceOf: DeathCertificateDocument
 Title: "Death Certificate Document Example"
 Description: "An instance example of the VRDR-Death-Certificate-Document resource profile."
 Usage: #example
-* meta.versionId = "39"
-* meta.lastUpdated = "2020-08-12T18:59:34.898+00:00"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "7a4613cc-b306-49b2-a428-9f8e67e67a85"
 * type = #document

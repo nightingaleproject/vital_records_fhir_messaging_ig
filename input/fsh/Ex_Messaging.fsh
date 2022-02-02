@@ -5,50 +5,57 @@ Usage: #example
 Description: "Parameters for Demographic Coding: Example"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#100
-* parameter[race].part[RACE2E].valueCoding = RaceCodeListCS#300
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#100
+* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeListCS#300
 //* parameter[=].part[+].name = "RACEBRG"
 //* parameter[=].part[=].valueCoding = RaceCodeListCS#21
-* parameter[ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
 
 Instance: CauseOfDeathCodingMessageParameters-Example1
 InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Example"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[jurisdiction_id].name = "jurisdiction_id"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[rec_mo].valueUnsignedInt = 12
 * parameter[rec_dy].valueUnsignedInt = 1
 * parameter[rec_yr].valueUnsignedInt = 2018
-* parameter[cs].valueCodeableConcept = $codingstatus#8
-* parameter[ship].valueString = "B201901"
-* parameter[sys_rej].valueString = "NotRejected"
-* parameter[injpl].valueString = "OtherSpecifiedPlace"
-* parameter[other_specified_place].valueString = "Unique Location"
+* parameter[cs].valueUnsignedInt = 8
+* parameter[ship].valueString = "191"
+* parameter[sys_rej].valueUnsignedInt = 0
+* parameter[input_misc_fields].part[injpl].valueString = "8"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
-//* parameter[underlying_cause_of_death].valueString = "A04.7
-* parameter[record_cause_of_death].name = "record_cause_of_death"
-* parameter[record_cause_of_death].part[coding][0].valueString = "A047"
-* parameter[record_cause_of_death].part[coding][+].valueString = "A419"
-* parameter[record_cause_of_death].part[coding][+].valueString = "J189"
-* parameter[record_cause_of_death].part[coding][+].valueString = "J960"
-* parameter[record_cause_of_death].part[coding][+].valueString = "N19"
-* parameter[record_cause_of_death].part[coding][+].valueString = "R579"
-* parameter[record_cause_of_death].part[coding][+].valueString = "R688"
-* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
+* parameter[manual_underlying_cause_of_death].valueString = "A047"
+* parameter[acme_underlying_cause_of_death].valueString = "A047"
+* parameter[record_cause_of_death][0].valueString = "A047"
+* parameter[record_cause_of_death][+].valueString = "A419"
+* parameter[record_cause_of_death][+].valueString = "J189"
+* parameter[record_cause_of_death][+].valueString = "J960"
+* parameter[record_cause_of_death][+].valueString = "N19"
+* parameter[record_cause_of_death][+].valueString = "R579"
+* parameter[record_cause_of_death][+].valueString = "R688"
+* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "R688"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "2"
-* parameter[entity_axis_code][=].part[coding][0].valueString = "J960"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "J960"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
 * parameter[entity_axis_code][=].part[coding][+].valueString = "R579"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 3
 * parameter[entity_axis_code][=].part[coding][+].valueString = "N19"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "3"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 3
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A419"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "4"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 4
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "J189"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "6"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
 * parameter[entity_axis_code][=].part[coding].valueString = "A047"
 
 Instance: MessageParameters-Example1
@@ -73,7 +80,7 @@ Instance: AcknowledgementMessageHeader-Example1
 InstanceOf: AcknowledgementMessageHeader
 Usage: #example
 Description: "Acknowledgement Header: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
+//* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -84,7 +91,7 @@ Instance: VoidMessageHeader-Example1
 InstanceOf: DeathMessageVoidHeader
 Usage: #example
 Description: "Parameters for Void: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submissionvoid"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(VoidMessageParameters-Example1)
@@ -93,7 +100,7 @@ Instance: UpdateMessageHeader-Example1
 InstanceOf: DeathRecordUpdateHeader
 Usage: #example
 Description: "Header for Update: Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submissionupdate"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
@@ -102,36 +109,36 @@ Instance: SubmissionMessageHeader-Example1
 InstanceOf: DeathMessageSubmissionHeader
 Usage: #example
 Description: "Header for Submission - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(DeathCertificateDocument-Example1)
 
-Instance: CodingMessageHeader-Example1
-InstanceOf: CodingMessageHeader
+Instance: CauseOfDeathCodingMessageHeader-Example1
+InstanceOf: CauseOfDeathCodingMessageHeader
 Usage: #example
 Description: "Header for Cause of Death Coding Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodingMessageParameters-Example1)
 
-Instance: CodingMessageHeader-Example2
-InstanceOf: CodingMessageHeader
+Instance: DemographicsCodingMessageHeader-Example2
+InstanceOf: DemographicsCodingMessageHeader
 Usage: #example
 Description: "Header for Demographic Coding Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(DemographicsCodingMessageParameters-Example1)
 
-Instance: CodingMessageUpdateHeader-Example1
-InstanceOf: CodingMessageUpdateHeader
+Instance: CauseOfDeathCodingMessageUpdateHeader-Example1
+InstanceOf: CauseOfDeathCodingMessageUpdateHeader
 Usage: #example
-Description: "Header for Demographic Coding Update Message - Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_codingupdate"
+Description: "Header for Cause Of Death Coding Update Message - Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -141,7 +148,7 @@ Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
 Usage: #example
 Description: "Header for Extraction Error Message - Example"
-* eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extractionerror"
+// * eventUri = MessageHeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
@@ -181,26 +188,26 @@ Description: "Acknowledgement message - Example"
 * entry[+].resource = MessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/MessageParameters-Example1"
 
-Instance: CodingMessage-Example1
-InstanceOf: CodingMessage
+Instance: CauseOfDeathCodingMessage-Example1
+InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Cause of death coding message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CodingHeader-Example1"
+* entry[0].resource = CauseOfDeathCodingMessageHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/MessageHeader/CauseOfDeathCodingHeader-Example1"
 
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingMessageParameters1"
 
-Instance: CodingUpdateMessage1
-InstanceOf: CodingUpdateMessage
+Instance: CauseOfDeathCodingUpdateMessage1
+InstanceOf: CauseOfDeathCodingUpdateMessage
 Usage: #example
-Description: "Coding update message - Example"
+Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CodingMessageUpdateHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodingUpdateHeader1"
+* entry[0].resource = CauseOfDeathCodingMessageUpdateHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CodingMessageParameters-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingMessageParameters-Example1"
 
 
 Instance: DeathRecordVoidMessage-Example1

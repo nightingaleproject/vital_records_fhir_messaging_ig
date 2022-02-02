@@ -15,7 +15,7 @@ Instance: Madelyn-Patel-181-Header-Example
 InstanceOf: DeathMessageSubmissionHeader
 Description: "Header for Record Submission: Madelyn Patel (181)"
 Usage: #inline
-* eventUri = "http://nchs.cdc.gov/vrdr_submission"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "http://mitre.org/vrdr"
 * focus = Reference(Madelyn-Patel-181-Death-Certificate-Document-Example)
@@ -32,7 +32,7 @@ Usage: #inline
 * parameter[=].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000181-Example
-InstanceOf: CodingMessage
+InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * type = #message
@@ -43,10 +43,10 @@ Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example
 
 Instance: Header-MA20323-TRX-000181-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: CauseOfDeathCodingMessageHeader
 Usage: #inline
 Description: "Header for Cause of Death Coding: Madelyn Patel (181)"
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-MA20323-TRX-000181-Example)
@@ -59,22 +59,28 @@ Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[death_year].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-//* parameter[+].name = "underlying_cause_of_death"
-//* parameter[=].valueString = "X42"
-* parameter[record_cause_of_death].part[coding][0].valueString = "X42"
-* parameter[record_cause_of_death].part[coding][+].valueString = "I119"
-* parameter[record_cause_of_death].part[coding][+].valueString = "T405"
-* parameter[record_cause_of_death].part[coding][+].valueString = "T509"
-* parameter[entity_axis_code][0].part[lineNumber].valueString = "1"
-* parameter[entity_axis_code][=].part[coding][0].valueString = "T405"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "X42"
-* parameter[entity_axis_code][+].part[lineNumber].valueString = "6"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "I119"
-* parameter[entity_axis_code][=].part[coding][+].valueString = "T509"
-
+* parameter[manual_underlying_cause_of_death].valueString = "X42"
+* parameter[acme_underlying_cause_of_death].valueString = "X42"
+* parameter[record_cause_of_death][0].valueString = "X42"
+* parameter[record_cause_of_death][+].valueString = "I119"
+* parameter[record_cause_of_death][+].valueString = "T405"
+* parameter[record_cause_of_death][+].valueString = "T509"
+* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "T405"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[coding].valueString = "X42"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
+* parameter[entity_axis_code][=].part[coding].valueString = "I119"
+* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
+* parameter[entity_axis_code][=].part[coding].valueString = "T509"
+* parameter[entity_axis_code][=].part[e_code_indicator].valueString = "&"
 
 Instance: Message-MA20323-MRE-000181-Example
-InstanceOf: CodingMessage
+InstanceOf: DemographicsCodingMessage
 Usage: #example
 Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * type = #message
@@ -85,10 +91,10 @@ Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * entry[=].resource = Parameters-MA20323-MRE-000181-Example
 
 Instance: Header-MA20323-MRE-000181-Example
-InstanceOf: CodingMessageHeader
+InstanceOf: DemographicsCodingMessageHeader
 Description: "Header for Demographic Coding: Madelyn Patel (181)"
 Usage: #inline
-* eventUri = "http://nchs.cdc.gov/vrdr_coding"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-MA20323-MRE-000181-Example)
@@ -101,5 +107,5 @@ Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * parameter[cert_no].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[death_year].valueUnsignedInt = 2020
-* parameter[race].part[RACE1E].valueCoding = RaceCodeListCS#400
-* parameter[ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#400
+* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
