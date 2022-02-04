@@ -171,12 +171,24 @@ Alias records should be sent using a [DeathRecordAliasMessage].
   * [CauseOfDeathCodingMessage]
     * [CauseOfDeathCodingMessageHeader]
     * [CauseOfDeathCodingMessageParameters]
-  * [DemographicsCodingUpdateMessage] -- same as submission, just different header flags
+  * [DemographicsCodingUpdateMessage] -- same as coding, just different header flags
     * [DemographicsCodingMessageUpdateHeader]
     * [DemographicCodingMessageParameters]
-  * [CauseofDeathCodingUpdateMessage] -- same as submission, just different header flags
+  * [CauseofDeathCodingUpdateMessage] -- same as coding, just different header flags
     * [CauseofDeathCodingMessageUpdateHeader]
     * [CauseofDeathCodingMessageParameters]
+* Void Messages (NCHS->Jurisdiction)
+  * [DeathRecordVoidMessage]
+    * [[DeathRecordVoidMessage]Header]
+    * [[DeathRecordVoidMessage]Parameters]
+* Alias Messages (NCHS->Jurisdiction)
+  * [DeathRecordAliasMessage]
+    * [[DeathRecordAliasMessage]Header]
+    * [[DeathRecordAliasMessage]Parameters]
+* Coding Messages (NCHS->Jurisdiction)
+  * [DemographicsCodingMessage]
+    * [DemographicsCodingMessageHeader]
+    * [DemographicCodingMessageParameters]
 * [AcknowledgementMessage] (Both directions)
   * [AcknowledgementMessageHeader]
   * [DeathMessageParameters]
