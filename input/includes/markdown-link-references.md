@@ -7,6 +7,8 @@
 
 <!-- VRDR Messaging Profiles and Extensions -->
 [CodingMessage]: StructureDefinition-VRM-CodingMessage.html
+[DemographicsCodingMessage]: StructureDefinition-VRM-DemographicsCodingMessage.html
+[CauseOfDeathCodingMessage]: StructureDefinition-VRM-CauseOfDeathCodingMessage.html
 [DemographicsCodingMessageHeader]: StructureDefinition-VRM-DemographicsCodingMessageHeader.html
 [CauseOfDeathCodingMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageHeader.html
 [DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
