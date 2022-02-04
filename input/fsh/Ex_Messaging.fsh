@@ -17,63 +17,63 @@ Usage: #example
 Description: "Parameters for Cause of Death Coding: Example"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
-* parameter[rec_mo].valueUnsignedInt = 12
-* parameter[rec_dy].valueUnsignedInt = 1
-* parameter[rec_yr].valueUnsignedInt = 2018
-* parameter[cs].valueUnsignedInt = 8
-* parameter[ship].valueString = "191"
-* parameter[sys_rej].valueUnsignedInt = 0
-* parameter[input_misc_fields].part[injpl].valueString = "8"
-* parameter[state_auxiliary_id].valueString = "abcdef10"
-* parameter[manual_underlying_cause_of_death].valueString = "A047"
-* parameter[acme_underlying_cause_of_death].valueString = "A047"
-* parameter[record_cause_of_death][0].valueString = "A047"
-* parameter[record_cause_of_death][+].valueString = "A419"
-* parameter[record_cause_of_death][+].valueString = "J189"
-* parameter[record_cause_of_death][+].valueString = "J960"
-* parameter[record_cause_of_death][+].valueString = "N19"
-* parameter[record_cause_of_death][+].valueString = "R579"
-* parameter[record_cause_of_death][+].valueString = "R688"
-* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "R688"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "J960"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[coding][+].valueString = "R579"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 3
-* parameter[entity_axis_code][=].part[coding][+].valueString = "N19"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 3
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "A419"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 4
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "J189"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "A047"
+* parameter[FILENO].valueUnsignedInt = 123456
+* parameter[DOD_YR].valueUnsignedInt = 2018
+* parameter[R_MO].valueUnsignedInt = 12
+* parameter[R_DY].valueUnsignedInt = 1
+* parameter[R_YR].valueUnsignedInt = 2018
+* parameter[CS].valueUnsignedInt = 8
+* parameter[SHIP].valueString = "191"
+* parameter[SYS_REJ].valueUnsignedInt = 0
+* parameter[input_misc_fields].part[INJPL].valueString = "8"
+* parameter[AUXNO].valueString = "abcdef10"
+* parameter[MAN_UC].valueString = "A047"
+* parameter[ACME_UC].valueString = "A047"
+* parameter[RAC][0].valueString = "A047"
+* parameter[RAC][+].valueString = "A419"
+* parameter[RAC][+].valueString = "J189"
+* parameter[RAC][+].valueString = "J960"
+* parameter[RAC][+].valueString = "N19"
+* parameter[RAC][+].valueString = "R579"
+* parameter[RAC][+].valueString = "R688"
+* parameter[EAC][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "R688"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "J960"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[EAC][=].part[position].valueUnsignedInt = 2
+* parameter[EAC][=].part[coding][+].valueString = "R579"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 2
+* parameter[EAC][=].part[position].valueUnsignedInt = 3
+* parameter[EAC][=].part[coding][+].valueString = "N19"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 3
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "A419"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 4
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "J189"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "A047"
 
 Instance: MessageParameters-Example1
 InstanceOf: DeathMessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
+* parameter[FILENO].valueUnsignedInt = 123456
+* parameter[DOD_YR].valueUnsignedInt = 2018
 
 Instance: VoidMessageParameters-Example1
 InstanceOf: DeathMessageVoidParameters
 Usage: #example
 Description: "Parameters for Void: Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
-* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[FILENO].valueUnsignedInt = 123456
+* parameter[DOD_YR].valueUnsignedInt = 2018
+* parameter[AUXNO].valueString = "abcdef10"
 * parameter[block_count].valueUnsignedInt = 10
 
 Instance: AcknowledgementMessageHeader-Example1
@@ -260,7 +260,7 @@ Instance: AliasMessageHeader-Example1
 InstanceOf: DeathMessageAliasHeader
 Usage: #example
 Description: "Alias Message Header- Example"
-* eventUri = "http://nchs.cdc.gov/vrdr_alias"
+//* eventUri = "http://nchs.cdc.gov/vrdr_alias"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(AliasMessageParameters-Example1)
@@ -270,8 +270,8 @@ InstanceOf: DeathMessageAliasParameters
 Usage: #example
 Description:  "Alias Message Parameters- Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
-* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[FILENO].valueUnsignedInt = 123456
+* parameter[DOD_YR].valueUnsignedInt = 2018
+* parameter[AUXNO].valueString = "abcdef10"
 * parameter[alias_father_surname].valueString = "Shakespeare-Dostoyevsky"
 * parameter[alias_decedent_middle_name].valueString = "X"

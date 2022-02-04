@@ -7,9 +7,12 @@
 
 <!-- VRDR Messaging Profiles and Extensions -->
 [CodingMessage]: StructureDefinition-VRM-CodingMessage.html
-[CodingMessageHeader]: StructureDefinition-VRM-CodingMessageHeader.html
-[CodingUpdateMessage]: StructureDefinition-VRM-CodingUpdateMessage.html
-[CodingMessageUpdateHeader]: StructureDefinition-VRM-CodingMessageUpdateHeader.html
+[DemographicsCodingMessageHeader]: StructureDefinition-VRM-DemographicsCodingMessageHeader.html
+[CauseOfDeathCodingMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageHeader.html
+[DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
+[CauseOfDeathCodingUpdateMessage]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html
+[DemographicsCodingMessageUpdateHeader]: StructureDefinition-VRM-DemographicsCodingMessageUpdateHeader.html
+[CauseOfDeathCodingMessageUpdateHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageUpdateHeader.html
 [CodingMessageParameters]: StructureDefinition-VRM-CodingMessageParameters.html
 [CauseOfDeathCodingMessageParameters]: StructureDefinition-VRM-CauseOfDeathCodingMessageParameters.html
 [DemographicCodingMessageParameters]: StructureDefinition-VRM-DemographicCodingMessageParameters.html
@@ -25,7 +28,7 @@
 [AcknowledgementMessageHeader]: StructureDefinition-VRM-AcknowledgementMessageHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRM-ExtractionErrorMessage.html
 [ExtractionErrorHeader]:    StructureDefinition-VRM-ExtractionErrorHeader.html
-[DeathCertificateDocument]: StructureDefinition-VRM-Death-Certificate-Document.html
+[DeathCertificateDocument]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-VRDR-Death-Certificate-Document.html
 [DeathRecordAliasHeader]: StructureDefinition-VRM-DeathMessageAliasHeader.html
 [DeathRecordAliasMessage]: StructureDefinition-VRM-DeathRecordAliasMessage.html
 [DeathRecordAliasParameters]: StructureDefinition-VRM-DeathMessageAliasParameters.html

@@ -1,8 +1,8 @@
 Profile:  DemographicsCodingMessageParameters
 Parent: DeathMessageParameters
 Id: VRM-DemographicCodingMessageParameters
-Title:  "Demographic Coding Message Parameters"
-Description:   "Parameters for a Coding Message"
+Title:  "Demographics Coding Message Parameters"
+Description:   "Parameters for a Demographics Coding Message"
 * meta.profile 1..*
 * meta.profile = Canonical(DemographicsCodingMessageParameters)
 * insert BasicParameters

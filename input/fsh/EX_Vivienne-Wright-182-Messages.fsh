@@ -24,12 +24,9 @@ Instance: Vivienne-Wright-182-Parameters-Example
 InstanceOf: DeathMessageParameters
 Usage: #example
 Description: "Parameters for Record Submission: Vivienne Write (182)"
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 182
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
+* parameter[FILENO].valueUnsignedInt = 182
+* parameter[DOD_YR].valueUnsignedInt = 2020
+* parameter[jurisdiction_id].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingMessage
@@ -57,22 +54,22 @@ InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[cert_no].valueUnsignedInt = 182
-* parameter[death_year].valueUnsignedInt = 2020
+* parameter[FILENO].valueUnsignedInt = 182
+* parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-* parameter[acme_underlying_cause_of_death].valueString = "O159"
-* parameter[manual_underlying_cause_of_death].valueString = "O159"
-* parameter[record_cause_of_death][0].valueString = "0159"
-* parameter[record_cause_of_death][+].valueString = "I469"
-* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "I469"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[coding].valueString = "O159"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "O95"
+* parameter[ACME_UC].valueString = "O159"
+* parameter[MAN_UC].valueString = "O159"
+* parameter[RAC][0].valueString = "0159"
+* parameter[RAC][+].valueString = "I469"
+* parameter[EAC][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "I469"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 1
+* parameter[EAC][=].part[position].valueUnsignedInt = 2
+* parameter[EAC][=].part[coding].valueString = "O159"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "O95"
 * parameter[input_causes_of_death].part[COD1A].valueString = "Cardiopulmonary arrest"
 * parameter[input_causes_of_death].part[COD1B].valueString = "Eclampsia"
 // * parameter[input_causes_of_death].part[COD1C].valueString = ""
@@ -82,19 +79,19 @@ Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 // * parameter[input_causes_of_death].part[INTERVAL1C].valueString = ""
 // * parameter[input_causes_of_death].part[INTERVAL1D].valueString = ""
 // * parameter[input_causes_of_death].part[OTHERCONDITION].valueString = ""
-* parameter[input_misc_fields].part[manner].valueString = "A" //Accidental
-* parameter[input_misc_fields].part[injpl].valueString = "0"
-* parameter[input_misc_fields].part[autop].valueString = "Y"
-* parameter[input_misc_fields].part[autopf].valueString = "Y"
-* parameter[input_misc_fields].part[tobac].valueString = "N"
-* parameter[input_misc_fields].part[preg].valueString = "1" //not pregnant in past year
-* parameter[input_misc_fields].part[doi_mo].valueUnsignedInt = 11
-* parameter[input_misc_fields].part[doi_dy].valueUnsignedInt = 02
-* parameter[input_misc_fields].part[doi_yr].valueUnsignedInt = 2019
-* parameter[input_misc_fields].part[toi_hr].valueUnsignedInt = 1300
-* parameter[input_misc_fields].part[toi_unit].valueString = "M" // military
-* parameter[input_misc_fields].part[workinj].valueString = "N"
-* parameter[input_misc_fields].part[certl].valueString = "M" // ME/Coronor
+* parameter[input_misc_fields].part[MANNER].valueString = "A" //Accidental
+* parameter[input_misc_fields].part[INJPL].valueString = "0"
+* parameter[input_misc_fields].part[AUTOP].valueString = "Y"
+* parameter[input_misc_fields].part[AUTOPF].valueString = "Y"
+* parameter[input_misc_fields].part[TOBAC].valueString = "N"
+* parameter[input_misc_fields].part[PREG].valueString = "1" //not pregnant in past year
+* parameter[input_misc_fields].part[DOI_MO].valueUnsignedInt = 11
+* parameter[input_misc_fields].part[DOI_DY].valueUnsignedInt = 02
+* parameter[input_misc_fields].part[DOI_YR].valueUnsignedInt = 2019
+* parameter[input_misc_fields].part[TOI_HR].valueUnsignedInt = 1300
+* parameter[input_misc_fields].part[TOI_UNIT].valueString = "M" // military
+* parameter[input_misc_fields].part[WORKINJ].valueString = "N"
+* parameter[input_misc_fields].part[CERTL].valueString = "M" // ME/Coronor
 
 
 Instance: Message-MA20323-MRE-000182-Example
@@ -122,9 +119,9 @@ InstanceOf: DemographicsCodingMessageParameters
 Usage: #example
 Description: "Demographic Coding Parameters:Vivienne Write (182)"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
-* parameter[cert_no].valueUnsignedInt = 182
+* parameter[FILENO].valueUnsignedInt = 182
 * parameter[jurisdiction_id].valueString = "MA"
-* parameter[death_year].valueUnsignedInt = 2020
+* parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#100
 * parameter[coded_race].part[RACE2E].valueCoding = RaceCodeListCS#300
 //* parameter[=].part[+].name = "RACEBRG"

@@ -56,28 +56,28 @@ InstanceOf: CauseOfDeathCodingMessageParameters
 Usage: #inline
 Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
-* parameter[cert_no].valueUnsignedInt = 181
-* parameter[death_year].valueUnsignedInt = 2020
+* parameter[FILENO].valueUnsignedInt = 181
+* parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
-* parameter[manual_underlying_cause_of_death].valueString = "X42"
-* parameter[acme_underlying_cause_of_death].valueString = "X42"
-* parameter[record_cause_of_death][0].valueString = "X42"
-* parameter[record_cause_of_death][+].valueString = "I119"
-* parameter[record_cause_of_death][+].valueString = "T405"
-* parameter[record_cause_of_death][+].valueString = "T509"
-* parameter[entity_axis_code][0].part[lineNumber].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "T405"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[coding].valueString = "X42"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 1
-* parameter[entity_axis_code][=].part[coding].valueString = "I119"
-* parameter[entity_axis_code][+].part[lineNumber].valueUnsignedInt = 6
-* parameter[entity_axis_code][=].part[position].valueUnsignedInt = 2
-* parameter[entity_axis_code][=].part[coding].valueString = "T509"
-* parameter[entity_axis_code][=].part[e_code_indicator].valueString = "&"
+* parameter[MAN_UC].valueString = "X42"
+* parameter[ACME_UC].valueString = "X42"
+* parameter[RAC][0].valueString = "X42"
+* parameter[RAC][+].valueString = "I119"
+* parameter[RAC][+].valueString = "T405"
+* parameter[RAC][+].valueString = "T509"
+* parameter[EAC][0].part[lineNumber].valueUnsignedInt = 1
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "T405"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 1
+* parameter[EAC][=].part[position].valueUnsignedInt = 2
+* parameter[EAC][=].part[coding].valueString = "X42"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[EAC][=].part[position].valueUnsignedInt = 1
+* parameter[EAC][=].part[coding].valueString = "I119"
+* parameter[EAC][+].part[lineNumber].valueUnsignedInt = 6
+* parameter[EAC][=].part[position].valueUnsignedInt = 2
+* parameter[EAC][=].part[coding].valueString = "T509"
+* parameter[EAC][=].part[e_code_indicator].valueString = "&"
 
 Instance: Message-MA20323-MRE-000181-Example
 InstanceOf: DemographicsCodingMessage
@@ -104,8 +104,8 @@ InstanceOf: DemographicsCodingMessageParameters
 Usage: #inline
 Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
-* parameter[cert_no].valueUnsignedInt = 181
+* parameter[FILENO].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"
-* parameter[death_year].valueUnsignedInt = 2020
+* parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#400
 * parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999

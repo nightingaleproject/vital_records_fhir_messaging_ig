@@ -42,10 +42,10 @@ RuleSet: ParameterNameTypeLength(name, type, short, def, length)
 RuleSet: BaseMessageParameterSlices
 * insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
 * parameter[jurisdiction_id].value[x] from VRDRJurisdictionVS (required)
-* insert ParameterNameType(cert_no, unsignedInt,death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
-* insert ParameterNameType(death_year, unsignedInt, death year, four digit death year) //* parameter[death_year].name = "death_year"
-* insert ParameterNameType(state_auxiliary_id, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-* insert ParameterNameType(ssn, string, SSN Social Security Number, Social Security Number) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
+* insert ParameterNameType(FILENO, unsignedInt,death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
+* insert ParameterNameType(DOD_YR, unsignedInt, death year, four digit death year) //* parameter[death_year].name = "death_year"
+* insert ParameterNameType(AUXNO, string, state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
+* insert ParameterNameType(SSN, string, SSN Social Security Number, Social Security Number) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
 //* insert ParameterNameType(block_count, unsignedInt, number of records voided, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of 1 is assumed meaning only a single record will be voided. )
 
 RuleSet: ParameterPartSliceByName(slice)
