@@ -1,7 +1,7 @@
 Profile:  DeathMessageParameters
 Parent: Parameters
 Id: VRM-DeathMessageParameters
-Description:   "Base parameter set for most Messages"
+Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Death Message Parameters"
 * id MS
 // jurisdiction_id
@@ -39,12 +39,12 @@ Description:   "Parameters for an Alias Message"
     alias_decedent_name_suffix 0..1 and // SUFF
     alias_father_surname 0..1 and       // FLNAME
     alias_social_security_number 0..1   // SSN
-* insert ParameterNameType(alias_decedent_first_name, string, ALIAS: Decendent first name, ALIAS: Decendent first name.)
-* insert ParameterNameType(alias_decedent_last_name, string, ALIAS: Decedent last Name, ALIAS: Decedent Last Name.)
-* insert ParameterNameType(alias_decedent_middle_name, string, ALIAS: Decedent Middle Name, ALIAS: Decedent Middle Name.)
-* insert ParameterNameType(alias_decedent_name_suffix, string, ALIAS: Decedent Name Suffix, ALIAS: Decedent Name Suffix.)
-* insert ParameterNameType(alias_father_surname, string, ALIAS: Father Surname, ALIAS: Father Surname.)
-* insert ParameterNameType(alias_social_security_number, string, ALIAS: Social Security Number, ALIAS: Social Security Number.)
+* insert ParameterNameType(alias_decedent_first_name, string, ALIAS: GNAME Decendent first name, ALIAS: Decendent first name.)
+* insert ParameterNameType(alias_decedent_last_name, string, ALIAS: LNAME Decedent last Name, ALIAS: Decedent Last Name.)
+* insert ParameterNameType(alias_decedent_middle_name, string, ALIAS: MNAME Decedent Middle Name, ALIAS: Decedent Middle Name.)
+* insert ParameterNameType(alias_decedent_name_suffix, string, ALIAS: SUFF Decedent Name Suffix, ALIAS: Decedent Name Suffix.)
+* insert ParameterNameType(alias_father_surname, string, ALIAS: FLNAME Father Surname, ALIAS: Father Surname.)
+* insert ParameterNameType(alias_social_security_number, string, ALIAS: SSN Social Security Number, ALIAS: Social Security Number.)
 
 RuleSet: BasicParameters
 * parameter contains
