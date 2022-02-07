@@ -57,7 +57,7 @@ Figure 3 illustrates the sequence of message exchanges between a vital records j
 
 Figure 4 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently voided. Depending on timing, the initial submission may result in a Coding Response or not.
 
-Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement". Voiding death records should use a [DeathRecordVoidHeader].
+Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement". Voiding death records should use a [DeathRecordVoidMessage].
 
 #### Retrying Requests {#retries}
 
