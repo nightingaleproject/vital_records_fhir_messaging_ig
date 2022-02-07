@@ -14,7 +14,7 @@ Id: VRM-DeathMessageSubmissionHeader
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(DeathCertificateDocument)
+* focus only Reference(Bundle) // DeathCertificateDocument
 
 Profile:  DeathRecordUpdateHeader
 Parent: MessageHeader
@@ -23,7 +23,7 @@ Description:   "Death Message Update Header"
 Title:  "Death Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(DeathCertificateDocument)
+* focus only Reference(Bundle) // DeathCertificateDocument
 
 Profile:  DeathMessageVoidHeader
 Parent: MessageHeader

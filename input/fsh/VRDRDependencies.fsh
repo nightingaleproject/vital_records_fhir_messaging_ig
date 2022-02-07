@@ -210,7 +210,7 @@ Instance: DeathCertificateDocument-Example1
 InstanceOf: DeathCertificateDocument
 Title: "Death Certificate Document Example"
 Description: "An instance example of the VRDR-Death-Certificate-Document resource profile."
-Usage: #example
+Usage: #inline
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "7a4613cc-b306-49b2-a428-9f8e67e67a85"
 * type = #document

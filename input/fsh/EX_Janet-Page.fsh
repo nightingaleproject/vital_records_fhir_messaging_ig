@@ -320,11 +320,11 @@ Usage: #inline
 * status = #final
 * code = http://loinc.org#81956-5 "Date and time of death"
 * subject = Reference(urn:uuid:b4b410ba-06f6-4a82-8f0c-e3b1506df785)
-* effectiveDateTime = "2022-01-08T05:30:00"
+* effectiveDateTime = "2022-01-08T05:30:00-05:00"
 * performer = Reference(urn:uuid:09a91e2c-5a7c-4642-aa1f-f56a183534cb)
-* valueDateTime = "2022-01-08T05:30:00"
+* valueDateTime = "2022-01-08T05:30:00-05:00"
 * component.code = http://loinc.org#80616-6 "Date and time pronounced dead [US Standard Certificate of Death]"
-* component.valueDateTime = "2022-01-08T05:30:00"
+* component.valueDateTime = "2022-01-08T05:30:00-05:00"
 
 Instance: Inline-Instance-for-199bbec2-39be-42a6-ba3f-042636545de3-15
 InstanceOf: Location
