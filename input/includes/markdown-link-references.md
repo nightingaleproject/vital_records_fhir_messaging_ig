@@ -5,7 +5,7 @@
   }
 </style>
 
-<!-- VRDR Messaging Profiles and Extensions -->
+<!-- Vital Records Messaging Profiles and Extensions -->
 [CodingMessage]: StructureDefinition-VRM-CodingMessage.html
 [DemographicsCodingMessage]: StructureDefinition-VRM-DemographicsCodingMessage.html
 [CauseOfDeathCodingMessage]: StructureDefinition-VRM-CauseOfDeathCodingMessage.html
@@ -13,8 +13,8 @@
 [CauseOfDeathCodingMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageHeader.html
 [DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
 [CauseOfDeathCodingUpdateMessage]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html
-[DemographicsCodingMessageUpdateHeader]: StructureDefinition-VRM-DemographicsCodingMessageUpdateHeader.html
-[CauseOfDeathCodingMessageUpdateHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageUpdateHeader.html
+[DemographicsCodingUpdateMessageHeader]: StructureDefinition-VRM-DemographicsCodingUpdateMessageHeader.html
+[CauseOfDeathCodingUpdateMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessageHeader.html
 [CodingMessageParameters]: StructureDefinition-VRM-CodingMessageParameters.html
 [CauseOfDeathCodingMessageParameters]: StructureDefinition-VRM-CauseOfDeathCodingMessageParameters.html
 [DemographicCodingMessageParameters]: StructureDefinition-VRM-DemographicCodingMessageParameters.html
@@ -30,7 +30,11 @@
 [AcknowledgementMessageHeader]: StructureDefinition-VRM-AcknowledgementMessageHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRM-ExtractionErrorMessage.html
 [ExtractionErrorHeader]:    StructureDefinition-VRM-ExtractionErrorHeader.html
-[DeathCertificateDocument]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-VRDR-Death-Certificate-Document.html
 [DeathRecordAliasHeader]: StructureDefinition-VRM-DeathMessageAliasHeader.html
 [DeathRecordAliasMessage]: StructureDefinition-VRM-DeathRecordAliasMessage.html
 [DeathRecordAliasParameters]: StructureDefinition-VRM-DeathMessageAliasParameters.html
+
+
+<!-- VRDR Profiles and Extensions -->
+[DeathCertificateDocument]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-VRDR-Death-Certificate-Document.html
+[CauseOfDeathCOndition]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-Cause-Of-Death-Condition.html

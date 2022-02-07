@@ -134,8 +134,8 @@ Description: "Header for Demographic Coding Message - Example"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(DemographicsCodingMessageParameters-Example1)
 
-Instance: CauseOfDeathCodingMessageUpdateHeader-Example1
-InstanceOf: CauseOfDeathCodingMessageUpdateHeader
+Instance: CauseOfDeathCodingUpdateMessageHeader-Example1
+InstanceOf: CauseOfDeathCodingUpdateMessageHeader
 Usage: #example
 Description: "Header for Cause Of Death Coding Update Message - Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
@@ -204,7 +204,7 @@ InstanceOf: CauseOfDeathCodingUpdateMessage
 Usage: #example
 Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CauseOfDeathCodingMessageUpdateHeader-Example1
+* entry[0].resource = CauseOfDeathCodingUpdateMessageHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
 * entry[+].resource = CauseOfDeathCodingMessageParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingMessageParameters-Example1"

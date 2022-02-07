@@ -11,9 +11,11 @@ The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/i
 
 This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
 
-Questions or comments regarding this document should be directed to the ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1]. This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.
+This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in an Vital Records Death Reporting FHIR Implementation Guide[^2].
+
 
 [^1]: https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR
+[^2]: https://build.fhir.org/ig/HL7/
 
 ### Requirements
 
@@ -33,9 +35,9 @@ Vital records jurisdictions need a mechanism to void a single or a block of deat
 
 NCHS needs a mechanism to send coded causes of death as well as coded race and ethnicity information to vital records jurisdictions in response to receipt of a VRDR Death Certificate Document. NCHS also needs a mechanism to update previously-sent coding information. Causes of death codings may be sent separately from race and ethnicity codings. Updates to either may also be sent separately.
 
-The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [`Cause Of Death Condition`](http://hl7.org/fhir/us/vrdr/StructureDefinition-VRDR-Cause-Of-Death-Condition.html) resource in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/StructureDefinition-VRDR-Death-Certificate-Document.html) may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf).
+The underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [Cause Of Death Condition] resource in the submitted [VRDR Death Certificate Document] may result in multiple codes as described in the [current TRANSAX format](https://www.cdc.gov/nchs/data/dvs/2003trx.pdf).
 
-The race and ethnicity information in the submitted [`VRDR Death Certificate Document`](http://hl7.org/fhir/us/vrdr/StructureDefinition-VRDR-Death-Certificate-Document.html) can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
+The race and ethnicity information in the submitted [VRDR Death Certificate Document] can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf).
 
 #### Delivery Status
 
@@ -51,7 +53,7 @@ NCHS needs a mechanism to report errors to vital records jurisdictions in respon
 
 ### FHIR Messaging
 
-As described earlier, the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
+As described earlier, the [Vital Record Death Reporting (VRDR) FHIR IG](http://build.fhir.org/ig/HL7/vrdr/branches/master//index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
 
 1. A standard [MessageHeader](http://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
     a. An id that is useful for correlating requests and replies,
@@ -125,9 +127,17 @@ The above sequence describes the general process for exchange of information bet
 
 Note that the FHIR messaging infrastructure is logically separated from both NVSS and jurisdiction death registration systems and it is this system that provides reliable delivery of death reports and coded responses (or errors) between jurisdictions and NVSS. The mechanics of reliable delivery (acknowledgements and retransmissions) are largely hidden from NVSS and jurisdiction death registration systems.
 
-### Open Questions and Additional Considerations
+### Changes Since the Initial (PDF) Version of This Guide
 
-This section captures open questions and issues.
+1. Coding and Coding Update messages have been split into Demographics (Race and Ethnicity) coding messages and Cause of Death messages.
+2. All fields that are sent to jurisdictions as MRE or TRX messages are now sent as part of coding messages.   These include some fields that are sent from EDRS to NCHS (so-called 'regurgigated fields').
+3. Field names that are named and documented as part of the IJE, MRE, and/or TRX documentation have the same names and encodings in this guide. Please refer to the below-referenced documentation.
+
+### CDC NCHS Documentation
+* [2022 Mortality Data reference](https://r20.rs6.net/tn.jsp?f=001u-eBMBj0UGlhPdHxUU_w_MafJMX_8rYmjFZga3pBUoUhwcUSSzMK5lw-ncpe9c1_OCJdI66kcNI-ILEyJKT9ILqF6v3RMIxQHe-k9-IYCzq96MQmC3sO0FgIOhAgnvf_zF7l6N4k8lCQjzRnFuzO-UmCFtlHJpOYd3fjY2Cw2StY-TA-wVQOw320Sj_WyhIuq2H9GPAtpsuuBkomxjl6jizGiL_Ql0yOwjp-cUjTOTA=&c=hrGtL9tmvJ1DKGpbzqPuF3KvUpFVK0qchygyr7StLU1Sluvl9ZBcLg==&ch=hptEZrbFDWPJdXxXwQsrUk7F-lUko-MpszM6NS4g8yVkg29mqPQHXA==)
+* [NCHS Instruction Manual part 8](https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf)
+* SuperMicar documentation([PDF](https://www.cdc.gov/nchs/data/dvs/2003s10.pdf), [XLS](https://www.cdc.gov/nchs/data/dvs/2003_May16.xls)
+* [NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting](https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf)
 
 #### Bulk Submissions
 
@@ -143,7 +153,6 @@ In the event there are differences between the page renderings in this IG and th
 
 Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the [Nightingale Github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig). Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in [FHIR Shorthand](http://hl7.org/fhir/uv/shorthand/) and all narrative content in markdown (specifically, [Kramdown](https://kramdown.gettalong.org/)). We suggest using the [Visual Studio Code editor](https://code.visualstudio.com/) with the [FHIR Shorthand plug-in](https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh). For more information on how to get started with IG development, visit the [FSH School](https://fshschool.org/).
 
-If you have questions or comments about this guide, please reach out on ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1].
 
 ### Credits
 
@@ -153,9 +162,6 @@ This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](http:
 
 ### Contact Information
 
-| Topic | Who | Role | Email |
-|----|---|---|------|
-|   |  |  |  |
-|  |  | |  |
-|  |  |  |  |
+Questions or comments about this IG can be directed to ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1].
+
 {: .grid }

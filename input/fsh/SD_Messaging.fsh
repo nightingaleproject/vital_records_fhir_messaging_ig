@@ -45,7 +45,7 @@ Description:   "Death Message Void Header"
 
 Profile:  DemographicsCodingMessageHeader
 Parent: MessageHeader
-Id: VRM-CodingMessageHeader
+Id: VRM-DemographicsCodingMessageHeader
 Title:  "Demographics Coding Message Header"
 Description:   "Demographics Coding Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
@@ -61,20 +61,20 @@ Description:   "Cause of Death Coding Message Header"
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingMessageParameters )
 
-Profile:  DemographicsCodingMessageUpdateHeader
+Profile:  DemographicsCodingUpdateMessageHeader
 Parent: MessageHeader
-Id: VRM-DemographicsCodingMessageUpdateHeader
-Title:  "Demographics Coding Message Update Header"
-Description:   "Demographics Coding Message Update Header"
+Id: VRM-DemographicsCodingUpdateMessageHeader
+Title:  "Demographics Coding Update Message Header"
+Description:   "Demographics Coding Update Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference( DemographicsCodingMessageParameters )
 
-Profile:  CauseOfDeathCodingMessageUpdateHeader
+Profile:  CauseOfDeathCodingUpdateMessageHeader
 Parent: MessageHeader
 Id: VRM-CauseOfDeathCodingUpdateMessageHeader
-Title:  "Cause Of Death Coding Message Update Header"
-Description:   "Cause Of Death Death Coding Message Coding Header"
+Title:  "Cause Of Death Coding UpdateMessage Header"
+Description:   "Cause Of Death Death Coding UpdateMessage Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingMessageParameters )
@@ -223,7 +223,7 @@ Id: VRM-DemographicsCodingUpdateMessage
 Title: "Demographics Coding Update Message"
 Description:   "Message for updating Demographics coding response to death records"
 * insert CommonBundleStuff
-* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, DemographicsCodingMessageUpdateHeader)
+* insert BundleEntry(header, 1, 1, Coding Message Update Header , Coding Message Update Header, DemographicsCodingUpdateMessageHeader)
 * insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingMessageParameters)
 
 Profile: CauseOfDeathCodingUpdateMessage
@@ -232,7 +232,7 @@ Id: VRM-CauseOfDeathCodingUpdateMessage
 Title: "Cause Of Death Coding Update Message"
 Description:   "Message for updating Cause Of Death coding response to death records"
 * insert CommonBundleStuff
-* insert BundleEntry(header, 1, 1, Cause Of Death Coding Message Update Header , Cause Of Death Coding Message Update Header, CauseOfDeathCodingMessageUpdateHeader)
+* insert BundleEntry(header, 1, 1, Cause Of Death Coding Message Update Header , Cause Of Death Coding Message Update Header, CauseOfDeathCodingUpdateMessageHeader)
 * insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingMessageParameters )
 
 
