@@ -4,7 +4,7 @@ Usage: #example
 Description: "Message for Record Submission: Vivienne Write (182)"
 * type = #message
 * timestamp = "2020-11-17T16:39:54.658923-05:00"
-* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Vivienne-Wright-182-Header-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/Header/Vivienne-Wright-182-Header-Example"
 * entry[=].resource = Vivienne-Wright-182-Header-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Vivienne-Wright-182-Parameters-Example"
 * entry[=].resource = Vivienne-Wright-182-Parameters-Example
@@ -12,7 +12,7 @@ Description: "Message for Record Submission: Vivienne Write (182)"
 * entry[=].resource = Vivienne-Wright-182-Death-Certificate-Document-Example
 
 Instance: Vivienne-Wright-182-Header-Example
-InstanceOf: DeathMessageSubmissionHeader
+InstanceOf: SubmissionHeader
 Usage: #example
 Description: "Header for Record Submission: Vivienne Write (182)"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission"
@@ -21,7 +21,7 @@ Description: "Header for Record Submission: Vivienne Write (182)"
 * focus = Reference(Vivienne-Wright-182-Death-Certificate-Document-Example)
 
 Instance: Vivienne-Wright-182-Parameters-Example
-InstanceOf: DeathMessageParameters
+InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Record Submission: Vivienne Write (182)"
 * parameter[FILENO].valueUnsignedInt = 182
@@ -34,26 +34,26 @@ Description: "Message for Cause of Death Coding: Vivienne Write (182)"
 Usage: #example
 * type = #message
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
-* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Header-for-MA20323-TRX-000182-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/Header/Header-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Header-for-MA20323-TRX-000182-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
 Instance: Header-for-MA20323-TRX-000182-Example
-InstanceOf: CauseOfDeathCodingMessageHeader
+InstanceOf: CauseOfDeathCodingHeader
 Usage: #example
 Description: "Need a description"
-* meta.profile[0] = Canonical(CauseOfDeathCodingMessageHeader)
+* meta.profile[0] = Canonical(CauseOfDeathCodingHeader)
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(Parameters-for-MA20323-TRX-000182-Example)
 
 Instance: Parameters-for-MA20323-TRX-000182-Example
-InstanceOf: CauseOfDeathCodingMessageParameters
+InstanceOf: CauseOfDeathCodingParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
-* meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
+* meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
 * parameter[FILENO].valueUnsignedInt = 182
 * parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
@@ -100,13 +100,13 @@ Usage: #example
 Description: "Message for Demographic Coding: Vivienne Write (182)"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
-* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Header-MA20323-MRE-000182-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/Header/Header-MA20323-MRE-000182-Example"
 * entry[=].resource = Header-MA20323-MRE-000182-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-MA20323-MRE-000182-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
 Instance: Header-MA20323-MRE-000182-Example
-InstanceOf: DemographicsCodingMessageHeader
+InstanceOf: DemographicsCodingHeader
 Usage: #example
 Description: "Header for Demographic Coding: Vivienne Write (182)"
 // * eventUri = "http://nchs.cdc.gov/vrdr_coding"
@@ -115,10 +115,10 @@ Description: "Header for Demographic Coding: Vivienne Write (182)"
 * focus = Reference(Parameters-MA20323-MRE-000182-Example)
 
 Instance: Parameters-MA20323-MRE-000182-Example
-InstanceOf: DemographicsCodingMessageParameters
+InstanceOf: DemographicsCodingParameters
 Usage: #example
 Description: "Demographic Coding Parameters:Vivienne Write (182)"
-* meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
+* meta.profile[0] = Canonical(DemographicsCodingParameters)
 * parameter[FILENO].valueUnsignedInt = 182
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[DOD_YR].valueUnsignedInt = 2020

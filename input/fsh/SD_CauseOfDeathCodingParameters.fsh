@@ -1,10 +1,10 @@
-Profile:  CauseOfDeathCodingMessageParameters
-Parent: DeathMessageParameters
-Id: VRM-CauseOfDeathCodingMessageParameters
+Profile:  CauseOfDeathCodingParameters
+Parent: MessageParameters
+Id: VRM-CauseOfDeathCodingParameters
 Title:  "Cause of Death Coding Message Parameters"
 Description:   "Parameters for a Cause of Death Coding Message"
 * meta.profile 1..*
-* meta.profile = Canonical(CauseOfDeathCodingMessageParameters)
+* meta.profile = Canonical(CauseOfDeathCodingParameters)
 * insert BasicParameters
 * parameter contains
     input_causes_of_death 0..1 and

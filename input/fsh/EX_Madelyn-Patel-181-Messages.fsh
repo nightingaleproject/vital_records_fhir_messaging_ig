@@ -4,7 +4,7 @@ Usage: #example
 Description: "Message for Record Submission: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-17T16:39:48.847917-05:00"
-* entry[0].fullUrl = "http://examples.org/fhir/MessageHeader/Madelyn-Patel-181-Header-Example"
+* entry[0].fullUrl = "http://examples.org/fhir/Header/Madelyn-Patel-181-Header-Example"
 * entry[=].resource = Madelyn-Patel-181-Header-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Madelyn-Patel-181-Parameters-Example"
 * entry[=].resource = Madelyn-Patel-181-Parameters-Example
@@ -12,7 +12,7 @@ Description: "Message for Record Submission: Madelyn Patel (181)"
 * entry[=].resource = Madelyn-Patel-181-Death-Certificate-Document-Example
 
 Instance: Madelyn-Patel-181-Header-Example
-InstanceOf: DeathMessageSubmissionHeader
+InstanceOf: SubmissionHeader
 Description: "Header for Record Submission: Madelyn Patel (181)"
 Usage: #inline
 //* eventUri = "http://nchs.cdc.gov/vrdr_submission"
@@ -21,7 +21,7 @@ Usage: #inline
 * focus = Reference(Madelyn-Patel-181-Death-Certificate-Document-Example)
 
 Instance: Madelyn-Patel-181-Parameters-Example
-InstanceOf: DeathMessageParameters
+InstanceOf: Parameters
 Description: "Parameters for Record Submission: Madelyn Patel (181)"
 Usage: #inline
 * parameter[0].name = "cert_no"
@@ -37,13 +37,13 @@ Usage: #example
 Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
-* entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-TRX-000181-Example"
+* entry[0].fullUrl = "http://example.org/Header/Header-MA20323-TRX-000181-Example"
 * entry[=].resource = Header-MA20323-TRX-000181-Example
 * entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-TRX-000181-Example"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example
 
 Instance: Header-MA20323-TRX-000181-Example
-InstanceOf: CauseOfDeathCodingMessageHeader
+InstanceOf: CauseOfDeathCodingHeader
 Usage: #inline
 Description: "Header for Cause of Death Coding: Madelyn Patel (181)"
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding"
@@ -52,10 +52,10 @@ Description: "Header for Cause of Death Coding: Madelyn Patel (181)"
 * focus = Reference(Parameters-MA20323-TRX-000181-Example)
 
 Instance: Parameters-MA20323-TRX-000181-Example
-InstanceOf: CauseOfDeathCodingMessageParameters
+InstanceOf: CauseOfDeathCodingParameters
 Usage: #inline
 Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
-* meta.profile[0] = Canonical(CauseOfDeathCodingMessageParameters)
+* meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
 * parameter[FILENO].valueUnsignedInt = 181
 * parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
@@ -85,13 +85,13 @@ Usage: #example
 Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * type = #message
 * timestamp = "2020-11-18T09:42:02.452214-05:00"
-* entry[0].fullUrl = "http://example.org/MessageHeader/Header-MA20323-MRE-000181-Example"
+* entry[0].fullUrl = "http://example.org/Header/Header-MA20323-MRE-000181-Example"
 * entry[=].resource = Header-MA20323-MRE-000181-Example
 * entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-MRE-000181-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000181-Example
 
 Instance: Header-MA20323-MRE-000181-Example
-InstanceOf: DemographicsCodingMessageHeader
+InstanceOf: DemographicsCodingHeader
 Description: "Header for Demographic Coding: Madelyn Patel (181)"
 Usage: #inline
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding"
@@ -100,10 +100,10 @@ Usage: #inline
 * focus = Reference(Parameters-MA20323-MRE-000181-Example)
 
 Instance: Parameters-MA20323-MRE-000181-Example
-InstanceOf: DemographicsCodingMessageParameters
+InstanceOf: DemographicsCodingParameters
 Usage: #inline
 Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
-* meta.profile[0] = Canonical(DemographicsCodingMessageParameters)
+* meta.profile[0] = Canonical(DemographicsCodingParameters)
 * parameter[FILENO].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[DOD_YR].valueUnsignedInt = 2020

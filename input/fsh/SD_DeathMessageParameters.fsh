@@ -1,6 +1,6 @@
-Profile:  DeathMessageParameters
+Profile:  MessageParameters
 Parent: Parameters
-Id: VRM-DeathMessageParameters
+Id: VRM-MessageParameters
 Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Death Message Parameters"
 * id MS
@@ -20,17 +20,19 @@ Title:  "Death Message Parameters"
     SSN 0..1          //   ssn  needed?
 * insert BaseMessageParameterSlices
 
-Profile: DeathMessageVoidParameters
-Parent: DeathMessageParameters
-Id: VRM-DeathMessageVoidParameters
-Description:   "Parameters for a Void Death Message"
+Profile: VoidParameters
+Parent: MessageParameters
+Id: VRM-VoidParameters
+Title:  "Void Message Parameters"
+Description:   "Parameters for a Void Message"
 * parameter contains
     block_count 1..1
 * insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
 
-Profile: DeathMessageAliasParameters
-Parent: DeathMessageParameters
-Id: VRM-DeathMessageAliasParameters
+Profile: AliasParameters
+Parent: MessageParameters
+Id: VRM-AliasMessageParameters
+Title:  "Alias Message Parameters"
 Description:   "Parameters for an Alias Message"
 * parameter contains   // these have no direct parallel in IJE, where they are overloaded
     alias_decedent_first_name 0..1 and  // GNAME
