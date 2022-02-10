@@ -47,3 +47,30 @@ menu:
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
+groups:
+  Messages:
+    name: Messages
+    description: Messages
+    resources:
+    - StructureDefinition/VRM-DeathRecordSubmissionMessage
+    - StructureDefinition/VRM-DeathRecordUpdateMessage
+    - StructureDefinition/VRM-DeathRecordVoidMessage
+    - StructureDefinition/VRM-DeathRecordAliasMessage
+    - StructureDefinition/VRM-CauseOfDeathCodingMessage
+    - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
+    - StructureDefinition/VRM-DemographicsCodingMessage
+    - StructureDefinition/VRM-DemographicsCodingUpdateMessage
+    - StructureDefinition/VRM-AcknowledgementMessage
+    - StructureDefinition/VRM-ExtractionErrorMessage
+  Headers:
+    name: Headers
+    description: Headers
+  Parameters:
+    name: Parameters
+    description: Parameters
+  CodeSystems:
+    name: Codesystems
+    description: Codesystems
+  ValueSets:
+    name: Valuesets
+    description: Valuesets
