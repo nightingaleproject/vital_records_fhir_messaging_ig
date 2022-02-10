@@ -85,7 +85,8 @@ groups:
     - StructureDefinition/VRM-AliasParameters
     - StructureDefinition/VRM-CauseOfDeathCodingParameters
     - StructureDefinition/VRM-DemographicsCodingParameters
-  Outcomes: Outcomes
+  Outcomes:
+    name: Outcome Profiles
     resources:
     - StructureDefinition/VRM-Outcome
   CodeSystems:
