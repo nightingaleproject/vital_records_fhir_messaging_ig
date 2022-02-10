@@ -15,12 +15,12 @@ Description: "System Reject Codes Values"
 * include codes from system SystemRejectCodesCS
 */
 
-ValueSet: DeathMessageHeaderURIVS
-Id: VRDR-DeathMessageHeaderURI-vs
-Title: "DeathMessageHeader URI Values"
-Description: "DeathMessageHeader URI Values"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission "VRDR Submission"
-* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update "VRDR Update"
+// ValueSet: DeathMessageHeaderURIVS
+// Id: VRDR-DeathMessageHeaderURI-vs
+// Title: "DeathMessageHeader URI Values"
+// Description: "DeathMessageHeader URI Values"
+// * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission "VRDR Submission"
+// * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update "VRDR Update"
 
 
 // ValueSet: CodingMessageHeaderURIVS
@@ -38,13 +38,13 @@ Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation]
 */
 
 ValueSet: HispanicOriginVS
-Id: VRDR-HispanicOrigin-vs
+Id: VRM-HispanicOrigin-vs
 Title: "HispanicOrigin Value Set"
 Description: "HispanicOrigin from https://www.cdc.gov/nchs/data/dvs/HispanicCodeTitles.pdf"
 * include codes from system HispanicOriginCS
 
-ValueSet: RaceCodeListVS
-Id: VRDR-RaceCode-vs
-Title: "Race Code ListVS"
-Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
-* include codes from system RaceCodeListCS
+ValueSet: RaceCodeVS
+Id: VRM-RaceCode-vs
+Title: "Race Code VS"
+Description: "RaceCode from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
+* include codes from system RaceCodeCS

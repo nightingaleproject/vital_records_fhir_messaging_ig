@@ -47,21 +47,21 @@ Document"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 * #http://nchs.cdc.gov/vrdr_extraction_error "VRDR Extraction Error" "Indicates that this is an extraction error"
 
-CodeSystem: ACMETRANSAXCodingStatusCS
-Id: VRM-ACMETRANSAXCodingStatus-cs
-Title: "ACMETRANSAX Coding StatusCS"
-Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation](https://ftp.cdc.gov/pub/HealthStatistics/NCHS/Software/MICAR/DataEntrySoftware/ACMETRANSAX/Documentation/auser.pdf)"
-* ^caseSensitive = true
-* #0 "0" "0"
-* #1 "1" "1"
-* #2 "2" "2"
-* #3 "3" "3"
-* #4 "4" "4"
-* #5 "5" "5"
-* #6 "6" "6"
-* #7 "7" "7"
-* #8 "8" "8"
-* #9 "9" "9"
+// CodeSystem: ACMETRANSAXCodingStatusCS
+// Id: VRM-ACMETRANSAXCodingStatus-cs
+// Title: "ACMETRANSAX Coding StatusCS"
+// Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation](https://ftp.cdc.gov/pub/HealthStatistics/NCHS/Software/MICAR/DataEntrySoftware/ACMETRANSAX/Documentation/auser.pdf)"
+// * ^caseSensitive = true
+// * #0 "0" "0"
+// * #1 "1" "1"
+// * #2 "2" "2"
+// * #3 "3" "3"
+// * #4 "4" "4"
+// * #5 "5" "5"
+// * #6 "6" "6"
+// * #7 "7" "7"
+// * #8 "8" "8"
+// * #9 "9" "9"
 
 
 CodeSystem: HispanicOriginCS
@@ -148,10 +148,10 @@ Description: "HispanicOrigin from https://www.cdc.gov/nchs/data/dvs/HispanicCode
 * #999 "First Pass Reject"
 
 
-CodeSystem: RaceCodeListCS
-Id: VRM-RaceCodeList-cs
-Title: "Race Code List CS"
-Description: "RaceCodeList from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
+CodeSystem: RaceCodeCS
+Id: VRM-RaceCode-cs
+Title: "Race Code CS"
+Description: "RaceCode from https://www.cdc.gov/nchs/data/dvs/RaceCodeList.pdf "
 * ^caseSensitive = true
 // WHITE (100-199) White
 * #100 "White Checkbox"

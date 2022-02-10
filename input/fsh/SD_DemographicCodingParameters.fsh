@@ -1,6 +1,6 @@
 Profile:  DemographicsCodingParameters
 Parent: MessageParameters
-Id: VRM-DemographicCodingParameters
+Id: VRM-DemographicsCodingParameters
 Title:  "Demographics Coding Message Parameters"
 Description:   "Parameters for a Demographics Coding Message"
 * meta.profile 1..*
@@ -35,7 +35,7 @@ Description:   "Parameters for a Demographics Coding Message"
 * parameter[coded_race].part.name only string
 * insert ParameterPartSliceByName(coded_race)
 * parameter[coded_race].part.value[x] only Coding
-* parameter[coded_race].part.value[x] from RaceCodeListVS (required)
+* parameter[coded_race].part.value[x] from RaceCodeVS (required)
 * parameter[coded_race].part contains
     RACE1E 0..1 and
     RACE2E 0..1 and

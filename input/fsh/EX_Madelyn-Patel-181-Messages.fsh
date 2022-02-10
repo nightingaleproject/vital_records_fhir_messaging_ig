@@ -107,5 +107,5 @@ Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * parameter[FILENO].valueUnsignedInt = 181
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[DOD_YR].valueUnsignedInt = 2020
-* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#400
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#400
 * parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999

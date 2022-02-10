@@ -49,8 +49,8 @@ menu:
     Change Log: change_log.html
 groups:
   Messages:
-    name: Messages
-    description: Messages
+    name: Message Profiles
+    description: Message Profiles
     resources:
     - StructureDefinition/VRM-DeathRecordSubmissionMessage
     - StructureDefinition/VRM-DeathRecordUpdateMessage
@@ -63,14 +63,38 @@ groups:
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
   Headers:
-    name: Headers
-    description: Headers
+    name: Message Header Profiles
+    description: Message Header Profiles
+    resources:
+    - StructureDefinition/VRM-SubmissionHeader
+    - StructureDefinition/VRM-UpdateHeader
+    - StructureDefinition/VRM-VoidHeader
+    - StructureDefinition/VRM-AliasHeader
+    - StructureDefinition/VRM-CauseOfDeathCodingHeader
+    - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
+    - StructureDefinition/VRM-DemographicsCodingHeader
+    - StructureDefinition/VRM-DemographicsCodingUpdateHeader
+    - StructureDefinition/VRM-AcknowledgementHeader
+    - StructureDefinition/VRM-ExtractionErrorHeader
   Parameters:
-    name: Parameters
-    description: Parameters
+    name: Message Parameter Profiles
+    description: Message Parameter Profiles
+    resources:
+    - StructureDefinition/VRM-MessageParameters
+    - StructureDefinition/VRM-VoidParameters
+    - StructureDefinition/VRM-AliasParameters
+    - StructureDefinition/VRM-CauseOfDeathCodingParameters
+    - StructureDefinition/VRM-DemographicsCodingParameters
   CodeSystems:
     name: Codesystems
     description: Codesystems
+    resources:
+    - CodeSystem/VRM-MessageHeaderURI-cs
+    - CodeSystem/VRM-HispanicOrigin-cs
+    - CodeSystem/VRM-RaceCode-cs
   ValueSets:
     name: Valuesets
     description: Valuesets
+    resources:
+    - ValueSet/VRM-HispanicOrigin-vs
+    - ValueSet/VRM-RaceCode-vs

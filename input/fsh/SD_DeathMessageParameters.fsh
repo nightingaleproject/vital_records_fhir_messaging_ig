@@ -31,7 +31,7 @@ Description:   "Parameters for a Void Message"
 
 Profile: AliasParameters
 Parent: MessageParameters
-Id: VRM-AliasMessageParameters
+Id: VRM-AliasParameters
 Title:  "Alias Message Parameters"
 Description:   "Parameters for an Alias Message"
 * parameter contains   // these have no direct parallel in IJE, where they are overloaded

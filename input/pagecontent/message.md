@@ -152,17 +152,17 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
-| ------------------------------ | -------- |-------- | ------------ | ------ |
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] |
-| [DeathRecordUpdateMessage] | In |[UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] |
-| [DeathRecordVoidMessage] | In |[VoidHeader] | [VoidParameters] | - |
-| [DeathRecordAliasMessage] | In |[AliasHeader] | [AliasParameters] | - |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [CauseOfDeathCodingParameters] | - |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [CauseOfDeathCodingParameters] | - |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [DemographicsCodingParameters] | - |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [DemographicsCodingParameters] | - |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] | - |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] | - |
+|------------------------------|--------|--------|------------|------|
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
+| [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
+| [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [CauseOfDeathCodingParameters] |  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [CauseOfDeathCodingParameters] |  |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [DemographicsCodingParameters] |  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [DemographicsCodingParameters] |  |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) |  |
 {: .grid }
 
 ### Message Structure and Content

@@ -122,10 +122,10 @@ Description: "Demographic Coding Parameters:Vivienne Write (182)"
 * parameter[FILENO].valueUnsignedInt = 182
 * parameter[jurisdiction_id].valueString = "MA"
 * parameter[DOD_YR].valueUnsignedInt = 2020
-* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#100
-* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeListCS#300
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
+* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
 //* parameter[=].part[+].name = "RACEBRG"
-//* parameter[=].part[=].valueCoding = RaceCodeListCS#21
+//* parameter[=].part[=].valueCoding = RaceCodeCS#21
 * parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
 * parameter[input_race_flags].part[RACE1].valueString = "Y" // White
 * parameter[input_race_flags].part[RACE2].valueString = "N"

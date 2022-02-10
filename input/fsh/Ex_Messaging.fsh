@@ -5,10 +5,10 @@ Usage: #example
 Description: "Parameters for Demographic Coding: Example"
 * meta.profile[0] = Canonical(DemographicsCodingParameters)
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeListCS#100
-* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeListCS#300
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
+* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
 //* parameter[=].part[+].name = "RACEBRG"
-//* parameter[=].part[=].valueCoding = RaceCodeListCS#21
+//* parameter[=].part[=].valueCoding = RaceCodeCS#21
 * parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
 
 Instance: CauseOfDeathCodingParameters-Example1
