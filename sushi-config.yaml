@@ -85,6 +85,9 @@ groups:
     - StructureDefinition/VRM-AliasParameters
     - StructureDefinition/VRM-CauseOfDeathCodingParameters
     - StructureDefinition/VRM-DemographicsCodingParameters
+  Outcomes: Outcomes
+    resources:
+    - StructureDefinition/VRM-Outcome
   CodeSystems:
     name: Codesystems
     description: Codesystems
