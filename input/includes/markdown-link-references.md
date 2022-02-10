@@ -30,7 +30,7 @@
 [AcknowledgementMessage]: StructureDefinition-VRM-AcknowledgementMessage.html
 [AcknowledgementHeader]: StructureDefinition-VRM-AcknowledgementHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRM-ExtractionErrorMessage.html
-
+[Outcome]: StructureDefinition-VRM-Outcome.html
 [DeathRecordAliasMessage]: StructureDefinition-VRM-DeathRecordAliasMessage.html
 [AliasParameters]: StructureDefinition-VRM-AliasParameters.html
 [VoidParameters]: StructureDefinition-VRM-VoidParameters.html

@@ -162,7 +162,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [DemographicsCodingParameters] |  |
 | [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [DemographicsCodingParameters] |  |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
 {: .grid }
 
 ### Message Structure and Content
