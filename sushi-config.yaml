@@ -40,7 +40,9 @@ pages:
     title: Appendices
 menu:
   Home: index.html
-  Messages: message.html
+  Messages:
+    Message Exchange Patterns: message.html#message-exchange-patterns
+    Message Structure and Content: message.html#message-structure-and-content
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html

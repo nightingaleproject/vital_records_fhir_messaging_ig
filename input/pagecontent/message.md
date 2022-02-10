@@ -150,7 +150,6 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 ### Message Structure and Content
 
-
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
@@ -165,48 +164,4 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
 {: .grid }
 
-### Message Structure and Content
-* Death Messages (EDRS->Jurisdiction)
-  * [DeathRecordSubmissionMessage] -same as update, just different header flags
-    * [DeathRecordSubmissionHeader]
-    * [DeathMessageParameters]
-    * [DeathCertificateDocument] - defined in VRDR IG
-  * [DeathRecordUpdateMessage] -same as submission, just different header flags
-    * [DeathRecordUpdateHeader]
-    * [DeathMessageParameters]
-    * [DeathCertificateDocument] - defined in VRDR IG
-  * [DeathRecordVoidMessage]
-    * [DeathRecordVoidHeader]
-    * [DeathRecordVoidParameters]
-  * [DeathRecordAliasMessage]
-    * [DeathRecordAliasHeader]
-    * [DeathRecordAliasParameters]
-* Coding Messages (NCHS->Jurisdiction)
-  * [CauseOfDeathCodingMessage]
-    * [CauseOfDeathCodingMessageHeader]
-    * [CauseOfDeathCodingMessageParameters]
-  * [DemographicsCodingUpdateMessage] -- same as coding, just different header flags
-    * [DemographicsCodingMessageUpdateHeader]
-    * [DemographicCodingMessageParameters]
-  * [CauseofDeathCodingUpdateMessage] -- same as coding, just different header flags
-    * [CauseofDeathCodingMessageUpdateHeader]
-    * [CauseofDeathCodingMessageParameters]
-* Void Messages (NCHS->Jurisdiction)
-  * [DeathRecordVoidMessage]
-    * [[DeathRecordVoidMessage]Header]
-    * [[DeathRecordVoidMessage]Parameters]
-* Alias Messages (NCHS->Jurisdiction)
-  * [DeathRecordAliasMessage]
-    * [[DeathRecordAliasMessage]Header]
-    * [[DeathRecordAliasMessage]Parameters]
-* Coding Messages (NCHS->Jurisdiction)
-  * [DemographicsCodingMessage]
-    * [DemographicsCodingMessageHeader]
-    * [DemographicCodingMessageParameters]
-* [AcknowledgementMessage] (Both directions)
-  * [AcknowledgementMessageHeader]
-  * [DeathMessageParameters]
-* [ExtractionErrorMessage] (NCHS->Jurisdiction)
-  * [ExtractionErrorHeader]
-  * [DeathMessageParameters] - optional
-  {% include markdown-link-references.md %}
+{% include markdown-link-references.md %}
