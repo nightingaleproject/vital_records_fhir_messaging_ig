@@ -17,7 +17,7 @@
 [CauseOfDeathCodingParameters]: StructureDefinition-VRM-CauseOfDeathCodingParameters.html
 [DemographicCodingParameters]: StructureDefinition-VRM-DemographicCodingParameters.html
 [DeathRecordSubmissionHeader]: StructureDefinition-VRM-DeathMessageSubmissionHeader.html
-[DeathParameters]: StructureDefinition-VRM-DeathParameters.html
+[MessageParameters]: StructureDefinition-VRM-MessageParameters.html
 [VoidHeader]: StructureDefinition-VRM-VoidHeader.html
 [AliasHeader]: StructureDefinition-VRM-AliasHeader.html
 [DeathRecordUpdateHeader]: StructureDefinition-VRM-DeathRecordUpdateHeader.html
