@@ -149,6 +149,21 @@ Alias messages can contain aliases for one or more of the following fields:
 Alias records should be sent using a [DeathRecordAliasMessage].
 
 ### Message Structure and Content
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
+| ------------------------------ | -------- |-------- | ------------ | ------ |
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] |
+| [DeathRecordUpdateMessage] | In |[UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] |
+| [DeathRecordVoidMessage] | In |[VoidHeader] | [VoidParameters] | <none> |
+| [DeathRecordAliasMessage] | In |[AliasHeader] | [AliasParameters] | <none> |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [CauseOfDeathCodingParameters] | <none> |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [CauseOfDeathCodingParameters] | <none> |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [DemographicsCodingParameters] | <none> |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [DemographicsCodingParameters] | <none> |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] | <none> |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] | <none> |
+{: .grid }
+
+### Message Structure and Content
 * Death Messages (EDRS->Jurisdiction)
   * [DeathRecordSubmissionMessage] -same as update, just different header flags
     * [DeathRecordSubmissionHeader]
@@ -165,9 +180,6 @@ Alias records should be sent using a [DeathRecordAliasMessage].
     * [DeathRecordAliasHeader]
     * [DeathRecordAliasParameters]
 * Coding Messages (NCHS->Jurisdiction)
-  * [DemographicsCodingMessage]
-    * [DemographicsCodingMessageHeader]
-    * [DemographicCodingMessageParameters]
   * [CauseOfDeathCodingMessage]
     * [CauseOfDeathCodingMessageHeader]
     * [CauseOfDeathCodingMessageParameters]

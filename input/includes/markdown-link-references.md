@@ -6,33 +6,32 @@
 </style>
 
 <!-- Vital Records Messaging Profiles and Extensions -->
-[CodingMessage]: StructureDefinition-VRM-CodingMessage.html
 [DemographicsCodingMessage]: StructureDefinition-VRM-DemographicsCodingMessage.html
 [CauseOfDeathCodingMessage]: StructureDefinition-VRM-CauseOfDeathCodingMessage.html
-[DemographicsCodingMessageHeader]: StructureDefinition-VRM-DemographicsCodingMessageHeader.html
-[CauseOfDeathCodingMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingMessageHeader.html
+[DemographicsCodingHeader]: StructureDefinition-VRM-DemographicsCodingHeader.html
+[CauseOfDeathCodingHeader]: StructureDefinition-VRM-CauseOfDeathCodingHeader.html
 [DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
 [CauseOfDeathCodingUpdateMessage]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html
-[DemographicsCodingUpdateMessageHeader]: StructureDefinition-VRM-DemographicsCodingUpdateMessageHeader.html
-[CauseOfDeathCodingUpdateMessageHeader]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessageHeader.html
-[CodingMessageParameters]: StructureDefinition-VRM-CodingMessageParameters.html
-[CauseOfDeathCodingMessageParameters]: StructureDefinition-VRM-CauseOfDeathCodingMessageParameters.html
-[DemographicCodingMessageParameters]: StructureDefinition-VRM-DemographicCodingMessageParameters.html
+[DemographicsCodingUpdateHeader]: StructureDefinition-VRM-DemographicsCodingUpdateHeader.html
+[CauseOfDeathCodingUpdateHeader]: StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html
+[CauseOfDeathCodingParameters]: StructureDefinition-VRM-CauseOfDeathCodingParameters.html
+[DemographicCodingParameters]: StructureDefinition-VRM-DemographicCodingParameters.html
 [DeathRecordSubmissionHeader]: StructureDefinition-VRM-DeathMessageSubmissionHeader.html
-[DeathMessageParameters]: StructureDefinition-VRM-DeathMessageParameters.html
-[DeathRecordVoidHeader]: StructureDefinition-VRM-DeathMessageVoidHeader.html
+[DeathParameters]: StructureDefinition-VRM-DeathParameters.html
+[VoidHeader]: StructureDefinition-VRM-VoidHeader.html
+[AliasHeader]: StructureDefinition-VRM-AliasHeader.html
 [DeathRecordUpdateHeader]: StructureDefinition-VRM-DeathRecordUpdateHeader.html
 [DeathRecordVoidParameters]: StructureDefinition-VRM-DeathMessageVoidParameters.html
 [DeathRecordSubmissionMessage]: StructureDefinition-VRM-DeathRecordSubmissionMessage.html
 [DeathRecordUpdateMessage]: StructureDefinition-VRM-DeathRecordUpdateMessage.html
 [DeathRecordVoidMessage]: StructureDefinition-VRM-DeathRecordVoidMessage.html
 [AcknowledgementMessage]: StructureDefinition-VRM-AcknowledgementMessage.html
-[AcknowledgementMessageHeader]: StructureDefinition-VRM-AcknowledgementMessageHeader.html
+[AcknowledgementHeader]: StructureDefinition-VRM-AcknowledgementHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRM-ExtractionErrorMessage.html
 [ExtractionErrorHeader]:    StructureDefinition-VRM-ExtractionErrorHeader.html
-[DeathRecordAliasHeader]: StructureDefinition-VRM-DeathMessageAliasHeader.html
+[AliasHeader]: StructureDefinition-VRM-DeathMessageAliasHeader.html
 [DeathRecordAliasMessage]: StructureDefinition-VRM-DeathRecordAliasMessage.html
-[DeathRecordAliasParameters]: StructureDefinition-VRM-DeathMessageAliasParameters.html
+[AliasParameters]: StructureDefinition-VRM-DeathMessageAliasParameters.html
 
 
 <!-- VRDR Profiles and Extensions -->
