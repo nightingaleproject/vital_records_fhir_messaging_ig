@@ -22,7 +22,7 @@
 [AliasHeader]: StructureDefinition-VRM-AliasHeader.html
 [UpdateHeader]: StructureDefinition-VRM-UpdateHeader.html
 [ExtractionErrorHeader]:    StructureDefinition-VRM-ExtractionErrorHeader.html
-[AliasHeader]: StructureDefinition-VRM-DeathMessageAliasHeader.html
+[AliasHeader]: StructureDefinition-VRM-AliasHeader.html
 [DeathRecordVoidParameters]: StructureDefinition-VRM-DeathMessageVoidParameters.html
 [DeathRecordSubmissionMessage]: StructureDefinition-VRM-DeathRecordSubmissionMessage.html
 [DeathRecordUpdateMessage]: StructureDefinition-VRM-DeathRecordUpdateMessage.html
