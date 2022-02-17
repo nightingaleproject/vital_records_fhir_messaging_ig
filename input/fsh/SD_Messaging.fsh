@@ -158,7 +158,8 @@ Description:   "Message for demographics coding response to death records"
 * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingHeader)
-* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(dempar, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
 
 Profile: CauseOfDeathCodingMessage
 Parent: Bundle
@@ -171,7 +172,8 @@ Description:   "Message for cause of death coding response to death records"
 * entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
-* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codpar, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
 
 // Profile: CodingUpdateMessage
 // Parent: Bundle
@@ -190,7 +192,8 @@ Title: "Demographics Coding Update Message"
 Description:   "Message for updating Demographics coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Update Header , Coding Update Header, DemographicsCodingUpdateHeader)
-* insert BundleEntry(dem, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(dempar, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
 
 Profile: CauseOfDeathCodingUpdateMessage
 Parent: Bundle
@@ -199,7 +202,8 @@ Title: "Cause Of Death Coding Update Message"
 Description:   "Message for updating Cause Of Death coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Cause Of Death Coding  Update Header , Cause Of Death Coding  Update Header, CauseOfDeathCodingUpdateHeader)
-* insert BundleEntry(cod, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codpar, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
 
 
 Profile: AcknowledgementMessage

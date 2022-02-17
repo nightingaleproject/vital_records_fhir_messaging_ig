@@ -24,8 +24,8 @@ Instance: Vivienne-Wright-182-Parameters-Example
 InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Record Submission: Vivienne Write (182)"
-* parameter[FILENO].valueUnsignedInt = 182
-* parameter[DOD_YR].valueUnsignedInt = 2020
+* parameter[cert_no].valueUnsignedInt = 182
+* parameter[death_year].valueUnsignedInt = 2020
 * parameter[jurisdiction_id].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000182-Example
@@ -36,6 +36,8 @@ Usage: #example
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/Header/Header-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Header-for-MA20323-TRX-000182-Example
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
+* entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
@@ -54,9 +56,9 @@ InstanceOf: CauseOfDeathCodingParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
-* parameter[FILENO].valueUnsignedInt = 182
-* parameter[DOD_YR].valueUnsignedInt = 2020
-* parameter[jurisdiction_id].valueString = "MA"
+// * parameter[FILENO].valueUnsignedInt = 182
+// * parameter[DOD_YR].valueUnsignedInt = 2020
+// * parameter[jurisdiction_id].valueString = "MA"
 * parameter[ACME_UC].valueString = "O159"
 * parameter[MAN_UC].valueString = "O159"
 * parameter[RAC][0].valueString = "0159"
@@ -102,6 +104,8 @@ Description: "Message for Demographic Coding: Vivienne Write (182)"
 * timestamp = "2020-11-18T09:42:02.4365922-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/Header/Header-MA20323-MRE-000182-Example"
 * entry[=].resource = Header-MA20323-MRE-000182-Example
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
+* entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-MA20323-MRE-000182-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000182-Example
 
@@ -119,9 +123,9 @@ InstanceOf: DemographicsCodingParameters
 Usage: #example
 Description: "Demographic Coding Parameters:Vivienne Write (182)"
 * meta.profile[0] = Canonical(DemographicsCodingParameters)
-* parameter[FILENO].valueUnsignedInt = 182
-* parameter[jurisdiction_id].valueString = "MA"
-* parameter[DOD_YR].valueUnsignedInt = 2020
+// * parameter[FILENO].valueUnsignedInt = 182
+// * parameter[jurisdiction_id].valueString = "MA"
+// * parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
 * parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
 //* parameter[=].part[+].name = "RACEBRG"

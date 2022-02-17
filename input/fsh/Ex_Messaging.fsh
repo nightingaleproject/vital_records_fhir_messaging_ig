@@ -16,9 +16,10 @@ InstanceOf: CauseOfDeathCodingParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Example"
 * meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
-* parameter[jurisdiction_id].valueString = "NH"
-* parameter[FILENO].valueUnsignedInt = 123456
-* parameter[DOD_YR].valueUnsignedInt = 2018
+// * parameter[jurisdiction_id].valueString = "NH"
+// * parameter[FILENO].valueUnsignedInt = 123456
+// * parameter[DOD_YR].valueUnsignedInt = 2018
+// * parameter[AUXNO].valueString = "abcdef10"
 * parameter[R_MO].valueUnsignedInt = 12
 * parameter[R_DY].valueUnsignedInt = 1
 * parameter[R_YR].valueUnsignedInt = 2018
@@ -26,7 +27,6 @@ Description: "Parameters for Cause of Death Coding: Example"
 * parameter[SHIP].valueString = "191"
 * parameter[SYS_REJ].valueUnsignedInt = 0
 * parameter[input_misc_fields].part[INJPL].valueString = "8"
-* parameter[AUXNO].valueString = "abcdef10"
 * parameter[MAN_UC].valueString = "A047"
 * parameter[ACME_UC].valueString = "A047"
 * parameter[RAC][0].valueString = "A047"
@@ -63,17 +63,17 @@ InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[FILENO].valueUnsignedInt = 123456
-* parameter[DOD_YR].valueUnsignedInt = 2018
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
 
 Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
 Usage: #example
 Description: "Parameters for Void: Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[FILENO].valueUnsignedInt = 123456
-* parameter[DOD_YR].valueUnsignedInt = 2018
-* parameter[AUXNO].valueString = "abcdef10"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[block_count].valueUnsignedInt = 10
 
 Instance: AcknowledgementHeader-Example1
@@ -195,7 +195,8 @@ Description: "Cause of death coding message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CauseOfDeathCodingHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
-
+* entry[+].resource = Parameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = CauseOfDeathCodingParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingParameters1"
 
@@ -206,6 +207,8 @@ Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CauseOfDeathCodingUpdateHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
+* entry[+].resource = Parameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = CauseOfDeathCodingParameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingParameters-Example1"
 
@@ -228,7 +231,7 @@ Description: "Submission mesage - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = SubmissionHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Header/SubmissionHeader-Example1"
-* entry[1].resource = Parameters-Example1
+* entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = DeathCertificateDocument-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
@@ -270,8 +273,8 @@ InstanceOf: AliasParameters
 Usage: #example
 Description:  "Alias Message Parameters- Example"
 * parameter[jurisdiction_id].valueString = "NH"
-* parameter[FILENO].valueUnsignedInt = 123456
-* parameter[DOD_YR].valueUnsignedInt = 2018
-* parameter[AUXNO].valueString = "abcdef10"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[alias_father_surname].valueString = "Shakespeare-Dostoyevsky"
 * parameter[alias_decedent_middle_name].valueString = "X"

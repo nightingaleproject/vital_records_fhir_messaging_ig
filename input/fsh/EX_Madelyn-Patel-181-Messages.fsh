@@ -21,15 +21,12 @@ Usage: #inline
 * focus = Reference(Madelyn-Patel-181-Death-Certificate-Document-Example)
 
 Instance: Madelyn-Patel-181-Parameters-Example
-InstanceOf: Parameters
+InstanceOf: MessageParameters
 Description: "Parameters for Record Submission: Madelyn Patel (181)"
 Usage: #inline
-* parameter[0].name = "cert_no"
-* parameter[=].valueUnsignedInt = 181
-* parameter[+].name = "death_year"
-* parameter[=].valueUnsignedInt = 2020
-* parameter[+].name = "jurisdiction_id"
-* parameter[=].valueString = "MA"
+* parameter[cert_no].valueUnsignedInt = 181
+* parameter[death_year].valueUnsignedInt = 2020
+* parameter[jurisdiction_id].valueString = "MA"
 
 Instance: Message-MA20323-TRX-000181-Example
 InstanceOf: CauseOfDeathCodingMessage
@@ -39,6 +36,8 @@ Description: "Message for Cause of Death Coding: Madelyn Patel (181)"
 * timestamp = "2020-11-19T11:40:18.1152444-05:00"
 * entry[0].fullUrl = "http://example.org/Header/Header-MA20323-TRX-000181-Example"
 * entry[=].resource = Header-MA20323-TRX-000181-Example
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Madelyn-Patel-181-Parameters-Example"
+* entry[=].resource = Madelyn-Patel-181-Parameters-Example
 * entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-TRX-000181-Example"
 * entry[=].resource = Parameters-MA20323-TRX-000181-Example
 
@@ -56,9 +55,9 @@ InstanceOf: CauseOfDeathCodingParameters
 Usage: #inline
 Description: "Parameters for Cause of Death Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
-* parameter[FILENO].valueUnsignedInt = 181
-* parameter[DOD_YR].valueUnsignedInt = 2020
-* parameter[jurisdiction_id].valueString = "MA"
+// * parameter[FILENO].valueUnsignedInt = 181
+// * parameter[DOD_YR].valueUnsignedInt = 2020
+// * parameter[jurisdiction_id].valueString = "MA"
 * parameter[MAN_UC].valueString = "X42"
 * parameter[ACME_UC].valueString = "X42"
 * parameter[RAC][0].valueString = "X42"
@@ -87,6 +86,8 @@ Description: "Message for Demographic Coding: Madelyn Patel (181)"
 * timestamp = "2020-11-18T09:42:02.452214-05:00"
 * entry[0].fullUrl = "http://example.org/Header/Header-MA20323-MRE-000181-Example"
 * entry[=].resource = Header-MA20323-MRE-000181-Example
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Madelyn-Patel-181-Parameters-Example"
+* entry[=].resource = Madelyn-Patel-181-Parameters-Example
 * entry[+].fullUrl = "http://example.org/Parameters/Parameters-MA20323-MRE-000181-Example"
 * entry[=].resource = Parameters-MA20323-MRE-000181-Example
 
@@ -104,8 +105,8 @@ InstanceOf: DemographicsCodingParameters
 Usage: #inline
 Description: "Parameters for Demographic Coding: Madelyn Patel (181)"
 * meta.profile[0] = Canonical(DemographicsCodingParameters)
-* parameter[FILENO].valueUnsignedInt = 181
-* parameter[jurisdiction_id].valueString = "MA"
-* parameter[DOD_YR].valueUnsignedInt = 2020
+// * parameter[FILENO].valueUnsignedInt = 181
+// * parameter[jurisdiction_id].valueString = "MA"
+// * parameter[DOD_YR].valueUnsignedInt = 2020
 * parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#400
 * parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
