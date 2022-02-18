@@ -1,10 +1,11 @@
 Profile:  DemographicsCodingParameters
-Parent: MessageParameters
+Parent: Parameters
 Id: VRM-DemographicsCodingParameters
 Title:  "Demographics Coding Message Parameters"
 Description:   "Parameters for a Demographics Coding Message"
 * meta.profile 1..*
 * meta.profile = Canonical(DemographicsCodingParameters)
+* insert ParameterSlicing
 * insert BasicParameters
 * parameter contains
      coded_ethnicity 0..1 and // part contains name=DETHNICE or DETHNIC5C codeable

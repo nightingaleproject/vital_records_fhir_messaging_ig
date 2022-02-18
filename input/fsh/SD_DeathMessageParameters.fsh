@@ -51,21 +51,3 @@ Description:   "Parameters for an Alias Message"
 * insert ParameterNameType(alias_decedent_name_suffix, string, ALIAS: SUFF Decedent Name Suffix, ALIAS: Decedent Name Suffix.)
 * insert ParameterNameType(alias_father_surname, string, ALIAS: FLNAME Father Surname, ALIAS: Father Surname.)
 * insert ParameterNameType(alias_social_security_number, string, ALIAS: SSN Social Security Number, ALIAS: Social Security Number.)
-
-RuleSet: BasicParameters
-* parameter contains
-    R_YR 0..1 and           //rec_yr
-    R_MO 0..1 and          //rec_mo
-    R_DY 0..1 and          //rec_dy
-    CS 0..1 and    // cs - coder status
-    SHIP 0..1 and // ship - shipment number
-    SYS_REJ 0..1 and // sys_rej ACME system reject codes
-    INT_REJ 0..1   // int_rej intentional reject, one character reject code --  1, 2, 3, 4, 5, 9
-* insert ParameterNameType(R_YR, unsignedInt, R_YR the year that NCHS received the record ,the year that NCHS received the record )
-* insert ParameterNameType(R_MO, unsignedInt, R_MO the month that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(R_DY, unsignedInt, R_DY the day that NCHS received the record, the month that NCHS received the record)
-* insert ParameterNameType(CS, unsignedInt, CS ACMETRANSAX Coding Status 0-9 ,ACMETRANSAX Coding Status )
-* insert ParameterNameType(SHIP, string, SHIP Needed? NCHS Shipment Number - 3 character, AlphaNumeric NCHS shipment number. Usually the month of death or month of receipts)
-* insert ParameterNameType(SYS_REJ, unsignedInt, SYS_REJ system reject code 0-4, system reject code)
-* insert ParameterNameType(INT_REJ, unsignedInt, INT_REJ internal reject code 1-5 or 9, internal reject code)
-* parameter[SHIP].value[x] ^maxLength = 3
