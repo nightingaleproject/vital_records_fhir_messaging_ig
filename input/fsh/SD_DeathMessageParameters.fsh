@@ -3,7 +3,7 @@ Parent: Parameters
 Id: VRM-MessageParameters
 Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Death Message Parameters"
-* meta.profile = Canonical(MessageParameters)
+* insert RequireMetaProfile(MessageParameters)
 * id MS
 // jurisdiction_id
 // cert_no
@@ -27,6 +27,7 @@ Parent: MessageParameters
 Id: VRM-VoidParameters
 Title:  "Void Message Parameters"
 Description:   "Parameters for a Void Message"
+* insert RequireMetaProfile(VoidParameters)
 * parameter contains
     block_count 1..1
 * insert ParameterNameType(block_count, unsignedInt, number of records to void, the number of records to void starting at the certificate number specified by the `cert_no` parameter. If not present a default value of `1` is assumed meaning only a single record will be voided.)
@@ -36,6 +37,7 @@ Parent: MessageParameters
 Id: VRM-AliasParameters
 Title:  "Alias Message Parameters"
 Description:   "Parameters for an Alias Message"
+* insert RequireMetaProfile(AliasParameters)
 * parameter contains   // these have no direct parallel in IJE, where they are overloaded
     alias_decedent_first_name 0..1 and  // GNAME
     alias_decedent_last_name 0..1 and   // LNAME
