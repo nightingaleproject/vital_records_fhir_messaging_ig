@@ -3,8 +3,7 @@ Parent: Parameters
 Id: VRM-CauseOfDeathCodingParameters
 Title:  "Cause of Death Coding Message Parameters"
 Description:   "Parameters for a Cause of Death Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(CauseOfDeathCodingParameters)
+* insert RequireMetaProfile(CauseOfDeathCodingParameters)
 * insert ParameterSlicing
 * insert BasicParameters
 * parameter contains
