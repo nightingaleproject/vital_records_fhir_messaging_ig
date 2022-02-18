@@ -45,7 +45,6 @@ Instance: Header-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingHeader
 Usage: #example
 Description: "Need a description"
-* meta.profile[0] = Canonical(CauseOfDeathCodingHeader)
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "http://mitre.org/vrdr"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
@@ -55,7 +54,6 @@ Instance: Parameters-for-MA20323-TRX-000182-Example
 InstanceOf: CauseOfDeathCodingParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Vivienne Write (182)"
-* meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
 // * parameter[FILENO].valueUnsignedInt = 182
 // * parameter[DOD_YR].valueUnsignedInt = 2020
 // * parameter[jurisdiction_id].valueString = "MA"
@@ -122,7 +120,6 @@ Instance: Parameters-MA20323-MRE-000182-Example
 InstanceOf: DemographicsCodingParameters
 Usage: #example
 Description: "Demographic Coding Parameters:Vivienne Write (182)"
-* meta.profile[0] = Canonical(DemographicsCodingParameters)
 // * parameter[FILENO].valueUnsignedInt = 182
 // * parameter[jurisdiction_id].valueString = "MA"
 // * parameter[DOD_YR].valueUnsignedInt = 2020
