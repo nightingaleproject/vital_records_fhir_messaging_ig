@@ -5,6 +5,7 @@ Parent: OperationOutcome
 Id: VRM-Outcome
 Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
+* insert RequireMetaProfile(OperationOutcome)
 
 
 Profile:  SubmissionHeader
@@ -12,6 +13,7 @@ Parent: MessageHeader
 Description:   "Death Message Submission Header"
 Id: VRM-SubmissionHeader
 Title:  "Death Message Header"
+* insert RequireMetaProfile(SubmissionHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(Bundle) // DeathCertificateDocument
@@ -21,6 +23,7 @@ Parent: MessageHeader
 Id: VRM-UpdateHeader
 Description:   "Death Message Update Header"
 Title:  "Death Message Update Header"
+* insert RequireMetaProfile(UpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(Bundle) // DeathCertificateDocument
@@ -30,6 +33,7 @@ Parent: MessageHeader
 Id: VRM-VoidHeader
 Title:  "Void Header"
 Description:   "Void Header"
+* insert RequireMetaProfile(VoidHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_void (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(VoidParameters)
@@ -39,6 +43,7 @@ Parent: MessageHeader
 Id: VRM-DemographicsCodingHeader
 Title:  "Demographics Coding Header"
 Description:   "Demographics Coding Header"
+* insert RequireMetaProfile(DemographicsCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
 * focus only Reference( DemographicsCodingParameters )
@@ -48,6 +53,7 @@ Parent: MessageHeader
 Id: VRM-CauseOfDeathCodingHeader
 Title:  "Cause of Death Coding Header"
 Description:   "Cause of Death Coding Header"
+* insert RequireMetaProfile(CauseOfDeathCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingParameters )
@@ -57,6 +63,7 @@ Parent: MessageHeader
 Id: VRM-DemographicsCodingUpdateHeader
 Title:  "Demographics Coding Update Header"
 Description:   "Demographics Coding Update Header"
+* insert RequireMetaProfile(DemographicsCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference( DemographicsCodingParameters )
@@ -66,6 +73,7 @@ Parent: MessageHeader
 Id: VRM-CauseOfDeathCodingUpdateHeader
 Title:  "Cause Of Death Coding Update  Header"
 Description:   "Cause Of Death Death Coding Update Header"
+* insert RequireMetaProfile(CauseOfDeathCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(CauseOfDeathCodingParameters )
@@ -75,6 +83,7 @@ Parent: MessageHeader
 Id: VRM-AliasHeader
 Title:  "Alias Header"
 Description:   "Alias Header"
+* insert RequireMetaProfile(AliasHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_alias (exactly)
 * insert CommonHeaderStuff
 * focus only Reference(AliasParameters)
@@ -84,6 +93,7 @@ Parent: MessageHeader
 Id: VRM-AcknowledgementHeader
 Title:  "Acknowledgement Header"
 Description:   "Acknowledgement  Header"
+* insert RequireMetaProfile(AcknowledgementHeader)
 * eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdr_acknowledgement (exactly)
 * insert CommonHeaderStuff
 * response.identifier 1..1
@@ -96,6 +106,7 @@ Parent: MessageHeader
 Id: VRM-ExtractionErrorHeader
 Title:  "Extraction Error Header"
 Description:   "Extraction Error Message Header"
+* insert RequireMetaProfile(ExtractionErrorHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
@@ -111,7 +122,7 @@ Id: VRM-DeathRecordSubmissionMessage
 Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert CommonBundleStuff
-* insert BundleEntry(messageHeader, 1, 1, Header , Header, MessageHeader)
+* insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
 * insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
 

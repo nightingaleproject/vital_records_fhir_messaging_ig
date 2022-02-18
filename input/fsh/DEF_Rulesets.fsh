@@ -88,3 +88,14 @@ RuleSet: ParameterSlicing
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+
+RuleSet: RequireMetaProfile(profile)
+* meta 1..1
+* meta.profile 1..*
+* meta.profile ^slicing.discriminator.type = #pattern
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.ordered = false
+* meta.profile ^slicing.description = "Slice based on value"
+* meta.profile contains supportedProfile 1..1
+* meta.profile[supportedProfile] = Canonical({profile})

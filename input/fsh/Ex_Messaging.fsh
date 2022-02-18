@@ -62,6 +62,7 @@ Instance: Parameters-Example1
 InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
+* meta.profile[0] = Canonical(MessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -70,6 +71,7 @@ Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
 Usage: #example
 Description: "Parameters for Void: Example"
+* meta.profile[0] = Canonical(VoidParameters)
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
