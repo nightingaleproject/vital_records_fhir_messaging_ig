@@ -121,6 +121,7 @@ Parent: Bundle
 Id: VRM-DeathRecordSubmissionMessage
 Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
+* insert RequireMetaProfile(DeathRecordSubmissionMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
@@ -132,6 +133,7 @@ Parent: Bundle
 Id: VRM-DeathRecordUpdateMessage
 Title: "Death Record Update Message"
 Description:   "Message for updating death records"
+* insert RequireMetaProfile(DeathRecordUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Update Header , Update Header, UpdateHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
@@ -143,6 +145,7 @@ Parent: Bundle
 Id: VRM-DeathRecordVoidMessage
 Title: "Death Record Void Message"
 Description:   "Message for voiding death records"
+* insert RequireMetaProfile(DeathRecordVoidMessage)
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Void Header , Void Header, VoidHeader)
@@ -153,6 +156,7 @@ Parent: Bundle
 Id: VRM-DeathRecordAliasMessage
 Title: "Death Record Alias Message"
 Description:   "Message for aliasing death records"
+* insert RequireMetaProfile(DeathRecordAliasMessage)
 * insert CommonBundleStuff
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Alias Header , Alias Header, AliasHeader)
@@ -163,10 +167,7 @@ Parent: Bundle
 Id: VRM-DemographicsCodingMessage
 Title: "Coding Message"
 Description:   "Message for demographics coding response to death records"
-* entry ^slicing.discriminator.type = #pattern
-* entry ^slicing.discriminator.path = "resource.meta.profile"
-* entry ^slicing.rules = #open
-* entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
+* insert RequireMetaProfile(DemographicsCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
@@ -177,10 +178,7 @@ Parent: Bundle
 Id: VRM-CauseOfDeathCodingMessage
 Title: "Cause of Death Coding Message"
 Description:   "Message for cause of death coding response to death records"
-* entry ^slicing.discriminator.type = #pattern
-* entry ^slicing.discriminator.path = "resource.meta.profile"
-* entry ^slicing.rules = #open
-* entry ^slicing.description = "Slicing based on the profile named in entry.resource.meta.profile"
+* insert RequireMetaProfile(CauseOfDeathCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
@@ -201,6 +199,7 @@ Parent: Bundle
 Id: VRM-DemographicsCodingUpdateMessage
 Title: "Demographics Coding Update Message"
 Description:   "Message for updating Demographics coding response to death records"
+* insert RequireMetaProfile(DemographicsCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Update Header , Coding Update Header, DemographicsCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
@@ -211,6 +210,7 @@ Parent: Bundle
 Id: VRM-CauseOfDeathCodingUpdateMessage
 Title: "Cause Of Death Coding Update Message"
 Description:   "Message for updating Cause Of Death coding response to death records"
+* insert RequireMetaProfile(CauseOfDeathCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Cause Of Death Coding  Update Header , Cause Of Death Coding  Update Header, CauseOfDeathCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
@@ -222,6 +222,7 @@ Parent: Bundle
 Id: VRM-AcknowledgementMessage
 Title: "Acknowledgement Message"
 Description:   "Acknowledgement Message"
+* insert RequireMetaProfile(AcknowledgementMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Acknowledgement Header , Acknowledgement Header, AcknowledgementHeader)
 * insert BundleEntry(acknowledgementParameters, 1, 1, Acknowledgement Parameters, Acknowledgement Parameters, MessageParameters)
@@ -232,6 +233,7 @@ Parent: Bundle
 Id: VRM-ExtractionErrorMessage
 Title: "Extraction Error Message"
 Description:   "Message for Errors during content extraction"
+* insert RequireMetaProfile(ExtractionErrorMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Extraction Error Header , Extraction Error Header, ExtractionErrorHeader)
 * insert BundleEntry(extractionErrorParameters, 0, 1, Extraction Error Parameters, Extraction Error Parameters, MessageParameters)
