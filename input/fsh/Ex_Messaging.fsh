@@ -3,7 +3,6 @@ Instance: DemographicsCodingParameters-Example1
 InstanceOf: DemographicsCodingParameters
 Usage: #example
 Description: "Parameters for Demographic Coding: Example"
-* meta.profile[0] = Canonical(DemographicsCodingParameters)
 // * parameter[jurisdiction_id].valueString = "NH"
 * parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
 * parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
@@ -15,7 +14,6 @@ Instance: CauseOfDeathCodingParameters-Example1
 InstanceOf: CauseOfDeathCodingParameters
 Usage: #example
 Description: "Parameters for Cause of Death Coding: Example"
-* meta.profile[0] = Canonical(CauseOfDeathCodingParameters)
 // * parameter[jurisdiction_id].valueString = "NH"
 // * parameter[FILENO].valueUnsignedInt = 123456
 // * parameter[DOD_YR].valueUnsignedInt = 2018
@@ -62,7 +60,6 @@ Instance: Parameters-Example1
 InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
-* meta.profile[0] = Canonical(MessageParameters)
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
@@ -71,7 +68,6 @@ Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
 Usage: #example
 Description: "Parameters for Void: Example"
-* meta.profile[0] = Canonical(VoidParameters)
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018

@@ -3,15 +3,13 @@ Parent: Parameters
 Id: VRM-MessageParameters
 Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Death Message Parameters"
+* meta.profile = Canonical(MessageParameters)
 * id MS
 // jurisdiction_id
 // cert_no
 // death_year
 // state_auxiliary_id
-* parameter ^slicing.discriminator.type = #value
-* parameter ^slicing.discriminator.path = "name"
-* parameter ^slicing.rules = #open
-* parameter ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+* insert ParameterSlicing
 * parameter contains
     jurisdiction_id 0..1 and
     cert_no 0..1 and   // cert_no / FILENO
