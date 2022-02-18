@@ -36,8 +36,8 @@ Usage: #example
 * timestamp = "2020-11-19T11:40:14.3128405-05:00"
 * entry[0].fullUrl = "http://examples.org/fhir/Header/Header-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Header-for-MA20323-TRX-000182-Example
-* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
-* entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
+* entry[+].fullUrl = "http://examples.org/fhir/Parameters/Vivienne-Wright-182-Parameters-Example"
+* entry[=].resource = Vivienne-Wright-182-Parameters-Example
 * entry[+].fullUrl = "http://examples.org/fhir/Parameters/Parameters-for-MA20323-TRX-000182-Example"
 * entry[=].resource = Parameters-for-MA20323-TRX-000182-Example
 
@@ -126,11 +126,11 @@ Description: "Demographic Coding Parameters:Vivienne Write (182)"
 // * parameter[FILENO].valueUnsignedInt = 182
 // * parameter[jurisdiction_id].valueString = "MA"
 // * parameter[DOD_YR].valueUnsignedInt = 2020
-* parameter[coded_race].part[RACE1E].value[x] = RaceCodeCS#100
-* parameter[coded_race].part[RACE2E].value[x] = RaceCodeCS#300
+* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
+* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
 //* parameter[=].part[+].name = "RACEBRG"
 //* parameter[=].part[=].valueCoding = RaceCodeCS#21
-* parameter[coded_ethnicity].part[DETHNICE].value[x] = HispanicOriginCS#999
+* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
 * parameter[input_race_flags].part[RACE1].valueString = "Y" // White
 * parameter[input_race_flags].part[RACE2].valueString = "N"
 * parameter[input_race_flags].part[RACE3].valueString = "Y"  // American Indian
