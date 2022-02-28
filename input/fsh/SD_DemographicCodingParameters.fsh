@@ -1,10 +1,11 @@
-Profile:  DemographicsCodingMessageParameters
-Parent: DeathMessageParameters
-Id: VRM-DemographicCodingMessageParameters
-Title:  "Demographic Coding Message Parameters"
-Description:   "Parameters for a Coding Message"
+Profile:  DemographicsCodingParameters
+Parent: Parameters
+Id: VRM-DemographicsCodingParameters
+Title:  "Demographics Coding Message Parameters"
+Description:   "Parameters for a Demographics Coding Message"
 * meta.profile 1..*
-* meta.profile = Canonical(DemographicsCodingMessageParameters)
+* meta.profile = Canonical(DemographicsCodingParameters)
+* insert ParameterSlicing
 * insert BasicParameters
 * parameter contains
      coded_ethnicity 0..1 and // part contains name=DETHNICE or DETHNIC5C codeable
@@ -12,6 +13,11 @@ Description:   "Parameters for a Coding Message"
      input_ethnicity 0..1 and // Input ethnicity DETHNIC1-5 and
      input_race_flags 0..1 and // Input race RACE1-15
      input_race_literals 0..1 // Input race RACE16-23
+* parameter[coded_ethnicity] ^short = "Grouping for DETHNICE and DETHNIC5C parameters (NCHS->EDRS)"
+* parameter[coded_race] ^short = "Grouping for RACE1E-8E and RACE16C-23C (NCHS->EDRS)"
+* parameter[input_ethnicity] ^short = "Grouping for DETHNIC1-5 parameters (EDRS->NCHS)"
+* parameter[input_race_flags] ^short = "Grouping for RACE1-15 (EDRS->NCHS)"
+* parameter[input_race_literals] ^short = "Grouping for RACE16-23 (EDRS->NCHS)"
 * insert ParameterName(coded_ethnicity, DETHNICE or DETHNIC5C coded ethnicity, coded ethnicity)
 * insert ParameterName(coded_race, RACE1E-8E and RACE16C-23C coded race, coded race)
 * insert ParameterName(input_ethnicity, DETHNIC1-5 input_ethnicity, input_ethnicity)
@@ -30,7 +36,7 @@ Description:   "Parameters for a Coding Message"
 * parameter[coded_race].part.name only string
 * insert ParameterPartSliceByName(coded_race)
 * parameter[coded_race].part.value[x] only Coding
-* parameter[coded_race].part.value[x] from RaceCodeListVS (required)
+* parameter[coded_race].part.value[x] from RaceCodeVS (required)
 * parameter[coded_race].part contains
     RACE1E 0..1 and
     RACE2E 0..1 and

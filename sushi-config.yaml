@@ -17,7 +17,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
-  hl7.fhir.us.vrdr: 1.0.0
+  hl7.fhir.us.vrdr: 1.2.0
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
@@ -40,10 +40,67 @@ pages:
     title: Appendices
 menu:
   Home: index.html
-  Messages: message.html
+  Messages:
+    Message Exchange Patterns: message.html#message-exchange-patterns
+    Message Structure and Content: message.html#message-structure-and-content
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
+groups:
+  Messages:
+    name: Message Profiles
+    description: Message Profiles
+    resources:
+    - StructureDefinition/VRM-DeathRecordSubmissionMessage
+    - StructureDefinition/VRM-DeathRecordUpdateMessage
+    - StructureDefinition/VRM-DeathRecordVoidMessage
+    - StructureDefinition/VRM-DeathRecordAliasMessage
+    - StructureDefinition/VRM-CauseOfDeathCodingMessage
+    - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
+    - StructureDefinition/VRM-DemographicsCodingMessage
+    - StructureDefinition/VRM-DemographicsCodingUpdateMessage
+    - StructureDefinition/VRM-AcknowledgementMessage
+    - StructureDefinition/VRM-ExtractionErrorMessage
+  Headers:
+    name: Message Header Profiles
+    description: Message Header Profiles
+    resources:
+    - StructureDefinition/VRM-SubmissionHeader
+    - StructureDefinition/VRM-UpdateHeader
+    - StructureDefinition/VRM-VoidHeader
+    - StructureDefinition/VRM-AliasHeader
+    - StructureDefinition/VRM-CauseOfDeathCodingHeader
+    - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
+    - StructureDefinition/VRM-DemographicsCodingHeader
+    - StructureDefinition/VRM-DemographicsCodingUpdateHeader
+    - StructureDefinition/VRM-AcknowledgementHeader
+    - StructureDefinition/VRM-ExtractionErrorHeader
+  Parameters:
+    name: Message Parameter Profiles
+    description: Message Parameter Profiles
+    resources:
+    - StructureDefinition/VRM-MessageParameters
+    - StructureDefinition/VRM-VoidParameters
+    - StructureDefinition/VRM-AliasParameters
+    - StructureDefinition/VRM-CauseOfDeathCodingParameters
+    - StructureDefinition/VRM-DemographicsCodingParameters
+  Outcomes:
+    name: Outcome Profiles
+    resources:
+    - StructureDefinition/VRM-Outcome
+  CodeSystems:
+    name: Codesystems
+    description: Codesystems
+    resources:
+    - CodeSystem/VRM-MessageHeaderURI-cs
+    - CodeSystem/VRM-HispanicOrigin-cs
+    - CodeSystem/VRM-RaceCode-cs
+  ValueSets:
+    name: Valuesets
+    description: Valuesets
+    resources:
+    - ValueSet/VRM-HispanicOrigin-vs
+    - ValueSet/VRM-RaceCode-vs

@@ -1,0 +1,4 @@
+
+* ICD-10 codes are in the TRANSAX dialect of ICD-10.   I14.9 becomes I149.
+* All coded fields (strings of length 1) are encoded as per the definition in the [IJE/TRANSAX documents](index.html#cdc-nchs-documentation).
+* All parameters are named as per the TRX file definitions.
