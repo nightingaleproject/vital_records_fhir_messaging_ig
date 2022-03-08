@@ -110,7 +110,7 @@ Description: "Header for Submission - Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
-* focus = Reference(DeathCertificateDocument-Example1)
+* focus.reference = "Bundle/DeathCertificateDocument-Example1"
 
 Instance: CauseOfDeathCodingHeader-Example1
 InstanceOf: CauseOfDeathCodingHeader
