@@ -108,7 +108,7 @@ RuleSet: BaseMessageParameters
     death_year 0..1 and   // death_year / DOD_YR
     state_auxiliary_id  0..1    // state_auxiliary_id / AUXNO
 * insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
-* parameter[jurisdiction_id].value[x] from VRDRJurisdictionVS (required)
+* parameter[jurisdiction_id].value[x] from $VRDRJurisdictionVS (required)
 * insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
 * insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year) //* parameter[death_year].name = "death_year"
 * insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"

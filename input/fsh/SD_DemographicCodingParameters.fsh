@@ -3,8 +3,7 @@ Parent: Parameters
 Id: VRM-DemographicsCodingParameters
 Title:  "Demographics Coding Message Parameters"
 Description:   "Parameters for a Demographics Coding Message"
-* meta.profile 1..*
-* meta.profile = Canonical(DemographicsCodingParameters)
+* insert RequireMetaProfile(DemographicsCodingParameters)
 * insert ParameterSlicing
 * insert BasicParameters
 * parameter contains

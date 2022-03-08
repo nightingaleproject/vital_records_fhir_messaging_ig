@@ -3,3 +3,4 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 
 Alias: $codingstatus = ACMETRANSAXCodingStatusCS
+Alias: $VRDRJurisdictionVS = http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdiction-vs
