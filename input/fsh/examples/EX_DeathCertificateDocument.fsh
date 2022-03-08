@@ -70,7 +70,7 @@ Description: "DeathCertificate-Example1"
 *  section[DecedentDemographics].entry[MilitaryService] = Reference(DecedentMilitaryService-Example1)
 *  section[DecedentDemographics].entry[UsualWork] = Reference(DecedentUsualWork-Example1)
 *  section[DecedentDemographics].entry[ParametersForEmergingIssues] = Reference(ParametersForEmergingIssues-Example1)
-
+*  section[DeathInvestigation].code = DocumentSectionCS#DeathInvestigation
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
@@ -81,7 +81,7 @@ Description: "DeathCertificate-Example1"
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
 *  section[DeathInvestigation].entry[TransportationRole] = Reference(DecedentTransportationRole-Example1)
-
+*  section[DeathCertification].code = DocumentSectionCS#DeathCertification
 *  section[DeathCertification].entry[Certifier] = Reference(Certifier-Example1)
 *  section[DeathCertification].entry[DeathCertification] = Reference(DeathCertification-Example1)
 *  section[DeathCertification].entry[MannerOfDeath] = Reference(MannerOfDeath-Example1)
@@ -89,7 +89,7 @@ Description: "DeathCertificate-Example1"
 *  section[DeathCertification].entry[CauseOfDeathCondition][+] = Reference(CauseOfDeathCondition-Example1)
 *  section[DeathCertification].entry[ConditionContributingToDeath] = Reference(ConditionContributingToDeath-Example1)
 *  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
-
+*  section[DecedentDisposition].code = DocumentSectionCS#DecedentDisposition
 *  section[DecedentDisposition].entry[DispositionLocation] = Reference(DispositionLocation-Example1)
 *  section[DecedentDisposition].entry[FuneralHome] = Reference(FuneralHome-Example1)
 *  section[DecedentDisposition].entry[DispositionMethod] = Reference(DecedentDispositionMethod-Example1)
