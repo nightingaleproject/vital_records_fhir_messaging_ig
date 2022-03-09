@@ -2,7 +2,7 @@
 
 Instance: DeathCertification-Example1
 InstanceOf: DeathCertification
-Usage: #example
+Usage: #inline
 Description: "DeathCertification-Example1"
 * insert AddMetaProfile(DeathCertification)
 * identifier.value = "180"

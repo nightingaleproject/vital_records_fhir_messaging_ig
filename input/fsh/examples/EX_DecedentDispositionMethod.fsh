@@ -1,6 +1,6 @@
 Instance: DecedentDispositionMethod-Example1
 InstanceOf: DecedentDispositionMethod
-Usage: #example
+Usage: #inline
 Description: "DecedentDispositionMethod-Example1"
 * insert AddMetaProfile(DecedentDispositionMethod)
 * status = #final
@@ -12,7 +12,7 @@ Description: "DecedentDispositionMethod-Example1"
 /*  Mortician */
 Instance: Mortician-Example1
 InstanceOf: USCorePractitionerProfile
-Usage: #example
+Usage: #inline
 Description: "Mortician-Example1"
 * insert AddMetaProfile(USCorePractitionerProfile)
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
@@ -24,7 +24,7 @@ Description: "Mortician-Example1"
 
 Instance: DispositionLocation-Example1
 InstanceOf: DispositionLocation
-Usage: #example
+Usage: #inline
 Description: "DispositionLocation-Example1"
 * insert AddMetaProfile(DispositionLocation)
 * name = "Rosewood Cemetary"

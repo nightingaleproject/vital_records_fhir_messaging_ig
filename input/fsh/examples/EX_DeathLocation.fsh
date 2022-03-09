@@ -1,6 +1,6 @@
 Instance: DeathLocation-Example1
 InstanceOf: DeathLocation
-Usage: #example
+Usage: #inline
 Description: "DeathLocation-Example1"
 * insert AddMetaProfile(DeathLocation)
 * name = "Pecan Grove Nursing Home"

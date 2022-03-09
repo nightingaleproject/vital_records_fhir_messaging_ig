@@ -24,8 +24,8 @@ Description:   "Parameters for a Demographics Coding Message"
 * insert ParameterName(input_race_literals, RACE1E-8E and RACE16-23 input-race literals, input-race literals)
 // * insert ParameterNameType(underlying_cause_of_death, CodeableConcept, Underlying Cause of Death, Underlying Cause of Death)
 * parameter[coded_ethnicity].part.name only string
-* parameter[coded_ethnicity].part.value[x] only Coding // bind to value set
-* parameter[coded_ethnicity].part.value[x] from HispanicOriginVS (required)
+* parameter[coded_ethnicity].part.value[x] only string
+* parameter[coded_ethnicity].part.value[x] ^maxLength = 3
 * insert ParameterPartSliceByName(coded_ethnicity)
 * parameter[coded_ethnicity].part contains
     DETHNICE 0..1 and
@@ -34,8 +34,8 @@ Description:   "Parameters for a Demographics Coding Message"
 * parameter[coded_ethnicity].part[DETHNIC5C].name = "DETHNIC5C"
 * parameter[coded_race].part.name only string
 * insert ParameterPartSliceByName(coded_race)
-* parameter[coded_race].part.value[x] only Coding
-* parameter[coded_race].part.value[x] from RaceCodeVS (required)
+* parameter[coded_race].part.value[x] only string
+* parameter[coded_race].part.value[x] ^maxLength = 3
 * parameter[coded_race].part contains
     RACE1E 0..1 and
     RACE2E 0..1 and

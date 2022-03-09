@@ -4,11 +4,11 @@ InstanceOf: DemographicsCodingParameters
 Usage: #example
 Description: "Parameters for Demographic Coding: Example"
 // * parameter[jurisdiction_id].valueString = "NH"
-* parameter[coded_race].part[RACE1E].valueCoding = RaceCodeCS#100
-* parameter[coded_race].part[RACE2E].valueCoding = RaceCodeCS#300
+* parameter[coded_race].part[RACE1E].valueString = "100"
+* parameter[coded_race].part[RACE2E].valueString = "300"
 //* parameter[=].part[+].name = "RACEBRG"
 //* parameter[=].part[=].valueCoding = RaceCodeCS#21
-* parameter[coded_ethnicity].part[DETHNICE].valueCoding = HispanicOriginCS#999
+* parameter[coded_ethnicity].part[DETHNICE].valueString = "999"
 
 Instance: CauseOfDeathCodingParameters-Example1
 InstanceOf: CauseOfDeathCodingParameters

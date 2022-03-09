@@ -1,6 +1,6 @@
 Instance: DecedentAge-Example1
 InstanceOf: DecedentAge
-Usage: #example
+Usage: #inline
 Description: "DecedentAge-Example1"
 * insert AddMetaProfile(DecedentAge)
 * status = #final
