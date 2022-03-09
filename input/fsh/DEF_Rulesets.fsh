@@ -54,6 +54,12 @@ RuleSet: ParameterPartSliceByName(slice)
 * parameter[{slice}].part ^slicing.rules = #closed
 * parameter[{slice}].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 
+RuleSet: ParameterPartPartSliceByName(slice,partslice)
+* parameter[{slice}].part[{partslice}].part ^slicing.discriminator.type = #value
+* parameter[{slice}].part[{partslice}].part ^slicing.discriminator.path = "name"
+* parameter[{slice}].part[{partslice}].part ^slicing.rules = #closed
+* parameter[{slice}].part[{partslice}].part ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+
 RuleSet: ParameterPartSlice(slice, partslice, type, short, def )
 * parameter[{slice}].part[{partslice}].name = "{partslice}"
 * parameter[{slice}].part[{partslice}].value[x] only {type}
@@ -61,9 +67,20 @@ RuleSet: ParameterPartSlice(slice, partslice, type, short, def )
 * parameter[{slice}].part[{partslice}] ^definition = "{def}"
 * parameter[{slice}].part[{partslice}].extension 0..0
 
+RuleSet: ParameterPartPartSlice(slice, partslice, partpartslice, type, short, def )
+* parameter[{slice}].part[{partslice}].part[{partpartslice}].name = "{partpartslice}"
+* parameter[{slice}].part[{partslice}].part[{partpartslice}].value[x] only {type}
+* parameter[{slice}].part[{partslice}].part[{partpartslice}] ^short = "{short}"
+* parameter[{slice}].part[{partslice}].part[{partpartslice}] ^definition = "{def}"
+* parameter[{slice}].part[{partslice}].part[{partpartslice}].extension 0..0
+
 RuleSet: ParameterPartSliceLength(slice, partslice, type, short, def, length)
 * insert ParameterPartSlice({slice}, {partslice}, {type}, {short}, {def})
 * parameter[{slice}].part[{partslice}].value[x] ^maxLength = {length}
+
+RuleSet: ParameterPartPartSliceLength(slice, partslice, partpartslice,type, short, def, length)
+* insert ParameterPartPartSlice({slice}, {partslice}, {partpartslice}, {type}, {short}, {def})
+* parameter[{slice}].part[{partslice}].part[{partpartslice}].value[x] ^maxLength = {length}
 
 RuleSet: BasicParameters
 * parameter contains
