@@ -96,11 +96,3 @@ groups:
     description: Codesystems
     resources:
     - CodeSystem/VRM-MessageHeaderURI-cs
-    - CodeSystem/VRM-HispanicOrigin-cs
-    - CodeSystem/VRM-RaceCode-cs
-  ValueSets:
-    name: Valuesets
-    description: Valuesets
-    resources:
-    - ValueSet/VRM-HispanicOrigin-vs
-    - ValueSet/VRM-RaceCode-vs
