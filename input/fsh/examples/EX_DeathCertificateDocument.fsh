@@ -42,6 +42,7 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Organization, FuneralHome-Example1)
 * insert addentry(Observation, DecedentDispositionMethod-Example1)
 * insert addentry(Observation, AutopsyPerformedIndicator-Example1)
+* insert addentry(Practitioner, Mortician-Example1)
 
 Instance: DeathCertificate-Example1
 InstanceOf: DeathCertificate
@@ -97,3 +98,4 @@ Description: "DeathCertificate-Example1"
 *  section[DecedentDisposition].entry[DispositionLocation] = Reference(DispositionLocation-Example1)
 *  section[DecedentDisposition].entry[FuneralHome] = Reference(FuneralHome-Example1)
 *  section[DecedentDisposition].entry[DispositionMethod] = Reference(DecedentDispositionMethod-Example1)
+*  section[DecedentDisposition].entry[Mortician] = Reference(Mortician-Example1)
