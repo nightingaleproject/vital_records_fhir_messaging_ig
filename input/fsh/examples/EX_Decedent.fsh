@@ -1,6 +1,6 @@
 Instance: Decedent-Example1
 InstanceOf: Decedent
-Usage: #inline
+Usage: #example
 Description: "Decedent-Example1"
 * insert AddMetaProfile(Decedent)
 * extension[NVSS-Race].extension[White].valueBoolean = true
