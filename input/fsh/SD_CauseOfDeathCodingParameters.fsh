@@ -9,38 +9,18 @@ Description:   "Parameters for a Cause of Death Coding Message"
 * parameter contains
     input_causes_of_death 0..1 and
     input_misc_fields 0..1 and
-    coded_cause_of_death 0..1
-
-* insert ParameterPartSliceByName(coded_cause_of_death)
-* parameter[coded_cause_of_death].part contains
      MAN_UC 0..1 and // manual_underlying_cause_of_death icd10
      ACME_UC 0..1 and // acme_underlying_cause_of_death icd10
      RAC 0..20 and // record_cause_of_death, part contains list of codeable concepts
-     EAC 0..20 and  // entity_axis_code multiple parameters, each contains - part contains linenumber, codeable
-     INJPL 0..1   // string -- one character.   Value Set? Should it be an integer 0-9?
+     EAC 0..20  // entity_axis_code multiple parameters, each contains - part contains linenumber, codeable
 
-* insert ParameterPartSliceLength(coded_cause_of_death,INJPL, string, INJPL Injury Place-1, Injury Place,1)
-* insert ParameterPartSlice(coded_cause_of_death, ACME_UC, string, ACME_UC ACME Underlying Cause of Death, Underlying Cause of Death)
-* insert ParameterPartSlice(coded_cause_of_death, MAN_UC, string, MAN_UC Manual Underlying Cause of Death, Underlying Cause of Death)
-* insert ParameterPartSlice(coded_cause_of_death, RAC, string, RAC Recorded Cause of Death, Recorded Cause of Death)
-* parameter[coded_cause_of_death].part[EAC] ^short = "EAC"
-* parameter[coded_cause_of_death].part[EAC] ^short = "EAC entity axis code"
-* parameter[coded_cause_of_death].part[EAC].extension 0..0
-* parameter[coded_cause_of_death].part[EAC].name = "EAC"
-* insert ParameterPartSlice(coded_cause_of_death, RAC, string, RAC Recorded Cause of Death, Recorded Cause of Death)
-* insert ParameterPartPartSliceByName(coded_cause_of_death, EAC)
-* insert ParameterName(coded_cause_of_death, coded cause of death, coded cause of death)
-* parameter[coded_cause_of_death].part[EAC].part contains
-       lineNumber 1..1 and
-       position 1..1 and
-       coding 1..1 and
-       e_code_indicator 0..1
-* insert ParameterPartPartSlice(coded_cause_of_death, EAC, lineNumber, unsignedInt, line number between 1 and 6, line number between 1 and 6 )
-* insert ParameterPartPartSlice(coded_cause_of_death,EAC, position, unsignedInt, position of code in the line, position of code in the line )
-* insert ParameterPartPartSlice(coded_cause_of_death,EAC, coding, string, Coding of the cause of death in TRANSAX dialect of ICD10, Coding of the cause of death in TRANSAX dialect of ICD10 )
-* insert ParameterPartPartSliceLength(coded_cause_of_death,EAC, e_code_indicator, string, Holdover flag from ICD9 coding, Holdover flag from ICD9 coding, 1 )
-* parameter[coded_cause_of_death].part[EAC].part[e_code_indicator].value[x] = "&"
 
+* insert ParameterNameType(ACME_UC, string, ACME_UC ACME Underlying Cause of Death, Underlying Cause of Death)
+* insert ParameterNameType(MAN_UC, string, MAN_UC Manual Underlying Cause of Death, Underlying Cause of Death)
+// * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
+* insert ParameterNameType(RAC, string, RAC Recorded Cause of Death, Recorded Cause of Death)
+* insert ParameterName(EAC, EAC entity axis code, entity axis code)
+* insert ParameterName(input_causes_of_death, input causes of death: COD1A-D + INTERVAL1A-D + OTHERCONDITION, input causes of death)
 * insert ParameterPartSliceByName(input_causes_of_death)
 * parameter[input_causes_of_death].part contains
       COD1A 0..1 and
@@ -62,6 +42,18 @@ Description:   "Parameters for a Cause of Death Coding Message"
 * insert ParameterPartSlice(input_causes_of_death, INTERVAL1C, string, INTERVAL1C, INTERVAL1C )
 * insert ParameterPartSlice(input_causes_of_death, INTERVAL1D, string, INTERVAL1D, INTERVAL1D )
 
+* insert ParameterPartSliceByName(EAC)
+* parameter[EAC].part contains
+      lineNumber 1..1 and
+      position 1..1 and
+      coding 1..1 and
+      e_code_indicator 0..1       //
+* insert ParameterPartSlice(EAC, lineNumber, unsignedInt, line number between 1 and 6, line number between 1 and 6 )
+* insert ParameterPartSlice(EAC, position, unsignedInt, position of code in the line, position of code in the line )
+* insert ParameterPartSlice(EAC, coding, string, Coding of the cause of death in TRANSAX dialect of ICD10, Coding of the cause of death in TRANSAX dialect of ICD10 )
+* insert ParameterPartSliceLength(EAC, e_code_indicator, string, Holdover flag from ICD9 coding, Holdover flag from ICD9 coding, 1 )
+* parameter[EAC].part[e_code_indicator].value[x] = "&"
+
 * parameter[input_causes_of_death].value[x] 0..0
 * parameter[input_causes_of_death].resource 0..0
 
@@ -70,6 +62,7 @@ Description:   "Parameters for a Cause of Death Coding Message"
 * insert ParameterPartSliceByName(input_misc_fields)
 * parameter[input_misc_fields].part contains
     MANNER 0..1 and // string
+    INJPL 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     TRX_FLG 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     AUTOP 0..1 and // string -- one character. Was Autopsy performed?
     AUTOPF 0..1 and // string -- one character. Were Autopsy Findings Available to Complete the Cause of Death?
@@ -90,6 +83,7 @@ Description:   "Parameters for a Cause of Death Coding Message"
     SUR_YR 0..1 and // string -- Surgery Date --year
     TOI_UNIT 0..1 // string -- Time of Injury Unit
 * insert ParameterPartSliceLength(input_misc_fields,MANNER, string, MANNER Manner of Death-1, Manner of Death,1)
+* insert ParameterPartSliceLength(input_misc_fields,INJPL, string, INJPL Injury Place-1, Injury Place,1)
 * insert ParameterPartSliceLength(input_misc_fields,TRX_FLG, string, TRX_FLG Transax Conversion Flag-1, Transax Conversion Flag, 1)
 * insert ParameterPartSliceLength(input_misc_fields,AUTOP, string, AUTOP Was Autopsy performed?-1, Was Autopsy performed?,1)
 * insert ParameterPartSliceLength(input_misc_fields,AUTOPF, string, AUTOPF Were Autopsy Findings Available to Complete the Cause of Death?-1, Were Autopsy Findings Available to Complete the Cause of Death?,1)
