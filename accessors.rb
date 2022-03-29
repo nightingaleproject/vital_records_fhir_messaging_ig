@@ -20,7 +20,10 @@ using Hl7.Fhir.Serialization;
 
 namespace VRDR
 {
-    /// <summary>Class <c>BaseMessage</c> is the base class of all messages.</summary>
+    /// <summary>Class
+    /// <c>BaseMessage</c> is the base class of all messages.
+    /// This partial class was automatically generated from https://github.com/nightingaleproject/vital_records_fhir_messaging_ig
+    ///</summary>
     public partial class BaseMessage
     {
 "
