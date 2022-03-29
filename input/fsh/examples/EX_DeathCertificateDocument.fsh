@@ -4,14 +4,15 @@ RuleSet: addentry(type, id)
 
 Instance: DeathCertificateDocument-Example1
 InstanceOf: DeathCertificateDocument
-Usage: #inline
+Usage: #example
 Description: "DeathCertificateDocument-Example1"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
-* identifier.value = "2020MA000182"
+* identifier.value = "000182"
+* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
+* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
-* identifier.extension[auxiliaryStateIdentifier].valueString = "ID123"
 * insert addentry(Bundle, DeathCertificate-Example1)
 * insert addentry(Patient, Decedent-Example1)
 * insert addentry(RelatedPerson, DecedentFather-Example1)
@@ -22,7 +23,7 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Observation, DecedentEducationLevel-Example1)
 * insert addentry(Observation, DecedentMilitaryService-Example1)
 * insert addentry(Observation, DecedentUsualWork-Example1)
-* insert addentry(Parameter, ParametersForEmergingIssues-Example1)
+* insert addentry(Parameters, ParametersForEmergingIssues-Example1)
 * insert addentry(Observation, DecedentPregnancyStatus-Example1)
 * insert addentry(Observation, TobaccoUseContributedToDeath-Example1)
 * insert addentry(Observation, DeathDate-Example1)
@@ -34,18 +35,19 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Location, InjuryLocation-Example1)
 * insert addentry(Practitioner, Certifier-Example1)
 * insert addentry(Procedure, DeathCertification-Example1)
-* insert addentry(Observation, CauseOfDeathCondition-Example1)
-* insert addentry(Observation, CauseOfDeathCondition-Example2)
-* insert addentry(Observation, ConditionContributingToDeath-Example1)
+* insert addentry(Observation, CauseOfDeathPart1-Example1)
+* insert addentry(Observation, CauseOfDeathPart1-Example2)
+* insert addentry(Observation, CauseOfDeathPart2-Example1)
 * insert addentry(List, CauseOfDeathPathway-Example1)
 * insert addentry(Location, DispositionLocation-Example1)
 * insert addentry(Organization, FuneralHome-Example1)
 * insert addentry(Observation, DecedentDispositionMethod-Example1)
 * insert addentry(Observation, AutopsyPerformedIndicator-Example1)
+* insert addentry(Practitioner, Mortician-Example1)
 
 Instance: DeathCertificate-Example1
 InstanceOf: DeathCertificate
-Usage: #inline
+Usage: #example
 Description: "DeathCertificate-Example1"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
@@ -88,12 +90,13 @@ Description: "DeathCertificate-Example1"
 *  section[DeathCertification].entry[Certifier] = Reference(Certifier-Example1)
 *  section[DeathCertification].entry[DeathCertification] = Reference(DeathCertification-Example1)
 *  section[DeathCertification].entry[MannerOfDeath] = Reference(MannerOfDeath-Example1)
-*  section[DeathCertification].entry[CauseOfDeathCondition][0] = Reference(CauseOfDeathCondition-Example1)
-*  section[DeathCertification].entry[CauseOfDeathCondition][+] = Reference(CauseOfDeathCondition-Example1)
-*  section[DeathCertification].entry[ConditionContributingToDeath] = Reference(ConditionContributingToDeath-Example1)
+*  section[DeathCertification].entry[CauseOfDeathPart1][0] = Reference(CauseOfDeathPart1-Example1)
+*  section[DeathCertification].entry[CauseOfDeathPart1][+] = Reference(CauseOfDeathPart1-Example1)
+*  section[DeathCertification].entry[CauseOfDeathPart2] = Reference(CauseOfDeathPart2-Example1)
 *  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
 // The next line shouldn't be necessary
 *  section[DecedentDisposition].code = DocumentSectionCS#DecedentDisposition
 *  section[DecedentDisposition].entry[DispositionLocation] = Reference(DispositionLocation-Example1)
 *  section[DecedentDisposition].entry[FuneralHome] = Reference(FuneralHome-Example1)
 *  section[DecedentDisposition].entry[DispositionMethod] = Reference(DecedentDispositionMethod-Example1)
+*  section[DecedentDisposition].entry[Mortician] = Reference(Mortician-Example1)

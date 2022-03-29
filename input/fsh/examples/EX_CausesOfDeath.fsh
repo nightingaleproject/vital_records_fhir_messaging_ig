@@ -1,31 +1,30 @@
-Instance: CauseOfDeathCondition-Example1
-InstanceOf: CauseOfDeathCondition
+Instance: CauseOfDeathPart1-Example1
+InstanceOf: CauseOfDeathPart1
 Usage: #inline
-Description: "CauseOfDeathCondition-Example1"
-* meta.profile = Canonical(CauseOfDeathCondition)
+Description: "CauseOfDeathPart1-Example1"
+* meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Cardiopulmonary arrest"
 * subject = Reference(Decedent-Example1)
-* component[interval].valueQuantity.unit = #h
-* component[interval].valueQuantity.value = 4
+* component[interval].valueString = "4 hours"
 * performer = Reference(Certifier-Example1)
 * status = #final
 
-Instance: CauseOfDeathCondition-Example2
-InstanceOf: CauseOfDeathCondition
+Instance: CauseOfDeathPart1-Example2
+InstanceOf: CauseOfDeathPart1
 Usage: #inline
-Description: "CauseOfDeathCondition-Example2"
-* meta.profile = Canonical(CauseOfDeathCondition)
+Description: "CauseOfDeathPart1-Example2"
+* meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Eclampsia"
 * component[interval].valueString = "3 months"
 * subject = Reference(Decedent-Example1)
 * performer = Reference(Certifier-Example1)
 * status = #final
 
-Instance: ConditionContributingToDeath-Example1
-InstanceOf: ConditionContributingToDeath
+Instance: CauseOfDeathPart2-Example1
+InstanceOf: CauseOfDeathPart2
 Usage: #inline
-Description: "ConditionContributingToDeath-Example1"
-* meta.profile = Canonical(ConditionContributingToDeath)
+Description: "CauseOfDeathPart2-Example1"
+* meta.profile = Canonical(CauseOfDeathPart2)
 * valueCodeableConcept.text = "hypertensive heart disease"
 * subject = Reference(Decedent-Example1)
 * performer = Reference(Certifier-Example1)
@@ -39,8 +38,8 @@ Description: "CauseOfDeathPathway-Example1"
 * status = #current
 * source = Reference(Certifier-Example1)
 // * orderedBy = $list-order#priority "Sorted by Priority"
-* entry[0].item = Reference(CauseOfDeathCondition-Example1)
-* entry[+].item = Reference(CauseOfDeathCondition-Example2)
+* entry[0].item = Reference(CauseOfDeathPart1-Example1)
+* entry[+].item = Reference(CauseOfDeathPart1-Example2)
 
 
 /*  Certifier */
@@ -56,7 +55,7 @@ Description: "Certifier-Example1"
 * address.city = "Bird in Hand"
 * address.state = "PA"
 * address.postalCode = "17505"
-* address.country = "United States"
+* address.country = "US"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "414444AB"
 * qualification.code = $sct#434641000124105
