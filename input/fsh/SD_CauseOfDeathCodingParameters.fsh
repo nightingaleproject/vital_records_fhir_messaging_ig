@@ -9,12 +9,13 @@ Description:   "Parameters for a Cause of Death Coding Message"
 * parameter contains
     input_causes_of_death 0..1 and
     input_misc_fields 0..1 and
+     INJPL 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
      MAN_UC 0..1 and // manual_underlying_cause_of_death icd10
      ACME_UC 0..1 and // acme_underlying_cause_of_death icd10
      RAC 0..20 and // record_cause_of_death, part contains list of codeable concepts
      EAC 0..20  // entity_axis_code multiple parameters, each contains - part contains linenumber, codeable
 
-
+* insert ParameterNameTypeLength(INJPL, string, INJPL Injury Place-1, Injury Place,1)
 * insert ParameterNameType(ACME_UC, string, ACME_UC ACME Underlying Cause of Death, Underlying Cause of Death)
 * insert ParameterNameType(MAN_UC, string, MAN_UC Manual Underlying Cause of Death, Underlying Cause of Death)
 // * parameter[underlying_cause_of_death].valueCodeableConcept.coding.system = $icd-10
@@ -62,7 +63,6 @@ Description:   "Parameters for a Cause of Death Coding Message"
 * insert ParameterPartSliceByName(input_misc_fields)
 * parameter[input_misc_fields].part contains
     MANNER 0..1 and // string
-    INJPL 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     TRX_FLG 0..1 and   // string -- one character.   Value Set? Should it be an integer 0-9?
     AUTOP 0..1 and // string -- one character. Was Autopsy performed?
     AUTOPF 0..1 and // string -- one character. Were Autopsy Findings Available to Complete the Cause of Death?
@@ -83,7 +83,6 @@ Description:   "Parameters for a Cause of Death Coding Message"
     SUR_YR 0..1 and // string -- Surgery Date --year
     TOI_UNIT 0..1 // string -- Time of Injury Unit
 * insert ParameterPartSliceLength(input_misc_fields,MANNER, string, MANNER Manner of Death-1, Manner of Death,1)
-* insert ParameterPartSliceLength(input_misc_fields,INJPL, string, INJPL Injury Place-1, Injury Place,1)
 * insert ParameterPartSliceLength(input_misc_fields,TRX_FLG, string, TRX_FLG Transax Conversion Flag-1, Transax Conversion Flag, 1)
 * insert ParameterPartSliceLength(input_misc_fields,AUTOP, string, AUTOP Was Autopsy performed?-1, Was Autopsy performed?,1)
 * insert ParameterPartSliceLength(input_misc_fields,AUTOPF, string, AUTOPF Were Autopsy Findings Available to Complete the Cause of Death?-1, Were Autopsy Findings Available to Complete the Cause of Death?,1)

@@ -24,7 +24,7 @@ Description: "Parameters for Cause of Death Coding: Example"
 * parameter[CS].valueUnsignedInt = 8
 * parameter[SHIP].valueString = "191"
 * parameter[SYS_REJ].valueUnsignedInt = 0
-* parameter[input_misc_fields].part[INJPL].valueString = "8"
+* parameter[INJPL].valueString = "8"
 * parameter[MAN_UC].valueString = "A047"
 * parameter[ACME_UC].valueString = "A047"
 * parameter[RAC][0].valueString = "A047"
