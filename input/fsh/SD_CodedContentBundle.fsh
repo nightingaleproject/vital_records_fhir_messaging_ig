@@ -10,11 +10,11 @@ Description: "A bundle containing instances of the resources comprising coded co
 * type 1..1
 * type only code
 * type = #collection (exactly)
-* entry.resource 1..1 MS // each entry must have a resource
-* entry ^slicing.discriminator.type = #profile
-* entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
-* entry ^slicing.description = "Slicing based on the profile"
+// * entry.resource 1..1 MS // each entry must have a resource
+// * entry ^slicing.discriminator.type = #profile
+// * entry ^slicing.discriminator.path = "resource"
+// * entry ^slicing.rules = #open
+// * entry ^slicing.description = "Slicing based on the profile"
 // * insert BundleSlice(  AutomatedUnderlyingCauseOfDeath,  0, 1,  AutomatedUnderlyingCauseOfDeath,  AutomatedUnderlyingCauseOfDeath,  AutomatedUnderlyingCauseOfDeath)
 // * insert BundleSlice(  ManualUnderlyingCauseOfDeath,  0, 1,  ManualUnderlyingCauseOfDeath,  ManualUnderlyingCauseOfDeath,  ManualUnderlyingCauseOfDeath)
 // * insert BundleSlice(  CodedRaceAndEthnicity,  0, 1,  CodedRaceAndEthnicity,  CodedRaceAndEthnicity,  CodedRaceAndEthnicity)
