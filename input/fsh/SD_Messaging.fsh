@@ -46,7 +46,7 @@ Description:   "Demographics Coding Header"
 * insert RequireMetaProfile(DemographicsCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference( DemographicsCodingParameters )
+* focus only Reference( Bundle )
 
 Profile:  CauseOfDeathCodingHeader
 Parent: MessageHeader
@@ -56,7 +56,7 @@ Description:   "Cause of Death Coding Header"
 * insert RequireMetaProfile(CauseOfDeathCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingParameters )
+* focus only Reference(Bundle )
 
 Profile:  DemographicsCodingUpdateHeader
 Parent: MessageHeader
@@ -66,7 +66,7 @@ Description:   "Demographics Coding Update Header"
 * insert RequireMetaProfile(DemographicsCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
 * insert CommonHeaderStuff
-* focus only Reference( DemographicsCodingParameters )
+* focus only Reference( Bundle )
 
 Profile:  CauseOfDeathCodingUpdateHeader
 Parent: MessageHeader
@@ -76,7 +76,7 @@ Description:   "Cause Of Death Death Coding Update Header"
 * insert RequireMetaProfile(CauseOfDeathCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(CauseOfDeathCodingParameters )
+* focus only Reference(Bundle )
 
 Profile:  AliasHeader
 Parent: MessageHeader
@@ -172,7 +172,8 @@ Description:   "Message for demographics coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(dempar, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
+* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
+* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
 
 Profile: CauseOfDeathCodingMessage
 Parent: Bundle
@@ -183,8 +184,8 @@ Description:   "Message for cause of death coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codpar, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
-
+* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
+* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
 // Profile: CodingUpdateMessage
 // Parent: Bundle
 // Id: VRM-CodingUpdateMessage
@@ -204,7 +205,8 @@ Description:   "Message for updating Demographics coding response to death recor
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Update Header , Coding Update Header, DemographicsCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(dempar, 1, 1, Demographic  Parameters, Demographic Parameters, DemographicsCodingParameters)
+* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
+* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
 
 Profile: CauseOfDeathCodingUpdateMessage
 Parent: Bundle
@@ -215,7 +217,8 @@ Description:   "Message for updating Cause Of Death coding response to death rec
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Cause Of Death Coding  Update Header , Cause Of Death Coding  Update Header, CauseOfDeathCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codpar, 1, 1, Cause of Death Parameters, Cause of Death Parameters, CauseOfDeathCodingParameters )
+* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
+* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
 
 
 Profile: AcknowledgementMessage
