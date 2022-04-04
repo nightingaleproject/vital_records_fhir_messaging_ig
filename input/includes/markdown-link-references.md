@@ -37,5 +37,5 @@
 
 
 <!-- VRDR Profiles and Extensions -->
-[DeathCertificateDocument]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-VRDR-Death-Certificate-Document.html
-[CauseOfDeathCOndition]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-Cause-Of-Death-Condition.html
+[DeathCertificateDocument]: http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
+[CodedContentBundle]:       http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-coded-content-bundle.html

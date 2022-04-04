@@ -85,7 +85,6 @@ groups:
     - StructureDefinition/VRM-MessageParameters
     - StructureDefinition/VRM-VoidParameters
     - StructureDefinition/VRM-AliasParameters
-    - StructureDefinition/VRM-coded-content-bundle
   Outcomes:
     name: Outcome Profiles
     resources:

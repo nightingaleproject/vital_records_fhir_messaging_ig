@@ -156,10 +156,10 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]| [CauseOfDeathCodingParameters]  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]| [CauseOfDeathCodingParameters]  |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]| [DemographicsCodingParameters]  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]| [DemographicsCodingParameters]  |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
 {: .grid }

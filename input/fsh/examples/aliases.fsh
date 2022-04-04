@@ -47,6 +47,9 @@ Alias: $bypassEditFlagCodeSystem = BypassEditFlagCS
 Alias: $Cause-Of-Death-Condition = CauseOfDeathCondition
 Alias: $administrative-gender_1 = AdministrativeGenderVS
 
+Alias: ActivityAtTimeOfDeath = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-activity-at-time-of-death
+Alias: ActivityAtTimeOfDeathCS = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-activity-at-time-of-death-cs
+Alias: CodedContentBundle = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-content-bundle
 Alias: DeathCertificateDocument = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document
 Alias: DeathCertificate = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate
 Alias: AutopsyPerformedIndicator = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator
