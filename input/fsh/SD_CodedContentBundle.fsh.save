@@ -25,7 +25,7 @@ Description: "A bundle containing instances of the resources comprising coded co
 
 Instance: CodedContentBundle-Example1
 InstanceOf: CodedContentBundle
-Usage: #example
+Usage: #inline
 Description: "CodedContentBundle-Example1"
 * insert AddMetaProfile(CodedContentBundle)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
