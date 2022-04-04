@@ -7,12 +7,12 @@ Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
-* parameter[R_MO].valueUnsignedInt = 12
-* parameter[R_DY].valueUnsignedInt = 1
-* parameter[R_YR].valueUnsignedInt = 2018
-* parameter[CS].valueUnsignedInt = 8
-* parameter[SHIP].valueString = "191"
-* parameter[SYS_REJ].valueUnsignedInt = 0
+// * parameter[R_MO].valueUnsignedInt = 12
+// * parameter[R_DY].valueUnsignedInt = 1
+// * parameter[R_YR].valueUnsignedInt = 2018
+// * parameter[CS].valueUnsignedInt = 8
+// * parameter[SHIP].valueString = "191"
+// * parameter[SYS_REJ].valueUnsignedInt = 0
 
 Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
