@@ -1,32 +1,8 @@
 Instance: Decedent-Example2
 InstanceOf: Decedent
-Usage: #example
+Usage: #inline
 Description: "Decedent-Example2 - with birth jurisdiction"
 * insert AddMetaProfile(Decedent)
-* extension[NVSS-Race].extension[White].valueBoolean = true
-* extension[NVSS-Race].extension[BlackOrAfricanAmerican].valueBoolean = true
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNative].valueBoolean = true
-* extension[NVSS-Race].extension[AsianIndian].valueBoolean = true
-* extension[NVSS-Race].extension[Chinese].valueBoolean = true
-* extension[NVSS-Race].extension[Filipino].valueBoolean = true
-* extension[NVSS-Race].extension[Japanese].valueBoolean = true
-* extension[NVSS-Race].extension[OtherAsian].valueBoolean = true
-* extension[NVSS-Race].extension[NativeHawaiian].valueBoolean = true
-* extension[NVSS-Race].extension[GuamanianOrChamorro].valueBoolean = true
-* extension[NVSS-Race].extension[Samoan].valueBoolean = true
-* extension[NVSS-Race].extension[OtherPacificIslander].valueBoolean = true
-* extension[NVSS-Race].extension[OtherRace].valueBoolean = true
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNativeLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNativeLiteral2].valueString = "Y"
-* extension[NVSS-Race].extension[OtherAsianLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[OtherPacificIslanderLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[OtherRaceLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[MissingValueReason].valueCoding = MissingValueReasonCS#R
-* extension[NVSS-Ethnicity].extension[HispanicMexican].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicPuertoRican].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicOther].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicCuban].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicLiteral].valueString = "who knows"
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
 * extension[NVSS-SexAtDeath].valueCodeableConcept = $admingender#unknown "Unknown"
 * extension[$patient-birthPlace].valueAddress.city = "Brooklyn"
@@ -64,33 +40,9 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 
 Instance: Decedent-Example1
 InstanceOf: Decedent
-Usage: #example
+Usage: #inline
 Description: "Decedent-Example1"
 * insert AddMetaProfile(Decedent)
-* extension[NVSS-Race].extension[White].valueBoolean = true
-* extension[NVSS-Race].extension[BlackOrAfricanAmerican].valueBoolean = true
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNative].valueBoolean = true
-* extension[NVSS-Race].extension[AsianIndian].valueBoolean = true
-* extension[NVSS-Race].extension[Chinese].valueBoolean = true
-* extension[NVSS-Race].extension[Filipino].valueBoolean = true
-* extension[NVSS-Race].extension[Japanese].valueBoolean = true
-* extension[NVSS-Race].extension[OtherAsian].valueBoolean = true
-* extension[NVSS-Race].extension[NativeHawaiian].valueBoolean = true
-* extension[NVSS-Race].extension[GuamanianOrChamorro].valueBoolean = true
-* extension[NVSS-Race].extension[Samoan].valueBoolean = true
-* extension[NVSS-Race].extension[OtherPacificIslander].valueBoolean = true
-* extension[NVSS-Race].extension[OtherRace].valueBoolean = true
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNativeLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[AmericanIndianOrAlaskaNativeLiteral2].valueString = "Y"
-* extension[NVSS-Race].extension[OtherAsianLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[OtherPacificIslanderLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[OtherRaceLiteral1].valueString = "X"
-* extension[NVSS-Race].extension[MissingValueReason].valueCoding = MissingValueReasonCS#R
-* extension[NVSS-Ethnicity].extension[HispanicMexican].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicPuertoRican].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicOther].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicCuban].valueCoding = $v2-0136#Y
-* extension[NVSS-Ethnicity].extension[HispanicLiteral].valueString = "who knows"
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
 * extension[NVSS-SexAtDeath].valueCodeableConcept = $admingender#unknown "Unknown"
 * extension[$patient-birthPlace].valueAddress.city = "Roanoke"
