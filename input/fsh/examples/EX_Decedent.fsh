@@ -1,6 +1,6 @@
 Instance: Decedent-Example2
 InstanceOf: Decedent
-Usage: #example
+Usage: #inline
 Description: "Decedent-Example2 - with birth jurisdiction"
 * insert AddMetaProfile(Decedent)
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
@@ -40,7 +40,7 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 
 Instance: Decedent-Example1
 InstanceOf: Decedent
-Usage: #example
+Usage: #inline
 Description: "Decedent-Example1"
 * insert AddMetaProfile(Decedent)
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y

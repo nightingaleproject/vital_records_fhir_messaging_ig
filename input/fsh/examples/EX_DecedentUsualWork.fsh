@@ -1,6 +1,6 @@
 Instance: DecedentUsualWork-Example1
 InstanceOf: DecedentUsualWork
-Usage: #example
+Usage: #inline
 Description: "DecedentUsualWork-Example1"
 * insert AddMetaProfile(DecedentUsualWork)
 * status = #final

@@ -1,6 +1,6 @@
 Instance: FuneralHome-Example1
 InstanceOf: FuneralHome
-Usage: #example
+Usage: #inline
 Description: "FuneralHome-Example1"
 * insert AddMetaProfile(FuneralHome)
 * active = true

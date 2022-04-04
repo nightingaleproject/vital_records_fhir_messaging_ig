@@ -1,6 +1,6 @@
 Instance: InjuryIncident-Example1
 InstanceOf: InjuryIncident
-Usage: #example
+Usage: #inline
 Description: "InjuryIncident-Example1"
 * insert AddMetaProfile(InjuryIncident)
 * extension[injuryLocationReference].valueReference = Reference(InjuryLocation-Example1)
@@ -15,7 +15,7 @@ Description: "InjuryIncident-Example1"
 
 Instance: InjuryLocation-Example1
 InstanceOf: InjuryLocation
-Usage: #example
+Usage: #inline
 Description: "InjuryLocation-Example1"
 * insert AddMetaProfile(InjuryLocation)
 * description = "5590 Lockwood Drive 20621 US"

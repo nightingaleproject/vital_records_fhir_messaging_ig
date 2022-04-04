@@ -1,6 +1,6 @@
 Instance: DeathDate-Example1
 InstanceOf: DeathDate
-Usage: #example
+Usage: #inline
 Description: "DeathDate-Example1"
 * insert AddMetaProfile(DeathDate)
 * subject = Reference(Decedent-Example1)

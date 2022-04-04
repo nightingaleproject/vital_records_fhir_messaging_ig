@@ -1,6 +1,6 @@
 Instance: ExaminerContacted-Example1
 InstanceOf: ExaminerContacted
-Usage: #example
+Usage: #inline
 Description: "AutopsyPerformedIndicator-Example1"
 * insert AddMetaProfile(ExaminerContacted)
 * status = #final

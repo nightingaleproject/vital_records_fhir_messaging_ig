@@ -1,6 +1,6 @@
 Instance: AutomatedUnderlyingCauseOfDeath-Example1
 InstanceOf: AutomatedUnderlyingCauseOfDeath
-Usage: #example
+Usage: #inline
 Description: "AutomatedUnderlyingCauseOfDeath-Example1"
 * insert AddMetaProfile(AutomatedUnderlyingCauseOfDeath)
 * status = #final
@@ -9,7 +9,7 @@ Description: "AutomatedUnderlyingCauseOfDeath-Example1"
 
 Instance: RecordAxisCauseOfDeath-Example1
 InstanceOf: RecordAxisCauseOfDeath
-Usage: #example
+Usage: #inline
 Description: "RecordAxisCauseOfDeath-Example1"
 * insert AddMetaProfile(RecordAxisCauseOfDeath)
 * status = #final
@@ -19,7 +19,7 @@ Description: "RecordAxisCauseOfDeath-Example1"
 
 Instance: EntityAxisCauseOfDeath-Example1
 InstanceOf: EntityAxisCauseOfDeath
-Usage: #example
+Usage: #inline
 Description: "EntityAxisCauseOfDeath-Example1"
 * insert AddMetaProfile(EntityAxisCauseOfDeath)
 * status = #final
@@ -30,7 +30,7 @@ Description: "EntityAxisCauseOfDeath-Example1"
 
 Instance: ManualUnderlyingCauseOfDeath-Example1
 InstanceOf: ManualUnderlyingCauseOfDeath
-Usage: #example
+Usage: #inline
 Description: "ManualUnderlyingCauseOfDeath-Example1"
 * insert AddMetaProfile(ManualUnderlyingCauseOfDeath)
 * status = #final
@@ -39,7 +39,7 @@ Description: "ManualUnderlyingCauseOfDeath-Example1"
 
 Instance: PlaceOfInjury-Example1
 InstanceOf: PlaceOfInjury
-Usage: #example
+Usage: #inline
 Description: "PlaceOfInjury-Example1"
 * insert AddMetaProfile(PlaceOfInjury)
 * status = #final
@@ -48,7 +48,7 @@ Description: "PlaceOfInjury-Example1"
 
 Instance: ActivityAtTimeOfDeath-Example1
 InstanceOf: ActivityAtTimeOfDeath
-Usage: #example
+Usage: #inline
 Description: "ActivityAtTimeOfDeath-Example1"
 * insert AddMetaProfile(ActivityAtTimeOfDeath)
 * status = #final
@@ -57,7 +57,7 @@ Description: "ActivityAtTimeOfDeath-Example1"
 
 Instance: CodedRaceAndEthnicity-Example1
 InstanceOf: CodedRaceAndEthnicity
-Usage: #example
+Usage: #inline
 Description: "CodedRaceAndEthnicity-Example1"
 * insert AddMetaProfile(CodedRaceAndEthnicity)
 * status = #final
@@ -69,7 +69,7 @@ Description: "CodedRaceAndEthnicity-Example1"
 
 Instance: InputRaceAndEthnicity-Example1
 InstanceOf: InputRaceAndEthnicity
-Usage: #example
+Usage: #inline
 Description: "InputRaceAndEthnicity-Example1"
 * insert AddMetaProfile(InputRaceAndEthnicity)
 * status = #final
@@ -97,7 +97,7 @@ Description: "InputRaceAndEthnicity-Example1"
 
 Instance: CodingStatusValues-Example1
 InstanceOf: CodingStatusValues
-Usage: #example
+Usage: #inline
 Description:   "CodingStatusValues-Example1"
 * insert AddMetaProfile(CodingStatusValues)
 * parameter[shipmentNumber].valueString = "A2B2"
@@ -111,7 +111,7 @@ Description:   "CodingStatusValues-Example1"
 
 Instance: CodedContentBundle-Example1
 InstanceOf: CodedContentBundle
-Usage: #example
+Usage: #inline
 Description: "CodedContentBundle-Example1"
 * insert AddMetaProfile(CodedContentBundle)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
