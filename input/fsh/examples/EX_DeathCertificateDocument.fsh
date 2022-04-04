@@ -47,7 +47,7 @@ Description: "DeathCertificateDocument-Example1"
 
 Instance: DeathCertificate-Example1
 InstanceOf: DeathCertificate
-Usage: #example
+Usage: #inline
 Description: "DeathCertificate-Example1"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
