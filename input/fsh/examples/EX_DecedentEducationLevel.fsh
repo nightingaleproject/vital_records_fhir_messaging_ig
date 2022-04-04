@@ -1,6 +1,6 @@
 Instance: DecedentEducationLevel-Example1
 InstanceOf: DecedentEducationLevel
-Usage: #inline
+Usage: #example
 Description: "DeathDate-Example1"
 * insert AddMetaProfile(DecedentEducationLevel)
 * subject = Reference(Decedent-Example1)

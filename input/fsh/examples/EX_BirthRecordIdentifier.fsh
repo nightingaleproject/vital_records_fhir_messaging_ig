@@ -1,6 +1,6 @@
 Instance: BirthRecordIdentifier-Example1
 InstanceOf: BirthRecordIdentifier
-Usage: #inline
+Usage: #example
 Description: "BirthRecordIdentifier-Example1"
 * insert AddMetaProfile(BirthRecordIdentifier)
 * status = #final

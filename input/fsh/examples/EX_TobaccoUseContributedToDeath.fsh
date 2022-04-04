@@ -1,6 +1,6 @@
 Instance: TobaccoUseContributedToDeath-Example1
 InstanceOf: TobaccoUseContributedToDeath
-Usage: #inline
+Usage: #example
 Description: "TobaccoUseContributedToDeath-Example1"
 * insert AddMetaProfile(TobaccoUseContributedToDeath)
 * subject = Reference(Decedent-Example1)
