@@ -1,60 +1,4 @@
 
-Instance: DemographicsCodingParameters-Example1
-InstanceOf: DemographicsCodingParameters
-Usage: #example
-Description: "Parameters for Demographic Coding: Example"
-// * parameter[jurisdiction_id].valueString = "NH"
-* parameter[coded_race].part[RACE1E].valueString = "100"
-* parameter[coded_race].part[RACE2E].valueString = "300"
-//* parameter[=].part[+].name = "RACEBRG"
-//* parameter[=].part[=].valueCoding = RaceCodeCS#21
-* parameter[coded_ethnicity].part[DETHNICE].valueString = "999"
-
-Instance: CauseOfDeathCodingParameters-Example1
-InstanceOf: CauseOfDeathCodingParameters
-Usage: #example
-Description: "Parameters for Cause of Death Coding: Example"
-// * parameter[jurisdiction_id].valueString = "NH"
-// * parameter[FILENO].valueUnsignedInt = 123456
-// * parameter[DOD_YR].valueUnsignedInt = 2018
-// * parameter[AUXNO].valueString = "abcdef10"
-* parameter[R_MO].valueUnsignedInt = 12
-* parameter[R_DY].valueUnsignedInt = 1
-* parameter[R_YR].valueUnsignedInt = 2018
-* parameter[CS].valueUnsignedInt = 8
-* parameter[SHIP].valueString = "191"
-* parameter[SYS_REJ].valueUnsignedInt = 0
-* parameter[coded_cause_of_death].part[INJPL].valueString = "8"
-* parameter[coded_cause_of_death].part[MAN_UC].valueString = "A047"
-* parameter[coded_cause_of_death].part[ACME_UC].valueString = "A047"
-* parameter[coded_cause_of_death].part[RAC][0].valueString = "A047"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "A419"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "J189"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "J960"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "N19"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "R579"
-* parameter[coded_cause_of_death].part[RAC][+].valueString = "R688"
-* parameter[coded_cause_of_death].part[EAC][0].part[lineNumber].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[coding].valueString = "R688"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[coding].valueString = "J960"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 2
-* parameter[coded_cause_of_death].part[EAC][=].part[coding][+].valueString = "R579"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 2
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 3
-* parameter[coded_cause_of_death].part[EAC][=].part[coding][+].valueString = "N19"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 3
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[coding].valueString = "A419"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 4
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[coding].valueString = "J189"
-* parameter[coded_cause_of_death].part[EAC][+].part[lineNumber].valueUnsignedInt = 6
-* parameter[coded_cause_of_death].part[EAC][=].part[position].valueUnsignedInt = 1
-* parameter[coded_cause_of_death].part[EAC][=].part[coding].valueString = "A047"
 
 Instance: Parameters-Example1
 InstanceOf: MessageParameters
@@ -63,6 +7,12 @@ Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
+// * parameter[R_MO].valueUnsignedInt = 12
+// * parameter[R_DY].valueUnsignedInt = 1
+// * parameter[R_YR].valueUnsignedInt = 2018
+// * parameter[CS].valueUnsignedInt = 8
+// * parameter[SHIP].valueString = "191"
+// * parameter[SYS_REJ].valueUnsignedInt = 0
 
 Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
@@ -120,7 +70,7 @@ Description: "Header for Cause of Death Coding Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CauseOfDeathCodingParameters-Example1)
+* focus = Reference(CodedContentBundle-Example1)
 
 Instance: DemographicsCodingHeader-Example2
 InstanceOf: DemographicsCodingHeader
@@ -130,7 +80,7 @@ Description: "Header for Demographic Coding Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(DemographicsCodingParameters-Example1)
+* focus = Reference(CodedContentBundle-Example1)
 
 Instance: CauseOfDeathCodingUpdateHeader-Example1
 InstanceOf: CauseOfDeathCodingUpdateHeader
@@ -140,7 +90,7 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CauseOfDeathCodingParameters-Example1)
+* focus = Reference(CodedContentBundle-Example1)
 
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
@@ -195,8 +145,8 @@ Description: "Cause of death coding message - Example"
 * entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = CauseOfDeathCodingParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingParameters1"
+* entry[+].resource = CodedContentBundle-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodedContentBundle-Example1"
 
 Instance: CauseOfDeathCodingUpdateMessage1
 InstanceOf: CauseOfDeathCodingUpdateMessage
@@ -207,8 +157,8 @@ Description: "Cause of Death Coding update message - Example"
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = CauseOfDeathCodingParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/CauseOfDeathCodingParameters-Example1"
+* entry[+].resource = CodedContentBundle-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodedContentBundle-Example1"
 
 
 Instance: DeathRecordVoidMessage-Example1
