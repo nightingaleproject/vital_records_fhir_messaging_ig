@@ -1,6 +1,8 @@
 require 'json'
 require 'pry'
-# ARGV should point to the fsh-generated/resources directory of the Vital_Records_FHIR_Messaging_IG
+# Requires two command-line arguments:
+#  The first argument should point to the fsh-generated/resources directory output by sushi
+#  The second argument should indicate the output directory where the resulting JSON file will be saved
 coding_profiles =
     [  "StructureDefinition-VRM-DemographicsCodingParameters.json",
        "StructureDefinition-VRM-CauseOfDeathCodingParameters.json",

@@ -10,7 +10,7 @@ The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/)
 2. Return of coded causes of death, race, and ethnicity information from NCHS to vital records jurisdictions.
 
 ## Relationship to Previous Work
-This FHIR Implementation Guide supersedes a previous descriptioin of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
+This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
 
 ## Browsing the FHIR Implementation Guide
 The built version of this FHIR Implementation Guide can be found [here](http://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/).
@@ -20,6 +20,23 @@ Questions or comments regarding this document should be directed to the ["Death 
 [^1]: https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR
 
 
+## Generating the IG
+
+This repository contains [FHIR Short Hand (FSH)](https://build.fhir.org/ig/HL7/fhir-shorthand/) descriptions for the VRDR messages, and relies on the [SUSHI tool](https://github.com/FHIR/sushi) to process the FSH files. Use the following to generate JSON definitions for the IG.
+
+```shell
+[user@host ~/vital_records_fhir_messaging]$ sushi
+```
+
+# Generating .NET Implementation
+
+Ruby scripts included here enable generating C# classes to support working with IG-compliant FHIR messages. This is currently implemented in two stages. After generating IG JSON using SUSHI, use `parameters.rb` to extract the relevant properties to a JSON file, and `accessors.rb` to generate the C# class from that file. The output is written to the stdout, so it should be redirected to a file if necessary. The following example will generate a `Parameters.cs` file in the local directory (along with the intermediate JSON file):
+
+```shell
+[user@host ~/vital_records_fhir_messaging]$ sushi
+[user@host ~/vital_records_fhir_messaging]$ ruby ./parameters.rb ./fsh-generated/resources ./
+[user@host ~/vital_records_fhir_messaging]$ ruby ./accessors.rb ./parameters.json > ./Parameters.cs
+```
 
 ## License
 
