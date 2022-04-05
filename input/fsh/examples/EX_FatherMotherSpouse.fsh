@@ -1,7 +1,7 @@
 
 Instance: DecedentFather-Example1
 InstanceOf: DecedentFather
-Usage: #inline
+Usage: #example
 Description: "DecedentFather-Example1"
 * insert AddMetaProfile(DecedentFather)
 * patient = Reference(Decedent-Example1)
@@ -14,7 +14,7 @@ Description: "DecedentFather-Example1"
 
 Instance: DecedentMother-Example1
 InstanceOf: DecedentMother
-Usage: #inline
+Usage: #example
 Description: "DecedentFather-Example1"
 * insert AddMetaProfile(DecedentMother)
 * patient = Reference(Decedent-Example1)
@@ -25,7 +25,7 @@ Description: "DecedentFather-Example1"
 
 Instance: DecedentSpouse-Example1
 InstanceOf: DecedentSpouse
-Usage: #inline
+Usage: #example
 Description: "DecedentSpouse-Example1"
 * insert AddMetaProfile(DecedentSpouse)
 * patient = Reference(Decedent-Example1)

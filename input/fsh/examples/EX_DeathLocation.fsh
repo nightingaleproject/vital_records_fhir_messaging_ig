@@ -1,6 +1,6 @@
 Instance: DeathLocation-Example1
 InstanceOf: DeathLocation
-Usage: #inline
+Usage: #example
 Description: "DeathLocation-Example1 - State = Jurisdiction"
 * insert AddMetaProfile(DeathLocation)
 * name = "Pecan Grove Nursing Home"
@@ -12,7 +12,7 @@ Description: "DeathLocation-Example1 - State = Jurisdiction"
 
 Instance: DeathLocation-Example2
 InstanceOf: DeathLocation
-Usage: #inline
+Usage: #example
 Description: "DeathLocation-Example2 - State != Jurisdiction"
 * insert AddMetaProfile(DeathLocation)
 * name = "Pecan Grove Nursing Home"

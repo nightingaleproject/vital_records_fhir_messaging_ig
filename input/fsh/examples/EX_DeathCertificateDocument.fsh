@@ -4,7 +4,7 @@ RuleSet: addentry(type, id)
 
 Instance: DeathCertificateDocument-Example1
 InstanceOf: DeathCertificateDocument
-Usage: #inline
+Usage: #example
 Description: "DeathCertificateDocument-Example1"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
@@ -48,7 +48,7 @@ Description: "DeathCertificateDocument-Example1"
 
 Instance: DeathCertificate-Example1
 InstanceOf: DeathCertificate
-Usage: #inline
+Usage: #example
 Description: "DeathCertificate-Example1"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
@@ -105,7 +105,7 @@ Description: "DeathCertificate-Example1"
 
 Instance: DeathCertificate-Example2
 InstanceOf: DeathCertificate
-Usage: #inline
+Usage: #example
 Description: "DeathCertificate-Example2 (with coded content)"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
@@ -172,7 +172,7 @@ Description: "DeathCertificate-Example2 (with coded content)"
 
 Instance: DeathCertificateDocument-Example2
 InstanceOf: DeathCertificateDocument
-Usage: #inline
+Usage: #example
 Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"

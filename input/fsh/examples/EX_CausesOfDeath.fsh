@@ -1,6 +1,6 @@
 Instance: CauseOfDeathPart1-Example1
 InstanceOf: CauseOfDeathPart1
-Usage: #inline
+Usage: #example
 Description: "CauseOfDeathPart1-Example1"
 * meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Cardiopulmonary arrest"
@@ -11,7 +11,7 @@ Description: "CauseOfDeathPart1-Example1"
 
 Instance: CauseOfDeathPart1-Example2
 InstanceOf: CauseOfDeathPart1
-Usage: #inline
+Usage: #example
 Description: "CauseOfDeathPart1-Example2"
 * meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Eclampsia"
@@ -22,7 +22,7 @@ Description: "CauseOfDeathPart1-Example2"
 
 Instance: CauseOfDeathPart2-Example1
 InstanceOf: CauseOfDeathPart2
-Usage: #inline
+Usage: #example
 Description: "CauseOfDeathPart2-Example1"
 * meta.profile = Canonical(CauseOfDeathPart2)
 * valueCodeableConcept.text = "hypertensive heart disease"
@@ -32,7 +32,7 @@ Description: "CauseOfDeathPart2-Example1"
 
 Instance: CauseOfDeathPathway-Example1
 InstanceOf: CauseOfDeathPathway
-Usage: #inline
+Usage: #example
 Description: "CauseOfDeathPathway-Example1"
 * insert AddMetaProfile(CauseOfDeathPathway)
 * status = #current
@@ -45,7 +45,7 @@ Description: "CauseOfDeathPathway-Example1"
 /*  Certifier */
 Instance: Certifier-Example1
 InstanceOf: Certifier
-Usage: #inline
+Usage: #example
 Description: "Certifier-Example1"
 * insert AddMetaProfile(Certifier)
 * name.use = #official

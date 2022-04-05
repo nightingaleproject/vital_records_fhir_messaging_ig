@@ -1,6 +1,6 @@
 Instance: AutopsyPerformedIndicator-Example1
 InstanceOf: AutopsyPerformedIndicator
-Usage: #inline
+Usage: #example
 Description: "AutopsyPerformedIndicator-Example1"
 * insert AddMetaProfile(AutopsyPerformedIndicator)
 * status = #final
