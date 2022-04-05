@@ -12,7 +12,7 @@ Parent: Parameters
 Id: VRM-StatusParameters
 Title:  "Status Message Parameters"
 Description:   "Parameters for a Status Message"
-* insert RequireMetaProfile(VoidParameters)
+* insert RequireMetaProfile(StatusParameters)
 * insert BaseMessageParameters
 * parameter contains
     status 1..1
