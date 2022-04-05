@@ -9,6 +9,7 @@ No code provided, and a code should be provided from the value set 'Patient Cont
 
 #we know this can't be validated
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.114222.4.5.315' is unknown so the code cannot be validated
 
 # we don't need a codesystem, these are local
 A code with no system has no defined meaning. A system should be provided
@@ -17,3 +18,4 @@ A code with no system has no defined meaning. A system should be provided
 This element does not match any known slice defined in the profile http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document
+Entry 'http://example.org/fhir/Parameters/Parameters-Example1' isn't reachable by traversing from first Bundle entry
