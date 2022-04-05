@@ -1,6 +1,6 @@
 Instance: DecedentMilitaryService-Example1
 InstanceOf: DecedentMilitaryService
-Usage: #inline
+Usage: #example
 Description: "DecedentMilitaryService-Example1"
 * insert AddMetaProfile(DecedentMilitaryService)
 * subject = Reference(Decedent-Example1)

@@ -1,6 +1,6 @@
 Instance: MannerOfDeath-Example1
 InstanceOf: MannerOfDeath
-Usage: #inline
+Usage: #example
 Description: "MannerOfDeath-Example1"
 * insert AddMetaProfile(MannerOfDeath)
 * subject = Reference(Decedent-Example1)

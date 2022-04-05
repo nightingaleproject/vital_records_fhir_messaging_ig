@@ -1,6 +1,6 @@
 Instance: DecedentPregnancyStatus-Example1
 InstanceOf: DecedentPregnancyStatus
-Usage: #inline
+Usage: #example
 Description: "DecedentPregnancyStatus-Example1"
 * insert AddMetaProfile(DecedentPregnancyStatus)
 * subject = Reference(Decedent-Example1)
