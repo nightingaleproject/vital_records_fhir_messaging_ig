@@ -23,6 +23,16 @@ Description: "Parameters for Void: Example"
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[block_count].valueUnsignedInt = 10
 
+Instance: StatusParameters-Example1
+InstanceOf: StatusParameters
+Usage: #example
+Description: "Parameters for Status: Example"
+* parameter[jurisdiction_id].valueString = "NH"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[status].valueCodeableConcept = StatusCS#manualCauseOfDeathCoding
+
 Instance: AcknowledgementHeader-Example1
 InstanceOf: AcknowledgementHeader
 Usage: #example
@@ -42,6 +52,14 @@ Description: "Parameters for Void: Example"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
 * focus = Reference(VoidParameters-Example1)
+
+Instance: StatusHeader-Example1
+InstanceOf: StatusHeader
+Usage: #example
+Description: "Parameters for Status: Example1"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_status"
+* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* focus = Reference(StatusParameters-Example1)
 
 Instance: UpdateHeader-Example1
 InstanceOf: UpdateHeader
@@ -134,6 +152,17 @@ Description: "Acknowledgement message - Example"
 // Other slices
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
+
+Instance: StatusMessage-Example1
+InstanceOf: StatusMessage
+Usage: #example
+Description: "Status message - Example1"
+* timestamp = "2021-05-20T00:00:00Z"
+* entry[0].resource = StatusHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Header/StatusHeader-Example1"
+* entry[+].resource = StatusParameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/StatusParameters-Example1"
+
 
 Instance: CauseOfDeathCodingMessage-Example1
 InstanceOf: CauseOfDeathCodingMessage

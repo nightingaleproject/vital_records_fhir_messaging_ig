@@ -48,6 +48,16 @@ Description:   "Demographics Coding Header"
 * insert CommonHeaderStuff
 * focus only Reference( Bundle )
 
+Profile:  StatusHeader
+Parent: MessageHeader
+Id: VRM-StatusHeader
+Title:  "Status Header"
+Description:   "Status Header"
+* insert RequireMetaProfile(StatusHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_status (exactly)
+* insert CommonHeaderStuff
+* focus only Reference(StatusParameters )
+
 Profile:  CauseOfDeathCodingHeader
 Parent: MessageHeader
 Id: VRM-CauseOfDeathCodingHeader
@@ -162,6 +172,17 @@ Description:   "Message for aliasing death records"
 // * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
 * insert BundleEntry(messageHeader, 1, 1, Alias Header , Alias Header, AliasHeader)
 * insert BundleEntry(aliasParameters, 1, 1, Alias Parameters, Aias Parameters, AliasParameters)
+
+Profile: StatusMessage
+Parent: Bundle
+Id: VRM-StatusMessage
+Title: "Status Message"
+Description:   "Message for sending status of DeathRecord processing"
+* insert RequireMetaProfile(StatusMessage)
+* insert CommonBundleStuff
+// * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
+* insert BundleEntry(messageHeader, 1, 1, Status Header , Status Header, StatusHeader)
+* insert BundleEntry(statusParameters, 1, 1, Status Parameters, Status Parameters, StatusParameters)
 
 Profile: DemographicsCodingMessage
 Parent: Bundle

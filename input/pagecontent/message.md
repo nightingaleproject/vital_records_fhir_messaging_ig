@@ -14,7 +14,7 @@ The following subsections illustrate message exchange patterns between vital rec
 Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing, no in-depth validation is expected at this point. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
 Coding responses are sent using a [CauseOfDeathCodingMessage] or [DemographicsCodingMessage] and acknowledged using a [AcknowledgementMessage].
 
-The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.
+The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.  In the event that manual coding is required, and the coding response would be delayed, a Coding Status message may be sent.
 
 The second (optional) Code, Coding Update, Extract and Acknowledgement steps highlight that cause of death coding may be undertaken separately to race and ethnicity encoding. A single Death Record Submission message could result in both a  Coding Response and a Coding Update message, one for cause of death, the other for race and ethnicity coding. The first coding for a given record should be sent using a Coding Response message, subsequent codings for the same record should be sent using a [DemographicsCodingUpdateMessage] or [CauseOfDeathCodingUpdateMessage]. For brevity, this separation of coding for causes of death and race and ethnicity is omitted from subsequent diagrams but should be considered to be possible in all cases.
 
@@ -156,6 +156,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
+| [CodingStatusMessage] | Out | [CodingStatusHeader] | [MessageParameters]| -  |
 | [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
 | [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
 | [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]| [DeathCertificateDocument] or [CodedContentBundle] (from VRDR IG)  |
