@@ -1,32 +1,17 @@
-/*
-CodeSystem: InternalRejectCodesCS
-Id: VRM-InternalRejectCodes-cs
-Title: "System Reject Codes Values"
-Description: "System Reject Codes Values"
-* ^caseSensitive = true
-* #1 "Reject1" "Reject1"
-* #2 "Reject2" "Reject2"
-* #3 "Reject3" "Reject3"
-* #4 "Reject4" "Reject4"
-* #5 "Reject5" "Reject5"
-* #6 "Reject6" "Reject6"
-* #7 "Reject7" "Reject7"
-* #8 "Reject8" "Reject8"
-* #9 "Reject9" "Reject9"
-* #U "No Code" "No Code"
 
-
-CodeSystem: SystemRejectCodesCS
-Id: VRM-SystemRejectCodes-cs
-Title: "System Reject Codes Values"
-Description: "System Reject Codes Values"
+CodeSystem: StatusCS
+Id: VRM-Status-cs
+Title: "Status Codes Values"
+Description: "Status Codes Values"
 * ^caseSensitive = true
-* #ACMEReject "ACMEReject" "ACME Reject"
-* #MICARRejectDdictionaryMatch "MICARRejectDictionaryMatch" "MICAR Reject - Dictionary match"
-* #MICARRejectRuleApplication "MICARRejectRuleApplication" "MICAR Reject - Rule Application"
-* #NotRejected "NotRejected" "Not Rejected"
-* #RecordReviewed "RecordReviewed" "Record Reviewed"
-*/
+* #manualCauseOfDeathCoding "Manual Cause of Death Coding" "The death record has been sent for manual cause of death coding."
+* #manualDemographicCoding "Manual Demographic  Coding" "The death record has been sent for manual demographic (race/ethnicity) coding."
+
+ValueSet: StatusVS
+Id: VRM-Status-vs
+Title: "Status Codes Values"
+Description: "Status Codes Values"
+* codes from system StatusCS
 
 CodeSystem: MessageHeaderURICS
 Id: VRM-MessageHeaderURI-cs
@@ -46,19 +31,4 @@ Document"
 * #http://nchs.cdc.gov/vrdr_causeofdeath_coding "VRDR Cause of Death Coding" "Indicates that this is an initial cause of death coding"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 * #http://nchs.cdc.gov/vrdr_extraction_error "VRDR Extraction Error" "Indicates that this is an extraction error"
-
-// CodeSystem: ACMETRANSAXCodingStatusCS
-// Id: VRM-ACMETRANSAXCodingStatus-cs
-// Title: "ACMETRANSAX Coding StatusCS"
-// Description: "ACMETRANSAX Coding Status from [page 23 ACMETransax Documentation](https://ftp.cdc.gov/pub/HealthStatistics/NCHS/Software/MICAR/DataEntrySoftware/ACMETRANSAX/Documentation/auser.pdf)"
-// * ^caseSensitive = true
-// * #0 "0" "0"
-// * #1 "1" "1"
-// * #2 "2" "2"
-// * #3 "3" "3"
-// * #4 "4" "4"
-// * #5 "5" "5"
-// * #6 "6" "6"
-// * #7 "7" "7"
-// * #8 "8" "8"
-// * #9 "9" "9"
+* #http://nchs.cdc.gov/vrdr_status "VRDR Status" "Indicates that this is a status for a previously submitted Decedent"

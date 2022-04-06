@@ -27,6 +27,9 @@
 [DeathRecordSubmissionMessage]: StructureDefinition-VRM-DeathRecordSubmissionMessage.html
 [DeathRecordUpdateMessage]: StructureDefinition-VRM-DeathRecordUpdateMessage.html
 [DeathRecordVoidMessage]: StructureDefinition-VRM-DeathRecordVoidMessage.html
+[StatusMessage]: StructureDefinition-VRM-StatusMessage.html
+[StatusHeader]: StructureDefinition-VRM-StatusHeader.html
+[StatusParameters]: StructureDefinition-VRM-StatusParameters.html
 [AcknowledgementMessage]: StructureDefinition-VRM-AcknowledgementMessage.html
 [AcknowledgementHeader]: StructureDefinition-VRM-AcknowledgementHeader.html
 [ExtractionErrorMessage]: StructureDefinition-VRM-ExtractionErrorMessage.html

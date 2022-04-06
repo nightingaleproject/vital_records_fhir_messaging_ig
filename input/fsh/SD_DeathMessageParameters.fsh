@@ -7,6 +7,17 @@ Title:  "Death Message Parameters"
 * id MS
 * insert BaseMessageParameters
 
+Profile: StatusParameters
+Parent: Parameters
+Id: VRM-StatusParameters
+Title:  "Status Message Parameters"
+Description:   "Parameters for a Status Message"
+* insert RequireMetaProfile(StatusParameters)
+* insert BaseMessageParameters
+* parameter contains
+    status 1..1
+* insert ParameterNameType(status, CodeableConcept, status type,status type)
+* parameter[status].value[x] from StatusVS (required)
 
 Profile: VoidParameters
 Parent: Parameters
