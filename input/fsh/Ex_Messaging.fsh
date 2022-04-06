@@ -163,7 +163,7 @@ InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Cause of death coding message - Example2 -- full death record withi coding content"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CauseOfDeathCodingHeader-Example1
+* entry[0].resource = CauseOfDeathCodingHeader-Example2
 * entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
