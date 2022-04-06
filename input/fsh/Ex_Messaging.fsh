@@ -64,12 +64,23 @@ Description: "Header for Submission - Example"
 Instance: CauseOfDeathCodingHeader-Example1
 InstanceOf: CauseOfDeathCodingHeader
 Usage: #example
-Description: "Header for Cause of Death Coding Message - Example"
+Description: "Header for Cause of Death Coding Message - Example1- coded content only"
 // * eventUri = "http://nchs.cdc.gov/vrdr_coding"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CodedContentBundle-Example1)
+
+Instance: CauseOfDeathCodingHeader-Example2
+InstanceOf: CauseOfDeathCodingHeader
+Usage: #example
+Description: "Header for Cause of Death Coding Message - Example2 -- full death record"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+* focus = Reference(DeathCertificateDocument-Example2)
+
 
 Instance: DemographicsCodingHeader-Example2
 InstanceOf: DemographicsCodingHeader
@@ -138,7 +149,7 @@ Description: "Acknowledgement message - Example"
 Instance: CauseOfDeathCodingMessage-Example1
 InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
-Description: "Cause of death coding message - Example"
+Description: "Cause of death coding message - Example1 -- coded content only"
 * timestamp = "2021-05-20T00:00:00Z"
 * entry[0].resource = CauseOfDeathCodingHeader-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
@@ -146,6 +157,19 @@ Description: "Cause of death coding message - Example"
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = CodedContentBundle-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CodedContentBundle-Example1"
+
+Instance: CauseOfDeathCodingMessage-Example2
+InstanceOf: CauseOfDeathCodingMessage
+Usage: #example
+Description: "Cause of death coding message - Example2 -- full death record withi coding content"
+* timestamp = "2021-05-20T00:00:00Z"
+* entry[0].resource = CauseOfDeathCodingHeader-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
+* entry[+].resource = Parameters-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
+* entry[+].resource = DeathCertificateDocument-Example2
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example2"
+
 
 Instance: CauseOfDeathCodingUpdateMessage1
 InstanceOf: CauseOfDeathCodingUpdateMessage
