@@ -3,11 +3,10 @@ require 'pry'
 # Requires two command-line arguments:
 #  The first argument should point to the fsh-generated/resources directory output by sushi
 #  The second argument should indicate the output directory where the resulting JSON file will be saved
-coding_profiles =
-    [  "StructureDefinition-VRM-DemographicsCodingParameters.json",
-       "StructureDefinition-VRM-CauseOfDeathCodingParameters.json",
+coding_profiles = [
        "StructureDefinition-VRM-MessageParameters.json",
        "StructureDefinition-VRM-VoidParameters.json",
+       "StructureDefinition-VRM-StatusParameters.json",
        "StructureDefinition-VRM-AliasParameters.json"
     ]
 variables = {}
