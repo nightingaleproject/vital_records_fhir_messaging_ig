@@ -16,7 +16,7 @@ Description:   "Parameters for a Status Message"
 * insert BaseMessageParameters
 * parameter contains
     status 1..1
-* insert ParameterNameType(status, CodeableConcept, status type,status type)
+* insert ParameterNameType(status, Coding, status type,status type)
 * parameter[status].value[x] from StatusVS (required)
 
 Profile: VoidParameters

@@ -31,7 +31,7 @@ Description: "Parameters for Status: Example"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
-* parameter[status].valueCodeableConcept = StatusCS#manualCauseOfDeathCoding
+* parameter[status].valueCoding = StatusCS#manualCauseOfDeathCoding
 
 Instance: AcknowledgementHeader-Example1
 InstanceOf: AcknowledgementHeader
