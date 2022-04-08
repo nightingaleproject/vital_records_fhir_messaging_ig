@@ -193,8 +193,7 @@ Description:   "Message for demographics coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
-* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, DemographicCodedContentBundle)
 
 Profile: CauseOfDeathCodingMessage
 Parent: Bundle
@@ -205,8 +204,7 @@ Description:   "Message for cause of death coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
-* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
 // Profile: CodingUpdateMessage
 // Parent: Bundle
 // Id: VRM-CodingUpdateMessage
@@ -226,8 +224,7 @@ Description:   "Message for updating Demographics coding response to death recor
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Update Header , Coding Update Header, DemographicsCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
-* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, DemographicCodedContentBundle)
 
 Profile: CauseOfDeathCodingUpdateMessage
 Parent: Bundle
@@ -238,8 +235,7 @@ Description:   "Message for updating Cause Of Death coding response to death rec
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Cause Of Death Coding  Update Header , Cause Of Death Coding  Update Header, CauseOfDeathCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 0, 1, Coded Content Bundle, CodedContentBundle, CodedContentBundle)
-* insert BundleEntry(deathRecordCertificate, 0, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
 
 
 Profile: AcknowledgementMessage
