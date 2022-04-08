@@ -157,7 +157,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]| [DeathCertificateDocument] or [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
 | [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
 | [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG)  |
 | [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG) |
