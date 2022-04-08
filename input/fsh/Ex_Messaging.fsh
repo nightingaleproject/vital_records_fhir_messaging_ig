@@ -188,7 +188,7 @@ Description: "Cause of Death Coding update message - Example"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
 * entry[+].resource = DemographicCodedContentBundle-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DemographicCodedContentBundle-Example1"
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"
 
 
 Instance: DeathRecordVoidMessage-Example1
