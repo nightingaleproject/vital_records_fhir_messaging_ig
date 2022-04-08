@@ -87,17 +87,7 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CodedContentBundle-Example1)
-
-Instance: CauseOfDeathCodingHeader-Example2
-InstanceOf: CauseOfDeathCodingHeader
-Usage: #example
-Description: "Header for Cause of Death Coding Message - Example2 -- full death record"
-// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(DeathCertificateDocument-Example2)
+* focus = Reference(CauseOfDeathCodedContentBundle-Example1)
 
 
 Instance: DemographicsCodingHeader-Example2
@@ -108,7 +98,7 @@ Description: "Header for Demographic Coding Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CodedContentBundle-Example1)
+* focus = Reference(DemographicCodedContentBundle-Example1)
 
 Instance: CauseOfDeathCodingUpdateHeader-Example1
 InstanceOf: CauseOfDeathCodingUpdateHeader
@@ -118,7 +108,7 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CodedContentBundle-Example1)
+* focus = Reference(CauseOfDeathCodedContentBundle-Example1)
 
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
@@ -184,20 +174,8 @@ Description: "Cause of death coding message - Example1 -- coded content only"
 * entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = CodedContentBundle-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodedContentBundle-Example1"
-
-Instance: CauseOfDeathCodingMessage-Example2
-InstanceOf: CauseOfDeathCodingMessage
-Usage: #example
-Description: "Cause of death coding message - Example2 -- full death record withi coding content"
-* timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CauseOfDeathCodingHeader-Example2
-* entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = DeathCertificateDocument-Example2
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example2"
+* entry[+].resource = CauseOfDeathCodedContentBundle-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"
 
 
 Instance: CauseOfDeathCodingUpdateMessage1
@@ -209,8 +187,8 @@ Description: "Cause of Death Coding update message - Example"
 * entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
 * entry[+].resource = Parameters-Example1
 * entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = CodedContentBundle-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CodedContentBundle-Example1"
+* entry[+].resource = DemographicCodedContentBundle-Example1
+* entry[=].fullUrl = "http://example.org/fhir/Bundle/DemographicCodedContentBundle-Example1"
 
 
 Instance: DeathRecordVoidMessage-Example1
