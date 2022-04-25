@@ -7,7 +7,7 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging IG
 status: draft
-version: 0.1.0
+version: 0.9.0
 copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
