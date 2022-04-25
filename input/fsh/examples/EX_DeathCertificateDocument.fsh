@@ -24,13 +24,12 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Observation, DecedentEducationLevel-Example1)
 * insert addentry(Observation, DecedentMilitaryService-Example1)
 * insert addentry(Observation, DecedentUsualWork-Example1)
-* insert addentry(Parameters, ParametersForEmergingIssues-Example1)
+* insert addentry(Observation, EmergingIssues-Example1)
 * insert addentry(Observation, DecedentPregnancyStatus-Example1)
 * insert addentry(Observation, TobaccoUseContributedToDeath-Example1)
 * insert addentry(Observation, DeathDate-Example1)
 * insert addentry(Observation, SurgeryDate-Example1)
 * insert addentry(Observation, ExaminerContacted-Example1)
-* insert addentry(Observation, DecedentTransportationRole-Example1)
 * insert addentry(Observation, MannerOfDeath-Example1)
 * insert addentry(Location, DeathLocation-Example1)
 * insert addentry(Location, InjuryLocation-Example1)
@@ -61,6 +60,10 @@ Description: "DeathCertificate-Example1"
 *  attester.time = "2020-11-14T16:39:40-05:00"
 *  attester.party = Reference(Certifier-Example1)
 *  event.detail = Reference(DeathCertification-Example1)
+*  extension[filingFormat].valueCodeableConcept = #electronic
+*  extension[replaceStatus].valueCodeableConcept = #original
+*  extension[stateSpecificField].valueString = "State Specific Content"
+
 // *  section[DecedentDemographics].entry[Decedent].resource = Decedent-Example1
 // The next line shouldn't be necessary
 *  section[DecedentDemographics].code = DocumentSectionCS#DecedentDemographics
@@ -74,19 +77,18 @@ Description: "DeathCertificate-Example1"
 *  section[DecedentDemographics].entry[MilitaryService] = Reference(DecedentMilitaryService-Example1)
 *  section[DecedentDemographics].entry[UsualWork] = Reference(DecedentUsualWork-Example1)
 *  section[DecedentDemographics].entry[InputRaceAndEthnicity] = Reference(InputRaceAndEthnicity-Example1)
-*  section[DecedentDemographics].entry[ParametersForEmergingIssues] = Reference(ParametersForEmergingIssues-Example1)
+*  section[DecedentDemographics].entry[EmergingIssues] = Reference(EmergingIssues-Example1)
 // The next line shouldn't be necessary
 *  section[DeathInvestigation].code = DocumentSectionCS#DeathInvestigation
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[InjuryOrDeathLocation][0] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[InjuryOrDeathLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(InjuryLocation-Example1)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
-*  section[DeathInvestigation].entry[TransportationRole] = Reference(DecedentTransportationRole-Example1)
 // The next line shouldn't be necessary
 *  section[DeathCertification].code = DocumentSectionCS#DeathCertification
 *  section[DeathCertification].entry[Certifier] = Reference(Certifier-Example1)
@@ -131,19 +133,18 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  section[DecedentDemographics].entry[MilitaryService] = Reference(DecedentMilitaryService-Example1)
 *  section[DecedentDemographics].entry[UsualWork] = Reference(DecedentUsualWork-Example1)
 *  section[DecedentDemographics].entry[InputRaceAndEthnicity] = Reference(InputRaceAndEthnicity-Example1)
-*  section[DecedentDemographics].entry[ParametersForEmergingIssues] = Reference(ParametersForEmergingIssues-Example1)
+*  section[DecedentDemographics].entry[EmergingIssues] = Reference(EmergingIssues-Example1)
 // The next line shouldn't be necessary
 *  section[DeathInvestigation].code = DocumentSectionCS#DeathInvestigation
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[InjuryOrDeathLocation][0] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[InjuryOrDeathLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(InjuryLocation-Example1)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
-*  section[DeathInvestigation].entry[TransportationRole] = Reference(DecedentTransportationRole-Example1)
 // The next line shouldn't be necessary
 *  section[DeathCertification].code = DocumentSectionCS#DeathCertification
 *  section[DeathCertification].entry[Certifier] = Reference(Certifier-Example1)
@@ -192,13 +193,12 @@ Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert addentry(Observation, DecedentEducationLevel-Example1)
 * insert addentry(Observation, DecedentMilitaryService-Example1)
 * insert addentry(Observation, DecedentUsualWork-Example1)
-* insert addentry(Parameters, ParametersForEmergingIssues-Example1)
+* insert addentry(Observation, EmergingIssues-Example1)
 * insert addentry(Observation, DecedentPregnancyStatus-Example1)
 * insert addentry(Observation, TobaccoUseContributedToDeath-Example1)
 * insert addentry(Observation, DeathDate-Example1)
 * insert addentry(Observation, SurgeryDate-Example1)
 * insert addentry(Observation, ExaminerContacted-Example1)
-* insert addentry(Observation, DecedentTransportationRole-Example1)
 * insert addentry(Observation, MannerOfDeath-Example1)
 * insert addentry(Location, DeathLocation-Example1)
 * insert addentry(Location, InjuryLocation-Example1)

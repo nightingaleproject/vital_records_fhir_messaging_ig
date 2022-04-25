@@ -8,7 +8,8 @@ Description: "DeathLocation-Example1 - State = Jurisdiction"
 * address.city = "Albany"
 * address.state = "NY"
 * address.country = "US"
-* type = $sct#450381000124100
+* position.latitude = 38.889248
+* position.longitude = -77.050636
 
 Instance: DeathLocation-Example2
 InstanceOf: DeathLocation
@@ -21,4 +22,5 @@ Description: "DeathLocation-Example2 - State != Jurisdiction"
 * address.state = "NY"
 * address.state.extension[nationalReportingJurisdictionId].valueString = "YC"
 * address.country = "US"
-* type = $sct#450381000124100
+* position.latitude = 38.889248
+* position.longitude = -77.050636
