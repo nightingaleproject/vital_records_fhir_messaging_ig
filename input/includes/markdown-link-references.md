@@ -37,6 +37,7 @@
 [DeathRecordAliasMessage]: StructureDefinition-VRM-DeathRecordAliasMessage.html
 [AliasParameters]: StructureDefinition-VRM-AliasParameters.html
 [VoidParameters]: StructureDefinition-VRM-VoidParameters.html
+[StatusVS]: ValueSet-VRM-Status-vs.html
 
 
 <!-- VRDR Profiles and Extensions -->
