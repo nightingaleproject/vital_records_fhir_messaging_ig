@@ -7,3 +7,4 @@ Parameters included:
 |  FILENO    | Certificate Number | cert_no   | string(6)   |
 |  DOD_YR    | Date of Death--Year | death_yr   | string(4)   |
 |  AUXNO    | Auxiliary State file number | cert_no   | string(6)   |
+|  N/A    | Block Count - Number of records to void starting at the certificate number specified by the 'cert_no' parameter | block_count   | unsigned int   |
