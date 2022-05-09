@@ -62,7 +62,7 @@ Description: "Header for Update: Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.nh.gov/vitalrecords"
-* focus = Reference(DeathCertificateDocument-Example1)
+* focus.reference = "Bundle/DeathCertificateDocument-Example1"
 
 Instance: SubmissionHeader-Example1
 InstanceOf: SubmissionHeader
