@@ -106,7 +106,7 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 
 
 Instance: DemographicsCodingUpdateHeader-Example1
-InstanceOf: DemographicsCodingHeader
+InstanceOf: DemographicsCodingUpdateHeader
 Usage: #example
 Description: "Header for Demographic Coding Update Message - Example"
 * destination.endpoint = "https://sos.nh.gov/vitalrecords"
