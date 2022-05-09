@@ -84,7 +84,7 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
 
 
-Instance: DemographicsCodingHeader-Example2
+Instance: DemographicsCodingHeader-Example1
 InstanceOf: DemographicsCodingHeader
 Usage: #example
 Description: "Header for Demographic Coding Message - Example"
@@ -103,6 +103,16 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+
+
+Instance: DemographicsCodingUpdateHeader-Example1
+InstanceOf: DemographicsCodingHeader
+Usage: #example
+Description: "Header for Demographic Coding Update Message - Example"
+* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* focus = Reference(DemographicCodedContentBundle-Example1)
+
 
 Instance: ExtractionErrorHeader-Example1
 InstanceOf: ExtractionErrorHeader
@@ -168,6 +178,26 @@ Description: "Cause of Death Coding update message - Example"
 * insert addentry(Header, CauseOfDeathCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(Bundle, CauseOfDeathCodedContentBundle-Example1)
+
+
+Instance: DemographicsCodingMessage-Example1
+InstanceOf: DemographicsCodingMessage
+Usage: #example
+Description: "Cause of death coding message - Example1 -- coded content only"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, DemographicsCodingHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, DemographicCodedContentBundle-Example1)
+
+
+Instance: DemographicsCodingUpdateMessage1
+InstanceOf: DemographicsCodingUpdateMessage
+Usage: #example
+Description: "Demographic Coding update message - Example"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, DemographicsCodingUpdateHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, DemographicCodedContentBundle-Example1)
 
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage
