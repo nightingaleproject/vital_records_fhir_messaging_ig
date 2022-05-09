@@ -7,3 +7,5 @@ Parameters included:
 |  FILENO    | Certificate Number | cert_no   | string(6)   |
 |  DOD_YR    | Date of Death--Year | death_yr   | string(4)   |
 |  AUXNO    | Auxiliary State file number | cert_no   | string(6)   |
+{: .grid }
+{% include markdown-link-references.md %}

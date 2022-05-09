@@ -6,12 +6,6 @@ Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NH"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
-// * parameter[R_MO].valueUnsignedInt = 12
-// * parameter[R_DY].valueUnsignedInt = 1
-// * parameter[R_YR].valueUnsignedInt = 2018
-// * parameter[CS].valueUnsignedInt = 8
-// * parameter[SHIP].valueString = "191"
-// * parameter[SYS_REJ].valueUnsignedInt = 0
 
 Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
@@ -135,47 +129,35 @@ InstanceOf: ExtractionErrorMessage
 Usage: #example
 Description: "Extraction error message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = ExtractionErrorHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/ExtractionErrorHeader1"
-// Other slices
-* entry[1].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[2].resource = Outcome-Example1
-* entry[=].fullUrl = "http://example.org/fhir/OperationOutcome/Outcome-Example1"
+* insert addentry(Header, ExtractionErrorHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(OperationOutcome, Outcome-Example1)
+
 
 Instance: AcknowledgementMessage-Example1
 InstanceOf: AcknowledgementMessage
 Usage: #example
 Description: "Acknowledgement message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = AcknowledgementHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/AcknowledgementHeader-Example1"
-// Other slices
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
+* insert addentry(Header, AcknowledgementHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
 
 Instance: StatusMessage-Example1
 InstanceOf: StatusMessage
 Usage: #example
 Description: "Status message - Example1"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = StatusHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/StatusHeader-Example1"
-* entry[+].resource = StatusParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/StatusParameters-Example1"
-
+* insert addentry(Header, StatusHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
 
 Instance: CauseOfDeathCodingMessage-Example1
 InstanceOf: CauseOfDeathCodingMessage
 Usage: #example
 Description: "Cause of death coding message - Example1 -- coded content only"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CauseOfDeathCodingHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/CauseOfDeathCodingHeader-Example1"
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = CauseOfDeathCodedContentBundle-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"
+* insert addentry(Header, CauseOfDeathCodingHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, CauseOfDeathCodedContentBundle-Example1)
 
 
 Instance: CauseOfDeathCodingUpdateMessage1
@@ -183,59 +165,43 @@ InstanceOf: CauseOfDeathCodingUpdateMessage
 Usage: #example
 Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = CauseOfDeathCodingUpdateHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodingUpdateHeader1"
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = DemographicCodedContentBundle-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"
-
+* insert addentry(Header, CauseOfDeathCodingUpdateHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, CauseOfDeathCodedContentBundle-Example1)
 
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage
 Usage: #example
 Description: "Void message - example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = VoidHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/VoidHeader-Example1"
-// Other slices
-* entry[1].resource = VoidParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/VoidParameters-Example1"
+* insert addentry(Header, VoidHeader-Example1)
+* insert addentry(Parameters,VoidParameters-Example1 )
 
 Instance: DeathRecordSubmissionMessage-Example1
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
 Description: "Submission mesage - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = SubmissionHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/SubmissionHeader-Example1"
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = DeathCertificateDocument-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* insert addentry(Header, SubmissionHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, DeathCertificateDocument-Example1)
 
 Instance: UpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage
 Usage: #example
 Description: "Update message - example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = UpdateHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/UpdateHeader-Example1"
-* entry[1].resource = Parameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/Parameters-Example1"
-* entry[+].resource = DeathCertificateDocument-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* insert addentry(Header, UpdateHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, DeathCertificateDocument-Example1)
 
 Instance: DeathRecordAliasMessage-Example1
 InstanceOf: DeathRecordAliasMessage
 Usage: #example
 Description: "Alias Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* entry[0].resource = AliasHeader-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Header/AliasHeader-Example1"
-// Other slices
-* entry[1].resource = AliasParameters-Example1
-* entry[=].fullUrl = "http://example.org/fhir/Parameters/AliasParameters-Example1"
+* insert addentry(Header, AliasHeader-Example1)
+* insert addentry(Parameters, AliasParameters-Example1)
 
 Instance: AliasHeader-Example1
 InstanceOf: AliasHeader
