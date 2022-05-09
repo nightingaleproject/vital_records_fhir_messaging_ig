@@ -2,15 +2,19 @@ RuleSet: addentry(type, id)
 * entry[+].resource = {id}
 * entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
+RuleSet: Identifiers2020NY000182
+* identifier.value = "2020NY000182"
+* identifier.extension[certificateNumber].valueString = "000182"
+* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
+* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
+
 Instance: DeathCertificateDocument-Example1
 InstanceOf: DeathCertificateDocument
 Usage: #example
 Description: "DeathCertificateDocument-Example1"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
-* identifier.value = "000182"
-* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
-* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
+* insert Identifiers2020NY000182
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
 * insert addentry(Bundle, DeathCertificate-Example1)
@@ -33,6 +37,7 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Observation, MannerOfDeath-Example1)
 * insert addentry(Location, DeathLocation-Example1)
 * insert addentry(Location, InjuryLocation-Example1)
+* insert addentry(Observation, InjuryIncident-Example1)
 * insert addentry(Practitioner, Certifier-Example1)
 * insert addentry(Procedure, DeathCertification-Example1)
 * insert addentry(Observation, CauseOfDeathPart1-Example1)
@@ -63,7 +68,6 @@ Description: "DeathCertificate-Example1"
 *  extension[filingFormat].valueCodeableConcept = #electronic
 *  extension[replaceStatus].valueCodeableConcept = #original
 *  extension[stateSpecificField].valueString = "State Specific Content"
-
 // *  section[DecedentDemographics].entry[Decedent].resource = Decedent-Example1
 // The next line shouldn't be necessary
 *  section[DecedentDemographics].code = DocumentSectionCS#DecedentDemographics
@@ -84,8 +88,9 @@ Description: "DeathCertificate-Example1"
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example1)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
@@ -140,8 +145,9 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example1)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
@@ -177,9 +183,7 @@ Usage: #example
 Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
-* identifier.value = "000182"
-* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
-* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
+* identifier.value = "2020YC000182"
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
 * insert addentry(Bundle, DeathCertificate-Example2)
@@ -202,6 +206,7 @@ Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert addentry(Observation, MannerOfDeath-Example1)
 * insert addentry(Location, DeathLocation-Example1)
 * insert addentry(Location, InjuryLocation-Example1)
+* insert addentry(Observation, InjuryIncident-Example1)
 * insert addentry(Practitioner, Certifier-Example1)
 * insert addentry(Procedure, DeathCertification-Example1)
 * insert addentry(Observation, CauseOfDeathPart1-Example1)
