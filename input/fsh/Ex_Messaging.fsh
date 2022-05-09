@@ -148,7 +148,7 @@ Usage: #example
 Description: "Status message - Example1"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, StatusHeader-Example1)
-* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Parameters, StatusParameters-Example1)
 
 Instance: CauseOfDeathCodingMessage-Example1
 InstanceOf: CauseOfDeathCodingMessage
