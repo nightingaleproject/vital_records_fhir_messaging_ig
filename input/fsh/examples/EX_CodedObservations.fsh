@@ -17,6 +17,16 @@ Description: "RecordAxisCauseOfDeath-Example1"
 * valueCodeableConcept = $icd10#J96.0
 * component[position].valueInteger = 1
 
+Instance: RecordAxisCauseOfDeath-Example2
+InstanceOf: RecordAxisCauseOfDeath
+Usage: #example
+Description: "RecordAxisCauseOfDeath-Example2"
+* insert AddMetaProfile(RecordAxisCauseOfDeath)
+* status = #final
+* subject.display = "NCHS generated"
+* valueCodeableConcept = $icd10#T27.3
+* component[position].valueInteger = 2
+
 Instance: EntityAxisCauseOfDeath-Example1
 InstanceOf: EntityAxisCauseOfDeath
 Usage: #example
@@ -51,7 +61,17 @@ Description: "EntityAxisCauseOfDeath-Example3"
 * component[position].valueInteger = 2
 * component[eCodeIndicator].valueBoolean = true
 
-
+Instance: EntityAxisCauseOfDeath-Example4
+InstanceOf: EntityAxisCauseOfDeath
+Usage: #example
+Description: "EntityAxisCauseOfDeath-Example3"
+* insert AddMetaProfile(EntityAxisCauseOfDeath)
+* status = #final
+* subject.display = "NCHS generated"
+* valueCodeableConcept = $icd10#T27.2
+* component[lineNumber].valueInteger = 2
+* component[position].valueInteger = 3
+* component[eCodeIndicator].valueBoolean = false
 
 
 Instance: ManualUnderlyingCauseOfDeath-Example1
@@ -120,10 +140,10 @@ Description: "InputRaceAndEthnicity-Example1"
 * component[OtherRace].valueBoolean = false
 * component[FirstOtherAsianLiteral].valueString = "Malaysian"
 * component[FirstAmericanIndianOrAlaskaNativeLiteral].valueString = "Arikara"
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y
+* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y "Yes"
+* component[HispanicCuban].valueCodeableConcept = $v2-0136#Y "No"
+* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#Y "Yes"
+* component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 Instance: CodingStatusValues-Example1
 InstanceOf: CodingStatusValues
@@ -133,6 +153,6 @@ Description:   "CodingStatusValues-Example1"
 * parameter[shipmentNumber].valueString = "A2B2"
 * parameter[receiptDate].valueDate = "2021-12-12"
 * parameter[coderStatus].valueInteger = 5
-* parameter[intentionalReject].valueCodeableConcept = IntentionalRejectCS#1
-* parameter[acmeSystemReject].valueCodeableConcept = SystemRejectCS#0
-* parameter[transaxConversion].valueCodeableConcept = TransaxConversionCS#3
+* parameter[intentionalReject].valueCodeableConcept = IntentionalRejectCS#1 "Reject1"
+* parameter[acmeSystemReject].valueCodeableConcept = SystemRejectCS#0 "Not Rejected"
+* parameter[transaxConversion].valueCodeableConcept = TransaxConversionCS#3 "Conversion using non-ambivalent table entries"

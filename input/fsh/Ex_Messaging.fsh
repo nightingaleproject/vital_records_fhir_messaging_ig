@@ -250,5 +250,9 @@ Description:  "Alias Message Parameters- Example"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
-* parameter[alias_father_surname].valueString = "Shakespeare-Dostoyevsky"
-* parameter[alias_decedent_middle_name].valueString = "X"
+* parameter[alias_father_surname].valueString = "Jingleheimer"
+* parameter[alias_decedent_first_name].valueString = "John"
+* parameter[alias_decedent_middle_name].valueString = "Jacob"
+* parameter[alias_decedent_last_name].valueString = "Schmidt"
+* parameter[alias_decedent_name_suffix].valueString = "III"
+* parameter[alias_social_security_number].valueString = "123-45-6789"

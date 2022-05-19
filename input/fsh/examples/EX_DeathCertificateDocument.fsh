@@ -43,7 +43,7 @@ Description: "DeathCertificateDocument-Example1"
 * insert addentry(Observation, CauseOfDeathPart1-Example1)
 * insert addentry(Observation, CauseOfDeathPart1-Example2)
 * insert addentry(Observation, CauseOfDeathPart2-Example1)
-* insert addentry(List, CauseOfDeathPathway-Example1)
+//* insert addentry(List, CauseOfDeathPathway-Example1)
 * insert addentry(Location, DispositionLocation-Example1)
 * insert addentry(Organization, FuneralHome-Example1)
 * insert addentry(Observation, DecedentDispositionMethod-Example1)
@@ -100,9 +100,9 @@ Description: "DeathCertificate-Example1"
 *  section[DeathCertification].entry[DeathCertification] = Reference(DeathCertification-Example1)
 *  section[DeathCertification].entry[MannerOfDeath] = Reference(MannerOfDeath-Example1)
 *  section[DeathCertification].entry[CauseOfDeathPart1][0] = Reference(CauseOfDeathPart1-Example1)
-*  section[DeathCertification].entry[CauseOfDeathPart1][+] = Reference(CauseOfDeathPart1-Example1)
+*  section[DeathCertification].entry[CauseOfDeathPart1][+] = Reference(CauseOfDeathPart1-Example2)
 *  section[DeathCertification].entry[CauseOfDeathPart2] = Reference(CauseOfDeathPart2-Example1)
-*  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
+//*  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
 // The next line shouldn't be necessary
 *  section[DecedentDisposition].code = DocumentSectionCS#DecedentDisposition
 *  section[DecedentDisposition].entry[DispositionLocation] = Reference(DispositionLocation-Example1)
@@ -125,6 +125,9 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  attester.time = "2020-11-14T16:39:40-05:00"
 *  attester.party = Reference(Certifier-Example1)
 *  event.detail = Reference(DeathCertification-Example1)
+*  extension[filingFormat].valueCodeableConcept = #electronic
+*  extension[replaceStatus].valueCodeableConcept = #original
+*  extension[stateSpecificField].valueString = "State Specific Content"
 // *  section[DecedentDemographics].entry[Decedent].resource = Decedent-Example1
 // The next line shouldn't be necessary
 *  section[DecedentDemographics].code = DocumentSectionCS#DecedentDemographics
@@ -147,8 +150,8 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
 *  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
 *  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
-*  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example1)
-*  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
+*  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example2)
+*  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example2)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
 *  section[DeathInvestigation].entry[ExaminerContacted] = Reference(ExaminerContacted-Example1)
 // The next line shouldn't be necessary
@@ -157,9 +160,9 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  section[DeathCertification].entry[DeathCertification] = Reference(DeathCertification-Example1)
 *  section[DeathCertification].entry[MannerOfDeath] = Reference(MannerOfDeath-Example1)
 *  section[DeathCertification].entry[CauseOfDeathPart1][0] = Reference(CauseOfDeathPart1-Example1)
-*  section[DeathCertification].entry[CauseOfDeathPart1][+] = Reference(CauseOfDeathPart1-Example1)
+*  section[DeathCertification].entry[CauseOfDeathPart1][+] = Reference(CauseOfDeathPart1-Example2)
 *  section[DeathCertification].entry[CauseOfDeathPart2] = Reference(CauseOfDeathPart2-Example1)
-*  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
+//*  section[DeathCertification].entry[CauseOfDeathPathway] = Reference(CauseOfDeathPathway-Example1)
 // The next line shouldn't be necessary
 *  section[DecedentDisposition].code = DocumentSectionCS#DecedentDisposition
 *  section[DecedentDisposition].entry[DispositionLocation] = Reference(DispositionLocation-Example1)
@@ -183,7 +186,7 @@ Usage: #example
 Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert AddMetaProfile(DeathCertificateDocument)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
-* identifier.value = "2020YC000182"
+* insert Identifiers2020NY000182
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
 * insert addentry(Bundle, DeathCertificate-Example2)
@@ -200,19 +203,19 @@ Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert addentry(Observation, EmergingIssues-Example1)
 * insert addentry(Observation, DecedentPregnancyStatus-Example1)
 * insert addentry(Observation, TobaccoUseContributedToDeath-Example1)
-* insert addentry(Observation, DeathDate-Example1)
+* insert addentry(Observation, DeathDate-Example2)
 * insert addentry(Observation, SurgeryDate-Example1)
 * insert addentry(Observation, ExaminerContacted-Example1)
 * insert addentry(Observation, MannerOfDeath-Example1)
 * insert addentry(Location, DeathLocation-Example1)
 * insert addentry(Location, InjuryLocation-Example1)
-* insert addentry(Observation, InjuryIncident-Example1)
+* insert addentry(Observation, InjuryIncident-Example2)
 * insert addentry(Practitioner, Certifier-Example1)
 * insert addentry(Procedure, DeathCertification-Example1)
 * insert addentry(Observation, CauseOfDeathPart1-Example1)
 * insert addentry(Observation, CauseOfDeathPart1-Example2)
 * insert addentry(Observation, CauseOfDeathPart2-Example1)
-* insert addentry(List, CauseOfDeathPathway-Example1)
+//* insert addentry(List, CauseOfDeathPathway-Example1)
 * insert addentry(Location, DispositionLocation-Example1)
 * insert addentry(Organization, FuneralHome-Example1)
 * insert addentry(Observation, DecedentDispositionMethod-Example1)
