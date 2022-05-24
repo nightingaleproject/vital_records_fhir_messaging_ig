@@ -33,7 +33,7 @@ InstanceOf: AcknowledgementHeader
 Usage: #example
 Description: "Acknowledgement Header: Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #ok
@@ -45,7 +45,7 @@ Usage: #example
 Description: "Parameters for Void: Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus = Reference(VoidParameters-Example1)
 
 Instance: StatusHeader-Example1
@@ -53,7 +53,7 @@ InstanceOf: StatusHeader
 Usage: #example
 Description: "Parameters for Status: Example1"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_status"
-* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus = Reference(StatusParameters-Example1)
 
 Instance: UpdateHeader-Example1
@@ -62,7 +62,7 @@ Usage: #example
 Description: "Header for Update: Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus.reference = "Bundle/DeathCertificateDocument-Example1"
 
 Instance: SubmissionHeader-Example1
@@ -71,7 +71,7 @@ Usage: #example
 Description: "Header for Submission - Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus.reference = "Bundle/DeathCertificateDocument-Example1"
 
 Instance: CauseOfDeathCodingHeader-Example1
@@ -79,7 +79,7 @@ InstanceOf: CauseOfDeathCodingHeader
 Usage: #example
 Description: "Header for Cause of Death Coding Message - Example1- coded content only"
 // * eventUri = "http://nchs.cdc.gov/vrdr_coding"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
@@ -90,7 +90,7 @@ InstanceOf: DemographicsCodingHeader
 Usage: #example
 Description: "Header for Demographic Coding Message - Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_coding"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(DemographicCodedContentBundle-Example1)
@@ -100,7 +100,7 @@ InstanceOf: CauseOfDeathCodingUpdateHeader
 Usage: #example
 Description: "Header for Cause Of Death Coding Update Message - Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
@@ -110,7 +110,7 @@ Instance: DemographicsCodingUpdateHeader-Example1
 InstanceOf: DemographicsCodingUpdateHeader
 Usage: #example
 Description: "Header for Demographic Coding Update Message - Example"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(DemographicCodedContentBundle-Example1)
 
@@ -120,7 +120,7 @@ InstanceOf: ExtractionErrorHeader
 Usage: #example
 Description: "Header for Extraction Error Message - Example"
 // * eventUri = HeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
-* destination.endpoint = "https://sos.nh.gov/vitalrecords"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * response.code = #fatal-error
@@ -240,7 +240,7 @@ Usage: #example
 Description: "Alias Message Header- Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_alias"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.nh.gov/vitalrecords"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus = Reference(AliasParameters-Example1)
 
 Instance: AliasParameters-Example1
