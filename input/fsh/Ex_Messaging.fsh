@@ -35,7 +35,7 @@ Description: "Acknowledgement Header: Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
-* response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+* response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 * focus = Reference(Parameters-Example1)   // Is this needed?  Same parameters as for VoidHeader...
 
