@@ -20,7 +20,7 @@ The second (optional) Code, Coding Update, Extract and Acknowledgement steps hig
 
 The purpose of acknowledgement messages is to support reliability in the exchange of death records and coding responses, see [Retrying Requests](#retries) for further details. Acknowledgements are a feature of the FHIR messaging system, they are not intended to be exposed to jurisdiction death registration systems or NVSS directly.
 
-Acknowledgements can be associated with the original message using the Acknowlegement Message's MessageHeader.response.identifier which should equal the value of the MessageHeader.id property of the message that is being acknowledged.
+The Acknowlegement Message’s MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message that is being acknowledged. When processing acknowledgements this identifier must be used to associate the acknowledgement with the message that is being acknowledged. This association is the basis for implementing reliable messaging.
 
 #### Updating Prior Death Record Submission
 
