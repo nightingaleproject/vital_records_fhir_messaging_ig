@@ -14,6 +14,8 @@
 
 
 ### Record 2 - Fidelia Alsup
+Note: Coding for the cause of death for this record cannot be done automatically, so codes of M99.9 are returned.
+
 | **Seq#** |  **JSON Content**   |  **Direction**  |
 | :---------: | ------------- | ------------ |
 | 1 | [Death Record 538](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_538_example.json) | EDRS to NCHS |
