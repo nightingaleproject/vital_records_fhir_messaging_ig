@@ -1,0 +1,505 @@
+{
+  "resourceType": "Bundle",
+  "id": "e908a608-626b-40dc-9582-3f7081a9de95",
+  "type": "message",
+  "timestamp": "2022-07-06T08:11:23.6312636-04:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:5ac47ba7-b184-4cee-98b8-2433dbd40f94",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "5ac47ba7-b184-4cee-98b8-2433dbd40f94",
+        "eventUri": "http://nchs.cdc.gov/vrdr_demographics_coding",
+        "destination": [
+          {
+            "endpoint": "http://mitre.org/vrdr"
+          }
+        ],
+        "source": {
+          "endpoint": "HTTP://NCHS.CDC.GOV/VRDR_SUBMISSION"
+        },
+        "focus": [
+          {
+            "reference": "urn:uuid:ebbb23d1-1bff-47ed-8fe4-2c474a467441"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d7d26f08-5e26-4178-97ca-65715bef937f",
+      "resource": {
+        "resourceType": "Parameters",
+        "id": "d7d26f08-5e26-4178-97ca-65715bef937f",
+        "parameter": [
+          {
+            "name": "cert_no",
+            "valueUnsignedInt": 539
+          },
+          {
+            "name": "death_year",
+            "valueUnsignedInt": 2022
+          },
+          {
+            "name": "jurisdiction_id",
+            "valueString": "MA"
+          },
+          {
+            "name": "state_auxiliary_id",
+            "valueString": "000000000000"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ebbb23d1-1bff-47ed-8fe4-2c474a467441",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "ebbb23d1-1bff-47ed-8fe4-2c474a467441",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-demographic-coded-bundle"
+          ]
+        },
+        "identifier": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber",
+              "valueString": "539"
+            }
+          ],
+          "system": "http://nchs.cdc.gov/vrdr_id",
+          "value": "2022MA000539"
+        },
+        "type": "collection",
+        "timestamp": "2022-07-06T08:11:23.6312636-04:00",
+        "entry": [
+          {
+            "fullUrl": "urn:uuid:ab2ff98f-6ac8-4f13-9f95-8daa5191650f",
+            "resource": {
+              "resourceType": "Observation",
+              "id": "ab2ff98f-6ac8-4f13-9f95-8daa5191650f",
+              "meta": {
+                "profile": [
+                  "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity"
+                ]
+              },
+              "status": "final",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs",
+                    "code": "codedraceandethnicity",
+                    "display": "Coded Race and Ethnicity"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "urn:uuid:6b4acc4e-3860-44f7-8fbf-a7162a47e2d0"
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "FirstEditedCode",
+                        "display": "First Edited Race"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+                        "code": "100",
+                        "display": "White Checkbox"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "SecondEditedCode",
+                        "display": "Second Edited Race"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+                        "code": "B40",
+                        "display": "Cheyenne"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "FirstAmericanIndianRace",
+                        "display": "First American Indian Race"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+                        "code": "B40",
+                        "display": "Cheyenne"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "HispanicCode",
+                        "display": "Hispanic Code"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-hispanic-origin-cs",
+                        "code": "100",
+                        "display": "Not Hispanic"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "RaceRecode40"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-recode-40-cs",
+                        "code": "19",
+                        "display": "NHOPI and White"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fullUrl": "urn:uuid:ceebf198-c034-47e2-87cf-2581e9a77909",
+            "resource": {
+              "resourceType": "Observation",
+              "id": "ceebf198-c034-47e2-87cf-2581e9a77909",
+              "meta": {
+                "profile": [
+                  "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"
+                ]
+              },
+              "status": "final",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs",
+                    "code": "inputraceandethnicity",
+                    "display": "Input Race and Ethnicity"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "urn:uuid:6b4acc4e-3860-44f7-8fbf-a7162a47e2d0"
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "HispanicMexican",
+                        "display": "HispanicMexican"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                        "code": "N",
+                        "display": "No"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "HispanicPuertoRican",
+                        "display": "HispanicPuertoRican"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                        "code": "N",
+                        "display": "No"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "HispanicCuban",
+                        "display": "HispanicCuban"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                        "code": "N",
+                        "display": "No"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "HispanicOther",
+                        "display": "HispanicOther"
+                      }
+                    ]
+                  },
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                        "code": "N",
+                        "display": "No"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "White",
+                        "display": "White"
+                      }
+                    ]
+                  },
+                  "valueBoolean": true
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "BlackOrAfricanAmerican",
+                        "display": "BlackOrAfricanAmerican"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "AmericanIndianOrAlaskaNative",
+                        "display": "AmericanIndianOrAlaskaNative"
+                      }
+                    ]
+                  },
+                  "valueBoolean": true
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "AsianIndian",
+                        "display": "AsianIndian"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Chinese",
+                        "display": "Chinese"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Filipino",
+                        "display": "Filipino"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Japanese",
+                        "display": "Japanese"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Korean",
+                        "display": "Korean"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Vietnamese",
+                        "display": "Vietnamese"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "OtherAsian",
+                        "display": "OtherAsian"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "NativeHawaiian",
+                        "display": "NativeHawaiian"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "GuamanianOrChamorro",
+                        "display": "GuamanianOrChamorro"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "Samoan",
+                        "display": "Samoan"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "OtherPacificIslander",
+                        "display": "OtherPacificIslander"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "OtherRace",
+                        "display": "OtherRace"
+                      }
+                    ]
+                  },
+                  "valueBoolean": false
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                        "code": "AmericanIndianOrAlaskanNativeLiteral1",
+                        "display": "AmericanIndianOrAlaskanNativeLiteral1"
+                      }
+                    ]
+                  },
+                  "valueString": "Cheyenne"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
