@@ -129,6 +129,7 @@ The specification of tests for the June 2022 Testing event was provided in this 
 | 4444 | 8      | Blank for Eight-Byte Field 2        | PLACE8\_2       | ␢      | ␢    | ␢ |      |
 | 4452 | 8      | Blank for Eight-Byte Field 3        | PLACE8\_3       | ␢      | ␢    | ␢ |      |
 | 4460 | 20     | Blank for Twenty-Byte Field         | PLACE20         | ␢      | ␢    | 043-A-110234 |      |
+{: .grid }
 
 ### Record 1 - Twila Hilty
 
