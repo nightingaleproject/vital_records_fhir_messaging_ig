@@ -38,8 +38,8 @@ pages:
     title: Change Log
   appendix.md:
     title: Appendices
-  june2022connectathonexamples.md:
-    title: June 2022 Connectathon Examples
+  june2022testingeventexamples.md:
+    title: June 2022 Testing Event Examples
 menu:
   Home: index.html
   Messages:
@@ -48,7 +48,7 @@ menu:
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    June 2022 Testing Examples: june2022connectathonexamples.html
+    June 2022 Testing Event Examples: june2022testingeventexamples.html
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
