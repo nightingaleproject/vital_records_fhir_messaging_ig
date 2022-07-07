@@ -1,4 +1,17 @@
 
+### Description of Testing Process
+This page illustrates the use of the profiles in the Vital Records Messaging IG using the records from the June 2022 NCHS Testing Event.
+The intent is to show the complete content of communication between a jurisdiction and NCHS for each of the three test records.
+
+We will illustrate using the first test decedent, [Twila Hilty](june2022testingeventexamples.html#record-1---twila-hilty), but the process and artifacts are the same for the second and third test decedents.
+
+The testing process proceeds as follows:
+1. The jurisdiction generates [Death Record 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json) based on the data in the Record 1 column of the [spreadsheet](june2022testingeventexamples.html#test-input-in-spreadsheet-form), and then builds [Death Record Submission Message 538](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_538_example.json) and sends this to NCHS via the NCHS Messaging API.
+2. NCHS receives the message, and sends [Death Record Submission Acknowledgement 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json) to the jurisdiction for receipt of that message; you can tell what message is being acknowledged by comparing the identifier in the ack to the id of the message.
+3. Some time later, NCHS sends [Cause of Death Coding Message 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json) to the jurisdiction, and the jurisdiction responds with [Cause of Death Coding Message Acknowledgement 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json)
+4. Some time later, NCHS sends [Demographic Coding Message 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json) to the jurisdiction, and the jurisdiction responds with [Demographic Coding Message Acknowledgement 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json)
+
+
 ### Test Input in Spreadsheet Form
 The specification of tests for the June 2022 Testing event was provided in this spreadsheet.
 
