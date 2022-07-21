@@ -16,8 +16,8 @@ Description:   "Parameters for a Status Message"
 * insert BaseMessageParameters
 * parameter contains
     status 1..1
-* insert ParameterNameType(status, Coding, status type,status type)
-* parameter[status].value[x] from StatusVS (required)
+* insert ParameterNameType(status, string, status type,status type)
+* parameter[status].valueString from StatusVS (required)
 
 Profile: VoidParameters
 Parent: Parameters
