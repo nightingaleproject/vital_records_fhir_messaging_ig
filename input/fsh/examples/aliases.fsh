@@ -104,3 +104,5 @@ Alias: IntentionalRejectCS     = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-int
 Alias: SystemRejectCS     = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-system-reject-cs
 Alias: TransaxConversionCS     = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-transax-conversion-cs
 Alias: OrganizationTypeCS     = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-organization-type-cs
+Alias: FilingFormatCS = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-filing-format-cs
+Alias: ReplaceStatusCS = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-replace-status-cs

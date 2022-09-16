@@ -65,8 +65,8 @@ Description: "DeathCertificate-Example1"
 *  attester.time = "2020-11-14T16:39:40-05:00"
 *  attester.party = Reference(Certifier-Example1)
 *  event.detail = Reference(DeathCertification-Example1)
-*  extension[filingFormat].valueCodeableConcept = #electronic
-*  extension[replaceStatus].valueCodeableConcept = #original
+*  extension[filingFormat].valueCodeableConcept = FilingFormatCS#electronic
+*  extension[replaceStatus].valueCodeableConcept = ReplaceStatusCS#original
 *  extension[stateSpecificField].valueString = "State Specific Content"
 // *  section[DecedentDemographics].entry[Decedent].resource = Decedent-Example1
 // The next line shouldn't be necessary
@@ -88,8 +88,10 @@ Description: "DeathCertificate-Example1"
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+//*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
+//*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathLocation] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[InjuryLocation] = Reference(InjuryLocation-Example1)
 *  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example1)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example1)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
@@ -125,8 +127,8 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  attester.time = "2020-11-14T16:39:40-05:00"
 *  attester.party = Reference(Certifier-Example1)
 *  event.detail = Reference(DeathCertification-Example1)
-*  extension[filingFormat].valueCodeableConcept = #electronic
-*  extension[replaceStatus].valueCodeableConcept = #original
+*  extension[filingFormat].valueCodeableConcept = FilingFormatCS#electronic
+*  extension[replaceStatus].valueCodeableConcept = ReplaceStatusCS#original
 *  extension[stateSpecificField].valueString = "State Specific Content"
 // *  section[DecedentDemographics].entry[Decedent].resource = Decedent-Example1
 // The next line shouldn't be necessary
@@ -148,8 +150,10 @@ Description: "DeathCertificate-Example2 (with coded content)"
 *  section[DeathInvestigation].entry[PregnancyStatus] = Reference(DecedentPregnancyStatus-Example1)
 *  section[DeathInvestigation].entry[TobaccoUse] = Reference(TobaccoUseContributedToDeath-Example1)
 *  section[DeathInvestigation].entry[Autopsy] = Reference(AutopsyPerformedIndicator-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
-*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+//*  section[DeathInvestigation].entry[DeathOrInjuryLocation][0] = Reference(DeathLocation-Example1)
+//*  section[DeathInvestigation].entry[DeathOrInjuryLocation][1] = Reference(InjuryLocation-Example1)
+*  section[DeathInvestigation].entry[DeathLocation] = Reference(DeathLocation-Example1)
+*  section[DeathInvestigation].entry[InjuryLocation] = Reference(InjuryLocation-Example1)
 *  section[DeathInvestigation].entry[InjuryIncident] = Reference(InjuryIncident-Example2)
 *  section[DeathInvestigation].entry[DeathDate] = Reference(DeathDate-Example2)
 *  section[DeathInvestigation].entry[SurgeryDate] = Reference(SurgeryDate-Example1)
@@ -228,4 +232,4 @@ Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert addentry(Observation, RecordAxisCauseOfDeath-Example1)
 * insert addentry(Observation, EntityAxisCauseOfDeath-Example1)
 * insert addentry(Observation, PlaceOfInjury-Example1)
-* insert addentry(Parameter, CodingStatusValues-Example1)
+* insert addentry(Parameters, CodingStatusValues-Example1)

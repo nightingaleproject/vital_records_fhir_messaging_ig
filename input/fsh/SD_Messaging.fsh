@@ -46,6 +46,7 @@ Description:   "Demographics Coding Header"
 * insert RequireMetaProfile(DemographicsCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
 * focus only Reference( Bundle )
 
 Profile:  StatusHeader

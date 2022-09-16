@@ -15,6 +15,12 @@ RuleSet: CommonHeaderStuff
 * focus 1..1
 * id 1..1
 
+RuleSet: HeaderResponseID
+* response.identifier 1..1
+* response.identifier ^short = "The identifier of the corresponding message."
+* response.code 1..1
+* response.code = #ok
+
 RuleSet: BundleEntry(name, min, max, short, def, class)
 * entry contains {name} {min}..{max} MS
 * entry[{name}] ^short = "{short}"
