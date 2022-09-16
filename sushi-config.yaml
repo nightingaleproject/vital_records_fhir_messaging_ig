@@ -21,7 +21,7 @@ dependencies:
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
-  path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+  path-expansion-params: '../../exp-params.json'  #path is relative to  [base]/fsh-generated/resources
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
