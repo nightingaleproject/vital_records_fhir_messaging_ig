@@ -55,6 +55,8 @@ Description: "Parameters for Status: Example1"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_status"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * focus = Reference(StatusParameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
 
 Instance: UpdateHeader-Example1
 InstanceOf: UpdateHeader
@@ -83,6 +85,8 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
 
 
 Instance: DemographicsCodingHeader-Example1
@@ -94,6 +98,8 @@ Description: "Header for Demographic Coding Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(DemographicCodedContentBundle-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
 
 Instance: CauseOfDeathCodingUpdateHeader-Example1
 InstanceOf: CauseOfDeathCodingUpdateHeader
@@ -104,6 +110,8 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
 
 
 Instance: DemographicsCodingUpdateHeader-Example1
@@ -113,6 +121,8 @@ Description: "Header for Demographic Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * focus = Reference(DemographicCodedContentBundle-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
 
 
 Instance: ExtractionErrorHeader-Example1
