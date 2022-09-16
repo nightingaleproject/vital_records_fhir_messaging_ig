@@ -17,9 +17,8 @@ RuleSet: CommonHeaderStuff
 
 RuleSet: HeaderResponseID
 * response.identifier 1..1
-* response.identifier ^short = "The identifier of the corresponding message."
 * response.code 1..1
-* response.code = #ok
+* response.code = #ok (exactly)
 
 RuleSet: BundleEntry(name, min, max, short, def, class)
 * entry contains {name} {min}..{max} MS

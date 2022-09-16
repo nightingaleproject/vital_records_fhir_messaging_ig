@@ -47,6 +47,7 @@ Description:   "Demographics Coding Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
 * insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 * focus only Reference( Bundle )
 
 Profile:  StatusHeader
@@ -57,6 +58,8 @@ Description:   "Status Header"
 * insert RequireMetaProfile(StatusHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_status (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message for which status is provided"
 * focus only Reference(StatusParameters )
 
 Profile:  CauseOfDeathCodingHeader
@@ -67,6 +70,8 @@ Description:   "Cause of Death Coding Header"
 * insert RequireMetaProfile(CauseOfDeathCodingHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 * focus only Reference(Bundle )
 
 Profile:  DemographicsCodingUpdateHeader
@@ -77,6 +82,8 @@ Description:   "Demographics Coding Update Header"
 * insert RequireMetaProfile(DemographicsCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding_update (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 * focus only Reference( Bundle )
 
 Profile:  CauseOfDeathCodingUpdateHeader
@@ -87,6 +94,8 @@ Description:   "Cause Of Death Death Coding Update Header"
 * insert RequireMetaProfile(CauseOfDeathCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 * focus only Reference(Bundle )
 
 Profile:  AliasHeader
@@ -121,7 +130,7 @@ Description:   "Extraction Error Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
-* response.code = #fatal-error
+* response.code = #fatal-error (exactly)
 * response.details 1..1
 * response.details only Reference(Outcome)
 * focus only Reference(MessageParameters)
