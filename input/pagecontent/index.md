@@ -2,7 +2,7 @@
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 
-The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
+The [Vital Records Death Reporting (VRDR) STU2 FHIR IG](http://hl7.org/fhir/us/vrdr/STU2/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
 
 [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
 
@@ -53,7 +53,7 @@ NCHS needs a mechanism to report errors to vital records jurisdictions in respon
 
 ### FHIR Messaging
 
-As described earlier, the [Vital Record Death Reporting (VRDR) FHIR IG](http://build.fhir.org/ig/HL7/vrdr/branches/master//index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
+As described earlier, the [Vital Record Death Reporting (VRDR)STU2 FHIR IG](http://hl7.org/fhir/us/vrdr/STU2/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
 
 1. A standard [MessageHeader](http://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
     a. An id that is useful for correlating requests and replies,
