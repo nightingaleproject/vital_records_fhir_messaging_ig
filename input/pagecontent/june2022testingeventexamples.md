@@ -3,7 +3,7 @@
 This page illustrates the use of the profiles in the Vital Records Messaging IG using the records from the June 2022 NCHS Testing Event.
 The intent is to show the complete content of communication between a jurisdiction and NCHS for each of the three test records.
 
-We will illustrate using the first test decedent, [Twila Hilty](june2022testingeventexamples.html#record-1---twila-hilty), but the process and artifacts are the same for the [second](june2022testingeventexamples.html#record-2---fidelia-alsup) and [third](http://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/june2022testingeventexamples.html#record-3---davis-lineberry) test decedents.
+We will illustrate using the first test decedent, [Twila Hilty](june2022testingeventexamples.html#record-1---twila-hilty), but the process and artifacts are the same for the [second](june2022testingeventexamples.html#record-2---fidelia-alsup) and [third](june2022testingeventexamples.html#record-3---davis-lineberry) test decedents.
 
 The testing process proceeds as follows:
 1. The jurisdiction (MA) generates [Death Record 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json) based on the data in the Record 1 column of the [spreadsheet](june2022testingeventexamples.html#test-input-in-spreadsheet-form), and then builds [Death Record Submission Message 537](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json) and sends this to NCHS via the NCHS Messaging API.
