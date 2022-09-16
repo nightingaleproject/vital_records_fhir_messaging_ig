@@ -129,7 +129,9 @@ Description:   "Extraction Error Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
-* insert HeaderResponseID
+* response.identifier 1..1
+* response.code 1..1
+* response.code = #fatal-error (exactly)
 * response.details 1..1
 * response.details only Reference(Outcome)
 * focus only Reference(MessageParameters)

@@ -133,7 +133,6 @@ Description: "Header for Extraction Error Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* response.code = #fatal-error
 * response.details = Reference(Outcome-Example1)
 * focus = Reference(Parameters-Example1)
 
