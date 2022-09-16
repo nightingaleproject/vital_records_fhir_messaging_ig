@@ -116,9 +116,8 @@ Description:   "Acknowledgement  Header"
 * insert RequireMetaProfile(AcknowledgementHeader)
 * eventUri =  MessageHeaderURICS#http://nchs.cdc.gov/vrdr_acknowledgement (exactly)
 * insert CommonHeaderStuff
-* response.identifier 1..1
+* insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the message that is being acknowledged"
-* response.code = #ok (exactly)
 * focus only Reference(MessageParameters)
 
 Profile:  ExtractionErrorHeader
@@ -130,7 +129,7 @@ Description:   "Extraction Error Message Header"
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_extraction_error  (exactly)
 * insert CommonHeaderStuff
 * response.identifier ^short = "The value of the MessageHeader.id for the message with errors"
-* response.code = #fatal-error (exactly)
+* insert HeaderResponseID
 * response.details 1..1
 * response.details only Reference(Outcome)
 * focus only Reference(MessageParameters)
@@ -197,7 +196,7 @@ Description:   "Message for sending status of DeathRecord processing"
 Profile: DemographicsCodingMessage
 Parent: Bundle
 Id: VRM-DemographicsCodingMessage
-Title: "Coding Message"
+Title: "Demographics Coding Message"
 Description:   "Message for demographics coding response to death records"
 * insert RequireMetaProfile(DemographicsCodingMessage)
 * insert CommonBundleStuff
