@@ -118,7 +118,7 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 Figure 8 illustrates two message extraction failures:
 
 1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is returned instead of an Acknowledgement.
-2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  <mark>**Note**:Tthe NCHS API currently does not support [ExtractionErrorMessage].  In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
+2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  __Note__:<mark>The NCHS API currently does not support [ExtractionErrorMessage].  In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
 
 Extraction Error Response should use a [ExtractionErrorMessage].
 
