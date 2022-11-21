@@ -8,12 +8,14 @@ Description: "Status Codes Values"
 * #manualDemographicCoding "Manual Demographic  Coding" "The death record has been sent for manual demographic (race/ethnicity) coding."
 * #terminatedCauseOfDeathCoding "Terminated Cause of Death Coding" "Cause of death coding for this submission has been terminated"
 * #terminatedDemographicCoding "Terminated Demographic  Coding" "Demographic (race/ethnicity) coding for this submission has been terminated."
+* ^experimental = false
 
 ValueSet: StatusVS
 Id: VRM-Status-vs
 Title: "Status Codes Values"
 Description: "Status Codes Values"
 * codes from system StatusCS
+* ^experimental = false
 
 CodeSystem: MessageHeaderURICS
 Id: VRM-MessageHeaderURI-cs
@@ -34,3 +36,4 @@ Document"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 * #http://nchs.cdc.gov/vrdr_extraction_error "VRDR Extraction Error" "Indicates that this is an extraction error"
 * #http://nchs.cdc.gov/vrdr_status "VRDR Status" "Indicates that this is a status for a previously submitted Decedent"
+* ^experimental = false
