@@ -11,6 +11,8 @@ Description: "Status Codes Values"
 * #noCodingNeeded_Duplicate "No Coding Needed - Duplicate" "The death record is a duplicate of a previously submitted record, no coding will be performed."
 * #manualCodingCanceled_Update "Manual Coding Canceled - Update" "An update has been submitted for a death record that is queued for manual coding.  The manual coding
 has been canceled for the original record."
+* #manualCodingCanceled_Void "Manual Coding Canceled - Void" "A void request has been received for a death record that is queued for manual coding.  The manual coding
+has been canceled for the original record."
 * ^experimental = false
 
 ValueSet: StatusVS
