@@ -41,6 +41,6 @@
 
 
 <!-- VRDR Profiles and Extensions -->
-[DeathCertificateDocument]:            http://hl7.org/fhir/us/vrdr/STU2/StructureDefinition-vrdr-death-certificate-document.html
-[DemographicCodedContentBundle]:       http://hl7.org/fhir/us/vrdr/STU2/StructureDefinition-vrdr-demographic-coded-bundle.html
-[CauseOfDeathCodedContentBundle]:      http://hl7.org/fhir/us/vrdr/STU2/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
+[DeathCertificateDocument]:            http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
+[DemographicCodedContentBundle]:       http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-demographic-coded-bundle.html
+[CauseOfDeathCodedContentBundle]:      http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
