@@ -22,6 +22,12 @@ The purpose of acknowledgement messages is to support reliability in the exchang
 
 The Acknowlegement Message’s MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message that is being acknowledged. When processing acknowledgements this identifier must be used to associate the acknowledgement with the message that is being acknowledged. This association is the basis for implementing reliable messaging.
 
+A submission can be routed jurisdictions and/or NCHS using the destinations specified in the [SubmissionHeader].  This provides the functionality intended by the IJE REPLACE field as follows:
+* Original Record (REPLACE = 0): message destination should include both “http://nchs.cdc.gov/vrdr_submission” and “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission"
+* Updated Record(REPLACE = 1): message destination should include both “http://nchs.cdc.gov/vrdr_submission” and “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission_update"
+* Do not sent to NCHS (REPLACE = 2): message destination should include just “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission_update"
+
+
 #### Updating Prior Death Record Submission
 
 <!-- ![Message exchange pattern for updating a prior death record submission](update.png){ width=25% } -->
@@ -34,6 +40,8 @@ The Acknowlegement Message’s MessageHeader.response.identifier must equal the 
 Figure 2 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently updated. The initial submission of a new record should use a [DeathRecordSubmissionMessage], subsequent updates should use a [DeathRecordUpdateMessage].
 
 As shown in figure 2, depending on timing (whether coding was complete prior to submission of the Death Record Update), the initial submission may result in a Coding Response or not. If a Coding Response is sent prior to the Death Record Update then a Coding Update will be sent following the Death Record Update.
+
+See note in previous section regarding routing to NCHS and Jurisdictions.
 
 #### Updating Prior Coding Response
 
@@ -60,6 +68,8 @@ Figure 3 illustrates the sequence of message exchanges between a vital records j
 Figure 4 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when an initial submission needs to be subsequently voided. Depending on timing, the initial submission may result in a Coding Response or not.
 
 Records can also be pre-voided to inform NCHS that a specific set of certificate numbers will not be used in the future. This would just require the final three steps of figure 5: "Death Record Void", "Extract" and "Acknowledgement". Voiding death records should use a [DeathRecordVoidMessage].
+
+See note in previous section about Submission of death records regarding routing to NCHS and Jurisdictions.
 
 #### Retrying Requests {#retries}
 

@@ -56,10 +56,10 @@ NCHS needs a mechanism to report errors to vital records jurisdictions in respon
 As described earlier, the [Vital Record Death Reporting (VRDR)STU2 FHIR IG](http://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
 
 1. A standard [MessageHeader](http://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
-    a. An id that is useful for correlating requests and replies,
-    b. Source and sender information that is useful for addressing replies,
-    c. Destination information that is useful for routing,
-    d. Event information that is useful for capturing the reason that a message was created, and
+    a. An id that is useful for correlating requests and replies.
+    b. Source and sender information that is useful for addressing replies.
+    c. Destination information that is useful for routing. This can be used to route messages to jurisdictions and/or NCHS.
+    d. Event information that is useful for capturing the reason that a message was created.
     e. Information about the subject or topic of the message that is useful for providing context.
 
 2. Patterns for synchronous and asynchronous exchange of messages.
