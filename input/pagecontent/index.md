@@ -2,9 +2,9 @@
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 
-The [Vital Records Death Reporting (VRDR) STU2 FHIR IG](http://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
+The [Vital Records Death Reporting (VRDR) STU2 FHIR IG](https://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
 
-[FHIR Messaging](http://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
+[FHIR Messaging](https://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
 
 1. Submission of VRDR documents from vital records jurisdictions to NCHS, and
 2. Return of coded causes of death, race, and ethnicity information from NCHS to vital records jurisdictions.
@@ -53,14 +53,14 @@ NCHS needs a mechanism to report errors to vital records jurisdictions in respon
 
 ### FHIR Messaging
 
-As described earlier, the [Vital Record Death Reporting (VRDR)STU2 FHIR IG](http://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](http://hl7.org/fhir/messaging.html) defines:
+As described earlier, the [Vital Record Death Reporting (VRDR)STU2 FHIR IG](https://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](https://hl7.org/fhir/messaging.html) defines:
 
-1. A standard [MessageHeader](http://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
-    a. An id that is useful for correlating requests and replies.
-    b. Source and sender information that is useful for addressing replies.
-    c. Destination information that is useful for routing. This can be used to route messages to jurisdictions and/or NCHS.
-    d. Event information that is useful for capturing the reason that a message was created.
-    e. Information about the subject or topic of the message that is useful for providing context.
+1. A standard [MessageHeader](https://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
+  * An id that is useful for correlating requests and replies.
+  * Source and sender information that is useful for addressing replies.
+  * Destination information that is useful for routing. This can be used to route messages to jurisdictions and/or NCHS.
+  * Event information that is useful for capturing the reason that a message was created.
+  * Information about the subject or topic of the message that is useful for providing context.
 
 2. Patterns for synchronous and asynchronous exchange of messages.
 
@@ -94,7 +94,7 @@ Figure 1 illustrates the high level components of a FHIR messaging based NVSS:
 
 - __NVSS__: NCHS systems for processing and coding death reports
 
-- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/index.html)
+- __FHIR VRDR__: A FHIR document formatted according to the [Vital Record Death Reporting (VRDR) FHIR IG](https://hl7.org/fhir/us/vrdr/index.html)
 
 - __FHIR Coding or Error__: A FHIR representation of either:
   - Causes of death coding, races and ethnicities coding, or both
@@ -151,14 +151,14 @@ In the event there are differences between the page renderings in this IG and th
 
 ### Contributions
 
-Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the [Nightingale Github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig). Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in [FHIR Shorthand](http://hl7.org/fhir/uv/shorthand/) and all narrative content in markdown (specifically, [Kramdown](https://kramdown.gettalong.org/)). We suggest using the [Visual Studio Code editor](https://code.visualstudio.com/) with the [FHIR Shorthand plug-in](https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh). For more information on how to get started with IG development, visit the [FSH School](https://fshschool.org/).
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the [Nightingale Github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig). Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in [FHIR Shorthand](https://hl7.org/fhir/uv/shorthand/) and all narrative content in markdown (specifically, [Kramdown](https://kramdown.gettalong.org/)). We suggest using the [Visual Studio Code editor](https://code.visualstudio.com/) with the [FHIR Shorthand plug-in](https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh). For more information on how to get started with IG development, visit the [FSH School](https://fshschool.org/).
 
 
 ### Credits
 
 This IG is based on the [FHIR Messaging for NVSS](https://github.com/nightingaleproject/vital_records_fhir_messaging/releases/download/v3.1.0/fhir_messaging_for_nvss.pdf) authored by Marc Hadley (MITRE). The data element descriptions in that document have now been captured as a FHIR specification in this guide, which incorporates all of the content from the original guide. Both the original document and this Implementation Guide were developed by the MITRE corporation under contract to the Division of Vital Statistics, National Center for Health Statistics, of the Centers for Disease Control.
 
-This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](http://hl7.org/fhir/uv/shorthand/) and [SUSHI](https://fshschool.org), a free, open source toolchain from [MITRE Corporation](https://www.mitre.org/).
+This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](https://hl7.org/fhir/uv/shorthand/) and [SUSHI](https://fshschool.org), a free, open source toolchain from [MITRE Corporation](https://www.mitre.org/).
 
 ### Contact Information
 
