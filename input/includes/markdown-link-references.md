@@ -38,9 +38,9 @@
 [AliasParameters]: StructureDefinition-VRM-AliasParameters.html
 [VoidParameters]: StructureDefinition-VRM-VoidParameters.html
 [StatusVS]: ValueSet-VRM-Status-vs.html
-
+[MessageHeader]: http://hl7.org/fhir/messageheader.html
 
 <!-- VRDR Profiles and Extensions -->
-[DeathCertificateDocument]:            http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
-[DemographicCodedContentBundle]:       http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-demographic-coded-bundle.html
-[CauseOfDeathCodedContentBundle]:      http://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
+[DeathCertificateDocument]:            https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
+[DemographicCodedContentBundle]:       https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-demographic-coded-bundle.html
+[CauseOfDeathCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
