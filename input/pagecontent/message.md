@@ -22,10 +22,10 @@ The purpose of acknowledgement messages is to support reliability in the exchang
 
 The Acknowlegement Message’s MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message that is being acknowledged. When processing acknowledgements this identifier must be used to associate the acknowledgement with the message that is being acknowledged. This association is the basis for implementing reliable messaging.
 
-A submission can be routed jurisdictions and/or NCHS using the destinations specified in the [SubmissionHeader].  This provides the functionality intended by the IJE REPLACE field as follows:
-* Original Record (REPLACE = 0): message destination should include both “http://nchs.cdc.gov/vrdr_submission” and “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission"
-* Updated Record(REPLACE = 1): message destination should include both “http://nchs.cdc.gov/vrdr_submission” and “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission_update"
-* Do not sent to NCHS (REPLACE = 2): message destination should include just “http://steve.naphsis.us/vrdr_exchange” and message should use an "eventUri" of "http://nchs.cdc.gov/vrdr_submission_update"
+A submission can be routed to NCHS and/or jurisdiction exchange via STEVE using the destinations specified in the [SubmissionHeader]. The destinations can include just NHCS, just jurisdiction exchange via STEVE, or both. This provides the functionality that was previously provided by the IJE REPLACE field as follows:
+* Original Record (REPLACE = 0): message destination should include both <pre>http://nchs.cdc.gov/vrdr_submission</pre> and <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission</pre>
+* Updated Record(REPLACE = 1): message destination should include both <pre>http://nchs.cdc.gov/vrdr_submission</pre> and <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission_update</pre>
+* Do not sent to NCHS (REPLACE = 2): message destination should include just <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission_update</pre>
 
 
 #### Updating Prior Death Record Submission
