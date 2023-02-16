@@ -25,7 +25,7 @@ The Acknowlegement Message’s MessageHeader.response.identifier must equal the 
 A submission can be routed to NCHS and/or jurisdiction exchange via STEVE using the destinations specified in the [SubmissionHeader]. The destinations can include just NHCS, just jurisdiction exchange via STEVE, or both. This provides the functionality that was previously provided by the IJE REPLACE field as follows:
 * Original Record (REPLACE = 0): message destination should include both <pre>http://nchs.cdc.gov/vrdr_submission</pre> and <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission</pre>
 * Updated Record(REPLACE = 1): message destination should include both <pre>http://nchs.cdc.gov/vrdr_submission</pre> and <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission_update</pre>
-* Do not sent to NCHS (REPLACE = 2): message destination should include just <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission_update</pre>
+* Do not send to NCHS (REPLACE = 2): message destination should include just <pre>http://steve.naphsis.us/vrdr_exchange</pre> and message should use an <pre>eventUri</pre> of <pre>http://nchs.cdc.gov/vrdr_submission_update</pre>
 
 
 #### Updating Prior Death Record Submission
