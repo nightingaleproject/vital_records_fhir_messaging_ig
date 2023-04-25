@@ -58,7 +58,7 @@ As described earlier, the [Vital Record Death Reporting (VRDR)STU2 FHIR IG](http
 1. A standard [MessageHeader](https://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
   * An id that is useful for correlating requests and replies.
   * Source and sender information that is useful for addressing replies.
-  * Destination information that is useful for routing. This can be used to route messages to jurisdictions and/or NCHS.
+  * Destination information that is useful for routing. This can be used to route messages to NCHS and/or jurisdiction exchange via STEVE.
   * Event information that is useful for capturing the reason that a message was created.
   * Information about the subject or topic of the message that is useful for providing context.
 
