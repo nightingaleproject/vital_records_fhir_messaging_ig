@@ -40,11 +40,14 @@ pages:
     title: Appendices
   june2022testingeventexamples.md:
     title: June 2022 Testing Event Examples
+  business_rules.md:
+    title: NCHS Error Messages 
 menu:
   Home: index.html
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
+    NCHS Error Messages: business_rules.html 
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
