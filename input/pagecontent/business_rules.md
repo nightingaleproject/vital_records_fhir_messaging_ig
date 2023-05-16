@@ -6,15 +6,16 @@ Version 2.0
 
 **Table of Content**
 
-[Required Fields](#_Required_Values)
+[Required Fields](#required)
 
-[Additional Logic Checks](#_Additional_Logical_Checks)
+[Additional Logic Checks](#logic)
 
-[Validation Errors](#_Validation_Errors)
+[Validation Errors](#validation)
 
-[Internal Validation Errors](#_Internal_Validation_Errors)
+[Internal Validation Errors](#internal)
 
 #### Required Fields
+<a name="required"></a>
 
 The following fields are required for a valid death record submission. An Error Message with a format of "Error: Unable to find _IJE Field_ required element" will be returned for each missing field.
 
@@ -43,9 +44,10 @@ The following fields are required for a valid death record submission. An Error 
 | Was Autopsy performed | AUTOP | AutopsyPerformedIndicator | value |
 | Were Autopsy Findings Available to Complete the Cause of Death? | AUTOPF | AutopsyPerformedIndicator | component[autopsyResultsAvailable].value |
 | Did Tobacco Use Contribute to Death? | TOBAC | TobaccoUseContributedToDeath | value |
+{:.grid}
 
 #### Additional Logical Checks
-
+<a name="logic"></a>
 The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Error: Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
 
 | **Field 1** | **Field 2** |
@@ -58,9 +60,10 @@ The following combinations of field values will also result in an error being re
 | Manner of Death | Accident, Suicide, Homicide | Date of Injury | Not Provided |
 | Manner of Death | Accident, Suicide, Homicide | Place of Injury Literal | Not Provided |
 | Manner of Death | Accident, Suicide, Homicide | Describe How Injury Occurred | Not Provided |
+{:.grid}
 
 #### Validation Errors
-
+<a name="validation"></a>
 For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Error: Unable to find _IJE Field_ mapping for _FHIR Component_ field value '_string_'" will be returned for each violation.
 
 There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
@@ -83,8 +86,10 @@ There are additional Errors that may be returned when a record cannot be accepte
 | OCCUP | Error: FHIR field UsualOccupation contains string … too long for IJE field OCCUP of length 40 | The decedent's occupation literal exceeds the 40-character limit for this field. |
 | Record Length | The IJE version of the FHIR message did not reach the 1025 bytes characters required. Some fields are missing. | The Death Record is missing several important FHIR elements required to generate a complete IJE record. Review the record to determine which fields are missing. |
 | SSN | Error: FHIR field SSN contains string …. which is not the expected length (without dashes or spaces) for IJE field SSN of length 9 | The Social Security Number (SSN) must be 9 numeric digits long (without dashes or spaces) to be accepted. |
+{:.grid}
 
 #### Internal Validation Errors
+<a name="internal"></a>
 
 The following error messages are internal validation errors and if you receive any of these, please contact NCHS.
 
@@ -95,4 +100,5 @@ The following error messages are internal validation errors and if you receive a
 | Object reference not set to an instance of an object. |
 | The network path was not found. |
 | Unable to find the specified file. |
+{:.grid}
 

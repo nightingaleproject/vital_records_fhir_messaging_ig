@@ -5,7 +5,7 @@
 id: vital-records-fhir-messaging
 canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
-title: Vital Records FHIR Messaging IG
+title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
 version: 0.9.1
 copyrightYear: 2022+
