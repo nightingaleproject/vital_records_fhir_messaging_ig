@@ -14,7 +14,7 @@ Code System URI 'urn:oid:2.16.840.1.114222.4.5.315' is unknown so the code canno
 # we don't need a codesystem, these are local
 A code with no system has no defined meaning. A system should be provided
 
-# slicing  messages
+# slicing messages
 This element does not match any known slice defined in the profile http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document
