@@ -6,16 +6,15 @@ Version 2.0
 
 **Table of Content**
 
-[Required Fields](#required)
+[Required Fields](#required-fields)
 
-[Additional Logic Checks](#logic)
+[Additional Logic Checks](#additional-logic-checks)
 
-[Validation Errors](#validation)
+[Validation Errors](#validation-errors)
 
-[Internal Validation Errors](#internal)
+[Internal Validation Errors](#internal-validation-errors)
 
 #### Required Fields
-<a name="required"></a>
 
 The following fields are required for a valid death record submission. An Error Message with a format of "Error: Unable to find _IJE Field_ required element" will be returned for each missing field.
 
@@ -47,7 +46,7 @@ The following fields are required for a valid death record submission. An Error 
 {:.grid}
 
 #### Additional Logical Checks
-<a name="logic"></a>
+
 The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Error: Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
 
 | **Field 1** | **Field 2** |
@@ -63,7 +62,7 @@ The following combinations of field values will also result in an error being re
 {:.grid}
 
 #### Validation Errors
-<a name="validation"></a>
+
 For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Error: Unable to find _IJE Field_ mapping for _FHIR Component_ field value '_string_'" will be returned for each violation.
 
 There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
@@ -89,7 +88,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 {:.grid}
 
 #### Internal Validation Errors
-<a name="internal"></a>
+
 
 The following error messages are internal validation errors and if you receive any of these, please contact NCHS.
 
