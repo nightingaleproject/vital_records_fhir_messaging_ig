@@ -84,7 +84,7 @@ See note in previous section about Submission of death records regarding routing
 
 Figure 5 illustrates the case where the vital records jurisdiction does not receive a timely Acknowledgement to the Death Record Submission. Submissions can be retried providing the restrictions on Message and Header ids described in section 5 are followed.
 
-It is recommended that retries follow an "exponential backoff" approach where the time between retries is increased for each retry of a given message. This approach prevents retries from overloading NVSS in the case of transient outages.
+It is recommended that the API server and each client attempt a maximum of 3 retries, waiting 4 hrs after the first attempt, 8 hours after the 2nd attempt, and 12 hours after the third attempt.  If no acnowledgement is received within 12 hours of the third attempt, communication through another channel (e.g., phone or e-mail) should be used to identify and resolve the problem.   This approach prevents retries from overloading NVSS in the case of transient outages.
 
 <!-- ![Message exchange pattern for retrying an unacknowledged coding response](retry2.png){ width=25% } -->
 
