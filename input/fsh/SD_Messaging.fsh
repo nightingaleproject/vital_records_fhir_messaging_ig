@@ -74,6 +74,18 @@ Description:   "Cause of Death Coding Header"
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 * focus only Reference(Bundle )
 
+Profile:  IndustryOccupationCodingHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingHeader
+Title:  "Industry and OccupationCoding Header"
+Description:   "Industry and Occupation Coding Header"
+* insert RequireMetaProfile(IndustryOccupationCodingHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+* focus only Reference(Bundle )
+
 Profile:  DemographicsCodingUpdateHeader
 Parent: MessageHeader
 Id: VRM-DemographicsCodingUpdateHeader
@@ -93,6 +105,19 @@ Title:  "Cause Of Death Coding Update  Header"
 Description:   "Cause Of Death Death Coding Update Header"
 * insert RequireMetaProfile(CauseOfDeathCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+* focus only Reference(Bundle )
+
+
+Profile:  IndustryOccupationCodingUpdateHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingUpdateHeader
+Title:  "Industry and OccupationCoding Header"
+Description:   "Industry and Occupation Coding UpdateHeader"
+* insert RequireMetaProfile(IndustryOccupationCodingUpdateHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding_update (exactly)
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
@@ -216,6 +241,18 @@ Description:   "Message for cause of death coding response to death records"
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
+
+Profile: IndustryOccupationCodingMessage
+Parent: Bundle
+Id: VRM-IndustryOccupationCodingMessage
+Title: "Industry and Occupation Coding Message"
+Description:   "Message for industry and occupation coding response to death records"
+* insert RequireMetaProfile(IndustryOccupationCodingMessage)
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingHeader)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
+
 // Profile: CodingUpdateMessage
 // Parent: Bundle
 // Id: VRM-CodingUpdateMessage
@@ -248,6 +285,16 @@ Description:   "Message for updating Cause Of Death coding response to death rec
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
 
+Profile: IndustryOccupationCodingUPdateMessage
+Parent: Bundle
+Id: VRM-IndustryOccupationCodingUpdateMessage
+Title: "Industry and Occupation Coding Update Message"
+Description:   "Message for industry and occupation coding update response to death records"
+* insert RequireMetaProfile(IndustryOccupationCodingUpdateMessage)
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingUpdateHeader)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codedcontentbundle, 1, 1, Industry and Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
 
 Profile: AcknowledgementMessage
 Parent: Bundle
