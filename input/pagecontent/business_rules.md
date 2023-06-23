@@ -20,8 +20,7 @@ The following fields are required for a valid death record submission. An Error 
 
 | **Field Description** | **IJE Field** | **FHIR Profile** | **FHIR Field** |
 | --- | --- | --- | --- |
-| State, U.S. Territory or Canadian Province of Death - code | DSTATE | DeathLocation | address.state **or** address.state.extension[nationalReportingJurisdictionId]
- If both are provided, the extension will override. Unless you are NYC, recommend using address.state **only.** |
+| State, U.S. Territory or Canadian Province of Death - code | DSTATE | DeathLocation | address.state **or** address.state.extension[nationalReportingJurisdictionId]  <br><br>If both are provided, the extension will override. Unless you are NYC, recommend using address.state **only.** |
 | Certificate Number | FILENO | DeathCertificateDocument | identifier.extension[certificateNumber].value |
 | Decedent's Legal Name–Last | LNAME | Decedent | name.family, name.use = official |
 | Decedent's Sex at Death | SEX | Decedent | extension[NVSS-SexAtDeath] |
@@ -49,17 +48,65 @@ The following fields are required for a valid death record submission. An Error 
 
 The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Error: Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
 
-| **Field 1** | **Field 2** |
-| --- | --- |
-| **Description** | **Value** | **Description** | **Value** |
-| Sex | Male | Pregnancy Status | **Not**'Not Applicable' |
-| Was Autopsy performed | Yes | Were Autopsy Findings Available to Complete the Cause of Death? | 'Not Applicable' |
-| Was Autopsy performed | No | Were Autopsy Findings Available to Complete the Cause of Death? | **Not**'Not Applicable' |
-| Date of Injury | Greater than Date of Death | Date of Death | Less than Date of Injury |
-| Manner of Death | Accident, Suicide, Homicide | Date of Injury | Not Provided |
-| Manner of Death | Accident, Suicide, Homicide | Place of Injury Literal | Not Provided |
-| Manner of Death | Accident, Suicide, Homicide | Describe How Injury Occurred | Not Provided |
-{:.grid}
+<table>
+<thead>
+<tr>
+    <th colspan="2"><strong>Field 1</strong></th>
+    <th colspan="2"><strong>Field 2</strong></th>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<th><strong>Value</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sex</td>
+<td>Male</td>
+<td>Pregnancy Status</td>
+<td><strong>Not</strong> &#39;Not Applicable&#39;</td>
+</tr>
+<tr>
+<td>Was Autopsy performed</td>
+<td>Yes</td>
+<td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
+<td>&#39;Not Applicable&#39;</td>
+</tr>
+<tr>
+<td>Was Autopsy performed</td>
+<td>No</td>
+<td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
+<td><strong>Not</strong>&#39;Not Applicable&#39;</td>
+</tr>
+<tr>
+<td>Date of Injury</td>
+<td>Greater than Date of Death</td>
+<td>Date of Death</td>
+<td>Less than Date of Injury</td>
+</tr>
+<tr>
+<td>Manner of Death</td>
+<td>Accident, Suicide, Homicide</td>
+<td>Date of Injury</td>
+<td>Not Provided</td>
+</tr>
+<tr>
+<td>Manner of Death</td>
+<td>Accident, Suicide, Homicide</td>
+<td>Place of Injury Literal</td>
+<td>Not Provided</td>
+</tr>
+<tr>
+<td>Manner of Death</td>
+<td>Accident, Suicide, Homicide</td>
+<td>Describe How Injury Occurred</td>
+<td>Not Provided</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Validation Errors
 
@@ -74,7 +121,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 | DETHNICE | Error: Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value '_string_' | DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. **http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs** |
 | DINSTI | Error: FHIR field DeathLocationName contains string too long for IJE field DINSTI of length 30 | The location of death string exceeds the 30-character limit for this field. |
 | DSTATE | Error: FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2 | DSTATE is a requiredfield, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
-| DSTATE | Error JurisdictionID was not identified |
+| DSTATE | Error JurisdictionID was not identified | DSTATE is a requiredfield, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
 | DOD\_YR | 4 digits number are expected | The year of the event must be a valid 4 numeric digit year (YYYY) without special characters or blanks. |
 | Event Year | FHIR cannot process records from EventYear _year_; please resubmit via IJE | Until the 2022 data year is closed, NVSS may not be able to process older years via FHIR. |
 | FHIR Bundle Event Year | FHIR BUNDLE Parameter event year should match the death record Death Year. | DOD\_YR must agree with the year included in the FHIR BUNDLE parameter. |
