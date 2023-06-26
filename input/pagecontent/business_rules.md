@@ -235,9 +235,9 @@ There are additional Errors that may be returned when a record cannot be accepte
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 	<tbody>
 		<tr>
-			<td><strong>IJE Field</strong></td>
-			<td><strong>Error Message</strong></td>
-			<td><strong>Clarification</strong></td>
+			<td bgcolor=#D0F0C0><strong>IJE Field</strong></td>
+			<td bgcolor="green"><strong>Error Message</strong></td>
+			<td bgcolor="green"><strong>Clarification</strong></td>
 		</tr>
 		<tr>
 			<td>BSTATE</td>
