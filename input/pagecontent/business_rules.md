@@ -18,6 +18,150 @@ Version 2.0
 
 The following fields are required for a valid death record submission. An Error Message with a format of "Error: Unable to find _IJE Field_ required element" will be returned for each missing field.
 
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td><b>Field Description</b></td>
+			<td><b>IJE Field</b></td>
+			<td><b>FHIR Profile</b></td>
+            <td><b>FHIR Field</b></td>
+		</tr>
+		<tr>
+			<td>State, U.S. Territory or Canadian Province of Death - code</td>
+			<td>DSTATE</td>
+			<td>DeathLocation</td>
+            <td>address.state or address.state.extension[nationalReportingJurisdictionId] If both are provided, the extension will override. Unless you are NYC, recommend using address.state only.</td>
+		</tr>
+		<tr>
+			<td>Certificate Number</td>
+			<td>FILENO</td>
+			<td>DeathCertificateDocument</td>
+            <td>identifier.extension[certificateNumber].value</td>
+		</tr>
+		<tr>
+			<td>Decedent's Legal Name–Last</td>
+			<td>LNAME</td>
+			<td>Decedent</td>
+            <td>name.family, name.use = official</td>
+		</tr>
+		<tr>
+			<td>Decedent's Sex at Death</td>
+			<td>SEX</td>
+			<td>Decedent</td>
+            <td>extension[NVSS-SexAtDeath]</td>
+		</tr>
+		<tr>
+			<td>Decedent's Age-Type</td>
+			<td>AGETYPE</td>
+			<td>DecedentAge</td>
+            <td>valueQuantity.code</td>
+		</tr>
+		<tr>
+			<td>Decedent's Age-Units</td>
+			<td>AGE</td>
+			<td>DecedentAge</td>
+            <td>valueQuantity.value</td>
+		</tr>
+		<tr>
+			<td>Date of Birth</td>
+			<td>DOB_YR, DOB_MO, DOB_DY</td>
+			<td>Decedent</td>
+            <td>birthDate</td>
+		</tr>
+		<tr>
+			<td>Decedent's Residence–Inside City Limits</td>
+			<td>LIMITS</td>
+			<td>Decedent</td>
+            <td>address.city.extension[withinCityLimits]</td>
+		</tr>
+		<tr>
+			<td>Marital Status</td>
+			<td>MARITAL</td>
+			<td>Decedent</td>
+            <td>maritalStatus</td>
+		</tr>
+		<tr>
+			<td>Place of Death</td>
+			<td>DPLACE</td>
+			<td>DeathDate</td>
+            <td>component[placeOfDeath].value</td>
+		</tr>
+		<tr>
+			<td>County of Death Occurence</td>
+			<td>COD</td>
+			<td>DeathLocation</td>
+            <td>address.district.extension[countyCode]</td>
+		</tr>
+		<tr>
+			<td>Method of Disposition</td>
+			<td>DISP</td>
+			<td>DecedentDispositionMethod</td>
+            <td>value</td>
+		</tr>
+		<tr>
+			<td>Date of Death</td>
+			<td>DOD_YR, DOD_MO, DOD_DY</td>
+			<td>DeathDate</td>
+            <td>value</td>
+		</tr>
+		<tr>
+			<td>Decendent's Education</td>
+			<td>DEDUC</td>
+			<td>DecedentEducationLevel</td>
+            <td>value</td>
+		</tr>
+		<tr>
+			<td>Decedent of Hispanic Origin?–Mexican</td>
+			<td>DETHNIC1</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[HispanicMexican].valueCoding</td>
+		</tr>
+		<tr>
+			<td>Decedent of Hispanic Origin?–Puerto Rican</td>
+			<td>DETHNIC2</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[HispanicPuretoRican].valueCoding</td>
+		</tr>
+		<tr>
+			<td>Decedent of Hispanic Origin?–Cuban</td>
+			<td>DETHNIC3</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[HispanicCuban].valueCoding</td>
+		</tr>
+		<tr>
+			<td>Decedent of Hispanic Origin?–Other</td>
+			<td>DETHNIC4</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[HispanicOther].valueCoding</td>
+		</tr>
+		<tr>
+			<td>Manner of Death</td>
+			<td>MANNER</td>
+			<td>MannerOfDeath</td>
+            <td>value</td>
+		</tr>
+		<tr>
+			<td>Was Autopsy performed</td>
+			<td>AUTOP</td>
+			<td>AutopsyPerformedIndicator</td>
+            <td>value</td>
+		</tr>
+		<tr>
+			<td>Were Autopsy Findings Available to Complete the Cause of Death</td>
+			<td>AUTOPF</td>
+			<td>AutopsyPerformedIndicator</td>
+            <td>component[autopsyResultsAvailable].value</td>
+		</tr>
+		<tr>
+			<td>Did Tobacco Use Contribute to Death?</td>
+			<td>TOBAC</td>
+			<td>TobaccoUseContributedToDeath</td>
+            <td>value</td>
+		</tr>
+	</tbody>
+</table>
+
+
 | **Field Description** | **IJE Field** | **FHIR Profile** | **FHIR Field** |
 | --- | --- | --- | --- |
 | State, U.S. Territory or Canadian Province of Death - code | DSTATE | DeathLocation | address.state **or** address.state.extension[nationalReportingJurisdictionId]  <br><br>If both are provided, the extension will override. Unless you are NYC, recommend using address.state **only.** |
