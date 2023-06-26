@@ -235,9 +235,9 @@ There are additional Errors that may be returned when a record cannot be accepte
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 	<tbody>
 		<tr>
-			<td>IJE Field</td>
-			<td>Error Message</td>
-			<td>Clarification</td>
+			<td><strong>IJE Field</strong></td>
+			<td><strong>Error Message</strong></td>
+			<td><strong>Clarification</strong></td>
 		</tr>
 		<tr>
 			<td>BSTATE</td>
@@ -260,14 +260,12 @@ There are additional Errors that may be returned when a record cannot be accepte
 			<td>The location of death string exceeds the 30-character limit for this field.</td>
 		</tr>
 		<tr>
-			<td>DSTATE</td>
-			<td>Error: FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
-			<td>DSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
-		</tr>
+			<td rowspan ="2">DSTATE</td>
+			<td rowspan ="1">Error: FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
+			<td colspan="1" rowspan ="2">DSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
+        </tr>
 		<tr>
-			<td>DSTATE</td>
-			<td>Error JurisdictionID was not identified</td>
-			<td>DSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
+			<td>Error: JurisdictionID was not identified</td>
 		</tr>
 		<tr>
 			<td>DOD_YR</td>
@@ -290,14 +288,12 @@ There are additional Errors that may be returned when a record cannot be accepte
 			<td>The actual message source address or id needs to be specified for the endpoint.</td>
 		</tr>
 		<tr>
-			<td>FILENO</td>
-			<td>Certificate Number is missing, or the certificate length is greater than 6</td>
-			<td>FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
+			<td rowspan ="2">FILENO</td>
+			<td rowspan ="1">Certificate Number is missing, or the certificate length is greater than 6</td>
+			<td colspan="1" rowspan ="2">FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
 		</tr>
 		<tr>
-			<td>FILENO</td>
 			<td>Only Numeric and positive digits are allowed for Certificate Number</td>
-			<td>FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
 		</tr>
 		<tr>
 			<td>IDOB_YR</td>
