@@ -173,8 +173,8 @@ The following combinations of field values will also result in an error being re
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
 <tr>
-    <td style="background-color:#D0F0C0;" colspan="2" style="text-align: center"><strong>Field 1</strong></td>
-    <td style="background-color:#D0F0C0;" colspan="2" style="text-align: center"><strong>Field 2</strong></td>
+    <td colspan="2" style="background-color:#D0F0C0; text-align: center"><strong>Field 1</strong></td>
+    <td colspan="2" style="background-color:#D0F0C0; text-align: center"><strong>Field 2</strong></td>
 </tr>
 <tr>
 <td style="background-color:#e5f0df"><strong>Description</strong></td>
