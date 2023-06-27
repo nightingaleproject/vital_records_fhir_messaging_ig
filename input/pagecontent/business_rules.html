@@ -1,23 +1,55 @@
-### Business Rules for Death Record Submissions
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Business Rules for Death Record Submissions</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
 
-Version 2.0
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
 
-**Last updated** : March 17, 2023
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
 
-**Table of Content**
-
-[Required Fields](#required-fields)
-
-[Additional Logic Checks](#additional-logic-checks)
-
-[Validation Errors](#validation-errors)
-
-[Internal Validation Errors](#internal-validation-errors)
-
-#### Required Fields
-
-The following fields are required for a valid death record submission. An Error Message with a format of "Error: Unable to find _IJE Field_ required element" will be returned for each missing field.
-
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h3 id="business-rules-for-death-record-submissions">Business Rules for Death Record Submissions</h3>
+<p>Version 2.0</p>
+<p><strong>Last updated</strong> : March 17, 2023</p>
+<p><strong>Table of Content</strong></p>
+<p><a href="#required-fields">Required Fields</a></p>
+<p><a href="#additional-logic-checks">Additional Logic Checks</a></p>
+<p><a href="#validation-errors">Validation Errors</a></p>
+<p><a href="#internal-validation-errors">Internal Validation Errors</a></p>
+<h4 id="required-fields">Required Fields</h4>
+<p>The following fields are required for a valid death record submission. An Error Message with a format of &quot;Error: Unable to find <em>IJE Field</em> required element&quot; will be returned for each missing field.</p>
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
     <colgroup>
        <col span="1" style="width: 40%;">
@@ -165,11 +197,8 @@ The following fields are required for a valid death record submission. An Error 
 		</tr>
 	</tbody>
 </table>
-
-#### Additional Logical Checks
-
-The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Error: Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
-
+<h4 id="additional-logical-checks">Additional Logical Checks</h4>
+<p>The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of &quot;Error: Invalid combination of <em>Field 1</em> and <em>Field 2</em>&quot; will be returned for each invalid combination reported.</p>
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
 <tr>
@@ -232,14 +261,9 @@ The following combinations of field values will also result in an error being re
 </tr>
 </tbody>
 </table>
-
-
-#### Validation Errors
-
-For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Error: Unable to find _IJE Field_ mapping for _FHIR Component_ field value '_string_'" will be returned for each violation.
-
-There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
-
+<h4 id="validation-errors">Validation Errors</h4>
+<p>For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of &quot;Error: Unable to find <em>IJE Field</em> mapping for <em>FHIR Component</em> field value '<em>string</em>'&quot; will be returned for each violation.</p>
+<p>There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.</p>
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 	<tbody>
 		<tr>
@@ -330,18 +354,37 @@ There are additional Errors that may be returned when a record cannot be accepte
 		</tr>
 	</tbody>
 </table>
+<h4 id="internal-validation-errors">Internal Validation Errors</h4>
+<p>The following error messages are internal validation errors and if you receive any of these, please contact NCHS.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Error Message</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An unexpected network error occurred.</td>
+</tr>
+<tr>
+<td>Exception has been thrown by the target of an invocation.</td>
+</tr>
+<tr>
+<td>Object reference not set to an instance of an object.</td>
+</tr>
+<tr>
+<td>The network path was not found.</td>
+</tr>
+<tr>
+<td>Unable to find the specified file.</td>
+</tr>
+<tr>
+<td>{:.grid}</td>
+</tr>
+</tbody>
+</table>
 
-#### Internal Validation Errors
-
-
-The following error messages are internal validation errors and if you receive any of these, please contact NCHS.
-
-| **Error Message** |
-| --- |
-| An unexpected network error occurred. |
-| Exception has been thrown by the target of an invocation. |
-| Object reference not set to an instance of an object. |
-| The network path was not found. |
-| Unable to find the specified file. |
-{:.grid}
-
+        
+        
+    </body>
+    </html>
