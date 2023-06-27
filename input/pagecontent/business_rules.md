@@ -25,10 +25,10 @@ The following fields are required for a valid death record submission. An Error 
     </colgroup>
 	<tbody>
 		<tr>
-			<td bgcolor=#D0F0C0><b>Field Description</b></td>
-			<td bgcolor=#D0F0C0><b>IJE Field</b></td>
-			<td bgcolor=#D0F0C0><b>FHIR Profile</b></td>
-            <td bgcolor=#D0F0C0><b>FHIR Field</b></td>
+			<td style="background-color:#D0F0C0;"><b>Field Description</b></td>
+			<td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+			<td style="background-color:#D0F0C0;"><b>FHIR Profile</b></td>
+            <td style="background-color:#D0F0C0;"><b>FHIR Field</b></td>
 		</tr>
 		<tr>
 			<td>State, U.S. Territory or Canadian Province of Death - code</td>
