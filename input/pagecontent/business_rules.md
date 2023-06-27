@@ -173,14 +173,14 @@ The following combinations of field values will also result in an error being re
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
 <tr>
-    <td bgcolor=#D0F0C0 colspan="2" style="text-align: center"><strong>Field 1</strong></td>
-    <td bgcolor=#D0F0C0 colspan="2" style="text-align: center"><strong>Field 2</strong></td>
+    <td style="background-color:#D0F0C0;" colspan="2" style="text-align: center"><strong>Field 1</strong></td>
+    <td style="background-color:#D0F0C0;" colspan="2" style="text-align: center"><strong>Field 2</strong></td>
 </tr>
 <tr>
-<td bgcolor=#e5f0df><strong>Description</strong></td>
-<td bgcolor=#e5f0df><strong>Value</strong></td>
-<td bgcolor=#e5f0df><strong>Description</strong></td>
-<td bgcolor=#e5f0df><strong>Value</strong></td>
+<td style="background-color:#e5f0df"><strong>Description</strong></td>
+<td style="background-color:#e5f0df"><strong>Value</strong></td>
+<td style="background-color:#e5f0df"><strong>Description</strong></td>
+<td style="background-color:#e5f0df"><strong>Value</strong></td>
 </tr>
 </thead>
 <colgroup>
@@ -243,9 +243,9 @@ There are additional Errors that may be returned when a record cannot be accepte
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 	<tbody>
 		<tr>
-			<td bgcolor=#D0F0C0><strong>IJE Field</strong></td>
-			<td bgcolor=#D0F0C0><strong>Error Message</strong></td>
-			<td bgcolor=#D0F0C0><strong>Clarification</strong></td>
+			<td style="background-color:#D0F0C0;" ><strong>IJE Field</strong></td>
+			<td style="background-color:#D0F0C0;" ><strong>Error Message</strong></td>
+			<td style="background-color:#D0F0C0;" ><strong>Clarification</strong></td>
 		</tr>
 		<tr>
 			<td>BSTATE</td>
