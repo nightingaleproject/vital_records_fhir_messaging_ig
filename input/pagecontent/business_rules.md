@@ -8,7 +8,7 @@ Version 2.0
 
 [Required Fields](#required-fields)
 
-[Additional Logic Checks](#additional-logic-checks)
+[Additional Logic Checks](#additional-logical-checks)
 
 [Validation Errors](#validation-errors)
 
