@@ -1,4 +1,8 @@
-### Changes
+### Version 1.0.0
+* Changed version number to 1.0 to reflect the maturity and stability of the content of this Implementation Guide and its production use.   No material changes were made between versions 0.9.1 and 1.0.0.
+* Added further clarification for logical checks in the [NCHS business rules](https://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/business_rules.html) regarding injury incident fields.
+### Changes prior to 1.0.0
+* Incorporated [NCHS business rules](https://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/business_rules.htm) for death record submissions.
 * Added note regarding lack of support for [extraction error messages](message.html#message-extraction-failures) by NCHS API (November 2022)
 * Added Alias Message based on input from Veronique, Krynn, and Aaina in February 2021
 * Changed canonical URL to http://cdc.gov/nchs/nvss/fhir/vital-records-messaging

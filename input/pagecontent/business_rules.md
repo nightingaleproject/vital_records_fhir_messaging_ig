@@ -173,66 +173,88 @@ The following combinations of field values will also result in an error being re
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
 <tr>
-    <td colspan="2" style="background-color:#D0F0C0; text-align: center"><strong>Field 1</strong></td>
-    <td colspan="2" style="background-color:#D0F0C0; text-align: center"><strong>Field 2</strong></td>
+    <td colspan="3" style="background-color:#D0F0C0; text-align: center"><strong>Field 1</strong></td>
+    <td colspan="3" style="background-color:#D0F0C0; text-align: center"><strong>Field 2</strong></td>
 </tr>
 <tr>
 <td style="background-color:#e5f0df"><strong>Description</strong></td>
+<td style="background-color:#e5f0df"><strong>IJE Field</strong></td>
 <td style="background-color:#e5f0df"><strong>Value</strong></td>
 <td style="background-color:#e5f0df"><strong>Description</strong></td>
+<td style="background-color:#e5f0df"><strong>IJE Field</strong></td>
 <td style="background-color:#e5f0df"><strong>Value</strong></td>
 </tr>
 </thead>
 <colgroup>
-    <col span="1" style="width: 25%;">
-	<col span="1" style="width: 25%;">
+    <col span="1" style="width: 16%;">
+	<col span="1" style="width: 16%;">
 </colgroup>
 <tbody>
 <tr>
 <td>Sex</td>
+<td>SEX</td>
 <td>Male</td>
 <td>Pregnancy Status</td>
+<td>PREG</td>
 <td><strong>Not</strong> &#39;Not Applicable&#39;</td>
 </tr>
 <tr>
 <td>Was Autopsy performed</td>
+<td>AUTOP</td>
 <td>Yes</td>
 <td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
+<td>AUTOPF</td>
 <td>&#39;Not Applicable&#39;</td>
 </tr>
 <tr>
 <td>Was Autopsy performed</td>
+<td>AUTOP</td>
 <td>No</td>
 <td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
+<td>AUTOPF</td>
 <td><strong>Not</strong>&#39;Not Applicable&#39;</td>
 </tr>
 <tr>
 <td>Date of Injury</td>
+<td>DOI_YR, DOI_MO, DOI_DY</td>
 <td>Greater than Date of Death</td>
 <td>Date of Death</td>
+<td>DOD_YR, DOD_MO, DOD_DY</td>
 <td>Less than Date of Injury</td>
 </tr>
 <tr>
 <td>Manner of Death</td>
+<td>MANNER</td>
 <td>Accident, Suicide, Homicide</td>
 <td>Date of Injury</td>
-<td>Not Provided</td>
+<td>DOI_YR, DOI_MO, DOI_DY</td>
+<td>Not Provided (1)</td>
 </tr>
 <tr>
 <td>Manner of Death</td>
+<td>MANNER</td>
 <td>Accident, Suicide, Homicide</td>
 <td>Place of Injury Literal</td>
-<td>Not Provided</td>
+<td>POILTRL</td>
+<td>Not Provided (2)</td>
 </tr>
 <tr>
 <td>Manner of Death</td>
+<td>MANNER</td>
 <td>Accident, Suicide, Homicide</td>
 <td>Describe How Injury Occurred</td>
-<td>Not Provided</td>
+<td>HOWINJ</td>
+<td>Not Provided (2)</td>
 </tr>
 </tbody>
 </table>
 
+The fields DOI_YR, DOI_MO, DOI_DY, POILTRL and HOWINJ all map to the VRDR InjuryIncident profile.
+THese fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.  
+
+If an InjuryIncident profile instance is provided, fields can be considered 'not provided' if:  
+1) The date of injury is considred 'not provided' if the effective time value is missing, or it includes a data absent reason with code "temp-unknown", which is equivalent to an IJE blank.   A data absent reason with the code "unknown" will not cause this data validation check to fail.  Similarly, the date of injury will be considered 'not provided' if a PartialDate extension is provided and any component of the date has a data absent reason of "temp-unknown".  
+2) The literal string fields HOWINJ and POILTRL are considered 'not provided' if an instance of the profile is provided, and the value (HOWINJ) or the component[placeOfInjury].value (POILTRL) are not provided, or their value is blank.
 
 #### Validation Errors
 
