@@ -250,7 +250,8 @@ The following combinations of field values will also result in an error being re
 </table>
 
 The fields DOI_YR, DOI_MO, DOI_DY, POILTRL and HOWINJ all map to the VRDR InjuryIncident profile.
-THese fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.  
+THese fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.
+If the Manner of Death requires information about an injury incident, and none is available, providing an Injury Incident profile with 'unknown' values for the the required fields satisfies the data requirement.
 
 If an InjuryIncident profile instance is provided, fields can be considered 'not provided' if:  
 1) The date of injury is considered ‘not provided’ if the effective time value is missing, or it includes a PartialDateTime extension and any component of the date has a data absent reason of “temp-unknown” (equivalent to an IJE blank). A data absent reason with the code “unknown” (equivalent to all 9’s in IJE) will not cause this data validation check to fail.    
