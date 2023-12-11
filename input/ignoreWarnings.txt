@@ -7,7 +7,7 @@
 # we are just using the text field
 No code provided, and a code should be provided from the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship)
 
-#we know this can't be validated
+# we know this can't be validated
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.315' is unknown so the code cannot be validated
 
