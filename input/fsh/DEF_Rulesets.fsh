@@ -3,6 +3,7 @@ RuleSet: CommonBundleStuff
 * type  = #message
 * id 1..1
 * timestamp 1..1
+* entry.resource 1..1 // each entry must have a resource
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
@@ -105,3 +106,11 @@ RuleSet: BaseMessageParameters
 * insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
 * insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year) //* parameter[death_year].name = "death_year"
 * insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
+
+
+RuleSet: addentry(type, id)
+* entry[+].resource = {id}
+* entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
+
+RuleSet: addReference (field, type, id)
+* {field}.reference = "http://www.example.org/fhir/{type}/{id}"
