@@ -1,8 +1,8 @@
 ### Business Rules for Death Record Submissions
 
-Version 2.0
+Version 2.1
 
-**Last updated** : March 17, 2023
+**Last updated** : November 1, 2023
 
 **Table of Content**
 
@@ -140,6 +140,96 @@ The following fields are required for a valid death record submission. An Error 
             <td>component[HispanicOther].valueCoding</td>
 		</tr>
 		<tr>
+			<td>Decedent's Race–White</td>
+			<td>RACE1</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[White].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Black or African American</td>
+			<td>RACE2</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[BlackOrAfricanAmerican].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–American Indian or Alaska Native</td>
+			<td>RACE3</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[AmericanIndianOrAlaskanNative].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Asian Indian</td>
+			<td>RACE4</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[AsianIndian].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Chinese</td>
+			<td>RACE5</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Chinese].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Filipino</td>
+			<td>RACE6</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Filipino].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Japanese</td>
+			<td>RACE7</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Japanese].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Korean</td>
+			<td>RACE8</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Korean].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Vietnamese</td>
+			<td>RACE9</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Vietnamese].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Other Asian</td>
+			<td>RACE10</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[OtherAsian].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Native Hawaiian</td>
+			<td>RACE11</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[NativeHawaiian].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Guamanian or Chamorro</td>
+			<td>RACE12</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[GuamanianOrChamorro].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Samoan</td>
+			<td>RACE13</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[Samoan].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Other Pacific Islander</td>
+			<td>RACE14</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[OtherPacificIslander].valueBoolean</td>
+		</tr>
+		<tr>
+			<td>Decedent's Race–Other</td>
+			<td>RACE15</td>
+			<td>InputRaceAndEthnicity</td>
+            <td>component[OtherRace].valueBoolean</td>
+		</tr>
+		<tr>
 			<td>Manner of Death</td>
 			<td>MANNER</td>
 			<td>MannerOfDeath</td>
@@ -250,8 +340,8 @@ The following combinations of field values will also result in an error being re
 </table>
 
 The fields DOI_YR, DOI_MO, DOI_DY, POILTRL and HOWINJ all map to the VRDR InjuryIncident profile.
-THese fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.
-If the Manner of Death requires information about an injury incident, and none is available, providing an instance of an Injury Incident profile with 'unknown' values for the the required fields satisfies the data requirement.
+These fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.
+If the Manner of Death requires information about an injury incident, and none is available, providing an instance of an Injury Incident profile with 'unknown' values for the required fields satisfies the data requirement.
 
 If an InjuryIncident profile instance is provided, fields can be considered 'not provided' if:  
 1) The date of injury is considered ‘not provided’ if the effective time value is missing, or it includes a PartialDateTime extension and any component of the date has a data absent reason of “temp-unknown” (equivalent to an IJE blank). A data absent reason with the code “unknown” (equivalent to all 9’s in IJE) will not cause this data validation check to fail.    
