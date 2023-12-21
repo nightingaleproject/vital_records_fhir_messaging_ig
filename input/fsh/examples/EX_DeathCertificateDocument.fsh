@@ -1,7 +1,3 @@
-RuleSet: addentry(type, id)
-* entry[+].resource = {id}
-* entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
-
 RuleSet: Identifiers2020NY000182
 * identifier.value = "2020NY000182"
 * identifier.extension[certificateNumber].valueString = "000182"
@@ -17,7 +13,7 @@ Description: "DeathCertificateDocument-Example1"
 * insert Identifiers2020NY000182
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
-* insert addentry(Bundle, DeathCertificate-Example1)
+* insert addentry(Composition, DeathCertificate-Example1)
 * insert addentry(Patient, Decedent-Example1)
 * insert addentry(RelatedPerson, DecedentFather-Example1)
 * insert addentry(RelatedPerson, DecedentMother-Example1)
@@ -193,7 +189,7 @@ Description: "DeathCertificateDocument-Example2 (with coded content)"
 * insert Identifiers2020NY000182
 * type = #document
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
-* insert addentry(Bundle, DeathCertificate-Example2)
+* insert addentry(Composition, DeathCertificate-Example2)
 * insert addentry(Patient, Decedent-Example1)
 * insert addentry(RelatedPerson, DecedentFather-Example1)
 * insert addentry(RelatedPerson, DecedentMother-Example1)
