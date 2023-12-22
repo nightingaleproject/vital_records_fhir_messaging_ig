@@ -17,7 +17,7 @@ Title:  "Death Message Header"
 * insert CommonHeaderStuff
 * focus contains 
     parameters 1..1 and payload 1..1 
-* focus[parameters] only Reference (MessageParameters)
+* focus[parameters] only Reference (Parameters)
 * focus[payload] only Reference (Bundle)
 
 
