@@ -7,7 +7,6 @@ Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
 * insert RequireMetaProfile(OperationOutcome)
 
-
 Profile:  SubmissionHeader
 Parent: MessageHeader
 Description:   "Death Message Submission Header"
@@ -16,7 +15,11 @@ Title:  "Death Message Header"
 * insert RequireMetaProfile(SubmissionHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(Bundle) // DeathCertificateDocument
+* focus contains 
+    parameters 1..1 and payload 1..1 
+* focus[parameters] only Reference (MessageParameters)
+* focus[payload] only Reference (Bundle)
+
 
 Profile:  UpdateHeader
 Parent: MessageHeader

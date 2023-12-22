@@ -12,8 +12,12 @@ RuleSet: CommonHeaderStuff
 * eventUri 1..1
 * destination 1..*
 * source 1..1
-* focus 1..1
+* focus 1..*
 * id 1..1
+* focus ^slicing.discriminator.type = #profile
+* focus ^slicing.discriminator.path = "resource"
+* focus ^slicing.rules = #open
+* focus ^slicing.description = "Slicing based on the profile"
 
 RuleSet: HeaderResponseID
 * response.identifier 1..1
@@ -113,3 +117,4 @@ RuleSet: addentry(type, id)
 
 RuleSet: addReference (field, type, id)
 * {field}.reference = "http://www.example.org/fhir/{type}/{id}"
+
