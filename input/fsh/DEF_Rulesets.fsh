@@ -12,10 +12,10 @@ RuleSet: CommonHeaderStuff
 * eventUri 1..1
 * destination 1..*
 * source 1..1
-* focus 1..*
+* focus 1..2
 * id 1..1
-* focus ^slicing.discriminator.type = #profile
-* focus ^slicing.discriminator.path = "resource"
+* focus ^slicing.discriminator.type = #type
+* focus ^slicing.discriminator.path = reference 
 * focus ^slicing.rules = #open
 * focus ^slicing.description = "Slicing based on the profile"
 

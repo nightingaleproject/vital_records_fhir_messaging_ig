@@ -15,10 +15,10 @@ Title:  "Death Message Header"
 * insert RequireMetaProfile(SubmissionHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
-* focus contains 
-    parameters 1..1 and payload 1..1 
-* focus[parameters] only Reference (Parameters)
-* focus[payload] only Reference (Bundle)
+// * focus contains 
+//     parameters 1..1 and payload 1..1 
+// * focus[parameters] only Reference (Parameters)
+// * focus[payload] only Reference (Bundle)
 
 
 Profile:  UpdateHeader
