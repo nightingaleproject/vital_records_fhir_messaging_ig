@@ -29,7 +29,7 @@ Title:  "Death Message Update Header"
 * insert RequireMetaProfile(UpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(Bundle) // DeathCertificateDocument
+// * focus only Reference(Bundle) // DeathCertificateDocument
 
 Profile:  VoidHeader
 Parent: MessageHeader
@@ -51,7 +51,7 @@ Description:   "Demographics Coding Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference( Bundle )
+// * focus only Reference( Bundle )
 
 Profile:  StatusHeader
 Parent: MessageHeader
@@ -75,7 +75,7 @@ Description:   "Cause of Death Coding Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference(Bundle )
+// * focus only Reference(Bundle )
 
 Profile:  DemographicsCodingUpdateHeader
 Parent: MessageHeader
@@ -87,7 +87,7 @@ Description:   "Demographics Coding Update Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference( Bundle )
+// * focus only Reference( Bundle )
 
 Profile:  CauseOfDeathCodingUpdateHeader
 Parent: MessageHeader
@@ -99,7 +99,7 @@ Description:   "Cause Of Death Death Coding Update Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference(Bundle )
+// * focus only Reference(Bundle )
 
 Profile:  AliasHeader
 Parent: MessageHeader

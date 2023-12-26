@@ -69,7 +69,9 @@ Description: "Header for Update: Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus.reference = "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+// * focus.reference = "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 
 Instance: SubmissionHeader-Example1
 InstanceOf: SubmissionHeader
@@ -90,7 +92,8 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 // * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
-* insert addReference(focus, Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -104,7 +107,8 @@ Description: "Header for Demographic Coding Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 // * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus, Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -117,7 +121,8 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
 // * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
-* insert addReference(focus, Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -129,7 +134,8 @@ Description: "Header for Demographic Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus, Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
