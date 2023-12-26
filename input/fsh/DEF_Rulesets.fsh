@@ -14,10 +14,10 @@ RuleSet: CommonHeaderStuff
 * source 1..1
 * focus 1..2
 * id 1..1
-* focus ^slicing.discriminator.type = #type
-* focus ^slicing.discriminator.path = reference 
-* focus ^slicing.rules = #open
-* focus ^slicing.description = "Slicing based on the profile"
+// * focus ^slicing.discriminator.type = #type
+// * focus ^slicing.discriminator.path = reference 
+// * focus ^slicing.rules = #open
+// * focus ^slicing.description = "Slicing based on the profile"
 
 RuleSet: HeaderResponseID
 * response.identifier 1..1
