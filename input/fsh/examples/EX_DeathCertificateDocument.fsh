@@ -178,15 +178,7 @@ Description: "DeathCertificate-Example2 (with coded content)"
 * section[DecedentDemographics]
 // The next line shouldn't be necessary
   * code = DocumentSectionCS#DecedentDemographics
-<<<<<<< HEAD
   * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
-=======
-//   * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
-  * entry[Decedent][+]
-    * type = "Patient"
-    * display = "Decedent-Example1"
-    * reference = "Patient/Decedent-Example1"
->>>>>>> d757051b50633028c1437a1a24aee18faee5a78f
     // *  section[DecedentDemographics].entry[Father] = Reference(DecedentFather-Example1)
   // * insert addCompositionEntry(Father, RelatedPerson, DecedentFather-Example1)
   //   // *  section[DecedentDemographics].entry[Mother] = Reference(DecedentMother-Example1)
