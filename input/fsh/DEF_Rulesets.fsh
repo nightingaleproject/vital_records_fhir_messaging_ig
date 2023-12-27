@@ -123,3 +123,9 @@ RuleSet: addReferenceComposition (field, type, id)
 
 RuleSet: addCompositionEntry (field, type, id)
 * entry[{field}][+].reference = "{type}/{id}"
+
+RuleSet: addentryComposition(type, id)
+* entry[+].reference = "{type}/{id}"
+
+RuleSet: addNamedEntryComposition(name, type, id)
+* entry[{name}][+].reference = "{type}/{id}"

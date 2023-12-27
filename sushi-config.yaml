@@ -17,7 +17,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
-  hl7.fhir.us.vrdr: current
+  hl7.fhir.us.vrdr: current  
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
