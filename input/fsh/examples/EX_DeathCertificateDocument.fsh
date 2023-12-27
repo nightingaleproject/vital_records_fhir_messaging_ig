@@ -57,7 +57,9 @@ Description: "DeathCertificate-Example1"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
 *  type = $loinc#64297-5 "Death certificate"
-* insert addReferenceComposition(subject, Patient, Decedent-Example1)
+// * insert addReferenceComposition(subject, Patient, Decedent-Example1)
+* subject.type = "Patient"
+* subject.display = "Decedent-Example1"
 *  date = "2020-11-15T16:39:54-05:00"
 * author.type = "Author" //    insert addReferenceComposition(author, Practitioner, Certifier-Example1)
 * author.display = "Display"
@@ -159,7 +161,9 @@ Description: "DeathCertificate-Example2 (with coded content)"
 * meta.profile = Canonical(DeathCertificate)
 * status = #final
 *  type = $loinc#64297-5 "Death certificate"
-* insert addReferenceComposition(subject, Patient, Decedent-Example1)
+//* insert addReferenceComposition(subject, Patient, Decedent-Example1)
+* subject.type = "Patient"
+* subject.display = "Decedent-Example1"
 *  date = "2020-11-15T16:39:54-05:00"
 // * insert addReferenceComposition(author, Practitioner, Certifier-Example1)
 * author.type = "Practitioner"
