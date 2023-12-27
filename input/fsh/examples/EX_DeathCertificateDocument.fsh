@@ -252,8 +252,9 @@ Description: "DeathCertificate-Example2 (with coded content)"
   //   // *  section[DecedentDisposition].entry[Mortician] = Reference(Mortician-Example1)
   // * insert addCompositionEntry(Mortician, Practitioner, Mortician-Example1)
 // The next line shouldn't be necessary
-*  section[CodedContent].code = DocumentSectionCS#CodedContent
-* insert EmptyTextNarrative
+*  section[CodedContent]
+  * code = DocumentSectionCS#CodedContent
+  * insert EmptyTextNarrative
   // *  section[CodedContent].entry[ActivityAtTimeOfDeath] = Reference(ActivityAtTimeOfDeath-Example1)
 // *  section[CodedContent].entry[PlaceOfInjury] = Reference(PlaceOfInjury-Example1)
 // *  section[CodedContent].entry[CodedRaceAndEthnicity] = Reference(CodedRaceAndEthnicity-Example1)
