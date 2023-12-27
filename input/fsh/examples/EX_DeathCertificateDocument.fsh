@@ -78,7 +78,10 @@ Description: "DeathCertificate-Example1"
 // The next line shouldn't be necessary
   * code = DocumentSectionCS#DecedentDemographics
     // *  section[DecedentDemographics].entry[Decedent] = Reference(Decedent-Example1)
-  * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
+//  * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
+  * entry[+]
+    * type = "Decedent"
+    * display = "Decedent-Example1"
     // *  section[DecedentDemographics].entry[Father] = Reference(DecedentFather-Example1)
   // * insert addCompositionEntry(Father, RelatedPerson, DecedentFather-Example1)
   //   // *  section[DecedentDemographics].entry[Mother] = Reference(DecedentMother-Example1)
@@ -181,7 +184,10 @@ Description: "DeathCertificate-Example2 (with coded content)"
 * section[DecedentDemographics]
 // The next line shouldn't be necessary
   * code = DocumentSectionCS#DecedentDemographics
-  * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
+  // * insert addCompositionEntry(Decedent, Patient, Decedent-Example1)
+  * entry[+]
+    * type = "Decedent"
+    * display = "Decedent-Example1"
     // *  section[DecedentDemographics].entry[Father] = Reference(DecedentFather-Example1)
   // * insert addCompositionEntry(Father, RelatedPerson, DecedentFather-Example1)
   //   // *  section[DecedentDemographics].entry[Mother] = Reference(DecedentMother-Example1)
