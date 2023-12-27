@@ -118,3 +118,8 @@ RuleSet: addentry(type, id)
 RuleSet: addReference (field, type, id)
 * {field}.reference = "http://www.example.org/fhir/{type}/{id}"
 
+RuleSet: addReferenceComposition (field, type, id)
+* {field}.reference = "{type}/{id}"
+
+RuleSet: addCompositionEntry (field, type, id)
+* entry[{field}][+].reference = "{type}/{id}"
