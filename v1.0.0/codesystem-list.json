@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "MessageHeaderURICS",
       "title" : "MessageHeader URI Values",
@@ -10,7 +10,7 @@
     },
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "StatusCS",
       "title" : "Status Codes Values",

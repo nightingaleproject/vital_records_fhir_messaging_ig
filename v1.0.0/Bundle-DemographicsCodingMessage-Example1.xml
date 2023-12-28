@@ -16,7 +16,7 @@
           <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingHeader"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="DemographicsCodingHeader-Example1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;DemographicsCodingHeader-Example1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-DemographicsCodingHeader.html">Demographics Coding Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/vrdr_demographics_coding">http://nchs.cdc.gov/vrdr_demographics_coding</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://nchs.cdc.gov/vrdr_submission">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>SubmissionHeader-Example1</td><td>ok</td></tr></table><p><b>focus</b>: </p><ul><li><a href="#Bundle_DemographicCodedContentBundle-Example1">See above (http://www.example.org/fhir/Bundle/DemographicCodedContentBundle-Example1)</a></li><li><a href="#Parameters_Parameters-Example1">See above (http://www.example.org/fhir/Parameters/Parameters-Example1)</a></li></ul></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="DemographicsCodingHeader-Example1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;DemographicsCodingHeader-Example1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-DemographicsCodingHeader.html">Demographics Coding Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/vrdr_demographics_coding">http://nchs.cdc.gov/vrdr_demographics_coding</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://nchs.cdc.gov/vrdr_submission">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>SubmissionHeader-Example1</td><td>ok</td></tr></table><p><b>focus</b>: <a href="#Bundle_DemographicCodedContentBundle-Example1">See above (Bundle/DemographicCodedContentBundle-Example1)</a></p></div>
         </text>
         <eventUri value="http://nchs.cdc.gov/vrdr_demographics_coding"/>
         <destination>
@@ -30,10 +30,7 @@
           <code value="ok"/>
         </response>
         <focus>
-          <reference value="http://www.example.org/fhir/Bundle/DemographicCodedContentBundle-Example1"/>
-        </focus>
-        <focus>
-          <reference value="http://www.example.org/fhir/Parameters/Parameters-Example1"/>
+          <reference value="Bundle/DemographicCodedContentBundle-Example1"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -88,6 +85,336 @@
         </identifier>
         <type value="collection"/>
         <timestamp value="2020-10-20T14:48:35.401641-04:00"/>
+        <entry>
+          <fullUrl value="http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1"/>
+          <resource>
+            <Observation>
+              <id value="InputRaceAndEthnicity-Example1"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"/>
+                  <code value="inputraceandethnicity"/>
+                </coding>
+              </code>
+              <subject>
+                <display value="NCHS generated"/>
+              </subject>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="White"/>
+                  </coding>
+                </code>
+                <valueBoolean value="true"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="BlackOrAfricanAmerican"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="AmericanIndianOrAlaskanNative"/>
+                  </coding>
+                </code>
+                <valueBoolean value="true"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="AsianIndian"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Chinese"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Filipino"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Japanese"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Korean"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Vietnamese"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="OtherAsian"/>
+                  </coding>
+                </code>
+                <valueBoolean value="true"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="NativeHawaiian"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="GuamanianOrChamorro"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="Samoan"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="OtherPacificIslander"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="OtherRace"/>
+                  </coding>
+                </code>
+                <valueBoolean value="false"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="FirstOtherAsianLiteral"/>
+                  </coding>
+                </code>
+                <valueString value="Malaysian"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="FirstAmericanIndianOrAlaskanNativeLiteral"/>
+                  </coding>
+                </code>
+                <valueString value="Arikara"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="HispanicMexican"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                    <code value="Y"/>
+                    <display value="Yes"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="HispanicCuban"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                    <code value="Y"/>
+                    <display value="Yes"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="HispanicPuertoRican"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                    <code value="Y"/>
+                    <display value="Yes"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="HispanicOther"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                    <code value="N"/>
+                    <display value="No"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://www.example.org/fhir/Observation/CodedRaceAndEthnicity-Example1"/>
+          <resource>
+            <Observation>
+              <id value="CodedRaceAndEthnicity-Example1"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"/>
+                  <code value="codedraceandethnicity"/>
+                </coding>
+              </code>
+              <subject>
+                <display value="NCHS generated"/>
+              </subject>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="FirstEditedCode"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"/>
+                    <code value="101"/>
+                    <display value="White"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="SecondEditedCode"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"/>
+                    <code value="122"/>
+                    <display value="Israeli"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="FirstAmericanIndianCode"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"/>
+                    <code value="A31"/>
+                    <display value="Arikara"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="RaceRecode40"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-recode-40-cs"/>
+                    <code value="20"/>
+                    <display value="AIAN and Asian"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"/>
+                    <code value="HispanicCode"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-hispanic-origin-cs"/>
+                    <code value="233"/>
+                    <display value="Chilean"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
       </Bundle>
     </resource>
   </entry>

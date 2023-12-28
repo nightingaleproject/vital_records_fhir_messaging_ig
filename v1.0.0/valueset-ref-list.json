@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "StatusVS",
       "title" : "Status Codes Values",
@@ -16,7 +16,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdiction-vs",
-      "version" : "2.2.0",
+      "version" : "3.0.0-ci-build",
       "status" : "active",
       "name" : "JurisdictionVS",
       "title" : "Jurisdictions Value Set",
@@ -29,8 +29,8 @@
       },
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters"
     }
   ]
 }

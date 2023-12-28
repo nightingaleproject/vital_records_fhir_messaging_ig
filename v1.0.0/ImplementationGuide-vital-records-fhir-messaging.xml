@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VitalRecordsFHIRMessagingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging</pre></div>
   </text>
   <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging"/>
-  <version value="1.0.1"/>
+  <version value="1.0.0"/>
   <name value="VitalRecordsFHIRMessagingIG"/>
   <title value="Vital Records FHIR Messaging (VRFM) IG"/>
   <status value="draft"/>
-  <date value="2023-12-28T11:01:10-05:00"/>
+  <date value="2023-12-28T12:14:20-05:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -46,7 +46,7 @@
   <dependsOn id="hl7_fhir_us_vrdr">
     <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr"/>
     <packageId value="hl7.fhir.us.vrdr"/>
-    <version value="2.2.0"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -567,6 +567,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ActivityAtTimeOfDeath-Example1"/>
+      </reference>
+      <name value="ActivityAtTimeOfDeath-Example1"/>
+      <description value="ActivityAtTimeOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -610,6 +621,39 @@
       <name value="AliasParameters-Example1"/>
       <description value="Alias Message Parameters- Example"/>
       <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AutomatedUnderlyingCauseOfDeath-Example1"/>
+      </reference>
+      <name value="AutomatedUnderlyingCauseOfDeath-Example1"/>
+      <description value="AutomatedUnderlyingCauseOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AutopsyPerformedIndicator-Example1"/>
+      </reference>
+      <name value="AutopsyPerformedIndicator-Example1"/>
+      <description value="AutopsyPerformedIndicator-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BirthRecordIdentifier-Example1"/>
+      </reference>
+      <name value="BirthRecordIdentifier-Example1"/>
+      <description value="BirthRecordIdentifier-Example1"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -713,6 +757,72 @@
       <name value="CauseOfDeathCodingUpdateMessage1"/>
       <description value="Cause of Death Coding update message - Example"/>
       <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CauseOfDeathPart1-Example1"/>
+      </reference>
+      <name value="CauseOfDeathPart1-Example1"/>
+      <description value="CauseOfDeathPart1-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CauseOfDeathPart1-Example2"/>
+      </reference>
+      <name value="CauseOfDeathPart1-Example2"/>
+      <description value="CauseOfDeathPart1-Example2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CauseOfDeathPart2-Example1"/>
+      </reference>
+      <name value="CauseOfDeathPart2-Example1"/>
+      <description value="CauseOfDeathPart2-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Certifier-Example1"/>
+      </reference>
+      <name value="Certifier-Example1"/>
+      <description value="Certifier-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CodedRaceAndEthnicity-Example1"/>
+      </reference>
+      <name value="CodedRaceAndEthnicity-Example1"/>
+      <description value="CodedRaceAndEthnicity-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/CodingStatusValues-Example1"/>
+      </reference>
+      <name value="CodingStatusValues-Example1"/>
+      <description value="CodingStatusValues-Example1"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -844,6 +954,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/DeathCertification-Example1"/>
+      </reference>
+      <name value="DeathCertification-Example1"/>
+      <description value="DeathCertification-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/DeathCertification-Example2"/>
+      </reference>
+      <name value="DeathCertification-Example2"/>
+      <description value="DeathCertification-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DeathDate-Example1"/>
+      </reference>
+      <name value="DeathDate-Example1"/>
+      <description value="DeathDate-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DeathDate-Example2"/>
+      </reference>
+      <name value="DeathDate-Example2"/>
+      <description value="DeathDate-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DeathDate-Example3"/>
+      </reference>
+      <name value="DeathDate-Example3"/>
+      <description value="DeathDate-Example3 - Stripped down for Mortality Roster"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/DeathLocation-Example1"/>
+      </reference>
+      <name value="DeathLocation-Example1"/>
+      <description value="DeathLocation-Example1 - State = Jurisdiction"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/DeathLocation-Example2"/>
+      </reference>
+      <name value="DeathLocation-Example2"/>
+      <description value="DeathLocation-Example2 - State != Jurisdiction"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/DeathLocation-Example3"/>
+      </reference>
+      <name value="DeathLocation-Example3"/>
+      <description value="DeathLocation-Example3 - Stripped Down for Mortality Roster"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -906,6 +1104,116 @@
       </reference>
       <name value="Decedent-Example3"/>
       <description value="Decedent-Example3 - Stripped down for Mortality Roster"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentAge-Example1"/>
+      </reference>
+      <name value="DecedentAge-Example1"/>
+      <description value="DecedentAge-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentDispositionMethod-Example1"/>
+      </reference>
+      <name value="DecedentDispositionMethod-Example1"/>
+      <description value="DecedentDispositionMethod-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentEducationLevel-Example1"/>
+      </reference>
+      <name value="DecedentEducationLevel-Example1"/>
+      <description value="DeathDate-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/DecedentFather-Example1"/>
+      </reference>
+      <name value="DecedentFather-Example1"/>
+      <description value="DecedentFather-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentMilitaryService-Example1"/>
+      </reference>
+      <name value="DecedentMilitaryService-Example1"/>
+      <description value="DecedentMilitaryService-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/DecedentMother-Example1"/>
+      </reference>
+      <name value="DecedentMother-Example1"/>
+      <description value="DecedentFather-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentPregnancyStatus-Example1"/>
+      </reference>
+      <name value="DecedentPregnancyStatus-Example1"/>
+      <description value="DecedentPregnancyStatus-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/DecedentSpouse-Example1"/>
+      </reference>
+      <name value="DecedentSpouse-Example1"/>
+      <description value="DecedentSpouse-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentUsualWork-Example1"/>
+      </reference>
+      <name value="DecedentUsualWork-Example1"/>
+      <description value="DecedentUsualWork-Example1 - without coded values"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DecedentUsualWork-Example2"/>
+      </reference>
+      <name value="DecedentUsualWork-Example2"/>
+      <description value="DecedentUsualWork-Example2 - with coded values"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1013,6 +1321,83 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/DispositionLocation-Example1"/>
+      </reference>
+      <name value="DispositionLocation-Example1"/>
+      <description value="DispositionLocation-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EmergingIssues-Example1"/>
+      </reference>
+      <name value="EmergingIssues-Example1"/>
+      <description value="EmergingIssues-Example1 make sure it is example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EntityAxisCauseOfDeath-Example1"/>
+      </reference>
+      <name value="EntityAxisCauseOfDeath-Example1"/>
+      <description value="EntityAxisCauseOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EntityAxisCauseOfDeath-Example2"/>
+      </reference>
+      <name value="EntityAxisCauseOfDeath-Example2"/>
+      <description value="EntityAxisCauseOfDeath-Example2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EntityAxisCauseOfDeath-Example3"/>
+      </reference>
+      <name value="EntityAxisCauseOfDeath-Example3"/>
+      <description value="EntityAxisCauseOfDeath-Example3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EntityAxisCauseOfDeath-Example4"/>
+      </reference>
+      <name value="EntityAxisCauseOfDeath-Example4"/>
+      <description value="EntityAxisCauseOfDeath-Example3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExaminerContacted-Example1"/>
+      </reference>
+      <name value="ExaminerContacted-Example1"/>
+      <description value="AutopsyPerformedIndicator-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1059,6 +1444,83 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/FuneralHome-Example1"/>
+      </reference>
+      <name value="FuneralHome-Example1"/>
+      <description value="FuneralHome-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/InjuryIncident-Example1"/>
+      </reference>
+      <name value="InjuryIncident-Example1"/>
+      <description value="InjuryIncident-Example1 (with literal transportationRole)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/InjuryIncident-Example2"/>
+      </reference>
+      <name value="InjuryIncident-Example2"/>
+      <description value="InjuryIncident-Example2 (with coded transportationRole)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InjuryLocation-Example1"/>
+      </reference>
+      <name value="InjuryLocation-Example1"/>
+      <description value="InjuryLocation-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/InputRaceAndEthnicity-Example1"/>
+      </reference>
+      <name value="InputRaceAndEthnicity-Example1"/>
+      <description value="InputRaceAndEthnicity-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MannerOfDeath-Example1"/>
+      </reference>
+      <name value="MannerOfDeath-Example1"/>
+      <description value="MannerOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ManualUnderlyingCauseOfDeath-Example1"/>
+      </reference>
+      <name value="ManualUnderlyingCauseOfDeath-Example1"/>
+      <description value="ManualUnderlyingCauseOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1068,6 +1530,28 @@
       <description value="MessageHeader URI Values"/>
       <exampleBoolean value="false"/>
       <groupingId value="CodeSystems"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/MortalityRosterBundle-Example1"/>
+      </reference>
+      <name value="MortalityRosterBundle-Example1"/>
+      <description value="MortalityRosterBundle-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Mortician-Example1"/>
+      </reference>
+      <name value="Mortician-Example1"/>
+      <description value="Mortician-Example1"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1102,6 +1586,39 @@
       <name value="Parameters-Example1"/>
       <description value="Parameters for Submission: Example"/>
       <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PlaceOfInjury-Example1"/>
+      </reference>
+      <name value="PlaceOfInjury-Example1"/>
+      <description value="PlaceOfInjury-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RecordAxisCauseOfDeath-Example1"/>
+      </reference>
+      <name value="RecordAxisCauseOfDeath-Example1"/>
+      <description value="RecordAxisCauseOfDeath-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RecordAxisCauseOfDeath-Example2"/>
+      </reference>
+      <name value="RecordAxisCauseOfDeath-Example2"/>
+      <description value="RecordAxisCauseOfDeath-Example2"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1204,6 +1721,28 @@
       <name value="SubmissionHeader-Example1"/>
       <description value="Header for Submission - Example"/>
       <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SurgeryDate-Example1"/>
+      </reference>
+      <name value="SurgeryDate-Example1"/>
+      <description value="SurgeryDate-Example1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TobaccoUseContributedToDeath-Example1"/>
+      </reference>
+      <name value="TobaccoUseContributedToDeath-Example1"/>
+      <description value="TobaccoUseContributedToDeath-Example1"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

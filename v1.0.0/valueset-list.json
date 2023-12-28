@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "StatusVS",
       "title" : "Status Codes Values",

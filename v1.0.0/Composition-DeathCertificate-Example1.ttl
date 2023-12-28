@@ -18,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"DeathCertificate-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;DeathCertificate-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Filing Format</b>: Electronic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-filing-format-cs.html\">Filing Formats CodeSystem</a>#electronic)</span></p><p><b>Replacement Status of a Death Record (deprecated)</b>: original record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-replace-status-cs.html\">Replacement Status of Death Record Submission</a>#original)</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: <span>: Display</span></p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td>2020-11-14 16:39:40-0500</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><span>: Procedure</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"DeathCertificate-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;DeathCertificate-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Filing Format</b>: Electronic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-filing-format-cs.html\">Filing Formats CodeSystem</a>#electronic)</span></p><p><b>Replacement Status of a Death Record (deprecated)</b>: original record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-replace-status-cs.html\">Replacement Status of Death Record Submission</a>#original)</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: <a href=\"Practitioner-Certifier-Example1.html\">Practitioner/Certifier-Example1</a> &quot; BLACK&quot;</p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td>2020-11-14 16:39:40-0500</td><td><a href=\"Practitioner-Certifier-Example1.html\">Practitioner/Certifier-Example1</a> &quot; BLACK&quot;</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><a href=\"Procedure-DeathCertification-Example1.html\">Procedure/DeathCertification-Example1</a></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat"^^xsd:anyURI ] ;
@@ -57,13 +57,17 @@
   ] ; # 
   fhir:date [ fhir:v "2020-11-15T16:39:54-05:00"^^xsd:dateTime] ; # 
   fhir:author ( [
-     fhir:type [ fhir:v "Author"^^xsd:anyURI ] ;
-     fhir:display [ fhir:v "Display" ]
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
   ] ) ; # 
   fhir:title [ fhir:v "Death Certificate"] ; # 
   fhir:attester ( [
      fhir:mode [ fhir:v "legal" ] ;
-     fhir:time [ fhir:v "2020-11-14T16:39:40-05:00"^^xsd:dateTime ]
+     fhir:time [ fhir:v "2020-11-14T16:39:40-05:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+     ]
   ] ) ; # 
   fhir:event ( [
      fhir:code ( [
@@ -74,8 +78,8 @@
        ] )
      ] ) ;
      fhir:detail ( [
-       fhir:type [ fhir:v "Procedure"^^xsd:anyURI ] ;
-       fhir:display [ fhir:v "Procedure" ]
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example1> ;
+       fhir:reference [ fhir:v "Procedure/DeathCertification-Example1" ]
      ] )
   ] ) ; # 
   fhir:section ( [
@@ -88,6 +92,36 @@
      fhir:entry ( [
        fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
        fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentFather-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentFather-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentMother-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentMother-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentSpouse-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentSpouse-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentAge-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentAge-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/BirthRecordIdentifier-Example1> ;
+       fhir:reference [ fhir:v "Observation/BirthRecordIdentifier-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentEducationLevel-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentEducationLevel-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentMilitaryService-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentMilitaryService-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentUsualWork-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentUsualWork-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InputRaceAndEthnicity-Example1> ;
+       fhir:reference [ fhir:v "Observation/InputRaceAndEthnicity-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EmergingIssues-Example1> ;
+       fhir:reference [ fhir:v "Observation/EmergingIssues-Example1" ]
      ] )
   ] [
      fhir:code [
@@ -96,10 +130,34 @@
          fhir:code [ fhir:v "DeathInvestigation" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/ExaminerContacted-Example1> ;
+       fhir:reference [ fhir:v "Observation/ExaminerContacted-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentPregnancyStatus-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentPregnancyStatus-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/TobaccoUseContributedToDeath-Example1> ;
+       fhir:reference [ fhir:v "Observation/TobaccoUseContributedToDeath-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/AutopsyPerformedIndicator-Example1> ;
+       fhir:reference [ fhir:v "Observation/AutopsyPerformedIndicator-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DeathLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/DeathLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/InjuryLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/InjuryLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InjuryIncident-Example1> ;
+       fhir:reference [ fhir:v "Observation/InjuryIncident-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DeathDate-Example1> ;
+       fhir:reference [ fhir:v "Observation/DeathDate-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/SurgeryDate-Example1> ;
+       fhir:reference [ fhir:v "Observation/SurgeryDate-Example1" ]
+     ] )
   ] [
      fhir:code [
        fhir:coding ( [
@@ -107,10 +165,25 @@
          fhir:code [ fhir:v "DeathCertification" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example1> ;
+       fhir:reference [ fhir:v "Procedure/DeathCertification-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/MannerOfDeath-Example1> ;
+       fhir:reference [ fhir:v "Observation/MannerOfDeath-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example1> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example2> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example2" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart2-Example1> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart2-Example1" ]
+     ] )
   ] [
      fhir:code [
        fhir:coding ( [
@@ -118,10 +191,19 @@
          fhir:code [ fhir:v "DecedentDisposition" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DispositionLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/DispositionLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Organization/FuneralHome-Example1> ;
+       fhir:reference [ fhir:v "Organization/FuneralHome-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentDispositionMethod-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentDispositionMethod-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Mortician-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Mortician-Example1" ]
+     ] )
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

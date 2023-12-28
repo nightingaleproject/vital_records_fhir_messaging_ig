@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-VRM-Status-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a></li></ul></div>"
   },
   "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
-  "version" : "1.0.1",
+  "version" : "1.0.0",
   "name" : "StatusVS",
   "title" : "Status Codes Values",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-12-28T11:01:10-05:00",
+  "date" : "2023-12-28T12:14:20-05:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",

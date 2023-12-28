@@ -15,7 +15,7 @@
       <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:destination) &gt;= 1">destination: minimum cardinality of 'destination' is 1</sch:assert>
       <sch:assert test="count(f:focus) &gt;= 1">focus: minimum cardinality of 'focus' is 1</sch:assert>
-      <sch:assert test="count(f:focus) &lt;= 2">focus: maximum cardinality of 'focus' is 2</sch:assert>
+      <sch:assert test="count(f:focus) &lt;= 1">focus: maximum cardinality of 'focus' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

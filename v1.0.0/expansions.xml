@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fc2c7017-e2ef-425d-934f-b5cca5c3e88b"/>
+  <id value="4232aaa4-9ded-408d-8cf6-7f75b2a1383f"/>
   <meta>
-    <lastUpdated value="2023-12-28T11:01:10.982-05:00"/>
+    <lastUpdated value="2023-12-28T12:14:20.009-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-VRM-Status-cs.html">codesystem Status Codes Values v1.0.1 (CodeSystem)</a>
+              <a href="CodeSystem-VRM-Status-cs.html">codesystem Status Codes Values v1.0.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -108,15 +108,15 @@ has been canceled for the original record.</p>
           </div>
         </text>
         <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"/>
-        <version value="1.0.1"/>
+        <version value="1.0.0"/>
         <name value="StatusVS"/>
         <title value="Status Codes Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-12-28T11:01:10-05:00"/>
+        <date value="2023-12-28T12:14:20-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:222e0d6a-4df5-4302-b8fa-2d85acd025d4"/>
-          <timestamp value="2023-12-28T11:02:11-05:00"/>
+          <identifier value="urn:uuid:74c11747-d877-4272-afe4-8aeaf2114fdc"/>
+          <timestamp value="2023-12-28T12:15:29-05:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -124,7 +124,7 @@ has been canceled for the original record.</p>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|1.0.1"/>
+            <valueUri value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>

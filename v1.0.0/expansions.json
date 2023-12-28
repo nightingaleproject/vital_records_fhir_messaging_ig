@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "fc2c7017-e2ef-425d-934f-b5cca5c3e88b",
+  "id" : "4232aaa4-9ded-408d-8cf6-7f75b2a1383f",
   "meta" : {
-    "lastUpdated" : "2023-12-28T11:01:10.982-05:00"
+    "lastUpdated" : "2023-12-28T12:14:20.009-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,18 +11,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-VRM-Status-cs.html\">codesystem Status Codes Values v1.0.1 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCauseOfDeathCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding\">manualCauseOfDeathCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualDemographicCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding\">manualDemographicCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-noCodingNeeded-Duplicate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate\">noCodingNeeded_Duplicate</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update\">manualCodingCanceled_Update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void\">manualCodingCanceled_Void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-VRM-Status-cs.html\">codesystem Status Codes Values v1.0.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCauseOfDeathCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding\">manualCauseOfDeathCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualDemographicCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding\">manualDemographicCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-noCodingNeeded-Duplicate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate\">noCodingNeeded_Duplicate</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update\">manualCodingCanceled_Update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void\">manualCodingCanceled_Void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "name" : "StatusVS",
       "title" : "Status Codes Values",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2023-12-28T11:01:10-05:00",
+      "date" : "2023-12-28T12:14:20-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:222e0d6a-4df5-4302-b8fa-2d85acd025d4",
-        "timestamp" : "2023-12-28T11:02:11-05:00",
+        "identifier" : "urn:uuid:74c11747-d877-4272-afe4-8aeaf2114fdc",
+        "timestamp" : "2023-12-28T12:15:29-05:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -30,7 +30,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|1.0.1"
+          "valueUri" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|1.0.0"
         }],
         "contains" : [{
           "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",

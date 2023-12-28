@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
-      "version" : "1.0.1",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "StatusCS",
       "title" : "Status Codes Values",
@@ -96,14 +96,14 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-jurisdictions-cs",
-      "version" : "2.2.0",
+      "version" : "3.0.0-ci-build",
       "status" : "active",
       "name" : "JurisdictionsCS",
       "title" : "Jurisdictions that are not US States or Territories",
       "description" : "NVSS Jurisdictions that are not US States or Territories",
       "uses" : {
       },
-      "http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-jurisdiction-vs.html" : "Jurisdictions Value Set"
+      "https://build.fhir.org/ig/HL7/vrdr//ValueSet-vrdr-jurisdiction-vs.html" : "Jurisdictions Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/message-reasons-encounter",

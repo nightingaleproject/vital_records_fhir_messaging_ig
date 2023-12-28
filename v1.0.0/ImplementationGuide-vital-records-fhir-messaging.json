@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VitalRecordsFHIRMessagingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging</pre></div>"
   },
   "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging",
-  "version" : "1.0.1",
+  "version" : "1.0.0",
   "name" : "VitalRecordsFHIRMessagingIG",
   "title" : "Vital Records FHIR Messaging (VRFM) IG",
   "status" : "draft",
-  "date" : "2023-12-28T11:01:10-05:00",
+  "date" : "2023-12-28T12:14:20-05:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -52,7 +52,7 @@
     "id" : "hl7_fhir_us_vrdr",
     "uri" : "http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr",
     "packageId" : "hl7.fhir.us.vrdr",
-    "version" : "2.2.0"
+    "version" : "current"
   }],
   "definition" : {
     "extension" : [{
@@ -752,6 +752,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ActivityAtTimeOfDeath-Example1"
+      },
+      "name" : "ActivityAtTimeOfDeath-Example1",
+      "description" : "ActivityAtTimeOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -798,6 +810,42 @@
       "name" : "AliasParameters-Example1",
       "description" : "Alias Message Parameters- Example",
       "exampleCanonical" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/AutomatedUnderlyingCauseOfDeath-Example1"
+      },
+      "name" : "AutomatedUnderlyingCauseOfDeath-Example1",
+      "description" : "AutomatedUnderlyingCauseOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/AutopsyPerformedIndicator-Example1"
+      },
+      "name" : "AutopsyPerformedIndicator-Example1",
+      "description" : "AutopsyPerformedIndicator-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/BirthRecordIdentifier-Example1"
+      },
+      "name" : "BirthRecordIdentifier-Example1",
+      "description" : "BirthRecordIdentifier-Example1",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -910,6 +958,78 @@
       "name" : "CauseOfDeathCodingUpdateMessage1",
       "description" : "Cause of Death Coding update message - Example",
       "exampleCanonical" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CauseOfDeathPart1-Example1"
+      },
+      "name" : "CauseOfDeathPart1-Example1",
+      "description" : "CauseOfDeathPart1-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CauseOfDeathPart1-Example2"
+      },
+      "name" : "CauseOfDeathPart1-Example2",
+      "description" : "CauseOfDeathPart1-Example2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CauseOfDeathPart2-Example1"
+      },
+      "name" : "CauseOfDeathPart2-Example1",
+      "description" : "CauseOfDeathPart2-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Certifier-Example1"
+      },
+      "name" : "Certifier-Example1",
+      "description" : "Certifier-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CodedRaceAndEthnicity-Example1"
+      },
+      "name" : "CodedRaceAndEthnicity-Example1",
+      "description" : "CodedRaceAndEthnicity-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/CodingStatusValues-Example1"
+      },
+      "name" : "CodingStatusValues-Example1",
+      "description" : "CodingStatusValues-Example1",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1053,6 +1173,102 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/DeathCertification-Example1"
+      },
+      "name" : "DeathCertification-Example1",
+      "description" : "DeathCertification-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/DeathCertification-Example2"
+      },
+      "name" : "DeathCertification-Example2",
+      "description" : "DeathCertification-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DeathDate-Example1"
+      },
+      "name" : "DeathDate-Example1",
+      "description" : "DeathDate-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DeathDate-Example2"
+      },
+      "name" : "DeathDate-Example2",
+      "description" : "DeathDate-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DeathDate-Example3"
+      },
+      "name" : "DeathDate-Example3",
+      "description" : "DeathDate-Example3 - Stripped down for Mortality Roster",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/DeathLocation-Example1"
+      },
+      "name" : "DeathLocation-Example1",
+      "description" : "DeathLocation-Example1 - State = Jurisdiction",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/DeathLocation-Example2"
+      },
+      "name" : "DeathLocation-Example2",
+      "description" : "DeathLocation-Example2 - State != Jurisdiction",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/DeathLocation-Example3"
+      },
+      "name" : "DeathLocation-Example3",
+      "description" : "DeathLocation-Example3 - Stripped Down for Mortality Roster",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1120,6 +1336,126 @@
       },
       "name" : "Decedent-Example3",
       "description" : "Decedent-Example3 - Stripped down for Mortality Roster",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentAge-Example1"
+      },
+      "name" : "DecedentAge-Example1",
+      "description" : "DecedentAge-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentDispositionMethod-Example1"
+      },
+      "name" : "DecedentDispositionMethod-Example1",
+      "description" : "DecedentDispositionMethod-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentEducationLevel-Example1"
+      },
+      "name" : "DecedentEducationLevel-Example1",
+      "description" : "DeathDate-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/DecedentFather-Example1"
+      },
+      "name" : "DecedentFather-Example1",
+      "description" : "DecedentFather-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentMilitaryService-Example1"
+      },
+      "name" : "DecedentMilitaryService-Example1",
+      "description" : "DecedentMilitaryService-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/DecedentMother-Example1"
+      },
+      "name" : "DecedentMother-Example1",
+      "description" : "DecedentFather-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentPregnancyStatus-Example1"
+      },
+      "name" : "DecedentPregnancyStatus-Example1",
+      "description" : "DecedentPregnancyStatus-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/DecedentSpouse-Example1"
+      },
+      "name" : "DecedentSpouse-Example1",
+      "description" : "DecedentSpouse-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentUsualWork-Example1"
+      },
+      "name" : "DecedentUsualWork-Example1",
+      "description" : "DecedentUsualWork-Example1 - without coded values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DecedentUsualWork-Example2"
+      },
+      "name" : "DecedentUsualWork-Example2",
+      "description" : "DecedentUsualWork-Example2 - with coded values",
       "exampleBoolean" : true
     },
     {
@@ -1237,6 +1573,90 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/DispositionLocation-Example1"
+      },
+      "name" : "DispositionLocation-Example1",
+      "description" : "DispositionLocation-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EmergingIssues-Example1"
+      },
+      "name" : "EmergingIssues-Example1",
+      "description" : "EmergingIssues-Example1 make sure it is example",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EntityAxisCauseOfDeath-Example1"
+      },
+      "name" : "EntityAxisCauseOfDeath-Example1",
+      "description" : "EntityAxisCauseOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EntityAxisCauseOfDeath-Example2"
+      },
+      "name" : "EntityAxisCauseOfDeath-Example2",
+      "description" : "EntityAxisCauseOfDeath-Example2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EntityAxisCauseOfDeath-Example3"
+      },
+      "name" : "EntityAxisCauseOfDeath-Example3",
+      "description" : "EntityAxisCauseOfDeath-Example3",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EntityAxisCauseOfDeath-Example4"
+      },
+      "name" : "EntityAxisCauseOfDeath-Example4",
+      "description" : "EntityAxisCauseOfDeath-Example3",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExaminerContacted-Example1"
+      },
+      "name" : "ExaminerContacted-Example1",
+      "description" : "AutopsyPerformedIndicator-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1287,6 +1707,90 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/FuneralHome-Example1"
+      },
+      "name" : "FuneralHome-Example1",
+      "description" : "FuneralHome-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/InjuryIncident-Example1"
+      },
+      "name" : "InjuryIncident-Example1",
+      "description" : "InjuryIncident-Example1 (with literal transportationRole)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/InjuryIncident-Example2"
+      },
+      "name" : "InjuryIncident-Example2",
+      "description" : "InjuryIncident-Example2 (with coded transportationRole)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InjuryLocation-Example1"
+      },
+      "name" : "InjuryLocation-Example1",
+      "description" : "InjuryLocation-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/InputRaceAndEthnicity-Example1"
+      },
+      "name" : "InputRaceAndEthnicity-Example1",
+      "description" : "InputRaceAndEthnicity-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MannerOfDeath-Example1"
+      },
+      "name" : "MannerOfDeath-Example1",
+      "description" : "MannerOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ManualUnderlyingCauseOfDeath-Example1"
+      },
+      "name" : "ManualUnderlyingCauseOfDeath-Example1",
+      "description" : "ManualUnderlyingCauseOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1296,6 +1800,30 @@
       "description" : "MessageHeader URI Values",
       "exampleBoolean" : false,
       "groupingId" : "CodeSystems"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/MortalityRosterBundle-Example1"
+      },
+      "name" : "MortalityRosterBundle-Example1",
+      "description" : "MortalityRosterBundle-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Mortician-Example1"
+      },
+      "name" : "Mortician-Example1",
+      "description" : "Mortician-Example1",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1333,6 +1861,42 @@
       "name" : "Parameters-Example1",
       "description" : "Parameters for Submission: Example",
       "exampleCanonical" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PlaceOfInjury-Example1"
+      },
+      "name" : "PlaceOfInjury-Example1",
+      "description" : "PlaceOfInjury-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RecordAxisCauseOfDeath-Example1"
+      },
+      "name" : "RecordAxisCauseOfDeath-Example1",
+      "description" : "RecordAxisCauseOfDeath-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RecordAxisCauseOfDeath-Example2"
+      },
+      "name" : "RecordAxisCauseOfDeath-Example2",
+      "description" : "RecordAxisCauseOfDeath-Example2",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1444,6 +2008,30 @@
       "name" : "SubmissionHeader-Example1",
       "description" : "Header for Submission - Example",
       "exampleCanonical" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/SurgeryDate-Example1"
+      },
+      "name" : "SurgeryDate-Example1",
+      "description" : "SurgeryDate-Example1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/TobaccoUseContributedToDeath-Example1"
+      },
+      "name" : "TobaccoUseContributedToDeath-Example1",
+      "description" : "TobaccoUseContributedToDeath-Example1",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

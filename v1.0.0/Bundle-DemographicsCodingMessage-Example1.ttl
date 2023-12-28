@@ -37,7 +37,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"DemographicsCodingHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;DemographicsCodingHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-DemographicsCodingHeader.html\">Demographics Coding Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_demographics_coding\">http://nchs.cdc.gov/vrdr_demographics_coding</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>SubmissionHeader-Example1</td><td>ok</td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"#Bundle_DemographicCodedContentBundle-Example1\">See above (http://www.example.org/fhir/Bundle/DemographicCodedContentBundle-Example1)</a></li><li><a href=\"#Parameters_Parameters-Example1\">See above (http://www.example.org/fhir/Parameters/Parameters-Example1)</a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"DemographicsCodingHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;DemographicsCodingHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-DemographicsCodingHeader.html\">Demographics Coding Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_demographics_coding\">http://nchs.cdc.gov/vrdr_demographics_coding</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>SubmissionHeader-Example1</td><td>ok</td></tr></table><p><b>focus</b>: <a href=\"#Bundle_DemographicCodedContentBundle-Example1\">See above (Bundle/DemographicCodedContentBundle-Example1)</a></p></div>"
   ] ; # 
   fhir:event [ fhir:v "http://nchs.cdc.gov/vrdr_demographics_coding"^^xsd:anyURI] ; # 
   fhir:destination ( [
@@ -51,11 +51,8 @@
      fhir:code [ fhir:v "ok" ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <http://www.example.org/fhir/Bundle/DemographicCodedContentBundle-Example1> ;
-     fhir:reference [ fhir:v "http://www.example.org/fhir/Bundle/DemographicCodedContentBundle-Example1" ]
-  ] [
-     fhir:link <http://www.example.org/fhir/Parameters/Parameters-Example1> ;
-     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/Parameters-Example1" ]
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/DemographicCodedContentBundle-Example1> ;
+     fhir:reference [ fhir:v "Bundle/DemographicCodedContentBundle-Example1" ]
   ] ) . # 
 
 <http://www.example.org/fhir/Parameters/Parameters-Example1> a fhir:Parameters ;
@@ -103,7 +100,325 @@
      fhir:value [ fhir:v "2020NY000182" ]
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
-  fhir:timestamp [ fhir:v "2020-10-20T14:48:35.401641-04:00"^^xsd:dateTime] . # 
+  fhir:timestamp [ fhir:v "2020-10-20T14:48:35.401641-04:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/CodedRaceAndEthnicity-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/CodedRaceAndEthnicity-Example1> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "InputRaceAndEthnicity-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicity" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "NCHS generated" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstOtherAsianLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Malaysian" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianOrAlaskanNativeLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Arikara" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/CodedRaceAndEthnicity-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "CodedRaceAndEthnicity-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "codedraceandethnicity" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "NCHS generated" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "White" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SecondEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Israeli" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A31" ] ;
+         fhir:display [ fhir:v "Arikara" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RaceRecode40" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-recode-40-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "AIAN and Asian" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-hispanic-origin-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "233" ] ;
+         fhir:display [ fhir:v "Chilean" ]
+       ] )
+     ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

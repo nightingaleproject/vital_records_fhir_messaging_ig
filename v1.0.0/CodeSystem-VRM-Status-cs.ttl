@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">manualCauseOfDeathCoding<a name=\"VRM-Status-cs-manualCauseOfDeathCoding\"> </a></td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualDemographicCoding<a name=\"VRM-Status-cs-manualDemographicCoding\"> </a></td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">noCodingNeeded_Duplicate<a name=\"VRM-Status-cs-noCodingNeeded_Duplicate\"> </a></td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualCodingCanceled_Update<a name=\"VRM-Status-cs-manualCodingCanceled_Update\"> </a></td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualCodingCanceled_Void<a name=\"VRM-Status-cs-manualCodingCanceled_Void\"> </a></td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "StatusCS"] ; # 
   fhir:title [ fhir:v "Status Codes Values"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-12-28T11:01:10-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-28T12:14:20-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;

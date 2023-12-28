@@ -39,7 +39,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"UpdateHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;UpdateHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-UpdateHeader.html\">Death Message Update Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_submission_update\">http://nchs.cdc.gov/vrdr_submission_update</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"#Bundle_DeathCertificateDocument-Example1\">See above (http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1)</a></li><li><a href=\"#Parameters_Parameters-Example1\">See above (http://www.example.org/fhir/Parameters/Parameters-Example1)</a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"UpdateHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;UpdateHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-UpdateHeader.html\">Death Message Update Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_submission_update\">http://nchs.cdc.gov/vrdr_submission_update</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: <a href=\"#Bundle_DeathCertificateDocument-Example1\">See above (Bundle/DeathCertificateDocument-Example1)</a></p></div>"
   ] ; # 
   fhir:event [ fhir:v "http://nchs.cdc.gov/vrdr_submission_update"^^xsd:anyURI] ; # 
   fhir:destination ( [
@@ -49,11 +49,8 @@
      fhir:endpoint [ fhir:v "https://sos.ny.gov/vitalrecords"^^xsd:anyURI ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1> ;
-     fhir:reference [ fhir:v "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1" ]
-  ] [
-     fhir:link <http://www.example.org/fhir/Parameters/Parameters-Example1> ;
-     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/Parameters-Example1" ]
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/DeathCertificateDocument-Example1> ;
+     fhir:reference [ fhir:v "Bundle/DeathCertificateDocument-Example1" ]
   ] ) . # 
 
 <http://www.example.org/fhir/Parameters/Parameters-Example1> a fhir:Parameters ;
@@ -103,14 +100,101 @@
   fhir:type [ fhir:v "document"] ; # 
   fhir:timestamp [ fhir:v "2020-10-20T14:48:35.401641-04:00"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Composition/DeathCertificate-Example1"^^xsd:anyURI ] ;
-     fhir:resource ( <http://www.example.org/fhir/Composition/DeathCertificate-Example1> )
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Bundle/DeathCertificate-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Bundle/DeathCertificate-Example1> )
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/Decedent-Example1"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Patient/Decedent-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/RelatedPerson/DecedentFather-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/RelatedPerson/DecedentFather-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/RelatedPerson/DecedentMother-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/RelatedPerson/DecedentMother-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/RelatedPerson/DecedentSpouse-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/RelatedPerson/DecedentSpouse-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentAge-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentAge-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifier-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/BirthRecordIdentifier-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentEducationLevel-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentEducationLevel-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentMilitaryService-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentMilitaryService-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentUsualWork-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentUsualWork-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/EmergingIssues-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/EmergingIssues-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentPregnancyStatus-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentPregnancyStatus-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/TobaccoUseContributedToDeath-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/TobaccoUseContributedToDeath-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DeathDate-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DeathDate-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/SurgeryDate-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/SurgeryDate-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/ExaminerContacted-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/ExaminerContacted-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/MannerOfDeath-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/MannerOfDeath-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/DeathLocation-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Location/DeathLocation-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/InjuryLocation-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Location/InjuryLocation-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/InjuryIncident-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/InjuryIncident-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Practitioner/Certifier-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Practitioner/Certifier-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/DeathCertification-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/DeathCertification-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/CauseOfDeathPart2-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/CauseOfDeathPart2-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/DispositionLocation-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Location/DispositionLocation-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/FuneralHome-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/FuneralHome-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/DecedentDispositionMethod-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/DecedentDispositionMethod-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/AutopsyPerformedIndicator-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/AutopsyPerformedIndicator-Example1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Practitioner/Mortician-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Practitioner/Mortician-Example1> )
   ] ) . # 
 
-<http://www.example.org/fhir/Composition/DeathCertificate-Example1> a fhir:Composition ;
+<http://www.example.org/fhir/Bundle/DeathCertificate-Example1> a fhir:Composition ;
   fhir:id [ fhir:v "DeathCertificate-Example1"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -155,13 +239,17 @@
   ] ; # 
   fhir:date [ fhir:v "2020-11-15T16:39:54-05:00"^^xsd:dateTime] ; # 
   fhir:author ( [
-     fhir:type [ fhir:v "Author"^^xsd:anyURI ] ;
-     fhir:display [ fhir:v "Display" ]
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
   ] ) ; # 
   fhir:title [ fhir:v "Death Certificate"] ; # 
   fhir:attester ( [
      fhir:mode [ fhir:v "legal" ] ;
-     fhir:time [ fhir:v "2020-11-14T16:39:40-05:00"^^xsd:dateTime ]
+     fhir:time [ fhir:v "2020-11-14T16:39:40-05:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+     ]
   ] ) ; # 
   fhir:event ( [
      fhir:code ( [
@@ -172,8 +260,8 @@
        ] )
      ] ) ;
      fhir:detail ( [
-       fhir:type [ fhir:v "Procedure"^^xsd:anyURI ] ;
-       fhir:display [ fhir:v "Procedure" ]
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example1> ;
+       fhir:reference [ fhir:v "Procedure/DeathCertification-Example1" ]
      ] )
   ] ) ; # 
   fhir:section ( [
@@ -186,6 +274,36 @@
      fhir:entry ( [
        fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
        fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentFather-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentFather-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentMother-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentMother-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentSpouse-Example1> ;
+       fhir:reference [ fhir:v "RelatedPerson/DecedentSpouse-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentAge-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentAge-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/BirthRecordIdentifier-Example1> ;
+       fhir:reference [ fhir:v "Observation/BirthRecordIdentifier-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentEducationLevel-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentEducationLevel-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentMilitaryService-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentMilitaryService-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentUsualWork-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentUsualWork-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InputRaceAndEthnicity-Example1> ;
+       fhir:reference [ fhir:v "Observation/InputRaceAndEthnicity-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EmergingIssues-Example1> ;
+       fhir:reference [ fhir:v "Observation/EmergingIssues-Example1" ]
      ] )
   ] [
      fhir:code [
@@ -194,10 +312,34 @@
          fhir:code [ fhir:v "DeathInvestigation" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/ExaminerContacted-Example1> ;
+       fhir:reference [ fhir:v "Observation/ExaminerContacted-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentPregnancyStatus-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentPregnancyStatus-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/TobaccoUseContributedToDeath-Example1> ;
+       fhir:reference [ fhir:v "Observation/TobaccoUseContributedToDeath-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/AutopsyPerformedIndicator-Example1> ;
+       fhir:reference [ fhir:v "Observation/AutopsyPerformedIndicator-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DeathLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/DeathLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/InjuryLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/InjuryLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InjuryIncident-Example1> ;
+       fhir:reference [ fhir:v "Observation/InjuryIncident-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DeathDate-Example1> ;
+       fhir:reference [ fhir:v "Observation/DeathDate-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/SurgeryDate-Example1> ;
+       fhir:reference [ fhir:v "Observation/SurgeryDate-Example1" ]
+     ] )
   ] [
      fhir:code [
        fhir:coding ( [
@@ -205,10 +347,25 @@
          fhir:code [ fhir:v "DeathCertification" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example1> ;
+       fhir:reference [ fhir:v "Procedure/DeathCertification-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/MannerOfDeath-Example1> ;
+       fhir:reference [ fhir:v "Observation/MannerOfDeath-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example1> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example2> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example2" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart2-Example1> ;
+       fhir:reference [ fhir:v "Observation/CauseOfDeathPart2-Example1" ]
+     ] )
   ] [
      fhir:code [
        fhir:coding ( [
@@ -216,10 +373,19 @@
          fhir:code [ fhir:v "DecedentDisposition" ]
        ] )
      ] ;
-     fhir:text [
-       fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
-     ]
+     fhir:entry ( [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DispositionLocation-Example1> ;
+       fhir:reference [ fhir:v "Location/DispositionLocation-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Organization/FuneralHome-Example1> ;
+       fhir:reference [ fhir:v "Organization/FuneralHome-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentDispositionMethod-Example1> ;
+       fhir:reference [ fhir:v "Observation/DecedentDispositionMethod-Example1" ]
+     ] [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Mortician-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Mortician-Example1" ]
+     ] )
   ] ) . # 
 
 <http://www.example.org/fhir/Patient/Decedent-Example1> a fhir:Patient ;
@@ -350,6 +516,1241 @@
      fhir:name [
        fhir:text [ fhir:v "Joe Smith" ]
      ]
+  ] ) . # 
+
+<http://www.example.org/fhir/RelatedPerson/DecedentFather-Example1> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "DecedentFather-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-father"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-father>
+     ] )
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FTH" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Decedent Dad" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "John" ] ) ;
+     fhir:suffix ( [ fhir:v "Sr" ] )
+  ] ) . # 
+
+<http://www.example.org/fhir/RelatedPerson/DecedentMother-Example1> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "DecedentMother-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-mother"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-mother>
+     ] )
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MTH" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "maiden" ] ;
+     fhir:text [ fhir:v "Decedent Mom" ] ;
+     fhir:family [ fhir:v "Suzette" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) . # 
+
+<http://www.example.org/fhir/RelatedPerson/DecedentSpouse-Example1> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "DecedentSpouse-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-spouse"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-spouse>
+     ] )
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SPS" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "maiden" ] ;
+     fhir:text [ fhir:v "Decedent Spouse" ] ;
+     fhir:family [ fhir:v "Gazette" ] ;
+     fhir:given ( [ fhir:v "Samuel" ] ) ;
+     fhir:suffix ( [ fhir:v "III" ] )
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/DecedentAge-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentAge-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:39016-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "39016-1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "42"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "years" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "a" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/InputRaceAndEthnicity-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "InputRaceAndEthnicity-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicity" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "NCHS generated" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstOtherAsianLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Malaysian" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianOrAlaskanNativeLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Arikara" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/BirthRecordIdentifier-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "BirthRecordIdentifier-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-birth-record-identifier"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-birth-record-identifier>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ] ;
+       fhir:display [ fhir:v "Birth registry number" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [ fhir:v "717171"] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21842-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21842-0" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "YC" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:80904-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "80904-6" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1961"^^xsd:gYear ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/DecedentEducationLevel-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentEducationLevel-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80913-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80913-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EducationLevel"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SEC" ] ;
+       fhir:display [ fhir:v "Some secondary or high school education" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/DecedentMilitaryService-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentMilitaryService-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:55280-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "55280-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/DecedentUsualWork-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentUsualWork-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21843-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21843-8" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "secretary" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21844-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21844-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "State agency" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/EmergingIssues-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "EmergingIssues-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-emerging-issues"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-emerging-issues>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "emergingissues" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EmergingIssue1_1" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "H" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EmergingIssue1_2" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "I" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EmergingIssue8_1" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Hi 8_1" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EmergingIssue20" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Hi 20_1" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/DecedentPregnancyStatus-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentPregnancyStatus-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69442-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69442-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2" ] ;
+           fhir:display [ fhir:v "Edit Failed, Data Queried, but not Verified" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-pregnancy-status-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Pregnant at time of death" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/TobaccoUseContributedToDeath-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "TobaccoUseContributedToDeath-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69443-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69443-0" ] ;
+       fhir:display [ fhir:v "Did tobacco use contribute to death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:373066001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "373066001" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/DeathDate-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DeathDate-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:81956-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81956-5" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-11-12T16:39:40-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:dateTime ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "12"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2020"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "11"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:time ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "unknown" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:80616-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "80616-6" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2020-11-13T16:39:40-05:00"^^xsd:dateTime ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:58332-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "58332-8" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:16983000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "16983000" ] ;
+         fhir:display [ fhir:v "Death in hospital" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/SurgeryDate-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "SurgeryDate-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-surgery-date"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-surgery-date>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80992-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80992-1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-11-12"^^xsd:date] . # 
+
+<http://www.example.org/fhir/Observation/ExaminerContacted-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "ExaminerContacted-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:74497-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "74497-9" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/MannerOfDeath-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "MannerOfDeath-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69449-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69449-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:38605008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38605008" ] ;
+       fhir:display [ fhir:v "Natural death" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Location/DeathLocation-Example1> a fhir:Location ;
+  fhir:id [ fhir:v "DeathLocation-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location>
+     ] )
+  ] ; # 
+  fhir:name [ fhir:v "Pecan Grove Nursing Home"] ; # 
+  fhir:description [ fhir:v "nursing home"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "death" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:city [ fhir:v "Albany" ] ;
+     fhir:state [ fhir:v "NY" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "-77.050636"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "38.889248"^^xsd:decimal ]
+  ] . # 
+
+<http://www.example.org/fhir/Location/InjuryLocation-Example1> a fhir:Location ;
+  fhir:id [ fhir:v "InjuryLocation-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-location>
+     ] )
+  ] ; # 
+  fhir:name [ fhir:v "Home"] ; # 
+  fhir:description [ fhir:v "5590 Lockwood Drive 20621 US"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "injury" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:text [ fhir:v "5590 Lockwood Drive 20621 US" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/InjuryIncident-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "InjuryIncident-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11374-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11374-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-11-02T13:00:00-05:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "drug toxicity" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69444-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69444-8" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69450-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69450-5" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Home" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69451-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69451-3" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] ) ;
+       fhir:text [ fhir:v "Hoverboard Rider" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Practitioner/Certifier-Example1> a fhir:Practitioner ;
+  fhir:id [ fhir:v "Certifier-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier>
+     ] )
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9941339100" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Black" ] ;
+     fhir:given ( [ fhir:v "Jim" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "44 South Street" ] ) ;
+     fhir:city [ fhir:v "Bird in Hand" ] ;
+     fhir:state [ fhir:v "PA" ] ;
+     fhir:postalCode [ fhir:v "17505" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:434641000124105 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "434641000124105" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Procedure/DeathCertification-Example1> a fhir:Procedure ;
+  fhir:id [ fhir:v "DeathCertification-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification>
+     ] )
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "180" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:103693007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "103693007" ] ;
+       fhir:display [ fhir:v "Diagnostic procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:308646001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308646001" ] ;
+       fhir:display [ fhir:v "Death certification" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performed [ fhir:v "2020-11-14T16:39:40-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] ) ;
+       fhir:text [ fhir:v "Nurse Practitioner" ]
+     ] ;
+     fhir:actor [
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+       fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "CauseOfDeathPart1-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69453-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69453-9" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Cardiopulmonary arrest" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "lineNumber" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69440-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69440-6" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "4 hours" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/CauseOfDeathPart1-Example2> a fhir:Observation ;
+  fhir:id [ fhir:v "CauseOfDeathPart1-Example2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69453-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69453-9" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Eclampsia" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "lineNumber" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2"^^xsd:integer ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69440-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69440-6" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "3 months" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/CauseOfDeathPart2-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "CauseOfDeathPart2-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part2"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part2>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69441-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69441-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "hypertensive heart disease" ]
+  ] . # 
+
+<http://www.example.org/fhir/Location/DispositionLocation-Example1> a fhir:Location ;
+  fhir:id [ fhir:v "DispositionLocation-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-disposition-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-disposition-location>
+     ] )
+  ] ; # 
+  fhir:name [ fhir:v "Rosewood Cemetary"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "disposition" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "303 Rosewood Ave" ] ) ;
+     fhir:city [ fhir:v "Danville" ] ;
+     fhir:state [ fhir:v "VA" ] ;
+     fhir:postalCode [ fhir:v "24541" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/location-physical-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "si" ] ;
+       fhir:display [ fhir:v "Site" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Organization/FuneralHome-Example1> a fhir:Organization ;
+  fhir:id [ fhir:v "FuneralHome-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home>
+     ] )
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-organization-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "funeralhome" ] ;
+       fhir:display [ fhir:v "Funeral Home" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Lancaster Funeral Home and Crematory"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "211 High Street" ] ) ;
+     fhir:city [ fhir:v "Lancaster" ] ;
+     fhir:state [ fhir:v "PA" ] ;
+     fhir:postalCode [ fhir:v "17573" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/DecedentDispositionMethod-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "DecedentDispositionMethod-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80905-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80905-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Mortician-Example1> ;
+     fhir:reference [ fhir:v "Practitioner/Mortician-Example1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:449971000124106 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "449971000124106" ] ;
+       fhir:display [ fhir:v "Burial" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/AutopsyPerformedIndicator-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "AutopsyPerformedIndicator-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85699-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85699-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Patient/Decedent-Example1> ;
+     fhir:reference [ fhir:v "Patient/Decedent-Example1" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69436-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69436-4" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Practitioner/Mortician-Example1> a fhir:Practitioner ;
+  fhir:id [ fhir:v "Mortician-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9941339100" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Ronald" ] [ fhir:v "Q" ] )
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

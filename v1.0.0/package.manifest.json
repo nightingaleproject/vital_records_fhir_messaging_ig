@@ -1,6 +1,6 @@
 {
-  "version" : "1.0.1",
+  "version" : "1.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20231228110045",
+  "date" : "20231228121346",
   "name" : "vital-records-fhir-messaging"
 }

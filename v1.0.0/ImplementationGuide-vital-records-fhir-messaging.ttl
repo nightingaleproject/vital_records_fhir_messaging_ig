@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VitalRecordsFHIRMessagingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "VitalRecordsFHIRMessagingIG"] ; # 
   fhir:title [ fhir:v "Vital Records FHIR Messaging (VRFM) IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-28T11:01:10-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-28T12:14:20-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;
@@ -68,7 +68,7 @@
        fhir:link <http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.vrdr" ] ;
-     fhir:version [ fhir:v "2.2.0" ]
+     fhir:version [ fhir:v "current" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -658,6 +658,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/ActivityAtTimeOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/ActivityAtTimeOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "ActivityAtTimeOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "ActivityAtTimeOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -711,6 +723,42 @@
          fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters"^^xsd:anyURI ;
          fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/AutomatedUnderlyingCauseOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/AutomatedUnderlyingCauseOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "AutomatedUnderlyingCauseOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "AutomatedUnderlyingCauseOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/AutopsyPerformedIndicator-Example1> ;
+         fhir:reference [ fhir:v "Observation/AutopsyPerformedIndicator-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "AutopsyPerformedIndicator-Example1" ] ;
+       fhir:description [ fhir:v "AutopsyPerformedIndicator-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/BirthRecordIdentifier-Example1> ;
+         fhir:reference [ fhir:v "Observation/BirthRecordIdentifier-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "BirthRecordIdentifier-Example1" ] ;
+       fhir:description [ fhir:v "BirthRecordIdentifier-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -835,6 +883,78 @@
          fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"^^xsd:anyURI ;
          fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example1> ;
+         fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "CauseOfDeathPart1-Example1" ] ;
+       fhir:description [ fhir:v "CauseOfDeathPart1-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart1-Example2> ;
+         fhir:reference [ fhir:v "Observation/CauseOfDeathPart1-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "CauseOfDeathPart1-Example2" ] ;
+       fhir:description [ fhir:v "CauseOfDeathPart1-Example2" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CauseOfDeathPart2-Example1> ;
+         fhir:reference [ fhir:v "Observation/CauseOfDeathPart2-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "CauseOfDeathPart2-Example1" ] ;
+       fhir:description [ fhir:v "CauseOfDeathPart2-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Certifier-Example1> ;
+         fhir:reference [ fhir:v "Practitioner/Certifier-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "Certifier-Example1" ] ;
+       fhir:description [ fhir:v "Certifier-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/CodedRaceAndEthnicity-Example1> ;
+         fhir:reference [ fhir:v "Observation/CodedRaceAndEthnicity-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "CodedRaceAndEthnicity-Example1" ] ;
+       fhir:description [ fhir:v "CodedRaceAndEthnicity-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Parameters" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Parameters/CodingStatusValues-Example1> ;
+         fhir:reference [ fhir:v "Parameters/CodingStatusValues-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "CodingStatusValues-Example1" ] ;
+       fhir:description [ fhir:v "CodingStatusValues-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -977,6 +1097,102 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example1> ;
+         fhir:reference [ fhir:v "Procedure/DeathCertification-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DeathCertification-Example1" ] ;
+       fhir:description [ fhir:v "DeathCertification-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Procedure/DeathCertification-Example2> ;
+         fhir:reference [ fhir:v "Procedure/DeathCertification-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "DeathCertification-Example2" ] ;
+       fhir:description [ fhir:v "DeathCertification-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DeathDate-Example1> ;
+         fhir:reference [ fhir:v "Observation/DeathDate-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DeathDate-Example1" ] ;
+       fhir:description [ fhir:v "DeathDate-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DeathDate-Example2> ;
+         fhir:reference [ fhir:v "Observation/DeathDate-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "DeathDate-Example2" ] ;
+       fhir:description [ fhir:v "DeathDate-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DeathDate-Example3> ;
+         fhir:reference [ fhir:v "Observation/DeathDate-Example3" ]
+       ] ;
+       fhir:name [ fhir:v "DeathDate-Example3" ] ;
+       fhir:description [ fhir:v "DeathDate-Example3 - Stripped down for Mortality Roster" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DeathLocation-Example1> ;
+         fhir:reference [ fhir:v "Location/DeathLocation-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DeathLocation-Example1" ] ;
+       fhir:description [ fhir:v "DeathLocation-Example1 - State = Jurisdiction" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DeathLocation-Example2> ;
+         fhir:reference [ fhir:v "Location/DeathLocation-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "DeathLocation-Example2" ] ;
+       fhir:description [ fhir:v "DeathLocation-Example2 - State != Jurisdiction" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DeathLocation-Example3> ;
+         fhir:reference [ fhir:v "Location/DeathLocation-Example3" ]
+       ] ;
+       fhir:name [ fhir:v "DeathLocation-Example3" ] ;
+       fhir:description [ fhir:v "DeathLocation-Example3 - Stripped Down for Mortality Roster" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
@@ -1054,6 +1270,126 @@
        ] ;
        fhir:name [ fhir:v "Decedent-Example3" ] ;
        fhir:description [ fhir:v "Decedent-Example3 - Stripped down for Mortality Roster" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentAge-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentAge-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentAge-Example1" ] ;
+       fhir:description [ fhir:v "DecedentAge-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentDispositionMethod-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentDispositionMethod-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentDispositionMethod-Example1" ] ;
+       fhir:description [ fhir:v "DecedentDispositionMethod-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentEducationLevel-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentEducationLevel-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentEducationLevel-Example1" ] ;
+       fhir:description [ fhir:v "DeathDate-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentFather-Example1> ;
+         fhir:reference [ fhir:v "RelatedPerson/DecedentFather-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentFather-Example1" ] ;
+       fhir:description [ fhir:v "DecedentFather-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentMilitaryService-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentMilitaryService-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentMilitaryService-Example1" ] ;
+       fhir:description [ fhir:v "DecedentMilitaryService-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentMother-Example1> ;
+         fhir:reference [ fhir:v "RelatedPerson/DecedentMother-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentMother-Example1" ] ;
+       fhir:description [ fhir:v "DecedentFather-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentPregnancyStatus-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentPregnancyStatus-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentPregnancyStatus-Example1" ] ;
+       fhir:description [ fhir:v "DecedentPregnancyStatus-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/RelatedPerson/DecedentSpouse-Example1> ;
+         fhir:reference [ fhir:v "RelatedPerson/DecedentSpouse-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentSpouse-Example1" ] ;
+       fhir:description [ fhir:v "DecedentSpouse-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentUsualWork-Example1> ;
+         fhir:reference [ fhir:v "Observation/DecedentUsualWork-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentUsualWork-Example1" ] ;
+       fhir:description [ fhir:v "DecedentUsualWork-Example1 - without coded values" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/DecedentUsualWork-Example2> ;
+         fhir:reference [ fhir:v "Observation/DecedentUsualWork-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "DecedentUsualWork-Example2" ] ;
+       fhir:description [ fhir:v "DecedentUsualWork-Example2 - with coded values" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1182,6 +1518,90 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/DispositionLocation-Example1> ;
+         fhir:reference [ fhir:v "Location/DispositionLocation-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "DispositionLocation-Example1" ] ;
+       fhir:description [ fhir:v "DispositionLocation-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EmergingIssues-Example1> ;
+         fhir:reference [ fhir:v "Observation/EmergingIssues-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "EmergingIssues-Example1" ] ;
+       fhir:description [ fhir:v "EmergingIssues-Example1 make sure it is example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EntityAxisCauseOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/EntityAxisCauseOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "EntityAxisCauseOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "EntityAxisCauseOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EntityAxisCauseOfDeath-Example2> ;
+         fhir:reference [ fhir:v "Observation/EntityAxisCauseOfDeath-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "EntityAxisCauseOfDeath-Example2" ] ;
+       fhir:description [ fhir:v "EntityAxisCauseOfDeath-Example2" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EntityAxisCauseOfDeath-Example3> ;
+         fhir:reference [ fhir:v "Observation/EntityAxisCauseOfDeath-Example3" ]
+       ] ;
+       fhir:name [ fhir:v "EntityAxisCauseOfDeath-Example3" ] ;
+       fhir:description [ fhir:v "EntityAxisCauseOfDeath-Example3" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/EntityAxisCauseOfDeath-Example4> ;
+         fhir:reference [ fhir:v "Observation/EntityAxisCauseOfDeath-Example4" ]
+       ] ;
+       fhir:name [ fhir:v "EntityAxisCauseOfDeath-Example4" ] ;
+       fhir:description [ fhir:v "EntityAxisCauseOfDeath-Example3" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/ExaminerContacted-Example1> ;
+         fhir:reference [ fhir:v "Observation/ExaminerContacted-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "ExaminerContacted-Example1" ] ;
+       fhir:description [ fhir:v "AutopsyPerformedIndicator-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1238,6 +1658,90 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Organization/FuneralHome-Example1> ;
+         fhir:reference [ fhir:v "Organization/FuneralHome-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "FuneralHome-Example1" ] ;
+       fhir:description [ fhir:v "FuneralHome-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InjuryIncident-Example1> ;
+         fhir:reference [ fhir:v "Observation/InjuryIncident-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "InjuryIncident-Example1" ] ;
+       fhir:description [ fhir:v "InjuryIncident-Example1 (with literal transportationRole)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InjuryIncident-Example2> ;
+         fhir:reference [ fhir:v "Observation/InjuryIncident-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "InjuryIncident-Example2" ] ;
+       fhir:description [ fhir:v "InjuryIncident-Example2 (with coded transportationRole)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Location/InjuryLocation-Example1> ;
+         fhir:reference [ fhir:v "Location/InjuryLocation-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "InjuryLocation-Example1" ] ;
+       fhir:description [ fhir:v "InjuryLocation-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/InputRaceAndEthnicity-Example1> ;
+         fhir:reference [ fhir:v "Observation/InputRaceAndEthnicity-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "InputRaceAndEthnicity-Example1" ] ;
+       fhir:description [ fhir:v "InputRaceAndEthnicity-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/MannerOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/MannerOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "MannerOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "MannerOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/ManualUnderlyingCauseOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/ManualUnderlyingCauseOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "ManualUnderlyingCauseOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "ManualUnderlyingCauseOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -1248,6 +1752,30 @@
        fhir:description [ fhir:v "MessageHeader URI Values" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "CodeSystems" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/MortalityRosterBundle-Example1> ;
+         fhir:reference [ fhir:v "Bundle/MortalityRosterBundle-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "MortalityRosterBundle-Example1" ] ;
+       fhir:description [ fhir:v "MortalityRosterBundle-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Practitioner/Mortician-Example1> ;
+         fhir:reference [ fhir:v "Practitioner/Mortician-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "Mortician-Example1" ] ;
+       fhir:description [ fhir:v "Mortician-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1291,6 +1819,42 @@
          fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
          fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/PlaceOfInjury-Example1> ;
+         fhir:reference [ fhir:v "Observation/PlaceOfInjury-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "PlaceOfInjury-Example1" ] ;
+       fhir:description [ fhir:v "PlaceOfInjury-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/RecordAxisCauseOfDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/RecordAxisCauseOfDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "RecordAxisCauseOfDeath-Example1" ] ;
+       fhir:description [ fhir:v "RecordAxisCauseOfDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/RecordAxisCauseOfDeath-Example2> ;
+         fhir:reference [ fhir:v "Observation/RecordAxisCauseOfDeath-Example2" ]
+       ] ;
+       fhir:name [ fhir:v "RecordAxisCauseOfDeath-Example2" ] ;
+       fhir:description [ fhir:v "RecordAxisCauseOfDeath-Example2" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1414,6 +1978,30 @@
          fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"^^xsd:anyURI ;
          fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/SurgeryDate-Example1> ;
+         fhir:reference [ fhir:v "Observation/SurgeryDate-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "SurgeryDate-Example1" ] ;
+       fhir:description [ fhir:v "SurgeryDate-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Observation/TobaccoUseContributedToDeath-Example1> ;
+         fhir:reference [ fhir:v "Observation/TobaccoUseContributedToDeath-Example1" ]
+       ] ;
+       fhir:name [ fhir:v "TobaccoUseContributedToDeath-Example1" ] ;
+       fhir:description [ fhir:v "TobaccoUseContributedToDeath-Example1" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

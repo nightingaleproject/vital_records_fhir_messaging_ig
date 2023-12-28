@@ -1,6 +1,6 @@
 {
   "package": "vital-records-fhir-messaging",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -80,6 +80,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/AliasStatus": [
+      "Bundle.meta"
+    ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1": [
       "Bundle.entry.resource.identifier",
       "Bundle.identifier"
@@ -90,7 +93,13 @@
     ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag": [
       "Bundle.entry.resource.entry.resource.maritalStatus",
+      "Bundle.entry.resource.entry.resource.valueCodeableConcept",
+      "Bundle.entry.resource.entry.resource.valueQuantity",
       "Bundle.entry.resource.maritalStatus",
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Bundle.entry.resource.valueQuantity",
+      "Observation.valueCodeableConcept",
+      "Observation.valueQuantity",
       "Patient.maritalStatus"
     ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber": [
@@ -112,6 +121,9 @@
       "Bundle.entry.resource.entry.resource",
       "Composition"
     ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/Location-Jurisdiction-Id": [
+      "Location.address.state"
+    ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath": [
       "Bundle.entry.resource",
       "Bundle.entry.resource.entry.resource",
@@ -122,6 +134,11 @@
       "Bundle.entry.resource.entry.resource.birthDate",
       "Patient.birthDate"
     ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime": [
+      "Bundle.entry.resource.entry.resource.valueDateTime",
+      "Bundle.entry.resource.valueDateTime",
+      "Observation.valueDateTime"
+    ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/PostDirectional": [
       "Patient.address"
     ],
@@ -131,6 +148,7 @@
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/ReplaceStatus": [
       "Bundle.entry.resource",
       "Bundle.entry.resource.entry.resource",
+      "Bundle.meta",
       "Composition"
     ],
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive": [
