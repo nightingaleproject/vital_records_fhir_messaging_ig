@@ -7,7 +7,6 @@ Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
 * insert RequireMetaProfile(OperationOutcome)
 
-
 Profile:  SubmissionHeader
 Parent: MessageHeader
 Description:   "Death Message Submission Header"
@@ -16,7 +15,11 @@ Title:  "Death Message Header"
 * insert RequireMetaProfile(SubmissionHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(Bundle) // DeathCertificateDocument
+// * focus contains 
+//     parameters 1..1 and payload 1..1 
+// * focus[parameters] only Reference (Parameters)
+// * focus[payload] only Reference (Bundle)
+
 
 Profile:  UpdateHeader
 Parent: MessageHeader
@@ -26,7 +29,7 @@ Title:  "Death Message Update Header"
 * insert RequireMetaProfile(UpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(Bundle) // DeathCertificateDocument
+// * focus only Reference(Bundle) // DeathCertificateDocument
 
 Profile:  VoidHeader
 Parent: MessageHeader
@@ -48,7 +51,7 @@ Description:   "Demographics Coding Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference( Bundle )
+// * focus only Reference( Bundle )
 
 Profile:  StatusHeader
 Parent: MessageHeader
@@ -72,7 +75,7 @@ Description:   "Cause of Death Coding Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference(Bundle )
+// * focus only Reference(Bundle )
 
 Profile:  DemographicsCodingUpdateHeader
 Parent: MessageHeader
@@ -84,7 +87,7 @@ Description:   "Demographics Coding Update Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference( Bundle )
+// * focus only Reference( Bundle )
 
 Profile:  CauseOfDeathCodingUpdateHeader
 Parent: MessageHeader
@@ -96,7 +99,7 @@ Description:   "Cause Of Death Death Coding Update Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
-* focus only Reference(Bundle )
+// * focus only Reference(Bundle )
 
 Profile:  AliasHeader
 Parent: MessageHeader

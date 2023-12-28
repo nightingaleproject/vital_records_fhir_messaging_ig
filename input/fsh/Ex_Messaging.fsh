@@ -37,7 +37,8 @@ Description: "Acknowledgement Header: Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
-* focus = Reference(Parameters-Example1)   // Is this needed?  Same parameters as for VoidHeader...
+// * focus = Reference(Parameters-Example1)   // Is this needed?  Same parameters as for VoidHeader...
+* insert addReference(focus, Parameters, Parameters-Example1)
 
 Instance: VoidHeader-Example1
 InstanceOf: VoidHeader
@@ -46,7 +47,8 @@ Description: "Parameters for Void: Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus = Reference(VoidParameters-Example1)
+// * focus = Reference(VoidParameters-Example1)
+* insert addReference(focus, Parameters, VoidParameters-Example1)
 
 Instance: StatusHeader-Example1
 InstanceOf: StatusHeader
@@ -54,7 +56,9 @@ Usage: #example
 Description: "Parameters for Status: Example1"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_status"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus = Reference(StatusParameters-Example1)
+// * focus = Reference(StatusParameters-Example1)
+* insert addReference(focus, Parameters, StatusParameters-Example1)
+// * focus.reference = "http://www.example.org/fhir/Parameters/StatusParameters-Example1"
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -65,7 +69,9 @@ Description: "Header for Update: Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus.reference = "Bundle/DeathCertificateDocument-Example1"
+// * focus.reference = "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 
 Instance: SubmissionHeader-Example1
 InstanceOf: SubmissionHeader
@@ -74,7 +80,8 @@ Description: "Header for Submission - Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus.reference = "Bundle/DeathCertificateDocument-Example1"
+* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 
 Instance: CauseOfDeathCodingHeader-Example1
 InstanceOf: CauseOfDeathCodingHeader
@@ -84,7 +91,9 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -97,7 +106,9 @@ Description: "Header for Demographic Coding Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(DemographicCodedContentBundle-Example1)
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -109,7 +120,9 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -120,7 +133,9 @@ Usage: #example
 Description: "Header for Demographic Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* focus = Reference(DemographicCodedContentBundle-Example1)
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
@@ -133,8 +148,10 @@ Description: "Header for Extraction Error Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-* response.details = Reference(Outcome-Example1)
-* focus = Reference(Parameters-Example1)
+// * response.details = Reference(Outcome-Example1)
+* insert addReference(response.details, OperationOutcome, Outcome-Example1)
+// * focus = Reference(Parameters-Example1)
+* insert addReference(focus, Parameters, Parameters-Example1)
 
 Instance: Outcome-Example1
 InstanceOf: Outcome
@@ -215,7 +232,7 @@ Usage: #example
 Description: "Void message - example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, VoidHeader-Example1)
-* insert addentry(Parameters,VoidParameters-Example1 )
+* insert addentry(Parameters,VoidParameters-Example1)
 
 Instance: DeathRecordSubmissionMessage-Example1
 InstanceOf: DeathRecordSubmissionMessage
@@ -250,7 +267,8 @@ Description: "Alias Message Header- Example"
 //* eventUri = "http://nchs.cdc.gov/vrdr_alias"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* focus = Reference(AliasParameters-Example1)
+// * focus = Reference(AliasParameters-Example1)
+* insert addReference(focus, Parameters, AliasParameters-Example1)
 
 Instance: AliasParameters-Example1
 InstanceOf: AliasParameters

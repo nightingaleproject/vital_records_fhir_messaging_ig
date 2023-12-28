@@ -4,18 +4,38 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# we are just using the text field
-No code provided, and a code should be provided from the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship)
 
-#we know this can't be validated
-Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
-Code System URI 'urn:oid:2.16.840.1.114222.4.5.315' is unknown so the code cannot be validated
+# These are event IDs, basically operation identifiers, and aren't expected to be found in the bundle 
+INFORMATION: Bundle/AcknowledgementMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_acknowledgement' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CauseOfDeathCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CauseOfDeathCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/DeathRecordAliasMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_alias' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/DeathRecordVoidMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_void' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/DemographicsCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_demographics_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/DemographicsCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_demographics_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/ExtractionErrorMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_extraction_error' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/StatusMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_status' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/UpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_update' in the bundle (Bundle.entry[0].resource.event[x])
 
-# we don't need a codesystem, these are local
-A code with no system has no defined meaning. A system should be provided
+# Code not active -- not relevant to VRFM
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[0].resource/*Composition/DeathCertificate-Example2*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Composition/DeathCertificate-Example1: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
+INFORMATION: Composition/DeathCertificate-Example2: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
 
-# slicing  messages
-This element does not match any known slice defined in the profile http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document
-Entry 'http://example.org/fhir/Parameters/Parameters-Example1' isn't reachable by traversing from first Bundle entry
+# Open slicing
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# dom-6 -- this is probably an IG Publisher issue
+WARNING: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
