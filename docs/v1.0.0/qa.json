@@ -6,11 +6,11 @@
   "status" : "draft",
   "package-id" : "vital-records-fhir-messaging",
   "ig-ver" : "1.0.0",
-  "date" : "Thu, 28 Dec, 2023 12:14:20 -0500",
+  "date" : "Thu, 28 Dec, 2023 14:18:57 -0500",
   "errs" : 418,
   "warnings" : 765,
   "hints" : 223,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4256506840
+  "maxMemory" : 4520134384
 }

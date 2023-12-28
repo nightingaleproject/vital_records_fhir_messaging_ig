@@ -102,12 +102,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters",
+      "StructureDefinition-VRM-Outcome.html" : "Outcome Profile",
       "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
       "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
       "StructureDefinition-VRM-SubmissionHeader.html" : "Death Message Header",
       "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause Of Death Coding Update  Header",
       "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
+      "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters",
       "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
       "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
       "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
@@ -117,17 +118,16 @@
       "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
       "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
       "StructureDefinition-VRM-UpdateHeader.html" : "Death Message Update Header",
-      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-DeathRecordVoidMessage.html" : "Death Record Void Message",
       "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
       "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
       "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header",
       "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
-      "StructureDefinition-VRM-Outcome.html" : "Outcome Profile",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header"
     },
     {
@@ -257,8 +257,8 @@
       },
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters"
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
     }
   ]
 }

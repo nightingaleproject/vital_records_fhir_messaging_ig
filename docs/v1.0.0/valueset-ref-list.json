@@ -29,8 +29,8 @@
       },
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters"
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
     }
   ]
 }

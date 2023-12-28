@@ -3,7 +3,7 @@
 
 err = 418, warn = 765, info = 223
 IG Publisher Version: 1.5.8
-Generated Thu Dec 28 12:16:42 EST 2023. FHIR version 4.0.1 for vital-records-fhir-messaging#1.0.0 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
+Generated Thu Dec 28 14:22:53 EST 2023. FHIR version 4.0.1 for vital-records-fhir-messaging#1.0.0 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
  Build Errors : 1 / 0 / 0
  /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-AcknowledgementMessage-Example1 : 1 / 1 / 8
  /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CauseOfDeathCodedContentBundle-Example1 : 0 / 60 / 63

@@ -10,7 +10,7 @@
   <name value="VitalRecordsFHIRMessagingIG"/>
   <title value="Vital Records FHIR Messaging (VRFM) IG"/>
   <status value="draft"/>
-  <date value="2023-12-28T12:14:20-05:00"/>
+  <date value="2023-12-28T14:18:57-05:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -62,7 +62,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -289,7 +289,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
