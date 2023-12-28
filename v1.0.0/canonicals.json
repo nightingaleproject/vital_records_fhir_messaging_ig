@@ -1,0 +1,219 @@
+[
+  {
+    "id" : "VRM-MessageHeaderURI-cs",
+    "type" : "CodeSystem",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs",
+    "version" : "1.0.1",
+    "name" : "MessageHeaderURICS"
+  },
+  {
+    "id" : "VRM-Status-cs",
+    "type" : "CodeSystem",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+    "version" : "1.0.1",
+    "name" : "StatusCS"
+  },
+  {
+    "id" : "vital-records-fhir-messaging",
+    "type" : "ImplementationGuide",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging",
+    "version" : "1.0.1",
+    "name" : "VitalRecordsFHIRMessagingIG"
+  },
+  {
+    "id" : "VRM-AcknowledgementHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader",
+    "version" : "1.0.1",
+    "name" : "AcknowledgementHeader"
+  },
+  {
+    "id" : "VRM-AcknowledgementMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementMessage",
+    "version" : "1.0.1",
+    "name" : "AcknowledgementMessage"
+  },
+  {
+    "id" : "VRM-AliasHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasHeader",
+    "version" : "1.0.1",
+    "name" : "AliasHeader"
+  },
+  {
+    "id" : "VRM-AliasParameters",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters",
+    "version" : "1.0.1",
+    "name" : "AliasParameters"
+  },
+  {
+    "id" : "VRM-CauseOfDeathCodingHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingHeader",
+    "version" : "1.0.1",
+    "name" : "CauseOfDeathCodingHeader"
+  },
+  {
+    "id" : "VRM-CauseOfDeathCodingMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingMessage",
+    "version" : "1.0.1",
+    "name" : "CauseOfDeathCodingMessage"
+  },
+  {
+    "id" : "VRM-CauseOfDeathCodingUpdateHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader",
+    "version" : "1.0.1",
+    "name" : "CauseOfDeathCodingUpdateHeader"
+  },
+  {
+    "id" : "VRM-CauseOfDeathCodingUpdateMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage",
+    "version" : "1.0.1",
+    "name" : "CauseOfDeathCodingUpdateMessage"
+  },
+  {
+    "id" : "VRM-DeathRecordAliasMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordAliasMessage",
+    "version" : "1.0.1",
+    "name" : "DeathRecordAliasMessage"
+  },
+  {
+    "id" : "VRM-DeathRecordSubmissionMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordSubmissionMessage",
+    "version" : "1.0.1",
+    "name" : "DeathRecordSubmissionMessage"
+  },
+  {
+    "id" : "VRM-DeathRecordUpdateMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordUpdateMessage",
+    "version" : "1.0.1",
+    "name" : "DeathRecordUpdateMessage"
+  },
+  {
+    "id" : "VRM-DeathRecordVoidMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordVoidMessage",
+    "version" : "1.0.1",
+    "name" : "DeathRecordVoidMessage"
+  },
+  {
+    "id" : "VRM-DemographicsCodingHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingHeader",
+    "version" : "1.0.1",
+    "name" : "DemographicsCodingHeader"
+  },
+  {
+    "id" : "VRM-DemographicsCodingMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingMessage",
+    "version" : "1.0.1",
+    "name" : "DemographicsCodingMessage"
+  },
+  {
+    "id" : "VRM-DemographicsCodingUpdateHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateHeader",
+    "version" : "1.0.1",
+    "name" : "DemographicsCodingUpdateHeader"
+  },
+  {
+    "id" : "VRM-DemographicsCodingUpdateMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateMessage",
+    "version" : "1.0.1",
+    "name" : "DemographicsCodingUpdateMessage"
+  },
+  {
+    "id" : "VRM-ExtractionErrorHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-ExtractionErrorHeader",
+    "version" : "1.0.1",
+    "name" : "ExtractionErrorHeader"
+  },
+  {
+    "id" : "VRM-ExtractionErrorMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-ExtractionErrorMessage",
+    "version" : "1.0.1",
+    "name" : "ExtractionErrorMessage"
+  },
+  {
+    "id" : "VRM-MessageParameters",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters",
+    "version" : "1.0.1",
+    "name" : "MessageParameters"
+  },
+  {
+    "id" : "VRM-Outcome",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome",
+    "version" : "1.0.1",
+    "name" : "Outcome"
+  },
+  {
+    "id" : "VRM-StatusHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusHeader",
+    "version" : "1.0.1",
+    "name" : "StatusHeader"
+  },
+  {
+    "id" : "VRM-StatusMessage",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusMessage",
+    "version" : "1.0.1",
+    "name" : "StatusMessage"
+  },
+  {
+    "id" : "VRM-StatusParameters",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusParameters",
+    "version" : "1.0.1",
+    "name" : "StatusParameters"
+  },
+  {
+    "id" : "VRM-SubmissionHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader",
+    "version" : "1.0.1",
+    "name" : "SubmissionHeader"
+  },
+  {
+    "id" : "VRM-UpdateHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader",
+    "version" : "1.0.1",
+    "name" : "UpdateHeader"
+  },
+  {
+    "id" : "VRM-VoidHeader",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidHeader",
+    "version" : "1.0.1",
+    "name" : "VoidHeader"
+  },
+  {
+    "id" : "VRM-VoidParameters",
+    "type" : "StructureDefinition",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters",
+    "version" : "1.0.1",
+    "name" : "VoidParameters"
+  },
+  {
+    "id" : "VRM-Status-vs",
+    "type" : "ValueSet",
+    "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+    "version" : "1.0.1",
+    "name" : "StatusVS"
+  }
+]

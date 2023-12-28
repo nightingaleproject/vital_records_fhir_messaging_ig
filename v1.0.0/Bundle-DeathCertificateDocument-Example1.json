@@ -1,0 +1,276 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeathCertificateDocument-Example1",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document"]
+  },
+  "identifier" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber",
+      "valueString" : "000182"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1",
+      "valueString" : "000000000001"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2",
+      "valueString" : "100000000001"
+    }],
+    "system" : "http://nchs.cdc.gov/vrdr_id",
+    "value" : "2020NY000182"
+  },
+  "type" : "document",
+  "timestamp" : "2020-10-20T14:48:35.401641-04:00",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Composition/DeathCertificate-Example1",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "DeathCertificate-Example1",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"DeathCertificate-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;DeathCertificate-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Filing Format</b>: Electronic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-filing-format-cs.html\">Filing Formats CodeSystem</a>#electronic)</span></p><p><b>Replacement Status of a Death Record (deprecated)</b>: original record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-replace-status-cs.html\">Replacement Status of Death Record Submission</a>#original)</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: <span>: Display</span></p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td>2020-11-14 16:39:40-0500</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><span>: Procedure</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-filing-format-cs",
+            "code" : "electronic"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/ReplaceStatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-replace-status-cs",
+            "code" : "original"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField",
+        "valueString" : "State Specific Content"
+      }],
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "64297-5",
+          "display" : "Death certificate"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Decedent-Example1"
+      },
+      "date" : "2020-11-15T16:39:54-05:00",
+      "author" : [{
+        "type" : "Author",
+        "display" : "Display"
+      }],
+      "title" : "Death Certificate",
+      "attester" : [{
+        "mode" : "legal",
+        "time" : "2020-11-14T16:39:40-05:00"
+      }],
+      "event" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "103693007"
+          }]
+        }],
+        "detail" : [{
+          "type" : "Procedure",
+          "display" : "Procedure"
+        }]
+      }],
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+            "code" : "DecedentDemographics"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/Decedent-Example1"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+            "code" : "DeathInvestigation"
+          }]
+        },
+        "text" : {
+          "status" : "empty",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+            "code" : "DeathCertification"
+          }]
+        },
+        "text" : {
+          "status" : "empty",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+            "code" : "DecedentDisposition"
+          }]
+        },
+        "text" : {
+          "status" : "empty",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Patient/Decedent-Example1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Decedent-Example1",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Decedent-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Decedent-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-decedent.html\">Decedent</a></p></div><p><b>Spouse Is Alive</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p><p><b>NVSS SexAtDeath</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#unknown)</span></p><p><b>Birth Place</b>: Roanoke VA US </p><p><b>identifier</b>: Social Beneficiary Identifier:\u00a0<a href=\"http://terminology.hl7.org/3.1.0/NamingSystem-ssn.html\">#</a>987654321</p><p><b>name</b>: Madelyn Patel (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: ??</p><p><b>address</b>: 5590 Lockwood Drive Danville VA US </p><p><b>maritalStatus</b>: Never Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#S)</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Relationship</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>Friend of family <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0131.html\">contactRole2</a>#U)</span></td><td>Joe Smith</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "Y"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/administrative-gender",
+            "code" : "unknown",
+            "display" : "Unknown"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "city" : "Roanoke",
+          "state" : "VA",
+          "country" : "US"
+        }
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "SB",
+            "display" : "Social Beneficiary Identifier"
+          }]
+        },
+        "system" : "http://hl7.org/fhir/sid/us-ssn",
+        "value" : "987654321"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Patel",
+        "given" : ["Madelyn"]
+      }],
+      "gender" : "female",
+      "_birthDate" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day",
+            "valueUnsignedInt" : 10
+          },
+          {
+            "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year",
+            "valueUnsignedInt" : 2004
+          },
+          {
+            "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month",
+            "valueUnsignedInt" : 11
+          }],
+          "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"
+        }]
+      },
+      "address" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator",
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "Y",
+            "display" : "Yes"
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+          "valueString" : "Lockwood"
+        }],
+        "line" : ["5590 Lockwood Drive"],
+        "city" : "Danville",
+        "_city" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode",
+            "valuePositiveInt" : 1234
+          }]
+        },
+        "district" : "Fairfax",
+        "_district" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode",
+            "valuePositiveInt" : 321
+          }]
+        },
+        "state" : "VA",
+        "country" : "US"
+      }],
+      "maritalStatus" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
+              "code" : "0",
+              "display" : "Edit Passed"
+            }]
+          }
+        }],
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "S",
+          "display" : "Never Married"
+        }]
+      },
+      "contact" : [{
+        "relationship" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code" : "U"
+          }],
+          "text" : "Friend of family"
+        }],
+        "name" : {
+          "text" : "Joe Smith"
+        }
+      }]
+    }
+  }]
+}

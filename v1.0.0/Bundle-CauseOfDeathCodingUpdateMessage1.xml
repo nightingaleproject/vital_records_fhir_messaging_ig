@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="CauseOfDeathCodingUpdateMessage1"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2021-05-20T00:00:00Z"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Header/CauseOfDeathCodingUpdateHeader-Example1"/>
+    <resource>
+      <MessageHeader>
+        <id value="CauseOfDeathCodingUpdateHeader-Example1"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="CauseOfDeathCodingUpdateHeader-Example1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;CauseOfDeathCodingUpdateHeader-Example1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html">Cause Of Death Coding Update  Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/vrdr_causeofdeath_coding_update">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://nchs.cdc.gov/vrdr_submission">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>SubmissionHeader-Example1</td><td>ok</td></tr></table><p><b>focus</b>: </p><ul><li><a href="#Bundle_CauseOfDeathCodedContentBundle-Example1">See above (http://www.example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1)</a></li><li><a href="#Parameters_Parameters-Example1">See above (http://www.example.org/fhir/Parameters/Parameters-Example1)</a></li></ul></div>
+        </text>
+        <eventUri value="http://nchs.cdc.gov/vrdr_causeofdeath_coding_update"/>
+        <destination>
+          <endpoint value="https://sos.ny.gov/vitalrecords"/>
+        </destination>
+        <source>
+          <endpoint value="http://nchs.cdc.gov/vrdr_submission"/>
+        </source>
+        <response>
+          <identifier value="SubmissionHeader-Example1"/>
+          <code value="ok"/>
+        </response>
+        <focus>
+          <reference value="http://www.example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"/>
+        </focus>
+        <focus>
+          <reference value="http://www.example.org/fhir/Parameters/Parameters-Example1"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Parameters/Parameters-Example1"/>
+    <resource>
+      <Parameters>
+        <id value="Parameters-Example1"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+        </meta>
+        <parameter>
+          <name value="jurisdiction_id"/>
+          <valueString value="NY"/>
+        </parameter>
+        <parameter>
+          <name value="cert_no"/>
+          <valueUnsignedInt value="123456"/>
+        </parameter>
+        <parameter>
+          <name value="death_year"/>
+          <valueUnsignedInt value="2018"/>
+        </parameter>
+        <parameter>
+          <name value="state_auxiliary_id"/>
+          <valueString value="abcdef10"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Bundle/CauseOfDeathCodedContentBundle-Example1"/>
+    <resource>
+      <Bundle>
+        <id value="CauseOfDeathCodedContentBundle-Example1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-coded-bundle"/>
+        </meta>
+        <identifier>
+          <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber">
+            <valueString value="000182"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1">
+            <valueString value="000000000001"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2">
+            <valueString value="100000000001"/>
+          </extension>
+          <system value="http://nchs.cdc.gov/vrdr_id"/>
+          <value value="2020NY000182"/>
+        </identifier>
+        <type value="collection"/>
+        <timestamp value="2020-10-20T14:48:35.401641-04:00"/>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

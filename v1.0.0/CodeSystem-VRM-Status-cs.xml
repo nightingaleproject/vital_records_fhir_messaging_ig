@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="VRM-Status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">manualCauseOfDeathCoding<a name="VRM-Status-cs-manualCauseOfDeathCoding"> </a></td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>
+</div></td></tr><tr><td style="white-space:nowrap">manualDemographicCoding<a name="VRM-Status-cs-manualDemographicCoding"> </a></td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>
+</div></td></tr><tr><td style="white-space:nowrap">noCodingNeeded_Duplicate<a name="VRM-Status-cs-noCodingNeeded_Duplicate"> </a></td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>
+</div></td></tr><tr><td style="white-space:nowrap">manualCodingCanceled_Update<a name="VRM-Status-cs-manualCodingCanceled_Update"> </a></td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding
+has been canceled for the original record.</p>
+</div></td></tr><tr><td style="white-space:nowrap">manualCodingCanceled_Void<a name="VRM-Status-cs-manualCodingCanceled_Void"> </a></td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding
+has been canceled for the original record.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+  <version value="1.0.1"/>
+  <name value="StatusCS"/>
+  <title value="Status Codes Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-28T11:01:10-05:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Status Codes Values"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="manualCauseOfDeathCoding"/>
+    <display value="Manual Cause of Death Coding"/>
+    <definition value="The death record has been sent for manual cause of death coding."/>
+  </concept>
+  <concept>
+    <code value="manualDemographicCoding"/>
+    <display value="Manual Demographic  Coding"/>
+    <definition value="The death record has been sent for manual demographic (race/ethnicity) coding."/>
+  </concept>
+  <concept>
+    <code value="noCodingNeeded_Duplicate"/>
+    <display value="No Coding Needed - Duplicate"/>
+    <definition value="The death record is a duplicate of a previously submitted record, no coding will be performed."/>
+  </concept>
+  <concept>
+    <code value="manualCodingCanceled_Update"/>
+    <display value="Manual Coding Canceled - Update"/>
+    <definition value="An update has been submitted for a death record that is queued for manual coding.  The manual coding&#xA;has been canceled for the original record."/>
+  </concept>
+  <concept>
+    <code value="manualCodingCanceled_Void"/>
+    <display value="Manual Coding Canceled - Void"/>
+    <definition value="A void request has been received for a death record that is queued for manual coding.  The manual coding&#xA;has been canceled for the original record."/>
+  </concept>
+</CodeSystem>

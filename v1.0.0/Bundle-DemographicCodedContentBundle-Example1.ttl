@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/DemographicCodedContentBundle-Example1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DemographicCodedContentBundle-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-demographic-coded-bundle"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-demographic-coded-bundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "000182" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "000000000001" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "100000000001" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://nchs.cdc.gov/vrdr_id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2020NY000182" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-10-20T14:48:35.401641-04:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+
