@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <title>VITAL-RECORDS-FHIR-MESSAGING\June 2022 Testing Event Examples - FHIR v4.0.1
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="http://hl7.org/fhir" />
+
+    <link href="fhir.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet" />
+    <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script>
+        // Set tab based on the anchor in URL
+        var hash = window.location.hash;
+        try {
+            if(hash == "#tab-diff") sessionStorage.setItem('fhir-resource-tab-index', 1);
+            if(hash == "#tab-snapshot") sessionStorage.setItem('fhir-resource-tab-index', 2);
+            if(hash == "#tab-ms") sessionStorage.setItem('fhir-resource-tab-index', 3);
+
+            // Default to snapshot tab
+            if(!sessionStorage.getItem('fhir-resource-tab-index')) sessionStorage.setItem('fhir-resource-tab-index', 2);
+        } catch(e) { }
+
+        // Make it so that clicking the tabs also sets the anchor in the url
+        document.addEventListener("DOMContentLoaded", function() {
+            $('#tabs .ui-tabs-nav li').click(function() {
+                var id = $(this).children('a').attr('id');
+                if(id == "ui-id-2") window.location.hash = "#tab-diff";
+                if(id == "ui-id-3") window.location.hash = "#tab-snapshot";
+                if(id == "ui-id-4") window.location.hash = "#tab-ms";
+            })
+        });
+    </script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="assets/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="assets/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+        href="assets/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed"
+        href="assets/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    
+    <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">
+        h2 {
+            --heading-prefix:"7"
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            --heading-prefix:"7"
+        }
+    </style>
+    <div id="segment-header" class="segment">
+        <!-- segment-header -->
+        <div class="container">
+            <!-- container -->
+            <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://mitre.org"><img height="50" alt="MITRE logo" src="mitre.svg"/> </a>
+        </div>
+            
+            <div id="ig-status">
+                <p><span
+                        style="">Vital Records FHIR Messaging (VRFM) IG</span><br />1.0.1
+                    - release</p>
+            </div>
+        </div> <!-- /container -->
+    </div> <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">
+        <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">
+            <!-- container -->
+            <!-- HEADER CONTENT -->
+
+            <nav class="navbar navbar-inverse">
+                <!--status-bar-->
+                <div class="container">
+                    <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse"
+                        type="button">
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                    </button>
+                    <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+                    <div class="nav-collapse collapse navbar-inverse-collapse">
+                        <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Messages
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="message.html#message-exchange-patterns">Message Exchange Patterns</a>
+      </li>
+      <li>
+        <a href="message.html#message-structure-and-content">Message Structure and Content</a>
+      </li>
+      <li>
+        <a href="business_rules.html">NCHS Error Messages</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="appendix.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All FHIR Artifacts</a>
+      </li>
+      <li>
+        <a href="june2022testingeventexamples.html">June 2022 Testing Event Examples</a>
+      </li>
+      <li>
+        <a href="downloads.html">Other Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">History
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+                    </div> <!-- /.nav-collapse -->
+                </div> <!-- /.container -->
+            </nav> <!-- /.navbar -->
+            <!-- /HEADER CONTENT -->
+        </div> <!-- /container -->
+    </div> <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">
+        <!-- segment-breadcrumb -->
+        <div class="container">
+            <!-- container -->
+            <ul class="breadcrumb">
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>June 2022 Testing Event Examples</b></li>
+            </ul>
+        </div> <!-- /container -->
+    </div> <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">
+        <!-- segment-content -->
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>June 2022 Testing Event Examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#description-of-testing-process" id="markdown-toc-description-of-testing-process">Description of Testing Process</a></li>
+  <li><a href="#test-input-in-spreadsheet-form" id="markdown-toc-test-input-in-spreadsheet-form">Test Input in Spreadsheet Form</a></li>
+  <li><a href="#record-1---twila-hilty" id="markdown-toc-record-1---twila-hilty">Record 1 - Twila Hilty</a></li>
+  <li><a href="#record-2---fidelia-alsup" id="markdown-toc-record-2---fidelia-alsup">Record 2 - Fidelia Alsup</a></li>
+  <li><a href="#record-3---davis-lineberry" id="markdown-toc-record-3---davis-lineberry">Record 3 - Davis Lineberry</a></li>
+</ul>
+
+</div>
+
+<h3 id="description-of-testing-process">Description of Testing Process</h3>
+<p>This page illustrates the use of the profiles in the Vital Records Messaging IG using the records from the June 2022 NCHS Testing Event.
+The intent is to show the complete content of communication between a jurisdiction and NCHS for each of the three test records.</p>
+
+<p>We will illustrate using the first test decedent, <a href="june2022testingeventexamples.html#record-1---twila-hilty">Twila Hilty</a>, but the process and artifacts are the same for the <a href="june2022testingeventexamples.html#record-2---fidelia-alsup">second</a> and <a href="june2022testingeventexamples.html#record-3---davis-lineberry">third</a> test decedents.</p>
+
+<p>The testing process proceeds as follows:</p>
+<ol>
+  <li>The jurisdiction (MA) generates <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">Death Record 537</a> based on the data in the Record 1 column of the <a href="june2022testingeventexamples.html#test-input-in-spreadsheet-form">spreadsheet</a>, and then builds <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">Death Record Submission Message 537</a> and sends this to NCHS via the NCHS Messaging API.</li>
+  <li>NCHS receives the message, and sends <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">Death Record Submission Acknowledgement 537</a> to the jurisdiction for receipt of that message; you can tell what message is being acknowledged by comparing the MessageHeader.response.identifier in the acknowledgement to the MessageHeader.id of the original message.</li>
+  <li>Some time later, NCHS sends <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">Cause of Death Coding Message 537</a> to the jurisdiction, and the jurisdiction responds with <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">Cause of Death Coding Message Acknowledgement 537</a></li>
+  <li>Some time later, NCHS sends <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">Demographic Coding Message 537</a> to the jurisdiction, and the jurisdiction responds with <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">Demographic Coding Message Acknowledgement 537</a></li>
+</ol>
+
+<h3 id="test-input-in-spreadsheet-form">Test Input in Spreadsheet Form</h3>
+<p>The specification of tests for the June 2022 Testing event was provided in this spreadsheet.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Length</th>
+      <th>Descr</th>
+      <th>Var</th>
+      <th>Record  1</th>
+      <th>Record 2</th>
+      <th>Record  3</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>Date of Death–Year</td>
+      <td>DOD_YR</td>
+      <td>2022</td>
+      <td>2022</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>State, U.S. Territory or Canadian Province of Death - code</td>
+      <td>DSTATE</td>
+      <td>CT</td>
+      <td>CT</td>
+      <td>CT</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>6</td>
+      <td>Certificate Number</td>
+      <td>FILENO</td>
+      <td>000001</td>
+      <td>000002</td>
+      <td>000003</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>12</td>
+      <td>Auxiliary State file number</td>
+      <td>AUXNO</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>1</td>
+      <td>Source flag: paper/electronic</td>
+      <td>MFILED</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>50</td>
+      <td>Decedent’s Legal Name–Given</td>
+      <td>GNAME</td>
+      <td>Twila</td>
+      <td>Fidelia</td>
+      <td>Davis</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>1</td>
+      <td>Decedent’s Legal Name–Middle</td>
+      <td>MNAME</td>
+      <td>R</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>50</td>
+      <td>Decedent’s Legal Name–Last</td>
+      <td>LNAME</td>
+      <td>Hilty</td>
+      <td>Alsup</td>
+      <td>Lineberry</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>10</td>
+      <td>Decedent’s Legal Name–Suffix</td>
+      <td>SUFF</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>Jr</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>50</td>
+      <td>Father’s Surname</td>
+      <td>FLNAME</td>
+      <td>Brown</td>
+      <td>Dill</td>
+      <td>Lineberry</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>50</td>
+      <td>Middle Name of Decedent</td>
+      <td>DMIDDLE</td>
+      <td>Roxanne</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>This data element was added to test one ‘Must Support’ eexample.</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>1</td>
+      <td>Sex</td>
+      <td>SEX</td>
+      <td>F</td>
+      <td>F</td>
+      <td>M</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>9</td>
+      <td>Soc-Sec-Num</td>
+      <td>S S N</td>
+      <td>531869507</td>
+      <td>478151044</td>
+      <td>429471420</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>1</td>
+      <td>Decedent’s Age–Type</td>
+      <td>AGETYPE</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>3</td>
+      <td>Decedent’s Age–Units</td>
+      <td>AGE</td>
+      <td>020</td>
+      <td>62</td>
+      <td>010</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>1</td>
+      <td>Decedent’s Age–Edit Flag</td>
+      <td>AGE_BYPASS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>4</td>
+      <td>Date of Birth–Year</td>
+      <td>DOB_YR</td>
+      <td>2002</td>
+      <td>1960</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>209</td>
+      <td>2</td>
+      <td>Date of Birth–Month</td>
+      <td>DOB_MO</td>
+      <td>01</td>
+      <td>02</td>
+      <td>03</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>211</td>
+      <td>2</td>
+      <td>Date of Birth–Day</td>
+      <td>DOB_DY</td>
+      <td>01</td>
+      <td>29</td>
+      <td>04</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>2</td>
+      <td>Birthplace–Country</td>
+      <td>BPLACE_CNT</td>
+      <td>US</td>
+      <td>US</td>
+      <td>US</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>2</td>
+      <td>State, U.S. Territory or Canadian Province of Birth - code</td>
+      <td>BPLACE_ST</td>
+      <td>CT</td>
+      <td>CA<br />(California)</td>
+      <td>CO</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>5</td>
+      <td>Decedent’s Residence–City</td>
+      <td>CITYC</td>
+      <td>37000<br />(Hartford)</td>
+      <td>13014<br />(Chico)</td>
+      <td>45050<br />(Laramie)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>3</td>
+      <td>Decedent’s Residence–County</td>
+      <td>COUNTYC</td>
+      <td>003<br />(Hartford)</td>
+      <td>007<br />(Butte)</td>
+      <td>001<br />(Albany)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>225</td>
+      <td>2</td>
+      <td>State, U.S. Territory or Canadian Province of Decedent’s residence - code</td>
+      <td>STATEC</td>
+      <td>CT</td>
+      <td>CA<br />(California)</td>
+      <td>WY</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>227</td>
+      <td>2</td>
+      <td>Decedent’s Residence–Country</td>
+      <td>COUNTRYC</td>
+      <td>US</td>
+      <td>US</td>
+      <td>US</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>229</td>
+      <td>1</td>
+      <td>Decedent’s Residence–Inside City Limits</td>
+      <td>LIMITS</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>1</td>
+      <td>Marital Status</td>
+      <td>MARITAL</td>
+      <td>S<br />(Never Married)</td>
+      <td>A<br />(Married but Separated)</td>
+      <td>S<br />(Never Married)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>231</td>
+      <td>1</td>
+      <td>Marital Status–Edit Flag</td>
+      <td>MARITAL_BYPASS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>232</td>
+      <td>1</td>
+      <td>Place of Death</td>
+      <td>DPLACE</td>
+      <td>1<br />(Inpatient)</td>
+      <td>3<br />(Dead on Arrival)</td>
+      <td>1<br />(Inpatient)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>233</td>
+      <td>3</td>
+      <td>County of Death Occurrence</td>
+      <td>COD</td>
+      <td>001</td>
+      <td>001</td>
+      <td>001</td>
+      <td>[The actual county name will depend on the State of Occurrence]</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>1</td>
+      <td>Method of Disposition</td>
+      <td>DISP</td>
+      <td>B<br />(Burial)</td>
+      <td>O<br />(Other)</td>
+      <td>B<br />(Burial)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>2</td>
+      <td>Date of Death–Month</td>
+      <td>DOD_MO</td>
+      <td>01</td>
+      <td>03</td>
+      <td>01</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>2</td>
+      <td>Date of Death–Day</td>
+      <td>DOD_DY</td>
+      <td>10</td>
+      <td>16</td>
+      <td>17</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>4</td>
+      <td>Time of Death</td>
+      <td>TOD</td>
+      <td>1000<br />(10:00am)</td>
+      <td>1040<br />(10:40am)</td>
+      <td>1823<br />(6:23pm)</td>
+      <td>The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>245</td>
+      <td>1</td>
+      <td>Decedent’s Education</td>
+      <td>DEDUC</td>
+      <td>8<br />(Doctorate)</td>
+      <td>4<br />(Some College)</td>
+      <td>1<br />(No Education)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>1</td>
+      <td>Decedent’s Education–Edit Flag</td>
+      <td>DEDUC_BYPASS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>1</td>
+      <td>Decedent of Hispanic Origin?–Mexican</td>
+      <td>DETHNIC1</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>248</td>
+      <td>1</td>
+      <td>Decedent of Hispanic Origin?–Puerto Rican</td>
+      <td>DETHNIC2</td>
+      <td>N</td>
+      <td>H<br />(Yes)</td>
+      <td>N</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>1</td>
+      <td>Decedent of Hispanic Origin?–Cuban</td>
+      <td>DETHNIC3</td>
+      <td>N</td>
+      <td>H<br />(Yes)</td>
+      <td>N</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>1</td>
+      <td>Decedent of Hispanic Origin?–Other</td>
+      <td>DETHNIC4</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>251</td>
+      <td>20</td>
+      <td>Decedent of Hispanic Origin?–Other, Literal</td>
+      <td>DETHNIC5</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>271</td>
+      <td>1</td>
+      <td>Decedent’s Race–White</td>
+      <td>RACE1</td>
+      <td>Y<br />(Yes)</td>
+      <td>N</td>
+      <td>Y<br />(Yes)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>272</td>
+      <td>1</td>
+      <td>Decedent’s Race–Black or African American</td>
+      <td>RACE2</td>
+      <td>N</td>
+      <td>Y<br />(Yes)</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>273</td>
+      <td>1</td>
+      <td>Decedent’s Race–American Indian or Alaska Native</td>
+      <td>RACE3</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y<br />(Yes)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>274</td>
+      <td>1</td>
+      <td>Decedent’s Race–Asian Indian</td>
+      <td>RACE4</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>275</td>
+      <td>1</td>
+      <td>Decedent’s Race–Chinese</td>
+      <td>RACE5</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>276</td>
+      <td>1</td>
+      <td>Decedent’s Race–Filipino</td>
+      <td>RACE6</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>277</td>
+      <td>1</td>
+      <td>Decedent’s Race–Japanese</td>
+      <td>RACE7</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>1</td>
+      <td>Decedent’s Race–Korean</td>
+      <td>RACE8</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>1</td>
+      <td>Decedent’s Race–Vietnamese</td>
+      <td>RACE9</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>280</td>
+      <td>1</td>
+      <td>Decedent’s Race–Other Asian</td>
+      <td>RACE10</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>281</td>
+      <td>1</td>
+      <td>Decedent’s Race–Native Hawaiian</td>
+      <td>RACE11</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>1</td>
+      <td>Decedent’s Race–Guamanian or Chamorro</td>
+      <td>RACE12</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>1</td>
+      <td>Decedent’s Race–Samoan</td>
+      <td>RACE13</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>1</td>
+      <td>Decedent’s Race–Other Pacific Islander</td>
+      <td>RACE14</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>1</td>
+      <td>Decedent’s Race–Other</td>
+      <td>RACE15</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>30</td>
+      <td>Decedent’s Race–First American Indian or Alaska Native Literal</td>
+      <td>RACE16</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>Cheyenne</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>316</td>
+      <td>30</td>
+      <td>Decedent’s Race–Second American Indian or Alaska Native Literal</td>
+      <td>RACE17</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>346</td>
+      <td>30</td>
+      <td>Decedent’s Race–First Other Asian Literal</td>
+      <td>RACE18</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>376</td>
+      <td>30</td>
+      <td>Decedent’s Race–Second Other Asian Literal</td>
+      <td>RACE19</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>406</td>
+      <td>30</td>
+      <td>Decedent’s Race–First Other Pacific Islander Literal</td>
+      <td>RACE20</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>436</td>
+      <td>30</td>
+      <td>Decedent’s Race–Second Other Pacific Islander Literal</td>
+      <td>RACE21</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>466</td>
+      <td>30</td>
+      <td>Decedent’s Race–First Other Literal</td>
+      <td>RACE22</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>496</td>
+      <td>30</td>
+      <td>Decedent’s Race–Second Other Literal</td>
+      <td>RACE23</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>574</td>
+      <td>1</td>
+      <td>Decedent’s Race–Missing</td>
+      <td>RACE_MVR</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>May provide a value for this item if required by your system; it is optional for NCHS.</td>
+    </tr>
+    <tr>
+      <td>575</td>
+      <td>40</td>
+      <td>Occupation – Literal (REQUIRED)</td>
+      <td>OCCUP</td>
+      <td>Teacher</td>
+      <td>Carpenter</td>
+      <td>Infant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>618</td>
+      <td>40</td>
+      <td>Industry – Literal (REQUIRED)</td>
+      <td>INDUST</td>
+      <td>Education</td>
+      <td>Construction</td>
+      <td>Never Worked</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>661</td>
+      <td>6</td>
+      <td>Infant Death/Birth Linking - birth certificate number</td>
+      <td>BCNO</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>001023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>667</td>
+      <td>4</td>
+      <td>Infant Death/Birth Linking - year of birth</td>
+      <td>IDOB_YR</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>671</td>
+      <td>2</td>
+      <td>Infant Death/Birth Linking - State, U.S. Territory or Canadian Province of Birth - code</td>
+      <td>BSTATE</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>CA<br />(California)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>689</td>
+      <td>4</td>
+      <td>Date of Registration–Year</td>
+      <td>DOR_YR</td>
+      <td>␢</td>
+      <td>03</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>693</td>
+      <td>2</td>
+      <td>Date of Registration–Month</td>
+      <td>DOR_MO</td>
+      <td>␢</td>
+      <td>18</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>695</td>
+      <td>2</td>
+      <td>Date of Registration–Day</td>
+      <td>DOR_DY</td>
+      <td>␢</td>
+      <td>2022</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>701</td>
+      <td>1</td>
+      <td>Manner of Death</td>
+      <td>MANNER</td>
+      <td>N<br />(Natural)</td>
+      <td>A<br />(Accident)</td>
+      <td>P<br />(Pending)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>976</td>
+      <td>1</td>
+      <td>Was Autopsy performed</td>
+      <td>AUTOP</td>
+      <td>N</td>
+      <td>N</td>
+      <td>U<br />(Not Classifiable)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>977</td>
+      <td>1</td>
+      <td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
+      <td>AUTOPF</td>
+      <td>X<br />(Not Applicable)</td>
+      <td>X<br />(Not Applicable)</td>
+      <td>U<br />(Not Classifiable)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>978</td>
+      <td>1</td>
+      <td>Did Tobacco Use Contribute to Death?</td>
+      <td>TOBAC</td>
+      <td>U<br />(Not Classifiable)</td>
+      <td>U<br />(Not Classifiable)</td>
+      <td>N</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>979</td>
+      <td>1</td>
+      <td>Pregnancy</td>
+      <td>PREG</td>
+      <td>2<br />(Pregnant at time of death)</td>
+      <td>8<br />(Not Applicable)</td>
+      <td>8<br />(Not Applicable)</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>980</td>
+      <td>1</td>
+      <td>If Female–Edit Flag: From EDR only</td>
+      <td>PREG_BYPASS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>981</td>
+      <td>2</td>
+      <td>Date of injury–month</td>
+      <td>DOI_MO</td>
+      <td>␢</td>
+      <td>03</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>983</td>
+      <td>2</td>
+      <td>Date of injury–day</td>
+      <td>DOI_DY</td>
+      <td>␢</td>
+      <td>16</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>985</td>
+      <td>4</td>
+      <td>Date of injury–year</td>
+      <td>DOI_YR</td>
+      <td>␢</td>
+      <td>2022</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>989</td>
+      <td>4</td>
+      <td>Time of injury</td>
+      <td>TOI_HR</td>
+      <td>␢</td>
+      <td>1015<br />(10:15am)</td>
+      <td>␢</td>
+      <td>The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>993</td>
+      <td>1</td>
+      <td>Injury at work</td>
+      <td>WORKINJ</td>
+      <td>␢</td>
+      <td>Y<br />(Yes)</td>
+      <td>␢</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>994</td>
+      <td>30</td>
+      <td>Title of Certifier</td>
+      <td>CERTL</td>
+      <td>D<br />(Certifying Physician)</td>
+      <td>P<br />(Prononuncing and Certifying Physician)</td>
+      <td>␢</td>
+      <td>This is a hybrid field.  Codes D, P and M are most commonly used.  Full text is used when another individual is legally allowed to certify.  May be left blank.</td>
+    </tr>
+    <tr>
+      <td>1025</td>
+      <td>12</td>
+      <td>Auxiliary State file number</td>
+      <td>AUXNO2</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1037</td>
+      <td>30</td>
+      <td>State Specific Data</td>
+      <td>STATESP</td>
+      <td>␢</td>
+      <td>20220101</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1067</td>
+      <td>2</td>
+      <td>Surgery Date–month</td>
+      <td>SUR_MO</td>
+      <td>01</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1069</td>
+      <td>2</td>
+      <td>Surgery Date–day</td>
+      <td>SUR_DY</td>
+      <td>10</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1071</td>
+      <td>4</td>
+      <td>Surgery Date–year</td>
+      <td>SUR_YR</td>
+      <td>2022</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1075</td>
+      <td>1</td>
+      <td>Time of Injury Unit</td>
+      <td>TOI_UNIT</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1485</td>
+      <td>10</td>
+      <td>Decedent’s Residence - Street number</td>
+      <td>STNUM_R</td>
+      <td>4437</td>
+      <td>1829</td>
+      <td>2722</td>
+      <td>This is Address Style 1 (parsed fields).  Use this style if available, or Address Style 2 if the individual components are not available</td>
+    </tr>
+    <tr>
+      <td>1495</td>
+      <td>10</td>
+      <td>Decedent’s Residence - Pre Directional</td>
+      <td>PREDIR_R</td>
+      <td>North</td>
+      <td>␢</td>
+      <td>N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1505</td>
+      <td>28</td>
+      <td>Decedent’s Residence - Street name</td>
+      <td>STNAME_R</td>
+      <td>Charles</td>
+      <td>Main</td>
+      <td>Pin Oak</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1533</td>
+      <td>10</td>
+      <td>Decedent’s Residence - Street designator</td>
+      <td>STDESIG_R</td>
+      <td>Avenue</td>
+      <td>St</td>
+      <td>Dr</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1543</td>
+      <td>10</td>
+      <td>Decedent’s Residence - Post Directional</td>
+      <td>POSTDIR_R</td>
+      <td>Southeast</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1553</td>
+      <td>7</td>
+      <td>Decedent’s Residence - Unit or apt number</td>
+      <td>UNITNUM_R</td>
+      <td>Apt 2B</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1560</td>
+      <td>28</td>
+      <td>Decedent’s Residence - City or Town name</td>
+      <td>CITYTEXT_R</td>
+      <td>Hartford</td>
+      <td>Chico</td>
+      <td>Laramie</td>
+      <td>Always submit these parsed components no matter which Address Style is used</td>
+    </tr>
+    <tr>
+      <td>1588</td>
+      <td>9</td>
+      <td>Decedent’s Residence - ZIP code</td>
+      <td>ZIP9_R</td>
+      <td>06107</td>
+      <td>95926</td>
+      <td>82070</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1597</td>
+      <td>28</td>
+      <td>Decedent’s Residence - County</td>
+      <td>COUNTYTEXT_R</td>
+      <td>Hartford</td>
+      <td>Butte</td>
+      <td>Albany</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1625</td>
+      <td>28</td>
+      <td>Decedent’s Residence - State name</td>
+      <td>STATETEXT_R</td>
+      <td>Connecticut</td>
+      <td>California</td>
+      <td>Wyoming</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1653</td>
+      <td>28</td>
+      <td>Decedent’s Residence - COUNTRY name</td>
+      <td>COUNTRYTEXT_R</td>
+      <td>United States</td>
+      <td>United States</td>
+      <td>United States</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1681</td>
+      <td>50</td>
+      <td>Long string address for decedent’s place of residence same as above but allows states to choose the way they capture information.</td>
+      <td>ADDRESS_R</td>
+      <td>4437 North Charles Avenue Southeast Apt 2B</td>
+      <td>1829 Main St</td>
+      <td>2722 N Pin Oak Dr</td>
+      <td>This is Address Style 2 (combined address).  Use this only if Address Style 1 is not available</td>
+    </tr>
+    <tr>
+      <td>2109</td>
+      <td>50</td>
+      <td>Place of Injury- literal</td>
+      <td>POILITRL</td>
+      <td>␢</td>
+      <td>Street</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2159</td>
+      <td>250</td>
+      <td>Describe How Injury Occurred</td>
+      <td>HOWINJ</td>
+      <td>␢</td>
+      <td>Unrestrained ejected driver in rollover motor vehicle accident</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2409</td>
+      <td>30</td>
+      <td>If Transportation Accident, Specify</td>
+      <td>TRANSPRT</td>
+      <td>␢</td>
+      <td>DR<br />(Driver/Operator)</td>
+      <td>␢</td>
+      <td>These are coded data elements. The text in parenthesis is provided only for user clarity.</td>
+    </tr>
+    <tr>
+      <td>2542</td>
+      <td>120</td>
+      <td>Cause of Death Part I Line a</td>
+      <td>COD1A</td>
+      <td>Cardiopulmonary arrest</td>
+      <td>Blunt head trauma</td>
+      <td>Pending</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2662</td>
+      <td>20</td>
+      <td>Cause of Death Part I Interval, Line a</td>
+      <td>INTERVAL1A</td>
+      <td>4 Hours</td>
+      <td>30 Minutes</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2682</td>
+      <td>120</td>
+      <td>Cause of Death Part I Line b</td>
+      <td>COD1B</td>
+      <td>Eclampsia</td>
+      <td>Automobile accident</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2802</td>
+      <td>20</td>
+      <td>Cause of Death Part I Interval, Line b</td>
+      <td>INTERVAL1B</td>
+      <td>3 Months</td>
+      <td>30 Minutes</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2822</td>
+      <td>120</td>
+      <td>Cause of Death Part I Line c</td>
+      <td>COD1C</td>
+      <td>␢</td>
+      <td>Epilepsy</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2942</td>
+      <td>20</td>
+      <td>Cause of Death Part I Interval, Line c</td>
+      <td>INTERVAL1C</td>
+      <td>␢</td>
+      <td>20 Years</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2962</td>
+      <td>120</td>
+      <td>Cause of Death Part I Line d</td>
+      <td>COD1D</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3082</td>
+      <td>20</td>
+      <td>Cause of Death Part I Interval, Line d</td>
+      <td>INTERVAL1D</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3102</td>
+      <td>240</td>
+      <td>Cause of Death Part II</td>
+      <td>OTHERCONDITION</td>
+      <td> </td>
+      <td>Hypertension, Depression, Migraine</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4430</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 1</td>
+      <td>PLACE1_1</td>
+      <td>Y</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4431</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 2</td>
+      <td>PLACE1_2</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4432</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 3</td>
+      <td>PLACE1_3</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4433</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 4</td>
+      <td>PLACE1_4</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4434</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 5</td>
+      <td>PLACE1_5</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4435</td>
+      <td>1</td>
+      <td>Blank for One-Byte Field 6</td>
+      <td>PLACE1_6</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4436</td>
+      <td>8</td>
+      <td>Blank for Eight-Byte Field 1</td>
+      <td>PLACE8_1</td>
+      <td>␢</td>
+      <td>00000033</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4444</td>
+      <td>8</td>
+      <td>Blank for Eight-Byte Field 2</td>
+      <td>PLACE8_2</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4452</td>
+      <td>8</td>
+      <td>Blank for Eight-Byte Field 3</td>
+      <td>PLACE8_3</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4460</td>
+      <td>20</td>
+      <td>Blank for Twenty-Byte Field</td>
+      <td>PLACE20</td>
+      <td>␢</td>
+      <td>␢</td>
+      <td>043-A-110234</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="record-1---twila-hilty">Record 1 - Twila Hilty</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Seq#</strong></th>
+      <th><strong>JSON Content</strong></th>
+      <th><strong>Direction</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">Death Record 537</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">Death Record Submission Message 537</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">Death Record Submission Acknowledgement 537</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">Cause of Death Coding Message 537</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">Cause of Death Coding Message Acknowledgement 537</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">Demographic Coding Message 537</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">Demographic Coding Message Acknowledgement 537</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="record-2---fidelia-alsup">Record 2 - Fidelia Alsup</h3>
+<p>Note: Coding for the cause of death for this record cannot be done automatically, so codes of M99.9 are returned.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Seq#</strong></th>
+      <th><strong>JSON Content</strong></th>
+      <th><strong>Direction</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_538_example.json">Death Record 538</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_538_example.json">Death Record Submission Message 538</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_538_example.json">Death Record Submission Acknowledgement 538</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_538_example.json">Cause of Death Coding Message 538</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_538_example.json">Cause of Death Coding Message Acknowledgement 538</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_538_example.json">Demographic Coding Message 538</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_538_example.json">Demographic Coding Message Acknowledgement 538</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="record-3---davis-lineberry">Record 3 - Davis Lineberry</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Seq#</strong></th>
+      <th><strong>JSON Content</strong></th>
+      <th><strong>Direction</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_539_example.json">Death Record 539</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_539_example.json">Death Record Submission Message 539</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_539_example.json">Death Record Submission Acknowledgement 539</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_539_example.json">Cause of Death Coding Message 539</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_539_example.json">Cause of Death Coding Message Acknowledgement 539</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_539_example.json">Demographic Coding Message 539</a></td>
+      <td>NCHS to EDRS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td><a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_539_example.json">Demographic Coding Message Acknowledgement 539</a></td>
+      <td>EDRS to NCHS</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 28, 2023 14:40-0500">2023-12-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<br><br><strong>Internal use only.</strong>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

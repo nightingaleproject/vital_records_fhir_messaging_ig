@@ -1,0 +1,2893 @@
+{
+  "date" : "Thu, 28 Dec, 2023 14:40:35 -0500",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-vital-records-fhir-messaging.json",
+      "size" : 24038,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 58
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 402
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 113
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 220
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-AcknowledgementMessage-Example1.json",
+      "size" : 2013,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-CauseOfDeathCodedContentBundle-Example1.json",
+      "size" : 834,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-CauseOfDeathCodingMessage-Example1.json",
+      "size" : 3282,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 16
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 103,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-CauseOfDeathCodingUpdateMessage1.json",
+      "size" : 3311,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DeathCertificateDocument-Example1.json",
+      "size" : 10113,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 554
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 172
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 27
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DeathCertificateDocument-Example2.json",
+      "size" : 10179,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 88
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 20
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DeathRecordAliasMessage-Example1.json",
+      "size" : 2539,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DeathRecordSubmissionMessage-Example1.json",
+      "size" : 14339,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 97
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DeathRecordVoidMessage-Example1.json",
+      "size" : 1970,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DemographicCodedContentBundle-Example1.json",
+      "size" : 830,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DemographicsCodingMessage-Example1.json",
+      "size" : 3276,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-DemographicsCodingUpdateMessage1.json",
+      "size" : 3305,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-ExtractionErrorMessage-Example1.json",
+      "size" : 2734,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-StatusMessage-Example1.json",
+      "size" : 2076,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-UpdateMessage-Example1.json",
+      "size" : 14315,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 96
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-VRM-MessageHeaderURI-cs.json",
+      "size" : 2638,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 21416
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-VRM-Status-cs.json",
+      "size" : 1544,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 98
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-DeathCertificate-Example1.json",
+      "size" : 3166,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 62
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-DeathCertificate-Example2.json",
+      "size" : 3214,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 56
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example1.json",
+      "size" : 647,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-AliasHeader-Example1.json",
+      "size" : 532,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-CauseOfDeathCodingHeader-Example1.json",
+      "size" : 761,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-CauseOfDeathCodingUpdateHeader-Example1.json",
+      "size" : 780,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-DemographicsCodingHeader-Example1.json",
+      "size" : 760,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-DemographicsCodingUpdateHeader-Example1.json",
+      "size" : 779,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-ExtractionErrorHeader-Example1.json",
+      "size" : 770,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-StatusHeader-Example1.json",
+      "size" : 617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-SubmissionHeader-Example1.json",
+      "size" : 645,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-UpdateHeader-Example1.json",
+      "size" : 644,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MessageHeader-VoidHeader-Example1.json",
+      "size" : 539,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationOutcome-Outcome-Example1.json",
+      "size" : 377,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-AliasParameters-Example1.json",
+      "size" : 1051,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-Parameters-Example1.json",
+      "size" : 527,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-StatusParameters-Example1.json",
+      "size" : 617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-VoidParameters-Example1.json",
+      "size" : 599,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 33
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-Decedent-Example1.json",
+      "size" : 4017,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 2
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 43
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-Decedent-Example2.json",
+      "size" : 4832,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "scan",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 61
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-Decedent-Example3.json",
+      "size" : 1945,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader.json",
+      "size" : 2506,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 75
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 65
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 2485
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 172
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 1392
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-AcknowledgementMessage.json",
+      "size" : 3019,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 130
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 110
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 321
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 345
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 893
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-AliasHeader.json",
+      "size" : 2091,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 80
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 63
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 133
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 177
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 322
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-AliasParameters.json",
+      "size" : 12946,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 104
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 104
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 228
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 396
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 532
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingHeader.json",
+      "size" : 2293,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 66
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 124
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 310
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingMessage.json",
+      "size" : 3616,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 159
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 150
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 307
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 399
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 702
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.json",
+      "size" : 2339,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 70
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 103
+        },
+        {
+          "activity" : "generate1",
+          "start" : 41,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 269
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.json",
+      "size" : 3700,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 155
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 142
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 287
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 41,
+          "length" : 403
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 603
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DeathRecordAliasMessage.json",
+      "size" : 2953,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 128
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 148
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 211
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 41,
+          "length" : 319
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 499
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DeathRecordSubmissionMessage.json",
+      "size" : 3691,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 169
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 138
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 272
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 419
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 606
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DeathRecordUpdateMessage.json",
+      "size" : 3656,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 167
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 150
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 255
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 407
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 575
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DeathRecordVoidMessage.json",
+      "size" : 2961,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 144
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 109
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 203
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 336
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 592
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingHeader.json",
+      "size" : 2289,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 62
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 91
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 174
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 239
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingMessage.json",
+      "size" : 3605,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 152
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 148
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 239
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 412
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 572
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateHeader.json",
+      "size" : 2328,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 57
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 99
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 173
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 223
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateMessage.json",
+      "size" : 3657,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 159
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 141
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 238
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 472
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 617
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorHeader.json",
+      "size" : 2875,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 60
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 88
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 190
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 236
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorMessage.json",
+      "size" : 3728,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 151
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 137
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 251
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 672
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 584
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 7
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-MessageParameters.json",
+      "size" : 5932,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 52
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 89
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 348
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 220
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-Outcome.json",
+      "size" : 880,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 26
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 42
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 76
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 137
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-StatusHeader.json",
+      "size" : 2465,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 68
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 86
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 170
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 271
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-StatusMessage.json",
+      "size" : 2939,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 130
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 114
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 176
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 333
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 523
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-StatusParameters.json",
+      "size" : 6936,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 59
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 225
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 240
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-SubmissionHeader.json",
+      "size" : 1897,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 62
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 83
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 161
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 245
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 172,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-UpdateHeader.json",
+      "size" : 1895,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 56
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 87
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 164
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 234
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-VoidHeader.json",
+      "size" : 2095,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 56
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 58
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 86
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 162
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 262
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-VRM-VoidParameters.json",
+      "size" : 7003,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 53
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 89
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 228
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 229
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 172,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-VRM-Status-vs.json",
+      "size" : 447,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 91
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 2343
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 90,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

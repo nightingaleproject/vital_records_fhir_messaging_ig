@@ -1,0 +1,116 @@
+{
+  "resourceType" : "Composition",
+  "id" : "DeathCertificate-Example2",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"DeathCertificate-Example2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;DeathCertificate-Example2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Replacement Status of a Death Record (deprecated)</b>: original record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-replace-status-cs.html\">Replacement Status of Death Record Submission</a>#original)</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: <span>: Practitioner</span></p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td>2020-11-14 16:39:40-0500</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><span>: Procedure</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/ReplaceStatus",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-replace-status-cs",
+        "code" : "original"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField",
+    "valueString" : "State Specific Content"
+  }],
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "64297-5",
+      "display" : "Death certificate"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Decedent-Example1"
+  },
+  "date" : "2020-11-15T16:39:54-05:00",
+  "author" : [{
+    "type" : "Practitioner",
+    "display" : "Practitioner"
+  }],
+  "title" : "Death Certificate",
+  "attester" : [{
+    "mode" : "legal",
+    "time" : "2020-11-14T16:39:40-05:00"
+  }],
+  "event" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "103693007"
+      }]
+    }],
+    "detail" : [{
+      "type" : "Procedure",
+      "display" : "Procedure"
+    }]
+  }],
+  "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+        "code" : "DecedentDemographics"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Patient/Decedent-Example1"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+        "code" : "DeathInvestigation"
+      }]
+    },
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+        "code" : "DeathCertification"
+      }]
+    },
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+        "code" : "DecedentDisposition"
+      }]
+    },
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+        "code" : "CodedContent"
+      }]
+    },
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+    }
+  }]
+}

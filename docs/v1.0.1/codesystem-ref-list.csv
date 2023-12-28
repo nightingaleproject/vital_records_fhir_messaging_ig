@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs,1.0.1,draft,,StatusCS,Status Codes Values,"Status Codes Values","ValueSet/VRM-Status-vs"
+http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-jurisdictions-cs,2.2.0,active,,JurisdictionsCS,Jurisdictions that are not US States or Territories,"NVSS Jurisdictions that are not US States or Territories","ValueSet/vrdr-jurisdiction-vs"
