@@ -9,7 +9,7 @@ title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
 version: 1.0.0
 copyrightYear: 2022+
-releaseLabel: ci-build
+releaseLabel: release
 publisher:
   name: CDC NCHS
   url: http://cdc.gov/nchs
