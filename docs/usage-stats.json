@@ -1,0 +1,166 @@
+{
+  "package": "vital-records-fhir-messaging",
+  "version": "1.0.1",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "MessageHeader": [
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader",
+        "title": "Death Message Header"
+      },
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader",
+        "title": "Death Message Update Header"
+      },
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidHeader",
+        "title": "Void Header"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusMessage",
+        "title": "Status Message"
+      }
+    ],
+    "Parameters": [
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters",
+        "title": "Void Message Parameters"
+      }
+    ],
+    "OperationOutcome": [
+      {
+        "url": "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome",
+        "title": "Outcome Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1": [
+      "Bundle.entry.resource.identifier",
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2": [
+      "Bundle.entry.resource.identifier",
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag": [
+      "Bundle.entry.resource.entry.resource.maritalStatus",
+      "Bundle.entry.resource.maritalStatus",
+      "Patient.maritalStatus"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber": [
+      "Bundle.entry.resource.identifier",
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode": [
+      "Bundle.entry.resource.address.city",
+      "Bundle.entry.resource.entry.resource.address.city",
+      "Patient.address.city"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode": [
+      "Bundle.entry.resource.address.district",
+      "Bundle.entry.resource.entry.resource.address.district",
+      "Patient.address.district"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate": [
+      "Bundle.entry.resource.birthDate",
+      "Bundle.entry.resource.entry.resource.birthDate",
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PostDirectional": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/ReplaceStatus": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetDesignator": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName": [
+      "Bundle.entry.resource.address",
+      "Bundle.entry.resource.entry.resource.address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/UnitOrAptNumber": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator": [
+      "Bundle.entry.resource.address",
+      "Bundle.entry.resource.entry.resource.address",
+      "Patient.address"
+    ]
+  }
+}

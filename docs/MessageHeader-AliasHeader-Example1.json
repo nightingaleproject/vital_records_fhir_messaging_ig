@@ -1,0 +1,21 @@
+{
+  "resourceType" : "MessageHeader",
+  "id" : "AliasHeader-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasHeader"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"AliasHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;AliasHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-AliasHeader.html\">Alias Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_alias\">http://nchs.cdc.gov/vrdr_alias</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-DeathRecordAliasMessage-Example1.html#http-//www.example.org/fhir/Parameters/AliasParameters-Example1\">http://www.example.org/fhir/Parameters/AliasParameters-Example1</a></p></div>"
+  },
+  "eventUri" : "http://nchs.cdc.gov/vrdr_alias",
+  "destination" : [{
+    "endpoint" : "http://nchs.cdc.gov/vrdr_submission"
+  }],
+  "source" : {
+    "endpoint" : "https://sos.ny.gov/vitalrecords"
+  },
+  "focus" : [{
+    "reference" : "http://www.example.org/fhir/Parameters/AliasParameters-Example1"
+  }]
+}
