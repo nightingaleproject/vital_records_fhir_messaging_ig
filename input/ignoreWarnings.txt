@@ -30,12 +30,6 @@ INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].re
 INFORMATION: Composition/DeathCertificate-Example1: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
 INFORMATION: Composition/DeathCertificate-Example2: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
 
-# Open slicing
-INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|3.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
-
 # dom-6 -- this is probably an IG Publisher issue
 WARNING: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
