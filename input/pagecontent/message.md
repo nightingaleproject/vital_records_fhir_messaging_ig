@@ -175,6 +175,16 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
+
+
+| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | [BundleDocumentBFDR] |
+| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | [BundleDocumentBFDR] |
+| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | [BundleDocumentBFDR] |
+| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | [BundleDocumentBFDR]|
+| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParameters] | [CodedCauseOfFetalDeathBundleBFDR] |
+| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | [CodedCauseOfFetalDeathBundleBFDR] |
+| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | [DemographicCodedContentBundleBFDR] |
+| [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | [DemographicCodedContentBundleBFDR] |
 {: .grid }
 
 {% include markdown-link-references.md %}
