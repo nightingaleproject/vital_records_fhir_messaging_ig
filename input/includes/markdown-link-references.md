@@ -8,12 +8,16 @@
 <!-- Vital Records Messaging Profiles and Extensions -->
 [DemographicsCodingMessage]: StructureDefinition-VRM-DemographicsCodingMessage.html
 [CauseOfDeathCodingMessage]: StructureDefinition-VRM-CauseOfDeathCodingMessage.html
+[IndustryOccupationCodingMessage]: StructureDefinition-VRM-IndustryOccupationCodingMessage.html
 [DemographicsCodingHeader]: StructureDefinition-VRM-DemographicsCodingHeader.html
 [CauseOfDeathCodingHeader]: StructureDefinition-VRM-CauseOfDeathCodingHeader.html
+[IndustryOccupationCodingHeader]: StructureDefinition-VRM-IndustryOccupationCodingHeader.html
 [DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
 [CauseOfDeathCodingUpdateMessage]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html
+[IndustryOccupationCodingUpdateMessage]: StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html
 [DemographicsCodingUpdateHeader]: StructureDefinition-VRM-DemographicsCodingUpdateHeader.html
 [CauseOfDeathCodingUpdateHeader]: StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html
+[IndustryOccupationCodingUpdateHeader]: StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html
 [CauseOfDeathCodingParameters]: StructureDefinition-VRM-CauseOfDeathCodingParameters.html
 [DemographicsCodingParameters]: StructureDefinition-VRM-DemographicsCodingParameters.html
 [MessageParameters]: StructureDefinition-VRM-MessageParameters.html
@@ -44,3 +48,4 @@
 [DeathCertificateDocument]:            https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
 [DemographicCodedContentBundle]:       https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-demographic-coded-bundle.html
 [CauseOfDeathCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
+[IndustryOccupationCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-industry-occupation-coded-bundle.html
