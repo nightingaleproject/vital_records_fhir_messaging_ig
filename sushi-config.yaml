@@ -18,6 +18,7 @@ fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
   hl7.fhir.us.vrdr: 2.2.0 
+  hl7.fhir.us.vr-common-library: current
   hl7.fhir.us.bfdr: current
 parameters:
   show-inherited-invariants: false
