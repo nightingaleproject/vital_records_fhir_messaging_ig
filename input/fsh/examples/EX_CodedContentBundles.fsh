@@ -61,9 +61,9 @@ Description: "DecedentUsualWork-Example2 - with coded values"
 * insert AddMetaProfile(DecedentUsualWork)
 * status = #final
 * subject = Reference(Decedent-Example1)
-* valueCodeableConcept = $PHVS_Occupation_CDC_Census2018#5710 "Executive secretaries and executive administrative assistants"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.339#5710 "Executive secretaries and executive administrative assistants"
 * valueCodeableConcept.text = "secretary"
-* component[odh-UsualIndustry].valueCodeableConcept = $PHVS_Industry_CDC_Census2018#9390 "Other general government and support"
+* component[odh-UsualIndustry].valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.336#9390 "Other general government and support"
 * component[odh-UsualIndustry].valueCodeableConcept.text = "State agency"
 //* effectivePeriod.start = "2001"
 //* effectivePeriod.end = "2005"
