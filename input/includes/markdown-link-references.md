@@ -39,6 +39,22 @@
 [VoidParameters]: StructureDefinition-VRM-VoidParameters.html
 [StatusVS]: ValueSet-VRM-Status-vs.html
 [MessageHeader]: http://hl7.org/fhir/messageheader.html
+[FetalDeathReportMessage]: StructureDefinition-VRM-FetalDeathReportMessage.html
+[FetalDeathReportUpdateMessage]: StructureDefinition-VRM-FetalDeathReportUpdateMessage.html
+[FetalDeathReportHeader]: StructureDefinition-VRM-FetalDeathReportHeader.html
+[FetalDeathReportUpdateHeader]: StructureDefinition-VRM-FetalDeathReportUpdateHeader.html
+[BirthReportMessage]: StructureDefinition-VRM-BirthReportMessage.html
+[BirthReportHeader]: StructureDefinition-VRM-BirthReportHeader.html
+[BirthReportUpdateHeader]: StructureDefinition-VRM-BirthReportUpdateHeader.html
+[BirthReportUpdateMessage]: StructureDefinition-VRM-BirthReportUpdateMessage.html
+[CodedCauseOfFetalDeathMessage]: StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html
+[CodedCauseOfFetalDeathHeader]: StructureDefinition-VRM-CodedCauseOfFetalDeathHeader.html
+[CodedCauseOfFetalDeathUpdateHeader]: StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateHeader.html
+[CodedCauseOfFetalDeathUpdateMessage]: StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html
+[ParentalDemographicsCodingMessage]: StructureDefinition-VRM-ParentalDemographicsCodingMessage.html
+[ParentalDemographicsCodingHeader]: StructureDefinition-VRM-ParentalDemographicsCodingHeader.html
+[ParentalDemographicsCodingUpdateHeader]: StructureDefinition-VRM-ParentalDemographicsCodingUpdateHeader.html
+[ParentalDemographicsCodingUpdateMessage]: StructureDefinition-VRM-ParentalDemographicsCodingUpdateMessage.html
 
 <!-- VRDR Profiles and Extensions -->
 [DeathCertificateDocument]:            https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html

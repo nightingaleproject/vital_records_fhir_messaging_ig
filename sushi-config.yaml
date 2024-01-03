@@ -73,6 +73,14 @@ groups:
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
     - StructureDefinition/VRM-StatusMessage
+    - StructureDefinition/VRM-FetalDeathReportMessage
+    - StructureDefinition/VRM-FetalDeathReportUpdateMessage
+    - StructureDefinition/VRM-BirthReportMessage
+    - StructureDefinition/VRM-BirthReportUpdateMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage
+    - StructureDefinition/VRM-ParentalDemographicsCodingMessage
+    - StructureDefinition/VRM-ParentalDemographicsCodingUpdateMessage
   Headers:
     name: Message Header Profiles
     description: Message Header Profiles
@@ -88,6 +96,14 @@ groups:
     - StructureDefinition/VRM-DemographicsCodingUpdateHeader
     - StructureDefinition/VRM-AcknowledgementHeader
     - StructureDefinition/VRM-ExtractionErrorHeader
+    - StructureDefinition/VRM-FetalDeathReportHeader
+    - StructureDefinition/VRM-FetalDeathReportUpdateHeader
+    - StructureDefinition/VRM-BirthReportHeader
+    - StructureDefinition/VRM-BirthReportUpdateHeader
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathHeader
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateHeader
+    - StructureDefinition/VRM-ParentalDemographicsCodingHeader
+    - StructureDefinition/VRM-ParentalDemographicsCodingUpdateHeader
   Parameters:
     name: Message Parameter Profiles
     description: Message Parameter Profiles
