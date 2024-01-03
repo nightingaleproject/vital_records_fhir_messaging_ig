@@ -11,7 +11,7 @@ Usage: #example
 * status = #final
 * type = $loinc#86804-2 "Cause of death classification and related information Document"
 * subject.display  = "Patient - Decedent Fetus"
-* date = "2019-01-09"
+* date = "2021-05-20"
 * author.display = "National Center for Health Statistics"
 * title = "Coded Cause of Fetal Death"
 * section[codedCauseOfFetalDeath]

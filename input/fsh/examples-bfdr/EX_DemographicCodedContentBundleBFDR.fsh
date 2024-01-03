@@ -1,4 +1,4 @@
-Instance: bundle-coded-race-and-ethnicity-example-1
+Instance: bundle-coded-race-and-ethnicity-example1
 InstanceOf: DemographicCodedContentBundleBFDR
 Title: "Bundle - Coded Race and Ethnicity"
 Description: "Bundle - Coded Race and Ethnicity - example 1"
