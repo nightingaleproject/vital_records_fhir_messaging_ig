@@ -42,3 +42,32 @@ Description: "DemographicCodedContentBundle-Example1"
 // * insert addentry(Observation, InputRaceAndEthnicity-Example1)
 // // Input Data
 // * insert addentry(Observation, CodedRaceAndEthnicity-Example1)
+
+
+Instance: IndustryOccupationCodedContentBundle-Example1
+InstanceOf: IndustryOccupationCodedContentBundle
+Usage: #example
+Description: "IndustryOccupationCodedContentBundle-Example1"
+* insert AddMetaProfile(IndustryOccupationCodedContentBundle)
+* identifier.system = "http://nchs.cdc.gov/vrdr_id"
+* insert Identifiers2020NY000182
+* timestamp = "2020-10-20T14:48:35.401641-04:00"
+* insert addentry(Observation, DecedentUsualWork-Example2)
+
+Instance: DecedentUsualWork-Example2
+InstanceOf: DecedentUsualWork
+Usage: #example
+Description: "DecedentUsualWork-Example2 - with coded values"
+* insert AddMetaProfile(DecedentUsualWork)
+* status = #final
+* subject = Reference(Decedent-Example1)
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.339#5710 "Executive secretaries and executive administrative assistants"
+* valueCodeableConcept.text = "secretary"
+* component[odh-UsualIndustry].valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.336#9390 "Other general government and support"
+* component[odh-UsualIndustry].valueCodeableConcept.text = "State agency"
+//* effectivePeriod.start = "2001"
+//* effectivePeriod.end = "2005"
+
+
+
+

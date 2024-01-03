@@ -7,7 +7,7 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
-version: 1.0.1
+version: 1.1.0
 copyrightYear: 2022+
 releaseLabel: ci-build
 publisher:
@@ -17,7 +17,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
-  hl7.fhir.us.vrdr: 2.2.0 
+  hl7.fhir.us.vrdr: current 
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
@@ -68,6 +68,8 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
     - StructureDefinition/VRM-DemographicsCodingMessage
     - StructureDefinition/VRM-DemographicsCodingUpdateMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
     - StructureDefinition/VRM-StatusMessage
@@ -84,6 +86,8 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
     - StructureDefinition/VRM-DemographicsCodingHeader
     - StructureDefinition/VRM-DemographicsCodingUpdateHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
     - StructureDefinition/VRM-AcknowledgementHeader
     - StructureDefinition/VRM-ExtractionErrorHeader
   Parameters:

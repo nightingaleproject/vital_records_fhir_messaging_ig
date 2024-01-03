@@ -112,6 +112,20 @@ Description: "Header for Demographic Coding Message - Example"
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
 
+Instance: IndustryOccupationCodingHeader-Example1
+InstanceOf: IndustryOccupationCodingHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Message - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
 Instance: CauseOfDeathCodingUpdateHeader-Example1
 InstanceOf: CauseOfDeathCodingUpdateHeader
 Usage: #example
@@ -135,6 +149,18 @@ Description: "Header for Demographic Coding Update Message - Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * focus = Reference(DemographicCodedContentBundle-Example1)
 * insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: IndustryOccupationCodingUpdateHeader-Example1
+InstanceOf: IndustryOccupationCodingUpdateHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Update Message - Example"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -225,6 +251,25 @@ Description: "Demographic Coding update message - Example"
 * insert addentry(Header, DemographicsCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(Bundle, DemographicCodedContentBundle-Example1)
+
+Instance: IndustryOccupationCodingMessage-Example1
+InstanceOf: IndustryOccupationCodingMessage
+Usage: #example
+Description: "Industry Occupation coding message - Example1 -- coded content only"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, IndustryOccupationCodingHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
+
+
+Instance: IndustryOccupationCodingUpdateMessage1
+InstanceOf: IndustryOccupationCodingUpdateMessage
+Usage: #example
+Description: "Industry Occupation Coding update message - Example"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, IndustryOccupationCodingUpdateHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
 
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage

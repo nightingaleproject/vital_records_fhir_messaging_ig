@@ -77,6 +77,18 @@ Description:   "Cause of Death Coding Header"
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 // * focus only Reference(Bundle )
 
+Profile:  IndustryOccupationCodingHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingHeader
+Title:  "Industry Occupation Coding Header"
+Description:   "Industry Occupation Coding Header"
+* insert RequireMetaProfile(IndustryOccupationCodingHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+// * focus only Reference(Bundle )
+
 Profile:  DemographicsCodingUpdateHeader
 Parent: MessageHeader
 Id: VRM-DemographicsCodingUpdateHeader
@@ -93,9 +105,21 @@ Profile:  CauseOfDeathCodingUpdateHeader
 Parent: MessageHeader
 Id: VRM-CauseOfDeathCodingUpdateHeader
 Title:  "Cause Of Death Coding Update  Header"
-Description:   "Cause Of Death Death Coding Update Header"
+Description:   "Cause Of Death Coding Update Header"
 * insert RequireMetaProfile(CauseOfDeathCodingUpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_causeofdeath_coding_update (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+// * focus only Reference(Bundle )
+
+Profile:  IndustryOccupationCodingUpdateHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingUpdateHeader
+Title:  "Industy Occupation Coding Update  Header"
+Description:   "Industry Occupation Coding Update Header"
+* insert RequireMetaProfile(IndustryOccupationCodingUpdateHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding_update (exactly)
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
@@ -273,3 +297,26 @@ Description:   "Message for Errors during content extraction"
 * insert BundleEntry(messageHeader, 1, 1, Extraction Error Header , Extraction Error Header, ExtractionErrorHeader)
 * insert BundleEntry(extractionErrorParameters, 0, 1, Extraction Error Parameters, Extraction Error Parameters, MessageParameters)
 * insert BundleEntry(extractionErrorOutcome, 1, 1, Extraction Error Operation Outcome, Extraction Error Operation Outcome, Outcome)
+
+
+Profile: IndustryOccupationCodingMessage
+Parent: Bundle
+Id: VRM-IndustryOccupationCodingMessage
+Title: "Industry Occupation Coding Message"
+Description:   "Message for industry occupation coding response to death records"
+* insert RequireMetaProfile(IndustryOccupationCodingMessage)
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingHeader)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
+
+Profile: IndustryOccupationCodingUpdateMessage
+Parent: Bundle
+Id: VRM-IndustryOccupationCodingUpdateMessage
+Title: "Industry Occupation Coding Update Message"
+Description:   "Message for updating industry occupation coding response to death records"
+* insert RequireMetaProfile(IndustryOccupationCodingUpdateMessage)
+* insert CommonBundleStuff
+* insert BundleEntry(header, 1, 1, Industry Occupation Coding Update Header , Industry Occupation Coding Update Header, IndustryOccupationCodingUpdateHeader)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
