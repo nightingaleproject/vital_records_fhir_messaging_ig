@@ -44,3 +44,9 @@
 [DeathCertificateDocument]:            https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
 [DemographicCodedContentBundle]:       https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-demographic-coded-bundle.html
 [CauseOfDeathCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-cause-of-death-coded-bundle.html
+
+
+<!-- BFDR Profiles and Extensions -->
+[BundleDocumentBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-bfdr.html
+[CodedCauseOfFetalDeathBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-coded-cause-of-fetal-death.html
+[DemographicCodedContentBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-demographic-coded-content.html
