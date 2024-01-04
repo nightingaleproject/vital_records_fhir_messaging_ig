@@ -27,7 +27,7 @@ Id: VRM-MessageHeaderURI-cs
 Title: "MessageHeader URI Values"
 Description: "MessageHeader URI Values"
 * ^caseSensitive = true
-* #http://nchs.cdc.gov/vrdr_submission "VRDR Submission" "Indicates that the payload is aninitial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
+* #http://nchs.cdc.gov/vrdr_submission "VRDR Submission" "Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
 Document"
 * #http://nchs.cdc.gov/vrdr_submission_update "VRDR Update" "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document"
 * #http://nchs.cdc.gov/vrdr_submission_void   "VRDR Void" "Indicates this is  void  of  a  VRDR  DeathCertificate Document"
@@ -41,4 +41,12 @@ Document"
 * #http://nchs.cdc.gov/vrdr_alias "VRDR Alias" "Indicates that this is an alias for a previously submitted Decedent"
 * #http://nchs.cdc.gov/vrdr_extraction_error "VRDR Extraction Error" "Indicates that this is an extraction error"
 * #http://nchs.cdc.gov/vrdr_status "VRDR Status" "Indicates that this is a status for a previously submitted Decedent"
+* #http://nchs.cdc.gov/bfdr_death "BFDR Death" "Indicates that the payload is an initial submission of a BFDR fetal death report"
+* #http://nchs.cdc.gov/bfdr_death_update "BFDR Death Update" "Indicates that the payload is an updated submission of a BFDR fetal death report"
+* #http://nchs.cdc.gov/bfdr_birth "BFDR Birth" "Indicates that this is an initial submission of a BFDR birth report"
+* #http://nchs.cdc.gov/bfdr_birth_update "BFDR Birth Update" "Indicates that this is an updated submission of a BFDR birth report"
+* #http://nchs.cdc.gov/bfdr_causeofdeath "BFDR Cause of Fetal Death" "Indicates that this is an initial fetal cause of death"
+* #http://nchs.cdc.gov/bfdr_causeofdeath_update "BFDR Cause of Fetal Death Update" "Indicates that this is an updated fetal cause of death"
+* #http://nchs.cdc.gov/bfdr_demographics_coding "BFDR Parental Demographics Coding" "Indicates that this is an initial demographics coding"
+* #http://nchs.cdc.gov/bfdr_demographics_coding_update "BFDR Parental Demographics Coding Update" "Indicates that this is an updated demographics coding"
 * ^experimental = false
