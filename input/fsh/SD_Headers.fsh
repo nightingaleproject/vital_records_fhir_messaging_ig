@@ -209,3 +209,27 @@ Title:  "Parental Demographics Message Update Header"
 * insert CommonHeaderStuff
 * insert HeaderResponseID
 * response.identifier ^short = "The value of the MessageHeader.id for the Birth or Fetal Death Record message that is being coded"
+
+Profile:  IndustryOccupationCodingHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingHeader
+Title:  "Industry Occupation Coding Header"
+Description:   "Industry Occupation Coding Header"
+* insert RequireMetaProfile(IndustryOccupationCodingHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+// * focus only Reference(Bundle )
+
+Profile:  IndustryOccupationCodingUpdateHeader
+Parent: MessageHeader
+Id: VRM-IndustryOccupationCodingUpdateHeader
+Title:  "Industy Occupation Coding Update  Header"
+Description:   "Industry Occupation Coding Update Header"
+* insert RequireMetaProfile(IndustryOccupationCodingUpdateHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_industryoccupation_coding_update (exactly)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
+// * focus only Reference(Bundle )

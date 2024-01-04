@@ -218,3 +218,29 @@ Description: "Header for Parental Demographics Message Update - Example"
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "BirthReportHeader-Example1"
 * response.code = #ok
+
+Instance: IndustryOccupationCodingHeader-Example1
+InstanceOf: IndustryOccupationCodingHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Message - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: IndustryOccupationCodingUpdateHeader-Example1
+InstanceOf: IndustryOccupationCodingUpdateHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Update Message - Example"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
