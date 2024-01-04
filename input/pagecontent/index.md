@@ -1,3 +1,34 @@
+<style>
+
+  .note-to-readers::before {
+  white-space: pre;
+  content: "Note to Readers\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  }
+
+  .note-to-readers {
+      margin: 5px;
+      padding: 10px;
+      border-left-style: solid;
+      background-color: #fff2ff;
+      border-left-color: #ffa0ff;
+  }
+
+</style>
+
+<div class="note-to-readers" markdown="1">
+
+####  CI Build for Future v2.0.0 Version of VRFM
+
+The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
+
+
+See the [change log](change_log.html) for an updated list of changes.
+  
+</div><!-- note-to-balloters -->
+
 ### Background
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
