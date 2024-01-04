@@ -1,6 +1,8 @@
 ### Version 1.1.0
 * Dependency on VRDR changed from STU2.2 to current CI-build (STU3)
 * Profiles and examples were added to support Industry Occupation Coding Messages and Update Messages with corresponding Headers. 
+* Additional dependency on current versions BFDR and VRCL IG's.
+* Addition of profiles (messages, headers) and examples (from BFDR, VRCL) to support birth and fetal Death messaging use cases.
 ### Version 1.0.1
 * Simplified examples of VRDR data used by the VRFM IG.  These were a constant battle to maintain as the IG publisher's validation process evolved.  The examples have been stripped down to the absolute minimum.  No changes should have occured to the technical content of this IG, only to the VRDR-based examples used to illustrate the exchange of content.
 * Changed the dependency on VRDR to the current version to work around IG Publisher issues.   
