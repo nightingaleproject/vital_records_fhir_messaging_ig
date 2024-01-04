@@ -1,6 +1,6 @@
 Instance: patient-child-baby-lee
 InstanceOf: PatientChildVitalRecords
-Title: "Patient - Child example "
+Title: "Patient - Child example"
 Description: "Example of Patient-child-vr profile"
 Usage: #example
 * extension[birthsex]

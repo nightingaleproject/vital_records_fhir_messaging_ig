@@ -7,9 +7,12 @@ Usage: #example
   * valueDateTime = "2021-05-28"
 * status = #final
 * type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
-* insert addReferenceComposition(subject,Patient, patient-decedent-fetus-not-named)
+* insert addReferenceComposition(subject, Patient, patient-decedent-fetus-not-named)
 * insert addReferenceComposition(author, Practitioner, practitioner-vital-records-jessica-leung)
 * date = "2021-05-20"
 * title = "Provider fetal death report Document"
 * section[motherPrenatal]
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
+  * insert addNamedEntryComposition(mothersHeight, Observation, observation-mother-height-carmen-teresa-lee)
+* section[fetus]
+  * insert addNamedEntryComposition(causeOfFetalDeath, Condition, condition-fetal-death-cause-or-condition-not-named)

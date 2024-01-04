@@ -9,5 +9,3 @@ Usage: #example
 * name
   * family = "Jessica"
   * given = "Leung"
-// * qualification.code = $v3-NullFlavor#OTH "other"
-//   * text = "Birth Clerk"

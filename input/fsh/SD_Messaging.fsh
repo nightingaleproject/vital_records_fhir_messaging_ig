@@ -234,6 +234,6 @@ Title: "Parental Demographics Update Message"
 Description:   "Message for updating parental demographics"
 * insert RequireMetaProfile(ParentalDemographicsCodingUpdateMessage)
 * insert CommonBundleStuff
-* insert BundleEntry(messageHeader, 1, 1, Parental Demographicsh Update Header, Parental Demographics Update Header, ParentalDemographicsCodingUpdateMessage)
+* insert BundleEntry(messageHeader, 1, 1, Parental Demographicsh Update Header, Parental Demographics Update Header, ParentalDemographicsCodingUpdateHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
 * insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, DemographicCodedContentBundleBFDR)

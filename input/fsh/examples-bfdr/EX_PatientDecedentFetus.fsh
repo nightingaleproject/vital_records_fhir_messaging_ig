@@ -20,7 +20,7 @@ Usage: #example
       * valueCode = #not-applicable
 * gender = #female
 * birthDate = "2021-05-20"
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
-    * valueDateTime = "2021-05-20T18:23:00-07:00"
+//   * extension
+//     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
+//     * valueDateTime = "2021-05-20T18:23:00-07:00"
 * deceasedBoolean = true

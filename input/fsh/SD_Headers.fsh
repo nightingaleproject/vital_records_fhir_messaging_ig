@@ -136,7 +136,7 @@ Description:   "Fetal Death Message Report Message Header"
 Id: VRM-FetalDeathReportHeader
 Title:  "Fetal Death Report Message Header"
 * insert RequireMetaProfile(FetalDeathReportHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_death (exactly)
 * insert CommonHeaderStuff
 
 Profile:  FetalDeathReportUpdateHeader
@@ -145,7 +145,7 @@ Description:   "Fetal Death Report Message Update Header"
 Id: VRM-FetalDeathReportUpdateHeader
 Title:  "Fetal Death Report Message Update Header"
 * insert RequireMetaProfile(FetalDeathReportUpdateHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission_update (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_death_update (exactly)
 * insert CommonHeaderStuff
 
 Profile:  BirthReportHeader
@@ -154,7 +154,7 @@ Description:   "Birth Report Message Header"
 Id: VRM-BirthReportHeader
 Title:  "Birth Report Message Header"
 * insert RequireMetaProfile(BirthReportHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_birth (exactly)
 * insert CommonHeaderStuff
 
 Profile:  BirthReportUpdateHeader
@@ -163,7 +163,7 @@ Description:   "Birth Report Message Update Header"
 Id: VRM-BirthReportUpdateHeader
 Title:  "Birth Report Message Update Header"
 * insert RequireMetaProfile(BirthReportUpdateHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission_update (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_birth_update (exactly)
 * insert CommonHeaderStuff
 
 Profile:  CodedCauseOfFetalDeathHeader
@@ -172,8 +172,10 @@ Description:   "Coded Cause of Fetal Death Report Message Header"
 Id: VRM-CodedCauseOfFetalDeathHeader
 Title:  "Coded Cause of Fetal Death Report Message Header"
 * insert RequireMetaProfile(CodedCauseOfFetalDeathHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_causeofdeath (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Fetal Death Record message that is being coded"
 
 Profile:  CodedCauseOfFetalDeathUpdateHeader
 Parent: MessageHeader
@@ -181,8 +183,10 @@ Description:   "Coded Cause of Fetal Death Report Message Update Header"
 Id: VRM-CodedCauseOfFetalDeathUpdateHeader
 Title:  "Coded Cause of Fetal Death Report Message Update Header"
 * insert RequireMetaProfile(CodedCauseOfFetalDeathUpdateHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission_update (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_causeofdeath_update (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Fetal Death Record message that is being coded"
 
 Profile:  ParentalDemographicsCodingHeader
 Parent: MessageHeader
@@ -190,14 +194,18 @@ Description:   "Parental Demographics Message Header"
 Id: VRM-ParentalDemographicsCodingHeader
 Title:  "Parental Demographics Message Header"
 * insert RequireMetaProfile(ParentalDemographicsCodingHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_demographics_coding (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Birth or Fetal Death Record message that is being coded"
 
 Profile: ParentalDemographicsCodingUpdateHeader
 Parent: MessageHeader
 Description:   "Parental Demographics Message Update Header"
 Id: VRM-ParentalDemographicsCodingUpdateHeader
 Title:  "Parental Demographics Message Update Header"
-* insert RequireMetaProfile(CodedCauseOfFetalDeathUpdateHeader)
-// * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_submission_update (exactly)
+* insert RequireMetaProfile(ParentalDemographicsCodingUpdateHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_demographics_coding_update (exactly)
 * insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id for the Birth or Fetal Death Record message that is being coded"

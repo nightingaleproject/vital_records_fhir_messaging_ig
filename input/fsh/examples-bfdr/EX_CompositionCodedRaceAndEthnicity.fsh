@@ -10,4 +10,6 @@ Usage: #example
 * title = "Coded Race and Ethnicity"
 * section[mother]
   * title = "Mother's Coded Race and Ethnicity"
-  * emptyReason = $emptyReason#unavailable
+  * focus.display = "patient-mother-carmen-teresa-lee"
+  * insert addentryComposition(Observation, observation-input-race-and-ethnicity-mother)
+  * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-mother)

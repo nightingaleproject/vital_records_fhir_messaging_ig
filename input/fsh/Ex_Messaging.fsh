@@ -145,7 +145,7 @@ Description: "Live Birth Report Message - Example"
 * insert addentry(Bundle, bundle-provider-live-birth-example1)
 
 Instance: BirthReportUpdateMessage-Example1
-InstanceOf: BirthReportMessage
+InstanceOf: BirthReportUpdateMessage
 Usage: #example
 Description: "Live Birth Report Message Update - Example"
 * timestamp = "2022-08-20T00:00:00Z"
@@ -167,7 +167,7 @@ InstanceOf: CodedCauseOfFetalDeathUpdateMessage
 Usage: #example
 Description: "Coded Cause of Fetal Death Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, CodedCauseOfFetalDeathHeader-Example1)
+* insert addentry(Header, CodedCauseOfFetalDeathUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(Bundle, bundle-coded-cause-of-fetal-death-example1)
 
@@ -178,7 +178,7 @@ Description: "Parental Demographics Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, ParentalDemographicsCodingHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, composition-coded-race-and-ethnicity-example1)
+* insert addentry(Bundle, bundle-coded-race-and-ethnicity-example1)
 
 Instance: ParentalDemographicsCodingUpdateMessage-Example1
 InstanceOf: ParentalDemographicsCodingUpdateMessage
@@ -187,4 +187,4 @@ Description: "Parental Demographics Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, ParentalDemographicsCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, composition-coded-race-and-ethnicity-example1)
+* insert addentry(Bundle, bundle-coded-race-and-ethnicity-example1)
