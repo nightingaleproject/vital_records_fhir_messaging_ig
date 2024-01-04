@@ -1,3 +1,184 @@
+
+Instance: Parameters-Example1
+InstanceOf: MessageParameters
+Usage: #example
+Description: "Parameters for Submission: Example"
+* parameter[jurisdiction_id].valueString = "NY"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
+
+Instance: VoidParameters-Example1
+InstanceOf: VoidParameters
+Usage: #example
+Description: "Parameters for Void: Example"
+* parameter[jurisdiction_id].valueString = "NY"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[block_count].valueUnsignedInt = 10
+
+Instance: StatusParameters-Example1
+InstanceOf: StatusParameters
+Usage: #example
+Description: "Parameters for Status: Example"
+* parameter[jurisdiction_id].valueString = "NY"
+* parameter[cert_no].valueUnsignedInt = 123456
+* parameter[death_year].valueUnsignedInt = 2018
+* parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[status].valueString = "manualCauseOfDeathCoding"
+
+Instance: AcknowledgementHeader-Example1
+InstanceOf: AcknowledgementHeader
+Usage: #example
+Description: "Acknowledgement Header: Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+// * focus = Reference(Parameters-Example1)   // Is this needed?  Same parameters as for VoidHeader...
+* insert addReference(focus, Parameters, Parameters-Example1)
+
+Instance: VoidHeader-Example1
+InstanceOf: VoidHeader
+Usage: #example
+Description: "Parameters for Void: Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+// * focus = Reference(VoidParameters-Example1)
+* insert addReference(focus, Parameters, VoidParameters-Example1)
+
+Instance: StatusHeader-Example1
+InstanceOf: StatusHeader
+Usage: #example
+Description: "Parameters for Status: Example1"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_status"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+// * focus = Reference(StatusParameters-Example1)
+* insert addReference(focus, Parameters, StatusParameters-Example1)
+// * focus.reference = "http://www.example.org/fhir/Parameters/StatusParameters-Example1"
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: UpdateHeader-Example1
+InstanceOf: UpdateHeader
+Usage: #example
+Description: "Header for Update: Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+// * focus.reference = "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1"
+* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+
+Instance: SubmissionHeader-Example1
+InstanceOf: SubmissionHeader
+Usage: #example
+Description: "Header for Submission - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+
+Instance: CauseOfDeathCodingHeader-Example1
+InstanceOf: CauseOfDeathCodingHeader
+Usage: #example
+Description: "Header for Cause of Death Coding Message - Example1- coded content only"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+
+Instance: DemographicsCodingHeader-Example1
+InstanceOf: DemographicsCodingHeader
+Usage: #example
+Description: "Header for Demographic Coding Message - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: IndustryOccupationCodingHeader-Example1
+InstanceOf: IndustryOccupationCodingHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Message - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_coding"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: CauseOfDeathCodingUpdateHeader-Example1
+InstanceOf: CauseOfDeathCodingUpdateHeader
+Usage: #example
+Description: "Header for Cause Of Death Coding Update Message - Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_coding_update"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+
+Instance: DemographicsCodingUpdateHeader-Example1
+InstanceOf: DemographicsCodingUpdateHeader
+Usage: #example
+Description: "Header for Demographic Coding Update Message - Example"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+Instance: IndustryOccupationCodingUpdateHeader-Example1
+InstanceOf: IndustryOccupationCodingUpdateHeader
+Usage: #example
+Description: "Header for Industry Occupation Coding Update Message - Example"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+// * focus = Reference(DemographicCodedContentBundle-Example1)
+* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example1)
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+
+
+Instance: ExtractionErrorHeader-Example1
+InstanceOf: ExtractionErrorHeader
+Usage: #example
+Description: "Header for Extraction Error Message - Example"
+// * eventUri = HeaderURICS#"http://nchs.cdc.gov/vrdr_extraction_error"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
+// * response.details = Reference(Outcome-Example1)
+* insert addReference(response.details, OperationOutcome, Outcome-Example1)
+// * focus = Reference(Parameters-Example1)
+* insert addReference(focus, Parameters, Parameters-Example1)
+
 Instance: Outcome-Example1
 InstanceOf: Outcome
 Usage: #example
@@ -70,6 +251,25 @@ Description: "Demographic Coding update message - Example"
 * insert addentry(Header, DemographicsCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(Bundle, DemographicCodedContentBundle-Example1)
+
+Instance: IndustryOccupationCodingMessage-Example1
+InstanceOf: IndustryOccupationCodingMessage
+Usage: #example
+Description: "Industry Occupation coding message - Example1 -- coded content only"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, IndustryOccupationCodingHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
+
+
+Instance: IndustryOccupationCodingUpdateMessage1
+InstanceOf: IndustryOccupationCodingUpdateMessage
+Usage: #example
+Description: "Industry Occupation Coding update message - Example"
+* timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, IndustryOccupationCodingUpdateHeader-Example1)
+* insert addentry(Parameters, Parameters-Example1)
+* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
 
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage

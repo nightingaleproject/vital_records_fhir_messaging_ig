@@ -8,12 +8,16 @@
 <!-- Vital Records Messaging Profiles and Extensions -->
 [DemographicsCodingMessage]: StructureDefinition-VRM-DemographicsCodingMessage.html
 [CauseOfDeathCodingMessage]: StructureDefinition-VRM-CauseOfDeathCodingMessage.html
+[IndustryOccupationCodingMessage]: StructureDefinition-VRM-IndustryOccupationCodingMessage.html
 [DemographicsCodingHeader]: StructureDefinition-VRM-DemographicsCodingHeader.html
 [CauseOfDeathCodingHeader]: StructureDefinition-VRM-CauseOfDeathCodingHeader.html
+[IndustryOccupationCodingHeader]: StructureDefinition-VRM-IndustryOccupationCodingHeader.html
 [DemographicsCodingUpdateMessage]: StructureDefinition-VRM-DemographicsCodingUpdateMessage.html
 [CauseOfDeathCodingUpdateMessage]: StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html
+[IndustryOccupationCodingUpdateMessage]: StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html
 [DemographicsCodingUpdateHeader]: StructureDefinition-VRM-DemographicsCodingUpdateHeader.html
 [CauseOfDeathCodingUpdateHeader]: StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html
+[IndustryOccupationCodingUpdateHeader]: StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html
 [CauseOfDeathCodingParameters]: StructureDefinition-VRM-CauseOfDeathCodingParameters.html
 [DemographicsCodingParameters]: StructureDefinition-VRM-DemographicsCodingParameters.html
 [MessageParameters]: StructureDefinition-VRM-MessageParameters.html
@@ -66,3 +70,4 @@
 [BundleDocumentBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-bfdr.html
 [CodedCauseOfFetalDeathBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-coded-cause-of-fetal-death.html
 [DemographicCodedContentBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-demographic-coded-content.html
+[IndustryOccupationCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-industry-occupation-coded-bundle.html
