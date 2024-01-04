@@ -22,8 +22,9 @@
 
 ####  CI Build for Future v2.0.0 Version of VRFM
 
-The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
+The version of Vital Records FHIR Messaging (VRFM) in production use by NCHS and Jurisdictional Vital Records Offices is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
 
+This version of VRFM is still under development and is intended to support the messaging required for submission of birth and fetal death reports to NCHS by Jurisdictions, and the return of coded demographics and fetal death content to the Jurisdictions.
 
 See the [change log](change_log.html) for an updated list of changes.
   
