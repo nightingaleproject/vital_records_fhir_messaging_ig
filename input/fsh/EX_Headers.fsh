@@ -132,7 +132,7 @@ Description: "Header for Fetal Death Report Message - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-provider-fetal-death-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example2)
 
 
 Instance: FetalDeathReportUpdateHeader-Example1
@@ -143,7 +143,7 @@ Description: "Header for Fetal Death Report Message Update - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-provider-fetal-death-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, Parameters-Example2)
 
 
 Instance: BirthReportHeader-Example1
@@ -154,7 +154,7 @@ Description: "Header for Birth Report Message - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-provider-live-birth-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 
 
 Instance: BirthReportUpdateHeader-Example1
@@ -165,7 +165,7 @@ Description: "Header for Birth Report Message Update - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-provider-live-birth-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 
 
 Instance: CodedCauseOfFetalDeathHeader-Example1
@@ -202,7 +202,7 @@ Description: "Header for Parental Demographics Message - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-coded-race-and-ethnicity-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 * response.identifier = "BirthReportHeader-Example1"
 * response.code = #ok
 
@@ -215,7 +215,7 @@ Description: "Header for Parental Demographics Message Update - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, bundle-coded-race-and-ethnicity-example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 * response.identifier = "BirthReportHeader-Example1"
 * response.code = #ok
 
