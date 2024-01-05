@@ -67,7 +67,8 @@
 
 
 <!-- BFDR Profiles and Extensions -->
-[BundleDocumentBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-bfdr.html
-[CodedCauseOfFetalDeathBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-coded-cause-of-fetal-death.html
-[DemographicCodedContentBundleBFDR]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-demographic-coded-content.html
-[IndustryOccupationCodedContentBundle]:      https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-industry-occupation-coded-bundle.html
+[BundleDocumentFetalDeathReport]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-fetal-death-report.html
+[BundleDocumentBirthReport]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-birth-report.html
+[BundleDocumentCodedCauseOfFetalDeath]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-coded-cause-of-fetal-death.html
+[BundleDocumentDemographicCodedContent]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-demographic-coded-content.html
+[IndustryOccupationCodedContentBundle]: https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-industry-occupation-coded-bundle.html
