@@ -3,8 +3,8 @@ InstanceOf: CompositionProviderFetalDeathReport
 Title: "Composition - Provider Fetal Death Report - Fetus"
 Description: "Composition - Provider Fetal Death Report: Fetus Example"
 Usage: #example
-* extension[Extension-date-received-by-registrar]
-  * valueDateTime = "2021-05-28"
+// * extension[Extension-date-received-by-registrar]
+//   * valueDateTime = "2021-05-28"
 * status = #final
 * type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
 * insert addReferenceComposition(subject, Patient, patient-decedent-fetus-not-named)

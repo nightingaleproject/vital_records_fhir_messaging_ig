@@ -3,8 +3,8 @@ InstanceOf: CompositionProviderLiveBirthReport
 Title: "Composition - Provider Live Birth Report - BabyG Quinn"
 Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
 Usage: #example
-* extension[Extension-date-filed-by-registrar]
-  * valueDateTime = "2022-08-21"
+// * extension[Extension-date-filed-by-registrar]
+//   * valueDateTime = "2022-08-21"
 * identifier.value = "2022NJ15076"
 * status = #final
 * type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"

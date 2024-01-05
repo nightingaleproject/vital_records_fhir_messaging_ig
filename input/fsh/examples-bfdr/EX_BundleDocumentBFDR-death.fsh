@@ -1,5 +1,5 @@
 Instance: bundle-provider-fetal-death-example1
-InstanceOf: BundleDocumentBFDR
+InstanceOf: BundleDocumentCodedCauseOfFetalDeath
 Title: "Bundle - Provider Fetal Death Report - Fetus"
 Description: "Bundle - Provider Fetal Death Report: Fetus example"
 Usage: #example
