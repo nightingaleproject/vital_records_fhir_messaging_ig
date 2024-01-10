@@ -177,12 +177,12 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
-| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | [BundleDocumentFetalDeathReport] (from BFDR IG) |
-| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | [BundleDocumentFetalDeathReport] (from BFDR IG)|
-| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | [BundleDocumentBirthReport] (from BFDR IG)|
-| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | [BundleDocumentBirthReport] (from BFDR IG)|
-| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParameters] | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
-| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
+| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParametersFetalDeath] | [BundleDocumentFetalDeathReport] (from BFDR IG) |
+| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParametersFetalDeath] | [BundleDocumentFetalDeathReport] (from BFDR IG)|
+| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParametersBirth] | [BundleDocumentBirthReport] (from BFDR IG)|
+| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParametersBirth]  | [BundleDocumentBirthReport] (from BFDR IG)|
+| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParametersFetalDeath] | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
+| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParametersFetalDeath]  | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
 | [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | [BundleDocumentDemographicCodedContent] (from BFDR IG)|
 | [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | [BundleDocumentDemographicCodedContent] (from BFDR IG)|
 {: .grid }
