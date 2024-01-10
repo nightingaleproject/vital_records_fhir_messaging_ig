@@ -11,7 +11,7 @@ Profile:  MessageParametersFetalDeath
 Parent: Parameters
 Id: VRM-MessageParametersFetalDeath
 Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
-Title:  "Death Message Parameters"
+Title:  "Fetal Death Message Parameters"
 * insert RequireMetaProfile(MessageParametersFetalDeath)
 * id MS
 * insert BaseMessageParametersFetalDeath
