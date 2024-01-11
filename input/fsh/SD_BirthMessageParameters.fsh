@@ -1,8 +1,8 @@
-Profile:  MessageParametersBirth
+Profile:  MessageParametersBFDR
 Parent: Parameters
-Id: VRM-MessageParametersBirth
-Description:   "Base parameter set for most Birth Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
-Title:  "Birth Message Parameters"
-* insert RequireMetaProfile(MessageParametersBirth)
+Id: VRM-MessageParametersBFDR
+Description:   "Base parameter set for most Birth or Fetal Death Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
+Title:  "Birth/Fetal Death Message Parameters"
+* insert RequireMetaProfile(MessageParametersBFDR)
 * id MS
-* insert BaseMessageParametersBirth
+* insert BaseMessageParametersBFDR

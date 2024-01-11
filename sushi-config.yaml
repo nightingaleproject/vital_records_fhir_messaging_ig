@@ -113,8 +113,7 @@ groups:
     description: Message Parameter Profiles
     resources:
     - StructureDefinition/VRM-MessageParameters
-    - StructureDefinition/VRM-MessageParametersBirth
-    - StructureDefinition/VRM-MessageParametersFetalDeath
+    - StructureDefinition/VRM-MessageParametersBFDR
     - StructureDefinition/VRM-VoidParameters
     - StructureDefinition/VRM-AliasParameters
     - StructureDefinition/VRM-StatusParameters

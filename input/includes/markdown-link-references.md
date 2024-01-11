@@ -21,8 +21,7 @@
 [CauseOfDeathCodingParameters]: StructureDefinition-VRM-CauseOfDeathCodingParameters.html
 [DemographicsCodingParameters]: StructureDefinition-VRM-DemographicsCodingParameters.html
 [MessageParameters]: StructureDefinition-VRM-MessageParameters.html
-[MessageParametersBirth]: StructureDefinition-VRM-MessageParametersBirth.html
-[MessageParametersFetalDeath]: StructureDefinition-VRM-MessageParametersFetalDeath.html
+[MessageParametersBFDR]: StructureDefinition-VRM-MessageParametersBFDR.html
 [SubmissionHeader]: StructureDefinition-VRM-SubmissionHeader.html
 [VoidHeader]: StructureDefinition-VRM-VoidHeader.html
 [AliasHeader]: StructureDefinition-VRM-AliasHeader.html
