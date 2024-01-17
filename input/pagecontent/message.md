@@ -11,22 +11,22 @@ The following subsections illustrate message exchange patterns between vital rec
 <!-- ![Message exchange pattern for successful death record submission](submission.png){ width=25% } -->
 &nbsp;
 
-Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
+Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record. Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
 Coding responses are sent using a [CauseOfDeathCodingMessage] or [DemographicsCodingMessage] and acknowledged using a [AcknowledgementMessage].
 
-The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.  In the event that manual coding is required, and the coding response would be delayed, a [StatusMessage] message may be sent.  Note that acknowledgements are not expected for StatusMessages.
+The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required. In the event that manual coding is required, and the coding response would be delayed, a [StatusMessage] message may be sent. Note that acknowledgements are not expected for StatusMessages.
 
-The second (optional) Code, Coding Update, Extract and Acknowledgement steps highlight that cause of death coding may be undertaken separately to race and ethnicity encoding. A single Death Record Submission message could result in both a  Coding Response and a Coding Update message, one for cause of death, the other for race and ethnicity coding. The first coding for a given record should be sent using a Coding Response message, subsequent codings for the same record should be sent using a [DemographicsCodingUpdateMessage] or [CauseOfDeathCodingUpdateMessage]. For brevity, this separation of coding for causes of death and race and ethnicity is omitted from subsequent diagrams but should be considered to be possible in all cases.
+The second (optional) Code, Coding Update, Extract and Acknowledgement steps highlight that cause of death coding may be undertaken separately to race and ethnicity encoding. A single Death Record Submission message could result in both a Coding Response and a Coding Update message, one for cause of death, the other for race and ethnicity coding. The first coding for a given record should be sent using a Coding Response message, subsequent codings for the same record should be sent using a [DemographicsCodingUpdateMessage] or [CauseOfDeathCodingUpdateMessage]. For brevity, this separation of coding for causes of death and race and ethnicity is omitted from subsequent diagrams but should be considered to be possible in all cases.
 
 The purpose of acknowledgement messages is to support reliability in the exchange of death records and coding responses, see [Retrying Requests](#retries) for further details. Acknowledgements are a feature of the FHIR messaging system, they are not intended to be exposed to jurisdiction death registration systems or NVSS directly.
 
 The Acknowlegement Message’s MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message that is being acknowledged. When processing acknowledgements this identifier must be used to associate the acknowledgement with the message that is being acknowledged. This association is the basis for implementing reliable messaging.
 
 A submission can be routed to NCHS and/or jurisdiction exchange via STEVE using the destinations specified in the [SubmissionHeader]. The destinations can include just NHCS, just jurisdiction exchange via STEVE, or both. This provides the functionality that was previously provided by the IJE REPLACE field as follows:
-* Original Record (REPLACE = 0): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission`
-* Updated Record(REPLACE = 1): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
-* Do not send to NCHS (REPLACE = 2): message destination should include just `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
 
+- Original Record (REPLACE = 0): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission`
+- Updated Record(REPLACE = 1): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
+- Do not send to NCHS (REPLACE = 2): message destination should include just `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
 
 #### Updating Prior Death Record Submission
 
@@ -53,7 +53,7 @@ See note in previous section regarding routing to NCHS and Jurisdictions.
 </figure>
 &nbsp;
 
-Figure 3 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when a prior Coding Response needs to be subsequently updated.  Coding updates  should use a [DemographicsCodingUpdateMessage] or [CauseOfDeathCodingUpdateMessage].
+Figure 3 illustrates the sequence of message exchanges between a vital records jurisdiction and NVSS when a prior Coding Response needs to be subsequently updated. Coding updates should use a [DemographicsCodingUpdateMessage] or [CauseOfDeathCodingUpdateMessage].
 
 #### Voiding Death Records
 
@@ -75,7 +75,6 @@ See note in previous section about Submission of death records regarding routing
 
 <!-- ![Message exchange pattern for retrying an unacknowledged death record submission](retry.png){ width=25% } -->
 
-
 <figure style="align:middle">
 <img alt = "Message exchange pattern for retrying an unacknowledged death record submission" style="width:25%;height:auto;float:none;align:middle;" src="retry.png"/>
     <figcaption style="bold">Figure 5: Message exchange pattern for retrying an unacknowledged death record submission</figcaption>
@@ -84,18 +83,15 @@ See note in previous section about Submission of death records regarding routing
 
 Figure 5 illustrates the case where the vital records jurisdiction does not receive a timely Acknowledgement to the Death Record Submission. Submissions can be retried providing the restrictions on Message and Header ids described in section 5 are followed.
 
-It is recommended that the API server and each client attempt a maximum of 3 retries, waiting 4 hrs after the first attempt, 8 hours after the 2nd attempt, and 12 hours after the third attempt.  If no acknowledgment is received within 12 hours of the third attempt, communication through another channel (e.g., phone or e-mail) should be used to identify and resolve the problem.   This approach prevents retries from overloading NVSS in the case of transient outages.
+It is recommended that the API server and each client attempt a maximum of 3 retries, waiting 4 hrs after the first attempt, 8 hours after the 2nd attempt, and 12 hours after the third attempt. If no acknowledgment is received within 12 hours of the third attempt, communication through another channel (e.g., phone or e-mail) should be used to identify and resolve the problem. This approach prevents retries from overloading NVSS in the case of transient outages.
 
 <!-- ![Message exchange pattern for retrying an unacknowledged coding response](retry2.png){ width=25% } -->
-
-
 
 <figure style="align:middle">
 <img alt = "Message exchange pattern for retrying an unacknowledged coding response" style="width:25%;height:auto;float:none;align:middle;" src="retry2.png"/>
     <figcaption style="bold">Figure 6: Message exchange pattern for retrying an unacknowledged coding response</figcaption>
 </figure>
 &nbsp;
-
 
 Figure 6 illustrates the case where the vital records jurisdiction does not receive a Coding Response. NVSS will not receive the expected Acknowledgement and this will trigger resending of the Coding Response.
 
@@ -106,8 +102,6 @@ Figure 6 illustrates the case where the vital records jurisdiction does not rece
     <figcaption style="bold">Figure 7: Message exchange pattern for retrying an unacknowledged coding response</figcaption>
 </figure>
 &nbsp;
-
-
 
 Figure 7 illustrates the case where the Acknowledgement of a Coding Update message is not received by NVSS. NVSS resends the Coding Update message, the jurisdiction resends the Acknowledgement and ignores the duplicate message.
 
@@ -124,13 +118,12 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 </figure>
 &nbsp;
 
-
 Figure 8 illustrates two message extraction failures:
 
 1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is returned instead of an Acknowledgement.
-2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  Note that acknowledgements are not expected for Extraction Error Messages. __Note__:<mark>The NCHS API currently does not support [ExtractionErrorMessage].  In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
+2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement. Note that acknowledgements are not expected for Extraction Error Messages. **Note**:<mark>The NCHS API currently does not support [ExtractionErrorMessage]. In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
 
-Extraction Error Response should use a [ExtractionErrorMessage].  For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
+Extraction Error Response should use a [ExtractionErrorMessage]. For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
 
 For a given Death Record Submission or Coding Response:
 
@@ -151,40 +144,171 @@ Alias records are optional records that are submitted only for National Death In
 
 Figure 8 illustrates the submission of a death message followed by an alias message.
 Alias messages can contain aliases for one or more of the following fields:
-* Decedent’s First Name
-* Decedent’s Middle Initial
-* Decedent’s Last Name
-* Decedent’s Name Suffix
-* Father’s Surname
-* Social Security Number
+
+- Decedent’s First Name
+- Decedent’s Middle Initial
+- Decedent’s Last Name
+- Decedent’s Name Suffix
+- Father’s Surname
+- Social Security Number
 
 Alias records should be sent using a [DeathRecordAliasMessage].
 
+<style>
+    table.style1 { 
+        border-collapse: collapse; 
+        width: 100%; 
+        table-layout: fixed;
+    }  
+    table.style1 tbody tr {
+        border-bottom: 1px solid #dddddd;
+    } 
+    table.style1 tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    } 
+    table.style1 tbody tr:last-of-type {
+        border-bottom: 2px solid #98c1d9;
+    }
+    table.style1 td {
+        text-align: left;
+        font-size: 14px;
+    }
+    table.style1 td:first-of-type {
+        text-align: left;
+    }
+    table.style1 td:nth-of-type(2) {
+        text-align: center;
+    }
+    table.style1 td:nth-of-type(3) {
+        text-align: left;
+    }
+</style>
+
 ### Message Structure and Content
 
-| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
-|------------------------------|--------|--------|------------|------|
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
-| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
-| [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
-| [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG)  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG) |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
-| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | [BundleDocumentFetalDeathReport] (from BFDR IG) |
-| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | [BundleDocumentFetalDeathReport] (from BFDR IG)|
-| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | [BundleDocumentBirthReport] (from BFDR IG)|
-| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | [BundleDocumentBirthReport] (from BFDR IG)|
-| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParameters] | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
-| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | [BundleDocumentCodedCauseOfFetalDeath] (from BFDR IG)|
-| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | [BundleDocumentDemographicCodedContent] (from BFDR IG)|
-| [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | [BundleDocumentDemographicCodedContent] (from BFDR IG)|
-{: .grid }
+#### Death Record Submission
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-DeathRecordSubmissionMessage.html'>DeathRecordSubmissionMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-SubmissionHeader.html'>SubmissionHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-certificate-document.html'>DeathCertificateDocument</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-DeathRecordUpdateMessage.html'>DeathRecordUpdateMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-UpdateHeader.html'>UpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-certificate-document.html'>DeathCertificateDocument</a> <br>(from VRDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Cause of Death
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingMessage.html'>CauseOfDeathCodingMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingHeader.html'>CauseOfDeathCodingHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-coded-bundle.html'>CauseOfDeathCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html'>CauseOfDeathCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html'>CauseOfDeathCodingUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-coded-bundle.html'>CauseOfDeathCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Industry/Occupation
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-IndustryOccupationCodingMessage.html'>IndustryOccupationCodingMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-IndustryOccupationCodingHeader.html'>IndustryOccupationCodingHeader</a></td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-industry-occupation-coded-bundle.html'>IndustryOccupationCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html'>IndustryOccupationCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html'>IndustryOccupationCodingUpdateHeader</a></td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-industry-occupation-coded-bundle.html'>IndustryOccupationCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Birth Submission
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-BirthReportMessage.html'>BirthReportMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-BirthReportHeader.html'>BirthReportHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a> <br>(from BFDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-BirthReportUpdateMessage.html'>BirthReportUpdateMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-BirthReportUpdateHeader.html'>BirthReportUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a> <br>(from BFDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Fetal Death Submission
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-FetalDeathReportMessage.html'>FetalDeathReportMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-FetalDeathReportHeader.html'>FetalDeathReportHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a> <br>(from BFDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-FetalDeathReportUpdateMessage.html'>FetalDeathReportUpdateMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-FetalDeathReportUpdateHeader.html'>FetalDeathReportUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a> <br>(from BFDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Cause of Fetal Death
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html'>CodedCauseOfFetalDeathMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CodedCauseOfFetalDeathHeader.html'>CodedCauseOfFetalDeathHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-coded-cause-of-fetal-death.html'>BundleDocumentCodedCauseOfFetalDeath</a> <br>(from BFDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html'>CodedCauseOfFetalDeathUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateHeader.html'>CodedCauseOfFetalDeathUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-coded-cause-of-fetal-death.html'>BundleDocumentCodedCauseOfFetalDeath</a> <br>(from BFDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Demographics 
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-DemographicsCodingMessage.html'>DemographicsCodingMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-DemographicsCodingHeader.html'>DemographicsCodingHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-demographic-coded-bundle.html'>DemographicCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-DemographicsCodingUpdateMessage.html'>DemographicsCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-DemographicsCodingUpdateHeader.html'>DemographicsCodingUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-demographic-coded-bundle.html'>DemographicCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-ParentalDemographicsCodingMessage.html'>ParentalDemographicsCodingMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-ParentalDemographicsCodingHeader.html'>ParentalDemographicsCodingHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-demographic-coded-content.html'>BundleDocumentDemographicCodedContent</a> <br>(from BFDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-ParentalDemographicsCodingUpdateMessage.html'>ParentalDemographicsCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-ParentalDemographicsCodingUpdateHeader.html'>ParentalDemographicsCodingUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParametersBFDR.html'>MessageParametersBFDR</a> </td><td> <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Bundle-document-demographic-coded-content.html'>BundleDocumentDemographicCodedContent</a> <br>(from BFDR IG) </td></tr>
+</tbody>
+</table>
+
+#### Administrative
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: left;'><b>Type</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Dir</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Header</b></td>
+<td style='background-color:#98c1d9; text-align: left;  width: 15%;'><b>Parameters</b></td>
+<td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-VRM-AcknowledgementMessage.html'>AcknowledgementMessage</a></td><td> In/Out </td><td> <a href='StructureDefinition-VRM-AcknowledgementHeader.html'>AcknowledgementHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-DeathRecordAliasMessage.html'>DeathRecordAliasMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-AliasHeader.html'>AliasHeader</a> </td><td> <a href='StructureDefinition-VRM-AliasParameters.html'>AliasParameters</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-DeathRecordVoidMessage.html'>DeathRecordVoidMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-VoidHeader.html'>VoidHeader</a> </td><td> <a href='StructureDefinition-VRM-VoidParameters.html'>VoidParameters</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-ExtractionErrorMessage.html'>ExtractionErrorMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-ExtractionErrorHeader.html'>ExtractionErrorHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> (optional) </td><td> <a href='StructureDefinition-VRM-Outcome.html'>Outcome</a> </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-StatusMessage.html'>StatusMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-StatusHeader.html'>StatusHeader</a> </td><td> <a href='StructureDefinition-VRM-StatusParameters.html'>StatusParameters</a> </td><td> - </td></tr>
+</tbody>
+</table>
 
 {% include markdown-link-references.md %}

@@ -52,3 +52,24 @@ Document"
 * #http://nchs.cdc.gov/bfdr_demographics_coding "BFDR Parental Demographics Coding" "Indicates that this is an initial demographics coding"
 * #http://nchs.cdc.gov/bfdr_demographics_coding_update "BFDR Parental Demographics Coding Update" "Indicates that this is an updated demographics coding"
 * ^experimental = false
+
+CodeSystem: PayloadVersionCS
+Id: Payload-version-cs
+Title: "Payload Version Identifier Values"
+Description: "Codesystem for Payload Version Identifier Values"
+* ^caseSensitive = true
+* #VRDR_STU3_0 "VRDRSTU3.0" "VRDR STU3.0"
+* #VRDR_STU2_2 "VRDRSTU2.2" "VRDR STU2.2"
+* #VRDR_STU2_1 "VRDRSTU2.1" "VRDR STU2.1"
+* #VRDR_STU2_0 "VRDRSTU2.0" "VRDR STU2.0"
+* #VRDR_STU1_0 "VRDRSTU1.0" "VRDR STU1.0"
+* #BFDR_STU2_0 "BFDRSTU2.0" "BFDR STU2.0"
+* #BFDR_STU1_1 "BFDRSTU1.1" "BFDR STU1.1"
+* #BFDR_STU1_0 "BFDRSTU1.0" "BFDR STU1.0"
+
+ValueSet: PayloadVersionVS
+Id: Payload-version-vs
+Title: "Payload Version Identifier Values"
+Description: "Payload Version Identifier Values"
+* codes from system PayloadVersionCS
+* ^experimental = false

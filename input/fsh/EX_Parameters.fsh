@@ -7,24 +7,27 @@ Description: "Parameters for Submission: Example"
 * parameter[cert_no].valueUnsignedInt = 123456
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[payload_version_id].valueString = "VRDRSTU2.2"
 
 Instance: Parameters-Example2
-InstanceOf: MessageParametersFetalDeath
+InstanceOf: MessageParametersBFDR
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 112233
-* parameter[death_year].valueUnsignedInt = 2021
+* parameter[report_year].valueUnsignedInt = 2021
 * parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[payload_version_id].valueString = "BFDRSTU1.1"
 
 Instance: ParametersBirth-Example1
-InstanceOf: MessageParametersBirth
+InstanceOf: MessageParametersBFDR
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 111111
-* parameter[birth_year].valueUnsignedInt = 2022
+* parameter[report_year].valueUnsignedInt = 2022
 * parameter[state_auxiliary_id].valueString = "abcdef10"
+* parameter[payload_version_id].valueString = "BFDRSTU1.1"
 
 Instance: VoidParameters-Example1
 InstanceOf: VoidParameters
