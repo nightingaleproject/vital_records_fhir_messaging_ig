@@ -159,7 +159,6 @@ Alias records should be sent using a [DeathRecordAliasMessage].
         border-collapse: collapse; 
         width: 100%; 
         table-layout: fixed;
-        font-size: 14px;
     }  
     table.style1 tbody tr {
         border-bottom: 1px solid #dddddd;
@@ -169,6 +168,10 @@ Alias records should be sent using a [DeathRecordAliasMessage].
     } 
     table.style1 tbody tr:last-of-type {
         border-bottom: 2px solid #98c1d9;
+    }
+    table.style1 td {
+        text-align: left;
+        font-size: 14px;
     }
     table.style1 td:first-of-type {
         text-align: left;
@@ -209,7 +212,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 <td style='background-color:#98c1d9; text-align: left;'><b>Body</b></td>
 </tr>
 <tr><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingMessage.html'>CauseOfDeathCodingMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingHeader.html'>CauseOfDeathCodingHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-coded-bundle.html'>CauseOfDeathCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
-<tr><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html'>CauseOfDeathCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingHeader.html'>CauseOfDeathCodingUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-coded-bundle.html'>CauseOfDeathCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html'>CauseOfDeathCodingUpdateMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html'>CauseOfDeathCodingUpdateHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> <a href='https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-coded-bundle.html'>CauseOfDeathCodedContentBundle</a> <br>(from VRDR IG) </td></tr>
 </tbody>
 </table>
 
@@ -303,7 +306,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 <tr><td> <a href='StructureDefinition-VRM-AcknowledgementMessage.html'>AcknowledgementMessage</a></td><td> In/Out </td><td> <a href='StructureDefinition-VRM-AcknowledgementHeader.html'>AcknowledgementHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-VRM-DeathRecordAliasMessage.html'>DeathRecordAliasMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-AliasHeader.html'>AliasHeader</a> </td><td> <a href='StructureDefinition-VRM-AliasParameters.html'>AliasParameters</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-VRM-DeathRecordVoidMessage.html'>DeathRecordVoidMessage</a></td><td> In </td><td> <a href='StructureDefinition-VRM-VoidHeader.html'>VoidHeader</a> </td><td> <a href='StructureDefinition-VRM-VoidParameters.html'>VoidParameters</a> </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-VRM-ExtractionErrorMessage.html'>ExtractionErrorMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-ExtractionErrorHeader.html'>ExtractionErrorHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters (optional)</a> </td><td> <a href='StructureDefinition-VRM-Outcome.html'>Outcome</a> </td></tr>
+<tr><td> <a href='StructureDefinition-VRM-ExtractionErrorMessage.html'>ExtractionErrorMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-ExtractionErrorHeader.html'>ExtractionErrorHeader</a> </td><td> <a href='StructureDefinition-VRM-MessageParameters.html'>MessageParameters</a> (optional) </td><td> <a href='StructureDefinition-VRM-Outcome.html'>Outcome</a> </td></tr>
 <tr><td> <a href='StructureDefinition-VRM-StatusMessage.html'>StatusMessage</a></td><td> Out </td><td> <a href='StructureDefinition-VRM-StatusHeader.html'>StatusHeader</a> </td><td> <a href='StructureDefinition-VRM-StatusParameters.html'>StatusParameters</a> </td><td> - </td></tr>
 </tbody>
 </table>
