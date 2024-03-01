@@ -48,6 +48,7 @@ menu:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
     NCHS Error Messages: business_rules.html 
+    FHIR Client Development Guide: https://github.com/nightingaleproject/Reference-NCHS-API/blob/main/FHIRClientDevelopmentGuide.md
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
