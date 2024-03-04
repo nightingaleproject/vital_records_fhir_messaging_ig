@@ -44,15 +44,23 @@ Description: "DemographicCodedContentBundle-Example1"
 // * insert addentry(Observation, CodedRaceAndEthnicity-Example1)
 
 
-// Instance: IndustryOccupationCodedContentBundle-Example1
-// InstanceOf: IndustryOccupationCodedContentBundle
-// Usage: #example
-// Description: "IndustryOccupationCodedContentBundle-Example1"
-// * insert AddMetaProfile(IndustryOccupationCodedContentBundle)
-// * identifier.system = "http://nchs.cdc.gov/vrdr_id"
-// * insert Identifiers2020NY000182
-// * timestamp = "2020-10-20T14:48:35.401641-04:00"
-// * insert addentry(Observation, DecedentUsualWork-Example2)
+Instance: IndustryOccupationCodedContentBundle-Example1
+InstanceOf: Bundle // IndustryOccupationCodedContentBundle
+Usage: #example
+Description: "IndustryOccupationCodedContentBundle-Example1"
+//* insert AddMetaProfile(IndustryOccupationCodedContentBundle)
+* identifier.system = "http://nchs.cdc.gov/vrdr_id"
+//* insert Identifiers2020NY000182
+* type = #collection
+* identifier.value = "2020NY000182"
+* identifier.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber"
+* identifier.extension[=].valueString = "000182"
+* identifier.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1"
+* identifier.extension[=].valueString = "000000000001"
+* identifier.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2"
+* identifier.extension[=].valueString = "100000000001"
+* timestamp = "2020-10-20T14:48:35.401641-04:00"
+* insert addentry(Observation, DecedentUsualWork-Example2)
 
 Instance: DecedentUsualWork-Example2
 InstanceOf: DecedentUsualWork

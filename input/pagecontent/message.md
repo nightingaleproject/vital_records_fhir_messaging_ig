@@ -164,17 +164,17 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
-| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR IG) |
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG)  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG) |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2)  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2) |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
+| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
 {: .grid }
