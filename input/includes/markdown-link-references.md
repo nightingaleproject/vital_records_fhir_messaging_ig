@@ -60,6 +60,7 @@
 [ParentalDemographicsCodingHeader]: StructureDefinition-VRM-ParentalDemographicsCodingHeader.html
 [ParentalDemographicsCodingUpdateHeader]: StructureDefinition-VRM-ParentalDemographicsCodingUpdateHeader.html
 [ParentalDemographicsCodingUpdateMessage]: StructureDefinition-VRM-ParentalDemographicsCodingUpdateMessage.html
+[PayloadVersionIdentifierValues]: ValueSet-Payload-version-vs.html
 
 <!-- VRDR Profiles and Extensions -->
 [DeathCertificateDocument]:            https://build.fhir.org/ig/HL7/vrdr/branches/master/StructureDefinition-vrdr-death-certificate-document.html
