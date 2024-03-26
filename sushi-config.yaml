@@ -7,9 +7,9 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
-version: 1.0.1
+version: 2.0.0
 copyrightYear: 2022+
-releaseLabel: ci-build
+releaseLabel: draft
 publisher:
   name: CDC NCHS
   url: http://cdc.gov/nchs
@@ -17,7 +17,9 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
-  hl7.fhir.us.vrdr: 2.2.0 
+  hl7.fhir.us.vrdr: current
+  hl7.fhir.us.vr-common-library: current
+  hl7.fhir.us.bfdr: current
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
@@ -68,9 +70,19 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
     - StructureDefinition/VRM-DemographicsCodingMessage
     - StructureDefinition/VRM-DemographicsCodingUpdateMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
     - StructureDefinition/VRM-StatusMessage
+    - StructureDefinition/VRM-FetalDeathReportMessage
+    - StructureDefinition/VRM-FetalDeathReportUpdateMessage
+    - StructureDefinition/VRM-BirthReportMessage
+    - StructureDefinition/VRM-BirthReportUpdateMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage
+    - StructureDefinition/VRM-ParentalDemographicsCodingMessage
+    - StructureDefinition/VRM-ParentalDemographicsCodingUpdateMessage
   Headers:
     name: Message Header Profiles
     description: Message Header Profiles
@@ -84,13 +96,24 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
     - StructureDefinition/VRM-DemographicsCodingHeader
     - StructureDefinition/VRM-DemographicsCodingUpdateHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
     - StructureDefinition/VRM-AcknowledgementHeader
     - StructureDefinition/VRM-ExtractionErrorHeader
+    - StructureDefinition/VRM-FetalDeathReportHeader
+    - StructureDefinition/VRM-FetalDeathReportUpdateHeader
+    - StructureDefinition/VRM-BirthReportHeader
+    - StructureDefinition/VRM-BirthReportUpdateHeader
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathHeader
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateHeader
+    - StructureDefinition/VRM-ParentalDemographicsCodingHeader
+    - StructureDefinition/VRM-ParentalDemographicsCodingUpdateHeader
   Parameters:
     name: Message Parameter Profiles
     description: Message Parameter Profiles
     resources:
     - StructureDefinition/VRM-MessageParameters
+    - StructureDefinition/VRM-MessageParametersBFDR
     - StructureDefinition/VRM-VoidParameters
     - StructureDefinition/VRM-AliasParameters
     - StructureDefinition/VRM-StatusParameters

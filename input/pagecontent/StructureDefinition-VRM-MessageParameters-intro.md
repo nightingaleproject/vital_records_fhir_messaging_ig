@@ -7,5 +7,6 @@ Parameters included:
 |  FILENO    | Certificate Number | cert_no   | string(6)   |
 |  DOD_YR    | Date of Death--Year | death_year   | string(4)   |
 |  AUXNO    | Auxiliary State file number | state_auxiliary_id   | string(12)   |
+| not mapped | Payload Version ID | payload_version_id | string from [PayloadVersionIdentifierValues] (extensible)|
 {: .grid }
 {% include markdown-link-references.md %}

@@ -59,6 +59,7 @@ Alias: ActivityAtTimeOfDeath = http://hl7.org/fhir/us/vrdr/StructureDefinition/v
 Alias: ActivityAtTimeOfDeathCS = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-activity-at-time-of-death-cs
 Alias: CauseOfDeathCodedContentBundle = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-coded-bundle
 Alias: DemographicCodedContentBundle = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-demographic-coded-bundle
+Alias: IndustryOccupationCodedContentBundle = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-industry-occupation-coded-bundle
 Alias: DeathCertificateDocument = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document
 Alias: DeathCertificate = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate
 Alias: AutopsyPerformedIndicator = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator
