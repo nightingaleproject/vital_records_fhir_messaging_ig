@@ -19,29 +19,9 @@ Description: "Decedent-Example3 - Stripped down for Mortality Roster"
 * name[1].family = "McCain"
 * name[1].given = "Joyce"
 * gender = #female   // required by USCore
-// * birthDate = "1978-03-12"
-//* birthDate.extension[partialDate].extension[day].valueInteger.extension[dataabsent].valueCode = $dataabsentreason401#NA
-* birthDate.extension[partialDate].extension[day].valueUnsignedInt = 10
-* birthDate.extension[partialDate].extension[month].valueUnsignedInt = 11
-* birthDate.extension[partialDate].extension[year].valueUnsignedInt = 2004
-// * address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
-//* address.line = "5590 E Lockwood Drive SW, #1"
-//* address.city = "Queens"
+* birthDate = "2004-11-10"
 * address.state = "NY"
-//* address.district = "Kings"
-//* address.city.extension[cityCode].valuePositiveInt = 01234
-//* address.district.extension[districtCode].valuePositiveInt  = 321
-//* address.country = "US"
-//* address.extension[unitnumber].valueString = "#1"
-//* address.extension[stnum].valueString = "5590"
-//* address.extension[stname].valueString = "Lockwood"
-//* address.extension[stdesig].valueString = "Drive"
-//* address.extension[predir].valueString = "E"
-//* address.extension[postdir].valueString = "SW"
-//* maritalStatus = $v3-MaritalStatus#S "Never Married"
-//* maritalStatus.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
-//* contact.name.text = "Joe Smith"
-//* contact.relationship.text = "Friend of family"
+
 
 
 Instance: Decedent-Example2
@@ -65,12 +45,8 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 * name[1].given = "Joyce"
 * name[1].family = "McCain"
 * gender = #female
-// * birthDate = "1978-03-12"
-//* birthDate.extension[partialDate].extension[day].valueInteger.extension[dataabsent].valueCode = $dataabsentreason401#NA
-* birthDate.extension[partialDate].extension[day].valueUnsignedInt = 10
-* birthDate.extension[partialDate].extension[month].valueUnsignedInt = 11
-* birthDate.extension[partialDate].extension[year].valueUnsignedInt = 2004
-* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
+* birthDate = "2004-11-10"
+//* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
 * address.line = "5590 E Lockwood Drive SW, #1"
 * address.city = "Queens"
 * address.state = "NY"
@@ -107,12 +83,8 @@ Description: "Decedent-Example1"
 * name.family = "Patel"
 * name.given = "Madelyn"
 * gender = #female
-// * birthDate = "1978-03-12"
-//* birthDate.extension[partialDate].extension[day].valueInteger.extension[dataabsent].valueCode = $dataabsentreason401#NA
-* birthDate.extension[partialDate].extension[day].valueUnsignedInt = 10
-* birthDate.extension[partialDate].extension[month].valueUnsignedInt = 11
-* birthDate.extension[partialDate].extension[year].valueUnsignedInt = 2004
-* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
+* birthDate = "2004-11-10"
+//* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
 * address.line = "5590 Lockwood Drive"
 * address.city = "Danville"
 * address.state = "VA"

@@ -3,9 +3,9 @@ InstanceOf: PatientDecedentFetus
 Title: "Patient - Decedent Fetus example"
 Description: "Example of Patient-decedent-fetus profile"
 Usage: #example
-* extension[fetalDeath]
-  * valueCoding = $sct#276507005
-  * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"
+// * extension[fetalDeath]
+//   * valueCoding = $sct#276507005
+//   * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
