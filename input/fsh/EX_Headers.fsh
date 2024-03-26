@@ -7,7 +7,6 @@ Description: "Acknowledgement Header: Example"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
-// * focus = Reference(Parameters-Example1)   // Is this needed?  Same parameters as for VoidHeader...
 * insert addReference(focus, Parameters, Parameters-Example1)
 
 Instance: VoidHeader-Example1
@@ -39,9 +38,9 @@ Description: "Header for Update: Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission_update"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-// * focus.reference = "http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1"
-* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
-* insert addReference(focus[1], Parameters, Parameters-Example1)
+// * focus.reference = "http://www.example.org/fhir/Bundle/DummyBundle"
+* insert addReference(focus[0], Parameters, Parameters-Example1)
+* insert addReference(focus[1], Bundle, DummyBundle)
 
 Instance: SubmissionHeader-Example1
 InstanceOf: SubmissionHeader
@@ -50,7 +49,7 @@ Description: "Header for Submission - Example"
 // * eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, DeathCertificateDocument-Example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 
 Instance: CauseOfDeathCodingHeader-Example1
@@ -61,8 +60,8 @@ Description: "Header for Cause of Death Coding Message - Example1- coded content
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -76,8 +75,8 @@ Description: "Header for Demographic Coding Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-// * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -90,8 +89,8 @@ Description: "Header for Cause Of Death Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-// * focus = Reference(CauseOfDeathCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, CauseOfDeathCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -103,8 +102,8 @@ Usage: #example
 Description: "Header for Demographic Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-// * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, DemographicCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -131,7 +130,7 @@ Description: "Header for Fetal Death Report Message - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_death"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-provider-fetal-death-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example2)
 
 
@@ -142,7 +141,7 @@ Description: "Header for Fetal Death Report Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_death_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-provider-fetal-death-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example2)
 
 
@@ -153,7 +152,7 @@ Description: "Header for Birth Report Message - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_birth"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-provider-live-birth-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 
 
@@ -164,7 +163,7 @@ Description: "Header for Birth Report Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_birth_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-provider-live-birth-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 
 
@@ -175,7 +174,7 @@ Description: "Header for Coded Cause of Fetal Death Message - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-coded-cause-of-fetal-death-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example2)
 * response.identifier = "FetalDeathReportHeader-Example1"
 * response.code = #ok
@@ -188,7 +187,7 @@ Description: "Header for Coded Cause of Fetal Death Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-coded-cause-of-fetal-death-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example2)
 * response.identifier = "FetalDeathReportHeader-Example1"
 * response.code = #ok
@@ -201,7 +200,7 @@ Description: "Header for Parental Demographics Message - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-coded-race-and-ethnicity-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 * response.identifier = "BirthReportHeader-Example1"
 * response.code = #ok
@@ -214,7 +213,7 @@ Description: "Header for Parental Demographics Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Bundle, bundle-coded-race-and-ethnicity-example1)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
 * response.identifier = "BirthReportHeader-Example1"
 * response.code = #ok
@@ -227,8 +226,8 @@ Description: "Header for Industry Occupation Coding Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 // * response.identifier = "54a07cef-4bff-4bb0-8957-9c8fbf7390ed"
-// * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok
@@ -239,8 +238,8 @@ Usage: #example
 Description: "Header for Industry Occupation Coding Update Message - Example"
 * destination.endpoint = "https://sos.ny.gov/vitalrecords"
 * source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-// * focus = Reference(DemographicCodedContentBundle-Example1)
-* insert addReference(focus[0], Bundle, IndustryOccupationCodedContentBundle-Example1)
+// * focus = Reference(DummyBundle)
+* insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, Parameters-Example1)
 * response.identifier = "SubmissionHeader-Example1"
 * response.code = #ok

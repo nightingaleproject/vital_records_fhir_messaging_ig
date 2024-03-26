@@ -14,7 +14,7 @@ Description:   "Message for submitting death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
-* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
 //* insert BundleEntry(IJERecordBase64, 0, 1, IJE Record encoded in Base64, IJE Record encoded in Base64, Binary)
 
 
@@ -27,7 +27,7 @@ Description:   "Message for updating death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Update Header , Update Header, UpdateHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, DeathCertificateDocument)
+* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
 
 
 Profile: DeathRecordVoidMessage
@@ -72,7 +72,7 @@ Description:   "Message for demographics coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, DemographicsCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, DemographicCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, MessageBundle)
 
 Profile: CauseOfDeathCodingMessage
 Parent: Bundle
@@ -83,7 +83,7 @@ Description:   "Message for cause of death coding response to death records"
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, CauseOfDeathCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, MessageBundle)
 // Profile: CodingUpdateMessage
 // Parent: Bundle
 // Id: VRM-CodingUpdateMessage
@@ -103,7 +103,7 @@ Description:   "Message for updating Demographics coding response to death recor
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Coding Update Header , Coding Update Header, DemographicsCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, DemographicCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Demographic Coded Content Bundle, DemographicCodedContentBundle, MessageBundle)
 
 Profile: CauseOfDeathCodingUpdateMessage
 Parent: Bundle
@@ -114,7 +114,7 @@ Description:   "Message for updating Cause Of Death coding response to death rec
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Cause Of Death Coding  Update Header , Cause Of Death Coding  Update Header, CauseOfDeathCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, CauseOfDeathCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Cause of Death Coded Content Bundle, CauseOfDeathCodedContentBundle, MessageBundle)
 
 
 Profile: AcknowledgementMessage
@@ -149,7 +149,7 @@ Description:   "Message for reporting birth records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Header, Birth Report Header, BirthReportHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Birth Report Document, Birth Report Document, BundleDocumentBFDR)
+* insert BundleEntry(fetalDeathReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
 
 
 Profile: BirthReportUpdateMessage
@@ -161,7 +161,7 @@ Description:   "Message for updating birth records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Update Header, Birth Report Update Header, BirthReportUpdateHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, BundleDocumentBFDR)
+* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
 
 
 Profile: CodedCauseOfFetalDeathMessage
@@ -173,7 +173,7 @@ Description:   "Message for reporting coded cause of fetal death"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Coded Cause of Fetal Death Header, Coded Cause of Fetal Death Header, CodedCauseOfFetalDeathHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, CodedCauseOfFetalDeathBundleBFDR)
+* insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, MessageBundle)
 
 
 Profile: CodedCauseOfFetalDeathUpdateMessage
@@ -185,7 +185,7 @@ Description:   "Message for updating coded cause of fetal death"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Coded Cause of Fetal Death Update Header, Coded Cause of Fetal Death Update Header, CodedCauseOfFetalDeathUpdateHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, CodedCauseOfFetalDeathBundleBFDR)
+* insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, MessageBundle)
 
 
 Profile: ParentalDemographicsCodingMessage
@@ -197,7 +197,7 @@ Description:   "Message for reporting parental demographics"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographics Header, Parental Demographics Header, ParentalDemographicsCodingHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, DemographicCodedContentBundleBFDR)
+* insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
 Profile: ParentalDemographicsCodingUpdateMessage
@@ -209,7 +209,7 @@ Description:   "Message for updating parental demographics"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographicsh Update Header, Parental Demographics Update Header, ParentalDemographicsCodingUpdateHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, DemographicCodedContentBundleBFDR)
+* insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
 Profile: FetalDeathReportMessage
@@ -221,7 +221,7 @@ Description:   "Message for reporting fetal death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Fetal Death Report Header, Fetal Death Report Header, FetalDeathReportHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, BundleDocumentBFDR)
+* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
 
 
 Profile: FetalDeathReportUpdateMessage
@@ -233,7 +233,7 @@ Description:   "Message for updating fetal death records"
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Fetal Death Report Update Header, Fetal Death Report Update Header, FetalDeathReportUpdateHeader)
 * insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, BundleDocumentBFDR)
+* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
 
 Profile: IndustryOccupationCodingMessage
 Parent: Bundle
@@ -244,7 +244,7 @@ Description:   "Message for industry occupation coding response to death records
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, Bundle )
 
 Profile: IndustryOccupationCodingUpdateMessage
 Parent: Bundle
@@ -255,4 +255,11 @@ Description:   "Message for updating industry occupation coding response to deat
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Industry Occupation Coding Update Header , Industry Occupation Coding Update Header, IndustryOccupationCodingUpdateHeader)
 * insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
-* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, IndustryOccupationCodedContentBundle)
+* insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, MessageBundle)
+
+
+Profile: MessageBundle
+Parent: Bundle
+Id: VRM-MessageBundle
+Title: "Placeholder Profile for profile-based slicing"
+Description:   "Placeholder for profile-based slicing"

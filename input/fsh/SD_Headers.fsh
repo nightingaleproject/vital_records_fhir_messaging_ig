@@ -20,7 +20,7 @@ Title:  "Death Message Update Header"
 * insert RequireMetaProfile(UpdateHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_update (exactly)
 * insert CommonHeaderStuff
-// * focus only Reference(Bundle) // DeathCertificateDocument
+//* focus only Reference(Bundle) // DeathCertificateDocument
 
 Profile:  VoidHeader
 Parent: MessageHeader
@@ -30,7 +30,7 @@ Description:   "Void Header"
 * insert RequireMetaProfile(VoidHeader)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_void (exactly)
 * insert CommonHeaderStuff
-* focus only Reference(VoidParameters)
+//* focus only Reference(VoidParameters)
 
 Profile:  DemographicsCodingHeader
 Parent: MessageHeader

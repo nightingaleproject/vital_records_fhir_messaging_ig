@@ -15,14 +15,21 @@ Description: "Extraction error message - Example"
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(OperationOutcome, Outcome-Example1)
 
+//RuleSet: addentry(type, id)
+//* entry[+].resource = {id}
+//* entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
 Instance: AcknowledgementMessage-Example1
 InstanceOf: AcknowledgementMessage
 Usage: #example
 Description: "Acknowledgement message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, AcknowledgementHeader-Example1)
-* insert addentry(Parameters, Parameters-Example1)
+//* insert addentry(Header, AcknowledgementHeader-Example1)
+//* insert addentry(Parameters, Parameters-Example1)
+* entry[+].resource = AcknowledgementHeader-Example1
+* entry[=].fullUrl = "http://www.example.org/fhir/Header/AcknowledgementHeader-Example1"
+* entry[+].resource = Parameters-Example1
+* entry[=].fullUrl = "http://www.example.org/fhir/Parameters/Parameters-Example1"
 
 Instance: StatusMessage-Example1
 InstanceOf: StatusMessage
@@ -39,7 +46,7 @@ Description: "Cause of death coding message - Example1 -- coded content only"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CauseOfDeathCodingHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 
 Instance: CauseOfDeathCodingUpdateMessage1
@@ -49,7 +56,7 @@ Description: "Cause of Death Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CauseOfDeathCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, CauseOfDeathCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 
 Instance: DemographicsCodingMessage-Example1
@@ -59,7 +66,7 @@ Description: "Cause of death coding message - Example1 -- coded content only"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, DemographicsCodingHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, DemographicCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 
 Instance: DemographicsCodingUpdateMessage1
@@ -69,7 +76,7 @@ Description: "Demographic Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, DemographicsCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, DemographicCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: IndustryOccupationCodingMessage-Example1
 InstanceOf: IndustryOccupationCodingMessage
@@ -78,7 +85,7 @@ Description: "Industry Occupation coding message - Example1 -- coded content onl
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, IndustryOccupationCodingHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 
 Instance: IndustryOccupationCodingUpdateMessage1
@@ -88,7 +95,7 @@ Description: "Industry Occupation Coding update message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, IndustryOccupationCodingUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, IndustryOccupationCodedContentBundle-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: DeathRecordVoidMessage-Example1
 InstanceOf: DeathRecordVoidMessage
@@ -105,7 +112,7 @@ Description: "Submission mesage - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, SubmissionHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, DeathCertificateDocument-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: UpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage
@@ -114,7 +121,7 @@ Description: "Update message - example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, UpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, DeathCertificateDocument-Example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: DeathRecordAliasMessage-Example1
 InstanceOf: DeathRecordAliasMessage
@@ -142,7 +149,7 @@ Description: "Fetal Death Report Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, FetalDeathReportHeader-Example1)
 * insert addentry(Parameters, Parameters-Example2)
-* insert addentry(Bundle, bundle-provider-fetal-death-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: FetalDeathReportUpdateMessage-Example1
 InstanceOf: FetalDeathReportUpdateMessage
@@ -151,7 +158,7 @@ Description: "Fetal Death Report Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, FetalDeathReportUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example2)
-* insert addentry(Bundle, bundle-provider-fetal-death-example1)
+* insert addentry(Bundle, DummyBundle)
 
 
 Instance: BirthReportMessage-Example1
@@ -161,7 +168,7 @@ Description: "Live Birth Report Message - Example"
 * timestamp = "2022-08-20T00:00:00Z"
 * insert addentry(Header, BirthReportHeader-Example1)
 * insert addentry(Parameters, ParametersBirth-Example1)
-* insert addentry(Bundle, bundle-provider-live-birth-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: BirthReportUpdateMessage-Example1
 InstanceOf: BirthReportUpdateMessage
@@ -170,7 +177,7 @@ Description: "Live Birth Report Message Update - Example"
 * timestamp = "2022-08-20T00:00:00Z"
 * insert addentry(Header, BirthReportUpdateHeader-Example1)
 * insert addentry(Parameters, ParametersBirth-Example1)
-* insert addentry(Bundle, bundle-provider-live-birth-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: CodedCauseOfFetalDeathMessage-Example1
 InstanceOf: CodedCauseOfFetalDeathMessage
@@ -179,7 +186,7 @@ Description: "Coded Cause of Fetal Death Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CodedCauseOfFetalDeathHeader-Example1)
 * insert addentry(Parameters, Parameters-Example2)
-* insert addentry(Bundle, bundle-coded-cause-of-fetal-death-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: CodedCauseOfFetalDeathUpdateMessage-Example1
 InstanceOf: CodedCauseOfFetalDeathUpdateMessage
@@ -188,7 +195,7 @@ Description: "Coded Cause of Fetal Death Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CodedCauseOfFetalDeathUpdateHeader-Example1)
 * insert addentry(Parameters, Parameters-Example2)
-* insert addentry(Bundle, bundle-coded-cause-of-fetal-death-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: ParentalDemographicsCodingMessage-Example1
 InstanceOf: ParentalDemographicsCodingMessage
@@ -197,7 +204,7 @@ Description: "Parental Demographics Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, ParentalDemographicsCodingHeader-Example1)
 * insert addentry(Parameters, ParametersBirth-Example1)
-* insert addentry(Bundle, bundle-coded-race-and-ethnicity-example1)
+* insert addentry(Bundle, DummyBundle)
 
 Instance: ParentalDemographicsCodingUpdateMessage-Example1
 InstanceOf: ParentalDemographicsCodingUpdateMessage
@@ -206,4 +213,11 @@ Description: "Parental Demographics Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, ParentalDemographicsCodingUpdateHeader-Example1)
 * insert addentry(Parameters, ParametersBirth-Example1)
-* insert addentry(Bundle, bundle-coded-race-and-ethnicity-example1)
+* insert addentry(Bundle, DummyBundle)
+
+Instance: DummyBundle
+InstanceOf: MessageBundle
+Usage: #example 
+Description:  "Placeholder for all content sent in messages"
+* type = #collection 
+* insert addentry(Parameters, ParametersBirth-Example1)
