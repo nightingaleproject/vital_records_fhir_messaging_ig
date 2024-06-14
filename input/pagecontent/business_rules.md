@@ -363,7 +363,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		<tr>
 			<td>BSTATE</td>
 			<td>Error: FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
-			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
+			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
 		</tr>
 		<tr>
 			<td>COD1A and OTHERCONDITION</td>
@@ -373,7 +373,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		<tr>
 			<td>DETHNICE</td>
 			<td>Error: Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
-			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
+			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
 		</tr>
 		<tr>
 			<td>DINSTI</td>
