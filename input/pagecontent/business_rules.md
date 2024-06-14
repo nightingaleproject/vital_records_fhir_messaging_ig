@@ -409,9 +409,13 @@ There are additional Errors that may be returned when a record cannot be accepte
 			<td>The actual message source address or id needs to be specified for the endpoint.</td>
 		</tr>
 		<tr>
-			<td rowspan ="2">FILENO</td>
+			<td rowspan ="2">FILENO (certificate number)</td>
 			<td rowspan ="1">Certificate Number is missing, or the certificate length is greater than 6</td>
-			<td colspan="1" rowspan ="2">FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
+			<td colspan="1" rowspan ="1">FILENO is a required field and must be exactly 6 digits in length.  Only positive numbers are allowed for this field.</td>
+		</tr>
+		<tr>
+			<td rowspan ="1">Certificate Number exceeds expected value</td>
+			<td colspan="1" rowspan ="1">Unexpected high Certificate Numbers may be accepted for Medical Processing, but then rejected for Demographic Processing if the Certificate Number is not within the typical range for the Jurisdiction/Year/Event being submitted.  You must first contact your VSS to adjust your expected ranges before re-submitting these records in order for them to be included in your Demographic File.</td>
 		</tr>
 		<tr>
 			<td>Only Numeric and positive digits are allowed for Certificate Number</td>
