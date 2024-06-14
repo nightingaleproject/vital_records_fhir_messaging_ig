@@ -418,9 +418,6 @@ There are additional Errors that may be returned when a record cannot be accepte
 			<td colspan="1" rowspan ="1">Unexpected high Certificate Numbers may be accepted for Medical Processing, but then rejected for Demographic Processing if the Certificate Number is not within the typical range for the Jurisdiction/Year/Event being submitted.  You must first contact your VSS to adjust your expected ranges before re-submitting these records in order for them to be included in your Demographic File.</td>
 		</tr>
 		<tr>
-			<td>Only Numeric and positive digits are allowed for Certificate Number</td>
-		</tr>
-		<tr>
 			<td>IDOB_YR</td>
 			<td>Error: FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
 			<td>The year of birth must be a valid 4-digit numeric year (YYYY).</td>
