@@ -105,14 +105,40 @@ Description: "Void message - example"
 * insert addentry(Header, VoidHeader-Example1)
 * insert addentry(Parameters,VoidParameters-Example1)
 
+Instance: DeathRecordSubmissionHeaderExample1
+InstanceOf: SubmissionHeader
+Usage: #example
+Description: "Header for Death Record Submission - Example"
+// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+* insert addReference(focus[0], Parameters, ParametersDeathExample1)
+* insert addReference(focus[1], Bundle, DummyDeathBundle)
+
+Instance: DummyDeathBundle
+InstanceOf: MessageBundle
+Usage: #example 
+Description:  "Placeholder for death record"
+* type = #collection 
+* insert addentry(Parameters, ParametersDeathExample1)
+
 Instance: DeathRecordSubmissionMessage-Example1
 InstanceOf: DeathRecordSubmissionMessage
 Usage: #example
 Description: "Submission mesage - Example"
 * timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, SubmissionHeader-Example1)
-* insert addentry(Parameters, Parameters-Example1)
-* insert addentry(Bundle, DummyBundle)
+* insert addentry(Header, DeathRecordSubmissionHeaderExample1)
+* insert addentry(Parameters, ParametersDeathExample1)
+* insert addentry(Bundle, DummyDeathBundle)
+
+Instance: ParametersDeathExample1
+InstanceOf: MessageParameters
+Usage: #example
+Description: "Parameters for Submission: Example"
+* parameter[jurisdiction_id].valueString = "NY"
+* parameter[cert_no].valueUnsignedInt = 111111
+//* parameter[birth_year].valueUnsignedInt = 2022
+* parameter[state_auxiliary_id].valueString = "abcdef10"
 
 Instance: UpdateMessage-Example1
 InstanceOf: DeathRecordUpdateMessage

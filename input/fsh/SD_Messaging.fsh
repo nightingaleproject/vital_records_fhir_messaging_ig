@@ -5,6 +5,12 @@ Title:  "Outcome Profile"
 Description: "Outcome profile to support profile-based slicing of bundles"
 * insert RequireMetaProfile(OperationOutcome)
 
+// RuleSet: BundleEntry(name, min, max, short, def, class)
+// * entry contains {name} {min}..{max} MS
+// * entry[{name}] ^short = "{short}"
+// * entry[{name}] ^definition = "{def}"
+// * entry[{name}].resource only {class}
+
 Profile: DeathRecordSubmissionMessage
 Parent: Bundle
 Id: VRM-DeathRecordSubmissionMessage
@@ -12,9 +18,21 @@ Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert RequireMetaProfile(DeathRecordSubmissionMessage)
 * insert CommonBundleStuff
-* insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
-* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
-* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
+* entry contains messageHeader 1..1 MS
+* entry[messageHeader] ^short = "Header"
+* entry[messageHeader] ^definition = "Header"
+* entry[messageHeader].resource only MessageHeader
+* entry contains deathRecordParameters 1..1 MS
+* entry[deathRecordParameters] ^short = "deathRecordParameters"
+* entry[deathRecordParameters] ^definition = "deathRecordParameters"
+* entry[deathRecordParameters].resource only Parameters
+* entry contains deathRecordCertificate 1..1 MS
+* entry[deathRecordCertificate] ^short = "Death Record Certificate Documen"
+* entry[deathRecordCertificate] ^definition = "Death Record Certificate Documen"
+* entry[deathRecordCertificate].resource only Bundle
+// * insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
+//* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
+//* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
 //* insert BundleEntry(IJERecordBase64, 0, 1, IJE Record encoded in Base64, IJE Record encoded in Base64, Binary)
 
 
@@ -148,8 +166,8 @@ Description:   "Message for reporting birth records"
 * insert RequireMetaProfile(BirthReportMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Header, Birth Report Header, BirthReportHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
+* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(birthReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
 
 
 Profile: BirthReportUpdateMessage
@@ -160,8 +178,8 @@ Description:   "Message for updating birth records"
 * insert RequireMetaProfile(FetalDeathReportUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Update Header, Birth Report Update Header, BirthReportUpdateHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
+* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(birthReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
 
 
 Profile: CodedCauseOfFetalDeathMessage
