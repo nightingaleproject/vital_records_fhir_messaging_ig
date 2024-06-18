@@ -1,4 +1,7 @@
 
+These parameters are included to enable processing and routing of messages without needing to parse the associated message payload.
+The values included in the message parameters *MUST* precisely match the values of the same fields included in the death or fetal death record submission.
+
 Parameters included:
 
 | **IJE Name** | **Description** | **Parameter **  |  **Encoding or Type**  |
