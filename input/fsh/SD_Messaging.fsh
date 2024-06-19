@@ -18,22 +18,10 @@ Title: "Death Record Submission Message"
 Description:   "Message for submitting death records"
 * insert RequireMetaProfile(DeathRecordSubmissionMessage)
 * insert CommonBundleStuff
-* entry contains messageHeader 1..1 MS
-* entry[messageHeader] ^short = "Header"
-* entry[messageHeader] ^definition = "Header"
-* entry[messageHeader].resource only MessageHeader
-* entry contains deathRecordParameters 1..1 MS
-* entry[deathRecordParameters] ^short = "deathRecordParameters"
-* entry[deathRecordParameters] ^definition = "deathRecordParameters"
-* entry[deathRecordParameters].resource only Parameters
-* entry contains deathRecordCertificate 1..1 MS
-* entry[deathRecordCertificate] ^short = "Death Record Certificate Documen"
-* entry[deathRecordCertificate] ^definition = "Death Record Certificate Documen"
-* entry[deathRecordCertificate].resource only Bundle
-// * insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
-//* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
-//* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
-//* insert BundleEntry(IJERecordBase64, 0, 1, IJE Record encoded in Base64, IJE Record encoded in Base64, Binary)
+* insert BundleEntry(messageHeader, 1, 1, Header , Header, SubmissionHeader)
+* insert BundleEntry(deathRecordParameters, 1, 1, Death Message Submission Parameters, Death Record Submission Parameters, MessageParameters)
+* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
+* insert BundleEntry(IJERecordBase64, 0, 1, IJE Record encoded in Base64, IJE Record encoded in Base64, Binary)
 
 
 Profile: DeathRecordUpdateMessage
@@ -42,7 +30,16 @@ Id: VRM-DeathRecordUpdateMessage
 Title: "Death Record Update Message"
 Description:   "Message for updating death records"
 * insert RequireMetaProfile(DeathRecordUpdateMessage)
-* insert CommonBundleStuff
+//* insert CommonBundleStuff
+* ^status = #draft
+* type  = #message   // first entry in bundle must be MessageHeader
+* id 1..1
+* timestamp 1..1
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slicing based on the profile of the sliced element"
+//
 * insert BundleEntry(messageHeader, 1, 1, Update Header , Update Header, UpdateHeader)
 * insert BundleEntry(deathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
 * insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)

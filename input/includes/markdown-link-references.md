@@ -6,3 +6,6 @@
 </style>
 
 <!-- Vital Records Messaging Profiles and Extensions -->
+
+{% include fsh-link-references.md %}
+

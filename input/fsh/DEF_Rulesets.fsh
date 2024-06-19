@@ -1,9 +1,9 @@
 RuleSet: CommonBundleStuff
 * ^status = #draft
-* type  = #message
+* type  = #message   // first entry in bundle must be MessageHeader
 * id 1..1
 * timestamp 1..1
-* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.type = #type // #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the type of the sliced element"
