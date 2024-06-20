@@ -40,9 +40,9 @@ Description:   "Message for updating death records"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile of the sliced element"
 //
-* insert BundleEntry(messageHeader, 1, 1, Update Header , Update Header, UpdateHeader)
-* insert BundleEntry(deathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
-* insert BundleEntry(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
+* insert BundleEntryReq(messageHeader, 1, 1, Update Header , Update Header, UpdateHeader)
+* insert BundleEntryReq(deathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntryReq(deathRecordCertificate, 1, 1, Death Record Certificate Document, Death Record Certificate Document, MessageBundle)
 
 
 Profile: DeathRecordVoidMessage

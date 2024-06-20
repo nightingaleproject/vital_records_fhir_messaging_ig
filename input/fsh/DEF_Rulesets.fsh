@@ -24,6 +24,13 @@ RuleSet: HeaderResponseID
 * response.code 1..1
 * response.code = #ok (exactly)
 
+RuleSet: BundleEntryReq(name, min, max, short, def, class)
+* entry contains {name} {min}..{max} MS
+* entry[{name}] ^short = "{short}"
+* entry[{name}] ^definition = "{def}"
+* entry[{name}].resource only {class}
+* entry[{name}].resource 1..1
+
 RuleSet: BundleEntry(name, min, max, short, def, class)
 * entry contains {name} {min}..{max} MS
 * entry[{name}] ^short = "{short}"
