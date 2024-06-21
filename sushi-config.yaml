@@ -44,12 +44,15 @@ pages:
     title: June 2022 Testing Event Examples
   business_rules.md:
     title: NCHS Error Messages 
+  VRDRSTU22Errata.md:
+    title: NCHS FHIR Implementation Notes 
 menu:
   Home: index.html
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
     NCHS Error Messages: business_rules.html 
+    NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
