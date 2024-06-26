@@ -222,6 +222,7 @@ Description:   "Industry Occupation Coding Header"
 * response.identifier ^short = "The value of the MessageHeader.id for the Death Record message that is being coded"
 // * focus only Reference(Bundle )
 
+
 Profile:  IndustryOccupationCodingUpdateHeader
 Parent: MessageHeader
 Id: VRM-IndustryOccupationCodingUpdateHeader

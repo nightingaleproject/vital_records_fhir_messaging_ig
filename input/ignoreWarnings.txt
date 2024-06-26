@@ -17,6 +17,16 @@ INFORMATION: Bundle/DemographicsCodingUpdateMessage1: Bundle: Can't find 'http:/
 INFORMATION: Bundle/ExtractionErrorMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_extraction_error' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/StatusMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_status' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/UpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/BirthReportMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_birth' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/BirthReportUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_birth_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CodedCauseOfFetalDeathMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_causeofdeath' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CodedCauseOfFetalDeathUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_causeofdeath_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/FetalDeathReportMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_death' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/FetalDeathReportUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_death_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/IndustryOccupationCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_industryoccupation_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_industryoccupation_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/ParentalDemographicsCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_demographics_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/ParentalDemographicsCodingUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/bfdr_demographics_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
 
 # Code not active -- not relevant to VRFM
 INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active

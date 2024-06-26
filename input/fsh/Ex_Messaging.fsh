@@ -174,7 +174,7 @@ Usage: #example
 Description: "Fetal Death Report Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, FetalDeathReportHeader-Example1)
-* insert addentry(Parameters, Parameters-Example2)
+* insert addentry(Parameters, ParametersFD-Example2)
 * insert addentry(Bundle, DummyBundle)
 
 Instance: FetalDeathReportUpdateMessage-Example1
@@ -183,7 +183,7 @@ Usage: #example
 Description: "Fetal Death Report Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, FetalDeathReportUpdateHeader-Example1)
-* insert addentry(Parameters, Parameters-Example2)
+* insert addentry(Parameters, ParametersFD-Example2)
 * insert addentry(Bundle, DummyBundle)
 
 
@@ -211,7 +211,7 @@ Usage: #example
 Description: "Coded Cause of Fetal Death Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CodedCauseOfFetalDeathHeader-Example1)
-* insert addentry(Parameters, Parameters-Example2)
+* insert addentry(Parameters, ParametersFD-Example2)
 * insert addentry(Bundle, DummyBundle)
 
 Instance: CodedCauseOfFetalDeathUpdateMessage-Example1
@@ -220,7 +220,7 @@ Usage: #example
 Description: "Coded Cause of Fetal Death Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, CodedCauseOfFetalDeathUpdateHeader-Example1)
-* insert addentry(Parameters, Parameters-Example2)
+* insert addentry(Parameters, ParametersFD-Example2)
 * insert addentry(Bundle, DummyBundle)
 
 Instance: ParentalDemographicsCodingMessage-Example1

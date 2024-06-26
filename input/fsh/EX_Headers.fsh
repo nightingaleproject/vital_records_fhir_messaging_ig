@@ -131,7 +131,7 @@ Description: "Header for Fetal Death Report Message - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
-* insert addReference(focus[1], Parameters, Parameters-Example2)
+* insert addReference(focus[1], Parameters, ParametersFD-Example2)
 
 
 Instance: FetalDeathReportUpdateHeader-Example1
@@ -142,7 +142,7 @@ Description: "Header for Fetal Death Report Message Update - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
-* insert addReference(focus[1], Parameters, Parameters-Example2)
+* insert addReference(focus[1], Parameters, ParametersFD-Example2)
 
 
 Instance: BirthReportHeader-Example1
@@ -175,7 +175,7 @@ Description: "Header for Coded Cause of Fetal Death Message - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
-* insert addReference(focus[1], Parameters, Parameters-Example2)
+* insert addReference(focus[1], Parameters, ParametersFD-Example2)
 * response.identifier = "FetalDeathReportHeader-Example1"
 * response.code = #ok
 
@@ -188,7 +188,7 @@ Description: "Header for Coded Cause of Fetal Death Message Update - Example"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
-* insert addReference(focus[1], Parameters, Parameters-Example2)
+* insert addReference(focus[1], Parameters, ParametersFD-Example2)
 * response.identifier = "FetalDeathReportHeader-Example1"
 * response.code = #ok
 

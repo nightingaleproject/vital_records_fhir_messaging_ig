@@ -8,7 +8,7 @@ Description: "Parameters for Submission: Example"
 * parameter[death_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 
-Instance: Parameters-Example2
+Instance: ParametersFD-Example2
 InstanceOf: MessageParametersFetalDeath
 Usage: #example
 Description: "Parameters for Submission: Example"
