@@ -32,16 +32,18 @@ See the [change log](change_log.html) for an updated list of changes.
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 
-The [Vital Records Death Reporting (VRDR) STU2 FHIR IG](https://build.fhir.org/ig/HL7/vrdr/index.html) specifies how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. It does not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.
+The [Vital Records Death Reporting (VRDR)](https://hl7.org/fhir/us/vrdr/) and [Birth and Fetal Death (BFDR)](https://hl7.org/fhir/us/bfdr/) specifiy how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. They do not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.  
 
 [FHIR Messaging](https://hl7.org/fhir/messaging.html) defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:
 
 1. Submission of VRDR documents from vital records jurisdictions to NCHS, and
-2. Return of coded causes of death, race, and ethnicity information from NCHS to vital records jurisdictions.
+2. Return of coded content (e.g., causes of death, race, and ethnicity) information from NCHS to vital records jurisdictions.
+
+This implementation guide is agnostic about the format of the content of the messages. NCHS will establish business rules for the submission of birth, death, and fetal death records in published versions of VRDR and BFDR.
 
 This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only and is managed via [github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig).
 
-This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in an Vital Records Death Reporting FHIR Implementation Guide[^2].
+This document will evolve in response to community feedback as well as changes to the VRDR and BFDR IGa or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in an Vital Records Death Reporting FHIR Implementation Guide[^2].
 
 
 [^1]: https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR
