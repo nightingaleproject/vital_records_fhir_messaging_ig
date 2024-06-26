@@ -1,6 +1,7 @@
 ### Version 2.0.0
 * Eliminated direct dependency on content (BFDR, VRDR) IGs.
 * Added messages for Birth, Fetal Death, and Industry/Occupation exchange.
+* Added payload version parameter to support messages from all known versions of vital records IGs.
 
 ### Version 1.1.0
 * Dependency on VRDR changed from STU2.2 to current CI-build (STU3)
