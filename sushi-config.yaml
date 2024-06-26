@@ -17,13 +17,9 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
-<<<<<<< HEAD
   #hl7.fhir.us.vrdr: current
   hl7.fhir.us.vr-common-library: current
   #hl7.fhir.us.bfdr: current
-=======
-  hl7.fhir.us.vrdr: 2.2.0
->>>>>>> 1f753315758e537b9eb400d53fb2ddafde783d65
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
@@ -56,11 +52,7 @@ menu:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
     NCHS Error Messages: business_rules.html 
-<<<<<<< HEAD
     NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
-=======
-    FHIR Client Development Guide: https://github.com/nightingaleproject/Reference-NCHS-API/blob/main/FHIRClientDevelopmentGuide.md
->>>>>>> 1f753315758e537b9eb400d53fb2ddafde783d65
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
