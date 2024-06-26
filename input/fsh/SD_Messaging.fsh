@@ -135,7 +135,7 @@ Description:   "Acknowledgement Message"
 * insert RequireMetaProfile(AcknowledgementMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Acknowledgement Header , Acknowledgement Header, AcknowledgementHeader)
-* insert BundleEntry(acknowledgementParameters, 1, 1, Acknowledgement Parameters, Acknowledgement Parameters, MessageParameters)
+* insert BundleEntry(acknowledgementParameters, 1, 1, Acknowledgement Parameters, Acknowledgement Parameters, Parameters)
 
 
 Profile: ExtractionErrorMessage
@@ -146,7 +146,7 @@ Description:   "Message for Errors during content extraction"
 * insert RequireMetaProfile(ExtractionErrorMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Extraction Error Header , Extraction Error Header, ExtractionErrorHeader)
-* insert BundleEntry(extractionErrorParameters, 0, 1, Extraction Error Parameters, Extraction Error Parameters, MessageParameters)
+* insert BundleEntry(extractionErrorParameters, 0, 1, Extraction Error Parameters, Extraction Error Parameters, Parameters)
 * insert BundleEntry(extractionErrorOutcome, 1, 1, Extraction Error Operation Outcome, Extraction Error Operation Outcome, Outcome)
 
 
@@ -158,7 +158,7 @@ Description:   "Message for reporting birth records"
 * insert RequireMetaProfile(BirthReportMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Header, Birth Report Header, BirthReportHeader)
-* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersBirth)
 * insert BundleEntry(birthReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
 
 
@@ -170,7 +170,7 @@ Description:   "Message for updating birth records"
 * insert RequireMetaProfile(FetalDeathReportUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Birth Report Update Header, Birth Report Update Header, BirthReportUpdateHeader)
-* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(birthReportParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersBirth)
 * insert BundleEntry(birthReportDocument, 1, 1, Birth Report Document, Birth Report Document, MessageBundle)
 
 
@@ -182,7 +182,7 @@ Description:   "Message for reporting coded cause of fetal death"
 * insert RequireMetaProfile(CodedCauseOfFetalDeathMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Coded Cause of Fetal Death Header, Coded Cause of Fetal Death Header, CodedCauseOfFetalDeathHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersFetalDeath)
 * insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, MessageBundle)
 
 
@@ -194,7 +194,7 @@ Description:   "Message for updating coded cause of fetal death"
 * insert RequireMetaProfile(CodedCauseOfFetalDeathUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Coded Cause of Fetal Death Update Header, Coded Cause of Fetal Death Update Header, CodedCauseOfFetalDeathUpdateHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersFetalDeath)
 * insert BundleEntry(codedCauseOfFetalDeathDocument, 1, 1, Coded Cause of Fetal Death Document, Coded Cause of Fetal Death Document, MessageBundle)
 
 
@@ -206,7 +206,7 @@ Description:   "Message for reporting parental demographics"
 * insert RequireMetaProfile(ParentalDemographicsCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographics Header, Parental Demographics Header, ParentalDemographicsCodingHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, Parameters)
 * insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
@@ -218,7 +218,7 @@ Description:   "Message for updating parental demographics"
 * insert RequireMetaProfile(ParentalDemographicsCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographicsh Update Header, Parental Demographics Update Header, ParentalDemographicsCodingUpdateHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, Parameters)
 * insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
@@ -230,7 +230,7 @@ Description:   "Message for reporting fetal death records"
 * insert RequireMetaProfile(FetalDeathReportMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Fetal Death Report Header, Fetal Death Report Header, FetalDeathReportHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersFetalDeath)
 * insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
 
 
@@ -242,7 +242,7 @@ Description:   "Message for updating fetal death records"
 * insert RequireMetaProfile(FetalDeathReportUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Fetal Death Report Update Header, Fetal Death Report Update Header, FetalDeathReportUpdateHeader)
-* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
+* insert BundleEntry(fetalDeathRecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParametersFetalDeath)
 * insert BundleEntry(fetalDeathReportDocument, 1, 1, Fetal Death Report Document, Fetal Death Report Document, MessageBundle)
 
 Profile: IndustryOccupationCodingMessage
@@ -253,7 +253,7 @@ Description:   "Message for industry occupation coding response to death records
 * insert RequireMetaProfile(IndustryOccupationCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingHeader)
-* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, Parameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, Bundle )
 
 Profile: IndustryOccupationCodingUpdateMessage
@@ -264,7 +264,7 @@ Description:   "Message for updating industry occupation coding response to deat
 * insert RequireMetaProfile(IndustryOccupationCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Industry Occupation Coding Update Header , Industry Occupation Coding Update Header, IndustryOccupationCodingUpdateHeader)
-* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, Parameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, MessageBundle)
 
 

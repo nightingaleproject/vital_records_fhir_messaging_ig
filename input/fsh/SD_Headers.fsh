@@ -154,7 +154,7 @@ Description:   "Birth Report Message Header"
 Id: VRM-BirthReportHeader
 Title:  "Birth Report Message Header"
 * insert RequireMetaProfile(BirthReportHeader)
-* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_birth (exactly)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/bfdr_birth (exactly) 
 * insert CommonHeaderStuff
 
 Profile:  BirthReportUpdateHeader
