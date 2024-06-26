@@ -127,7 +127,7 @@ Instance: FetalDeathReportHeader-Example1
 InstanceOf: FetalDeathReportHeader
 Usage: #example
 Description: "Header for Fetal Death Report Message - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_death"
+//* eventUri = "http://nchs.cdc.gov/bfdr_death"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -138,7 +138,7 @@ Instance: FetalDeathReportUpdateHeader-Example1
 InstanceOf: FetalDeathReportUpdateHeader
 Usage: #example
 Description: "Header for Fetal Death Report Message Update - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_death_update"
+//* eventUri = "http://nchs.cdc.gov/bfdr_death_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -149,7 +149,7 @@ Instance: BirthReportHeader-Example1
 InstanceOf: BirthReportHeader
 Usage: #example
 Description: "Header for Birth Report Message - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_birth"
+//* eventUri = "http://nchs.cdc.gov/bfdr_birth"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -160,7 +160,7 @@ Instance: BirthReportUpdateHeader-Example1
 InstanceOf: BirthReportUpdateHeader
 Usage: #example
 Description: "Header for Birth Report Message Update - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_birth_update"
+//* eventUri = "http://nchs.cdc.gov/bfdr_birth_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -171,7 +171,7 @@ Instance: CodedCauseOfFetalDeathHeader-Example1
 InstanceOf: CodedCauseOfFetalDeathHeader
 Usage: #example
 Description: "Header for Coded Cause of Fetal Death Message - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath"
+//* eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -184,7 +184,7 @@ Instance: CodedCauseOfFetalDeathUpdateHeader-Example1
 InstanceOf: CodedCauseOfFetalDeathUpdateHeader
 Usage: #example
 Description: "Header for Coded Cause of Fetal Death Message Update - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath_update"
+//* eventUri = "http://nchs.cdc.gov/bfdr_causeofdeath_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -197,7 +197,7 @@ Instance: ParentalDemographicsCodingHeader-Example1
 InstanceOf: ParentalDemographicsCodingHeader
 Usage: #example
 Description: "Header for Parental Demographics Message - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding"
+//* eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
@@ -210,7 +210,7 @@ Instance: ParentalDemographicsCodingUpdateHeader-Example1
 InstanceOf: ParentalDemographicsCodingUpdateHeader
 Usage: #example
 Description: "Header for Parental Demographics Message Update - Example"
-* eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding_update"
+//* eventUri = "http://nchs.cdc.gov/bfdr_demographics_coding_update"
 * destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)

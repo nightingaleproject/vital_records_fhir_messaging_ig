@@ -3,10 +3,12 @@ RuleSet: CommonBundleStuff
 * type  = #message   // first entry in bundle must be MessageHeader
 * id 1..1
 * timestamp 1..1
-* entry ^slicing.discriminator.type = #type // #profile
-* entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
-* entry ^slicing.description = "Slicing based on the type of the sliced element"
+* entry ^slicing.description = "Slicing based on the type (relatively easy) and then profile of the sliced element"
+* entry ^slicing.discriminator[0].type = #type
+* entry ^slicing.discriminator[=].path = "resource"
+* entry ^slicing.discriminator[+].type = #profile
+* entry ^slicing.discriminator[=].path = "resource"
 
 RuleSet: CommonHeaderStuff
 * eventUri 1..1
