@@ -1,6 +1,7 @@
 ### Version 2.0.0
-* Additional dependency on current versions BFDR and VRCL IG's.
-* Addition of profiles (messages, headers) and examples (from BFDR, VRCL) to support birth and fetal death messaging use cases.
+* Eliminated direct dependency on content (BFDR, VRDR) IGs.
+* Added messages for Birth, Fetal Death, and Industry/Occupation exchange.
+
 ### Version 1.1.0
 * Dependency on VRDR changed from STU2.2 to current CI-build (STU3)
 * Profiles and examples were added to support Industry Occupation Coding Messages and Update Messages with corresponding Headers. 
