@@ -20,15 +20,26 @@
 
 <div class="note-to-readers" markdown="1">
 
+<<<<<<< HEAD
 ####  CI Build for Future v2.0.0 Version of VRFM
 
 The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
 
+=======
+####  CI Build for Future v1.1.0 Release of VRFM
+
+The version of Vital Records FHIR Messaging (VRFM) in production use by NCHS and Jurisdictional Vital Records Offices is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
+
+This version of VRFM is still under development and is intended to extend v1.0.0 with messages for returning coded Industry and Occupation data from NCHS to Jurisdictions.
+>>>>>>> 1f753315758e537b9eb400d53fb2ddafde783d65
 
 See the [change log](change_log.html) for an updated list of changes.
   
 </div><!-- note-to-balloters -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f753315758e537b9eb400d53fb2ddafde783d65
 ### Background
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.

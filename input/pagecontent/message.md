@@ -164,6 +164,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
+<<<<<<< HEAD
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
@@ -185,6 +186,21 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParametersFetalDeath]  | CodedCauseOfFetalDeathBundleBFDR (from BFDR IG)|
 | [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParametersFetalDeath] or [MessageParametersBirth] | DemographicCodedContentBundleBFDR (from BFDR IG)|
 | [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParametersFetalDeath] or [MessageParametersBirth] | DemographicCodedContentBundleBFDR (from BFDR IG)|
+=======
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
+| [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
+| [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
+| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2)  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2) |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
+| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
+>>>>>>> 1f753315758e537b9eb400d53fb2ddafde783d65
 {: .grid }
 
 {% include markdown-link-references.md %}

@@ -1,6 +1,6 @@
 # Vital Records FHIR Messaging FHIR Implementation Guide
 
-Implementers can reference the built version of this implementation guide [here](http://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/branches/main/index.html).
+Implementers can reference the built version 1.0.1 of this implementation guide [here](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html).
 
 Vital records jurisdictions submit information on deaths in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 

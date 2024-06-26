@@ -363,7 +363,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		<tr>
 			<td>BSTATE</td>
 			<td>Error: FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
-			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
+			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
 		</tr>
 		<tr>
 			<td>COD1A and OTHERCONDITION</td>
@@ -373,7 +373,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		<tr>
 			<td>DETHNICE</td>
 			<td>Error: Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
-			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
+			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
 		</tr>
 		<tr>
 			<td>DINSTI</td>
@@ -409,12 +409,13 @@ There are additional Errors that may be returned when a record cannot be accepte
 			<td>The actual message source address or id needs to be specified for the endpoint.</td>
 		</tr>
 		<tr>
-			<td rowspan ="2">FILENO</td>
+			<td rowspan ="2">FILENO (certificate number)</td>
 			<td rowspan ="1">Certificate Number is missing, or the certificate length is greater than 6</td>
-			<td colspan="1" rowspan ="2">FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
+			<td colspan="1" rowspan ="1">FILENO is a required field and must be exactly 6 digits in length.  Only positive numbers are allowed for this field.</td>
 		</tr>
 		<tr>
-			<td>Only Numeric and positive digits are allowed for Certificate Number</td>
+			<td rowspan ="1">Certificate Number exceeds expected value</td>
+			<td colspan="1" rowspan ="1">Unexpected high Certificate Numbers may be accepted for Medical Processing, but then rejected for Demographic Processing if the Certificate Number is not within the typical range for the Jurisdiction/Year/Event being submitted.  You must first contact your VSS to adjust your expected ranges before re-submitting these records in order for them to be included in your Demographic File.</td>
 		</tr>
 		<tr>
 			<td>IDOB_YR</td>
