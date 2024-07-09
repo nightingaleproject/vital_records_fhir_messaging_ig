@@ -215,3 +215,5 @@ WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[2].resource
 WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[2].resource.entry[0].resource/*Observation/DecedentUsualWork-Example2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[2].resource.entry[0].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[2].resource.entry[0].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
