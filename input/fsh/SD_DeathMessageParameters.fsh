@@ -5,7 +5,7 @@ Description:   "Base parameter set for most Messages.  Parameters with all-caps 
 Title:  "Death Message Parameters"
 * insert RequireMetaProfile(MessageParameters)
 * id MS
-* insert BaseMessageParameters
+* insert BaseMessageParametersDeath
 
 Profile:  MessageParametersFetalDeath
 Parent: Parameters

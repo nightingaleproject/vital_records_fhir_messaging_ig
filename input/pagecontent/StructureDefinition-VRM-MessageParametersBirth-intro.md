@@ -10,5 +10,6 @@ Parameters included:
 |  FILENO    | Certificate Number | cert_no   | string(6)   |
 |  DOD_YR    | Infant Date of Birth (year) | birth_year   | string(4)   |
 |  AUXNO    | Auxiliary State file number | state_auxiliary_id   | string(12)   |
+|  -    | Payload Version ID | payload_version_id   | [PayloadVersionVS]   |
 {: .grid }
 {% include markdown-link-references.md %}
