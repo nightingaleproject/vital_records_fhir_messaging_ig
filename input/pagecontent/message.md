@@ -164,7 +164,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG)  |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
