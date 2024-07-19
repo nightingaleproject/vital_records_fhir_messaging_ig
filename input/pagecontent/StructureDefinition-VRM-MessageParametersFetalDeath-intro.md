@@ -10,6 +10,6 @@ Parameters included:
 |  FILENO    | Certificate Number | cert_no   | string(6)   |
 |  FDOD_YR    | Fetal Date of Death--Year | death_year   | string(4)   |
 |  AUXNO    | Auxiliary State file number | state_auxiliary_id   | string(12)   |
-|  -    | Payload Version ID | payload_version_id   | [PayloadVersionVS]   |
+|  -    | Payload Version ID | payload_version_id   | string from [PayloadVersionVS]   |
 {: .grid }
 {% include markdown-link-references.md %}
