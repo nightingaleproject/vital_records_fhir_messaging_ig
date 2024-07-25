@@ -164,19 +164,27 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
-| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG)  |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
 | [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2)  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2) |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG)  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG) |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle (from VRDR IG) or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
+| IndustryOccupationCodingUpdateMessage | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] or [MessageParametersBirth]  or [MessageParametersFetalDeath] |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] or [MessageParametersBirth] or [MessageParametersFetalDeath] (optional) | [Outcome] |
+| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParametersFetalDeath] | BundleDocumentBFDR (from BFDR IG) |
+| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParametersFetalDeath] | BundleDocumentBFDR (from BFDR IG)|
+| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParametersBirth] | BundleDocumentBFDR (from BFDR IG)|
+| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParametersBirth]  | BundleDocumentBFDR (from BFDR IG)|
+| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParametersFetalDeath] | CodedCauseOfFetalDeathBundleBFDR (from BFDR IG)|
+| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParametersFetalDeath]  | CodedCauseOfFetalDeathBundleBFDR (from BFDR IG)|
+| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParametersFetalDeath] or [MessageParametersBirth] | DemographicCodedContentBundleBFDR (from BFDR IG)|
+| [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParametersFetalDeath] or [MessageParametersBirth] | DemographicCodedContentBundleBFDR (from BFDR IG)|
 {: .grid }
 
 {% include markdown-link-references.md %}
