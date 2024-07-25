@@ -7,7 +7,7 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
-version: 2.0.0
+version: 2.0.0-draft-1
 copyrightYear: 2022+
 releaseLabel: ci-build
 publisher:
@@ -18,12 +18,9 @@ fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
   #hl7.fhir.us.vrdr: current
-  hl7.fhir.us.vr-common-library: current
+  hl7.fhir.us.vr-common-library: current   # Jurisdiction valueset
   #hl7.fhir.us.bfdr: current
-  hl7.terminology.r4:
-    version: 5.5.0
-    id: hl7terminology
-    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+ 
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
