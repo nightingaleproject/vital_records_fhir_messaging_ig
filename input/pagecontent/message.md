@@ -170,11 +170,11 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
 | [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR IG)  |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
 | [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG)  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR IG) |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or similar from BFDR IG |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or similar from BFDR IG |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG) |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle (from VRDR IG) or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
+| IndustryOccupationCodingUpdateMessage | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] or [MessageParametersBirth]  or [MessageParametersFetalDeath] |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] or [MessageParametersBirth] or [MessageParametersFetalDeath] (optional) | [Outcome] |
 | [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParametersFetalDeath] | BundleDocumentBFDR (from BFDR IG) |
