@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a69962d8-e11c-423b-93f8-f4115aecc19f"/>
+  <meta>
+    <lastUpdated value="2024-07-29T15:59:48.768-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-Payload-version-cs.html">codesystem Payload Version Identifier Values v2.0.0-preview1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-VRDR-STU3-0"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU3_0">VRDR_STU3_0</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>VRDRSTU3.0</td>
+                <td>
+                  <div>
+                    <p>VRDR STU3.0</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-VRDR-STU2-2"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_2">VRDR_STU2_2</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>VRDRSTU2.2</td>
+                <td>
+                  <div>
+                    <p>VRDR STU2.2</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-VRDR-STU2-1"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_1">VRDR_STU2_1</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>VRDRSTU2.1</td>
+                <td>
+                  <div>
+                    <p>VRDR STU2.1</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-VRDR-STU2-0"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_0">VRDR_STU2_0</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>VRDRSTU2.0</td>
+                <td>
+                  <div>
+                    <p>VRDR STU2.0</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-VRDR-STU1-0"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU1_0">VRDR_STU1_0</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>VRDRSTU1.0</td>
+                <td>
+                  <div>
+                    <p>VRDR STU1.0</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-BFDR-STU2-0"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU2_0">BFDR_STU2_0</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>BFDRSTU2.0</td>
+                <td>
+                  <div>
+                    <p>BFDR STU2.0</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-BFDR-STU1-1"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU1_1">BFDR_STU1_1</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>BFDRSTU1.1</td>
+                <td>
+                  <div>
+                    <p>BFDR STU1.1</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-Payload-version-cs-BFDR-STU1-0"> </a>  
+                  <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU1_0">BFDR_STU1_0</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
+                <td>BFDRSTU1.0</td>
+                <td>
+                  <div>
+                    <p>BFDR STU1.0</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs"/>
+        <version value="2.0.0-preview1"/>
+        <name value="PayloadVersionVS"/>
+        <title value="Payload Version Identifier Values"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-29T15:59:48-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:d1d87029-d58b-4436-bfa2-845db9598891"/>
+          <timestamp value="2024-07-29T16:01:39-04:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs|2.0.0-preview1"/>
+          </parameter>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="VRDR_STU3_0"/>
+            <display value="VRDRSTU3.0"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="VRDR_STU2_2"/>
+            <display value="VRDRSTU2.2"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="VRDR_STU2_1"/>
+            <display value="VRDRSTU2.1"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="VRDR_STU2_0"/>
+            <display value="VRDRSTU2.0"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="VRDR_STU1_0"/>
+            <display value="VRDRSTU1.0"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="BFDR_STU2_0"/>
+            <display value="BFDRSTU2.0"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="BFDR_STU1_1"/>
+            <display value="BFDRSTU1.1"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+            <code value="BFDR_STU1_0"/>
+            <display value="BFDRSTU1.0"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-VRM-Status-cs.html">codesystem Status Codes Values v2.0.0-preview1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCauseOfDeathCoding"> </a>  
+                  <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding">manualCauseOfDeathCoding</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
+                <td>Manual Cause of Death Coding</td>
+                <td>
+                  <div>
+                    <p>The death record has been sent for manual cause of death coding.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualDemographicCoding"> </a>  
+                  <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding">manualDemographicCoding</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
+                <td>Manual Demographic  Coding</td>
+                <td>
+                  <div>
+                    <p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-noCodingNeeded-Duplicate"> </a>  
+                  <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate">noCodingNeeded_Duplicate</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
+                <td>No Coding Needed - Duplicate</td>
+                <td>
+                  <div>
+                    <p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Update"> </a>  
+                  <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update">manualCodingCanceled_Update</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
+                <td>Manual Coding Canceled - Update</td>
+                <td>
+                  <div>
+                    <p>An update has been submitted for a death record that is queued for manual coding.  The manual coding
+has been canceled for the original record.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Void"> </a>  
+                  <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void">manualCodingCanceled_Void</a>
+                </td>
+                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
+                <td>Manual Coding Canceled - Void</td>
+                <td>
+                  <div>
+                    <p>A void request has been received for a death record that is queued for manual coding.  The manual coding
+has been canceled for the original record.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"/>
+        <version value="2.0.0-preview1"/>
+        <name value="StatusVS"/>
+        <title value="Status Codes Values"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-29T15:59:48-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:fec95e3d-0345-4bff-9dbd-b6e579b183de"/>
+          <timestamp value="2024-07-29T16:01:39-04:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|2.0.0-preview1"/>
+          </parameter>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+            <code value="manualCauseOfDeathCoding"/>
+            <display value="Manual Cause of Death Coding"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+            <code value="manualDemographicCoding"/>
+            <display value="Manual Demographic  Coding"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+            <code value="noCodingNeeded_Duplicate"/>
+            <display value="No Coding Needed - Duplicate"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+            <code value="manualCodingCanceled_Update"/>
+            <display value="Manual Coding Canceled - Update"/>
+          </contains>
+          <contains>
+            <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+            <code value="manualCodingCanceled_Void"/>
+            <display value="Manual Coding Canceled - Void"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

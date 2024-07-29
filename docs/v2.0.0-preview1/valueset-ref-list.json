@@ -1,0 +1,57 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+      "version" : "2.0.0-preview1",
+      "status" : "draft",
+      "name" : "PayloadVersionVS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Payload Version Identifier Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-MessageParametersBirth.html" : "Birth Message Parameters",
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-MessageParametersFetalDeath.html" : "Death Message Parameters",
+      "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+      "version" : "2.0.0-preview1",
+      "status" : "draft",
+      "name" : "StatusVS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-jurisdiction-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetJurisdictionVitalRecords",
+      "title" : "Jurisdictions Vital Records",
+      "description" : "This valueset contains the set of codes used to represent 2 Letter Codes for all 57 Jurisdictions Reporting Deaths to NCHS",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-MessageParametersBirth.html" : "Birth Message Parameters",
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-MessageParametersFetalDeath.html" : "Death Message Parameters",
+      "StructureDefinition-VRM-MessageParameters.html" : "Death Message Parameters"
+    }
+  ]
+}

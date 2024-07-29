@@ -1,0 +1,107 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "FetalDeathReportMessage-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportMessage"]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Header/FetalDeathReportHeader-Example1",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "FetalDeathReportHeader-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportHeader"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"FetalDeathReportHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;FetalDeathReportHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-FetalDeathReportHeader.html\">Fetal Death Report Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/bfdr_death\">http://nchs.cdc.gov/bfdr_death</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/bfdr_submission\">http://nchs.cdc.gov/bfdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"#Bundle_DummyBundle\">See above (http://www.example.org/fhir/Bundle/DummyBundle)</a></li><li><a href=\"#Parameters_ParametersFD-Example2\">See above (http://www.example.org/fhir/Parameters/ParametersFD-Example2)</a></li></ul></div>"
+      },
+      "eventUri" : "http://nchs.cdc.gov/bfdr_death",
+      "destination" : [{
+        "endpoint" : "http://nchs.cdc.gov/bfdr_submission"
+      }],
+      "source" : {
+        "endpoint" : "https://sos.ny.gov/vitalrecords"
+      },
+      "focus" : [{
+        "reference" : "http://www.example.org/fhir/Bundle/DummyBundle"
+      },
+      {
+        "reference" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2",
+    "resource" : {
+      "resourceType" : "Parameters",
+      "id" : "ParametersFD-Example2",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParametersFetalDeath"]
+      },
+      "parameter" : [{
+        "name" : "jurisdiction_id",
+        "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 112233
+      },
+      {
+        "name" : "death_year",
+        "valueUnsignedInt" : 2021
+      },
+      {
+        "name" : "state_auxiliary_id",
+        "valueString" : "abcdef10"
+      },
+      {
+        "name" : "payload_version_id",
+        "valueString" : "BFDRSTU1.1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Bundle/DummyBundle",
+    "resource" : {
+      "resourceType" : "Bundle",
+      "id" : "DummyBundle",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"]
+      },
+      "type" : "collection",
+      "entry" : [{
+        "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersBirth-Example1",
+        "resource" : {
+          "resourceType" : "Parameters",
+          "id" : "ParametersBirth-Example1",
+          "meta" : {
+            "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParametersBirth"]
+          },
+          "parameter" : [{
+            "name" : "jurisdiction_id",
+            "valueString" : "NY"
+          },
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 111111
+          },
+          {
+            "name" : "birth_year",
+            "valueUnsignedInt" : 2022
+          },
+          {
+            "name" : "state_auxiliary_id",
+            "valueString" : "abcdef10"
+          },
+          {
+            "name" : "payload_version_id",
+            "valueString" : "BFDRSTU2.0"
+          }]
+        }
+      }]
+    }
+  }]
+}

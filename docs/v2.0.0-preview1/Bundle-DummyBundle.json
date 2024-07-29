@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DummyBundle",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersBirth-Example1",
+    "resource" : {
+      "resourceType" : "Parameters",
+      "id" : "ParametersBirth-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParametersBirth"]
+      },
+      "parameter" : [{
+        "name" : "jurisdiction_id",
+        "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 111111
+      },
+      {
+        "name" : "birth_year",
+        "valueUnsignedInt" : 2022
+      },
+      {
+        "name" : "state_auxiliary_id",
+        "valueString" : "abcdef10"
+      },
+      {
+        "name" : "payload_version_id",
+        "valueString" : "BFDRSTU2.0"
+      }]
+    }
+  }]
+}

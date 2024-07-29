@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/DeathRecordSubmissionMessage-Example1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeathRecordSubmissionMessage-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordSubmissionMessage"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordSubmissionMessage>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2021-05-20T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Header/DeathRecordSubmissionHeaderExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Header/DeathRecordSubmissionHeaderExample1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameters/ParametersDeathExample1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Bundle/DummyDeathBundle"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Bundle/DummyDeathBundle> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Header/DeathRecordSubmissionHeaderExample1> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "DeathRecordSubmissionHeaderExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"DeathRecordSubmissionHeaderExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;DeathRecordSubmissionHeaderExample1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-SubmissionHeader.html\">Death Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"#Parameters_ParametersDeathExample1\">See above (http://www.example.org/fhir/Parameters/ParametersDeathExample1)</a></li><li><a href=\"#Bundle_DummyDeathBundle\">See above (http://www.example.org/fhir/Bundle/DummyDeathBundle)</a></li></ul></div>"
+  ] ; # 
+  fhir:event [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI] ; # 
+  fhir:destination ( [
+     fhir:endpoint [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:source [
+     fhir:endpoint [ fhir:v "https://sos.ny.gov/vitalrecords"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://www.example.org/fhir/Parameters/ParametersDeathExample1> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1" ]
+  ] [
+     fhir:link <http://www.example.org/fhir/Bundle/DummyDeathBundle> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Bundle/DummyDeathBundle" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Parameters/ParametersDeathExample1> a fhir:Parameters, fhir:Parameters ;
+  fhir:id [ fhir:v "ParametersDeathExample1"], [ fhir:v "ParametersDeathExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+     ] )
+  ], [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "jurisdiction_id" ] ;
+     fhir:value [ fhir:v "NY" ]
+  ] [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [ fhir:v "111111"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:name [ fhir:v "state_auxiliary_id" ] ;
+     fhir:value [ fhir:v "abcdef10" ]
+  ] [
+     fhir:name [ fhir:v "jurisdiction_id" ] ;
+     fhir:value [ fhir:v "NY" ]
+  ] [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [ fhir:v "111111"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:name [ fhir:v "state_auxiliary_id" ] ;
+     fhir:value [ fhir:v "abcdef10" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Bundle/DummyDeathBundle> a fhir:Bundle ;
+  fhir:id [ fhir:v "DummyDeathBundle"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameters/ParametersDeathExample1> )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
