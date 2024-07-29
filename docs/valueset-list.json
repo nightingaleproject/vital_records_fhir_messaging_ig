@@ -1,0 +1,26 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+      "version" : "2.0.0-preview1",
+      "status" : "draft",
+      "name" : "PayloadVersionVS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Payload Version Identifier Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+      "version" : "2.0.0-preview1",
+      "status" : "draft",
+      "name" : "StatusVS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"
+      ]
+    }
+  ]
+}
