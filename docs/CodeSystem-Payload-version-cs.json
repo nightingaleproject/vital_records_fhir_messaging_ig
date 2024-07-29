@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Payload-version-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU3_0<a name=\"Payload-version-cs-VRDR_STU3_0\"> </a></td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_2<a name=\"Payload-version-cs-VRDR_STU2_2\"> </a></td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_1<a name=\"Payload-version-cs-VRDR_STU2_1\"> </a></td><td>VRDRSTU2.1</td><td>VRDR STU2.1</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_0<a name=\"Payload-version-cs-VRDR_STU2_0\"> </a></td><td>VRDRSTU2.0</td><td>VRDR STU2.0</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU1_0<a name=\"Payload-version-cs-VRDR_STU1_0\"> </a></td><td>VRDRSTU1.0</td><td>VRDR STU1.0</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU2_0<a name=\"Payload-version-cs-BFDR_STU2_0\"> </a></td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU1_1<a name=\"Payload-version-cs-BFDR_STU1_1\"> </a></td><td>BFDRSTU1.1</td><td>BFDR STU1.1</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU1_0<a name=\"Payload-version-cs-BFDR_STU1_0\"> </a></td><td>BFDRSTU1.0</td><td>BFDR STU1.0</td></tr></table></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+  "version" : "2.0.0-preview1",
+  "name" : "PayloadVersionCS",
+  "title" : "Payload Version Identifier Values",
+  "status" : "draft",
+  "date" : "2024-07-29T15:59:48-04:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Codesystem for Payload Version Identifier Values",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "VRDR_STU3_0",
+    "display" : "VRDRSTU3.0",
+    "definition" : "VRDR STU3.0"
+  },
+  {
+    "code" : "VRDR_STU2_2",
+    "display" : "VRDRSTU2.2",
+    "definition" : "VRDR STU2.2"
+  },
+  {
+    "code" : "VRDR_STU2_1",
+    "display" : "VRDRSTU2.1",
+    "definition" : "VRDR STU2.1"
+  },
+  {
+    "code" : "VRDR_STU2_0",
+    "display" : "VRDRSTU2.0",
+    "definition" : "VRDR STU2.0"
+  },
+  {
+    "code" : "VRDR_STU1_0",
+    "display" : "VRDRSTU1.0",
+    "definition" : "VRDR STU1.0"
+  },
+  {
+    "code" : "BFDR_STU2_0",
+    "display" : "BFDRSTU2.0",
+    "definition" : "BFDR STU2.0"
+  },
+  {
+    "code" : "BFDR_STU1_1",
+    "display" : "BFDRSTU1.1",
+    "definition" : "BFDR STU1.1"
+  },
+  {
+    "code" : "BFDR_STU1_0",
+    "display" : "BFDRSTU1.0",
+    "definition" : "BFDR STU1.0"
+  }]
+}

@@ -1,0 +1,228 @@
+﻿VitalRecordsFHIRMessagingIG : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 0
+IG Publisher Version: 1.5.8 Out of date - current version is 1.6.18
+Generated Mon Jul 29 16:03:39 EDT 2024. FHIR version 4.0.1 for vital-records-fhir-messaging#2.0.0-preview1 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
+ Build Errors : 0 / 0 / 0
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-AcknowledgementMessage-Example1 : 0 / 0 / 7
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-BirthReportMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-BirthReportUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CauseOfDeathCodingMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CauseOfDeathCodingUpdateMessage1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CodedCauseOfFetalDeathMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CodedCauseOfFetalDeathUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DeathRecordAliasMessage-Example1 : 0 / 0 / 8
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DeathRecordSubmissionMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DeathRecordVoidMessage-Example1 : 0 / 0 / 8
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DemographicsCodingMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DemographicsCodingUpdateMessage1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DummyBundle : 0 / 0 / 3
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DummyDeathBundle : 0 / 0 / 3
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ExtractionErrorMessage-Example1 : 0 / 0 / 10
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-FetalDeathReportMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-FetalDeathReportUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-IndustryOccupationCodingMessage-Example1 : 0 / 0 / 11
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-IndustryOccupationCodingUpdateMessage1 : 0 / 0 / 14
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ParentalDemographicsCodingMessage-Example1 : 0 / 0 / 14
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ParentalDemographicsCodingUpdateMessage-Example1 : 0 / 0 / 14
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-StatusMessage-Example1 : 0 / 0 / 8
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-UpdateMessage-Example1 : 0 / 0 / 15
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-Payload-version-cs : 0 / 1 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-VRM-MessageHeaderURI-cs : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-VRM-Status-cs : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/ImplementationGuide-vital-records-fhir-messaging : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-AliasHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-BirthReportHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-BirthReportUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CauseOfDeathCodingHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CauseOfDeathCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DeathRecordSubmissionHeaderExample1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DemographicsCodingHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DemographicsCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ExtractionErrorHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-FetalDeathReportHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-FetalDeathReportUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-IndustryOccupationCodingHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-IndustryOccupationCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ParentalDemographicsCodingHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ParentalDemographicsCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-StatusHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-SubmissionHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-UpdateHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-VoidHeader-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/OperationOutcome-Outcome-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-AliasParameters-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-Parameters-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersBirth-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersDeathExample1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersFD-Example2 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-StatusParameters-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-VoidParameters-Example1 : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AcknowledgementMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AliasHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AliasParameters : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordAliasMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordSubmissionMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordVoidMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageBundle : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageParameters : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageParametersBirth : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageParametersFetalDeath : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-Outcome : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingUpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingUpdateMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusMessage : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusParameters : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-SubmissionHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-UpdateHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-VoidHeader : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-VoidParameters : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-Payload-version-vs : 0 / 0 / 1
+ /Users/rpassas/Documents/current_projects/NVSS/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-Status-vs : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-AcknowledgementMessage-Example1.json ==
+== fsh-generated/resources/Bundle-BirthReportMessage-Example1.json ==
+== fsh-generated/resources/Bundle-BirthReportUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CauseOfDeathCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CauseOfDeathCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-CodedCauseOfFetalDeathMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CodedCauseOfFetalDeathUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DeathRecordAliasMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DeathRecordSubmissionMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DeathRecordVoidMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DemographicsCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DemographicsCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-DummyBundle.json ==
+== fsh-generated/resources/Bundle-DummyDeathBundle.json ==
+== fsh-generated/resources/Bundle-ExtractionErrorMessage-Example1.json ==
+== fsh-generated/resources/Bundle-FetalDeathReportMessage-Example1.json ==
+== fsh-generated/resources/Bundle-FetalDeathReportUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-IndustryOccupationCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-IndustryOccupationCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-ParentalDemographicsCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-ParentalDemographicsCodingUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-StatusMessage-Example1.json ==
+== fsh-generated/resources/Bundle-UpdateMessage-Example1.json ==
+== fsh-generated/resources/CodeSystem-Payload-version-cs.json ==
+WARNING: CodeSystem/Payload-version-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-VRM-MessageHeaderURI-cs.json ==
+== fsh-generated/resources/CodeSystem-VRM-Status-cs.json ==
+== fsh-generated/resources/ImplementationGuide-vital-records-fhir-messaging.json ==
+== fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-AliasHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-BirthReportHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-BirthReportUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CauseOfDeathCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CauseOfDeathCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-DeathRecordSubmissionHeaderExample1.json ==
+== fsh-generated/resources/MessageHeader-DemographicsCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-DemographicsCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ExtractionErrorHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-FetalDeathReportHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-FetalDeathReportUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-IndustryOccupationCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-IndustryOccupationCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ParentalDemographicsCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ParentalDemographicsCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-StatusHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-SubmissionHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-UpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-VoidHeader-Example1.json ==
+== fsh-generated/resources/OperationOutcome-Outcome-Example1.json ==
+== fsh-generated/resources/Parameters-AliasParameters-Example1.json ==
+== fsh-generated/resources/Parameters-Parameters-Example1.json ==
+== fsh-generated/resources/Parameters-ParametersBirth-Example1.json ==
+== fsh-generated/resources/Parameters-ParametersDeathExample1.json ==
+== fsh-generated/resources/Parameters-ParametersFD-Example2.json ==
+== fsh-generated/resources/Parameters-StatusParameters-Example1.json ==
+== fsh-generated/resources/Parameters-VoidParameters-Example1.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AcknowledgementMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AliasHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AliasParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordAliasMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordSubmissionMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordVoidMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageBundle.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageParametersBirth.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageParametersFetalDeath.json ==
+== fsh-generated/resources/StructureDefinition-VRM-Outcome.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ParentalDemographicsCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-SubmissionHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-UpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-VoidHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-VoidParameters.json ==
+== fsh-generated/resources/ValueSet-Payload-version-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-Status-vs.json ==

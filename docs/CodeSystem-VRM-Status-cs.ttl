@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VRM-Status-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">manualCauseOfDeathCoding<a name=\"VRM-Status-cs-manualCauseOfDeathCoding\"> </a></td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualDemographicCoding<a name=\"VRM-Status-cs-manualDemographicCoding\"> </a></td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">noCodingNeeded_Duplicate<a name=\"VRM-Status-cs-noCodingNeeded_Duplicate\"> </a></td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualCodingCanceled_Update<a name=\"VRM-Status-cs-manualCodingCanceled_Update\"> </a></td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">manualCodingCanceled_Void<a name=\"VRM-Status-cs-manualCodingCanceled_Void\"> </a></td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-preview1"] ; # 
+  fhir:name [ fhir:v "StatusCS"] ; # 
+  fhir:title [ fhir:v "Status Codes Values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-29T15:59:48-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "CDC NCHS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "CDC NCHS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cdc.gov/nchs" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Status Codes Values"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "manualCauseOfDeathCoding" ] ;
+     fhir:display [ fhir:v "Manual Cause of Death Coding" ] ;
+     fhir:definition [ fhir:v "The death record has been sent for manual cause of death coding." ]
+  ] [
+     fhir:code [ fhir:v "manualDemographicCoding" ] ;
+     fhir:display [ fhir:v "Manual Demographic  Coding" ] ;
+     fhir:definition [ fhir:v "The death record has been sent for manual demographic (race/ethnicity) coding." ]
+  ] [
+     fhir:code [ fhir:v "noCodingNeeded_Duplicate" ] ;
+     fhir:display [ fhir:v "No Coding Needed - Duplicate" ] ;
+     fhir:definition [ fhir:v "The death record is a duplicate of a previously submitted record, no coding will be performed." ]
+  ] [
+     fhir:code [ fhir:v "manualCodingCanceled_Update" ] ;
+     fhir:display [ fhir:v "Manual Coding Canceled - Update" ] ;
+     fhir:definition [ fhir:v "An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record." ]
+  ] [
+     fhir:code [ fhir:v "manualCodingCanceled_Void" ] ;
+     fhir:display [ fhir:v "Manual Coding Canceled - Void" ] ;
+     fhir:definition [ fhir:v "A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

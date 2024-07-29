@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="VRM-MessageHeaderURI-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_submission<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission"> </a></td><td>VRDR Submission</td><td><div><p>Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate
+Document</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_submission_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update"> </a></td><td>VRDR Update</td><td><div><p>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_submission_void<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_void"> </a></td><td>VRDR Void</td><td><div><p>Indicates this is  void  of  a  VRDR  DeathCertificate Document</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_acknowledgement<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_acknowledgement"> </a></td><td>VRDR Acknowledgement</td><td><div><p>Indicates this is  an  acknowledgement</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_demographics_coding_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding_update"> </a></td><td>VRDR Demographics Coding Update</td><td><div><p>Indicates that this is an updated demographics coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update"> </a></td><td>VRDR Cause of Death Coding Update</td><td><div><p>Indicates that this is an updated cause of death coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update"> </a></td><td>VRDR Industry Occupation Coding Update</td><td><div><p>Indicates that this is an updated industry occupation coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_demographics_coding<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding"> </a></td><td>VRDR Demographics Coding</td><td><div><p>Indicates that this is an initial demographics coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_causeofdeath_coding<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding"> </a></td><td>VRDR Cause of Death Coding</td><td><div><p>Indicates that this is an initial cause of death coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_industryoccupation_coding<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding"> </a></td><td>VRDR Industry Occupation Coding</td><td><div><p>Indicates that this is an initial industry occupation coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_alias<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_alias"> </a></td><td>VRDR Alias</td><td><div><p>Indicates that this is an alias for a previously submitted Decedent</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_extraction_error<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_extraction_error"> </a></td><td>VRDR Extraction Error</td><td><div><p>Indicates that this is an extraction error</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/vrdr_status<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_status"> </a></td><td>VRDR Status</td><td><div><p>Indicates that this is a status for a previously submitted Decedent</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_death<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_death"> </a></td><td>BFDR Death</td><td><div><p>Indicates that the payload is an initial submission of a BFDR fetal death report</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_death_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_death_update"> </a></td><td>BFDR Death Update</td><td><div><p>Indicates that the payload is an updated submission of a BFDR fetal death report</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_birth<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_birth"> </a></td><td>BFDR Birth</td><td><div><p>Indicates that this is an initial submission of a BFDR birth report</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_birth_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_birth_update"> </a></td><td>BFDR Birth Update</td><td><div><p>Indicates that this is an updated submission of a BFDR birth report</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_causeofdeath<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_causeofdeath"> </a></td><td>BFDR Cause of Fetal Death</td><td><div><p>Indicates that this is an initial fetal cause of death</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_causeofdeath_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_causeofdeath_update"> </a></td><td>BFDR Cause of Fetal Death Update</td><td><div><p>Indicates that this is an updated fetal cause of death</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_demographics_coding<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_demographics_coding"> </a></td><td>BFDR Parental Demographics Coding</td><td><div><p>Indicates that this is an initial demographics coding</p>
+</div></td></tr><tr><td style="white-space:nowrap">http://nchs.cdc.gov/bfdr_demographics_coding_update<a name="VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47bfdr_demographics_coding_update"> </a></td><td>BFDR Parental Demographics Coding Update</td><td><div><p>Indicates that this is an updated demographics coding</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
+  <version value="2.0.0-preview1"/>
+  <name value="MessageHeaderURICS"/>
+  <title value="MessageHeader URI Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-29T15:59:48-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="MessageHeader URI Values"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="21"/>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_submission"/>
+    <display value="VRDR Submission"/>
+    <definition value="Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a VRDR Death Certificate&#xA;Document"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_submission_update"/>
+    <display value="VRDR Update"/>
+    <definition value="Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  VRDR  DeathCertificate Document"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_submission_void"/>
+    <display value="VRDR Void"/>
+    <definition value="Indicates this is  void  of  a  VRDR  DeathCertificate Document"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_acknowledgement"/>
+    <display value="VRDR Acknowledgement"/>
+    <definition value="Indicates this is  an  acknowledgement"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_demographics_coding_update"/>
+    <display value="VRDR Demographics Coding Update"/>
+    <definition value="Indicates that this is an updated demographics coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_causeofdeath_coding_update"/>
+    <display value="VRDR Cause of Death Coding Update"/>
+    <definition value="Indicates that this is an updated cause of death coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_industryoccupation_coding_update"/>
+    <display value="VRDR Industry Occupation Coding Update"/>
+    <definition value="Indicates that this is an updated industry occupation coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_demographics_coding"/>
+    <display value="VRDR Demographics Coding"/>
+    <definition value="Indicates that this is an initial demographics coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_causeofdeath_coding"/>
+    <display value="VRDR Cause of Death Coding"/>
+    <definition value="Indicates that this is an initial cause of death coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_industryoccupation_coding"/>
+    <display value="VRDR Industry Occupation Coding"/>
+    <definition value="Indicates that this is an initial industry occupation coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_alias"/>
+    <display value="VRDR Alias"/>
+    <definition value="Indicates that this is an alias for a previously submitted Decedent"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_extraction_error"/>
+    <display value="VRDR Extraction Error"/>
+    <definition value="Indicates that this is an extraction error"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/vrdr_status"/>
+    <display value="VRDR Status"/>
+    <definition value="Indicates that this is a status for a previously submitted Decedent"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_death"/>
+    <display value="BFDR Death"/>
+    <definition value="Indicates that the payload is an initial submission of a BFDR fetal death report"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_death_update"/>
+    <display value="BFDR Death Update"/>
+    <definition value="Indicates that the payload is an updated submission of a BFDR fetal death report"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_birth"/>
+    <display value="BFDR Birth"/>
+    <definition value="Indicates that this is an initial submission of a BFDR birth report"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_birth_update"/>
+    <display value="BFDR Birth Update"/>
+    <definition value="Indicates that this is an updated submission of a BFDR birth report"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_causeofdeath"/>
+    <display value="BFDR Cause of Fetal Death"/>
+    <definition value="Indicates that this is an initial fetal cause of death"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_causeofdeath_update"/>
+    <display value="BFDR Cause of Fetal Death Update"/>
+    <definition value="Indicates that this is an updated fetal cause of death"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_demographics_coding"/>
+    <display value="BFDR Parental Demographics Coding"/>
+    <definition value="Indicates that this is an initial demographics coding"/>
+  </concept>
+  <concept>
+    <code value="http://nchs.cdc.gov/bfdr_demographics_coding_update"/>
+    <display value="BFDR Parental Demographics Coding Update"/>
+    <definition value="Indicates that this is an updated demographics coding"/>
+  </concept>
+</CodeSystem>
