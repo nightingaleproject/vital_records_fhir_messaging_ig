@@ -1,8 +1,8 @@
 ### Business Rules for Death Record Submissions
 
-Version 2.1
+Version 2.2
 
-**Last updated** : November 1, 2023
+**Last updated** : June 11, 2024
 
 **Table of Content**
 
