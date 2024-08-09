@@ -44,7 +44,9 @@ pages:
   june2022testingeventexamples.md:
     title: June 2022 Testing Event Examples
   business_rules.md:
-    title: NCHS Error Messages 
+    title: Business Rules for Death Record Submissions
+  business_rules_birth.md:
+    title: Business Rules for Birth Record Submissions
   VRDRSTU22Errata.md:
     title: NCHS FHIR Implementation Notes 
 menu:
@@ -52,7 +54,8 @@ menu:
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
-    NCHS Error Messages: business_rules.html 
+    Business Rules - Death: business_rules.html 
+    Business Rules - Birth: business_rules_birth.html 
     NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
   Appendices: appendix.html
   Artifacts:
