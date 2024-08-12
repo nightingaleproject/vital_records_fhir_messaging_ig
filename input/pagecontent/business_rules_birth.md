@@ -66,7 +66,7 @@ An Error Message with a format of "Error: Unable to find _IJE Field_ required el
 
 #### Additional Checks
 
-Records that contain the minimal set of required fields will be processed by NCHS.  Reports on the completness of each record will be shared with jurisdictions through the same channels as is done for IJE-formatted records.  This process may be revised to introduce more stringent checking of submissions as NCHS and Jurisdictions can experience with the process.
+Records that contain the minimal set of required fields will be processed by NCHS.  Reports on the completeness of each record will be shared with jurisdictions through the same channels as is done for IJE-formatted records.  This process may be revised to introduce more stringent checking of submissions as NCHS and Jurisdictions gain experience with the process.
 
 
 #### Internal Validation Errors
