@@ -46,7 +46,7 @@ RuleSet: ParameterNameType(name, type, short, def)
 * parameter[{name}].part 0..0
 * parameter[{name}].extension 0..0
 
-RuleSet: ParameterNameTypeLength(name, type, short, def, length)
+/* RuleSet: ParameterNameTypeLength(name, type, short, def, length)
 * insert ParameterNameType({name}, {type}, {short}, {def})
 * parameter[{name}].value[x] ^maxLength = {length}
 
@@ -92,7 +92,7 @@ RuleSet: ParameterPartSliceLength(slice, partslice, type, short, def, length)
 RuleSet: ParameterPartPartSliceLength(slice, partslice, partpartslice,type, short, def, length)
 * insert ParameterPartPartSlice({slice}, {partslice}, {partpartslice}, {type}, {short}, {def})
 * parameter[{slice}].part[{partslice}].part[{partpartslice}].value[x] ^maxLength = {length}
-
+ */
 RuleSet: ParameterSlicing
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
@@ -104,67 +104,18 @@ RuleSet: BaseMessageParameters
 * parameter contains
     jurisdiction_id 0..1 and
     cert_no 0..1 and   // cert_no / FILENO
-    death_year 0..1 and   // death_year / DOD_YR
+    death_year 0..1 and   // death_year / DOD_YR -- for compabilitility with v1.0.1
+    event_year 0..1 and   // DOD_YR, DOB_YR, FDOD_YR -- preferred
     state_auxiliary_id  0..1  and  // state_auxiliary_id / AUXNO
     payload_version_id  0..1    // payload_version_id
 * insert ParameterNameType(payload_version_id, string, Payload version identifier, payload version identifier) // * parameter[payload_version_id].name = "payload_version_id"
 * parameter[payload_version_id].value[x] from PayloadVersionVS (extensible)
 * insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
 * parameter[jurisdiction_id].value[x] from ValueSetJurisdictionVitalRecords (required)
-* insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
-* insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year) //* parameter[death_year].name = "death_year"
-* insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-
-
-RuleSet: BaseMessageParametersDeath
-* insert ParameterSlicing
-* parameter contains
-    jurisdiction_id 0..1 and
-    cert_no 0..1 and   // cert_no / FILENO
-    death_year 0..1 and   // death_year / DOD_YR
-    state_auxiliary_id  0..1 and   // state_auxiliary_id / AUXNO
-    payload_version_id  0..1    // payload_version_id
-* insert ParameterNameType(payload_version_id, string, Payload version identifier, payload version identifier) // * parameter[payload_version_id].name = "payload_version_id"
-* parameter[payload_version_id].value[x] from PayloadVersionVS (extensible)
-* insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
-* parameter[jurisdiction_id].value[x] from ValueSetJurisdictionVitalRecords (required)
-* insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
-* insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year) //* parameter[death_year].name = "death_year"
-* insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-
-
-RuleSet: BaseMessageParametersFetalDeath
-* insert ParameterSlicing
-* parameter contains
-    jurisdiction_id 0..1 and
-    cert_no 0..1 and   // cert_no / FILENO
-    death_year 0..1 and   // death_year / DOD_YR
-    state_auxiliary_id  0..1 and   // state_auxiliary_id / AUXNO
-    payload_version_id  0..1    // payload_version_id
-* insert ParameterNameType(payload_version_id, string, Payload version identifier, payload version identifier) // * parameter[payload_version_id].name = "payload_version_id"
-* parameter[payload_version_id].value[x] from PayloadVersionVS (extensible)
-* insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
-* parameter[jurisdiction_id].value[x] from ValueSetJurisdictionVitalRecords (required)
-* insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) // parameter[cert_no].name = "cert_no"
-* insert ParameterNameType(death_year, unsignedInt, FDOD_YR death year, four digit death year) //* parameter[death_year].name = "death_year"
-* insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) // * parameter[state_auxiliary_id].name = "state_auxiliary_id"
-
-RuleSet: BaseMessageParametersBirth
-* insert ParameterSlicing
-* parameter contains
-    jurisdiction_id 0..1 and
-    cert_no 0..1 and  
-    birth_year 0..1 and 
-    state_auxiliary_id  0..1  and
-    payload_version_id  0..1    // payload_version_id
-* insert ParameterNameType(payload_version_id, string, Payload version identifier, payload version identifier) // * parameter[payload_version_id].name = "payload_version_id"
-* parameter[payload_version_id].value[x] from PayloadVersionVS (extensible)
-* insert ParameterNameType(jurisdiction_id, string, jurisdiction identifier, 2 character identifier for one of 57 reporting jurisdictions)
-* parameter[jurisdiction_id].value[x] from ValueSetJurisdictionVitalRecords (required)
-* insert ParameterNameType(cert_no, unsignedInt, FILENO birth certificate number , birth certificate number ) 
-* insert ParameterNameType(birth_year, unsignedInt, IDOB_YR birth year, four digit birth year) 
-* insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier)
-
+* insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) 
+* insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year)  
+* insert ParameterNameType(event_year, unsignedInt, DOD_YR or DOB_YR or FDOD_YR event year, four digit event year) 
+* insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) 
 
 RuleSet: addentry(type, id)
 * entry[+].resource = {id}

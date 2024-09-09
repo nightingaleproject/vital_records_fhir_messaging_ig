@@ -5,27 +5,27 @@ Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
+* parameter[event_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[payload_version_id].valueString = "VRDRSTU2.2"
 
 Instance: ParametersFD-Example2
-InstanceOf: MessageParametersFetalDeath
+InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 112233
-* parameter[death_year].valueUnsignedInt = 2021
+* parameter[event_year].valueUnsignedInt = 2021
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[payload_version_id].valueString = "BFDRSTU1.1"
 
 Instance: ParametersBirth-Example1
-InstanceOf: MessageParametersBirth
+InstanceOf: MessageParameters
 Usage: #example
 Description: "Parameters for Submission: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 111111
-* parameter[birth_year].valueUnsignedInt = 2022
+* parameter[event_year].valueUnsignedInt = 2022
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[payload_version_id].valueString = "BFDRSTU2.0"
 
@@ -35,7 +35,7 @@ Usage: #example
 Description: "Parameters for Void: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
+* parameter[event_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[block_count].valueUnsignedInt = 10
 
@@ -45,7 +45,7 @@ Usage: #example
 Description: "Parameters for Status: Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
+* parameter[event_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[status].valueString = "manualCauseOfDeathCoding"
 
@@ -55,7 +55,7 @@ Usage: #example
 Description:  "Alias Message Parameters- Example"
 * parameter[jurisdiction_id].valueString = "NY"
 * parameter[cert_no].valueUnsignedInt = 123456
-* parameter[death_year].valueUnsignedInt = 2018
+* parameter[event_year].valueUnsignedInt = 2018
 * parameter[state_auxiliary_id].valueString = "abcdef10"
 * parameter[alias_father_surname].valueString = "Jingleheimer"
 * parameter[alias_decedent_first_name].valueString = "John"

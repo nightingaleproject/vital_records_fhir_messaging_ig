@@ -1,20 +1,20 @@
 Profile:  MessageParameters
 Parent: Parameters
 Id: VRM-MessageParameters
-Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
-Title:  "Death Message Parameters"
+Description:   "Parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
+Title:  "Message Parameters"
 * insert RequireMetaProfile(MessageParameters)
 * id MS
-* insert BaseMessageParametersDeath
+* insert BaseMessageParameters
 
-Profile:  MessageParametersFetalDeath
+/* Profile:  MessageParametersFetalDeath
 Parent: Parameters
 Id: VRM-MessageParametersFetalDeath
 Description:   "Base parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Death Message Parameters"
 * insert RequireMetaProfile(MessageParametersFetalDeath)
 * id MS
-* insert BaseMessageParametersFetalDeath
+* insert BaseMessageParametersFetalDeath */
 
 Profile: StatusParameters
 Parent: Parameters
