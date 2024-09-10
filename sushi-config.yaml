@@ -77,8 +77,8 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
     - StructureDefinition/VRM-DemographicsCodingMessage
     - StructureDefinition/VRM-DemographicsCodingUpdateMessage
-    #- StructureDefinition/VRM-IndustryOccupationCodingMessage
-    #- StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
     - StructureDefinition/VRM-StatusMessage
@@ -103,8 +103,8 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
     - StructureDefinition/VRM-DemographicsCodingHeader
     - StructureDefinition/VRM-DemographicsCodingUpdateHeader
-    #- StructureDefinition/VRM-IndustryOccupationCodingHeader
-    #- StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
     - StructureDefinition/VRM-AcknowledgementHeader
     - StructureDefinition/VRM-ExtractionErrorHeader
     - StructureDefinition/VRM-FetalDeathReportHeader
