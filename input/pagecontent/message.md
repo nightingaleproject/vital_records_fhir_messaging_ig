@@ -189,14 +189,10 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle (from VRDR IG)  |
 {: .grid }
 
-
-
 #### Birth and Fetal Death Specific
-
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
-
 | [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG)|
 | [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | BundleDocumentBFDR (from BFDR IG)|
 | [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG) |
