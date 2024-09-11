@@ -201,7 +201,7 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | CodedCauseOfFetalDeathBundleBFDR |
 | [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] |  BundleDocumentCodedIndustryOccupation  |
 | [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] |  BundleDocumentCodedIndustryOccupation  |
-| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader]  [MessageParameters] | DemographicCodedContentBundleBFDR |
+| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR |
 | [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR |
 {: .grid }
 
