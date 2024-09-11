@@ -132,14 +132,14 @@ Figure 8 illustrates two message extraction failures:
 
 Extraction Error Response should use a [ExtractionErrorMessage].  For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
 
-For a given Death Record Submission or Coding Response:
+For a given Record Submission or Coding Response:
 
 - Extraction Error Response and Acknowledgment are mutually exclusive
-- An acknowledged Death Record Submission or Coding Response can still result in issues later in the process that might require manual intervention
+- An acknowledged Submission or Coding Response can still result in issues later in the process that might require manual intervention
 
 In either scenarion, the recipient of the Extraction Error Response would need to investigate the cause of the failure using the information provided in the Extraction Error Response message.
 
-#### Alias
+#### Alias Messages for Death Records
 
 <!-- ![Message exchange patterns for failed message extractions](alias.png){ width=25% } -->
 <figure style="align:middle">
@@ -149,7 +149,7 @@ In either scenarion, the recipient of the Extraction Error Response would need t
 &nbsp;
 Alias records are optional records that are submitted only for National Death Index purposes and contain alternate spellings or “AKA”s captured on some death certificates.  Some Alias records are literally just a mixed case or upper case version of the original record with no real significant differences.  States vary in whether they even can report Aliases or not, and many never do. Alias records are accumulated, and cannot be voided or deleted separate from their accompaassociated ying death record.
 
-Figure 8 illustrates the submission of a death message followed by an alias message.
+Figure 9 illustrates the submission of a death message followed by an alias message.
 Alias messages can contain aliases for one or more of the following fields:
 * Decedent’s First Name
 * Decedent’s Middle Initial
@@ -160,22 +160,41 @@ Alias messages can contain aliases for one or more of the following fields:
 
 Alias records should be sent using a [DeathRecordAliasMessage].
 
-### Message Structure and Content
+
+### Message Structure and Content 
+
+#### General Usage
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
+|------------------------------|--------|--------|------------|------|
+| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
+| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |
+{: .grid }
+
+#### Mortality Specific
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* |
 |------------------------------|--------|--------|------------|------|
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG)  |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
-| [DeathRecordVoidMessage] (deprecated) | In | [VoidHeader] | [VoidParameters] | - |
-| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
+| [DeathRecordVoidMessage] (deprecated) | In | [VoidHeaderDeath] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
 | [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
 | [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
 | [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG)  |
 | [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle (from VRDR IG) |
+{: .grid }
+
+
+
+#### Birth and Fetal Death Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
+|------------------------------|--------|--------|------------|------|
 | [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle (from VRDR IG) or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
-| IndustryOccupationCodingUpdateMessage | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
+| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle (from VRDR IG) or or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |
 | [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG) |
@@ -187,5 +206,6 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR (from BFDR IG)|
 | [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR (from BFDR IG)|
 {: .grid }
+
 
 {% include markdown-link-references.md %}
