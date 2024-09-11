@@ -166,7 +166,8 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 |------------------------------|--------|--------|------------|------|
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG)  |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument (from VRDR IG) |
-| [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
+| [DeathRecordVoidMessage] (deprecated) | In | [VoidHeader] | [VoidParameters] | - |
+| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
 | [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle (from VRDR IG)  |
@@ -177,10 +178,10 @@ Alias records should be sent using a [DeathRecordAliasMessage].
 | IndustryOccupationCodingUpdateMessage | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR IG) or or BundleDocumentCodedIndustryOccupation (from BFDR IG) |
 | [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  |  |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |
-| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParametersFetalDeath] | BundleDocumentBFDR (from BFDR IG) |
-| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParametersFetalDeath] | BundleDocumentBFDR (from BFDR IG)|
-| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParametersBirth] | BundleDocumentBFDR (from BFDR IG)|
-| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParametersBirth]  | BundleDocumentBFDR (from BFDR IG)|
+| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG) |
+| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG)|
+| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | BundleDocumentBFDR (from BFDR IG)|
+| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | BundleDocumentBFDR (from BFDR IG)|
 | [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParameters] | CodedCauseOfFetalDeathBundleBFDR (from BFDR IG)|
 | [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | CodedCauseOfFetalDeathBundleBFDR (from BFDR IG)|
 | [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR (from BFDR IG)|

@@ -44,12 +44,21 @@ Profile: DeathRecordVoidMessage
 Parent: Bundle
 Id: VRM-DeathRecordVoidMessage
 Title: "Death Record Void Message"
-Description:   "Message for voiding death records"
+Description:   "Message for voiding death records.  This message is deprecated and is  included for backward compatibility.   Implementers should use [VoidMessage] instead."
 * insert RequireMetaProfile(DeathRecordVoidMessage)
 * insert CommonBundleStuff
-// * insert BundleEntry(brachytherapyTreatmentPhase, 0, *, Brachytherapy Phase Summary, Procedure resource representing one phase in cancer-related brachytherapy radiology procedures., BrachytherapyTreatmentPhase)
-* insert BundleEntry(messageHeader, 1, 1, Void Header , Void Header, VoidHeader)
+* insert BundleEntry(messageHeader, 1, 1, Void Header , Void Header, VoidHeaderDeath)
 * insert BundleEntry(deathRecordParameters, 1, 1, Void Parameters, Void Parameters, VoidParameters)
+
+Profile: VoidMessage
+Parent: Bundle
+Id: VRM-VoidMessage
+Title: "Void Message (for mortality, birth, and fetal death)"
+Description:   "Message for voiding mortality, birth, and fetal death records."
+* insert RequireMetaProfile(VoidMessage)
+* insert CommonBundleStuff
+* insert BundleEntry(messageHeader, 1, 1, Void Header , Void Header, VoidHeader)
+* insert BundleEntry(messageParameters, 1, 1, Void Parameters, Void Parameters, VoidParameters)
 
 Profile: DeathRecordAliasMessage
 Parent: Bundle

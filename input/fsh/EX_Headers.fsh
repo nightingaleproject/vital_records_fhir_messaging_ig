@@ -9,6 +9,16 @@ Description: "Acknowledgement Header: Example"
 * response.code = #ok
 * insert addReference(focus, Parameters, Parameters-Example1)
 
+Instance: VoidHeaderDeath-Example1
+InstanceOf: VoidHeaderDeath
+Usage: #example
+Description: "Parameters for Void: Example"
+//* eventUri = "http://nchs.cdc.gov/vrdr_submission_void"
+* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
+* source.endpoint = "https://sos.ny.gov/vitalrecords"
+// * focus = Reference(VoidParameters-Example1)
+* insert addReference(focus, Parameters, VoidParameters-Example1)
+
 Instance: VoidHeader-Example1
 InstanceOf: VoidHeader
 Usage: #example

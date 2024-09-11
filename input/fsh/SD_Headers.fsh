@@ -22,13 +22,23 @@ Title:  "Death Message Update Header"
 * insert CommonHeaderStuff
 //* focus only Reference(Bundle) // DeathCertificateDocument
 
-Profile:  VoidHeader
+Profile:  VoidHeaderDeath
 Parent: MessageHeader
 Id: VRM-VoidHeader
-Title:  "Void Header"
-Description:   "Void Header"
-* insert RequireMetaProfile(VoidHeader)
+Title:  "Void Header Death"
+Description:   "Void Header Death -- deprecated.  Use [VoidHeader]"
+* insert RequireMetaProfile(VoidHeaderDeath)
 * eventUri = MessageHeaderURICS#http://nchs.cdc.gov/vrdr_submission_void (exactly)
+* insert CommonHeaderStuff
+//* focus only Reference(VoidParameters)
+
+Profile:  VoidHeader
+Parent: MessageHeader
+Id: VRM-VoidHeaderGeneral
+Title:  "Void Header"
+Description:   "Void Header for all submission types"
+* insert RequireMetaProfile(VoidHeader)
+* eventUri = MessageHeaderURICS#http://nchs.cdc.gov/submission_void (exactly)
 * insert CommonHeaderStuff
 //* focus only Reference(VoidParameters)
 

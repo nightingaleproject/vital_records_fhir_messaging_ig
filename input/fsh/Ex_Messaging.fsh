@@ -102,6 +102,14 @@ InstanceOf: DeathRecordVoidMessage
 Usage: #example
 Description: "Void message - example"
 * timestamp = "2021-05-20T00:00:00Z"
+* insert addentry(Header, VoidHeaderDeath-Example1)
+* insert addentry(Parameters,VoidParameters-Example1)
+
+Instance: VoidMessage-Example1
+InstanceOf: VoidMessage
+Usage: #example
+Description: "Void message - example"
+* timestamp = "2021-05-20T00:00:00Z"
 * insert addentry(Header, VoidHeader-Example1)
 * insert addentry(Parameters,VoidParameters-Example1)
 
