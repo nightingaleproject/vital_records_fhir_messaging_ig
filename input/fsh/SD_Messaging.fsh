@@ -215,7 +215,7 @@ Description:   "Message for reporting parental demographics"
 * insert RequireMetaProfile(ParentalDemographicsCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographics Header, Parental Demographics Header, ParentalDemographicsCodingHeader)
-* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, Parameters)
+* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
 * insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
@@ -227,7 +227,7 @@ Description:   "Message for updating parental demographics"
 * insert RequireMetaProfile(ParentalDemographicsCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(messageHeader, 1, 1, Parental Demographicsh Update Header, Parental Demographics Update Header, ParentalDemographicsCodingUpdateHeader)
-* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, Parameters)
+* insert BundleEntry(RecordParameters, 1, 1, Submission Parameters, Submission Parameters, MessageParameters)
 * insert BundleEntry(parentalDemographicsDocument, 1, 1, Parental Demographics Document, Parental Demographics Document, MessageBundle)
 
 
@@ -262,7 +262,7 @@ Description:   "Message for industry occupation coding response to death records
 * insert RequireMetaProfile(IndustryOccupationCodingMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Message Header , Message Header, IndustryOccupationCodingHeader)
-* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, Parameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, Bundle )
 
 Profile: IndustryOccupationCodingUpdateMessage
@@ -273,7 +273,7 @@ Description:   "Message for updating industry occupation coding response to deat
 * insert RequireMetaProfile(IndustryOccupationCodingUpdateMessage)
 * insert CommonBundleStuff
 * insert BundleEntry(header, 1, 1, Industry Occupation Coding Update Header , Industry Occupation Coding Update Header, IndustryOccupationCodingUpdateHeader)
-* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, Parameters)
+* insert BundleEntry(msgpar, 1, 1, Message Parameters , Message Parameters, MessageParameters)
 * insert BundleEntry(codedcontentbundle, 1, 1, Industry Occupation Coded Content Bundle, IndustryOccupationCodedContentBundle, MessageBundle)
 
 
