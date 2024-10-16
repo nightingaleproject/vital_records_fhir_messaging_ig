@@ -27,6 +27,8 @@ A submission can be routed to NCHS and/or jurisdiction exchange via STEVE using 
 * Updated Record(REPLACE = 1): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
 * Do not send to NCHS (REPLACE = 2): message destination should include just `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
 
+See the [Mortality Specific](message.html#mortality-specific) section below for details on message content.
+
 
 #### Updating Prior Death Record Submission
 
@@ -128,7 +130,7 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 Figure 8 illustrates two message extraction failures:
 
 1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is returned instead of an Acknowledgement.
-2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  Note that acknowledgements are not expected for Extraction Error Messages. __Note__:<mark>The NCHS API currently does not support [ExtractionErrorMessage].  In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
+2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  Note that acknowledgements are not expected for Extraction Error Messages. __Note__:The NCHS API currently does not currently accept [ExtractionErrorMessage].  In the event that a jurisdiction can't extract content from an NCHS-generated message, the jurisdiction should contact NCHS using out of band channels (e.g., e-mail).
 
 Extraction Error Response should use a [ExtractionErrorMessage].  For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
 
@@ -160,6 +162,11 @@ Alias messages can contain aliases for one or more of the following fields:
 
 Alias records should be sent using a [DeathRecordAliasMessage].
 
+#### Messages for Birth Records
+The message flow for Birth Records is very similar to the flow for Death Records.  A jurisdiction submits a [BirthReportMessage], and subsequently NCHS sends coded content that can include [IndustryOccupationCodingMessage], and [ParentalDemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage].  See the [Birth and Fetal Death Specific](message.html#birth-and-fetal-death-specific) section below.
+
+#### Messages for Fetal Death Records
+The message flow for Fetal Death Records is very similar to the flow for Death Records.  A jurisdiction submits a [FetalDeathReportMessage], and subsequently NCHS sends coded content that can include [CodedCauseOfFetalDeathMessage], [IndustryOccupationCodingMessage], and [ParentalDemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage]. See the [Birth and Fetal Death Specific](message.html#birth-and-fetal-death-specific) section below.
 
 ### Message Structure and Content 
 
