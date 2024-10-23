@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Payload-version-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Payload-version-vs</b></p><a name=\"Payload-version-vs\"> </a><a name=\"hcPayload-version-vs\"> </a><a name=\"Payload-version-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-Payload-version-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+  "version" : "2.0.0-Preview3",
+  "name" : "PayloadVersionVS",
+  "title" : "Payload Version Identifier Values",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-10-23T10:42:23-04:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Payload Version Identifier Values",
+  "compose" : {
+    "include" : [{
+      "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"
+    }]
+  }
+}

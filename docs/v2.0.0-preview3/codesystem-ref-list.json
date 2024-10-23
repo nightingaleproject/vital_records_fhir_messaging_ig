@@ -1,0 +1,48 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+      "version" : "2.0.0-Preview3",
+      "status" : "draft",
+      "name" : "PayloadVersionCS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Codesystem for Payload Version Identifier Values",
+      "uses" : {
+      },
+      "ValueSet-Payload-version-vs.html" : "Payload Version Identifier Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+      "version" : "2.0.0-Preview3",
+      "status" : "draft",
+      "name" : "StatusCS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "uses" : {
+      },
+      "ValueSet-VRM-Status-vs.html" : "Status Codes Values"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemJurisdictionsVitalRecords",
+      "title" : "Code System - Jurisdictions Vital Records",
+      "description" : "NVSS Jurisdictions that are not US States or Territories.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemUSStatesTerritoriesVitalRecords",
+      "title" : "Code System - US States and Territories",
+      "description" : "Surrogate for usps.com codesystem - IG Publisher found issues with that codesystem.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    }
+  ]
+}

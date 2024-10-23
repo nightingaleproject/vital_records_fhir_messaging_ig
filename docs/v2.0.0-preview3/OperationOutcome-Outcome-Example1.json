@@ -1,0 +1,16 @@
+{
+  "resourceType" : "OperationOutcome",
+  "id" : "Outcome-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationOutcome Outcome-Example1</b></p><a name=\"Outcome-Example1\"> </a><a name=\"hcOutcome-Example1\"> </a><a name=\"Outcome-Example1-en-US\"> </a><h3>Issues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Severity</b></td><td><b>Code</b></td><td><b>Diagnostics</b></td></tr><tr><td style=\"display: none\">*</td><td>Error</td><td>Structural Issue</td><td>Expected 1 or more Cause of Death Condition resources, received 0.</td></tr></table></div>"
+  },
+  "issue" : [{
+    "severity" : "error",
+    "code" : "structure",
+    "diagnostics" : "Expected 1 or more Cause of Death Condition resources, received 0."
+  }]
+}

@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/MessageHeader/VoidHeader-Example1> a fhir:MessageHeader ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VoidHeader-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidHeaderGeneral"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidHeaderGeneral>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader VoidHeader-Example1</b></p><a name=\"VoidHeader-Example1\"> </a><a name=\"hcVoidHeader-Example1\"> </a><a name=\"VoidHeader-Example1-en-US\"> </a><p><b>event</b>: <a href=\"http://nchs.cdc.gov/submission_void\">http://nchs.cdc.gov/submission_void</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-DeathRecordVoidMessage-Example1.html#http-//www.example.org/fhir/Parameters/VoidParameters-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></p></div>"
+  ] ; # 
+  fhir:event [ fhir:v "http://nchs.cdc.gov/submission_void"^^xsd:anyURI] ; # 
+  fhir:destination ( [
+     fhir:endpoint [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:source [
+     fhir:endpoint [ fhir:v "https://sos.ny.gov/vitalrecords"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://www.example.org/fhir/Parameters/VoidParameters-Example1> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/VoidParameters-Example1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

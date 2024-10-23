@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Payload-version-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Payload-version-vs</b></p><a name="Payload-version-vs"> </a><a name="hcPayload-version-vs"> </a><a name="Payload-version-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-Payload-version-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="PayloadVersionVS"/>
+  <title value="Payload Version Identifier Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-10-23T10:42:23-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Payload Version Identifier Values"/>
+  <compose>
+    <include>
+      <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+    </include>
+  </compose>
+</ValueSet>

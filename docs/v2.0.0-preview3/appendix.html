@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Appendices - Vital Records FHIR Messaging (VRFM) IG v2.0.0-Preview3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://cdc.gov"><img width="150px" alt="CDC logo" src="cdc.svg"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span>Vital Records FHIR Messaging (VRFM) IG</span>
+            <br/>
+            2.0.0-Preview3 - ci-build
+            <span>
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Messages
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="message.html#message-exchange-patterns">Message Exchange Patterns</a>
+      </li>
+      <li>
+        <a href="message.html#message-structure-and-content">Message Structure and Content</a>
+      </li>
+      <li>
+        <a href="business_rules.html">Business Rules - Death</a>
+      </li>
+      <li>
+        <a href="business_rules_birth.html">Business Rules - Birth</a>
+      </li>
+      <li>
+        <a href="VRDRSTU22Errata.html">NCHS FHIR Implementation Notes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="appendix.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All FHIR Artifacts</a>
+      </li>
+      <li>
+        <a href="june2022testingeventexamples.html">June 2022 Testing Event Examples</a>
+      </li>
+      <li>
+        <a href="downloads.html">Other Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">History
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Appendices</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v2.0.0-Preview3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Appendices</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#appendix" id="markdown-toc-appendix">Appendix</a></li>
+  <li><a href="#nchs-fhir-messaging-infrastructure" id="markdown-toc-nchs-fhir-messaging-infrastructure">NCHS FHIR Messaging Infrastructure</a></li>
+</ul>
+
+</div>
+<h3 id="appendix">Appendix</h3>
+<h4 id="fhir-messaging-infrastructure-implementation-considerations">FHIR Messaging Infrastructure Implementation Considerations</h4>
+
+<p>The FHIR messaging infrastructure provides reliable message delivery between jurisdictions and NCHS. This section provides pseudo code that describes the behavior of jurisdiction and NVSS FHIR messaging endpoints, and discusses implementation considerations and approaches that may be useful to developers or purchasers of this infrastructure.</p>
+
+<h4 id="jurisdiction-fhir-messaging-infrastructure">Jurisdiction FHIR Messaging Infrastructure</h4>
+
+<p>The following entities are referred to throughout this section:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">[VRDR document]</code> a VRDR Death Record document</li>
+  <li><code class="language-plaintext highlighter-rouge">[message]</code> a FHIR message, one of the types described earlier in this document</li>
+  <li><code class="language-plaintext highlighter-rouge">[pending queue]</code> a software service used to track messages that have been sent to NCHS but not responded to</li>
+  <li><code class="language-plaintext highlighter-rouge">[message log]</code> a software service used to track received messages and eliminate duplicates</li>
+  <li><code class="language-plaintext highlighter-rouge">[response]</code> a <code class="language-plaintext highlighter-rouge">[message]</code> received from NVSS</li>
+  <li><code class="language-plaintext highlighter-rouge">[acknowledgment]</code> an acknowledgment message</li>
+</ul>
+
+<p>In some places components of the above entities are referenced. E.g. <code class="language-plaintext highlighter-rouge">[message.header.id]</code> refers to the <code class="language-plaintext highlighter-rouge">id</code> component of the <code class="language-plaintext highlighter-rouge">header</code> component of <code class="language-plaintext highlighter-rouge">[message]</code>.</p>
+
+<h4 id="vrdr-submission">VRDR Submission</h4>
+
+<p>The following describes the processing performed when a jurisdiction death registration system submits a death report to the FHIR messaging infrastructure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create [message] for [VRDR document]
+Add [message] to [pending queue]
+Send [message] to NVSS
+</code></pre></div></div>
+
+<p>Note that the <code class="language-plaintext highlighter-rouge">[pending queue]</code> should be implemented to be durable in the case of a system failure. Use of a database system would be one suitable approach.</p>
+
+<h4 id="receive-message-from-nvss">Receive Message from NVSS</h4>
+
+<p>When a jurisdiction receives a <code class="language-plaintext highlighter-rouge">[response]</code> from NVSS it is processed as described in the following subsections. Note that the type of the <code class="language-plaintext highlighter-rouge">[response]</code> message can be determined by examining the value of the <code class="language-plaintext highlighter-rouge">response.header.eventUri</code> property.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">[message log]</code> facilitates handling of duplicate messages that may result from retransmissions that may occur when an acknowledgement message is lost.</p>
+
+<h5 id="acknowledgement">Acknowledgement</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Extract [acknowledgment.header.response.identifier] as [id]
+Remove [message] where [message.header.id] equals [id] from [pending queue]
+Log successful [message] delivery to [message log]
+</code></pre></div></div>
+
+<h5 id="extraction-error">Extraction Error</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If [message log] does not contain [response.header.id]
+  Extract [response.header.response.identifier] as [id]
+  Remove [message] where [message.header.id] equals [id] from [pending queue]
+  Log failed [message] delivery to [message log]
+  Add [response.header.id] to [message log]
+Create [acknowedgement] for [response]
+Send [acknowledgment] to NVSS
+</code></pre></div></div>
+
+<h5 id="coding-response-and-coding-update">Coding Response and Coding Update</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If [message log] does not contain [response.header.id]
+  Extract [response.result] as [coding]
+  If extraction fails
+    Create [extraction error] for [response]
+    Add [extraction error] to [pending queue]
+    Send [extraction error] to source of [response]
+  Else
+    Extract [response.timestamp] as [timestamp]
+    Deliver [coding], [timestamp] to local death registration system
+    Add [response.header.id] to [message log]
+Create [acknowledgement] for [response]
+Send [acknowledgement] to NVSS
+</code></pre></div></div>
+
+<h4 id="process-pending-queue">Process Pending Queue</h4>
+
+<p>The pending queue contains messages that are not yet known to have been successfully sent to NVSS, these messages should be periodically resent until acknowledged or an extraction error is received.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Periodically
+  For each [message] in [pending queue]
+    If [message.timeout] &gt; current time
+      Resend [message] to NVSS
+      Update [message.timeout]
+</code></pre></div></div>
+
+<p>It is recommended that message timeouts follow an "exponential backoff" approach where the time between retries is increased for each retry of a given message. This approach prevents retries from overloading the receiver in the case of transient outages.</p>
+
+<h4 id="required-implementation-resources">Required Implementation Resources</h4>
+
+<p>Implementing the FHIR messaging infrastructure at a jurisdiction requires the following components:</p>
+
+<ol>
+  <li>Software for creating VRDR documents</li>
+  <li>Software for creating the following types of messages: Death Record Submission, Death Record Update, Death Record Void, and Acknowledgement</li>
+  <li>Software for parsing the following types of messages: Coding Response, Extraction Error Response, Coding Error Response, and Acknowledgement</li>
+  <li>Software to implement message transport and the message processing algorithms shown above</li>
+  <li>Persistent logging infrastructure for the <code class="language-plaintext highlighter-rouge">[message log]</code> component. This is used to record:
+a. Received messages (for duplication elimination and audit purposes)
+b. Successfully delivered messages (for audit purposes)
+c. Unsuccessfully delivered messages (for audit purposes)</li>
+  <li>Persistent queue infrastructure for the <code class="language-plaintext highlighter-rouge">[pending queue]</code> component</li>
+</ol>
+
+<p>Items 1, 2, 3 above are within the scope of the <a href="https://github.com/nightingaleproject/vrdr-dotnet">vrdr-dotnet open source project</a>, an implementation of the FHIR messaging infrastructure at a jurisdiction could leverage this project to accelerate development.</p>
+
+<p>Items 5 and 6 both require persistent storage and a transactional, durable implementation such as a database management system. This will ensure that the message processing algorithms implemented as part of item 4 are able to function in parallel and that the system will recover without undue message retransmissions should a system failure occur.</p>
+
+<h3 id="nchs-fhir-messaging-infrastructure">NCHS FHIR Messaging Infrastructure</h3>
+
+<h4 id="vrdr-death-report-submission">VRDR Death Report Submission</h4>
+
+<p>The following pseudo code outlines the processing steps taken by NVSS on receipt of a VRDR Death Report Submission message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Extract [death_record] from [message]
+If extraction fails
+  Create [extraction error] for [message]
+  Add [extraction error] to [pending queue]
+  Send [extraction error] to source of [message]
+Else
+  Create [acknowledgment] for [message]
+  Send [acknowledgment] to source of [message]
+  If [message log] does not include [message.header.id]
+    Add [message] to [message log]
+    Submit [death_record] for coding
+</code></pre></div></div>
+
+<h4 id="vrdr-death-report-update">VRDR Death Report Update</h4>
+
+<p>The following pseudo code outlines the processing steps taken by NVSS on receipt of a VRDR Death Report Update message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Extract [death_record] from [message]
+If extraction fails
+  Create [extraction error] for [message]
+  Add [extraction error] to [pending queue]
+  Send [extraction error] to source of [message]
+Else
+  Create [acknowledgment] for [message]
+  Send [acknowledgment] to source of [message]
+  If [message log] includes [message.header.id]
+    Ignore duplicate
+  Else if [message log] does not include [death_record.cert_id, death_record.state_id]
+    Log receipt of update with no preceding submission
+    Add [message] to [message log]
+    Submit [death_record] for coding
+  Else if [message log].latest_timestamp for [death_record.cert_id, death_record.state_id] &gt; [message.timestamp]
+    Log receipt of update older than previously received update or submission
+  Else
+    Add [message] to [message log]
+    Submit [death_record] for coding
+</code></pre></div></div>
+
+<h4 id="coding-response-or-coding-update">Coding Response or Coding Update</h4>
+
+<p>The following describes the processing performed when NVSS submits a coding response or update to the FHIR messaging infrastructure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create [message] for [Coding]
+Add [message] to [pending queue]
+Send [message] to jurisdiction
+</code></pre></div></div>
+
+<p>Note that the <code class="language-plaintext highlighter-rouge">[pending queue]</code> should be implemented to be durable in the case of a system failure. Use of a database system would be one suitable approach.</p>
+
+<h4 id="acknowledgement-1">Acknowledgement</h4>
+
+<p>The following describes the processing performed when NVSS receives an acknowledgement to a Coding Response or Coding Update message.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Extract [acknowledgment.header.response.identifier] as [id]
+Remove [message] where [message.header.id] equals [id] from [pending queue]
+Log successful [message] delivery to [message log]
+</code></pre></div></div>
+
+<h4 id="process-pending-queue-1">Process Pending Queue</h4>
+
+<p>The pending queue contains messages that are not yet known to have been successfully sent to jurisdictions, these messages should be periodically resent until acknowledged</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Periodically
+  For each [message] in [pending queue]
+    If [message.timeout] &gt; current time
+      Resend [message] to jurisdiction
+      Update [message.timeout]
+</code></pre></div></div>
+
+<p>It is recommended that message timeouts follow an "exponential backoff" approach where the time between retries is increased for each retry of a given message. This approach prevents retries from overloading the receiver in the case of transient outages.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#2.0.0-Preview3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 23, 2024 10:42-0400">2024-10-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<br><br><strong>Internal use only.</strong>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

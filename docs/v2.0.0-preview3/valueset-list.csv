@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs,2.0.0-Preview3,draft,,PayloadVersionVS,Payload Version Identifier Values,"Payload Version Identifier Values",,"Internal"
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs,2.0.0-Preview3,draft,,StatusVS,Status Codes Values,"Status Codes Values",,"Internal"

@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs,2.0.0-Preview3,draft,,PayloadVersionCS,Payload Version Identifier Values,"Codesystem for Payload Version Identifier Values",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs,2.0.0-Preview3,draft,,MessageHeaderURICS,MessageHeader URI Values,"MessageHeader URI Values",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs,2.0.0-Preview3,draft,,StatusCS,Status Codes Values,"Status Codes Values",

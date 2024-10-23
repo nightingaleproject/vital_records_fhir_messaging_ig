@@ -1,0 +1,8 @@
+VitalRecordsFHIRMessagingIG
+=========================================
+
+/Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-VoidMessage-Example1.json: line 1, col 2, Info - Can't find 'http://nchs.cdc.gov/submission_void' in the bundle (Bundle.entry[0].resource.event[x]) (NOTFOUND)
+/Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-Payload-version-cs.json: line 1, col 2879, Warning - Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present (REQUIRED)
+
+err = 0, warn = 1, info = 1
+IG Publisher Version: 1.6.31

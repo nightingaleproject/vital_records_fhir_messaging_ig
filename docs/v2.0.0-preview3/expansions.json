@@ -1,0 +1,151 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "26950a93-f16e-4e19-86a1-cb3f922e7613",
+  "meta" : {
+    "lastUpdated" : "2024-10-23T10:42:23.799-04:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-Payload-version-cs.html\">codesystem Payload Version Identifier Values v2.0.0-Preview3 (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU3_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU3_0\">VRDR_STU3_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU3.0</td><td><div><p>VRDR STU3.0</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_2\">VRDR_STU2_2</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU2.2</td><td><div><p>VRDR STU2.2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_1\">VRDR_STU2_1</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU2.1</td><td><div><p>VRDR STU2.1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_0\">VRDR_STU2_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU2.0</td><td><div><p>VRDR STU2.0</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU1_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU1_0\">VRDR_STU1_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU1.0</td><td><div><p>VRDR STU1.0</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU2_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU2_0\">BFDR_STU2_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>BFDRSTU2.0</td><td><div><p>BFDR STU2.0</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU1_1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU1_1\">BFDR_STU1_1</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>BFDRSTU1.1</td><td><div><p>BFDR STU1.1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU1_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU1_0\">BFDR_STU1_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>BFDRSTU1.0</td><td><div><p>BFDR STU1.0</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+      "version" : "2.0.0-Preview3",
+      "name" : "PayloadVersionVS",
+      "title" : "Payload Version Identifier Values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-10-23T10:42:23-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:973d49ac-8943-4734-9b58-54f89ed29137",
+        "timestamp" : "2024-10-23T10:43:44-04:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs|2.0.0-Preview3"
+        }],
+        "contains" : [{
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "VRDR_STU3_0",
+          "display" : "VRDRSTU3.0"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "VRDR_STU2_2",
+          "display" : "VRDRSTU2.2"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "VRDR_STU2_1",
+          "display" : "VRDRSTU2.1"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "VRDR_STU2_0",
+          "display" : "VRDRSTU2.0"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "VRDR_STU1_0",
+          "display" : "VRDRSTU1.0"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "BFDR_STU2_0",
+          "display" : "BFDRSTU2.0"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "BFDR_STU1_1",
+          "display" : "BFDRSTU1.1"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+          "code" : "BFDR_STU1_0",
+          "display" : "BFDRSTU1.0"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-VRM-Status-cs.html\">codesystem Status Codes Values v2.0.0-Preview3 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding\">manualCauseOfDeathCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding\">manualDemographicCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate\">noCodingNeeded_Duplicate</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update\">manualCodingCanceled_Update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void\">manualCodingCanceled_Void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+      "version" : "2.0.0-Preview3",
+      "name" : "StatusVS",
+      "title" : "Status Codes Values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-10-23T10:42:23-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:3319f254-22d6-4933-a438-f9987eaede03",
+        "timestamp" : "2024-10-23T10:43:45-04:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|2.0.0-Preview3"
+        }],
+        "contains" : [{
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+          "code" : "manualCauseOfDeathCoding",
+          "display" : "Manual Cause of Death Coding"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+          "code" : "manualDemographicCoding",
+          "display" : "Manual Demographic  Coding"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+          "code" : "noCodingNeeded_Duplicate",
+          "display" : "No Coding Needed - Duplicate"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+          "code" : "manualCodingCanceled_Update",
+          "display" : "Manual Coding Canceled - Update"
+        },
+        {
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+          "code" : "manualCodingCanceled_Void",
+          "display" : "Manual Coding Canceled - Void"
+        }]
+      }
+    }
+  }]
+}

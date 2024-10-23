@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Parameters/ParametersBirth-Example1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ParametersBirth-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "jurisdiction_id" ] ;
+     fhir:value [ fhir:v "NY" ]
+  ] [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [ fhir:v "111111"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:name [ fhir:v "event_year" ] ;
+     fhir:value [ fhir:v "2022"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:name [ fhir:v "state_auxiliary_id" ] ;
+     fhir:value [ fhir:v "abcdef10" ]
+  ] [
+     fhir:name [ fhir:v "payload_version_id" ] ;
+     fhir:value [ fhir:v "BFDRSTU2.0" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

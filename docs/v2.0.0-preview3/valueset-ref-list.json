@@ -1,0 +1,53 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+      "version" : "2.0.0-Preview3",
+      "status" : "draft",
+      "name" : "PayloadVersionVS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Payload Version Identifier Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+      "version" : "2.0.0-Preview3",
+      "status" : "draft",
+      "name" : "StatusVS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-jurisdiction-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetJurisdictionVitalRecords",
+      "title" : "Value Set - Jurisdictions Vital Records",
+      "description" : "This valueset contains the set of codes used to represent 2 Letter Codes for all 57 Jurisdictions Reporting Deaths to NCHS",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeathRecordAliasMessage-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordAliasMessage"]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Header/AliasHeader-Example1",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "AliasHeader-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasHeader"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_AliasHeader-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader AliasHeader-Example1</b></p><a name=\"AliasHeader-Example1\"> </a><a name=\"hcAliasHeader-Example1\"> </a><a name=\"AliasHeader-Example1-en-US\"> </a><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_alias\">http://nchs.cdc.gov/vrdr_alias</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-DeathRecordAliasMessage-Example1.html#http-//www.example.org/fhir/Parameters/AliasParameters-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></p></div>"
+      },
+      "eventUri" : "http://nchs.cdc.gov/vrdr_alias",
+      "destination" : [{
+        "endpoint" : "http://nchs.cdc.gov/vrdr_submission"
+      }],
+      "source" : {
+        "endpoint" : "https://sos.ny.gov/vitalrecords"
+      },
+      "focus" : [{
+        "reference" : "http://www.example.org/fhir/Parameters/AliasParameters-Example1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Parameters/AliasParameters-Example1",
+    "resource" : {
+      "resourceType" : "Parameters",
+      "id" : "AliasParameters-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters"]
+      },
+      "parameter" : [{
+        "name" : "jurisdiction_id",
+        "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 123456
+      },
+      {
+        "name" : "event_year",
+        "valueUnsignedInt" : 2018
+      },
+      {
+        "name" : "state_auxiliary_id",
+        "valueString" : "abcdef10"
+      },
+      {
+        "name" : "alias_father_surname",
+        "valueString" : "Jingleheimer"
+      },
+      {
+        "name" : "alias_decedent_first_name",
+        "valueString" : "John"
+      },
+      {
+        "name" : "alias_decedent_middle_name",
+        "valueString" : "Jacob"
+      },
+      {
+        "name" : "alias_decedent_last_name",
+        "valueString" : "Schmidt"
+      },
+      {
+        "name" : "alias_decedent_name_suffix",
+        "valueString" : "III"
+      },
+      {
+        "name" : "alias_social_security_number",
+        "valueString" : "123-45-6789"
+      }]
+    }
+  }]
+}
