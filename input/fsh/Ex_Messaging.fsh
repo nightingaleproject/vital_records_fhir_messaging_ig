@@ -97,14 +97,6 @@ Description: "Industry Occupation Coding update message - Example"
 * insert addentry(Parameters, Parameters-Example1)
 * insert addentry(Bundle, DummyBundle)
 
-Instance: DeathRecordVoidMessage-Example1
-InstanceOf: DeathRecordVoidMessage
-Usage: #example
-Description: "Void message - example"
-* timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, VoidHeaderDeath-Example1)
-* insert addentry(Parameters,VoidParameters-Example1)
-
 Instance: VoidMessage-Example1
 InstanceOf: VoidMessage
 Usage: #example
@@ -117,7 +109,7 @@ Instance: DeathRecordSubmissionHeaderExample1
 InstanceOf: SubmissionHeader
 Usage: #example
 Description: "Header for Death Record Submission - Example"
-// * eventUri = "http://nchs.cdc.gov/vrdr_submission"
+* eventUri = "http://nchs.cdc.gov/vrdr_submission"
 * destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Parameters, ParametersDeathExample1)

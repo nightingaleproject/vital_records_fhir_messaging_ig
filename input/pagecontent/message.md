@@ -169,15 +169,22 @@ The message flow for Birth Records is very similar to the flow for Death Records
 The message flow for Fetal Death Records is very similar to the flow for Death Records.  A jurisdiction submits a [FetalDeathReportMessage], and subsequently NCHS sends coded content that can include [CodedCauseOfFetalDeathMessage], [IndustryOccupationCodingMessage], and [ParentalDemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage]. See the [Birth and Fetal Death Specific](message.html#birth-and-fetal-death-specific) section below.
 
 ### Message Structure and Content 
+Most messages are used for multiple use cases.  The Event URI used for each use case is different.  See the documentation in the header associated with each message for details on the event URI.
 
-#### General Usage
+#### Messages Used in Multiple Use Cases
 
-| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* | *Note* |
 |------------------------------|--------|--------|------------|------|
-| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
-| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  |  |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |
+| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - | |
+| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  | |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  | -  |  |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |  |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle   |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle  |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   |
+| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   |
 {: .grid }
 
 #### Mortality Specific
@@ -186,30 +193,24 @@ The message flow for Fetal Death Records is very similar to the flow for Death R
 |------------------------------|--------|--------|------------|------|
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument   |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument  |
-| [DeathRecordVoidMessage] (deprecated) | In | [VoidHeaderDeath] | [VoidParameters] | - |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle   |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle  |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   |
+
 {: .grid }
 
-#### Birth and Fetal Death Specific
+#### Birth Specific
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
 |------------------------------|--------|--------|------------|------|
 | [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | BundleDocumentBFDR |
 | [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | BundleDocumentBFDR |
+{: .grid }
+
+#### Fetal Death Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
+|------------------------------|--------|--------|------------|------|
 | [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | BundleDocumentBFDR  |
 | [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
-| [CodedCauseOfFetalDeathMessage] | Out | [CodedCauseOfFetalDeathHeader] | [MessageParameters] | CodedCauseOfFetalDeathBundleBFDR |
-| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CodedCauseOfFetalDeathUpdateHeader] | [MessageParameters]  | CodedCauseOfFetalDeathBundleBFDR |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] |  BundleDocumentCodedIndustryOccupation  |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] |  BundleDocumentCodedIndustryOccupation  |
-| [ParentalDemographicsCodingMessage] | Out | [ParentalDemographicsCodingHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR |
-| [ParentalDemographicsCodingUpdateMessage] | Out | [ParentalDemographicsCodingUpdateHeader] | [MessageParameters] | DemographicCodedContentBundleBFDR |
 {: .grid }
 
 

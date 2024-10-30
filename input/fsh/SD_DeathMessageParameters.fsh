@@ -3,7 +3,6 @@ Parent: Parameters
 Id: VRM-MessageParameters
 Description:   "Parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."
 Title:  "Message Parameters"
-* insert RequireMetaProfile(MessageParameters)
 * id MS
 * insert BaseMessageParameters
 
@@ -21,7 +20,6 @@ Parent: Parameters
 Id: VRM-StatusParameters
 Title:  "Status Message Parameters"
 Description:   "Parameters for a Status Message"
-* insert RequireMetaProfile(StatusParameters)
 * insert BaseMessageParameters
 * parameter contains
     status 1..1
@@ -33,7 +31,6 @@ Parent: Parameters
 Id: VRM-VoidParameters
 Title:  "Void Message Parameters"
 Description:   "Parameters for a Void Message"
-* insert RequireMetaProfile(VoidParameters)
 * insert BaseMessageParameters
 * parameter contains
     block_count 1..1
@@ -44,7 +41,6 @@ Parent: Parameters
 Id: VRM-AliasParameters
 Title:  "Alias Message Parameters"
 Description:   "Parameters for an Alias Message"
-* insert RequireMetaProfile(AliasParameters)
 * insert BaseMessageParameters
 * parameter contains   // these have no direct parallel in IJE, where they are overloaded
     alias_decedent_first_name 0..1 and  // GNAME
