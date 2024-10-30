@@ -163,10 +163,10 @@ Alias messages can contain aliases for one or more of the following fields:
 Alias records should be sent using a [DeathRecordAliasMessage].
 
 #### Messages for Birth Records
-The message flow for Birth Records is very similar to the flow for Death Records.  A jurisdiction submits a [BirthReportMessage], and subsequently NCHS sends coded content that can include [IndustryOccupationCodingMessage], and [ParentalDemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage].  See the [Birth and Fetal Death Specific](message.html#birth-and-fetal-death-specific) section below.
+The message flow for Birth Records is very similar to the flow for Death Records.  A jurisdiction submits a [BirthReportMessage], and subsequently NCHS sends coded content that can include [IndustryOccupationCodingMessage], and [DemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage].  
 
 #### Messages for Fetal Death Records
-The message flow for Fetal Death Records is very similar to the flow for Death Records.  A jurisdiction submits a [FetalDeathReportMessage], and subsequently NCHS sends coded content that can include [CodedCauseOfFetalDeathMessage], [IndustryOccupationCodingMessage], and [ParentalDemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage]. See the [Birth and Fetal Death Specific](message.html#birth-and-fetal-death-specific) section below.
+The message flow for Fetal Death Records is very similar to the flow for Death Records.  A jurisdiction submits a [FetalDeathReportMessage], and subsequently NCHS sends coded content that can include [CodedCauseOfDeathMessage], [IndustryOccupationCodingMessage], and [DemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage]. 
 
 ### Message Structure and Content 
 Most messages are used for multiple use cases.  The Event URI used for each use case is different.  See the documentation in the header associated with each message for details on the event URI.
@@ -194,7 +194,6 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument   |
 | [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument  |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-
 {: .grid }
 
 #### Birth Specific
