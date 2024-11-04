@@ -200,16 +200,16 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
 |------------------------------|--------|--------|------------|------|
-| [BirthReportMessage] | In | [BirthReportHeader] | [MessageParameters] | BundleDocumentBFDR |
-| [BirthReportUpdateMessage] | In | [BirthReportUpdateHeader] | [MessageParameters]  | BundleDocumentBFDR |
+| [BirthReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR |
+| [BirthReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters]  | BundleDocumentBFDR |
 {: .grid }
 
 #### Fetal Death Specific
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
 |------------------------------|--------|--------|------------|------|
-| [FetalDeathReportMessage] | In | [FetalDeathReportHeader] | [MessageParameters] | BundleDocumentBFDR  |
-| [FetalDeathReportUpdateMessage] | In | [FetalDeathReportUpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
+| [FetalDeathReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR  |
+| [FetalDeathReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
 {: .grid }
 
 

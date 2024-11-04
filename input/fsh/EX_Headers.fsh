@@ -130,7 +130,7 @@ InstanceOf: SubmissionHeader
 Usage: #example
 Description: "Header for Fetal Death Report Message - Example"
 * eventUri = "http://nchs.cdc.gov/fd_submission"
-* destination.endpoint = "http://nchs.cdc.gov/fd_submission"
+* destination.endpoint = "https://nchs.cdc.gov/vitalrecords"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersFD-Example2)
@@ -141,7 +141,7 @@ InstanceOf: UpdateHeader
 Usage: #example
 Description: "Header for Fetal Death Report Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/fd_submission_update"
-* destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
+* destination.endpoint = "https://nchs.cdc.gov/vitalrecords"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersFD-Example2)
@@ -152,7 +152,7 @@ InstanceOf: SubmissionHeader
 Usage: #example
 Description: "Header for Birth Report Message - Example"
 * eventUri = "http://nchs.cdc.gov/birth_submission"
-* destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
+* destination.endpoint = "https://nchs.cdc.gov/vitalrecords"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
@@ -163,7 +163,7 @@ InstanceOf: UpdateHeader
 Usage: #example
 Description: "Header for Birth Report Message Update - Example"
 * eventUri = "http://nchs.cdc.gov/birth_submission_update"
-* destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
+* destination.endpoint = "https://nchs.cdc.gov/vitalrecords"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersBirth-Example1)
@@ -174,7 +174,7 @@ InstanceOf: CauseOfDeathCodingHeader
 Usage: #example
 Description: "Header for Coded Cause of Fetal Death Message - Example"
 * eventUri = "http://nchs.cdc.gov/fd_causeofdeath_coding"
-* destination.endpoint = "http://nchs.cdc.gov/bfdr_submission"
+* destination.endpoint = "https://nchs.cdc.gov/vitalrecords"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 * insert addReference(focus[0], Bundle, DummyBundle)
 * insert addReference(focus[1], Parameters, ParametersFD-Example2)
