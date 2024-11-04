@@ -87,8 +87,6 @@ groups:
     - StructureDefinition/VRM-BirthReportUpdateMessage
     - StructureDefinition/VRM-CodedCauseOfFetalDeathMessage
     - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage
-    - StructureDefinition/VRM-ParentalDemographicsCodingMessage
-    - StructureDefinition/VRM-ParentalDemographicsCodingUpdateMessage
   Headers:
     name: Message Header Profiles
     description: Message Header Profiles

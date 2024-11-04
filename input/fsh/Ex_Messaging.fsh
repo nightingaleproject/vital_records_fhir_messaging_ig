@@ -19,17 +19,7 @@ Description: "Extraction error message - Example"
 //* entry[+].resource = {id}
 //* entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
-Instance: AcknowledgementMessage-Example1
-InstanceOf: AcknowledgementMessage
-Usage: #example
-Description: "Acknowledgement message - Example"
-* timestamp = "2021-05-20T00:00:00Z"
-//* insert addentry(Header, AcknowledgementHeader-Example1)
-//* insert addentry(Parameters, Parameters-Example1)
-* entry[+].resource = AcknowledgementHeader-Example1
-* entry[=].fullUrl = "http://www.example.org/fhir/Header/AcknowledgementHeader-Example1"
-* entry[+].resource = Parameters-Example1
-* entry[=].fullUrl = "http://www.example.org/fhir/Parameters/Parameters-Example1"
+
 
 Instance: StatusMessage-Example1
 InstanceOf: StatusMessage
@@ -224,7 +214,7 @@ Description: "Coded Cause of Fetal Death Message Update - Example"
 * insert addentry(Bundle, DummyBundle)
 
 Instance: ParentalDemographicsCodingMessage-Example1
-InstanceOf: ParentalDemographicsCodingMessage
+InstanceOf: DemographicsCodingMessage
 Usage: #example
 Description: "Parental Demographics Message - Example"
 * timestamp = "2021-05-20T00:00:00Z"
@@ -233,7 +223,7 @@ Description: "Parental Demographics Message - Example"
 * insert addentry(Bundle, DummyBundle)
 
 Instance: ParentalDemographicsCodingUpdateMessage-Example1
-InstanceOf: ParentalDemographicsCodingUpdateMessage
+InstanceOf: DemographicsCodingUpdateMessage
 Usage: #example
 Description: "Parental Demographics Message Update - Example"
 * timestamp = "2021-05-20T00:00:00Z"
