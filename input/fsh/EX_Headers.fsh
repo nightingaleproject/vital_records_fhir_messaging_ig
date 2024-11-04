@@ -9,6 +9,19 @@ Description: "Acknowledgement Header: Example"
 * response.code = #ok
 * insert addReference(focus, Parameters, Parameters-Example1)
 
+Instance: AcknowledgementHeader-Example2
+InstanceOf: AcknowledgementHeader
+Usage: #example
+Description: "Acknowledgement Header: Example with warnings"
+* eventUri = "http://nchs.cdc.gov/vrdr_acknowledgement"
+* destination.endpoint = "https://sos.ny.gov/vitalrecords"
+* source.endpoint = "http://nchs.cdc.gov/vrdr_acknowledgement"
+* response.identifier = "SubmissionHeader-Example1"
+* response.code = #ok
+* insert addReference(response.details, OperationOutcome, Outcome-Example2)
+* insert addReference(focus, Parameters, Parameters-Example1)
+
+
 Instance: VoidHeader-Example1
 InstanceOf: VoidHeader
 Usage: #example

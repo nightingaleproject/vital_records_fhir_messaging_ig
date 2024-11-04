@@ -7,6 +7,7 @@
 
 # These are event IDs, basically operation identifiers, and aren't expected to be found  in the bundle 
 INFORMATION: Bundle/AcknowledgementMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_acknowledgement' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/AcknowledgementMessage-Example2: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_acknowledgement' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/CauseOfDeathCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/CauseOfDeathCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/DeathRecordAliasMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_alias' in the bundle (Bundle.entry[0].resource.event[x])

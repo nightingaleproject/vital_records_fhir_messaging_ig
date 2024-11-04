@@ -7,6 +7,7 @@ Description: "Demographics Coding  MessageHeader URI Values"
 * MessageHeaderURICS#http://nchs.cdc.gov/vrdr_demographics_coding
 * MessageHeaderURICS#http://nchs.cdc.gov/fd_demographics_coding
 * MessageHeaderURICS#http://nchs.cdc.gov/birth_demographics_coding
+* ^experimental = false
 
 Profile:  DemographicsCodingHeader
 Parent: MessageHeader
