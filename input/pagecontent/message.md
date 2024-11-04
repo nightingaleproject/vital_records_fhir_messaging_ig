@@ -11,7 +11,7 @@ The following subsections illustrate message exchange patterns between vital rec
 <!-- ![Message exchange pattern for successful death record submission](submission.png){ width=25% } -->
 &nbsp;
 
-Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
+Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage]. The [AcknowledgementMessage] can optionally include warnings relating to message content.
 Coding responses are sent using a [CauseOfDeathCodingMessage] or [DemographicsCodingMessage] and acknowledged using a [AcknowledgementMessage].
 
 The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.  In the event that manual coding is required, and the coding response would be delayed, a [StatusMessage] message may be sent.  Note that acknowledgements are not expected for StatusMessages.
@@ -129,10 +129,11 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 
 Figure 8 illustrates two message extraction failures:
 
-1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is created instead of an Acknowledgement.
+1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is created instead of an Acknowledgement. Note that the return of warnings is supported by the AcknowledgementMessage.
 2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.   __Note__:The NCHS API currently does not currently accept [ExtractionErrorMessage].  In the event that a jurisdiction can't extract content from an NCHS-generated message, the jurisdiction should contact NCHS using out of band channels (e.g., e-mail).
 
 Extraction Error Response should use a [ExtractionErrorMessage].  For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
+
 
 For a given Record Submission or Coding Response:
 
@@ -177,7 +178,7 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 |------------------------------|--------|--------|------------|------|
 | [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - | |
 | [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  | |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  | -  |  |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  | [Outcome] (optional)  | Outcome used for warnings |
 | [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |  |
 | [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
 | [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
