@@ -24,7 +24,7 @@
 
 The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices for exchange of death records is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
 
-This preview of v2.0.0 of VRFM adds support for exchange of birth and fetal death records, as well as exchange of coded industry and occupation messages.
+This preview of v2.0.0 of VRFM adds support for exchange of birth and fetal death records, coded industry and occupation messages, and enhanced acknowledgements.
 
 
 See the [change log](change_log.html) for an updated list of changes.
