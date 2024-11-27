@@ -20,9 +20,9 @@
 
 <div class="note-to-readers" markdown="1">
 
-####  CI Build for Future v2.0.0 Version of VRFM
+#### CI Build for Future v2.0.0 Version of VRFM
 
-The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices for exchange of death records is [VRFM 1.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.0/index.html).
+The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices for exchange of death records is [VRFM 1.0.1](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html).
 
 This preview of v2.0.0 of VRFM adds support for exchange of birth and fetal death records, coded industry and occupation messages, and enhanced acknowledgements.
 
