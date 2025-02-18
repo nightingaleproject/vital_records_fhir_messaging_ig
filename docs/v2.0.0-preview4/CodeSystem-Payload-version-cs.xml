@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Payload-version-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem Payload-version-cs</b></p><a name="Payload-version-cs"> </a><a name="hcPayload-version-cs"> </a><a name="Payload-version-cs-en-US"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">VRDR_STU3_0<a name="Payload-version-cs-VRDR_STU3_0"> </a></td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style="white-space:nowrap">VRDR_STU2_2<a name="Payload-version-cs-VRDR_STU2_2"> </a></td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style="white-space:nowrap">BFDR_STU2_0<a name="Payload-version-cs-BFDR_STU2_0"> </a></td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"/>
+  <version value="2.0.0-Preview4"/>
+  <name value="PayloadVersionCS"/>
+  <title value="Payload Version Identifier Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-02-18T14:47:05-05:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="VRDR_STU3_0"/>
+    <display value="VRDRSTU3.0"/>
+    <definition value="VRDR STU3.0"/>
+  </concept>
+  <concept>
+    <code value="VRDR_STU2_2"/>
+    <display value="VRDRSTU2.2"/>
+    <definition value="VRDR STU2.2"/>
+  </concept>
+  <concept>
+    <code value="BFDR_STU2_0"/>
+    <display value="BFDRSTU2.0"/>
+    <definition value="BFDR STU2.0"/>
+  </concept>
+</CodeSystem>

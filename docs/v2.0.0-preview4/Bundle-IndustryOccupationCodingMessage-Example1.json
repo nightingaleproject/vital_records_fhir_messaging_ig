@@ -1,0 +1,111 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "IndustryOccupationCodingMessage-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingMessage"]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Header/IndustryOccupationCodingHeader-Example1",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "IndustryOccupationCodingHeader-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingHeader"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_IndustryOccupationCodingHeader-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader IndustryOccupationCodingHeader-Example1</b></p><a name=\"IndustryOccupationCodingHeader-Example1\"> </a><a name=\"hcIndustryOccupationCodingHeader-Example1\"> </a><a name=\"IndustryOccupationCodingHeader-Example1-en-US\"> </a><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_industryoccupation_coding\">http://nchs.cdc.gov/vrdr_industryoccupation_coding</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>SubmissionHeader-Example1</td><td>OK</td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Bundle/DummyBundle\">Bundle: type = message; timestamp = 2022-08-20 00:00:00+0000</a></li><li><a href=\"Bundle-AcknowledgementMessage-Example1.html#http-//www.example.org/fhir/Parameters/Parameters-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li></ul></div>"
+      },
+      "eventUri" : "http://nchs.cdc.gov/vrdr_industryoccupation_coding",
+      "destination" : [{
+        "endpoint" : "https://sos.ny.gov/vitalrecords"
+      }],
+      "source" : {
+        "endpoint" : "http://nchs.cdc.gov/vrdr_submission"
+      },
+      "response" : {
+        "identifier" : "SubmissionHeader-Example1",
+        "code" : "ok"
+      },
+      "focus" : [{
+        "reference" : "http://www.example.org/fhir/Bundle/DummyBundle"
+      },
+      {
+        "reference" : "http://www.example.org/fhir/Parameters/Parameters-Example1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Parameters/Parameters-Example1",
+    "resource" : {
+      "resourceType" : "Parameters",
+      "id" : "Parameters-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
+      },
+      "parameter" : [{
+        "name" : "jurisdiction_id",
+        "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 123456
+      },
+      {
+        "name" : "event_year",
+        "valueUnsignedInt" : 2018
+      },
+      {
+        "name" : "state_auxiliary_id",
+        "valueString" : "abcdef10"
+      },
+      {
+        "name" : "payload_version_id",
+        "valueString" : "VRDRSTU2.2"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Bundle/DummyBundle",
+    "resource" : {
+      "resourceType" : "Bundle",
+      "id" : "DummyBundle",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"]
+      },
+      "type" : "collection",
+      "entry" : [{
+        "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersBirth-Example1",
+        "resource" : {
+          "resourceType" : "Parameters",
+          "id" : "ParametersBirth-Example1",
+          "meta" : {
+            "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
+          },
+          "parameter" : [{
+            "name" : "jurisdiction_id",
+            "valueString" : "NY"
+          },
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 111111
+          },
+          {
+            "name" : "event_year",
+            "valueUnsignedInt" : 2022
+          },
+          {
+            "name" : "state_auxiliary_id",
+            "valueString" : "abcdef10"
+          },
+          {
+            "name" : "payload_version_id",
+            "valueString" : "BFDRSTU2.0"
+          }]
+        }
+      }]
+    }
+  }]
+}

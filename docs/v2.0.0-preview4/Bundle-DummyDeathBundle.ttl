@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/DummyDeathBundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DummyDeathBundle"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameters/ParametersDeathExample1> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Parameters/ParametersDeathExample1> a fhir:Parameters ;
+  fhir:id [ fhir:v "ParametersDeathExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "jurisdiction_id" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "NY"
+     ]
+  ] [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [
+       a fhir:unsignedInt ;
+       fhir:v "111111"^^xsd:nonNegativeInteger
+     ]
+  ] [
+     fhir:name [ fhir:v "state_auxiliary_id" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "abcdef10"
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

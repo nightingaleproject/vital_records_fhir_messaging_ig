@@ -1,0 +1,8 @@
+VitalRecordsFHIRMessagingIG
+=========================================
+
+/Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader.json: line 1, col 29401, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
+/Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-SubmissionHeaderURI-vs.json: line 1, col 2400, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
+
+err = 0, warn = 1, info = 1
+IG Publisher Version: 1.8.13

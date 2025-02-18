@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageHeader xmlns="http://hl7.org/fhir">
+  <id value="AcknowledgementHeader-Example2"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MessageHeader AcknowledgementHeader-Example2</b></p><a name="AcknowledgementHeader-Example2"> </a><a name="hcAcknowledgementHeader-Example2"> </a><a name="AcknowledgementHeader-Example2-en-US"> </a><p><b>event</b>: <a href="http://nchs.cdc.gov/vrdr_acknowledgement">http://nchs.cdc.gov/vrdr_acknowledgement</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://nchs.cdc.gov/vrdr_acknowledgement">http://nchs.cdc.gov/vrdr_acknowledgement</a></td></tr></table><h3>Responses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Details</b></td></tr><tr><td style="display: none">*</td><td>SubmissionHeader-Example1</td><td>OK</td><td><a href="Bundle-AcknowledgementMessage-Example2.html#http-//www.example.org/fhir/OperationOutcome/Outcome-Example2">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></td></tr></table><p><b>focus</b>: <a href="Bundle-AcknowledgementMessage-Example1.html#http-//www.example.org/fhir/Parameters/Parameters-Example1">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></p></div>
+  </text>
+  <eventUri value="http://nchs.cdc.gov/vrdr_acknowledgement"/>
+  <destination>
+    <endpoint value="https://sos.ny.gov/vitalrecords"/>
+  </destination>
+  <source>
+    <endpoint value="http://nchs.cdc.gov/vrdr_acknowledgement"/>
+  </source>
+  <response>
+    <identifier value="SubmissionHeader-Example1"/>
+    <code value="ok"/>
+    <details>
+      <reference value="http://www.example.org/fhir/OperationOutcome/Outcome-Example2"/>
+    </details>
+  </response>
+  <focus>
+    <reference value="http://www.example.org/fhir/Parameters/Parameters-Example1"/>
+  </focus>
+</MessageHeader>

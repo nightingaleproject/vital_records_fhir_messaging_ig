@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Payload-version-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Payload-version-cs</b></p><a name=\"Payload-version-cs\"> </a><a name=\"hcPayload-version-cs\"> </a><a name=\"Payload-version-cs-en-US\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU3_0<a name=\"Payload-version-cs-VRDR_STU3_0\"> </a></td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_2<a name=\"Payload-version-cs-VRDR_STU2_2\"> </a></td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU2_0<a name=\"Payload-version-cs-BFDR_STU2_0\"> </a></td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+  "version" : "2.0.0-Preview4",
+  "name" : "PayloadVersionCS",
+  "title" : "Payload Version Identifier Values",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-02-18T14:47:05-05:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "VRDR_STU3_0",
+    "display" : "VRDRSTU3.0",
+    "definition" : "VRDR STU3.0"
+  },
+  {
+    "code" : "VRDR_STU2_2",
+    "display" : "VRDRSTU2.2",
+    "definition" : "VRDR STU2.2"
+  },
+  {
+    "code" : "BFDR_STU2_0",
+    "display" : "BFDRSTU2.0",
+    "definition" : "BFDR STU2.0"
+  }]
+}

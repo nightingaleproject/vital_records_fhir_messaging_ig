@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="vital-records-fhir-messaging"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide vital-records-fhir-messaging</b></p><a name="vital-records-fhir-messaging"> </a><a name="hcvital-records-fhir-messaging"> </a><a name="vital-records-fhir-messaging-en-US"> </a><h2>VitalRecordsFHIRMessagingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging</pre></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging"/>
+  <version value="2.0.0-Preview4"/>
+  <name value="VitalRecordsFHIRMessagingIG"/>
+  <title value="Vital Records FHIR Messaging (VRFM) IG"/>
+  <status value="draft"/>
+  <date value="2025-02-18T14:47:05-05:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <packageId value="vital-records-fhir-messaging"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="5.0.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_vr_common_library">
+    <uri value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"/>
+    <packageId value="hl7.fhir.us.vr-common-library"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="n/a"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="n/a"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="Messages">
+      <name value="Message Profiles"/>
+      <description value="Message Profiles"/>
+    </grouping>
+    <grouping id="Headers">
+      <name value="Message Header Profiles"/>
+      <description value="Message Header Profiles"/>
+    </grouping>
+    <grouping id="Parameters">
+      <name value="Message Parameter Profiles"/>
+      <description value="Message Parameter Profiles"/>
+    </grouping>
+    <grouping id="Outcomes">
+      <name value="Outcome Profiles"/>
+    </grouping>
+    <grouping id="CodeSystems">
+      <name value="Codesystems"/>
+      <description value="Codesystems"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-AcknowledgementHeader"/>
+      </reference>
+      <name value="Acknowledgement Header"/>
+      <description value="Acknowledgement  Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-AcknowledgementMessage"/>
+      </reference>
+      <name value="Acknowledgement Message"/>
+      <description value="Acknowledgement Message"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-AcknowledgementHeaderURI-vs"/>
+      </reference>
+      <name value="Acknowledgement MessageHeader URI Values"/>
+      <description value="Acknowledgement MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/AcknowledgementHeader-Example1"/>
+      </reference>
+      <name value="AcknowledgementHeader-Example1"/>
+      <description value="Acknowledgement Header: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/AcknowledgementHeader-Example2"/>
+      </reference>
+      <name value="AcknowledgementHeader-Example2"/>
+      <description value="Acknowledgement Header: Example with warnings"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/AcknowledgementMessage-Example1"/>
+      </reference>
+      <name value="AcknowledgementMessage-Example1"/>
+      <description value="Acknowledgement message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/AcknowledgementMessage-Example2"/>
+      </reference>
+      <name value="AcknowledgementMessage-Example2"/>
+      <description value="Acknowledgement message with warnings- Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-AliasHeader"/>
+      </reference>
+      <name value="Alias Header"/>
+      <description value="Alias Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-AliasParameters"/>
+      </reference>
+      <name value="Alias Message Parameters"/>
+      <description value="Parameters for an Alias Message"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Parameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/AliasHeader-Example1"/>
+      </reference>
+      <name value="AliasHeader-Example1"/>
+      <description value="Alias Message Header- Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/AliasParameters-Example1"/>
+      </reference>
+      <name value="AliasParameters-Example1"/>
+      <description value="Alias Message Parameters- Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AliasParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-BirthReportMessage"/>
+      </reference>
+      <name value="Birth Report Message"/>
+      <description value="Message for reporting birth records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-BirthReportUpdateMessage"/>
+      </reference>
+      <name value="Birth Report Update Message"/>
+      <description value="Message for updating birth records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/BirthReportHeader-Example1"/>
+      </reference>
+      <name value="BirthReportHeader-Example1"/>
+      <description value="Header for Birth Report Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/BirthReportMessage-Example1"/>
+      </reference>
+      <name value="BirthReportMessage-Example1"/>
+      <description value="Live Birth Report Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-BirthReportMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/BirthReportUpdateHeader-Example1"/>
+      </reference>
+      <name value="BirthReportUpdateHeader-Example1"/>
+      <description value="Header for Birth Report Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/BirthReportUpdateMessage-Example1"/>
+      </reference>
+      <name value="BirthReportUpdateMessage-Example1"/>
+      <description value="Live Birth Report Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-BirthReportUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CauseOfDeathCodingHeader"/>
+      </reference>
+      <name value="Cause of Death Coding Header"/>
+      <description value="Cause of Death Coding Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CauseOfDeathCodingMessage"/>
+      </reference>
+      <name value="Cause of Death Coding Message"/>
+      <description value="Message for cause of death coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-CauseOfDeathCodingHeaderURI-vs"/>
+      </reference>
+      <name value="Cause of Death Coding MessageHeader URI Values"/>
+      <description value="Cause of Death Coding MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader"/>
+      </reference>
+      <name value="Cause of Death Coding Update Header"/>
+      <description value="Cause of Death Coding Update Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"/>
+      </reference>
+      <name value="Cause Of Death Coding Update Message"/>
+      <description value="Message for updating Cause Of Death coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-CauseOfDeathCodingUpdateHeaderURI-vs"/>
+      </reference>
+      <name value="Cause of Death Coding Update MessageHeader URI Values"/>
+      <description value="Cause of Death Coding Update MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/CauseOfDeathCodingHeader-Example1"/>
+      </reference>
+      <name value="CauseOfDeathCodingHeader-Example1"/>
+      <description value="Header for Cause of Death Coding Message - Example1- coded content only"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/CauseOfDeathCodingMessage-Example1"/>
+      </reference>
+      <name value="CauseOfDeathCodingMessage-Example1"/>
+      <description value="Cause of death coding message - Example1 -- coded content only"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/CauseOfDeathCodingUpdateHeader-Example1"/>
+      </reference>
+      <name value="CauseOfDeathCodingUpdateHeader-Example1"/>
+      <description value="Header for Cause Of Death Coding Update Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/CauseOfDeathCodingUpdateMessage1"/>
+      </reference>
+      <name value="CauseOfDeathCodingUpdateMessage1"/>
+      <description value="Cause of Death Coding update message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CodedCauseOfFetalDeathMessage"/>
+      </reference>
+      <name value="Coded Cause of Fetal Death Message"/>
+      <description value="Message for reporting coded cause of fetal death"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage"/>
+      </reference>
+      <name value="Coded Cause of Fetal Death Update Message"/>
+      <description value="Message for updating coded cause of fetal death"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/CodedCauseOfFetalDeathHeader-Example1"/>
+      </reference>
+      <name value="CodedCauseOfFetalDeathHeader-Example1"/>
+      <description value="Header for Coded Cause of Fetal Death Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/CodedCauseOfFetalDeathMessage-Example1"/>
+      </reference>
+      <name value="CodedCauseOfFetalDeathMessage-Example1"/>
+      <description value="Coded Cause of Fetal Death Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CodedCauseOfFetalDeathMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/CodedCauseOfFetalDeathUpdateHeader-Example1"/>
+      </reference>
+      <name value="CodedCauseOfFetalDeathUpdateHeader-Example1"/>
+      <description value="Header for Coded Cause of Fetal Death Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/CodedCauseOfFetalDeathUpdateMessage-Example1"/>
+      </reference>
+      <name value="CodedCauseOfFetalDeathUpdateMessage-Example1"/>
+      <description value="Coded Cause of Fetal Death Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DeathRecordAliasMessage"/>
+      </reference>
+      <name value="Death Record Alias Message"/>
+      <description value="Message for aliasing death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DeathRecordSubmissionMessage"/>
+      </reference>
+      <name value="Death Record Submission Message"/>
+      <description value="Message for submitting death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DeathRecordUpdateMessage"/>
+      </reference>
+      <name value="Death Record Update Message"/>
+      <description value="Message for updating death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DeathRecordAliasMessage-Example1"/>
+      </reference>
+      <name value="DeathRecordAliasMessage-Example1"/>
+      <description value="Alias Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordAliasMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/DeathRecordSubmissionHeaderExample1"/>
+      </reference>
+      <name value="DeathRecordSubmissionHeaderExample1"/>
+      <description value="Header for Death Record Submission - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DeathRecordSubmissionMessage-Example1"/>
+      </reference>
+      <name value="DeathRecordSubmissionMessage-Example1"/>
+      <description value="Submission mesage - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordSubmissionMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-DemographicsCodingHeaderURI-vs"/>
+      </reference>
+      <name value="Demographics Coding  MessageHeader URI Values"/>
+      <description value="Demographics Coding  MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DemographicsCodingHeader"/>
+      </reference>
+      <name value="Demographics Coding Header"/>
+      <description value="Demographics Coding Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DemographicsCodingMessage"/>
+      </reference>
+      <name value="Demographics Coding Message"/>
+      <description value="Message for demographics coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DemographicsCodingUpdateHeader"/>
+      </reference>
+      <name value="Demographics Coding Update Header"/>
+      <description value="Demographics Coding Update Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-DemographicsCodingUpdateMessage"/>
+      </reference>
+      <name value="Demographics Coding Update Message"/>
+      <description value="Message for updating Demographics coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-DemographicsCodingUpdateHeaderURI-vs"/>
+      </reference>
+      <name value="Demographics Coding Update MessageHeader URI Values"/>
+      <description value="Demographics Coding Update MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/DemographicsCodingHeader-Example1"/>
+      </reference>
+      <name value="DemographicsCodingHeader-Example1"/>
+      <description value="Header for Demographic Coding Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DemographicsCodingMessage-Example1"/>
+      </reference>
+      <name value="DemographicsCodingMessage-Example1"/>
+      <description value="Cause of death coding message - Example1 -- coded content only"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/DemographicsCodingUpdateHeader-Example1"/>
+      </reference>
+      <name value="DemographicsCodingUpdateHeader-Example1"/>
+      <description value="Header for Demographic Coding Update Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DemographicsCodingUpdateMessage1"/>
+      </reference>
+      <name value="DemographicsCodingUpdateMessage1"/>
+      <description value="Demographic Coding update message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DummyBundle"/>
+      </reference>
+      <name value="DummyBundle"/>
+      <description value="Placeholder for all content sent in messages"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DummyDeathBundle"/>
+      </reference>
+      <name value="DummyDeathBundle"/>
+      <description value="Placeholder for death record"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-ExtractionErrorHeader"/>
+      </reference>
+      <name value="Extraction Error Header"/>
+      <description value="Extraction Error Message Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-ExtractionErrorMessage"/>
+      </reference>
+      <name value="Extraction Error Message"/>
+      <description value="Message for Errors during content extraction"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-ExtractionErrorHeaderURI-vs"/>
+      </reference>
+      <name value="ExtractionError MessageHeader URI Values"/>
+      <description value="ExtractionError MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/ExtractionErrorHeader-Example1"/>
+      </reference>
+      <name value="ExtractionErrorHeader-Example1"/>
+      <description value="Header for Extraction Error Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-ExtractionErrorHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ExtractionErrorMessage-Example1"/>
+      </reference>
+      <name value="ExtractionErrorMessage-Example1"/>
+      <description value="Extraction error message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-ExtractionErrorMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-FetalDeathReportMessage"/>
+      </reference>
+      <name value="Fetal Death Report Message"/>
+      <description value="Message for reporting fetal death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-FetalDeathReportUpdateMessage"/>
+      </reference>
+      <name value="Fetal Death Report Message"/>
+      <description value="Message for updating fetal death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/FetalDeathReportHeader-Example1"/>
+      </reference>
+      <name value="FetalDeathReportHeader-Example1"/>
+      <description value="Header for Fetal Death Report Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/FetalDeathReportMessage-Example1"/>
+      </reference>
+      <name value="FetalDeathReportMessage-Example1"/>
+      <description value="Fetal Death Report Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/FetalDeathReportUpdateHeader-Example1"/>
+      </reference>
+      <name value="FetalDeathReportUpdateHeader-Example1"/>
+      <description value="Header for Fetal Death Report Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/FetalDeathReportUpdateMessage-Example1"/>
+      </reference>
+      <name value="FetalDeathReportUpdateMessage-Example1"/>
+      <description value="Fetal Death Report Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-IndustryOccupationHeaderURI-vs"/>
+      </reference>
+      <name value="Industry and Occupation MessageHeader URI Values"/>
+      <description value="Industry and Occupation MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-IndustryOccupationUpdateHeaderURI-vs"/>
+      </reference>
+      <name value="Industry and Occupation Update MessageHeader URI Values"/>
+      <description value="Industry and Occupation Update MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-IndustryOccupationCodingHeader"/>
+      </reference>
+      <name value="Industry Occupation Coding Header"/>
+      <description value="Industry Occupation Coding Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-IndustryOccupationCodingMessage"/>
+      </reference>
+      <name value="Industry Occupation Coding Message"/>
+      <description value="Message for industry occupation coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage"/>
+      </reference>
+      <name value="Industry Occupation Coding Update Message"/>
+      <description value="Message for updating industry occupation coding response to death records"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/IndustryOccupationCodingHeader-Example1"/>
+      </reference>
+      <name value="IndustryOccupationCodingHeader-Example1"/>
+      <description value="Header for Industry Occupation Coding Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IndustryOccupationCodingMessage-Example1"/>
+      </reference>
+      <name value="IndustryOccupationCodingMessage-Example1"/>
+      <description value="Industry Occupation coding message - Example1 -- coded content only"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/IndustryOccupationCodingUpdateHeader-Example1"/>
+      </reference>
+      <name value="IndustryOccupationCodingUpdateHeader-Example1"/>
+      <description value="Header for Industry Occupation Coding Update Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IndustryOccupationCodingUpdateMessage1"/>
+      </reference>
+      <name value="IndustryOccupationCodingUpdateMessage1"/>
+      <description value="Industry Occupation Coding update message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader"/>
+      </reference>
+      <name value="Industy Occupation Coding Update  Header"/>
+      <description value="Industry Occupation Coding Update Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-MessageParameters"/>
+      </reference>
+      <name value="Message Parameters"/>
+      <description value="Parameter set for most Messages.  Parameters with all-caps names are defined as per the 2022 IJE specification."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Parameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-UpdateHeader"/>
+      </reference>
+      <name value="Message Update Header"/>
+      <description value="Message Update Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/VRM-MessageHeaderURI-cs"/>
+      </reference>
+      <name value="MessageHeader URI Values"/>
+      <description value="MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CodeSystems"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-Outcome"/>
+      </reference>
+      <name value="Outcome Profile"/>
+      <description value="Outcome profile to support profile-based slicing of bundles"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Outcomes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationOutcome"/>
+      </extension>
+      <reference>
+        <reference value="OperationOutcome/Outcome-Example1"/>
+      </reference>
+      <name value="Outcome-Example1"/>
+      <description value="Extraction Error Outcome - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationOutcome"/>
+      </extension>
+      <reference>
+        <reference value="OperationOutcome/Outcome-Example2"/>
+      </reference>
+      <name value="Outcome-Example2"/>
+      <description value="Extraction Warning Outcome - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-Outcome"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/Parameters-Example1"/>
+      </reference>
+      <name value="Parameters-Example1"/>
+      <description value="Parameters for Submission: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ParametersBirth-Example1"/>
+      </reference>
+      <name value="ParametersBirth-Example1"/>
+      <description value="Parameters for Submission: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ParametersDeathExample1"/>
+      </reference>
+      <name value="ParametersDeathExample1"/>
+      <description value="Parameters for Submission: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ParametersFD-Example2"/>
+      </reference>
+      <name value="ParametersFD-Example2"/>
+      <description value="Parameters for Submission: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/ParentalDemographicsCodingHeader-Example1"/>
+      </reference>
+      <name value="ParentalDemographicsCodingHeader-Example1"/>
+      <description value="Header for Parental Demographics Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ParentalDemographicsCodingMessage-Example1"/>
+      </reference>
+      <name value="ParentalDemographicsCodingMessage-Example1"/>
+      <description value="Parental Demographics Message - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/ParentalDemographicsCodingUpdateHeader-Example1"/>
+      </reference>
+      <name value="ParentalDemographicsCodingUpdateHeader-Example1"/>
+      <description value="Header for Parental Demographics Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ParentalDemographicsCodingUpdateMessage-Example1"/>
+      </reference>
+      <name value="ParentalDemographicsCodingUpdateMessage-Example1"/>
+      <description value="Parental Demographics Message Update - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DemographicsCodingUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Payload-version-vs"/>
+      </reference>
+      <name value="Payload Version Identifier Values"/>
+      <description value="Payload Version Identifier Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Payload-version-cs"/>
+      </reference>
+      <name value="Payload Version Identifier Values"/>
+      <description value="Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-MessageBundle"/>
+      </reference>
+      <name value="Placeholder Profile for profile-based slicing"/>
+      <description value="Placeholder for profile-based slicing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-Status-vs"/>
+      </reference>
+      <name value="Status Codes Values"/>
+      <description value="Status Codes Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/VRM-Status-cs"/>
+      </reference>
+      <name value="Status Codes Values"/>
+      <description value="Status Codes Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-StatusHeader"/>
+      </reference>
+      <name value="Status Header"/>
+      <description value="Status Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-StatusMessage"/>
+      </reference>
+      <name value="Status Message"/>
+      <description value="Message for sending status of DeathRecord processing"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Messages"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-StatusParameters"/>
+      </reference>
+      <name value="Status Message Parameters"/>
+      <description value="Parameters for a Status Message"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Parameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-StatusHeaderURI-vs"/>
+      </reference>
+      <name value="Status MessageHeader URI Values"/>
+      <description value="Status MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/StatusHeader-Example1"/>
+      </reference>
+      <name value="StatusHeader-Example1"/>
+      <description value="Parameters for Status: Example1"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/StatusMessage-Example1"/>
+      </reference>
+      <name value="StatusMessage-Example1"/>
+      <description value="Status message - Example1"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/StatusParameters-Example1"/>
+      </reference>
+      <name value="StatusParameters-Example1"/>
+      <description value="Parameters for Status: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusParameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-SubmissionHeader"/>
+      </reference>
+      <name value="Submission Message Header"/>
+      <description value="Message Submission Header"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-SubmissionHeaderURI-vs"/>
+      </reference>
+      <name value="Submission MessageHeader URI Values"/>
+      <description value="Submission MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/SubmissionHeader-Example1"/>
+      </reference>
+      <name value="SubmissionHeader-Example1"/>
+      <description value="Header for Submission - Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-UpdateHeaderURI-vs"/>
+      </reference>
+      <name value="Update MessageHeader URI Values"/>
+      <description value="Update MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/UpdateHeader-Example1"/>
+      </reference>
+      <name value="UpdateHeader-Example1"/>
+      <description value="Header for Update: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/UpdateMessage-Example1"/>
+      </reference>
+      <name value="UpdateMessage-Example1"/>
+      <description value="Update message - example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-DeathRecordUpdateMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-VoidHeader"/>
+      </reference>
+      <name value="Void Header"/>
+      <description value="Void Header for all submission types"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Headers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-VoidMessage"/>
+      </reference>
+      <name value="Void Message (for mortality, birth, and fetal death)"/>
+      <description value="Message for voiding mortality, birth, and fetal death records."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VRM-VoidParameters"/>
+      </reference>
+      <name value="Void Message Parameters"/>
+      <description value="Parameters for a Void Message"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Parameters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VRM-VOIDHeaderURI-vs"/>
+      </reference>
+      <name value="Void MessageHeader URI Values"/>
+      <description value="Void MessageHeader URI Values"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/VoidHeader-Example1"/>
+      </reference>
+      <name value="VoidHeader-Example1"/>
+      <description value="Parameters for Void: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/VoidMessage-Example1"/>
+      </reference>
+      <name value="VoidMessage-Example1"/>
+      <description value="Void message - example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/VoidParameters-Example1"/>
+      </reference>
+      <name value="VoidParameters-Example1"/>
+      <description value="Parameters for Void: Example"/>
+      <exampleCanonical value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="message.html"/>
+        </extension>
+        <nameUrl value="message.html"/>
+        <title value="Messages"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="artifacts.html"/>
+        </extension>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts Summary"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Download Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="change_log.html"/>
+        </extension>
+        <nameUrl value="change_log.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="appendix.html"/>
+        </extension>
+        <nameUrl value="appendix.html"/>
+        <title value="Appendices"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="june2022testingeventexamples.html"/>
+        </extension>
+        <nameUrl value="june2022testingeventexamples.html"/>
+        <title value="June 2022 Testing Event Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="business_rules.html"/>
+        </extension>
+        <nameUrl value="business_rules.html"/>
+        <title value="Business Rules for Death Record Submissions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="business_rules_birth.html"/>
+        </extension>
+        <nameUrl value="business_rules_birth.html"/>
+        <title value="Business Rules for Birth Record Submissions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="VRDRSTU22Errata.html"/>
+        </extension>
+        <nameUrl value="VRDRSTU22Errata.html"/>
+        <title value="NCHS FHIR Implementation Notes"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

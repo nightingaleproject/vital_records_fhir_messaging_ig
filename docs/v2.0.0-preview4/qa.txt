@@ -1,0 +1,235 @@
+VitalRecordsFHIRMessagingIG : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 1
+IG Publisher Version: 1.8.13
+Generated Tue Feb 18 14:50:16 EST 2025. FHIR version 4.0.1 for vital-records-fhir-messaging#2.0.0-Preview4 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
+ Build Errors : 0 / 0 / 0
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-AcknowledgementMessage-Example1 : 0 / 0 / 7
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-AcknowledgementMessage-Example2 : 0 / 0 / 10
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-BirthReportMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-BirthReportUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CauseOfDeathCodingMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CauseOfDeathCodingUpdateMessage1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CodedCauseOfFetalDeathMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-CodedCauseOfFetalDeathUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DeathRecordAliasMessage-Example1 : 0 / 0 / 8
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DeathRecordSubmissionMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DemographicsCodingMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DemographicsCodingUpdateMessage1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DummyBundle : 0 / 0 / 3
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-DummyDeathBundle : 0 / 0 / 3
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ExtractionErrorMessage-Example1 : 0 / 0 / 10
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-FetalDeathReportMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-FetalDeathReportUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-IndustryOccupationCodingMessage-Example1 : 0 / 0 / 12
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-IndustryOccupationCodingUpdateMessage1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ParentalDemographicsCodingMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-ParentalDemographicsCodingUpdateMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-StatusMessage-Example1 : 0 / 0 / 8
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-UpdateMessage-Example1 : 0 / 0 / 15
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Bundle-VoidMessage-Example1 : 0 / 0 / 8
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-Payload-version-cs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-VRM-MessageHeaderURI-cs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/CodeSystem-VRM-Status-cs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ImplementationGuide-vital-records-fhir-messaging : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example2 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-AliasHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-BirthReportHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-BirthReportUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CauseOfDeathCodingHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CauseOfDeathCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DeathRecordSubmissionHeaderExample1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DemographicsCodingHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-DemographicsCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ExtractionErrorHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-FetalDeathReportHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-FetalDeathReportUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-IndustryOccupationCodingHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-IndustryOccupationCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ParentalDemographicsCodingHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-ParentalDemographicsCodingUpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-StatusHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-SubmissionHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-UpdateHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/MessageHeader-VoidHeader-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/OperationOutcome-Outcome-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/OperationOutcome-Outcome-Example2 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-AliasParameters-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-Parameters-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersBirth-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersDeathExample1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-ParametersFD-Example2 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-StatusParameters-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/Parameters-VoidParameters-Example1 : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader : 0 / 0 / 2
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AcknowledgementMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AliasHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-AliasParameters : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordAliasMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordSubmissionMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DeathRecordUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageBundle : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-MessageParameters : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-Outcome : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-StatusParameters : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-SubmissionHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-UpdateHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-VoidHeader : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-VoidMessage : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/StructureDefinition-VRM-VoidParameters : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-Payload-version-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-AcknowledgementHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-DemographicsCodingHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-ExtractionErrorHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-IndustryOccupationHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-Status-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-StatusHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-SubmissionHeaderURI-vs : 0 / 1 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-UpdateHeaderURI-vs : 0 / 0 / 1
+ /Users/skravitz/git/vital_records_fhir_messaging_ig/fsh-generated/resources/ValueSet-VRM-VOIDHeaderURI-vs : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-AcknowledgementMessage-Example1.json ==
+== fsh-generated/resources/Bundle-AcknowledgementMessage-Example2.json ==
+== fsh-generated/resources/Bundle-BirthReportMessage-Example1.json ==
+== fsh-generated/resources/Bundle-BirthReportUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CauseOfDeathCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CauseOfDeathCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-CodedCauseOfFetalDeathMessage-Example1.json ==
+== fsh-generated/resources/Bundle-CodedCauseOfFetalDeathUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DeathRecordAliasMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DeathRecordSubmissionMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DemographicsCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-DemographicsCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-DummyBundle.json ==
+== fsh-generated/resources/Bundle-DummyDeathBundle.json ==
+== fsh-generated/resources/Bundle-ExtractionErrorMessage-Example1.json ==
+== fsh-generated/resources/Bundle-FetalDeathReportMessage-Example1.json ==
+== fsh-generated/resources/Bundle-FetalDeathReportUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-IndustryOccupationCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-IndustryOccupationCodingUpdateMessage1.json ==
+== fsh-generated/resources/Bundle-ParentalDemographicsCodingMessage-Example1.json ==
+== fsh-generated/resources/Bundle-ParentalDemographicsCodingUpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-StatusMessage-Example1.json ==
+== fsh-generated/resources/Bundle-UpdateMessage-Example1.json ==
+== fsh-generated/resources/Bundle-VoidMessage-Example1.json ==
+== fsh-generated/resources/CodeSystem-Payload-version-cs.json ==
+== fsh-generated/resources/CodeSystem-VRM-MessageHeaderURI-cs.json ==
+== fsh-generated/resources/CodeSystem-VRM-Status-cs.json ==
+== fsh-generated/resources/ImplementationGuide-vital-records-fhir-messaging.json ==
+== fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-AcknowledgementHeader-Example2.json ==
+== fsh-generated/resources/MessageHeader-AliasHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-BirthReportHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-BirthReportUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CauseOfDeathCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CauseOfDeathCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-CodedCauseOfFetalDeathUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-DeathRecordSubmissionHeaderExample1.json ==
+== fsh-generated/resources/MessageHeader-DemographicsCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-DemographicsCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ExtractionErrorHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-FetalDeathReportHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-FetalDeathReportUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-IndustryOccupationCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-IndustryOccupationCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ParentalDemographicsCodingHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-ParentalDemographicsCodingUpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-StatusHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-SubmissionHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-UpdateHeader-Example1.json ==
+== fsh-generated/resources/MessageHeader-VoidHeader-Example1.json ==
+== fsh-generated/resources/OperationOutcome-Outcome-Example1.json ==
+== fsh-generated/resources/OperationOutcome-Outcome-Example2.json ==
+== fsh-generated/resources/Parameters-AliasParameters-Example1.json ==
+== fsh-generated/resources/Parameters-Parameters-Example1.json ==
+== fsh-generated/resources/Parameters-ParametersBirth-Example1.json ==
+== fsh-generated/resources/Parameters-ParametersDeathExample1.json ==
+== fsh-generated/resources/Parameters-ParametersFD-Example2.json ==
+== fsh-generated/resources/Parameters-StatusParameters-Example1.json ==
+== fsh-generated/resources/Parameters-VoidParameters-Example1.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AcknowledgementHeader.json ==
+INFORMATION: StructureDefinition/VRM-AcknowledgementHeader: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-VRM-AcknowledgementMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AliasHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-AliasParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-BirthReportUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordAliasMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordSubmissionMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DeathRecordUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-DemographicsCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-ExtractionErrorMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-FetalDeathReportUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageBundle.json ==
+== fsh-generated/resources/StructureDefinition-VRM-MessageParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-Outcome.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-StatusParameters.json ==
+== fsh-generated/resources/StructureDefinition-VRM-SubmissionHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-UpdateHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-VoidHeader.json ==
+== fsh-generated/resources/StructureDefinition-VRM-VoidMessage.json ==
+== fsh-generated/resources/StructureDefinition-VRM-VoidParameters.json ==
+== fsh-generated/resources/ValueSet-Payload-version-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-AcknowledgementHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-DemographicsCodingHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-ExtractionErrorHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-IndustryOccupationHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-Status-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-StatusHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-SubmissionHeaderURI-vs.json ==
+WARNING: ValueSet/VRM-SubmissionHeaderURI-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VRM-UpdateHeaderURI-vs.json ==
+== fsh-generated/resources/ValueSet-VRM-VOIDHeaderURI-vs.json ==
