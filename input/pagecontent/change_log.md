@@ -3,6 +3,7 @@
 * Added support for Birth, Fetal Death, and Industry/Occupation exchange.  Support for death records should be fully backwards compatible.
 * Added payload version parameter to [MessageParameters] to support messages from all known versions of vital records IGs.
 * Enhanced [AcknowledgementMessage] to include optional content warnings.
+* Reorganized FSH content to align with BFDR and VRDR
 
 ### Version 1.0.1
 * Simplified examples of VRDR data used by the VRFM IG.  These were a constant battle to maintain as the IG publisher's validation process evolved.  The examples have been stripped down to the absolute minimum.  No changes should have occured to the technical content of this IG, only to the VRDR-based examples used to illustrate the exchange of content.
