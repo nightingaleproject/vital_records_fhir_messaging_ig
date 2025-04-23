@@ -7,7 +7,7 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
-version: 1.1.0
+version: 2.0.0-Preview5
 copyrightYear: 2022+
 releaseLabel: ci-build
 publisher:
@@ -17,7 +17,10 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
-  hl7.fhir.us.vrdr: 2.2.0
+  #hl7.fhir.us.vrdr: current
+  hl7.fhir.us.vr-common-library: current   # Jurisdiction valueset
+  #hl7.fhir.us.bfdr: current
+ 
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
@@ -41,14 +44,19 @@ pages:
   june2022testingeventexamples.md:
     title: June 2022 Testing Event Examples
   business_rules.md:
-    title: NCHS Error Messages 
+    title: Business Rules for Death Record Submissions
+  business_rules_birth.md:
+    title: Business Rules for Birth Record Submissions
+  VRDRSTU22Errata.md:
+    title: NCHS FHIR Implementation Notes 
 menu:
   Home: index.html
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
-    NCHS Error Messages: business_rules.html 
-    FHIR Client Development Guide: https://github.com/nightingaleproject/Reference-NCHS-API/blob/main/FHIRClientDevelopmentGuide.md
+    Business Rules - Death: business_rules.html 
+    Business Rules - Birth: business_rules_birth.html 
+    NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
@@ -63,17 +71,22 @@ groups:
     resources:
     - StructureDefinition/VRM-DeathRecordSubmissionMessage
     - StructureDefinition/VRM-DeathRecordUpdateMessage
-    - StructureDefinition/VRM-DeathRecordVoidMessage
     - StructureDefinition/VRM-DeathRecordAliasMessage
     - StructureDefinition/VRM-CauseOfDeathCodingMessage
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateMessage
     - StructureDefinition/VRM-DemographicsCodingMessage
     - StructureDefinition/VRM-DemographicsCodingUpdateMessage
-    #- StructureDefinition/VRM-IndustryOccupationCodingMessage
-    #- StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingMessage
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateMessage
     - StructureDefinition/VRM-AcknowledgementMessage
     - StructureDefinition/VRM-ExtractionErrorMessage
     - StructureDefinition/VRM-StatusMessage
+    - StructureDefinition/VRM-FetalDeathReportMessage
+    - StructureDefinition/VRM-FetalDeathReportUpdateMessage
+    - StructureDefinition/VRM-BirthReportMessage
+    - StructureDefinition/VRM-BirthReportUpdateMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathMessage
+    - StructureDefinition/VRM-CodedCauseOfFetalDeathUpdateMessage
   Headers:
     name: Message Header Profiles
     description: Message Header Profiles
@@ -87,8 +100,8 @@ groups:
     - StructureDefinition/VRM-CauseOfDeathCodingUpdateHeader
     - StructureDefinition/VRM-DemographicsCodingHeader
     - StructureDefinition/VRM-DemographicsCodingUpdateHeader
-    #- StructureDefinition/VRM-IndustryOccupationCodingHeader
-    #- StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingHeader
+    - StructureDefinition/VRM-IndustryOccupationCodingUpdateHeader
     - StructureDefinition/VRM-AcknowledgementHeader
     - StructureDefinition/VRM-ExtractionErrorHeader
   Parameters:

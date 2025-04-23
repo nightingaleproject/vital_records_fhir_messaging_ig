@@ -11,7 +11,7 @@ The following subsections illustrate message exchange patterns between vital rec
 <!-- ![Message exchange pattern for successful death record submission](submission.png){ width=25% } -->
 &nbsp;
 
-Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage].
+Figure 1 illustrates the normal sequence of message exchanges between a vital records jurisdiction and NVSS. The extract step ensures that the submitted death record is in a format suitable for processing by validating the presence of required fields, and valid combinations of values for certain fields. The code step includes in-depth validation and coding of the death record.  Records are submitted using a [DeathRecordSubmissionMessage] and acknowledged using a [AcknowledgementMessage]. The [AcknowledgementMessage] can optionally include warnings relating to message content.
 Coding responses are sent using a [CauseOfDeathCodingMessage] or [DemographicsCodingMessage] and acknowledged using a [AcknowledgementMessage].
 
 The time between the Death Record Submission and Acknowledgement is expected to be relatively short (see additional discussion in [Retrying Requests](#retries)), the time until the Coding Response is sent could be significant if manual intervention is required.  In the event that manual coding is required, and the coding response would be delayed, a [StatusMessage] message may be sent.  Note that acknowledgements are not expected for StatusMessages.
@@ -26,6 +26,8 @@ A submission can be routed to NCHS and/or jurisdiction exchange via STEVE using 
 * Original Record (REPLACE = 0): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission`
 * Updated Record(REPLACE = 1): message destination should include both `http://nchs.cdc.gov/vrdr_submission` and `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
 * Do not send to NCHS (REPLACE = 2): message destination should include just `http://steve.naphsis.us/vrdr_exchange` and message should use an `eventUri` of `http://nchs.cdc.gov/vrdr_submission_update`
+
+See the [Mortality Specific](message.html#mortality-specific) section below for details on message content.
 
 
 #### Updating Prior Death Record Submission
@@ -127,19 +129,20 @@ The appropriate time to wait for an acknowledgement depends on several factors i
 
 Figure 8 illustrates two message extraction failures:
 
-1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is returned instead of an Acknowledgement.
-2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.  Note that acknowledgements are not expected for Extraction Error Messages. __Note__:<mark>The NCHS API currently does not support [ExtractionErrorMessage].  In the event that a jurisdiction has an extraction error NCHS should be contacted using out of band channels (e.g., e-mail). </mark>
+1. A Death Record Submission could not be extracted from the message and an Extraction Error Response is created instead of an Acknowledgement. Note that the return of warnings is supported by the AcknowledgementMessage.
+2. A Coding Response could not be extracted from the message and an Extraction Error Response is returned instead of an acknowledgement.   __Note__:The NCHS API currently does not currently accept [ExtractionErrorMessage].  In the event that a jurisdiction can't extract content from an NCHS-generated message, the jurisdiction should contact NCHS using out of band channels (e.g., e-mail).
 
 Extraction Error Response should use a [ExtractionErrorMessage].  For submissions to NCHS, the set of current error messages are listed and described [here](business_rules.html).
 
-For a given Death Record Submission or Coding Response:
+
+For a given Record Submission or Coding Response:
 
 - Extraction Error Response and Acknowledgment are mutually exclusive
-- An acknowledged Death Record Submission or Coding Response can still result in issues later in the process that might require manual intervention
+- An acknowledged Submission or Coding Response can still result in issues later in the process that might require manual intervention
 
 In either scenarion, the recipient of the Extraction Error Response would need to investigate the cause of the failure using the information provided in the Extraction Error Response message.
 
-#### Alias
+#### Alias Messages for Death Records
 
 <!-- ![Message exchange patterns for failed message extractions](alias.png){ width=25% } -->
 <figure style="align:middle">
@@ -149,7 +152,7 @@ In either scenarion, the recipient of the Extraction Error Response would need t
 &nbsp;
 Alias records are optional records that are submitted only for National Death Index purposes and contain alternate spellings or “AKA”s captured on some death certificates.  Some Alias records are literally just a mixed case or upper case version of the original record with no real significant differences.  States vary in whether they even can report Aliases or not, and many never do. Alias records are accumulated, and cannot be voided or deleted separate from their accompaassociated ying death record.
 
-Figure 8 illustrates the submission of a death message followed by an alias message.
+Figure 9 illustrates the submission of a death message followed by an alias message.
 Alias messages can contain aliases for one or more of the following fields:
 * Decedent’s First Name
 * Decedent’s Middle Initial
@@ -160,23 +163,55 @@ Alias messages can contain aliases for one or more of the following fields:
 
 Alias records should be sent using a [DeathRecordAliasMessage].
 
-### Message Structure and Content
+#### Messages for Birth Records
+The message flow for Birth Records is very similar to the flow for Death Records.  A jurisdiction submits a [BirthReportMessage], and subsequently NCHS sends coded content that can include [IndustryOccupationCodingMessage], and [DemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage].  
 
-| *Type* | *Dir* | *Header* | *Parameters* | *Body* |
+#### Messages for Fetal Death Records
+The message flow for Fetal Death Records is very similar to the flow for Death Records.  A jurisdiction submits a [FetalDeathReportMessage], and subsequently NCHS sends coded content that can include [CodedCauseOfDeathMessage], [IndustryOccupationCodingMessage], and [DemographicsCodingMessage]. Update versions of these messages are also available.   Exceptions can be handled with [ExtractionErrorMessage] and [StatusMessage]. 
+
+### Message Structure and Content 
+Most messages are used for multiple use cases.  The Event URI used for each use case is different.  See the documentation in the header associated with each message for details on the event URI.
+
+#### Messages Used in Multiple Use Cases
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* | *Note* |
 |------------------------------|--------|--------|------------|------|
-| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
-| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument] (from VRDR STU2.2) |
-| [DeathRecordVoidMessage] | In | [VoidHeader] | [VoidParameters] | - |
-| [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
-| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  |
-| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
-| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  [CauseOfDeathCodedContentBundle] (from VRDR STU2.2)  |
-| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2)  |
-| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  [DemographicCodedContentBundle] (from VRDR STU2.2) |
-| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
-| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | [IndustryOccupationCodedContentBundle] (from VRDR STU2.2 extended) |
-| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters] |  |
-| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters] (optional) | [Outcome] |
+| [VoidMessage] | In | [VoidHeader] | [VoidParameters] | - | |
+| [StatusMessage] | Out | [StatusHeader] | [StatusParameters]| -  | |
+| [AcknowledgementMessage] | In/Out | [AcknowledgementHeader] | [MessageParameters]  | [Outcome] (optional)  | Outcome used for warnings |
+| [ExtractionErrorMessage] | Out | [ExtractionErrorHeader] | [MessageParameters]  (optional) | [Outcome] |  |
+| [CauseOfDeathCodingMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
+| [CauseOfDeathCodingUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters]|  CauseOfDeathCodedContentBundle   | Death and Fetal Death only |
+| [DemographicsCodingMessage] | Out | [DemographicsCodingHeader] | [MessageParameters]|  DemographicCodedContentBundle   |  |
+| [DemographicsCodingUpdateMessage] | Out | [DemographicsCodingUpdateHeader] | [MessageParameters]|  DemographicCodedContentBundle  | |
+| [IndustryOccupationCodingMessage] | Out | [IndustryOccupationCodingHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   |  Not supported in VRDR STU2.2|
+| [IndustryOccupationCodingUpdateMessage] | Out | [IndustryOccupationCodingUpdateHeader] | [MessageParameters] | IndustryOccupationCodedContentBundle   | Not supported in VRDR STU2.2 |
 {: .grid }
+
+#### Mortality Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRDR) |
+|------------------------------|--------|--------|------------|------|
+| [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument   |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument  |
+| [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
+{: .grid }
+
+#### Birth Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
+|------------------------------|--------|--------|------------|------|
+| [BirthReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR |
+| [BirthReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters]  | BundleDocumentBFDR |
+{: .grid }
+
+#### Fetal Death Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
+|------------------------------|--------|--------|------------|------|
+| [FetalDeathReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR  |
+| [FetalDeathReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
+{: .grid }
+
 
 {% include markdown-link-references.md %}
