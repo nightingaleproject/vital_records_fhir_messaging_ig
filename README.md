@@ -39,6 +39,16 @@ Ruby scripts included here enable generating C# classes to support working with 
 [user@host ~/vital_records_fhir_messaging]$ ruby ./accessors.rb ./parameters.json > ./Parameters.cs
 ```
 
+## Snapshot Creation
+Before creating any github pages to make snapshots easily accessible, create a release tag and branch for the version in question.
+
+1. Create a branch for the github action
+2. Create a 'docs' directory in the root directory to hold all of the page contents
+3. If you intend to include multiple version, add an index.html file to point to each version's index.html
+4. Create separate directories within the 'docs' directory containing the publisher-generated content for each version of interest
+5. Under 'Settings' in github you will find 'Pages' in the sidebar. There you can specify the branch where you have included the snapshots and that the content is within the 'docs' directory
+6. Monitor any issues with the page deployment under 'Actions'
+
 ## License
 
 Copyright 2021 The MITRE Corporation
