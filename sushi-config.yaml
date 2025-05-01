@@ -121,3 +121,15 @@ groups:
     description: Codesystems
     resources:
     - CodeSystem/VRM-MessageHeaderURI-cs
+  MaternalLinkages:
+    name: Maternal Record Linkages
+    description: Maternal Record Linkages 
+    resources:
+    - FetalDeathRecordIdentifier
+    - BirthRecordIdentifierChild
+    - RecentPregnancyParameters
+    - CodedPregnancyStatusCS
+    - CertAvailableVS
+    - PregnancyOutcomesVS
+    - MaternalLinkageContentBundle
+    
