@@ -15,6 +15,14 @@ Description: "RecentPregnancyParameters - LiveBirthWithOutCert"
 * parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
 * parameter[cert_available].valueCodeableConcept = $v2-0136#N "No"
 
+Instance: ParametersLinkage-LiveBirthWithPendingCert
+InstanceOf: RecentPregnancyParameters
+Usage: #example
+Description: "RecentPregnancyParameters - LiveBirthWithPendingCert"
+* parameter[text_summary].valueString = "Live Birth With Pending Certificate"
+* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
+* parameter[cert_available].valueCodeableConcept = $v2-0136#NAV "Temporarily unavailable"
+
 Instance: ParametersLinkage-PluralBirthWithCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
@@ -98,6 +106,13 @@ Usage: #example
 Description: "MaternalLinkageContentBundle-Birth with no certificate"
 * identifier.value = "placeholder"
 * insert addentry(Parameter, ParametersLinkage-LiveBirthWithoutCert)
+
+Instance: MaternalLinkageBundle-BirthPendingCert
+InstanceOf: MaternalLinkageContentBundle
+Usage: #example
+Description: "MaternalLinkageContentBundle-Birth with pending certificate"
+* identifier.value = "placeholder"
+* insert addentry(Parameter, ParametersLinkage-LiveBirthWithPendingCert)
 
 Instance: MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert
 InstanceOf: MaternalLinkageContentBundle
