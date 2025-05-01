@@ -3,7 +3,7 @@ InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - LiveBirthWithCert"
 * parameter[text_summary].valueString = "Live Birth With Certificate"
-* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Live Birth"
+* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
 * parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 
@@ -12,8 +12,16 @@ InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - LiveBirthWithOutCert"
 * parameter[text_summary].valueString = "Live Birth Without Certificate"
-* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Live Birth"
+* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
 * parameter[cert_available].valueCodeableConcept = $v2-0136#N "No"
+
+Instance: ParametersLinkage-PluralBirthWithCert
+InstanceOf: RecentPregnancyParameters
+Usage: #example
+Description: "RecentPregnancyParameters - PluralBirthWithCert"
+* parameter[text_summary].valueString = "Plural Live Birth With Certificate"
+* parameter[coded_outcome].valueCodeableConcept = $sct#45384004 "Multiple birth"
+* parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: ParametersLinkage-EctopicPregnancy
 InstanceOf: RecentPregnancyParameters
@@ -28,7 +36,7 @@ InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert"
 * parameter[text_summary].valueString = "PluralBirthAndFetalDeathWithCert"
-* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Live Birth"
+* parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#plural-fetal-death-and-birth "Plural Fetal Death and Birth"
 * parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: ParametersLinkage-FetalDeathWithCertPending
@@ -37,7 +45,7 @@ Usage: #example
 Description: "RecentPregnancyParameters - FetalDeathWithCertificatePending"
 * parameter[text_summary].valueString = "Fetal Death"
 * parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#plural-fetal-death-and-birth
-* parameter[cert_available].valueCodeableConcept = $v3-NullFlavor#temp-unknown "Temporarily Unknown"
+* parameter[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "temporarily unavailable"
 
 
 Instance: BirthRecordIdentifierChild-Example1
@@ -90,3 +98,30 @@ Usage: #example
 Description: "MaternalLinkageContentBundle-Birth with no certificate"
 * identifier.value = "placeholder"
 * insert addentry(Parameter, ParametersLinkage-LiveBirthWithoutCert)
+
+Instance: MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert
+InstanceOf: MaternalLinkageContentBundle
+Usage: #example
+Description: "MaternalLinkageContentBundle-Plural Birth and Fetal Death with Certificate"
+* identifier.value = "placeholder"
+* insert addentry(Parameter, ParametersLinkage-PluralBirthAndFetalDeathWithCert)
+* insert addentry(Observation, BirthRecordIdentifierChild-Example1)
+* insert addentry(Observation, BirthRecordIdentifierChild-Example2)
+* insert addentry(Observation, FetalDeathRecordIdentifier-Example1)
+* insert addentry(Observation, FetalDeathRecordIdentifier-Example2)
+
+Instance: MaternalLinkageBundle-PluralBirthWithCert
+InstanceOf: MaternalLinkageContentBundle
+Usage: #example
+Description: "MaternalLinkageContentBundle-Pural Birth with certificate"
+* identifier.value = "placeholder"
+* insert addentry(Parameter, ParametersLinkage-PluralBirthWithCert)
+* insert addentry(Observation, BirthRecordIdentifierChild-Example1)
+* insert addentry(Observation, BirthRecordIdentifierChild-Example2)
+
+Instance: MaternalLinkageBundle-EctopicPregnancy
+InstanceOf: MaternalLinkageContentBundle
+Usage: #example
+Description: "MaternalLinkageContentBundle-Ectopic Pregnancy"
+* identifier.value = "placeholder"
+* insert addentry(Parameter, ParametersLinkage-EctopicPregnancy)

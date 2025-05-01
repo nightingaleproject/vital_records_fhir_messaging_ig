@@ -49,5 +49,5 @@ Description: "Certificate Available Values"
 * $v2-0136#Y "Yes"
 * $v2-0136#N "No"
 * $v3-NullFlavor#UNK "Unknown"
-* $v3-NullFlavor#temp-unknown "Temporarily Unknown"
+* $v3-NullFlavor#NAV "Temporarily unavailable"
 * ^experimental = false

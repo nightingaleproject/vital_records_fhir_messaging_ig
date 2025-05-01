@@ -13,7 +13,7 @@ Description: "Maternal Linkage Content Bundle (Bundle): A bundle containing inst
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile"
 //  RuleSet: BundleSlice(name, min, max, short, def, class)
-* insert BundleSlice(  RecentPregnancyParameters,  0, *,  RecentPregnancyParameters,  RecentPregnancyParameters,  RecentPregnancyParameters)
+* insert BundleSlice(  RecentPregnancyParameters,  1, 1,  RecentPregnancyParameters,  RecentPregnancyParameters,  RecentPregnancyParameters)
 * insert BundleSlice(  BirthRecordIdentifierChild,  0, *,  BirthRecordIdentifierChild,  BirthRecordIdentifierChild,  BirthRecordIdentifierChild)
 * insert BundleSlice(  FetalDeathRecordIdentifier,  0, *,  FetalDeathRecordIdentifier,  FetalDeathRecordIdentifier,  FetalDeathRecordIdentifier)
 
