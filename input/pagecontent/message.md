@@ -193,8 +193,17 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRDR) |
 |------------------------------|--------|--------|------------|------|
 | [DeathRecordSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | DeathCertificateDocument   |
-| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | DeathCertificateDocument  |
+| [DeathRecordUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | [DeathCertificateDocument]  |
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
+{: .grid }
+
+#### Mortality Maternal Linkage Specific (*New*)
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRDR) |
+|------------------------------|--------|--------|------------|------|
+| [MaternalLinkageRequestMessage] | In | [MaternalLinkageRequestHeader] | [MessageParameters] |  -   |
+| [MaternalLinkageUpdateMessage] | In | [MaternalLinkageUpdateHeader] | [MessageParameters]   | [MaternalLinkageContentBundle] |
+| [MaternalLinkageSubmissionMessage] | In | [MaternalLinkageSubmissionHeader] | [MessageParameters] | [MaternalLinkageContentBundle] |
 {: .grid }
 
 #### Birth Specific

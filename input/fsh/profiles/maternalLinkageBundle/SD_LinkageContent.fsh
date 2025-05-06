@@ -38,7 +38,7 @@ Description: "Codesystem for local observation identifiers."
 * ^experimental = false
 
 RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode, year )
-* value[x] 1..1
+* value[x] 0..1
 * value[x] only string   // we considered shifting to integer and kept it as string.
 * valueString ^short = "{type} Record number.  Six digit number.  Leading zeroes are optional."
 * valueString ^maxLength = 6
@@ -56,12 +56,12 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
 * component[{jurisdiction}] ^short = "Record Jurisdiction"
 * component[{jurisdiction}].code 1..1
 * component[{jurisdiction}].code = {jurisdictionCode}  // "Jurisdiction Code"
-* component[{jurisdiction}].value[x] 1..1
+* component[{jurisdiction}].value[x] 0..1
 * component[{jurisdiction}].value[x] only string
 * component[{jurisdiction}].valueString from ValueSetJurisdictionVitalRecords (required)
 * component[{year}] ^short = "Year of {type}"
 * component[{year}].code = {code} // "Date of Death/Birth"
-* component[{year}].value[x] 1..1
+* component[{year}].value[x] 0..1
 * component[{year}].value[x] only dateTime
 * component[{year}].value[x] ^comment = "The record year is expressed using the YYYY portion of date."
 * component[index].value[x] 1..1

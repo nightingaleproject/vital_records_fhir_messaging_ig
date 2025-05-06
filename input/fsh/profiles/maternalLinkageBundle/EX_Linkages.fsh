@@ -80,6 +80,14 @@ Description: "BirthRecordIdentifierChild-Example1 - identifier of the decedent's
 * component[index].valueInteger = 1
 * component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
+Instance: BirthRecordIdentifierChildNoCert-Example1
+InstanceOf: BirthRecordIdentifierChild
+Usage: #example
+Description: "BirthRecordIdentifierChildNoCert-Example1 - identifier of the decedent's child's birth certificate number"
+* status = #final
+* component[index].valueInteger = 1
+* component[cert_available].valueCodeableConcept = $v2-0136#N "No"
+
 Instance: BirthRecordIdentifierChild-Example2
 InstanceOf: BirthRecordIdentifierChild
 Usage: #example
@@ -126,14 +134,16 @@ InstanceOf: MaternalLinkageContentBundle
 Usage: #example
 Description: "MaternalLinkageContentBundle-Birth with no certificate"
 * identifier.value = "placeholder"
-* insert addentry(Parameter, ParametersLinkage-LiveBirthWithoutCert)
+* insert addentry(Parameter, ParametersLinkage-LiveBirthWithCert)
+* insert addentry(Observation, BirthRecordIdentifierChildNoCert-Example1)
 
 Instance: MaternalLinkageBundle-BirthPendingCert
 InstanceOf: MaternalLinkageContentBundle
 Usage: #example
 Description: "MaternalLinkageContentBundle-Birth with pending certificate"
 * identifier.value = "placeholder"
-* insert addentry(Parameter, ParametersLinkage-LiveBirthWithPendingCert)
+* insert addentry(Parameter, ParametersLinkage-LiveBirthWithCert)
+* insert addentry(Observation, BirthRecordIdentifierChildNoCert-Example1)
 
 Instance: MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert
 InstanceOf: MaternalLinkageContentBundle
