@@ -122,14 +122,21 @@ groups:
     resources:
     - CodeSystem/VRM-MessageHeaderURI-cs
   MaternalLinkages:
-    name: Maternal Record Linkages
+    name: Maternal Record Linkage Components 
     description: Maternal Record Linkages 
     resources:
     - FetalDeathRecordIdentifier
     - BirthRecordIdentifierChild
     - RecentPregnancyParameters
+    - MaternalLinkageContentBundle
     - CodedPregnancyStatusCS
     - CertAvailableVS
     - PregnancyOutcomesVS
-    - MaternalLinkageContentBundle
-    
+
+  MaternalLinkageMessages:
+    name: Maternal Record Linkage Messages 
+    description: Maternal Record Linkage Messages 
+    resources:
+    - MaternalLinkageRequestMessage
+    - MaternalLinkageSubmissionMessage
+    - MaternalLinkageUpdateMessage

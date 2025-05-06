@@ -50,7 +50,9 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
 * component ^slicing.rules = #open
 * component contains
     {jurisdiction} 1..1 and
-    {year} 1..1
+    {year} 1..1 and 
+    index 1..1 and
+    cert_available 1..1 
 * component[{jurisdiction}] ^short = "Record Jurisdiction"
 * component[{jurisdiction}].code 1..1
 * component[{jurisdiction}].code = {jurisdictionCode}  // "Jurisdiction Code"
@@ -62,4 +64,12 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
 * component[{year}].value[x] 1..1
 * component[{year}].value[x] only dateTime
 * component[{year}].value[x] ^comment = "The record year is expressed using the YYYY portion of date."
-
+* component[index].value[x] 1..1
+* component[index].value[x] only integer
+* component[index].value[x] ^comment = "The index of this record among birth or fetal death certificates of the same type."
+* component[index].code = #index 
+* component[cert_available].value[x] 1..1
+* component[cert_available].value[x] only CodeableConcept 
+* component[cert_available].value[x] from CertAvailableVS (required)
+* component[cert_available].value[x] ^comment = "Code for Availability of this certificate."
+* component[cert_available].code = #availability 

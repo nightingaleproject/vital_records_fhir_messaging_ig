@@ -2,59 +2,72 @@ Instance: ParametersLinkage-LiveBirthWithCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - LiveBirthWithCert"
-* parameter[text_summary].valueString = "Live Birth With Certificate"
+* parameter[notes].valueString = "Live Birth With Certificate"
 * parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
+* parameter[birth_plurality].valueInteger = 1
+* parameter[fetal_death_plurality].valueInteger = 0
+
 
 
 Instance: ParametersLinkage-LiveBirthWithoutCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - LiveBirthWithOutCert"
-* parameter[text_summary].valueString = "Live Birth Without Certificate"
+* parameter[notes].valueString = "Live Birth Without Certificate"
 * parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#N "No"
+// * component[cert_available].valueCodeableConcept = $v2-0136#N "No"
+* parameter[birth_plurality].valueInteger = 1
+* parameter[fetal_death_plurality].valueInteger = 0
 
 Instance: ParametersLinkage-LiveBirthWithPendingCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - LiveBirthWithPendingCert"
-* parameter[text_summary].valueString = "Live Birth With Pending Certificate"
+* parameter[notes].valueString = "Live Birth With Pending Certificate"
 * parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#NAV "Temporarily unavailable"
+//* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "Temporarily unavailable"
+* parameter[birth_plurality].valueInteger = 1
+* parameter[fetal_death_plurality].valueInteger = 0
 
 Instance: ParametersLinkage-PluralBirthWithCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthWithCert"
-* parameter[text_summary].valueString = "Plural Live Birth With Certificate"
+* parameter[notes].valueString = "Plural Live Birth With Certificate"
 * parameter[coded_outcome].valueCodeableConcept = $sct#45384004 "Multiple birth"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
+// * component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
+* parameter[birth_plurality].valueInteger = 2
+* parameter[fetal_death_plurality].valueInteger = 0
 
 Instance: ParametersLinkage-EctopicPregnancy
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - EctopicPregnancy"
-* parameter[text_summary].valueString = "Ectopic Pregnancy"
+* parameter[notes].valueString = "Ectopic Pregnancy"
 * parameter[coded_outcome].valueCodeableConcept = $sct#34801009 "Ectopic Pregnancy"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#N "No"
+//* component[cert_available].valueCodeableConcept = $v2-0136#N "No"
+* parameter[birth_plurality].valueInteger = 0
+* parameter[fetal_death_plurality].valueInteger = 0
 
 Instance: ParametersLinkage-PluralBirthAndFetalDeathWithCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert"
-* parameter[text_summary].valueString = "PluralBirthAndFetalDeathWithCert"
+* parameter[notes].valueString = "PluralBirthAndFetalDeathWithCert"
 * parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#plural-fetal-death-and-birth "Plural Fetal Death and Birth"
-* parameter[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
+* parameter[birth_plurality].valueInteger = 2
+* parameter[fetal_death_plurality].valueInteger = 2
+//* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: ParametersLinkage-FetalDeathWithCertPending
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - FetalDeathWithCertificatePending"
-* parameter[text_summary].valueString = "Fetal Death"
+* parameter[notes].valueString = "Fetal Death"
 * parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#plural-fetal-death-and-birth
-* parameter[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "temporarily unavailable"
-
+//* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "temporarily unavailable"
+* parameter[birth_plurality].valueInteger = 0
+* parameter[fetal_death_plurality].valueInteger = 1
 
 Instance: BirthRecordIdentifierChild-Example1
 InstanceOf: BirthRecordIdentifierChild
@@ -64,6 +77,8 @@ Description: "BirthRecordIdentifierChild-Example1 - identifier of the decedent's
 * valueString = "717171"
 * component[birthJurisdiction].valueString = "YC"
 * component[birthYear].valueDateTime = "2024"
+* component[index].valueInteger = 1
+* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: BirthRecordIdentifierChild-Example2
 InstanceOf: BirthRecordIdentifierChild
@@ -73,6 +88,8 @@ Description: "BirthRecordIdentifierChild-Example1 - identifier of the decedent's
 * valueString = "717172"
 * component[birthJurisdiction].valueString = "YC"
 * component[birthYear].valueDateTime = "2024"
+* component[index].valueInteger = 2
+* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: FetalDeathRecordIdentifier-Example1
 InstanceOf: FetalDeathRecordIdentifier
@@ -82,6 +99,8 @@ Description: "FetalDeathRecordIdentifier-Example1 - identifier of the decedent's
 * valueString = "100001"
 * component[deathJurisdiction].valueString = "YC"
 * component[year].valueDateTime = "2024"
+* component[index].valueInteger = 1
+* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: FetalDeathRecordIdentifier-Example2
 InstanceOf: FetalDeathRecordIdentifier
@@ -91,6 +110,8 @@ Description: "FetalDeathRecordIdentifier-Example1 - identifier of the decedent's
 * valueString = "100002"
 * component[deathJurisdiction].valueString = "YC"
 * component[year].valueDateTime = "2024"
+* component[index].valueInteger = 2
+* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: MaternalLinkageBundle-Birth
 InstanceOf: MaternalLinkageContentBundle

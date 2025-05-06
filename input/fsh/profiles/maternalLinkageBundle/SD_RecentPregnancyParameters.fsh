@@ -6,14 +6,15 @@ Title:  "Recent Pregnancy Parameters"
 * id MS
 * insert ParameterSlicing
 * parameter contains
-    text_summary 1..1 and
+    notes 1..1 and
     coded_outcome 1..1 and   
-    cert_available 1..1 
-* insert ParameterNameType(text_summary, string, Text Summary, Text Summary) 
+    birth_plurality 1..1 and 
+    fetal_death_plurality 1..1
+* insert ParameterNameType(notes, string, Notes, Notes) 
 * insert ParameterNameType(coded_outcome, CodeableConcept, coded outcome, coded_outcome) 
 * parameter[coded_outcome].value[x] from PregnancyOutcomesVS (extensible)
-* insert ParameterNameType(cert_available, CodeableConcept, Certificate Available, Certificate Available) 
-* parameter[cert_available].value[x] from CertAvailableVS (required)
+* insert ParameterNameType(birth_plurality, integer, Birth Plurality, Birth Plurality) 
+* insert ParameterNameType(fetal_death_plurality, integer, Fetal Death Plurality, Fetal Death Plurality) 
 
 ValueSet: PregnancyOutcomesVS
 Id: VRM-PregnancyOutcomes-vs
