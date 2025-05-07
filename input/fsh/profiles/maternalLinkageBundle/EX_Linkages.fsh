@@ -49,7 +49,7 @@ Description: "RecentPregnancyParameters - EctopicPregnancy"
 * parameter[birth_plurality].valueInteger = 0
 * parameter[fetal_death_plurality].valueInteger = 0
 
-Instance: ParametersLinkage-PluralBirthAndFetalDeathWithCert
+Instance: ParametersLinkage-PluralBirthAndFetalDeath
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert"
@@ -121,6 +121,14 @@ Description: "FetalDeathRecordIdentifier-Example1 - identifier of the decedent's
 * component[index].valueInteger = 2
 * component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
+Instance: FetalDeathRecordIdentifierNoCert-Example3
+InstanceOf: FetalDeathRecordIdentifier
+Usage: #example
+Description: "FetalDeathRecordIdentifierNoCert-Example3 - missing identifier of the decedent's fetus's fetal death record"
+* status = #final
+* component[cert_available].valueCodeableConcept = $v2-0136#N "No"
+* component[index].valueInteger = 2
+
 Instance: MaternalLinkageBundle-Birth
 InstanceOf: MaternalLinkageContentBundle
 Usage: #example
@@ -148,13 +156,13 @@ Description: "MaternalLinkageContentBundle-Birth with pending certificate"
 Instance: MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert
 InstanceOf: MaternalLinkageContentBundle
 Usage: #example
-Description: "MaternalLinkageContentBundle-Plural Birth and Fetal Death with Certificate"
+Description: "MaternalLinkageContentBundle-Plural Birth and Fetal Death with and without Certificates"
 * identifier.value = "placeholder"
-* insert addentry(Parameter, ParametersLinkage-PluralBirthAndFetalDeathWithCert)
+* insert addentry(Parameter, ParametersLinkage-PluralBirthAndFetalDeath)
 * insert addentry(Observation, BirthRecordIdentifierChild-Example1)
 * insert addentry(Observation, BirthRecordIdentifierChild-Example2)
 * insert addentry(Observation, FetalDeathRecordIdentifier-Example1)
-* insert addentry(Observation, FetalDeathRecordIdentifier-Example2)
+* insert addentry(Observation, FetalDeathRecordIdentifierNoCert-Example3)
 
 Instance: MaternalLinkageBundle-PluralBirthWithCert
 InstanceOf: MaternalLinkageContentBundle
