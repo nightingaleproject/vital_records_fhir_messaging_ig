@@ -220,6 +220,8 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 |------------------------------|--------|--------|------------|------|
 | [FetalDeathReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR  |
 | [FetalDeathReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
+| [CodedCauseOfFetalDeathMessage] | Out | [CauseOfDeathCodingHeader] | [MessageParameters] | BundleDocumentCodedCauseOfFetalDeath ]
+| [CodedCauseOfFetalDeathUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters] | BundleDocumentCodedCauseOfFetalDeathUpdate ]
 {: .grid }
 
 
