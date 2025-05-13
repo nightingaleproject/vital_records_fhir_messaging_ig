@@ -201,7 +201,7 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRDR) |
 |------------------------------|--------|--------|------------|------|
-| [MaternalLinkageRequestMessage] | In | [MaternalLinkageRequestHeader] | [MessageParameters] |  -   |
+| [MaternalLinkageRequestMessage] | Out | [MaternalLinkageRequestHeader] | [MessageParameters] |  -   |
 | [MaternalLinkageUpdateMessage] | In | [MaternalLinkageUpdateHeader] | [MessageParameters]   | [MaternalLinkageContentBundle] |
 | [MaternalLinkageSubmissionMessage] | In | [MaternalLinkageSubmissionHeader] | [MessageParameters] | [MaternalLinkageContentBundle] |
 {: .grid }
