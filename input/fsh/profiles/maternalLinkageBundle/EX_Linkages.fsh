@@ -31,7 +31,8 @@ Description: "RecentPregnancyParameters - LiveBirthWithPendingCert"
 //* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "Temporarily unavailable"
 * parameter[birth_plurality].valueInteger = 1
 * parameter[fetal_death_plurality].valueInteger = 0
-* parameter[preg_status_is_correct].valueBoolean = true 
+* parameter[preg_status_is_correct].valueBoolean = false
+* parameter[corrected_pregnancy_status].valueCodeableConcept = DeathPregnancyStatusCS#4 "Not pregnant, but pregnant 43 days to 1 year before death"
 
 Instance: ParametersLinkage-PluralBirthWithCert
 InstanceOf: RecentPregnancyParameters
