@@ -19,6 +19,7 @@ dependencies:
   hl7.fhir.us.core: 5.0.1
   #hl7.fhir.us.vrdr: current
   hl7.fhir.us.vr-common-library: current   # Jurisdiction valueset
+  hl7.fhir.us.vrdr: current   # Pregnancy Status ValueSet
   #hl7.fhir.us.bfdr: current
  
 parameters:

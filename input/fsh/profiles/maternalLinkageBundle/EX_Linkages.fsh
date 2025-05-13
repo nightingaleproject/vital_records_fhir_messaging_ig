@@ -6,6 +6,7 @@ Description: "RecentPregnancyParameters - LiveBirthWithCert"
 * parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
 * parameter[birth_plurality].valueInteger = 1
 * parameter[fetal_death_plurality].valueInteger = 0
+* parameter[preg_status_is_correct].valueBoolean = true 
 
 
 
@@ -18,6 +19,8 @@ Description: "RecentPregnancyParameters - LiveBirthWithOutCert"
 // * component[cert_available].valueCodeableConcept = $v2-0136#N "No"
 * parameter[birth_plurality].valueInteger = 1
 * parameter[fetal_death_plurality].valueInteger = 0
+* parameter[preg_status_is_correct].valueBoolean = false
+* parameter[corrected_pregnancy_status].valueCodeableConcept = DeathPregnancyStatusCS#4 "Not pregnant, but pregnant 43 days to 1 year before death"
 
 Instance: ParametersLinkage-LiveBirthWithPendingCert
 InstanceOf: RecentPregnancyParameters
@@ -28,16 +31,18 @@ Description: "RecentPregnancyParameters - LiveBirthWithPendingCert"
 //* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "Temporarily unavailable"
 * parameter[birth_plurality].valueInteger = 1
 * parameter[fetal_death_plurality].valueInteger = 0
+* parameter[preg_status_is_correct].valueBoolean = true 
 
 Instance: ParametersLinkage-PluralBirthWithCert
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthWithCert"
 * parameter[notes].valueString = "Plural Live Birth With Certificate"
-* parameter[coded_outcome].valueCodeableConcept = $sct#45384004 "Multiple birth"
+* parameter[coded_outcome].valueCodeableConcept = $sct#281050002 "Livebirth"
 // * component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 * parameter[birth_plurality].valueInteger = 2
 * parameter[fetal_death_plurality].valueInteger = 0
+* parameter[preg_status_is_correct].valueBoolean = true 
 
 Instance: ParametersLinkage-EctopicPregnancy
 InstanceOf: RecentPregnancyParameters
@@ -48,6 +53,7 @@ Description: "RecentPregnancyParameters - EctopicPregnancy"
 //* component[cert_available].valueCodeableConcept = $v2-0136#N "No"
 * parameter[birth_plurality].valueInteger = 0
 * parameter[fetal_death_plurality].valueInteger = 0
+* parameter[preg_status_is_correct].valueBoolean = true 
 
 Instance: ParametersLinkage-PluralBirthAndFetalDeath
 InstanceOf: RecentPregnancyParameters
@@ -57,6 +63,7 @@ Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert"
 * parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#plural-fetal-death-and-birth "Plural Fetal Death and Birth"
 * parameter[birth_plurality].valueInteger = 2
 * parameter[fetal_death_plurality].valueInteger = 2
+* parameter[preg_status_is_correct].valueBoolean = true 
 //* component[cert_available].valueCodeableConcept = $v2-0136#Y "Yes"
 
 Instance: ParametersLinkage-FetalDeathWithCertPending
@@ -68,6 +75,7 @@ Description: "RecentPregnancyParameters - FetalDeathWithCertificatePending"
 //* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "temporarily unavailable"
 * parameter[birth_plurality].valueInteger = 0
 * parameter[fetal_death_plurality].valueInteger = 1
+* parameter[preg_status_is_correct].valueBoolean = true 
 
 Instance: BirthRecordIdentifierChild-Example1
 InstanceOf: BirthRecordIdentifierChild
