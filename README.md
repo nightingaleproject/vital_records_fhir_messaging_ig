@@ -35,7 +35,7 @@ To generate the full Implementation Guide content, use the IG Publisher to gener
 ```
 ## Publishing the IG
 
-This IG is published via Github pages.  The process steps to publish a new version of the IG are:
+This IG is published via [Github pages](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/).  The process steps to publish a new version of the IG are:
 
 - Create a new branch of the repo
 - Edit on the branch to create the new content
@@ -44,6 +44,7 @@ This IG is published via Github pages.  The process steps to publish a new versi
 - checkout the gh-pages branch of the repo
 - copy the generated IG content to the docs/\<version number\> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
 - commit and push the changes to github 
+
 
 # Generating .NET Implementation
 
