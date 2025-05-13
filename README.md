@@ -42,7 +42,7 @@ This IG is published via Github pages.  The process steps to publish a new versi
 - Build the IG using sushi and the IG publisher and correct all errors and serious warnings.  This produces content in the output folder.
 - Make a copy of all content from the output folder exclusive of zip, tgz, and other large files.
 - checkout the gh-pages branch of the repo
-- copy the generated IG content to the docs/<version number> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
+- copy the generated IG content to the docs/\<version number\> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
 - commit and push the changes to github 
 
 # Generating .NET Implementation
