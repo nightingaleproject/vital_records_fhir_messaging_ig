@@ -29,6 +29,41 @@ This repository contains [FHIR Short Hand (FSH)](https://build.fhir.org/ig/HL7/f
 [user@host ~/vital_records_fhir_messaging]$ sushi
 ```
 
+To generate the full Implementation Guide content, use the IG Publisher to generate the content in the output folder.
+```shell
+[user@host ~/vital_records_fhir_messaging]$ ./_genonce.sh
+```
+## Publishing the IG
+
+This IG is published via Github pages.  The process steps to publish a new version of the IG are:
+
+- Create a new branch of the repo
+- Edit on the branch to create the new content
+- Build the IG using sushi and the IG publisher and correct all errors and serious warnings.  This produces content in the output folder.
+- Make a copy of all content from the output folder exclusive of zip, tgz, and other large files.
+- checkout the gh-pages branch of the repo
+- copy the generated IG content to the docs/<version number> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
+- commit and push the changes to github 
+ 
+No preview 2? Straight to 3?
+ 
+Let me know if you have any other issues.
+ 
+Best,
+Rob
+ 
+From: Saul A Kravitz <skravitz@mitre.org>
+Date: Wednesday, October 23, 2024 at 10:32 AM
+To: Robert Passas <RPASSAS@mitre.org>
+Subject: Publishing VRFM to Github pages
+
+Hi Rob,
+I’m looking for the instructions how to publish the VRFM IG to Github pages.
+Looks like I need to do the following:
+- Build the branch of the IG I want to publish
+- Copy the content of the output folder to docs/<version number/ on the gh-pages branch of the repo.   This takes a long time because there are a zillion files, right?
+ 
+
 # Generating .NET Implementation
 
 Ruby scripts included here enable generating C# classes to support working with IG-compliant FHIR messages. This is currently implemented in two stages. After generating IG JSON using SUSHI, use `parameters.rb` to extract the relevant properties to a JSON file, and `accessors.rb` to generate the C# class from that file. The output is written to the stdout, so it should be redirected to a file if necessary. The following example will generate a `Parameters.cs` file in the local directory (along with the intermediate JSON file):
