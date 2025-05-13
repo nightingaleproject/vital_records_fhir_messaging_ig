@@ -44,25 +44,6 @@ This IG is published via Github pages.  The process steps to publish a new versi
 - checkout the gh-pages branch of the repo
 - copy the generated IG content to the docs/<version number> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
 - commit and push the changes to github 
- 
-No preview 2? Straight to 3?
- 
-Let me know if you have any other issues.
- 
-Best,
-Rob
- 
-From: Saul A Kravitz <skravitz@mitre.org>
-Date: Wednesday, October 23, 2024 at 10:32 AM
-To: Robert Passas <RPASSAS@mitre.org>
-Subject: Publishing VRFM to Github pages
-
-Hi Rob,
-I’m looking for the instructions how to publish the VRFM IG to Github pages.
-Looks like I need to do the following:
-- Build the branch of the IG I want to publish
-- Copy the content of the output folder to docs/<version number/ on the gh-pages branch of the repo.   This takes a long time because there are a zillion files, right?
- 
 
 # Generating .NET Implementation
 
