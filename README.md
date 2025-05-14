@@ -43,6 +43,7 @@ This IG is published via [Github pages](https://nightingaleproject.github.io/vit
 - Make a copy of all content from the output folder exclusive of zip, tgz, and other large files.
 - checkout the gh-pages branch of the repo
 - copy the generated IG content to the docs/\<version number\> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
+- edit the docs/index.html so that the published versions you want displayed are included, and those you don't want displayed are removed
 - commit and push the changes to github 
 
 
