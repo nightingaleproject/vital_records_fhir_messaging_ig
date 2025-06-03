@@ -71,4 +71,4 @@ Usage: #example
 Description: "MaternalLinkageContentBundle-Fetal Death with Cert Pending"
 * identifier.value = "placeholder"
 * insert addentry(Parameter,ParametersLinkage-FetalDeathWithCertPending)
-* insert addentry(Observation, FetalDeathRecordIdentifier-Example1)
+* insert addentry(Observation, FetalDeathRecordIdentifierNoCert-Example4)

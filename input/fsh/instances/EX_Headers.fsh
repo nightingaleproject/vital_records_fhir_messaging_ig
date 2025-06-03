@@ -302,7 +302,7 @@ Description: "Header for Maternal Linkage Request - Example"
 //MaternalLinkageUpdateHeaders
 
 Instance: MaternalLinkageUpdateHeaderExample1
-InstanceOf: MaternalLinkageUpdateHeader
+InstanceOf: UpdateHeader
 Usage: #example
 Description: "Header for Maternal Linkage Update - Example"
 * eventUri = "http://nchs.cdc.gov/maternal_linkage_update"
@@ -314,7 +314,7 @@ Description: "Header for Maternal Linkage Update - Example"
 //MaternalLinkageSubmissionHeader
 
 Instance: MaternalLinkageSubmissionHeaderExample1
-InstanceOf: MaternalLinkageSubmissionHeader
+InstanceOf: SubmissionHeader
 Usage: #example
 Description: "Header for Maternal Linkage Submission - Example"
 * eventUri = "http://nchs.cdc.gov/maternal_linkage_submission"

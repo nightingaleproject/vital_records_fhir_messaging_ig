@@ -77,3 +77,11 @@ Description: "FetalDeathRecordIdentifierNoCert-Example3 - missing identifier of 
 * status = #final
 * component[cert_available].valueCodeableConcept = $v2-0136#N "No"
 * component[index].valueInteger = 2
+
+Instance: FetalDeathRecordIdentifierNoCert-Example4
+InstanceOf: FetalDeathRecordIdentifier
+Usage: #example
+Description: "FetalDeathRecordIdentifierNoCert-Example4 - certificate pending"
+* status = #final
+* component[cert_available].valueCodeableConcept = $v3-NullFlavor#NAV "Temporarily unavailable"
+* component[index].valueInteger = 1
