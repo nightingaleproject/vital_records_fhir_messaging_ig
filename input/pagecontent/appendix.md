@@ -1,7 +1,7 @@
 ### Appendix
 #### FHIR Messaging Infrastructure Implementation Considerations
 
-The FHIR messaging infrastructure provides reliable message delivery between jurisdictions and NCHS. This section provides pseudo code that describes the behavior of jurisdiction and NVSS FHIR messaging endpoints, and discusses implementation considerations and approaches that may be useful to developers or purchasers of this infrastructure.
+The FHIR messaging infrastructure provides reliable message delivery between jurisdictions and NCHS. This section provides pseudo code that describes the behavior of jurisdiction and NVSS FHIR messaging endpoints, and discusses implementation considerations and approaches that may be useful to developers or purchasers of this infrastructure. This section specifically describes the VRDR and a death record document, but it also applies to the BFDR and a birth and/or fetal death record document.
 
 #### Jurisdiction FHIR Messaging Infrastructure
 
