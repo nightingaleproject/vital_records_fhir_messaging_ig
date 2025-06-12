@@ -39,6 +39,6 @@ Description: "MessageHeader URI Values"
 * #http://nchs.cdc.gov/fd_status "Fetal Death Status" "Indicates that this is a status for a previously submitted Fetal Death Record"
 * #http://nchs.cdc.gov/birth_status "Birth Status" "Indicates that this is a status for a previously submitted birth report"
 * #http://nchs.cdc.gov/maternal_linkage_request "Maternal Linkage Request" "NCHS requests that a jurisdiction submit maternal linkage data"
-* #http://nchs.cdc.gov/maternal_linkage_submission "Maternal Linkage Submission" "Jurisdiction submitting maternal linkage"
+* #http://nchs.cdc.gov/maternal_linkage_submission "Maternal Linkage Submission" "Indicates that the payload is an initial submission of a maternal linkage"
 * #http://nchs.cdc.gov/maternal_linkage_update "Maternal Linkage Update" "Jurisdiction updating previously submitted maternal linkage"
 * ^experimental = false

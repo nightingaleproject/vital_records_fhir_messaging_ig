@@ -44,13 +44,13 @@ pages:
     title: Appendices
   june2022testingeventexamples.md:
     title: June 2022 Testing Event Examples
-  business_rules.md:
+  business_rules_death.md:
     title: Business Rules for Death Record Submissions
   business_rules_birth.md:
     title: Business Rules for Birth Record Submissions
   business_rules_maternal_linkage.md:
     title: Business Rules for Maternal Linkages
-  VRDRSTU22Errata.md:
+  ImplementationNotes.md:
     title: NCHS FHIR Implementation Notes 
   maternallinkage.md:
     title: Maternal Linkage Records for Mortality
@@ -60,10 +60,10 @@ menu:
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
-    Business Rules - Death: business_rules.html 
+    Business Rules - Death: business_rules_death.html 
     Business Rules - Maternal Linkages: business_rules_maternal_linkage.html
     Business Rules - Birth: business_rules_birth.html 
-    NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
+    NCHS FHIR Implementation Notes: ImplementationNotes.html
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
@@ -72,6 +72,8 @@ menu:
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
+
+    
 groups:
   Messages:
     name: Message Profiles
