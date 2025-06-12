@@ -6,20 +6,36 @@ Version 1.0
 
 **Table of Content**
 
-[FHIR IGs for Mortality Data Submission to NCHS](#fhir-igs-for-mortality-data-submission-to-nchs)
+[FHIR IGs for Mortality Data Submission to NCHS](#fhir-igs-for-mortality-and-natality-data-submission-to-nchs)
 
 [VRDR STU2.2 Errata](#vrdr-stu22-errata)
 
 [VRFM 1.0.1 Errata](#vrfm-101-errata)
 
-## FHIR IGs for Mortality Data Submission to NCHS
-Current submissions to NCHS are based on the following FHIR IGs:
+## FHIR IGs for Mortality and Natality Data Submission to NCHS
+Current submissions to NCHS used in production are based on the following FHIR IGs:
 * [HL7 Vital Records Death Reporting STU2.2](https://hl7.org/fhir/us/vrdr/STU2.2/)
 * [NCHS Vital Records FHIR Messaging v1.0.1](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html)
 
-Periodically, NCHS will transition the submission process to use new published versions of these IGs and the [Birth and Fetal Death (BFDR) IG](https://hl7.org/fhir/us/bfdr/index.html).
+Periodically, NCHS will transition the submission process to use new published versions of these IGs and new IGs.
+
+Testing events have begun based on the following FHIR IGs:
+* [HL7 Birth and Fetal Death (BFDR) IG STU2.0](https://hl7.org/fhir/us/bfdr/index.html)
+* [NCHS Vital Records FHIR Messaging v2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/)
+
 As with any software product or specification, bugs/issues will be identified between publication events.
 The purpose of this document is to provide documentation about known bugs/issues/errata in the published specifications that implementers may need to successfully implement FHIR-based death record submission.
+
+The following table summarizes the history of the IGs, correspondance to other resources, and their status.
+
+| *Implementation Guide* | *Supporting VRFM Version* | *Supporting Software Version* | *Status as of June 2025* |
+|------------------------------|--------|--------|------------|------|
+| [VRDR STU2.2.0](https://hl7.org/fhir/us/vrdr/STU2.2/) | [VRFM STU1.0.1](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html) | VRDR-dotnet 4.x.x | Implemented and used in production. |
+| [VRDR STU3.0.0](https://hl7.org/fhir/us/vrdr/STU3/) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | VRDR-dotnet 5.x.x | Not implemented for testing or production yet. |
+| [BFDR STU2.0.0](https://hl7.org/fhir/us/bfdr/STU2/index.html) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | BFDR-dotnet 1.x.x | Testing events have begun.  |
+| [VRCL STU2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/index.html) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | VR-dotnet 1.x.x | Used to support VRDR STU3.0.0 and BFDR SYU2.0.0. |
+{: .grid }
+
 
 ## VRDR STU2.2 Errata
 * Handling of STATESP (State Specific field) in [Cause of Death Coded Bundle](https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-cause-of-death-coded-bundle.html)

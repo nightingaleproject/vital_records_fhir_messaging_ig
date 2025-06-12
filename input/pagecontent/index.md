@@ -87,7 +87,8 @@ NCHS needs a mechanism to report errors to vital records jurisdictions in respon
 
 ### FHIR Messaging
 
-As described earlier, the [Vital Records Death Reporting (VRDR)](https://hl7.org/fhir/us/vrdr/) and [Birth and Fetal Death (BFDR)](https://hl7.org/fhir/us/bfdr/) specify how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](https://hl7.org/fhir/messaging.html) defines:
+As described earlier, the [Vital Records Death Reporting (VRDR)](https://hl7.org/fhir/us/vrdr/) and [Birth and Fetal Death (BFDR)](https://hl7.org/fhir/us/bfdr/) specify how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. The specific versions used in production and testing are described in the
+[Implementation Notes](ImplementationNotes.html) page. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. [FHIR Messaging](https://hl7.org/fhir/messaging.html) defines:
 
 1. A standard [MessageHeader](https://hl7.org/fhir/messageheader.html) resource that captures common message metadata including
   * An id that is useful for correlating requests and replies.

@@ -215,7 +215,6 @@ WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(ur
 WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/UpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_update'
 WARNING: Bundle/VoidMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_void'
 WARNING: Bundle/VoidMessage-Example1: Bundle.entry[0].resource/*MessageHeader/VoidHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_void'
-WARNING: ImplementationGuide/vital-records-fhir-messaging: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
 WARNING: MessageHeader/AcknowledgementHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
 WARNING: MessageHeader/AcknowledgementHeader-Example2: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
 WARNING: MessageHeader/AliasHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_alias'
@@ -289,15 +288,12 @@ WARNING: ValueSet/VRM-CertAvailable-vs: ValueSet.compose.include[1]: There are m
 WARNING: ValueSet/VRM-PregnancyOutcomes-vs: ValueSet.compose.include[2]: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.1.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor' to 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0'
 WARNING: ValueSet/VRM-PregnancyOutcomes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/VRM-SubmissionHeaderURI-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-INFORMATION: Bundle/MaternalLinkageBundle-Birth: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-FetalDeathWithCertPending: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-Birth: Bundle.entry[1].resource/*Observation/BirthRecordIdentifierChild-Example1*/.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-BirthNoCert: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-BirthNoCert: Bundle.entry[1].resource/*Observation/BirthRecordIdentifierChildNoCert-Example1*/.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-BirthPendingCert: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-BirthPendingCert: Bundle.entry[1].resource/*Observation/BirthRecordIdentifierChildNoCert-Example1*/.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
-INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[0].resource.parameter[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
-INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[0].resource/*Parameters/ParametersLinkage-PluralBirthAndFetalDeath*/.parameter[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[1].resource/*Observation/BirthRecordIdentifierChild-Example1*/.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[2].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
@@ -328,12 +324,19 @@ INFORMATION: StructureDefinition/VRM-birth-record-identifier-child: StructureDef
 INFORMATION: StructureDefinition/VRM-birth-record-identifier-child: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: StructureDefinition/VRM-fetal-death-record-identifier: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: StructureDefinition/VRM-fetal-death-record-identifier: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
-INFORMATION: Bundle/MaternalLinkageBundle-FetalDeathWithCertPending: Bundle​.entry[1]​.resource​/*Observation​/FetalDeathRecordIdentifierNoCert-Example4*​/​.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Observation/FetalDeathRecordIdentifierNoCert-Example4: Observation.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
-INFORMATION: Parameters/ParametersLinkage-PluralBirthAndFetalDeath: Parameters​.parameter[0]​.value​.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
+INFORMATION: Bundle/MaternalLinkageBundle-FetalDeathWithCertPending: Bundle.entry[1].resource/*Observation/FetalDeathRecordIdentifierNoCert-Example4*/.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
+INFORMATION: Parameters/ParametersLinkage-PluralBirthAndFetalDeath: Parameters.parameter[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
+INFORMATION: Bundle/MaternalLinkageBundle-Birth: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[0].resource.parameter[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
 INFORMATION: Bundle/MaternalLinkageBundle-PluralBirthAndFetalDeathWithCert: Bundle.entry[0].resource/*Parameters/ParametersLinkage-PluralBirthAndFetalDeath*/.parameter[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|2.0.0-Preview5
-INFORMATION: Bundle/MaternalLinkageBundle-Birth: Bundle.entry[1].resource.code: Reference to draft CodeSystem http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs|2.0.0-Preview5
+WARNING: ImplementationGuide/vital-records-fhir-messaging: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+
+
+
+
+
+
 
 
 
