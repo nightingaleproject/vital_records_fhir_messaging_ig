@@ -7,10 +7,10 @@ Title:  "Recent Pregnancy Parameters"
 * insert ParameterSlicing
 * parameter contains
     notes 0..1 and  //only if needed
-    coded_outcome 1..1 and   
+    coded_outcome 0..1 and   
     birth_plurality 0..1 and 
-    fetal_death_plurality 1..1 and
-    preg_status_is_correct 0..1 and
+    fetal_death_plurality 0..1 and
+    preg_status_is_correct 1..1 and
     corrected_pregnancy_status 0..1    // only if needed
 * insert ParameterNameType(notes, string, Notes, Notes) 
 * insert ParameterNameType(coded_outcome, CodeableConcept, coded outcome, coded_outcome) 

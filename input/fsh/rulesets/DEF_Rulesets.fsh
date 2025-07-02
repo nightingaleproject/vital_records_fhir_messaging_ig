@@ -53,7 +53,7 @@ RuleSet: BaseMessageParameters
 * insert ParameterSlicing
 * parameter contains
     jurisdiction_id 0..1 and
-    cert_no 0..1 and   // cert_no / FILENO
+    cert_no 1..1 and   // cert_no / FILENO
     death_year 0..1 and   // death_year / DOD_YR -- for compabilitility with v1.0.1
     event_year 0..1 and   // DOD_YR, DOB_YR, FDOD_YR -- preferred
     state_auxiliary_id  0..1  and  // state_auxiliary_id / AUXNO
@@ -128,9 +128,9 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains
-    {jurisdiction} 1..1 and
-    {year} 1..1 and 
-    index 1..1 and
+    {jurisdiction} 0..1 and
+    {year} 0..1 and 
+    index 0..1 and
     cert_available 1..1 
 * component[{jurisdiction}] ^short = "Record Jurisdiction"
 * component[{jurisdiction}].code 1..1
@@ -140,7 +140,7 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
 * component[{jurisdiction}].valueString from ValueSetJurisdictionVitalRecords (required)
 * component[{year}] ^short = "Year of {type}"
 * component[{year}].code = {code} // "Date of Death/Birth"
-* component[{year}].value[x] 0..1
+* component[{year}].value[x] 1..1
 * component[{year}].value[x] only dateTime
 * component[{year}].value[x] ^comment = "The record year is expressed using the YYYY portion of date."
 * component[index].value[x] 1..1
@@ -160,7 +160,7 @@ RuleSet: BundleIdentifiers
 * identifier 1..1
 * identifier.system = $IJE 
 * identifier.extension contains
-    CertificateNumber named certificateNumber 0..1 and
+    CertificateNumber named certificateNumber 1..1 and
     AuxiliaryStateIdentifier1 named auxiliaryStateIdentifier1 0..1 and
     AuxiliaryStateIdentifier2 named auxiliaryStateIdentifier2 0..1
 * identifier.extension[auxiliaryStateIdentifier1] ^short = "Auxiliary State Identifier 1.  12 characters."
