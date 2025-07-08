@@ -12,4 +12,5 @@ Description: "Status Codes Values"
 has been canceled for the original record."
 * #manualCodingCanceled_Void "Manual Coding Canceled - Void" "A void request has been received for a death record that is queued for manual coding.  The manual coding
 has been canceled for the original record."
+* #nonCodeable "Non Codeable" "The fetal death record does not meet the criteria for fetal cause of death coding."
 * ^experimental = false
