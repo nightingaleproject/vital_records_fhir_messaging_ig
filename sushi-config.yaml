@@ -7,7 +7,7 @@ canonical: http://cdc.gov/nchs/nvss/fhir/vital-records-messaging
 name: VitalRecordsFHIRMessagingIG
 title: Vital Records FHIR Messaging (VRFM) IG
 status: draft
-version: 2.0.0-Preview5
+version: 3.0.0-Preview1
 copyrightYear: 2022+
 releaseLabel: ci-build
 publisher:
@@ -19,6 +19,7 @@ dependencies:
   hl7.fhir.us.core: 5.0.1
   #hl7.fhir.us.vrdr: current
   hl7.fhir.us.vr-common-library: current   # Jurisdiction valueset
+  hl7.fhir.us.vrdr: current   # Pregnancy Status ValueSet
   #hl7.fhir.us.bfdr: current
  
 parameters:
@@ -43,27 +44,36 @@ pages:
     title: Appendices
   june2022testingeventexamples.md:
     title: June 2022 Testing Event Examples
-  business_rules.md:
+  business_rules_death.md:
     title: Business Rules for Death Record Submissions
   business_rules_birth.md:
     title: Business Rules for Birth Record Submissions
-  VRDRSTU22Errata.md:
+  business_rules_maternal_linkage.md:
+    title: Business Rules for Maternal Linkages
+  ImplementationNotes.md:
     title: NCHS FHIR Implementation Notes 
+  maternallinkage.md:
+    title: Maternal Linkage Records for Mortality
+
 menu:
   Home: index.html
   Messages:
     Message Exchange Patterns: message.html#message-exchange-patterns
     Message Structure and Content: message.html#message-structure-and-content
-    Business Rules - Death: business_rules.html 
+    Business Rules - Death: business_rules_death.html 
+    Business Rules - Maternal Linkages: business_rules_maternal_linkage.html
     Business Rules - Birth: business_rules_birth.html 
-    NCHS FHIR Implementation Notes: VRDRSTU22Errata.html
+    NCHS FHIR Implementation Notes: ImplementationNotes.html
   Appendices: appendix.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
+    Maternal Linkage: maternallinkage.html
     June 2022 Testing Event Examples: june2022testingeventexamples.html
     Other Downloads: downloads.html
   History:
     Change Log: change_log.html
+
+    
 groups:
   Messages:
     name: Message Profiles
@@ -121,3 +131,22 @@ groups:
     description: Codesystems
     resources:
     - CodeSystem/VRM-MessageHeaderURI-cs
+  MaternalLinkages:
+    name: Maternal Record Linkage Components 
+    description: Maternal Record Linkages 
+    resources:
+    - FetalDeathRecordIdentifier
+    - BirthRecordIdentifierChild
+    - RecentPregnancyParameters
+    - MaternalLinkageContentBundle
+    - CodedPregnancyStatusCS
+    - CertAvailableVS
+    - PregnancyOutcomesVS
+
+  MaternalLinkageMessages:
+    name: Maternal Record Linkage Messages 
+    description: Maternal Record Linkage Messages 
+    resources:
+    - MaternalLinkageRequestMessage
+    - MaternalLinkageSubmissionMessage
+    - MaternalLinkageUpdateMessage

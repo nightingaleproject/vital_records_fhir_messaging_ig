@@ -1,5 +1,5 @@
 
-The Status Message’s MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message for which status is being provided.  When processing acknowledgements this identifier must be used to associate the acknowledgement with the message for which status is being provided.
+The StatusHeader's MessageHeader.response.identifier must equal the value of the MessageHeader.id property of the message for which status is being provided.  When processing acknowledgements this identifier must be used to associate the acknowledgement with the message for which status is being provided.
 
 
 The MessageHeader.eventURI should be set as follows:

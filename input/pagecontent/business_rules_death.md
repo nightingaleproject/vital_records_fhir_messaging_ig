@@ -302,7 +302,7 @@ The following combinations of field values will also result in an error being re
 <td>No</td>
 <td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
 <td>AUTOPF</td>
-<td><strong>Not</strong>&#39;Not Applicable&#39;</td>
+<td><strong>Not</strong> &#39;Not Applicable&#39;</td>
 </tr>
 <tr>
 <td>Date of Injury</td>

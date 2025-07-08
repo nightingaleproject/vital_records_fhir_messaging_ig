@@ -1,27 +1,3 @@
-
-CodeSystem: StatusCS
-Id: VRM-Status-cs
-Title: "Status Codes Values"
-Description: "Status Codes Values"
-* ^caseSensitive = true
-* #manualCauseOfDeathCoding "Manual Cause of Death Coding" "The death record has been sent for manual cause of death coding."
-* #manualDemographicCoding "Manual Demographic  Coding" "The death record has been sent for manual demographic (race/ethnicity) coding."
-// * #terminatedCauseOfDeathCoding "Terminated Cause of Death Coding" "Cause of death coding for this submission has been terminated"
-// * #terminatedDemographicCoding "Terminated Demographic  Coding" "Demographic (race/ethnicity) coding for this submission has been terminated."
-* #noCodingNeeded_Duplicate "No Coding Needed - Duplicate" "The death record is a duplicate of a previously submitted record, no coding will be performed."
-* #manualCodingCanceled_Update "Manual Coding Canceled - Update" "An update has been submitted for a death record that is queued for manual coding.  The manual coding
-has been canceled for the original record."
-* #manualCodingCanceled_Void "Manual Coding Canceled - Void" "A void request has been received for a death record that is queued for manual coding.  The manual coding
-has been canceled for the original record."
-* ^experimental = false
-
-ValueSet: StatusVS
-Id: VRM-Status-vs
-Title: "Status Codes Values"
-Description: "Status Codes Values"
-* codes from system StatusCS
-* ^experimental = false
-
 CodeSystem: MessageHeaderURICS
 Id: VRM-MessageHeaderURI-cs
 Title: "MessageHeader URI Values"
@@ -62,22 +38,7 @@ Description: "MessageHeader URI Values"
 * #http://nchs.cdc.gov/vrdr_status "VRDR Status" "Indicates that this is a status for a previously submitted death report"
 * #http://nchs.cdc.gov/fd_status "Fetal Death Status" "Indicates that this is a status for a previously submitted Fetal Death Record"
 * #http://nchs.cdc.gov/birth_status "Birth Status" "Indicates that this is a status for a previously submitted birth report"
-* ^experimental = false
-
-
-CodeSystem: PayloadVersionCS
-Id: Payload-version-cs
-Title: "Payload Version Identifier Values"
-Description: "Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed."
-* ^caseSensitive = true
-* #VRDR_STU3_0 "VRDRSTU3.0" "VRDR STU3.0"
-* #VRDR_STU2_2 "VRDRSTU2.2" "VRDR STU2.2"
-* #BFDR_STU2_0 "BFDRSTU2.0" "BFDR STU2.0"
-* ^experimental = false
-
-ValueSet: PayloadVersionVS
-Id: Payload-version-vs
-Title: "Payload Version Identifier Values"
-Description: "Payload Version Identifier Values"
-* codes from system PayloadVersionCS
+* #http://nchs.cdc.gov/maternal_linkage_request "Maternal Linkage Request" "NCHS requests that a jurisdiction submit maternal linkage data"
+* #http://nchs.cdc.gov/maternal_linkage_submission "Maternal Linkage Submission" "Indicates that the payload is an initial submission of a maternal linkage"
+* #http://nchs.cdc.gov/maternal_linkage_update "Maternal Linkage Update" "Jurisdiction updating previously submitted maternal linkage"
 * ^experimental = false
