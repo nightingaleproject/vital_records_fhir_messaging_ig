@@ -131,11 +131,11 @@ RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode
     {jurisdiction} 0..1 and
     {year} 0..1 and 
     index 0..1 and
-    cert_available 1..1 
+    cert_available 0..1 
 * component[{jurisdiction}] ^short = "Record Jurisdiction"
 * component[{jurisdiction}].code 1..1
 * component[{jurisdiction}].code = {jurisdictionCode}  // "Jurisdiction Code"
-* component[{jurisdiction}].value[x] 0..1
+* component[{jurisdiction}].value[x] 1..1
 * component[{jurisdiction}].value[x] only string
 * component[{jurisdiction}].valueString from ValueSetJurisdictionVitalRecords (required)
 * component[{year}] ^short = "Year of {type}"
@@ -160,7 +160,7 @@ RuleSet: BundleIdentifiers
 * identifier 1..1
 * identifier.system = $IJE 
 * identifier.extension contains
-    CertificateNumber named certificateNumber 1..1 and
+    CertificateNumber named certificateNumber 0..1 and
     AuxiliaryStateIdentifier1 named auxiliaryStateIdentifier1 0..1 and
     AuxiliaryStateIdentifier2 named auxiliaryStateIdentifier2 0..1
 * identifier.extension[auxiliaryStateIdentifier1] ^short = "Auxiliary State Identifier 1.  12 characters."

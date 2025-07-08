@@ -10,9 +10,10 @@ Title:  "Recent Pregnancy Parameters"
     coded_outcome 0..1 and   
     birth_plurality 0..1 and 
     fetal_death_plurality 0..1 and
-    preg_status_is_correct 1..1 and
+    preg_status_is_correct 0..1 and
     corrected_pregnancy_status 0..1    // only if needed
 * insert ParameterNameType(notes, string, Notes, Notes) 
+* parameter[notes].valueString ^maxLength = 100
 * insert ParameterNameType(coded_outcome, CodeableConcept, coded outcome, coded_outcome) 
 * parameter[coded_outcome].value[x] from PregnancyOutcomesVS (extensible)
 * insert ParameterNameType(preg_status_is_correct, boolean, Pregnancy Status on Death Record is Correct, Pregnancy Status on Death Record is Correct) 
