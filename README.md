@@ -14,7 +14,7 @@ The [Vital Records Death Reporting (VRDR)](https://hl7.org/fhir/us/vrdr/) and [B
 This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found [here](https://github.com/nightingaleproject/vital_records_fhir_messaging).  All maintenance of content since November 2021 is taking place in this document only.
 
 ## Browsing the FHIR Implementation Guide
-The built version 2.0.0 of this implementation guide [here](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/).  The source for this Implementation Guide is found on [github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig).
+The built version 3.0.0 of this implementation guide [here](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/).  The source for this Implementation Guide is found on [github](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig).
 
 Questions or comments regarding this document should be directed to the ["Death on FHIR" zulip stream](https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR)[^1]. This document will continue to evolve in response to community feedback as well as changes to the VRDR IG, BFDR IG, or business requirements.
 
@@ -37,15 +37,15 @@ To generate the full Implementation Guide content, use the IG Publisher to gener
 
 This IG is published via [Github pages](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/).  The process steps to publish a new version of the IG are:
 
-- Create a new branch of the repo
-- Edit on the branch to create the new content
-- Build the IG using sushi and the IG publisher and correct all errors and serious warnings.  This produces content in the output folder.
-- Make a copy of all content from the output folder exclusive of zip, tgz, and other large files.
-- checkout the gh-pages branch of the repo
-- copy the generated IG content to the docs/\<version number\> directory.  So, for version v3.1.4, the content would live in docs/v3.1.4.
-- edit the docs/index.html so that the published versions you want displayed are included, and those you don't want displayed are removed
-- commit and push the changes to github 
-
+- Create a new branch in the repository.
+- Make the necessary edits on the branch to create the new content for the IG.
+- Use SUSHI and the IG Publisher to build the IG. Resolve all errors, warnings, and informational messages. Run SUSHI and the IG Publisher again to ensure the IG is error-free.
+- Copy all content from the output folder, excluding the .zip and .tgz files.
+- Navigate to the gh-pages branch of the repository.
+- Within the docs directory, create a new folder named after the version you want to publish (e.g., if you’d like to publish version 3.0.0, name the directory “v3.0.0”). 
+- Paste the copied content from the output folder into the newly created docs/<version number> directory.
+- Open the docs/index.html file and update it to include the new version you want displayed. Remove references to versions you no longer want displayed. The docs/index.html file drives the content for this page.
+- Commit and push your changes to GitHub.
 
 ## License
 

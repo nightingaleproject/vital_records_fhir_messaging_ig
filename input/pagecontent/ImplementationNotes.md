@@ -33,7 +33,7 @@ The following table summarizes the history of the IGs, correspondance to other r
 | [VRDR STU2.2.0](https://hl7.org/fhir/us/vrdr/STU2.2/) | [VRFM STU1.0.1](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html) | VRDR-dotnet 4.x.x | Implemented and used in production. |
 | [VRDR STU3.0.0](https://hl7.org/fhir/us/vrdr/STU3/) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | VRDR-dotnet 5.x.x | Not implemented for testing or production yet. |
 | [BFDR STU2.0.0](https://hl7.org/fhir/us/bfdr/STU2/index.html) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | BFDR-dotnet 1.x.x | Testing events have begun.  |
-| [VRCL STU2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/index.html) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | VR-dotnet 1.x.x | Used to support VRDR STU3.0.0 and BFDR SYU2.0.0. |
+| [VRCL STU2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/index.html) | [VRFM STU2.0.0](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/) | VR-dotnet 1.x.x | Used to support VRDR STU3.0.0 and BFDR STU2.0.0. |
 {: .grid }
 
 
