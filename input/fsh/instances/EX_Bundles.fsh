@@ -72,3 +72,28 @@ Description: "MaternalLinkageContentBundle-Fetal Death with Cert Pending"
 * identifier.value = "placeholder"
 * insert addentry(Parameter,ParametersLinkage-FetalDeathWithCertPending)
 * insert addentry(Observation, FetalDeathRecordIdentifierNoCert-Example4)
+
+Instance: MaternalLinkageBundle-Extensive-PluralBirthAndFetalDeathWithCert
+InstanceOf: MaternalLinkageContentBundle
+Usage: #example
+Description: "MaternalLinkageContentBundle-Plural Birth and Fetal Death with and without Certificates-extensive example"
+* identifier.value = "2020NY000182"
+* identifier.extension[certificateNumber].valueString = "000182"
+* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
+* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
+* insert addentry(Parameter, ParametersLinkage-Extensive-PluralBirthAndFetalDeath)
+* insert addentry(Observation, BirthRecordIdentifierChild-ExtensiveExample1)
+* insert addentry(Observation, BirthRecordIdentifierChild-ExtensiveExample2)
+* insert addentry(Observation, FetalDeathRecordIdentifier-ExtensiveExample1)
+* insert addentry(Observation, FetalDeathRecordIdentifier-ExtesnvieExample2)
+
+
+
+
+
+
+
+
+
+
+

@@ -154,3 +154,14 @@ Description: "RecentPregnancyParameters - FetalDeathWithCertificatePending"
 * parameter[birth_plurality].valueInteger = 0
 * parameter[fetal_death_plurality].valueInteger = 1
 * parameter[preg_status_is_correct].valueBoolean = true 
+
+Instance: ParametersLinkage-Extensive-PluralBirthAndFetalDeath
+InstanceOf: RecentPregnancyParameters
+Usage: #example
+Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert - extensive example"
+* parameter[notes].valueString = "Example of notes"
+* parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#live-birth-and-fetal-death "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" 
+* parameter[birth_plurality].valueInteger = 2
+* parameter[fetal_death_plurality].valueInteger = 2
+* parameter[preg_status_is_correct].valueBoolean = false 
+* parameter[corrected_pregnancy_status].valueCodeableConcept = DeathPregnancyStatusCS#4 "Not pregnant, but pregnant 43 days to 1 year before death"
