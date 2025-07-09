@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Vital Records FHIR Messaging (VRFM) IG v2.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://cdc.gov"><img width="150px" alt="CDC logo" src="cdc.svg"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span>Vital Records FHIR Messaging (VRFM) IG</span>
+            <br/>
+            2.0.0 - release
+            <span>
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Messages
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="message.html#message-exchange-patterns">Message Exchange Patterns</a>
+      </li>
+      <li>
+        <a href="message.html#message-structure-and-content">Message Structure and Content</a>
+      </li>
+      <li>
+        <a href="business_rules_death.html">Business Rules - Death</a>
+      </li>
+      <li>
+        <a href="business_rules_birth.html">Business Rules - Birth</a>
+      </li>
+      <li>
+        <a href="ImplementationNotes.html">NCHS FHIR Implementation Notes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="appendix.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All FHIR Artifacts</a>
+      </li>
+      <li>
+        <a href="june2022testingeventexamples.html">June 2022 Testing Event Examples</a>
+      </li>
+      <li>
+        <a href="downloads.html">Other Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">History
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ImplementationGuide/vital-records-fhir-messaging|2.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-07-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">VitalRecordsFHIRMessagingIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#requirements" id="markdown-toc-requirements">Requirements</a></li>
+  <li><a href="#fhir-messaging" id="markdown-toc-fhir-messaging">FHIR Messaging</a></li>
+  <li><a href="#high-level-architecture-of-a-fhir-messaging-based-nvss" id="markdown-toc-high-level-architecture-of-a-fhir-messaging-based-nvss">High Level Architecture of a FHIR Messaging Based NVSS</a></li>
+  <li><a href="#changes-since-the-initial-pdf-version-of-this-guide" id="markdown-toc-changes-since-the-initial-pdf-version-of-this-guide">Changes Since the Initial (PDF) Version of This Guide</a></li>
+  <li><a href="#cdc-nchs-documentation" id="markdown-toc-cdc-nchs-documentation">CDC NCHS Documentation</a></li>
+  <li><a href="#understanding-this-guide" id="markdown-toc-understanding-this-guide">Understanding this Guide</a></li>
+  <li><a href="#contributions" id="markdown-toc-contributions">Contributions</a></li>
+  <li><a href="#credits" id="markdown-toc-credits">Credits</a></li>
+  <li><a href="#contact-information" id="markdown-toc-contact-information">Contact Information</a></li>
+</ul>
+
+</div>
+<style>
+
+  .note-to-readers::before {
+  white-space: pre;
+  content: "Note to Readers\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  }
+
+  .note-to-readers {
+      margin: 5px;
+      padding: 10px;
+      border-left-style: solid;
+      background-color: #fff2ff;
+      border-left-color: #ffa0ff;
+  }
+
+</style>
+
+<h3 id="background">Background</h3>
+
+<p>Vital records jurisdictions submit information on deaths and births in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.</p>
+
+<p>The <a href="https://hl7.org/fhir/us/vrdr/">Vital Records Death Reporting (VRDR)</a> and <a href="https://hl7.org/fhir/us/bfdr/">Birth and Fetal Death (BFDR)</a> specify how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. They do not specify how such data is exchanged nor how the coding information is represented and returned to the submitter.</p>
+
+<p><a href="https://hl7.org/fhir/messaging.html">FHIR Messaging</a> defines how to use FHIR in a message exchange scenario. This document describes the use of FHIR Messaging for:</p>
+
+<ol>
+  <li>Submission of vital records documents (birth, death, and fetal death) from vital records jurisdictions to NCHS, and</li>
+  <li>Return of coded content (e.g., causes of death, race and ethnicity, industry and occupation) information from NCHS to vital records jurisdictions.</li>
+</ol>
+
+<p>This implementation guide is agnostic about the format of the content of the messages. The NCHS established business rules for the submission of birth, death, and fetal death records can be found in this IG.</p>
+
+<p>This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging">here</a>.  All maintenance of content since November 2021 is taking place in this document only and is managed via <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">GitHub</a>.</p>
+
+<p>This document will evolve in response to community feedback as well as changes to the VRDR and BFDR IGs or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in VRCL, BFDR and VRDR.</p>
+
+<h3 id="requirements">Requirements</h3>
+
+<h4 id="asynchrony">Asynchrony</h4>
+
+<p>While the majority of submissions can be coded automatically, some will require nosologist intervention for manual coding. This will require asynchrony between submission and the return of coding information.</p>
+
+<h4 id="death-and-birth-report-submission">Death and Birth Report Submission</h4>
+
+<p>Vital records jurisdictions need a mechanism to submit VRDR Death Certificate Documents and BFDR Birth Certificate Documents to NCHS. Vital records jurisdictions should not be required to wait for a death report or birth report submission to be acknowledged or coded before submitting additional reports, as there may be many outstanding report submissions at any time.</p>
+
+<p>Vital records jurisdictions need a mechanism to update VRDR Death Certificate Documents and BFDR Birth Certificate Doucments previously submitted to NCHS. This should not rely on patient matching algorithms, but instead use embedded identifiers for record correlation.</p>
+
+<p>Vital records jurisdictions need a mechanism to void a single or a block of certificates. Voiding may target previously submitted documents or may be used to inform NCHS that a specific set of certificate numbers will not be used in the future.</p>
+
+<h4 id="coding-response">Coding Response</h4>
+
+<p>NCHS needs a mechanism to send coded causes of death, as well as coded race and ethnicity information to vital records jurisdictions in response to receipt of a VRDR Death Certificate Document or BFDR Birth Certificate Document. NCHS also needs a mechanism to update previously-sent coding information. Causes of death codings may be sent separately from race and ethnicity codings. Updates to either may also be sent separately.</p>
+
+<p>For a death record submission, the underlying cause of death along with contributing causes of death are coded along two axes: record and entity. Each [Cause Of Death Condition] resource in the submitted [VRDR Death Certificate Document] may result in multiple codes as described in the <a href="https://www.cdc.gov/nchs/data/dvs/2003trx.pdf">current TRANSAX format</a>.</p>
+
+<p>The race and ethnicity information in the submitted birth/death documents can result in multiple race and ethnicity codes in the coding response. The structure of the information returned is described in <a href="https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf">NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting</a>.</p>
+
+<h4 id="delivery-status">Delivery Status</h4>
+
+<p>Vital records jurisdictions need a mechanism to determine that submissions to NCHS, such as VRDR Death Certificate Documents, were successfully received by NCHS. NCHS needs a mechanism to determine that data returned to vital records jurisdictions, such as causes of death coding and race and ethnicity coding, were successfully received by vital records jurisdictions.</p>
+
+<h4 id="reliability">Reliability</h4>
+
+<p>NCHS and vital records jurisdictions need a mechanism to automatically recover from messages that are lost during exchange in either direction.</p>
+
+<h4 id="error-reporting">Error Reporting</h4>
+
+<p>NCHS needs a mechanism to report errors to vital records jurisdictions in response to receipt of VRDR Death Certificate Documents and BFDR Birth Certificate Documents that could not be processed. Vital records jurisdictions need a mechanism to report errors to NCHS in response to coded causes of death, race, and ethnicity that could not be processed.</p>
+
+<h3 id="fhir-messaging">FHIR Messaging</h3>
+
+<p>As described earlier, the <a href="https://hl7.org/fhir/us/vrdr/">Vital Records Death Reporting (VRDR)</a> and <a href="https://hl7.org/fhir/us/bfdr/">Birth and Fetal Death (BFDR)</a> specify how to represent the information sent from vital records jurisdictions to NCHS using FHIR documents. The specific versions used in production and testing are described in the
+<a href="ImplementationNotes.html">Implementation Notes</a> page. However, it does not specify the mechanism that is used to exchange those FHIR documents, nor how the coded response is represented and returned to the submitter. This document describes the use of FHIR Messaging to accomplish this essential function. <a href="https://hl7.org/fhir/messaging.html">FHIR Messaging</a> defines:</p>
+
+<ol>
+  <li>A standard <a href="https://hl7.org/fhir/messageheader.html">MessageHeader</a> resource that captures common message metadata including
+    <ul>
+      <li>An id that is useful for correlating requests and replies.</li>
+      <li>Source and sender information that is useful for addressing replies.</li>
+      <li>Destination information that is useful for routing. This can be used to route messages to NCHS and/or jurisdiction exchange via STEVE.</li>
+      <li>Event information that is useful for capturing the reason that a message was created.</li>
+      <li>Information about the subject or topic of the message that is useful for providing context.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Patterns for synchronous and asynchronous exchange of messages.</p>
+  </li>
+  <li>
+    <p>A standard FHIR process message operation and an alternate pattern for exchange of messages using the FHIR REST API for messaging.</p>
+  </li>
+  <li>A pattern for reliable message exchange over unreliable channels.</li>
+</ol>
+
+<p>The remainder of this document describes how these capabilities can be applied to submission of death records and birth records to NCHS and the return of coded cause of death, race and ethnicity information to vital records jurisdictions.</p>
+
+<h3 id="high-level-architecture-of-a-fhir-messaging-based-nvss">High Level Architecture of a FHIR Messaging Based NVSS</h3>
+
+<!-- ![High level architecture](images/LayeredArchitecture.png){ width=80% } -->
+<figure style="align:middle">
+    <img alt="High level architecture" style="width:75%;height:auto;float:none;align:middle;" src="LayeredArchitecture.png" />
+    <figcaption style="bold">Figure 1: High level architecture</figcaption>
+</figure>
+<p> </p>
+
+<p>Figure 1 illustrates the high-level components of a FHIR messaging based NVSS, using death record submission as an example.</p>
+
+<ul>
+  <li>
+    <p><strong>Death Registration System</strong>: Jurisdiction systems that process death records</p>
+  </li>
+  <li>
+    <p><strong>FHIR Adaptor</strong>: Functionality to convert between native data formats and FHIR representations of that data</p>
+  </li>
+  <li><strong>FHIR Messaging Infrastructure</strong>: Functionality to:
+    <ul>
+      <li>Package payloads in FHIR messages</li>
+      <li>Send and receive FHIR messages</li>
+      <li>Extract payloads from FHIR messages</li>
+      <li>Acknowledge receipt of FHIR messages</li>
+      <li>Report errors if FHIR messages are malformed</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>NVSS</strong>: NCHS systems for processing and coding death reports</p>
+  </li>
+  <li>
+    <p><strong>FHIR VRDR</strong>: A FHIR document formatted according to the <a href="https://hl7.org/fhir/us/vrdr/index.html">Vital Record Death Reporting (VRDR) FHIR IG</a></p>
+  </li>
+  <li><strong>FHIR Coding or Error</strong>: A FHIR representation of either:
+    <ul>
+      <li>Causes of death coding, races and ethnicities coding, or both</li>
+      <li>An error that occurred when processing a FHIR message or its contents</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The flow of information is illustrated using numbered steps as follows:</p>
+
+<ol>
+  <li>
+    <p>A jurisdiction death registration system generates a death report that is mapped to a FHIR VRDR document by a FHIR adaptor and submitted to the FHIR messaging infrastructure for delivery to NCHS.</p>
+  </li>
+  <li>
+    <p>The FHIR messaging infrastructure wraps the VRDR document in a FHIR message and sends it to the NCHS FHIR messaging infrastructure.</p>
+  </li>
+  <li>The NCHS FHIR messaging infrastructure validates the syntax of the received FHIR message and extracts the VRDR document. The NCHS FHIR messaging infrastructure does one of:
+    <ul>
+      <li>Acknowledges the message in the case that the VRDR document could be extracted successfully, or</li>
+      <li>Reports an error in the case that the VRDR document could not be extracted successfully.</li>
+    </ul>
+  </li>
+  <li>
+    <p>The NCHS FHIR messaging infrastructure submits the VRDR document to NVSS for processing. The NVSS FHIR adaptor converts the VRDR document into the desired internal format for processing.</p>
+  </li>
+  <li>NVSS analyzes the death report:
+    <ul>
+      <li>If the death report can be processed, NVSS will generate two coding responses: one for the cause of death and one for the decedent race and ethnicity. ^[Cause of death coding occurs separate from the race and ethnicity coding. The coding responses are delivered separately.]</li>
+      <li>If the death report cannot be processed, NVSS generates an error report response.</li>
+      <li>In either case the NVSS FHIR adaptor maps the response to FHIR and submits it to the NCHS FHIR messaging infrastructure for delivery.</li>
+    </ul>
+  </li>
+  <li>
+    <p>The NCHS FHIR messaging infrastructure wraps the response in a FHIR message and sends it to the jurisdiction FHIR messaging infrastructure.</p>
+  </li>
+  <li>
+    <p>The jurisdiction FHIR messaging infrastructure acknowledges the coded response or error report</p>
+  </li>
+  <li>The jurisdiction FHIR messaging infrastructure unwraps the content of the message and submits it to the jurisdiction death registration system whose FHIR adaptor converts it into the required internal format for processing.</li>
+</ol>
+
+<p>The above sequence describes the general process for exchange of information between vital records jurisdictions and NCHS.</p>
+
+<p>Note that the FHIR messaging infrastructure is logically separated from both NVSS and jurisdiction death registration systems and it is this system that provides reliable delivery of death/birth reports and coded responses (or errors) between jurisdictions and NVSS. The mechanics of reliable delivery (acknowledgements and retransmissions) are largely hidden from NVSS and jurisdiction death/birth registration systems.</p>
+
+<h3 id="changes-since-the-initial-pdf-version-of-this-guide">Changes Since the Initial (PDF) Version of This Guide</h3>
+
+<ol>
+  <li>Coding and Coding Update messages have been split into Demographics (Race and Ethnicity) coding messages and Cause of Death messages.</li>
+  <li>All fields that are sent to jurisdictions as MRE or TRX messages are now sent as part of coding messages.   These include some fields that are sent from EDRS to NCHS (so-called 'regurgigated fields').</li>
+  <li>Field names that are named and documented as part of the IJE, MRE, and/or TRX documentation have the same names and encodings in this guide. Please refer to the below-referenced documentation.</li>
+</ol>
+
+<h3 id="cdc-nchs-documentation">CDC NCHS Documentation</h3>
+<ul>
+  <li><a href="https://r20.rs6.net/tn.jsp?f=001u-eBMBj0UGlhPdHxUU_w_MafJMX_8rYmjFZga3pBUoUhwcUSSzMK5lw-ncpe9c1_OCJdI66kcNI-ILEyJKT9ILqF6v3RMIxQHe-k9-IYCzq96MQmC3sO0FgIOhAgnvf_zF7l6N4k8lCQjzRnFuzO-UmCFtlHJpOYd3fjY2Cw2StY-TA-wVQOw320Sj_WyhIuq2H9GPAtpsuuBkomxjl6jizGiL_Ql0yOwjp-cUjTOTA=&amp;c=hrGtL9tmvJ1DKGpbzqPuF3KvUpFVK0qchygyr7StLU1Sluvl9ZBcLg==&amp;ch=hptEZrbFDWPJdXxXwQsrUk7F-lUko-MpszM6NS4g8yVkg29mqPQHXA==">2022 Mortality Data reference</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf">NCHS Instruction Manual part 8</a></li>
+  <li>SuperMicar documentation(<a href="https://www.cdc.gov/nchs/data/dvs/2003s10.pdf">PDF</a>, <a href="https://www.cdc.gov/nchs/data/dvs/2003_May16.xls">XLS</a>)</li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf">NCHS Procedures for Multiple-Race and Hispanic Origin Data: Collection, Coding, Editing, and Transmitting</a></li>
+</ul>
+
+<h4 id="bulk-submissions">Bulk Submissions</h4>
+
+<p>While the message exchange patterns included in this document focus on individual message exchanges, it would be possible to batch messages together to reduce the number of transfers. E.g. a single transfer from a vital records jurisdiction to NCHS could batch together a set of death record submissions, and acknowledgements for previously received coding response messages. On receipt, NVSS could process each individual message in the batch and create a new batch to  return to the jurisdiction.</p>
+
+<h3 id="understanding-this-guide">Understanding this Guide</h3>
+
+<p>The Vital Records FHIR Messaging Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained <a href="https://www.hl7.org/fhir/formats.html">in the FHIR documentation</a>. In viewing a profile page, note that there are multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide. The "Snapshot Table" represents the entire profile, with all elements.</p>
+
+<p>In the event there are differences between the page renderings in this IG and the associated FHIR artifacts, the FHIR artifacts should be taken as the source of truth. In the unlikely event that an artifact's snapshot is inconsistent with its differential, the differential should be taken as the source of truth.</p>
+
+<h3 id="contributions">Contributions</h3>
+
+<p>Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> and all narrative content in markdown (specifically, <a href="https://kramdown.gettalong.org/">Kramdown</a>). We suggest using the <a href="https://code.visualstudio.com/">Visual Studio Code editor</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>. For more information on how to get started with IG development, visit the <a href="https://fshschool.org/">FSH School</a>.</p>
+
+<h3 id="credits">Credits</h3>
+
+<p>This IG is based on the <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging/releases/download/v3.1.0/fhir_messaging_for_nvss.pdf">FHIR Messaging for NVSS</a> authored by Marc Hadley (MITRE). The data element descriptions in that document have now been captured as a FHIR specification in this guide, which incorporates all of the content from the original guide. Both the original document and this Implementation Guide were developed by the MITRE corporation under contract to the Division of Vital Statistics, National Center for Health Statistics, of the Centers for Disease Control.</p>
+
+<p>This IG was authored by the MITRE Corporation using <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a> and <a href="https://fshschool.org">SUSHI</a>, a free, open source toolchain from <a href="https://www.mitre.org/">MITRE Corporation</a>.</p>
+
+<h3 id="contact-information">Contact Information</h3>
+
+<p>Questions or comments about this IG can be directed to <a href="https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR">"Death on FHIR" zulip stream</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> or the <a href="https://chat.fhir.org/#narrow/channel/253316-Vital-Records-Birth-.26-Fetal-Death">"Birth and Fetal Death on FHIR" zulip stream</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 9, 2025 11:58-0400">2025-07-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+<br><br><strong>Internal use only.</strong>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

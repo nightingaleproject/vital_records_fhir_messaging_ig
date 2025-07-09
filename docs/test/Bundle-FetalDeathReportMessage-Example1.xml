@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="FetalDeathReportMessage-Example1"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportMessage"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2021-05-20T00:00:00Z"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Header/FetalDeathReportHeader-Example1"/>
+    <resource>
+      <MessageHeader>
+        <id value="FetalDeathReportHeader-Example1"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MessageHeader_FetalDeathReportHeader-Example1"> </a><p class="res-header-id"><b>Generated Narrative: MessageHeader FetalDeathReportHeader-Example1</b></p><a name="FetalDeathReportHeader-Example1"> </a><a name="hcFetalDeathReportHeader-Example1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-SubmissionHeader.html">Submission Message Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/fd_submission">http://nchs.cdc.gov/fd_submission</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://nchs.cdc.gov/vitalrecords">https://nchs.cdc.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Bundle/DummyBundle">Bundle: type = message; timestamp = 2022-08-20 00:00:00+0000</a></li><li><a href="Bundle-CodedCauseOfFetalDeathMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersFD-Example2">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li></ul></div>
+        </text>
+        <eventUri value="http://nchs.cdc.gov/fd_submission"/>
+        <destination>
+          <endpoint value="https://nchs.cdc.gov/vitalrecords"/>
+        </destination>
+        <source>
+          <endpoint value="https://sos.ny.gov/vitalrecords"/>
+        </source>
+        <focus>
+          <reference value="http://www.example.org/fhir/Bundle/DummyBundle"/>
+        </focus>
+        <focus>
+          <reference value="http://www.example.org/fhir/Parameters/ParametersFD-Example2"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Parameters/ParametersFD-Example2"/>
+    <resource>
+      <Parameters>
+        <id value="ParametersFD-Example2"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+        </meta>
+        <parameter>
+          <name value="cert_no"/>
+          <valueUnsignedInt value="112233"/>
+        </parameter>
+        <parameter>
+          <name value="jurisdiction_id"/>
+          <valueString value="NY"/>
+        </parameter>
+        <parameter>
+          <name value="event_year"/>
+          <valueUnsignedInt value="2021"/>
+        </parameter>
+        <parameter>
+          <name value="state_auxiliary_id"/>
+          <valueString value="abcdef10"/>
+        </parameter>
+        <parameter>
+          <name value="payload_version_id"/>
+          <valueString value="BFDRSTU1.1"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Bundle/DummyBundle"/>
+    <resource>
+      <Bundle>
+        <id value="DummyBundle"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"/>
+        </meta>
+        <type value="collection"/>
+        <entry>
+          <fullUrl value="http://www.example.org/fhir/Parameters/ParametersBirth-Example1"/>
+          <resource>
+            <Parameters>
+              <id value="ParametersBirth-Example1"/>
+              <meta>
+                <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+              </meta>
+              <parameter>
+                <name value="cert_no"/>
+                <valueUnsignedInt value="111111"/>
+              </parameter>
+              <parameter>
+                <name value="jurisdiction_id"/>
+                <valueString value="NY"/>
+              </parameter>
+              <parameter>
+                <name value="event_year"/>
+                <valueUnsignedInt value="2022"/>
+              </parameter>
+              <parameter>
+                <name value="state_auxiliary_id"/>
+                <valueString value="abcdef10"/>
+              </parameter>
+              <parameter>
+                <name value="payload_version_id"/>
+                <valueString value="BFDRSTU2.0"/>
+              </parameter>
+            </Parameters>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>
