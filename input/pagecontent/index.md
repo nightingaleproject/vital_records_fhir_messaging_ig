@@ -18,18 +18,6 @@
 
 </style>
 
-<div class="note-to-readers" markdown="1">
-
-#### CI Build for Future v3.0.0 Version of VRFM
-
-The version of VRFM in production use by NCHS and Jurisdictional Vital Records Offices for exchange of death records is [VRFM 1.0.1](https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html).
-
-This preview of v3.0.0 of VRFM adds support for exchange of birth and fetal death records, coded industry and occupation messages, maternal linkage, and enhanced acknowledgements.
-
-
-See the [change log](change_log.html) for an updated list of changes.
-  
-</div><!-- note-to-balloters -->
 ### Background
 
 Vital records jurisdictions submit information on deaths and births in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.

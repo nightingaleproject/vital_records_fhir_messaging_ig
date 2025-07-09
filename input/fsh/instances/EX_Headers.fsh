@@ -287,38 +287,3 @@ Description: "Alias Message Header- Example"
 * source.endpoint = "https://sos.ny.gov/vitalrecords"
 // * focus = Reference(AliasParameters-Example1)
 * insert addReference(focus, Parameters, AliasParameters-Example1)
-
-//MaternalLinkageRequestHeaders
-
-Instance: MaternalLinkageRequestHeaderExample1
-InstanceOf: MaternalLinkageRequestHeader
-Usage: #example
-Description: "Header for Maternal Linkage Request - Example"
-* eventUri = "http://nchs.cdc.gov/maternal_linkage_request"
-* destination.endpoint = "https://sos.ny.gov/vitalrecords"
-* source.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* insert addReference(focus[0], Parameters, ParametersDeathExample1)
-
-//MaternalLinkageUpdateHeaders
-
-Instance: MaternalLinkageUpdateHeaderExample1
-InstanceOf: UpdateHeader
-Usage: #example
-Description: "Header for Maternal Linkage Update - Example"
-* eventUri = "http://nchs.cdc.gov/maternal_linkage_update"
-* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Parameters, ParametersDeathExample1)
-* insert addReference(focus[1], Bundle, MaternalLinkageBundle-Birth)
-
-//MaternalLinkageSubmissionHeader
-
-Instance: MaternalLinkageSubmissionHeaderExample1
-InstanceOf: SubmissionHeader
-Usage: #example
-Description: "Header for Maternal Linkage Submission - Example"
-* eventUri = "http://nchs.cdc.gov/maternal_linkage_submission"
-* destination.endpoint = "http://nchs.cdc.gov/vrdr_submission"
-* source.endpoint = "https://sos.ny.gov/vitalrecords"
-* insert addReference(focus[0], Parameters, ParametersDeathExample1)
-* insert addReference(focus[1], Bundle, MaternalLinkageBundle-Birth)

@@ -199,15 +199,6 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 | [DeathRecordAliasMessage] | In | [AliasHeader] | [AliasParameters] | - |
 {: .grid }
 
-#### Mortality Maternal Linkage Specific (*New*)
-
-| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRFM) |
-|------------------------------|--------|--------|------------|------|
-| [MaternalLinkageSubmissionMessage] | In | [SubmissionHeader] | [MessageParameters] | [MaternalLinkageContentBundle] |
-| [MaternalLinkageUpdateMessage] | In | [UpdateHeader] | [MessageParameters]   | [MaternalLinkageContentBundle] |
-| [MaternalLinkageRequestMessage] | Out | [MaternalLinkageRequestHeader] | [MessageParameters] |  -   |
-{: .grid }
-
 #### Birth Specific
 
 | *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |

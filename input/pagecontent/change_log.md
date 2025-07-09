@@ -1,6 +1,3 @@
-### Version 3.0.0-preview 1
-* Added support for [Maternal Linkage records for Mortality](maternallinkage.html)
-
 ### Version 2.0.0
 * Eliminated direct dependency on content (BFDR, VRDR) IGs.
 * Added support for Birth, Fetal Death, and Industry/Occupation exchange.  Support for death records should be fully backwards compatible.

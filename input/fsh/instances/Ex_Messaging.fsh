@@ -215,37 +215,6 @@ Description: "Coded Cause of Fetal Death Message Update - Example"
 * insert addentry(Parameters, ParametersFD-Example2)
 * insert addentry(Bundle, DummyBundle)
 
-//MaternalLinkageRequestMessages
-
-Instance: MaternalLinkageRequestMessage-Example1
-InstanceOf: MaternalLinkageRequestMessage
-Usage: #example
-Description: "Maternal Linkage Request Message - Example"
-* timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, MaternalLinkageRequestHeaderExample1)
-* insert addentry(Parameters, ParametersDeathExample1)
-
-//MaternalLinkageSubmissionMessage
-
-Instance: MaternalLinkageSubmissionMessage-Example1
-InstanceOf: MaternalLinkageSubmissionMessage
-Usage: #example
-Description: "Submission mesdage - Example"
-* timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, MaternalLinkageSubmissionHeaderExample1)
-* insert addentry(Parameters, ParametersDeathExample1)
-* insert addentry(Bundle, MaternalLinkageBundle-Birth)
-
-//MaternalLinkageUpdateMessage
-
-Instance: MaternalLinkageUpdateMessage-Example1
-InstanceOf: MaternalLinkageUpdateMessage
-Usage: #example
-Description: "Update mesdage - Example"
-* timestamp = "2021-05-20T00:00:00Z"
-* insert addentry(Header, MaternalLinkageUpdateHeaderExample1)
-* insert addentry(Parameters, ParametersDeathExample1)
-* insert addentry(Bundle, MaternalLinkageBundle-Birth)
 
 
 

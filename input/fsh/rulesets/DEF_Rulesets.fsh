@@ -116,43 +116,6 @@ RuleSet: ExtensionContext(path)
 * ^context[=].expression = "{path}"
 
 
-RuleSet: RecordIdentifierObservation (type, code, jurisdiction, jurisdictionCode, year )
-* value[x] 0..1
-* value[x] only string   // we considered shifting to integer and kept it as string.
-* valueString ^short = "{type} Record number.  Six digit number.  Leading zeroes are optional."
-* valueString ^maxLength = 6
-// * dataAbsentReason 0..1
-// * dataAbsentReason from DataAbsentReason (extensible)
-* component ..*
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains
-    {jurisdiction} 0..1 and
-    {year} 0..1 and 
-    index 0..1 and
-    cert_available 0..1 
-* component[{jurisdiction}] ^short = "Record Jurisdiction"
-* component[{jurisdiction}].code 1..1
-* component[{jurisdiction}].code = {jurisdictionCode}  // "Jurisdiction Code"
-* component[{jurisdiction}].value[x] 1..1
-* component[{jurisdiction}].value[x] only string
-* component[{jurisdiction}].valueString from ValueSetJurisdictionVitalRecords (required)
-* component[{year}] ^short = "Year of {type}"
-* component[{year}].code = {code} // "Date of Death/Birth"
-* component[{year}].value[x] 1..1
-* component[{year}].value[x] only dateTime
-* component[{year}].value[x] ^comment = "The record year is expressed using the YYYY portion of date."
-* component[index].value[x] 1..1
-* component[index].value[x] only integer
-* component[index].value[x] ^comment = "The index of this record among birth or fetal death certificates of the same type."
-* component[index].code = #index 
-* component[cert_available].value[x] 1..1
-* component[cert_available].value[x] only CodeableConcept 
-* component[cert_available].value[x] from CertAvailableVS (required)
-* component[cert_available].value[x] ^comment = "Code for Availability of this certificate."
-* component[cert_available].code = #availability 
-
 RuleSet: BundleIdentifiers
 * identifier.value ^short = "Record Identifier (YYYYJJNNNNNN)"
 * identifier.value ^definition = "A unique value used by the NCHS to identify a  record. The NCHS uniquely identifies  records by combining three concepts: the year of death (as a four digit number), the jurisdiction of death (as a two character jurisdiction identifier), and the  certificate number assigned by the jurisdiction (a number with up to six digits, left padded with zeros). "
