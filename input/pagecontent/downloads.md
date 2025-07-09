@@ -6,7 +6,7 @@ You can download:
 * the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
 * the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-The source code for this Implementation Guide can be found on IHE GitHub [https://github.com/HL7/codex-radiation-therapy](https://github.com/HL7/codex-radiation-therapy).
+The source code for this Implementation Guide can be found on Nightingale GitHub [https://github.com/nightingaleproject/vital_records_fhir_messaging_ig](https://github.com/nightingaleproject/vital_records_fhir_messaging_ig).
 
 #### Cross Version Analysis
 
