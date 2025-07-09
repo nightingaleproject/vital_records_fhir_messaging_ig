@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/MessageHeader/AcknowledgementHeader-Example1> a fhir:MessageHeader ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AcknowledgementHeader-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader AcknowledgementHeader-Example1</b></p><a name=\"AcknowledgementHeader-Example1\"> </a><a name=\"hcAcknowledgementHeader-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-AcknowledgementHeader.html\">Acknowledgement Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_acknowledgement\">http://nchs.cdc.gov/vrdr_acknowledgement</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_acknowledgement\">http://nchs.cdc.gov/vrdr_acknowledgement</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>SubmissionHeader-Example1</td><td>OK</td></tr></table><p><b>focus</b>: <a href=\"Bundle-AcknowledgementMessage-Example1.html#http-//www.example.org/fhir/Parameters/Parameters-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:uri ;
+     fhir:v "http://nchs.cdc.gov/vrdr_acknowledgement"^^xsd:anyURI
+  ] ; # 
+  fhir:destination ( [
+     fhir:endpoint [ fhir:v "https://sos.ny.gov/vitalrecords"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:source [
+     fhir:endpoint [ fhir:v "http://nchs.cdc.gov/vrdr_acknowledgement"^^xsd:anyURI ]
+  ] ; # 
+  fhir:response [
+     fhir:identifier [ fhir:v "SubmissionHeader-Example1" ] ;
+     fhir:code [ fhir:v "ok" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://www.example.org/fhir/Parameters/Parameters-Example1> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/Parameters-Example1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

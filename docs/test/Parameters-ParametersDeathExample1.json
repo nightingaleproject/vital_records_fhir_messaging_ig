@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ParametersDeathExample1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
+  },
+  "parameter" : [{
+    "name" : "cert_no",
+    "valueUnsignedInt" : 111111
+  },
+  {
+    "name" : "jurisdiction_id",
+    "valueString" : "NY"
+  },
+  {
+    "name" : "state_auxiliary_id",
+    "valueString" : "abcdef10"
+  }]
+}

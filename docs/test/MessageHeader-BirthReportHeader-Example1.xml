@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageHeader xmlns="http://hl7.org/fhir">
+  <id value="BirthReportHeader-Example1"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MessageHeader BirthReportHeader-Example1</b></p><a name="BirthReportHeader-Example1"> </a><a name="hcBirthReportHeader-Example1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-SubmissionHeader.html">Submission Message Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/birth_submission">http://nchs.cdc.gov/birth_submission</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://nchs.cdc.gov/vitalrecords">https://nchs.cdc.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Bundle/DummyBundle">Bundle: type = message; timestamp = 2022-08-20 00:00:00+0000</a></li><li><a href="Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersBirth-Example1">Bundle: type = message; timestamp = 2022-08-20 00:00:00+0000</a></li></ul></div>
+  </text>
+  <eventUri value="http://nchs.cdc.gov/birth_submission"/>
+  <destination>
+    <endpoint value="https://nchs.cdc.gov/vitalrecords"/>
+  </destination>
+  <source>
+    <endpoint value="https://sos.ny.gov/vitalrecords"/>
+  </source>
+  <focus>
+    <reference value="http://www.example.org/fhir/Bundle/DummyBundle"/>
+  </focus>
+  <focus>
+    <reference value="http://www.example.org/fhir/Parameters/ParametersBirth-Example1"/>
+  </focus>
+</MessageHeader>

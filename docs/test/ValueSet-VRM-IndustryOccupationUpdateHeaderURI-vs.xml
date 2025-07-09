@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VRM-IndustryOccupationUpdateHeaderURI-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VRM-IndustryOccupationUpdateHeaderURI-vs</b></p><a name="VRM-IndustryOccupationUpdateHeaderURI-vs"> </a><a name="hcVRM-IndustryOccupationUpdateHeaderURI-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-VRM-MessageHeaderURI-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update</a></td><td style="color: #cccccc">VRDR Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding_update">http://nchs.cdc.gov/fd_industryoccupation_coding_update</a></td><td style="color: #cccccc">Fetal Death Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a fetal death report</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding_update">http://nchs.cdc.gov/birth_industryoccupation_coding_update</a></td><td style="color: #cccccc">Birth  Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a birth report</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationUpdateHeaderURI-vs"/>
+  <version value="2.0.0"/>
+  <name value="IndustryOccupationUpdateURIVS"/>
+  <title value="Industry and Occupation Update MessageHeader URI Values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-09T11:57:36-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Industry and Occupation Update MessageHeader URI Values"/>
+  <compose>
+    <include>
+      <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
+      <concept>
+        <code value="http://nchs.cdc.gov/vrdr_industryoccupation_coding_update"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/fd_industryoccupation_coding_update"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/birth_industryoccupation_coding_update"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

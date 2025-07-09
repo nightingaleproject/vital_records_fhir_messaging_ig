@@ -1,0 +1,178 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VRM-MessageHeaderURI-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-MessageHeaderURI-cs</b></p><a name=\"VRM-MessageHeaderURI-cs\"> </a><a name=\"hcVRM-MessageHeaderURI-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_alias<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_alias\"> </a></td><td>VRDR Alias</td><td>Indicates that this is an alias for a previously submitted death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_acknowledgement<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_acknowledgement\"> </a></td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement of a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_acknowledgement<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_acknowledgement\"> </a></td><td>Fetal Acknowledgement</td><td>Indicates this is an  acknowledgement for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_acknowledgement<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_acknowledgement\"> </a></td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement for a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_submission<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission\"> </a></td><td>VRDR Submission</td><td>Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_submission_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update\"> </a></td><td>VRDR Update</td><td>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_submission<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission\"> </a></td><td>Birth Submission</td><td>Indicates that this is an initial submission of a BFDR birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_submission_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_update\"> </a></td><td>Birth Update</td><td>Indicates that this is an updated submission of a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_submission<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission\"> </a></td><td>Fetal Death Submission</td><td>Indicates that the payload is an initial submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_submission_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_update\"> </a></td><td>Fetal Death Update</td><td>Indicates that the payload is an updated submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_submission_void<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_void\"> </a></td><td>VRDR Void</td><td>Indicates this is  void  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_submission_void<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_void\"> </a></td><td>Fetal Death Submission Void</td><td>Indicates this is  void  of  a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_submission_void<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_void\"> </a></td><td>Birth Submission Void</td><td>Indicates that this is void of a submitted  birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_demographics_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding\"> </a></td><td>VRDR Demographics Coding</td><td>Indicates that this is an initial demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_demographics_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding_update\"> </a></td><td>VRDR Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_demographics_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding\"> </a></td><td>Birth Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_demographics_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding_update\"> </a></td><td>Bith Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_demographics_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding\"> </a></td><td>Fetal Death Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_demographics_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding_update\"> </a></td><td>Fetal Death Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_causeofdeath_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding\"> </a></td><td>VRDR Cause of Death Coding</td><td>Indicates that this is an initial cause of death coding of a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update\"> </a></td><td>VRDR Cause of Death Coding Update</td><td>Indicates that this is an updated cause of death coding</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_causeofdeath_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding\"> </a></td><td>Cause of Fetal Death Submission</td><td>Indicates that this is an initial fetal cause of death</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_causeofdeath_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding_update\"> </a></td><td>Cause of Fetal Death Update</td><td>Indicates that this is an updated fetal cause of death</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_industryoccupation_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding\"> </a></td><td>VRDR Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update\"> </a></td><td>VRDR Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_industryoccupation_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding\"> </a></td><td>Fetal Death Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_industryoccupation_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding_update\"> </a></td><td>Fetal Death Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_industryoccupation_coding<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding\"> </a></td><td>Birth Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_industryoccupation_coding_update<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding_update\"> </a></td><td>Birth  Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_extraction_error<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_extraction_error\"> </a></td><td>VRDR Extraction Error</td><td>Indicates that this is an extraction error on a death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_extraction_error<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_extraction_error\"> </a></td><td>Fetal Death Extraction Error</td><td>Indicates that this is an extraction error for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_extraction_error<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_extraction_error\"> </a></td><td>Birth Extraction Error</td><td>Indicates that this is an extraction error for a Birth report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/vrdr_status<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_status\"> </a></td><td>VRDR Status</td><td>Indicates that this is a status for a previously submitted death report</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/fd_status<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_status\"> </a></td><td>Fetal Death Status</td><td>Indicates that this is a status for a previously submitted Fetal Death Record</td></tr><tr><td style=\"white-space:nowrap\">http://nchs.cdc.gov/birth_status<a name=\"VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_status\"> </a></td><td>Birth Status</td><td>Indicates that this is a status for a previously submitted birth report</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "MessageHeaderURICS"] ; # 
+  fhir:title [ fhir:v "MessageHeader URI Values"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-09T11:57:36-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "CDC NCHS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "CDC NCHS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cdc.gov/nchs" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "MessageHeader URI Values"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "35"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_alias" ] ;
+     fhir:display [ fhir:v "VRDR Alias" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an alias for a previously submitted death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_acknowledgement" ] ;
+     fhir:display [ fhir:v "VRDR Acknowledgement" ] ;
+     fhir:definition [ fhir:v "Indicates this is  an  acknowledgement of a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_acknowledgement" ] ;
+     fhir:display [ fhir:v "Fetal Acknowledgement" ] ;
+     fhir:definition [ fhir:v "Indicates this is an  acknowledgement for a Fetal Death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_acknowledgement" ] ;
+     fhir:display [ fhir:v "VRDR Acknowledgement" ] ;
+     fhir:definition [ fhir:v "Indicates this is  an  acknowledgement for a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_submission" ] ;
+     fhir:display [ fhir:v "VRDR Submission" ] ;
+     fhir:definition [ fhir:v "Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_submission_update" ] ;
+     fhir:display [ fhir:v "VRDR Update" ] ;
+     fhir:definition [ fhir:v "Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_submission" ] ;
+     fhir:display [ fhir:v "Birth Submission" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial submission of a BFDR birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_submission_update" ] ;
+     fhir:display [ fhir:v "Birth Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated submission of a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_submission" ] ;
+     fhir:display [ fhir:v "Fetal Death Submission" ] ;
+     fhir:definition [ fhir:v "Indicates that the payload is an initial submission of a  fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_submission_update" ] ;
+     fhir:display [ fhir:v "Fetal Death Update" ] ;
+     fhir:definition [ fhir:v "Indicates that the payload is an updated submission of a  fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_submission_void" ] ;
+     fhir:display [ fhir:v "VRDR Void" ] ;
+     fhir:definition [ fhir:v "Indicates this is  void  of  a  death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_submission_void" ] ;
+     fhir:display [ fhir:v "Fetal Death Submission Void" ] ;
+     fhir:definition [ fhir:v "Indicates this is  void  of  a  fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_submission_void" ] ;
+     fhir:display [ fhir:v "Birth Submission Void" ] ;
+     fhir:definition [ fhir:v "Indicates that this is void of a submitted  birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_demographics_coding" ] ;
+     fhir:display [ fhir:v "VRDR Demographics Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial demographics coding of a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_demographics_coding_update" ] ;
+     fhir:display [ fhir:v "VRDR Demographics Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated demographics coding of a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_demographics_coding" ] ;
+     fhir:display [ fhir:v "Birth Parental Demographics Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial demographics coding of a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_demographics_coding_update" ] ;
+     fhir:display [ fhir:v "Bith Parental Demographics Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated demographics coding of a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_demographics_coding" ] ;
+     fhir:display [ fhir:v "Fetal Death Parental Demographics Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial demographics coding of a fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_demographics_coding_update" ] ;
+     fhir:display [ fhir:v "Fetal Death Parental Demographics Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated demographics coding of a fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_causeofdeath_coding" ] ;
+     fhir:display [ fhir:v "VRDR Cause of Death Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial cause of death coding of a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_causeofdeath_coding_update" ] ;
+     fhir:display [ fhir:v "VRDR Cause of Death Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated cause of death coding" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_causeofdeath_coding" ] ;
+     fhir:display [ fhir:v "Cause of Fetal Death Submission" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial fetal cause of death" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_causeofdeath_coding_update" ] ;
+     fhir:display [ fhir:v "Cause of Fetal Death Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated fetal cause of death" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_industryoccupation_coding" ] ;
+     fhir:display [ fhir:v "VRDR Industry Occupation Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial industry occupation coding" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_industryoccupation_coding_update" ] ;
+     fhir:display [ fhir:v "VRDR Industry Occupation Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated industry occupation coding" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_industryoccupation_coding" ] ;
+     fhir:display [ fhir:v "Fetal Death Industry Occupation Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial industry occupation coding of the mother on a fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_industryoccupation_coding_update" ] ;
+     fhir:display [ fhir:v "Fetal Death Industry Occupation Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated industry occupation coding of the mother on a fetal death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_industryoccupation_coding" ] ;
+     fhir:display [ fhir:v "Birth Industry Occupation Coding" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an initial industry occupation coding of the mother on a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_industryoccupation_coding_update" ] ;
+     fhir:display [ fhir:v "Birth  Industry Occupation Coding Update" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an updated industry occupation coding of the mother on a birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_extraction_error" ] ;
+     fhir:display [ fhir:v "VRDR Extraction Error" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an extraction error on a death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_extraction_error" ] ;
+     fhir:display [ fhir:v "Fetal Death Extraction Error" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an extraction error for a Fetal Death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_extraction_error" ] ;
+     fhir:display [ fhir:v "Birth Extraction Error" ] ;
+     fhir:definition [ fhir:v "Indicates that this is an extraction error for a Birth report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_status" ] ;
+     fhir:display [ fhir:v "VRDR Status" ] ;
+     fhir:definition [ fhir:v "Indicates that this is a status for a previously submitted death report" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/fd_status" ] ;
+     fhir:display [ fhir:v "Fetal Death Status" ] ;
+     fhir:definition [ fhir:v "Indicates that this is a status for a previously submitted Fetal Death Record" ]
+  ] [
+     fhir:code [ fhir:v "http://nchs.cdc.gov/birth_status" ] ;
+     fhir:display [ fhir:v "Birth Status" ] ;
+     fhir:definition [ fhir:v "Indicates that this is a status for a previously submitted birth report" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
