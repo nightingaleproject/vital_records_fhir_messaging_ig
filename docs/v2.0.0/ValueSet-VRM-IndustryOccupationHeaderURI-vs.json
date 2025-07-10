@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VRM-IndustryOccupationHeaderURI-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VRM-IndustryOccupationHeaderURI-vs</b></p><a name=\"VRM-IndustryOccupationHeaderURI-vs\"> </a><a name=\"hcVRM-IndustryOccupationHeaderURI-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding\">http://nchs.cdc.gov/vrdr_industryoccupation_coding</a></td><td style=\"color: #cccccc\">VRDR Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding</td></tr><tr><td><a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding\">http://nchs.cdc.gov/fd_industryoccupation_coding</a></td><td style=\"color: #cccccc\">Fetal Death Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a fetal death report</td></tr><tr><td><a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding\">http://nchs.cdc.gov/birth_industryoccupation_coding</a></td><td style=\"color: #cccccc\">Birth Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a birth report</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationHeaderURI-vs",
+  "version" : "2.0.0",
+  "name" : "IndustryOccupationURIVS",
+  "title" : "Industry and Occupation MessageHeader URI Values",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-09T11:57:36-04:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Industry and Occupation MessageHeader URI Values",
+  "compose" : {
+    "include" : [{
+      "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs",
+      "concept" : [{
+        "code" : "http://nchs.cdc.gov/vrdr_industryoccupation_coding"
+      },
+      {
+        "code" : "http://nchs.cdc.gov/fd_industryoccupation_coding"
+      },
+      {
+        "code" : "http://nchs.cdc.gov/birth_industryoccupation_coding"
+      }]
+    }]
+  }
+}

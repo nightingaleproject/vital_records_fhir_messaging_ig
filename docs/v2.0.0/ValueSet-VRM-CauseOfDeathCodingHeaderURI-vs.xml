@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VRM-CauseOfDeathCodingHeaderURI-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VRM-CauseOfDeathCodingHeaderURI-vs</b></p><a name="VRM-CauseOfDeathCodingHeaderURI-vs"> </a><a name="hcVRM-CauseOfDeathCodingHeaderURI-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-VRM-MessageHeaderURI-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding">http://nchs.cdc.gov/vrdr_causeofdeath_coding</a></td><td style="color: #cccccc">VRDR Cause of Death Coding</td><td>Indicates that this is an initial cause of death coding of a death report</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding">http://nchs.cdc.gov/fd_causeofdeath_coding</a></td><td style="color: #cccccc">Cause of Fetal Death Submission</td><td>Indicates that this is an initial fetal cause of death</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingHeaderURI-vs"/>
+  <version value="2.0.0"/>
+  <name value="CauseOfDeathCodingURIVS"/>
+  <title value="Cause of Death Coding MessageHeader URI Values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-09T11:57:36-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Cause of Death Coding MessageHeader URI Values"/>
+  <compose>
+    <include>
+      <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
+      <concept>
+        <code value="http://nchs.cdc.gov/vrdr_causeofdeath_coding"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/fd_causeofdeath_coding"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

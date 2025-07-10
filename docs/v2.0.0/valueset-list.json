@@ -1,0 +1,158 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "PayloadVersionVS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Payload Version Identifier Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-AcknowledgementHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AcknowledgementURIVS",
+      "title" : "Acknowledgement MessageHeader URI Values",
+      "description" : "Acknowledgement MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CauseOfDeathCodingURIVS",
+      "title" : "Cause of Death Coding MessageHeader URI Values",
+      "description" : "Cause of Death Coding MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingUpdateHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CauseOfDeathCodingUpdateURIVS",
+      "title" : "Cause of Death Coding Update MessageHeader URI Values",
+      "description" : "Cause of Death Coding Update MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-DemographicsCodingHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "DemographicsCodingHeaderURIVS",
+      "title" : "Demographics Coding  MessageHeader URI Values",
+      "description" : "Demographics Coding  MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-DemographicsCodingUpdateHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "DemographicsCodingUpdateHeaderURIVS",
+      "title" : "Demographics Coding Update MessageHeader URI Values",
+      "description" : "Demographics Coding Update MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ExtractionErrorHeaderURIVS",
+      "title" : "ExtractionError MessageHeader URI Values",
+      "description" : "ExtractionError MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "IndustryOccupationURIVS",
+      "title" : "Industry and Occupation MessageHeader URI Values",
+      "description" : "Industry and Occupation MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationUpdateHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "IndustryOccupationUpdateURIVS",
+      "title" : "Industry and Occupation Update MessageHeader URI Values",
+      "description" : "Industry and Occupation Update MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "StatusVS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-StatusHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "StatusURIVS",
+      "title" : "Status MessageHeader URI Values",
+      "description" : "Status MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-SubmissionHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SubmissionURIVS",
+      "title" : "Submission MessageHeader URI Values",
+      "description" : "Submission MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-UpdateHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UpdateURIVS",
+      "title" : "Update MessageHeader URI Values",
+      "description" : "Update MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-VOIDHeaderURI-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "VoidURIVS",
+      "title" : "Void MessageHeader URI Values",
+      "description" : "Void MessageHeader URI Values",
+      "systems" : [
+        "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"
+      ]
+    }
+  ]
+}

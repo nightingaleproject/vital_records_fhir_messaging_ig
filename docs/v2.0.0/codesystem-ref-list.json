@@ -1,0 +1,70 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "PayloadVersionCS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed.",
+      "uses" : {
+      },
+      "ValueSet-Payload-version-vs.html" : "Payload Version Identifier Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "MessageHeaderURICS",
+      "title" : "MessageHeader URI Values",
+      "description" : "MessageHeader URI Values",
+      "uses" : {
+      },
+      "ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs.html" : "Cause of Death Coding Update MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingHeaderURI-vs.html" : "Demographics Coding  MessageHeader URI Values",
+      "ValueSet-VRM-AcknowledgementHeaderURI-vs.html" : "Acknowledgement MessageHeader URI Values",
+      "ValueSet-VRM-ExtractionErrorHeaderURI-vs.html" : "ExtractionError MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs.html" : "Industry and Occupation Update MessageHeader URI Values",
+      "ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs.html" : "Cause of Death Coding MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs.html" : "Demographics Coding Update MessageHeader URI Values",
+      "ValueSet-VRM-StatusHeaderURI-vs.html" : "Status MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationHeaderURI-vs.html" : "Industry and Occupation MessageHeader URI Values",
+      "ValueSet-VRM-SubmissionHeaderURI-vs.html" : "Submission MessageHeader URI Values",
+      "ValueSet-VRM-UpdateHeaderURI-vs.html" : "Update MessageHeader URI Values",
+      "ValueSet-VRM-VOIDHeaderURI-vs.html" : "Void MessageHeader URI Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "StatusCS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "uses" : {
+      },
+      "ValueSet-VRM-Status-vs.html" : "Status Codes Values"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemJurisdictionsVitalRecords",
+      "title" : "Code System - Jurisdictions Vital Records",
+      "description" : "NVSS Jurisdictions that are not US States or Territories.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemUSStatesTerritoriesVitalRecords",
+      "title" : "Code System - US States and Territories",
+      "description" : "Surrogate for usps.com codesystem - IG Publisher found issues with that codesystem.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    }
+  ]
+}

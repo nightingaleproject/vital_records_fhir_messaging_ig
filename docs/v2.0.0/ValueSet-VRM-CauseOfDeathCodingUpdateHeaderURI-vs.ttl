@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingUpdateHeaderURI-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VRM-CauseOfDeathCodingUpdateHeaderURI-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VRM-CauseOfDeathCodingUpdateHeaderURI-vs</b></p><a name=\"VRM-CauseOfDeathCodingUpdateHeaderURI-vs\"> </a><a name=\"hcVRM-CauseOfDeathCodingUpdateHeaderURI-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update\">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update</a></td><td style=\"color: #cccccc\">VRDR Cause of Death Coding Update</td><td>Indicates that this is an updated cause of death coding</td></tr><tr><td><a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding_update\">http://nchs.cdc.gov/fd_causeofdeath_coding_update</a></td><td style=\"color: #cccccc\">Cause of Fetal Death Update</td><td>Indicates that this is an updated fetal cause of death</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingUpdateHeaderURI-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "CauseOfDeathCodingUpdateURIVS"] ; # 
+  fhir:title [ fhir:v "Cause of Death Coding Update MessageHeader URI Values"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-09T11:57:36-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "CDC NCHS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "CDC NCHS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cdc.gov/nchs" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cause of Death Coding Update MessageHeader URI Values"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "http://nchs.cdc.gov/vrdr_causeofdeath_coding_update" ]
+       ] [
+         fhir:code [ fhir:v "http://nchs.cdc.gov/fd_causeofdeath_coding_update" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

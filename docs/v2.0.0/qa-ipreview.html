@@ -1,0 +1,775 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+    <h2>Unattributed Code Systems</h2>
+    <ul></ul>
+    <h2>Copyright Fragment</h2>
+    <p>
+This fragment is available on       <a href="downloads.html">downloads.html</a>
+    </p>
+    <div>No use of external IP (other than from the FHIR specification)</div>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2022+ CDC NCHS.  Package vital-records-fhir-messaging#2.0.0 based on FHIR 4.0.1. Generated 2025-07-09 
+          
+          
+                      Links: Table of Contents |
+                 QA Report
+                 
+                
+Internal use only.
+          
+        
+        
+      
+    
+  
+    
+      
+    
+  
+  
+  
+
+  
+  
+  
+   
+   
+   
+   
+   
+   
+  
+  
+
+
+  (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+             
+                CC0
+         (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+This set of FHIR profiles was produced and developed through the efforts of a project of the National Institute of Occupational Safety and Health (NIOSH), the U.S. federal agency responsible for conducting research and making recommendations for the prevention of work-related injury and illness. NIOSH is a part of the U.S. Centers for Disease Control and Prevention (CDC). NIOSH consulted stakeholders in clinical care, public health, health IT, health informatics and  U.S. government agencies to develop ODH. The HL7&reg; Public Health and Emergency Response Work Group sponsored development of this set of FHIR profiles. Co-sponsoring HL7&reg; Work Groups were Orders and Observations (OO), Patient Administration (PA), and Clinical Quality Initiative (CQI).
+The following individuals provided subject matter expertise for this set of FHIR profiles: Genevieve Barkocy Luensman, NIOSH; Eileen Storey, Professional Services Partners, formerly NIOSH; Margaret S. Filios, NIOSH; Christina Socias-Morales, NIOSH; Lauren Brewer, NIOSH; Barbara Wallace, Professional Services Partners. (        <a href="downloads.html">src</a>
+)
+      </li>
+      <li>
+Vital Records FHIR Messaging (VRFM) IG - Local Development build (v2.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html">nightingaleproject.github.io</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html">NCHS Vital Records FHIR Messaging v1.0.1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/">nightingaleproject.github.io</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/">NCHS Vital Records FHIR Messaging v2.0.0</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html">nightingaleproject.github.io</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/v1.0.1/index.html">VRFM STU1.0.1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/">nightingaleproject.github.io</a>
+        </td>
+        <td>
+          <a href="https://nightingaleproject.github.io/vital_records_fhir_messaging_ig/">VRFM STU2.0.0</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+Use of Inactivated SNOMEDCT Code           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">#103693007 "Diagnostic Procedure"</a>
+
+              <ul>
+
+                  <li>
+The code for the               <a href="https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certification.html">VRDR STU2.2 Death Certification Procedure</a>
+ is SNOMEDCT               <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">#103693007 "Diagnostic Procedure (procedure)"</a>
+.  This is a poor choice since it is not descriptive, and it is also current in "inactive" state.  This may cause validation errors or warnings on VRDR STU2.2 conformant data.   These errors or warnings should be ignored since an inactive SNOMEDCT code remains valid.   In VRDR STU3, the code has been changed to a much more descriptive and active code – SNOMEDCT               <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=308646001&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en.">#308646001 Death certification (procedure)</a>
+            </li>
+
+    
+          </ul>
+
+  
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+The code for the           <a href="https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certification.html">VRDR STU2.2 Death Certification Procedure</a>
+ is SNOMEDCT           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">#103693007 "Diagnostic Procedure (procedure)"</a>
+.  This is a poor choice since it is not descriptive, and it is also current in "inactive" state.  This may cause validation errors or warnings on VRDR STU2.2 conformant data.   These errors or warnings should be ignored since an inactive SNOMEDCT code remains valid.   In VRDR STU3, the code has been changed to a much more descriptive and active code – SNOMEDCT           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=308646001&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en.">#308646001 Death certification (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationNotes.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=308646001&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en.">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+The code for the           <a href="https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certification.html">VRDR STU2.2 Death Certification Procedure</a>
+ is SNOMEDCT           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103693007&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en">#103693007 "Diagnostic Procedure (procedure)"</a>
+.  This is a poor choice since it is not descriptive, and it is also current in "inactive" state.  This may cause validation errors or warnings on VRDR STU2.2 conformant data.   These errors or warnings should be ignored since an inactive SNOMEDCT code remains valid.   In VRDR STU3, the code has been changed to a much more descriptive and active code – SNOMEDCT           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=308646001&amp;edition=MAIN/2024-06-01&amp;release=&amp;languages=en.">#308646001 Death certification (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-VRM-AcknowledgementMessage-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://en.wikipedia.org/wiki/HATEOAS">en.wikipedia.org</a>
+        </td>
+        <td>
+Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="appendix.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vrdr-dotnet">github.com</a>
+        </td>
+        <td>
+Items 1, 2, 3 above are within the scope of the           <a href="https://github.com/nightingaleproject/vrdr-dotnet">vrdr-dotnet open source project</a>
+, an implementation of the FHIR messaging infrastructure at a jurisdiction could leverage this project to accelerate development.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="downloads.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">github.com</a>
+        </td>
+        <td>
+The source code for this Implementation Guide can be found on Nightingale GitHub           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">https://github.com/nightingaleproject/vital_records_fhir_messaging_ig</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging">github.com</a>
+        </td>
+        <td>
+This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging">here</a>
+.  All maintenance of content since November 2021 is taking place in this document only and is managed via           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">GitHub</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">github.com</a>
+        </td>
+        <td>
+This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging">here</a>
+.  All maintenance of content since November 2021 is taking place in this document only and is managed via           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">GitHub</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://r20.rs6.net/tn.jsp?f=001u-eBMBj0UGlhPdHxUU_w_MafJMX_8rYmjFZga3pBUoUhwcUSSzMK5lw-ncpe9c1_OCJdI66kcNI-ILEyJKT9ILqF6v3RMIxQHe-k9-IYCzq96MQmC3sO0FgIOhAgnvf_zF7l6N4k8lCQjzRnFuzO-UmCFtlHJpOYd3fjY2Cw2StY-TA-wVQOw320Sj_WyhIuq2H9GPAtpsuuBkomxjl6jizGiL_Ql0yOwjp-cUjTOTA=&amp;c=hrGtL9tmvJ1DKGpbzqPuF3KvUpFVK0qchygyr7StLU1Sluvl9ZBcLg==&amp;ch=hptEZrbFDWPJdXxXwQsrUk7F-lUko-MpszM6NS4g8yVkg29mqPQHXA==">r20.rs6.net</a>
+        </td>
+        <td>
+          <a href="https://r20.rs6.net/tn.jsp?f=001u-eBMBj0UGlhPdHxUU_w_MafJMX_8rYmjFZga3pBUoUhwcUSSzMK5lw-ncpe9c1_OCJdI66kcNI-ILEyJKT9ILqF6v3RMIxQHe-k9-IYCzq96MQmC3sO0FgIOhAgnvf_zF7l6N4k8lCQjzRnFuzO-UmCFtlHJpOYd3fjY2Cw2StY-TA-wVQOw320Sj_WyhIuq2H9GPAtpsuuBkomxjl6jizGiL_Ql0yOwjp-cUjTOTA=&amp;c=hrGtL9tmvJ1DKGpbzqPuF3KvUpFVK0qchygyr7StLU1Sluvl9ZBcLg==&amp;ch=hptEZrbFDWPJdXxXwQsrUk7F-lUko-MpszM6NS4g8yVkg29mqPQHXA==">2022 Mortality Data reference</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">github.com</a>
+        </td>
+        <td>
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>
+. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a>
+ and all narrative content in markdown (specifically,           <a href="https://kramdown.gettalong.org/">Kramdown</a>
+). We suggest using the           <a href="https://code.visualstudio.com/">Visual Studio Code editor</a>
+ with the           <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>
+. For more information on how to get started with IG development, visit the           <a href="https://fshschool.org/">FSH School</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://kramdown.gettalong.org/">kramdown.gettalong.org</a>
+        </td>
+        <td>
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>
+. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a>
+ and all narrative content in markdown (specifically,           <a href="https://kramdown.gettalong.org/">Kramdown</a>
+). We suggest using the           <a href="https://code.visualstudio.com/">Visual Studio Code editor</a>
+ with the           <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>
+. For more information on how to get started with IG development, visit the           <a href="https://fshschool.org/">FSH School</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://code.visualstudio.com/">code.visualstudio.com</a>
+        </td>
+        <td>
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>
+. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a>
+ and all narrative content in markdown (specifically,           <a href="https://kramdown.gettalong.org/">Kramdown</a>
+). We suggest using the           <a href="https://code.visualstudio.com/">Visual Studio Code editor</a>
+ with the           <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>
+. For more information on how to get started with IG development, visit the           <a href="https://fshschool.org/">FSH School</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">marketplace.visualstudio.com</a>
+        </td>
+        <td>
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>
+. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a>
+ and all narrative content in markdown (specifically,           <a href="https://kramdown.gettalong.org/">Kramdown</a>
+). We suggest using the           <a href="https://code.visualstudio.com/">Visual Studio Code editor</a>
+ with the           <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>
+. For more information on how to get started with IG development, visit the           <a href="https://fshschool.org/">FSH School</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://fshschool.org/">fshschool.org</a>
+        </td>
+        <td>
+Nightingale is an open source project and welcomes all contributors. The source code for this IG is maintained in the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">Nightingale Github</a>
+. Instead of just suggesting a change, consider creating a branch, making the change, and submitting a pull request. All of our profiling work is done in           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a>
+ and all narrative content in markdown (specifically,           <a href="https://kramdown.gettalong.org/">Kramdown</a>
+). We suggest using the           <a href="https://code.visualstudio.com/">Visual Studio Code editor</a>
+ with the           <a href="https://marketplace.visualstudio.com/items?itemName=kmahalingam.vscode-language-fsh">FHIR Shorthand plug-in</a>
+. For more information on how to get started with IG development, visit the           <a href="https://fshschool.org/">FSH School</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging/releases/download/v3.1.0/fhir_messaging_for_nvss.pdf">github.com</a>
+        </td>
+        <td>
+This IG is based on the           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging/releases/download/v3.1.0/fhir_messaging_for_nvss.pdf">FHIR Messaging for NVSS</a>
+ authored by Marc Hadley (MITRE). The data element descriptions in that document have now been captured as a FHIR specification in this guide, which incorporates all of the content from the original guide. Both the original document and this Implementation Guide were developed by the MITRE corporation under contract to the Division of Vital Statistics, National Center for Health Statistics, of the Centers for Disease Control.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://fshschool.org">fshschool.org</a>
+        </td>
+        <td>
+This IG was authored by the MITRE Corporation using           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a>
+ and           <a href="https://fshschool.org">SUSHI</a>
+, a free, open source toolchain from           <a href="https://www.mitre.org/">MITRE Corporation</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.mitre.org/">www.mitre.org</a>
+        </td>
+        <td>
+This IG was authored by the MITRE Corporation using           <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a>
+ and           <a href="https://fshschool.org">SUSHI</a>
+, a free, open source toolchain from           <a href="https://www.mitre.org/">MITRE Corporation</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">github.com</a>
+        </td>
+        <td>
+The jurisdiction (MA) generates           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">Death Record 537</a>
+ based on the data in the Record 1 column of the           <a href="june2022testingeventexamples.html#test-input-in-spreadsheet-form">spreadsheet</a>
+, and then builds           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">Death Record Submission Message 537</a>
+ and sends this to NCHS via the NCHS Messaging API.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">github.com</a>
+        </td>
+        <td>
+The jurisdiction (MA) generates           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">Death Record 537</a>
+ based on the data in the Record 1 column of the           <a href="june2022testingeventexamples.html#test-input-in-spreadsheet-form">spreadsheet</a>
+, and then builds           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">Death Record Submission Message 537</a>
+ and sends this to NCHS via the NCHS Messaging API.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+NCHS receives the message, and sends           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">Death Record Submission Acknowledgement 537</a>
+ to the jurisdiction for receipt of that message; you can tell what message is being acknowledged by comparing the MessageHeader.response.identifier in the acknowledgement to the MessageHeader.id of the original message.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">github.com</a>
+        </td>
+        <td>
+Some time later, NCHS sends           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">Cause of Death Coding Message 537</a>
+ to the jurisdiction, and the jurisdiction responds with           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">Cause of Death Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+Some time later, NCHS sends           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">Cause of Death Coding Message 537</a>
+ to the jurisdiction, and the jurisdiction responds with           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">Cause of Death Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">github.com</a>
+        </td>
+        <td>
+Some time later, NCHS sends           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">Demographic Coding Message 537</a>
+ to the jurisdiction, and the jurisdiction responds with           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">Demographic Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+Some time later, NCHS sends           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">Demographic Coding Message 537</a>
+ to the jurisdiction, and the jurisdiction responds with           <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">Demographic Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_537_example.json">Death Record 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_537_example.json">Death Record Submission Message 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_537_example.json">Death Record Submission Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_537_example.json">Cause of Death Coding Message 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_537_example.json">Cause of Death Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_537_example.json">Demographic Coding Message 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_537_example.json">Demographic Coding Message Acknowledgement 537</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_538_example.json">Death Record 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_538_example.json">Death Record Submission Message 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_538_example.json">Death Record Submission Acknowledgement 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_538_example.json">Cause of Death Coding Message 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_538_example.json">Cause of Death Coding Message Acknowledgement 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_538_example.json">Demographic Coding Message 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_538_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_538_example.json">Demographic Coding Message Acknowledgement 538</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_record_539_example.json">Death Record 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_message_539_example.json">Death Record Submission Message 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/submission_acknowledgement_message_539_example.json">Death Record Submission Acknowledgement 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_coding_response_message_539_example.json">Cause of Death Coding Message 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/cause_of_death_acknowledgement_message_539_example.json">Cause of Death Coding Message Acknowledgement 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_coding_response_message_539_example.json">Demographic Coding Message 539</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="june2022testingeventexamples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_539_example.json">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig/blob/main/June2022TestingEventContent/demographics_acknowledgement_message_539_example.json">Demographic Coding Message Acknowledgement 539</a>
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid">
+      <tr>
+        <td>
+LayeredArchitecture.png          <br/>
+          <img src="LayeredArchitecture.png" alt="LayeredArchitecture.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+alias.png          <br/>
+          <img src="alias.png" alt="alias.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+cdc.svg          <br/>
+          <img src="cdc.svg" alt="cdc.svg" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+error.png          <br/>
+          <img src="error.png" alt="error.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+recode.png          <br/>
+          <img src="recode.png" alt="recode.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+retry.png          <br/>
+          <img src="retry.png" alt="retry.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+retry2.png          <br/>
+          <img src="retry2.png" alt="retry2.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+retry3.png          <br/>
+          <img src="retry3.png" alt="retry3.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+submission.png          <br/>
+          <img src="submission.png" alt="submission.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+update.png          <br/>
+          <img src="update.png" alt="update.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+void.png          <br/>
+          <img src="void.png" alt="void.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
