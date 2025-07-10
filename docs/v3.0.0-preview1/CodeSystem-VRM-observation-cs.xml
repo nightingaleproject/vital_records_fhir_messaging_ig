@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="VRM-observation-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem VRM-observation-cs</b></p><a name="VRM-observation-cs"> </a><a name="hcVRM-observation-cs"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fetaldeathrecordidentifier<a name="VRM-observation-cs-fetaldeathrecordidentifier"> </a></td><td>Fetal Death Record Identifier</td><td>Fetal Death Record Identifier</td></tr><tr><td style="white-space:nowrap">birthrecordidentifier<a name="VRM-observation-cs-birthrecordidentifier"> </a></td><td>Birth Record Record Identifier</td><td>Birth Record Identifier</td></tr></table></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"/>
+  <version value="3.0.0-Preview1"/>
+  <name value="ObservationCS"/>
+  <title value="Local Observation Identifiers"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-07-09T11:35:05-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem for local observation identifiers."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="fetaldeathrecordidentifier"/>
+    <display value="Fetal Death Record Identifier"/>
+    <definition value="Fetal Death Record Identifier"/>
+  </concept>
+  <concept>
+    <code value="birthrecordidentifier"/>
+    <display value="Birth Record Record Identifier"/>
+    <definition value="Birth Record Identifier"/>
+  </concept>
+</CodeSystem>

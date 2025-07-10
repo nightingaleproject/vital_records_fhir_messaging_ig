@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ParametersLinkage-FetalDeathWithCertPending",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"]
+  },
+  "parameter" : [{
+    "name" : "notes",
+    "valueString" : "Fetal Death"
+  },
+  {
+    "name" : "coded_outcome",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "276507005",
+        "display" : "Fetal Death"
+      }]
+    }
+  },
+  {
+    "name" : "birth_plurality",
+    "valueInteger" : 0
+  },
+  {
+    "name" : "fetal_death_plurality",
+    "valueInteger" : 1
+  },
+  {
+    "name" : "preg_status_is_correct",
+    "valueBoolean" : true
+  }]
+}

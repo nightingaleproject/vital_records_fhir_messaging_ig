@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/MaternalLinkageBundle-BirthPendingCert> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MaternalLinkageBundle-BirthPendingCert"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "placeholder" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChildNoCert-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/BirthRecordIdentifierChildNoCert-Example1> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert> a fhir:Parameters ;
+  fhir:id [ fhir:v "ParametersLinkage-LiveBirthWithCert"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "notes" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Live Birth With Certificate"
+     ]
+  ] [
+     fhir:name [ fhir:v "coded_outcome" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:281050002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "281050002" ] ;
+         fhir:display [ fhir:v "Livebirth" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "birth_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:name [ fhir:v "fetal_death_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:name [ fhir:v "preg_status_is_correct" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/BirthRecordIdentifierChildNoCert-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "BirthRecordIdentifierChildNoCert-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChildNoCert-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChildNoCert-Example1</b></p><a name=\"BirthRecordIdentifierChildNoCert-Example1\"> </a><a name=\"hcBirthRecordIdentifierChildNoCert-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "birthrecordidentifier" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "index" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "availability" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

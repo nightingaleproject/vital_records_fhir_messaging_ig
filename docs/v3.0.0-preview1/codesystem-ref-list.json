@@ -1,0 +1,132 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs",
+      "version" : "3.0.0-Preview1",
+      "status" : "draft",
+      "name" : "PayloadVersionCS",
+      "title" : "Payload Version Identifier Values",
+      "description" : "Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed.",
+      "uses" : {
+      },
+      "ValueSet-Payload-version-vs.html" : "Payload Version Identifier Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs",
+      "version" : "3.0.0-Preview1",
+      "status" : "draft",
+      "name" : "MessageHeaderURICS",
+      "title" : "MessageHeader URI Values",
+      "description" : "MessageHeader URI Values",
+      "uses" : {
+      },
+      "ValueSet-VRM-VOIDHeaderURI-vs.html" : "Void MessageHeader URI Values",
+      "ValueSet-VRM-StatusHeaderURI-vs.html" : "Status MessageHeader URI Values",
+      "ValueSet-VRM-SubmissionHeaderURI-vs.html" : "Submission MessageHeader URI Values",
+      "ValueSet-VRM-UpdateHeaderURI-vs.html" : "Update MessageHeader URI Values",
+      "ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs.html" : "Cause of Death Coding MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationHeaderURI-vs.html" : "Industry and Occupation MessageHeader URI Values",
+      "ValueSet-VRM-AcknowledgementHeaderURI-vs.html" : "Acknowledgement MessageHeader URI Values",
+      "ValueSet-VRM-RequestHeaderURI-vs.html" : "Request MessageHeader URI Values",
+      "ValueSet-VRM-ExtractionErrorHeaderURI-vs.html" : "ExtractionError MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingHeaderURI-vs.html" : "Demographics Coding  MessageHeader URI Values",
+      "ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs.html" : "Cause of Death Coding Update MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs.html" : "Industry and Occupation Update MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs.html" : "Demographics Coding Update MessageHeader URI Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
+      "version" : "3.0.0-Preview1",
+      "status" : "draft",
+      "name" : "StatusCS",
+      "title" : "Status Codes Values",
+      "description" : "Status Codes Values",
+      "uses" : {
+      },
+      "ValueSet-VRM-Status-vs.html" : "Status Codes Values"
+    },
+    {
+      "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs",
+      "version" : "3.0.0-Preview1",
+      "status" : "draft",
+      "name" : "CodedPregnancyStatusCS",
+      "title" : "Local Coded Pregnancy Status",
+      "description" : "Codesystem for pregnancy status for cases not covered by SNOMEDCT.",
+      "uses" : {
+      },
+      "ValueSet-VRM-PregnancyOutcomes-vs.html" : "Pregnancy Outcome Values"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemJurisdictionsVitalRecords",
+      "title" : "Code System - Jurisdictions Vital Records",
+      "description" : "NVSS Jurisdictions that are not US States or Territories.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemUSStatesTerritoriesVitalRecords",
+      "title" : "Code System - US States and Territories",
+      "description" : "Surrogate for usps.com codesystem - IG Publisher found issues with that codesystem.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html" : "Value Set - Jurisdictions Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "DeathPregnancyStatusCS",
+      "title" : "Death Pregnancy Status Codesystem",
+      "description" : "Codes that reflect whether the decedent was pregnant at or around the time of death.",
+      "oids" : ["2.16.840.1.113883.4.642.40.10.16.1"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-death-pregnancy-status-vs.html" : "Death Pregnancy Status ValueSet"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-VRM-PregnancyOutcomes-vs.html" : "Pregnancy Outcome Values"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "version" : "2.9",
+      "status" : "active",
+      "name" : "v2.0136",
+      "title" : "v2 Y/N Indicator",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)",
+      "oids" : ["2.16.840.1.113883.18.347"],
+      "uses" : {
+      },
+      "ValueSet-VRM-CertAvailable-vs.html" : "Certificate Available Values"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "ValueSet-VRM-PregnancyOutcomes-vs.html" : "Pregnancy Outcome Values",
+      "ValueSet-VRM-CertAvailable-vs.html" : "Certificate Available Values",
+      "https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-death-pregnancy-status-vs.html" : "Death Pregnancy Status ValueSet"
+    }
+  ]
+}

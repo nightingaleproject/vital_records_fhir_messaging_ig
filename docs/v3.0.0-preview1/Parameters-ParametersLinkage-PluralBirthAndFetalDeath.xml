@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ParametersLinkage-PluralBirthAndFetalDeath"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"/>
+  </meta>
+  <parameter>
+    <name value="notes"/>
+    <valueString value="PluralBirthAndFetalDeathWithCert"/>
+  </parameter>
+  <parameter>
+    <name value="coded_outcome"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"/>
+        <code value="live-birth-and-fetal-death"/>
+        <display value="Multiple Outcomes (Live Birth(s) and Fetal Death(s))"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="birth_plurality"/>
+    <valueInteger value="2"/>
+  </parameter>
+  <parameter>
+    <name value="fetal_death_plurality"/>
+    <valueInteger value="2"/>
+  </parameter>
+  <parameter>
+    <name value="preg_status_is_correct"/>
+    <valueBoolean value="true"/>
+  </parameter>
+</Parameters>

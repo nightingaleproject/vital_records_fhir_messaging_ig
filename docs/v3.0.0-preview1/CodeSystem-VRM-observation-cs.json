@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "VRM-observation-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-observation-cs</b></p><a name=\"VRM-observation-cs\"> </a><a name=\"hcVRM-observation-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fetaldeathrecordidentifier<a name=\"VRM-observation-cs-fetaldeathrecordidentifier\"> </a></td><td>Fetal Death Record Identifier</td><td>Fetal Death Record Identifier</td></tr><tr><td style=\"white-space:nowrap\">birthrecordidentifier<a name=\"VRM-observation-cs-birthrecordidentifier\"> </a></td><td>Birth Record Record Identifier</td><td>Birth Record Identifier</td></tr></table></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs",
+  "version" : "3.0.0-Preview1",
+  "name" : "ObservationCS",
+  "title" : "Local Observation Identifiers",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-07-09T11:35:05-04:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Codesystem for local observation identifiers.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "fetaldeathrecordidentifier",
+    "display" : "Fetal Death Record Identifier",
+    "definition" : "Fetal Death Record Identifier"
+  },
+  {
+    "code" : "birthrecordidentifier",
+    "display" : "Birth Record Record Identifier",
+    "definition" : "Birth Record Identifier"
+  }]
+}

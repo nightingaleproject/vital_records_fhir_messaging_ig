@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs,3.0.0-Preview1,draft,,PayloadVersionCS,Payload Version Identifier Values,"Codesystem for Payload Version Identifier Values. Only versions that are in production use are listed.",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs,3.0.0-Preview1,draft,,MessageHeaderURICS,MessageHeader URI Values,"MessageHeader URI Values",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs,3.0.0-Preview1,draft,,StatusCS,Status Codes Values,"Status Codes Values",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs,3.0.0-Preview1,draft,,CodedPregnancyStatusCS,Local Coded Pregnancy Status,"Codesystem for pregnancy status for cases not covered by SNOMEDCT.",
+http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs,3.0.0-Preview1,draft,,ObservationCS,Local Observation Identifiers,"Codesystem for local observation identifiers.",

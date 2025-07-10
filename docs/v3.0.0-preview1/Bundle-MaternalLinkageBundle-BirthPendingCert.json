@@ -1,0 +1,90 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "MaternalLinkageBundle-BirthPendingCert",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"]
+  },
+  "identifier" : {
+    "value" : "placeholder"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert",
+    "resource" : {
+      "resourceType" : "Parameters",
+      "id" : "ParametersLinkage-LiveBirthWithCert",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"]
+      },
+      "parameter" : [{
+        "name" : "notes",
+        "valueString" : "Live Birth With Certificate"
+      },
+      {
+        "name" : "coded_outcome",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "281050002",
+            "display" : "Livebirth"
+          }]
+        }
+      },
+      {
+        "name" : "birth_plurality",
+        "valueInteger" : 1
+      },
+      {
+        "name" : "fetal_death_plurality",
+        "valueInteger" : 0
+      },
+      {
+        "name" : "preg_status_is_correct",
+        "valueBoolean" : true
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/BirthRecordIdentifierChildNoCert-Example1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "BirthRecordIdentifierChildNoCert-Example1",
+      "meta" : {
+        "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChildNoCert-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChildNoCert-Example1</b></p><a name=\"BirthRecordIdentifierChildNoCert-Example1\"> </a><a name=\"hcBirthRecordIdentifierChildNoCert-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs",
+          "code" : "birthrecordidentifier"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "code" : "index"
+          }]
+        },
+        "valueInteger" : 1
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "code" : "availability"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "N",
+            "display" : "No"
+          }]
+        }
+      }]
+    }
+  }]
+}

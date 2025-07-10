@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Parameters/ParametersLinkage-EctopicPregnancy> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ParametersLinkage-EctopicPregnancy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "notes" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Ectopic Pregnancy"
+     ]
+  ] [
+     fhir:name [ fhir:v "coded_outcome" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:34801009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34801009" ] ;
+         fhir:display [ fhir:v "Ectopic Pregnancy" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "birth_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:name [ fhir:v "fetal_death_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:name [ fhir:v "preg_status_is_correct" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

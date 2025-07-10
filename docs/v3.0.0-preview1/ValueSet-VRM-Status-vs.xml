@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VRM-Status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VRM-Status-vs</b></p><a name="VRM-Status-vs"> </a><a name="hcVRM-Status-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-VRM-Status-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"/>
+  <version value="3.0.0-Preview1"/>
+  <name value="StatusVS"/>
+  <title value="Status Codes Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-07-09T11:35:05-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Status Codes Values"/>
+  <compose>
+    <include>
+      <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"/>
+    </include>
+  </compose>
+</ValueSet>

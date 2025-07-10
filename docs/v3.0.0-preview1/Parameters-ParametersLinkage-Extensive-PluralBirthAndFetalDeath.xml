@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ParametersLinkage-Extensive-PluralBirthAndFetalDeath"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"/>
+  </meta>
+  <parameter>
+    <name value="notes"/>
+    <valueString value="Example of notes"/>
+  </parameter>
+  <parameter>
+    <name value="coded_outcome"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"/>
+        <code value="live-birth-and-fetal-death"/>
+        <display value="Multiple Outcomes (Live Birth(s) and Fetal Death(s))"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="birth_plurality"/>
+    <valueInteger value="2"/>
+  </parameter>
+  <parameter>
+    <name value="fetal_death_plurality"/>
+    <valueInteger value="2"/>
+  </parameter>
+  <parameter>
+    <name value="preg_status_is_correct"/>
+    <valueBoolean value="false"/>
+  </parameter>
+  <parameter>
+    <name value="corrected_pregnancy_status"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"/>
+        <code value="4"/>
+        <display value="Not pregnant, but pregnant 43 days to 1 year before death"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

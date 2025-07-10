@@ -1,0 +1,226 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Bundle/MaternalLinkageSubmissionMessage-Example1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MaternalLinkageSubmissionMessage-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MaternalLinkageSubmissionMessage"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MaternalLinkageSubmissionMessage>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2021-05-20T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Header/MaternalLinkageSubmissionHeaderExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Header/MaternalLinkageSubmissionHeaderExample1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameters/ParametersDeathExample1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Header/MaternalLinkageSubmissionHeaderExample1> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "MaternalLinkageSubmissionHeaderExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_MaternalLinkageSubmissionHeaderExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader MaternalLinkageSubmissionHeaderExample1</b></p><a name=\"MaternalLinkageSubmissionHeaderExample1\"> </a><a name=\"hcMaternalLinkageSubmissionHeaderExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-SubmissionHeader.html\">Submission Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/maternal_linkage_submission\">http://nchs.cdc.gov/maternal_linkage_submission</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-DeathRecordSubmissionMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersDeathExample1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li><li><a href=\"Bundle-MaternalLinkageSubmissionMessage-Example1.html#http-//www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:uri ;
+     fhir:v "http://nchs.cdc.gov/maternal_linkage_submission"^^xsd:anyURI
+  ] ; # 
+  fhir:destination ( [
+     fhir:endpoint [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:source [
+     fhir:endpoint [ fhir:v "https://sos.ny.gov/vitalrecords"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://www.example.org/fhir/Parameters/ParametersDeathExample1> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1" ]
+  ] [
+     fhir:link <http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth> ;
+     fhir:reference [ fhir:v "http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Parameters/ParametersDeathExample1> a fhir:Parameters ;
+  fhir:id [ fhir:v "ParametersDeathExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [
+       a fhir:unsignedInt ;
+       fhir:v "111111"^^xsd:nonNegativeInteger
+     ]
+  ] [
+     fhir:name [ fhir:v "jurisdiction_id" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "NY"
+     ]
+  ] [
+     fhir:name [ fhir:v "state_auxiliary_id" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "abcdef10"
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth> a fhir:Bundle ;
+  fhir:id [ fhir:v "MaternalLinkageBundle-Birth"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "placeholder" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-Example1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-Example1> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert> a fhir:Parameters ;
+  fhir:id [ fhir:v "ParametersLinkage-LiveBirthWithCert"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "notes" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Live Birth With Certificate"
+     ]
+  ] [
+     fhir:name [ fhir:v "coded_outcome" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:281050002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "281050002" ] ;
+         fhir:display [ fhir:v "Livebirth" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "birth_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:name [ fhir:v "fetal_death_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:name [ fhir:v "preg_status_is_correct" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-Example1> a fhir:Observation ;
+  fhir:id [ fhir:v "BirthRecordIdentifierChild-Example1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "birthrecordidentifier" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "717171"
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21842-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21842-0" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "YC"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:80904-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "80904-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2024"^^xsd:gYear
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "index" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "availability" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

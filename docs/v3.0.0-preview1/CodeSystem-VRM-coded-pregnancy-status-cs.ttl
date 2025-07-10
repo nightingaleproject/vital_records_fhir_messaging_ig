@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VRM-coded-pregnancy-status-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-coded-pregnancy-status-cs</b></p><a name=\"VRM-coded-pregnancy-status-cs\"> </a><a name=\"hcVRM-coded-pregnancy-status-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">live-birth-and-fetal-death<a name=\"VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death\"> </a></td><td>Multiple Outcomes (Live Birth(s) and Fetal Death(s))</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.0.0-Preview1"] ; # 
+  fhir:name [ fhir:v "CodedPregnancyStatusCS"] ; # 
+  fhir:title [ fhir:v "Local Coded Pregnancy Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-09T11:35:05-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "CDC NCHS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "CDC NCHS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cdc.gov/nchs" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codesystem for pregnancy status for cases not covered by SNOMEDCT."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "live-birth-and-fetal-death" ] ;
+     fhir:display [ fhir:v "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

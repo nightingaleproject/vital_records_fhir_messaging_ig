@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "VoidParameters-Example1",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters"]
+  },
+  "parameter" : [{
+    "name" : "cert_no",
+    "valueUnsignedInt" : 123456
+  },
+  {
+    "name" : "block_count",
+    "valueUnsignedInt" : 10
+  },
+  {
+    "name" : "jurisdiction_id",
+    "valueString" : "NY"
+  },
+  {
+    "name" : "event_year",
+    "valueUnsignedInt" : 2018
+  },
+  {
+    "name" : "state_auxiliary_id",
+    "valueString" : "abcdef10"
+  }]
+}

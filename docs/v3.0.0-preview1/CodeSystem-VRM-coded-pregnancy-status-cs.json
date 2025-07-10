@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "VRM-coded-pregnancy-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-coded-pregnancy-status-cs</b></p><a name=\"VRM-coded-pregnancy-status-cs\"> </a><a name=\"hcVRM-coded-pregnancy-status-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">live-birth-and-fetal-death<a name=\"VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death\"> </a></td><td>Multiple Outcomes (Live Birth(s) and Fetal Death(s))</td></tr></table></div>"
+  },
+  "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs",
+  "version" : "3.0.0-Preview1",
+  "name" : "CodedPregnancyStatusCS",
+  "title" : "Local Coded Pregnancy Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-07-09T11:35:05-04:00",
+  "publisher" : "CDC NCHS",
+  "contact" : [{
+    "name" : "CDC NCHS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cdc.gov/nchs"
+    }]
+  }],
+  "description" : "Codesystem for pregnancy status for cases not covered by SNOMEDCT.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "live-birth-and-fetal-death",
+    "display" : "Multiple Outcomes (Live Birth(s) and Fetal Death(s))"
+  }]
+}

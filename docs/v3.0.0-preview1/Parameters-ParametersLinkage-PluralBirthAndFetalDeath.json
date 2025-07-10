@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ParametersLinkage-PluralBirthAndFetalDeath",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"]
+  },
+  "parameter" : [{
+    "name" : "notes",
+    "valueString" : "PluralBirthAndFetalDeathWithCert"
+  },
+  {
+    "name" : "coded_outcome",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs",
+        "code" : "live-birth-and-fetal-death",
+        "display" : "Multiple Outcomes (Live Birth(s) and Fetal Death(s))"
+      }]
+    }
+  },
+  {
+    "name" : "birth_plurality",
+    "valueInteger" : 2
+  },
+  {
+    "name" : "fetal_death_plurality",
+    "valueInteger" : 2
+  },
+  {
+    "name" : "preg_status_is_correct",
+    "valueBoolean" : true
+  }]
+}

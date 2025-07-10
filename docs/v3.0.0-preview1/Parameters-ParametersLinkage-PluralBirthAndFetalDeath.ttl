@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/Parameters/ParametersLinkage-PluralBirthAndFetalDeath> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ParametersLinkage-PluralBirthAndFetalDeath"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "notes" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "PluralBirthAndFetalDeathWithCert"
+     ]
+  ] [
+     fhir:name [ fhir:v "coded_outcome" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "live-birth-and-fetal-death" ] ;
+         fhir:display [ fhir:v "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "birth_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] [
+     fhir:name [ fhir:v "fetal_death_plurality" ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] [
+     fhir:name [ fhir:v "preg_status_is_correct" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

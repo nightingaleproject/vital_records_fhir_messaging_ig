@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ParametersLinkage-EctopicPregnancy",
+  "meta" : {
+    "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"]
+  },
+  "parameter" : [{
+    "name" : "notes",
+    "valueString" : "Ectopic Pregnancy"
+  },
+  {
+    "name" : "coded_outcome",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34801009",
+        "display" : "Ectopic Pregnancy"
+      }]
+    }
+  },
+  {
+    "name" : "birth_plurality",
+    "valueInteger" : 0
+  },
+  {
+    "name" : "fetal_death_plurality",
+    "valueInteger" : 0
+  },
+  {
+    "name" : "preg_status_is_correct",
+    "valueBoolean" : true
+  }]
+}

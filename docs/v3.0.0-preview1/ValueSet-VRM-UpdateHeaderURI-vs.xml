@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VRM-UpdateHeaderURI-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VRM-UpdateHeaderURI-vs</b></p><a name="VRM-UpdateHeaderURI-vs"> </a><a name="hcVRM-UpdateHeaderURI-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-VRM-MessageHeaderURI-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update">http://nchs.cdc.gov/vrdr_submission_update</a></td><td style="color: #cccccc">VRDR Update</td><td>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_update">http://nchs.cdc.gov/fd_submission_update</a></td><td style="color: #cccccc">Fetal Death Update</td><td>Indicates that the payload is an updated submission of a  fetal death report</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_update">http://nchs.cdc.gov/birth_submission_update</a></td><td style="color: #cccccc">Birth Update</td><td>Indicates that this is an updated submission of a birth report</td></tr><tr><td><a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47maternal_linkage_update">http://nchs.cdc.gov/maternal_linkage_update</a></td><td style="color: #cccccc">Maternal Linkage Update</td><td>Jurisdiction updating previously submitted maternal linkage</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-UpdateHeaderURI-vs"/>
+  <version value="3.0.0-Preview1"/>
+  <name value="UpdateURIVS"/>
+  <title value="Update MessageHeader URI Values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-07-09T11:35:05-04:00"/>
+  <publisher value="CDC NCHS"/>
+  <contact>
+    <name value="CDC NCHS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cdc.gov/nchs"/>
+    </telecom>
+  </contact>
+  <description value="Update MessageHeader URI Values"/>
+  <compose>
+    <include>
+      <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
+      <concept>
+        <code value="http://nchs.cdc.gov/vrdr_submission_update"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/fd_submission_update"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/birth_submission_update"/>
+      </concept>
+      <concept>
+        <code value="http://nchs.cdc.gov/maternal_linkage_update"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

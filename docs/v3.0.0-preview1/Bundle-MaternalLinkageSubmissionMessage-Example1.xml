@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="MaternalLinkageSubmissionMessage-Example1"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MaternalLinkageSubmissionMessage"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2021-05-20T00:00:00Z"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Header/MaternalLinkageSubmissionHeaderExample1"/>
+    <resource>
+      <MessageHeader>
+        <id value="MaternalLinkageSubmissionHeaderExample1"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-SubmissionHeader"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MessageHeader_MaternalLinkageSubmissionHeaderExample1"> </a><p class="res-header-id"><b>Generated Narrative: MessageHeader MaternalLinkageSubmissionHeaderExample1</b></p><a name="MaternalLinkageSubmissionHeaderExample1"> </a><a name="hcMaternalLinkageSubmissionHeaderExample1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VRM-SubmissionHeader.html">Submission Message Header</a></p></div><p><b>event</b>: <a href="http://nchs.cdc.gov/maternal_linkage_submission">http://nchs.cdc.gov/maternal_linkage_submission</a></p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://nchs.cdc.gov/vrdr_submission">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sos.ny.gov/vitalrecords">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="Bundle-DeathRecordSubmissionMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersDeathExample1">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li><li><a href="Bundle-MaternalLinkageSubmissionMessage-Example1.html#http-//www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li></ul></div>
+        </text>
+        <eventUri value="http://nchs.cdc.gov/maternal_linkage_submission"/>
+        <destination>
+          <endpoint value="http://nchs.cdc.gov/vrdr_submission"/>
+        </destination>
+        <source>
+          <endpoint value="https://sos.ny.gov/vitalrecords"/>
+        </source>
+        <focus>
+          <reference value="http://www.example.org/fhir/Parameters/ParametersDeathExample1"/>
+        </focus>
+        <focus>
+          <reference value="http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Parameters/ParametersDeathExample1"/>
+    <resource>
+      <Parameters>
+        <id value="ParametersDeathExample1"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
+        </meta>
+        <parameter>
+          <name value="cert_no"/>
+          <valueUnsignedInt value="111111"/>
+        </parameter>
+        <parameter>
+          <name value="jurisdiction_id"/>
+          <valueString value="NY"/>
+        </parameter>
+        <parameter>
+          <name value="state_auxiliary_id"/>
+          <valueString value="abcdef10"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Bundle/MaternalLinkageBundle-Birth"/>
+    <resource>
+      <Bundle>
+        <id value="MaternalLinkageBundle-Birth"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"/>
+        </meta>
+        <identifier>
+          <value value="placeholder"/>
+        </identifier>
+        <type value="collection"/>
+        <entry>
+          <fullUrl value="http://www.example.org/fhir/Parameter/ParametersLinkage-LiveBirthWithCert"/>
+          <resource>
+            <Parameters>
+              <id value="ParametersLinkage-LiveBirthWithCert"/>
+              <meta>
+                <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"/>
+              </meta>
+              <parameter>
+                <name value="notes"/>
+                <valueString value="Live Birth With Certificate"/>
+              </parameter>
+              <parameter>
+                <name value="coded_outcome"/>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="281050002"/>
+                    <display value="Livebirth"/>
+                  </coding>
+                </valueCodeableConcept>
+              </parameter>
+              <parameter>
+                <name value="birth_plurality"/>
+                <valueInteger value="1"/>
+              </parameter>
+              <parameter>
+                <name value="fetal_death_plurality"/>
+                <valueInteger value="0"/>
+              </parameter>
+              <parameter>
+                <name value="preg_status_is_correct"/>
+                <valueBoolean value="true"/>
+              </parameter>
+            </Parameters>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-Example1"/>
+          <resource>
+            <Observation>
+              <id value="BirthRecordIdentifierChild-Example1"/>
+              <meta>
+                <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"/>
+                  <code value="birthrecordidentifier"/>
+                </coding>
+              </code>
+              <valueString value="717171"/>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21842-0"/>
+                  </coding>
+                </code>
+                <valueString value="YC"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="80904-6"/>
+                  </coding>
+                </code>
+                <valueDateTime value="2024"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <code value="index"/>
+                  </coding>
+                </code>
+                <valueInteger value="1"/>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <code value="availability"/>
+                  </coding>
+                </code>
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                    <code value="Y"/>
+                    <display value="Yes"/>
+                  </coding>
+                </valueCodeableConcept>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

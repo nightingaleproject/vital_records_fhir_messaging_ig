@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="MaternalLinkageBundle-EctopicPregnancy"/>
+  <meta>
+    <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"/>
+  </meta>
+  <identifier>
+    <value value="placeholder"/>
+  </identifier>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Parameter/ParametersLinkage-EctopicPregnancy"/>
+    <resource>
+      <Parameters>
+        <id value="ParametersLinkage-EctopicPregnancy"/>
+        <meta>
+          <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"/>
+        </meta>
+        <parameter>
+          <name value="notes"/>
+          <valueString value="Ectopic Pregnancy"/>
+        </parameter>
+        <parameter>
+          <name value="coded_outcome"/>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="34801009"/>
+              <display value="Ectopic Pregnancy"/>
+            </coding>
+          </valueCodeableConcept>
+        </parameter>
+        <parameter>
+          <name value="birth_plurality"/>
+          <valueInteger value="0"/>
+        </parameter>
+        <parameter>
+          <name value="fetal_death_plurality"/>
+          <valueInteger value="0"/>
+        </parameter>
+        <parameter>
+          <name value="preg_status_is_correct"/>
+          <valueBoolean value="true"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </entry>
+</Bundle>
