@@ -32,7 +32,7 @@ See the [change log](change_log.html) for an updated list of changes.
 </div><!-- note-to-balloters -->
 ### Background
 
-Pull request demo.
+Pull request demo. Typo correction.
 
 Vital records jurisdictions submit information on deaths and births in their jurisdiction to the U.S. National Center for Health Statistics (NCHS). For each submission, NCHS codes all causes of death, races, and ethnicities and returns the information to the submitter.
 
