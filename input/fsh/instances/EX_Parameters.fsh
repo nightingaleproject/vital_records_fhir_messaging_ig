@@ -159,7 +159,7 @@ Instance: ParametersLinkage-Extensive-PluralBirthAndFetalDeath
 InstanceOf: RecentPregnancyParameters
 Usage: #example
 Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert - extensive example"
-* parameter[notes].valueString = "Example of notes"
+* parameter[notes].valueString = "This is a long example of notes to use all characters. Long example of notes to use characters. Test"
 * parameter[coded_outcome].valueCodeableConcept = CodedPregnancyStatusCS#live-birth-and-fetal-death "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" 
 * parameter[birth_plurality].valueInteger = 2
 * parameter[fetal_death_plurality].valueInteger = 2
