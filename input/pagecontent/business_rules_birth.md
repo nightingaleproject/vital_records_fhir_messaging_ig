@@ -50,13 +50,13 @@ An Error Message with a format of "Error: Unable to find _IJE Field_ required el
             <td>birthDate.value</td>
 		</tr>
 		<tr>
-			<td>Date of Birth (Infant)--Year</td>
+			<td>Date of Birth (Infant)--Month</td>
 			<td>IDOB_MO</td>
 			<td>PatientChildVitalRecords</td>
             <td>birthDate.value</td>
 		</tr>
 		<tr>
-			<td>Date of Birth (Infant)--Year</td>
+			<td>Date of Birth (Infant)--Day</td>
 			<td>IDOB_DY</td>
 			<td>PatientChildVitalRecords</td>
             <td>birthDate.value</td>
