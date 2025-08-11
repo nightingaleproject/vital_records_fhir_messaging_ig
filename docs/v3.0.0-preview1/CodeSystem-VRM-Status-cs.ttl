@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Status Codes Values"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-07-09T11:35:05-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-11T15:01:09-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;
@@ -47,11 +47,11 @@
   ] [
      fhir:code [ fhir:v "manualCodingCanceled_Update" ] ;
      fhir:display [ fhir:v "Manual Coding Canceled - Update" ] ;
-     fhir:definition [ fhir:v "An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record." ]
+     fhir:definition [ fhir:v "An update has been submitted for a death record that is queued for manual coding.  The manual coding\r\nhas been canceled for the original record." ]
   ] [
      fhir:code [ fhir:v "manualCodingCanceled_Void" ] ;
      fhir:display [ fhir:v "Manual Coding Canceled - Void" ] ;
-     fhir:definition [ fhir:v "A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record." ]
+     fhir:definition [ fhir:v "A void request has been received for a death record that is queued for manual coding.  The manual coding\r\nhas been canceled for the original record." ]
   ] [
      fhir:code [ fhir:v "nonCodeable" ] ;
      fhir:display [ fhir:v "Non Codeable" ] ;

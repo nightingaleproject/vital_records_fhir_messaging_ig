@@ -12,9 +12,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters"
     },
     {
@@ -255,10 +255,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
       "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
     },

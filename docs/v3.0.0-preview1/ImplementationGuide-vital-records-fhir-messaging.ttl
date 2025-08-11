@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "VitalRecordsFHIRMessagingIG"] ; # 
   fhir:title [ fhir:v "Vital Records FHIR Messaging (VRFM) IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T11:35:05-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-11T15:01:09-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;
@@ -510,7 +510,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -1182,7 +1182,7 @@
          fhir:reference [ fhir:v "StructureDefinition/VRM-birth-record-identifier-child" ]
        ] ;
        fhir:name [ fhir:v "Birth Record Identifier Child" ] ;
-       fhir:description [ fhir:v "Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.\nThe subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier." ] ;
+       fhir:description [ fhir:v "Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.\r\nThe subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2165,7 +2165,7 @@
          fhir:reference [ fhir:v "StructureDefinition/VRM-fetal-death-record-identifier" ]
        ] ;
        fhir:name [ fhir:v "Fetal Death Record Identifier" ] ;
-       fhir:description [ fhir:v "Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.\nThe subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier." ] ;
+       fhir:description [ fhir:v "Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.\r\nThe subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

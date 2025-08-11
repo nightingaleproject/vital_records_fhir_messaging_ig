@@ -10,7 +10,7 @@
   "name" : "VitalRecordsFHIRMessagingIG",
   "title" : "Vital Records FHIR Messaging (VRFM) IG",
   "status" : "draft",
-  "date" : "2025-07-09T11:35:05-04:00",
+  "date" : "2025-08-11T15:01:09-04:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -371,7 +371,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -860,7 +860,7 @@
         "reference" : "StructureDefinition/VRM-birth-record-identifier-child"
       },
       "name" : "Birth Record Identifier Child",
-      "description" : "Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.\nThe subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier.",
+      "description" : "Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.\r\nThe subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier.",
       "exampleBoolean" : false,
       "groupingId" : "MaternalLinkages"
     },
@@ -1503,7 +1503,7 @@
         "reference" : "StructureDefinition/VRM-fetal-death-record-identifier"
       },
       "name" : "Fetal Death Record Identifier",
-      "description" : "Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.\nThe subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier.",
+      "description" : "Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.\r\nThe subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier.",
       "exampleBoolean" : false,
       "groupingId" : "MaternalLinkages"
     },

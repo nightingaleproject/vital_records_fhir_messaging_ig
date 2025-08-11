@@ -10,7 +10,7 @@
   <name value="VitalRecordsFHIRMessagingIG"/>
   <title value="Vital Records FHIR Messaging (VRFM) IG"/>
   <status value="draft"/>
-  <date value="2025-07-09T11:35:05-04:00"/>
+  <date value="2025-08-11T15:01:09-04:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -279,7 +279,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -665,7 +665,7 @@
         <reference value="StructureDefinition/VRM-birth-record-identifier-child"/>
       </reference>
       <name value="Birth Record Identifier Child"/>
-      <description value="Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.&#xA;The subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier."/>
+      <description value="Birth Record Identifier (Observation). For use in Maternal Death. This includes the record identifier, the jurisdiction, and the birth year of a child.&#xD;&#xA;The subject is implicitly the Decedent (mother), whose death was related to the to the birth referenced by the identifier."/>
       <exampleBoolean value="false"/>
       <groupingId value="MaternalLinkages"/>
     </resource>
@@ -1256,7 +1256,7 @@
         <reference value="StructureDefinition/VRM-fetal-death-record-identifier"/>
       </reference>
       <name value="Fetal Death Record Identifier"/>
-      <description value="Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.&#xA;The subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier."/>
+      <description value="Fetal Death Record Identifier (Observation).  For use in Maternal Death. This includes the fetal death record identifier, the jurisdiction, and the birth year.&#xD;&#xA;The subject is implicitly the Decedent (mother), whose death was related to the fetal death referenced by the identifier."/>
       <exampleBoolean value="false"/>
       <groupingId value="MaternalLinkages"/>
     </resource>

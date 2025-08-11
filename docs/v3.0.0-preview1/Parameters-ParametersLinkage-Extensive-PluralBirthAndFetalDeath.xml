@@ -7,7 +7,7 @@
   </meta>
   <parameter>
     <name value="notes"/>
-    <valueString value="Example of notes"/>
+    <valueString value="This is a long example of notes to use all characters. Long example of notes to use characters. Test"/>
   </parameter>
   <parameter>
     <name value="coded_outcome"/>

@@ -6,7 +6,7 @@
   },
   "parameter" : [{
     "name" : "notes",
-    "valueString" : "Example of notes"
+    "valueString" : "This is a long example of notes to use all characters. Long example of notes to use characters. Test"
   },
   {
     "name" : "coded_outcome",

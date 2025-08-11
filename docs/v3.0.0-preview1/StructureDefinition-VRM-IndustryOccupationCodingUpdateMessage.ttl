@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "IndustryOccupationCodingUpdateMessage"] ; # 
   fhir:title [ fhir:v "Industry Occupation Coding Update Message"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T11:35:05-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-11T15:01:09-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;

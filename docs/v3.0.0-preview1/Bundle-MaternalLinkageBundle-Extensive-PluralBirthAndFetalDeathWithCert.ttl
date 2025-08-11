@@ -68,7 +68,7 @@
      fhir:name [ fhir:v "notes" ] ;
      fhir:value [
        a fhir:string ;
-       fhir:v "Example of notes"
+       fhir:v "This is a long example of notes to use all characters. Long example of notes to use characters. Test"
      ]
   ] [
      fhir:name [ fhir:v "coded_outcome" ] ;
