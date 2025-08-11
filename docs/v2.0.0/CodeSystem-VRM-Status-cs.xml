@@ -19,7 +19,7 @@ has been canceled for the original record.</p>
   <title value="Status Codes Values"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-07-09T11:57:36-04:00"/>
+  <date value="2025-08-11T16:10:00-04:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -50,12 +50,12 @@ has been canceled for the original record.</p>
   <concept>
     <code value="manualCodingCanceled_Update"/>
     <display value="Manual Coding Canceled - Update"/>
-    <definition value="An update has been submitted for a death record that is queued for manual coding.  The manual coding&#xA;has been canceled for the original record."/>
+    <definition value="An update has been submitted for a death record that is queued for manual coding.  The manual coding&#xD;&#xA;has been canceled for the original record."/>
   </concept>
   <concept>
     <code value="manualCodingCanceled_Void"/>
     <display value="Manual Coding Canceled - Void"/>
-    <definition value="A void request has been received for a death record that is queued for manual coding.  The manual coding&#xA;has been canceled for the original record."/>
+    <definition value="A void request has been received for a death record that is queued for manual coding.  The manual coding&#xD;&#xA;has been canceled for the original record."/>
   </concept>
   <concept>
     <code value="nonCodeable"/>

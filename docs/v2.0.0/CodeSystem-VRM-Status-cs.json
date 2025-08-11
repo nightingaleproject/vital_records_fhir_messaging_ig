@@ -11,7 +11,7 @@
   "title" : "Status Codes Values",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-07-09T11:57:36-04:00",
+  "date" : "2025-08-11T16:10:00-04:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -42,12 +42,12 @@
   {
     "code" : "manualCodingCanceled_Update",
     "display" : "Manual Coding Canceled - Update",
-    "definition" : "An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record."
+    "definition" : "An update has been submitted for a death record that is queued for manual coding.  The manual coding\r\nhas been canceled for the original record."
   },
   {
     "code" : "manualCodingCanceled_Void",
     "display" : "Manual Coding Canceled - Void",
-    "definition" : "A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record."
+    "definition" : "A void request has been received for a death record that is queued for manual coding.  The manual coding\r\nhas been canceled for the original record."
   },
   {
     "code" : "nonCodeable",

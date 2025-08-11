@@ -13,9 +13,9 @@
       "uses" : {
       },
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters"
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
     },
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-AcknowledgementHeaderURI-vs",
@@ -213,9 +213,9 @@
       "uses" : {
       },
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
-      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters"
+      "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters"
     }
   ]
 }

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "VitalRecordsFHIRMessagingIG"] ; # 
   fhir:title [ fhir:v "Vital Records FHIR Messaging (VRFM) IG"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-09T11:57:36-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-11T16:10:00-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;
@@ -510,7 +510,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
