@@ -1,0 +1,212 @@
+# CodedCauseOfFetalDeathMessage-Example1 - Vital Records FHIR Messaging (VRFM) IG v3.0.0-Preview1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **CodedCauseOfFetalDeathMessage-Example1**
+
+## Example Bundle: CodedCauseOfFetalDeathMessage-Example1
+
+Profile: [Coded Cause of Fetal Death Message](StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.md)
+
+Bundle CodedCauseOfFetalDeathMessage-Example1 of type message
+
+-------
+
+Entry 1 - fullUrl = http://www.example.org/fhir/Header/CodedCauseOfFetalDeathHeader-Example1
+
+Resource MessageHeader:
+
+> 
+
+Profile: [Cause of Death Coding Header](StructureDefinition-VRM-CauseOfDeathCodingHeader.md)
+
+**event**:`http://nchs.cdc.gov/fd_causeofdeath_coding`
+> **destination**
+
+> **source**
+
+### Responses
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Identifier** | **Code** |
+| * | FetalDeathReportHeader-Example1 | OK |
+
+**focus**:
+* [Bundle: type = collection](Bundle-BirthReportMessage-Example1.md#http-//www.example.org/fhir/Bundle/DummyBundle)
+* [Parameters: cert_no, jurisdiction_id, event_year, state_auxiliary_id, payload_version_id](Bundle-CodedCauseOfFetalDeathMessage-Example1.md#http-//www.example.org/fhir/Parameters/ParametersFD-Example2)
+
+-------
+
+Entry 2 - fullUrl = http://www.example.org/fhir/Parameters/ParametersFD-Example2
+
+Resource Parameters:
+
+> 
+
+Profile: [Message Parameters](StructureDefinition-VRM-MessageParameters.md)
+
+## Parameters
+
+
+-------
+
+Entry 3 - fullUrl = http://www.example.org/fhir/Bundle/DummyBundle
+
+Resource Bundle:
+
+> 
+
+Profile: [Placeholder Profile for profile-based slicing](StructureDefinition-VRM-MessageBundle.md)
+
+Bundle DummyBundle of type collection
+-------
+Entry 1 - fullUrl = http://www.example.org/fhir/Parameters/ParametersBirth-Example1Resource Parameters:
+> 
+
+Profile: [Message Parameters](StructureDefinition-VRM-MessageParameters.md)
+
+## Parameters
+
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "CodedCauseOfFetalDeathMessage-Example1",
+  "meta" : {
+    "profile" : [
+      "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CodedCauseOfFetalDeathMessage"
+    ]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [
+    {
+      "fullUrl" : "http://www.example.org/fhir/Header/CodedCauseOfFetalDeathHeader-Example1",
+      "resource" : {
+        "resourceType" : "MessageHeader",
+        "id" : "CodedCauseOfFetalDeathHeader-Example1",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-CauseOfDeathCodingHeader"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_CodedCauseOfFetalDeathHeader-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader CodedCauseOfFetalDeathHeader-Example1</b></p><a name=\"CodedCauseOfFetalDeathHeader-Example1\"> </a><a name=\"hcCodedCauseOfFetalDeathHeader-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-CauseOfDeathCodingHeader.html\">Cause of Death Coding Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/fd_causeofdeath_coding\">http://nchs.cdc.gov/fd_causeofdeath_coding</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://nchs.cdc.gov/vitalrecords\">https://nchs.cdc.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>FetalDeathReportHeader-Example1</td><td>OK</td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Bundle/DummyBundle\">Bundle: type = collection</a></li><li><a href=\"Bundle-CodedCauseOfFetalDeathMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersFD-Example2\">Parameters: cert_no, jurisdiction_id, event_year, state_auxiliary_id, payload_version_id</a></li></ul></div>"
+        },
+        "eventUri" : "http://nchs.cdc.gov/fd_causeofdeath_coding",
+        "destination" : [
+          {
+            "endpoint" : "https://nchs.cdc.gov/vitalrecords"
+          }
+        ],
+        "source" : {
+          "endpoint" : "https://sos.ny.gov/vitalrecords"
+        },
+        "response" : {
+          "identifier" : "FetalDeathReportHeader-Example1",
+          "code" : "ok"
+        },
+        "focus" : [
+          {
+            "reference" : "http://www.example.org/fhir/Bundle/DummyBundle"
+          },
+          {
+            "reference" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2",
+      "resource" : {
+        "resourceType" : "Parameters",
+        "id" : "ParametersFD-Example2",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+          ]
+        },
+        "parameter" : [
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 112233
+          },
+          {
+            "name" : "jurisdiction_id",
+            "valueString" : "NY"
+          },
+          {
+            "name" : "event_year",
+            "valueUnsignedInt" : 2021
+          },
+          {
+            "name" : "state_auxiliary_id",
+            "valueString" : "abcdef10"
+          },
+          {
+            "name" : "payload_version_id",
+            "valueString" : "BFDRSTU1.1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://www.example.org/fhir/Bundle/DummyBundle",
+      "resource" : {
+        "resourceType" : "Bundle",
+        "id" : "DummyBundle",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"
+          ]
+        },
+        "type" : "collection",
+        "entry" : [
+          {
+            "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersBirth-Example1",
+            "resource" : {
+              "resourceType" : "Parameters",
+              "id" : "ParametersBirth-Example1",
+              "meta" : {
+                "profile" : [
+                  "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+                ]
+              },
+              "parameter" : [
+                {
+                  "name" : "cert_no",
+                  "valueUnsignedInt" : 111111
+                },
+                {
+                  "name" : "jurisdiction_id",
+                  "valueString" : "NY"
+                },
+                {
+                  "name" : "event_year",
+                  "valueUnsignedInt" : 2022
+                },
+                {
+                  "name" : "state_auxiliary_id",
+                  "valueString" : "abcdef10"
+                },
+                {
+                  "name" : "payload_version_id",
+                  "valueString" : "BFDRSTU2.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

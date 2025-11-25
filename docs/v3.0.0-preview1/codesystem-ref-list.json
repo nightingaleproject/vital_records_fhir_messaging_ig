@@ -20,19 +20,19 @@
       "description" : "MessageHeader URI Values",
       "uses" : {
       },
-      "ValueSet-VRM-ExtractionErrorHeaderURI-vs.html" : "ExtractionError MessageHeader URI Values",
       "ValueSet-VRM-AcknowledgementHeaderURI-vs.html" : "Acknowledgement MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationHeaderURI-vs.html" : "Industry and Occupation MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingHeaderURI-vs.html" : "Demographics Coding  MessageHeader URI Values",
+      "ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs.html" : "Cause of Death Coding Update MessageHeader URI Values",
+      "ValueSet-VRM-ExtractionErrorHeaderURI-vs.html" : "ExtractionError MessageHeader URI Values",
+      "ValueSet-VRM-StatusHeaderURI-vs.html" : "Status MessageHeader URI Values",
+      "ValueSet-VRM-VOIDHeaderURI-vs.html" : "Void MessageHeader URI Values",
+      "ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs.html" : "Industry and Occupation Update MessageHeader URI Values",
+      "ValueSet-VRM-RequestHeaderURI-vs.html" : "Request MessageHeader URI Values",
+      "ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs.html" : "Demographics Coding Update MessageHeader URI Values",
       "ValueSet-VRM-UpdateHeaderURI-vs.html" : "Update MessageHeader URI Values",
       "ValueSet-VRM-SubmissionHeaderURI-vs.html" : "Submission MessageHeader URI Values",
-      "ValueSet-VRM-DemographicsCodingHeaderURI-vs.html" : "Demographics Coding  MessageHeader URI Values",
-      "ValueSet-VRM-IndustryOccupationUpdateHeaderURI-vs.html" : "Industry and Occupation Update MessageHeader URI Values",
-      "ValueSet-VRM-StatusHeaderURI-vs.html" : "Status MessageHeader URI Values",
-      "ValueSet-VRM-IndustryOccupationHeaderURI-vs.html" : "Industry and Occupation MessageHeader URI Values",
-      "ValueSet-VRM-DemographicsCodingUpdateHeaderURI-vs.html" : "Demographics Coding Update MessageHeader URI Values",
-      "ValueSet-VRM-CauseOfDeathCodingUpdateHeaderURI-vs.html" : "Cause of Death Coding Update MessageHeader URI Values",
-      "ValueSet-VRM-VOIDHeaderURI-vs.html" : "Void MessageHeader URI Values",
-      "ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs.html" : "Cause of Death Coding MessageHeader URI Values",
-      "ValueSet-VRM-RequestHeaderURI-vs.html" : "Request MessageHeader URI Values"
+      "ValueSet-VRM-CauseOfDeathCodingHeaderURI-vs.html" : "Cause of Death Coding MessageHeader URI Values"
     },
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs",
@@ -124,9 +124,9 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "ValueSet-VRM-CertAvailable-vs.html" : "Certificate Available Values",
       "https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-death-pregnancy-status-vs.html" : "Death Pregnancy Status ValueSet",
-      "ValueSet-VRM-PregnancyOutcomes-vs.html" : "Pregnancy Outcome Values"
+      "ValueSet-VRM-PregnancyOutcomes-vs.html" : "Pregnancy Outcome Values",
+      "ValueSet-VRM-CertAvailable-vs.html" : "Certificate Available Values"
     }
   ]
 }

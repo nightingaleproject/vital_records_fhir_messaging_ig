@@ -12,37 +12,37 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
-       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "cert_no" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "112233"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "jurisdiction_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "NY"
      ]
   ] [
      fhir:name [ fhir:v "event_year" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "2021"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "state_auxiliary_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "abcdef10"
      ]
   ] [
      fhir:name [ fhir:v "payload_version_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "BFDRSTU1.1"
      ]
   ] ) . # 

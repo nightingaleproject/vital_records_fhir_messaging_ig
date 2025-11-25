@@ -1,0 +1,200 @@
+# FetalDeathReportUpdateMessage-Example1 - Vital Records FHIR Messaging (VRFM) IG v3.0.0-Preview1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **FetalDeathReportUpdateMessage-Example1**
+
+## Example Bundle: FetalDeathReportUpdateMessage-Example1
+
+Profile: [Fetal Death Report Message](StructureDefinition-VRM-FetalDeathReportUpdateMessage.md)
+
+Bundle FetalDeathReportUpdateMessage-Example1 of type message
+
+-------
+
+Entry 1 - fullUrl = http://www.example.org/fhir/Header/FetalDeathReportUpdateHeader-Example1
+
+Resource MessageHeader:
+
+> 
+
+Profile: [Message Update Header](StructureDefinition-VRM-UpdateHeader.md)
+
+**event**:`http://nchs.cdc.gov/fd_submission_update`
+> **destination**
+
+> **source**
+**focus**:
+* [Bundle: type = collection](Bundle-BirthReportMessage-Example1.md#http-//www.example.org/fhir/Bundle/DummyBundle)
+* [Parameters: cert_no, jurisdiction_id, event_year, state_auxiliary_id, payload_version_id](Bundle-CodedCauseOfFetalDeathMessage-Example1.md#http-//www.example.org/fhir/Parameters/ParametersFD-Example2)
+
+-------
+
+Entry 2 - fullUrl = http://www.example.org/fhir/Parameters/ParametersFD-Example2
+
+Resource Parameters:
+
+> 
+
+Profile: [Message Parameters](StructureDefinition-VRM-MessageParameters.md)
+
+## Parameters
+
+
+-------
+
+Entry 3 - fullUrl = http://www.example.org/fhir/Bundle/DummyBundle
+
+Resource Bundle:
+
+> 
+
+Profile: [Placeholder Profile for profile-based slicing](StructureDefinition-VRM-MessageBundle.md)
+
+Bundle DummyBundle of type collection
+-------
+Entry 1 - fullUrl = http://www.example.org/fhir/Parameters/ParametersBirth-Example1Resource Parameters:
+> 
+
+Profile: [Message Parameters](StructureDefinition-VRM-MessageParameters.md)
+
+## Parameters
+
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "FetalDeathReportUpdateMessage-Example1",
+  "meta" : {
+    "profile" : [
+      "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-FetalDeathReportUpdateMessage"
+    ]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [
+    {
+      "fullUrl" : "http://www.example.org/fhir/Header/FetalDeathReportUpdateHeader-Example1",
+      "resource" : {
+        "resourceType" : "MessageHeader",
+        "id" : "FetalDeathReportUpdateHeader-Example1",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-UpdateHeader"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_FetalDeathReportUpdateHeader-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader FetalDeathReportUpdateHeader-Example1</b></p><a name=\"FetalDeathReportUpdateHeader-Example1\"> </a><a name=\"hcFetalDeathReportUpdateHeader-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-UpdateHeader.html\">Message Update Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/fd_submission_update\">http://nchs.cdc.gov/fd_submission_update</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://nchs.cdc.gov/vitalrecords\">https://nchs.cdc.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-BirthReportMessage-Example1.html#http-//www.example.org/fhir/Bundle/DummyBundle\">Bundle: type = collection</a></li><li><a href=\"Bundle-CodedCauseOfFetalDeathMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersFD-Example2\">Parameters: cert_no, jurisdiction_id, event_year, state_auxiliary_id, payload_version_id</a></li></ul></div>"
+        },
+        "eventUri" : "http://nchs.cdc.gov/fd_submission_update",
+        "destination" : [
+          {
+            "endpoint" : "https://nchs.cdc.gov/vitalrecords"
+          }
+        ],
+        "source" : {
+          "endpoint" : "https://sos.ny.gov/vitalrecords"
+        },
+        "focus" : [
+          {
+            "reference" : "http://www.example.org/fhir/Bundle/DummyBundle"
+          },
+          {
+            "reference" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersFD-Example2",
+      "resource" : {
+        "resourceType" : "Parameters",
+        "id" : "ParametersFD-Example2",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+          ]
+        },
+        "parameter" : [
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 112233
+          },
+          {
+            "name" : "jurisdiction_id",
+            "valueString" : "NY"
+          },
+          {
+            "name" : "event_year",
+            "valueUnsignedInt" : 2021
+          },
+          {
+            "name" : "state_auxiliary_id",
+            "valueString" : "abcdef10"
+          },
+          {
+            "name" : "payload_version_id",
+            "valueString" : "BFDRSTU1.1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://www.example.org/fhir/Bundle/DummyBundle",
+      "resource" : {
+        "resourceType" : "Bundle",
+        "id" : "DummyBundle",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"
+          ]
+        },
+        "type" : "collection",
+        "entry" : [
+          {
+            "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersBirth-Example1",
+            "resource" : {
+              "resourceType" : "Parameters",
+              "id" : "ParametersBirth-Example1",
+              "meta" : {
+                "profile" : [
+                  "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+                ]
+              },
+              "parameter" : [
+                {
+                  "name" : "cert_no",
+                  "valueUnsignedInt" : 111111
+                },
+                {
+                  "name" : "jurisdiction_id",
+                  "valueString" : "NY"
+                },
+                {
+                  "name" : "event_year",
+                  "valueUnsignedInt" : 2022
+                },
+                {
+                  "name" : "state_auxiliary_id",
+                  "valueString" : "abcdef10"
+                },
+                {
+                  "name" : "payload_version_id",
+                  "valueString" : "BFDRSTU2.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

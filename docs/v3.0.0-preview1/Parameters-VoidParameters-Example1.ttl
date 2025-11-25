@@ -12,37 +12,37 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters"^^xsd:anyURI ;
-       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters>
+       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-VoidParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "cert_no" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "123456"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "block_count" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "10"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "jurisdiction_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "NY"
      ]
   ] [
      fhir:name [ fhir:v "event_year" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "2018"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "state_auxiliary_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "abcdef10"
      ]
   ] ) . # 

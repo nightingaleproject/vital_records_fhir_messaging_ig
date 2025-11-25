@@ -10,7 +10,7 @@
   "name" : "SubmissionHeader",
   "title" : "Submission Message Header",
   "status" : "draft",
-  "date" : "2025-08-11T15:01:09-04:00",
+  "date" : "2025-11-25T14:04:25-05:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -235,7 +235,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -425,7 +425,7 @@
         }],
         "strength" : "example",
         "description" : "One of the message events defined as part of this version of FHIR.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/message-events"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/message-events|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -687,7 +687,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -755,9 +755,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -802,9 +802,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -849,8 +849,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -891,8 +891,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1256,9 +1256,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1316,7 +1316,7 @@
         }],
         "strength" : "example",
         "description" : "Reason for event occurrence.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/message-reason-encounter"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/message-reason-encounter|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1573,7 +1573,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/OperationOutcome"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/OperationOutcome|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1610,7 +1610,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1642,7 +1642,7 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MessageDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MessageDefinition|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

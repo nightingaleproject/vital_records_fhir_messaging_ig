@@ -13,9 +13,9 @@
       "uses" : {
       },
       "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
-      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
       "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
-      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters"
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters"
     },
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-AcknowledgementHeaderURI-vs",
@@ -72,8 +72,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-DemographicsCodingHeaderURI-vs",
@@ -254,8 +254,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -269,30 +269,30 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
-      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
-      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingMessage.html" : "Industry Occupation Coding Message",
-      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message",
-      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
       "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
-      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
+      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
       "StructureDefinition-VRM-MaternalLinkageUpdateMessage.html" : "Maternal Linkage Update Message",
-      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
-      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html" : "Industry Occupation Coding Update Message",
       "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
-      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
-      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
+      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
       "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
-      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
-      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
-      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
       "StructureDefinition-VRM-MessageBundle.html" : "Placeholder Profile for profile-based slicing",
+      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
+      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
+      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
       "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
-      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message"
+      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message",
+      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
+      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
+      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
+      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
+      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -306,8 +306,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -321,30 +321,30 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
-      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
-      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingMessage.html" : "Industry Occupation Coding Message",
-      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message",
-      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
       "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
-      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
+      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
       "StructureDefinition-VRM-MaternalLinkageUpdateMessage.html" : "Maternal Linkage Update Message",
-      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
-      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html" : "Industry Occupation Coding Update Message",
       "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
-      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
-      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
+      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
       "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
-      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
-      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
-      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
       "StructureDefinition-VRM-MessageBundle.html" : "Placeholder Profile for profile-based slicing",
+      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
+      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
+      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
       "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
-      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message"
+      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message",
+      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
+      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
+      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
+      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
+      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -414,52 +414,52 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
-      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header",
-      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
-      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message",
-      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
-      "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
+      "StructureDefinition-VRM-IndustryOccupationCodingMessage.html" : "Industry Occupation Coding Message",
+      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
+      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
       "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-MaternalLinkageUpdateMessage.html" : "Maternal Linkage Update Message",
-      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header",
       "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
-      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
-      "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
-      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
-      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
-      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
-      "StructureDefinition-VRM-Outcome.html" : "Outcome Profile",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
-      "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
-      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
-      "StructureDefinition-VRM-RecentPregnancyParameters.html" : "Recent Pregnancy Parameters",
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
-      "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
-      "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
-      "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
-      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
-      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
-      "StructureDefinition-VRM-IndustryOccupationCodingMessage.html" : "Industry Occupation Coding Message",
-      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
-      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
-      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
-      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html" : "Industry Occupation Coding Update Message",
-      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
       "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
-      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
-      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
-      "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
-      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
-      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
-      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
-      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
       "StructureDefinition-VRM-MessageBundle.html" : "Placeholder Profile for profile-based slicing",
+      "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
+      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
+      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
+      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
       "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message",
-      "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header"
+      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
+      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
+      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
+      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
+      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
+      "StructureDefinition-VRM-Outcome.html" : "Outcome Profile",
+      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
+      "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
+      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
+      "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
+      "StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html" : "Industry Occupation Coding Update Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
+      "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
+      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
+      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
+      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-RecentPregnancyParameters.html" : "Recent Pregnancy Parameters",
+      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
+      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
+      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
+      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
+      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/message-events",
@@ -473,20 +473,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.26"],
       "uses" : {
       },
-      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
-      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
-      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
-      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
-      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
-      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
-      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
       "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
-      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
-      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
       "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header",
-      "StructureDefinition-VRM-StatusHeader.html" : "Status Header"
+      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
+      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
+      "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
+      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
+      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
+      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
+      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
+      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
+      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
+      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/message-reason-encounter",
@@ -502,20 +502,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.378"],
       "uses" : {
       },
-      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
-      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
-      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
-      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
-      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
-      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
-      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
       "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
-      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
-      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
       "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header",
-      "StructureDefinition-VRM-StatusHeader.html" : "Status Header"
+      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
+      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
+      "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
+      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
+      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
+      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
+      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
+      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
+      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
+      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -529,8 +529,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -544,8 +544,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -561,8 +561,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -576,8 +576,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -591,8 +591,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/operation-outcome",
@@ -623,8 +623,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -640,8 +640,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/response-code",
@@ -655,20 +655,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.380"],
       "uses" : {
       },
-      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
-      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
-      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
-      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
-      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
-      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
-      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
-      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
       "StructureDefinition-VRM-DemographicsCodingHeader.html" : "Demographics Coding Header",
-      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
-      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
       "StructureDefinition-VRM-CauseOfDeathCodingHeader.html" : "Cause of Death Coding Header",
-      "StructureDefinition-VRM-StatusHeader.html" : "Status Header"
+      "StructureDefinition-VRM-ExtractionErrorHeader.html" : "Extraction Error Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingHeader.html" : "Industry Occupation Coding Header",
+      "StructureDefinition-VRM-AliasHeader.html" : "Alias Header",
+      "StructureDefinition-VRM-StatusHeader.html" : "Status Header",
+      "StructureDefinition-VRM-SubmissionHeader.html" : "Submission Message Header",
+      "StructureDefinition-VRM-CauseOfDeathCodingUpdateHeader.html" : "Cause of Death Coding Update Header",
+      "StructureDefinition-VRM-UpdateHeader.html" : "Message Update Header",
+      "StructureDefinition-VRM-MaternalLinkageRequestHeader.html" : "Maternal Linkage Request Message Header",
+      "StructureDefinition-VRM-IndustryOccupationCodingUpdateHeader.html" : "Industy Occupation Coding Update  Header",
+      "StructureDefinition-VRM-VoidHeader.html" : "Void Header",
+      "StructureDefinition-VRM-AcknowledgementHeader.html" : "Acknowledgement Header",
+      "StructureDefinition-VRM-DemographicsCodingUpdateHeader.html" : "Demographics Coding Update Header"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -682,30 +682,30 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
-      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
-      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingMessage.html" : "Industry Occupation Coding Message",
-      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message",
-      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
       "StructureDefinition-VRM-StatusMessage.html" : "Status Message",
-      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
+      "StructureDefinition-VRM-VoidMessage.html" : "Void Message (for mortality, birth, and fetal death)",
       "StructureDefinition-VRM-MaternalLinkageUpdateMessage.html" : "Maternal Linkage Update Message",
-      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
-      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
       "StructureDefinition-VRM-IndustryOccupationCodingUpdateMessage.html" : "Industry Occupation Coding Update Message",
       "StructureDefinition-VRM-CauseOfDeathCodingUpdateMessage.html" : "Cause Of Death Coding Update Message",
-      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
-      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
-      "StructureDefinition-VRM-CodedCauseOfFetalDeathUpdateMessage.html" : "Coded Cause of Fetal Death Update Message",
+      "StructureDefinition-VRM-DemographicsCodingMessage.html" : "Demographics Coding Message",
+      "StructureDefinition-VRM-CauseOfDeathCodingMessage.html" : "Cause of Death Coding Message",
       "StructureDefinition-VRM-DemographicsCodingUpdateMessage.html" : "Demographics Coding Update Message",
-      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
-      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
-      "StructureDefinition-VRM-AcknowledgementMessage.html" : "Acknowledgement Message",
       "StructureDefinition-VRM-MessageBundle.html" : "Placeholder Profile for profile-based slicing",
+      "StructureDefinition-VRM-maternal-linkage-content-bundle.html" : "Maternal Linkage Content Bundle",
+      "StructureDefinition-VRM-DeathRecordSubmissionMessage.html" : "Death Record Submission Message",
+      "StructureDefinition-VRM-FetalDeathReportMessage.html" : "Fetal Death Report Message",
       "StructureDefinition-VRM-ExtractionErrorMessage.html" : "Extraction Error Message",
-      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message"
+      "StructureDefinition-VRM-BirthReportMessage.html" : "Birth Report Message",
+      "StructureDefinition-VRM-DeathRecordAliasMessage.html" : "Death Record Alias Message",
+      "StructureDefinition-VRM-CodedCauseOfFetalDeathMessage.html" : "Coded Cause of Fetal Death Message",
+      "StructureDefinition-VRM-BirthReportUpdateMessage.html" : "Birth Report Update Message",
+      "StructureDefinition-VRM-MaternalLinkageRequestMessage.html" : "Maternal Linkage Request Message",
+      "StructureDefinition-VRM-DeathRecordUpdateMessage.html" : "Death Record Update Message",
+      "StructureDefinition-VRM-FetalDeathReportUpdateMessage.html" : "Fetal Death Report Message",
+      "StructureDefinition-VRM-MaternalLinkageSubmissionMessage.html" : "Maternal Linkage Submission Message"
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-jurisdiction-vr",
@@ -721,11 +721,11 @@
       "uses" : {
       },
       "StructureDefinition-VRM-VoidParameters.html" : "Void Message Parameters",
-      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
-      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child",
       "StructureDefinition-VRM-StatusParameters.html" : "Status Message Parameters",
       "StructureDefinition-VRM-AliasParameters.html" : "Alias Message Parameters",
-      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier"
+      "StructureDefinition-VRM-fetal-death-record-identifier.html" : "Fetal Death Record Identifier",
+      "StructureDefinition-VRM-MessageParameters.html" : "Message Parameters",
+      "StructureDefinition-VRM-birth-record-identifier-child.html" : "Birth Record Identifier Child"
     },
     {
       "url" : "http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-death-pregnancy-status-vs",

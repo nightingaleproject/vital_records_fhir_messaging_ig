@@ -12,12 +12,15 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle"^^xsd:anyURI ;
-       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle>
+       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageBundle>
      ] )
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://www.example.org/fhir/Parameters/ParametersDeathExample1"^^xsd:anyURI ;
+       fhir:l <http://www.example.org/fhir/Parameters/ParametersDeathExample1>
+     ] ;
      fhir:resource ( <http://www.example.org/fhir/Parameters/ParametersDeathExample1> )
   ] ) . # 
 
@@ -26,25 +29,25 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"^^xsd:anyURI ;
-       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
+       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "cert_no" ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "111111"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "jurisdiction_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "NY"
      ]
   ] [
      fhir:name [ fhir:v "state_auxiliary_id" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "abcdef10"
      ]
   ] ) . # 

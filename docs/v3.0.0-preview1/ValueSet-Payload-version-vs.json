@@ -3,7 +3,7 @@
   "id" : "Payload-version-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Payload-version-vs</b></p><a name=\"Payload-version-vs\"> </a><a name=\"hcPayload-version-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-Payload-version-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Payload-version-vs</b></p><a name=\"Payload-version-vs\"> </a><a name=\"hcPayload-version-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-Payload-version-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;3.0.0-Preview1</span></li></ul></div>"
   },
   "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
   "version" : "3.0.0-Preview1",
@@ -11,7 +11,7 @@
   "title" : "Payload Version Identifier Values",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-08-11T15:01:09-04:00",
+  "date" : "2025-11-25T14:04:25-05:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",

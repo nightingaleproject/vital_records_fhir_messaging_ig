@@ -1,0 +1,117 @@
+# MaternalLinkageRequestMessage-Example1 - Vital Records FHIR Messaging (VRFM) IG v3.0.0-Preview1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MaternalLinkageRequestMessage-Example1**
+
+## Example Bundle: MaternalLinkageRequestMessage-Example1
+
+Profile: [Maternal Linkage Request Message](StructureDefinition-VRM-MaternalLinkageRequestMessage.md)
+
+Bundle MaternalLinkageRequestMessage-Example1 of type message
+
+-------
+
+Entry 1 - fullUrl = http://www.example.org/fhir/Header/MaternalLinkageRequestHeaderExample1
+
+Resource MessageHeader:
+
+> 
+
+Profile: [Maternal Linkage Request Message Header](StructureDefinition-VRM-MaternalLinkageRequestHeader.md)
+
+**event**:`http://nchs.cdc.gov/maternal_linkage_request`
+> **destination**
+
+> **source**
+**focus**:[Parameters: cert_no, jurisdiction_id, state_auxiliary_id](Bundle-DeathRecordSubmissionMessage-Example1.md#http-//www.example.org/fhir/Parameters/ParametersDeathExample1)
+
+-------
+
+Entry 2 - fullUrl = http://www.example.org/fhir/Parameters/ParametersDeathExample1
+
+Resource Parameters:
+
+> 
+
+Profile: [Message Parameters](StructureDefinition-VRM-MessageParameters.md)
+
+## Parameters
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "MaternalLinkageRequestMessage-Example1",
+  "meta" : {
+    "profile" : [
+      "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MaternalLinkageRequestMessage"
+    ]
+  },
+  "type" : "message",
+  "timestamp" : "2021-05-20T00:00:00Z",
+  "entry" : [
+    {
+      "fullUrl" : "http://www.example.org/fhir/Header/MaternalLinkageRequestHeaderExample1",
+      "resource" : {
+        "resourceType" : "MessageHeader",
+        "id" : "MaternalLinkageRequestHeaderExample1",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MaternalLinkageRequestHeader"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_MaternalLinkageRequestHeaderExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader MaternalLinkageRequestHeaderExample1</b></p><a name=\"MaternalLinkageRequestHeaderExample1\"> </a><a name=\"hcMaternalLinkageRequestHeaderExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-MaternalLinkageRequestHeader.html\">Maternal Linkage Request Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/maternal_linkage_request\">http://nchs.cdc.gov/maternal_linkage_request</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-DeathRecordSubmissionMessage-Example1.html#http-//www.example.org/fhir/Parameters/ParametersDeathExample1\">Parameters: cert_no, jurisdiction_id, state_auxiliary_id</a></p></div>"
+        },
+        "eventUri" : "http://nchs.cdc.gov/maternal_linkage_request",
+        "destination" : [
+          {
+            "endpoint" : "https://sos.ny.gov/vitalrecords"
+          }
+        ],
+        "source" : {
+          "endpoint" : "http://nchs.cdc.gov/vrdr_submission"
+        },
+        "focus" : [
+          {
+            "reference" : "http://www.example.org/fhir/Parameters/ParametersDeathExample1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://www.example.org/fhir/Parameters/ParametersDeathExample1",
+      "resource" : {
+        "resourceType" : "Parameters",
+        "id" : "ParametersDeathExample1",
+        "meta" : {
+          "profile" : [
+            "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"
+          ]
+        },
+        "parameter" : [
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 111111
+          },
+          {
+            "name" : "jurisdiction_id",
+            "valueString" : "NY"
+          },
+          {
+            "name" : "state_auxiliary_id",
+            "valueString" : "abcdef10"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

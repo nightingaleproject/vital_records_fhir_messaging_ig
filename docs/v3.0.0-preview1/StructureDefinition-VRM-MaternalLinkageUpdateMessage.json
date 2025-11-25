@@ -10,7 +10,7 @@
   "name" : "MaternalLinkageUpdateMessage",
   "title" : "Maternal Linkage Update Message",
   "status" : "draft",
-  "date" : "2025-08-11T15:01:09-04:00",
+  "date" : "2025-11-25T14:04:25-05:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -268,7 +268,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {

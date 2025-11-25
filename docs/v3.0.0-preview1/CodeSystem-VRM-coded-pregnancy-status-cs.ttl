@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "VRM-coded-pregnancy-status-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-coded-pregnancy-status-cs</b></p><a name=\"VRM-coded-pregnancy-status-cs\"> </a><a name=\"hcVRM-coded-pregnancy-status-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">live-birth-and-fetal-death<a name=\"VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death\"> </a></td><td>Multiple Outcomes (Live Birth(s) and Fetal Death(s))</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VRM-coded-pregnancy-status-cs</b></p><a name=\"VRM-coded-pregnancy-status-cs\"> </a><a name=\"hcVRM-coded-pregnancy-status-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">live-birth-and-fetal-death<a name=\"VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death\"> </a></td><td>Multiple Outcomes (Live Birth(s) and Fetal Death(s))</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ;
+     fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs>
+  ] ; # 
   fhir:version [ fhir:v "3.0.0-Preview1"] ; # 
   fhir:name [ fhir:v "CodedPregnancyStatusCS"] ; # 
   fhir:title [ fhir:v "Local Coded Pregnancy Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-08-11T15:01:09-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T14:04:25-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;

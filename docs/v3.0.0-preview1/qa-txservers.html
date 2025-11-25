@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for VitalRecordsFHIRMessagingIG</h1>
- <p>Generated Mon Aug 11 15:18:30 EDT 2025, FHIR version 4.0.1 for vital-records-fhir-messaging#3.0.0-Preview1 (canonical = <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging">http://cdc.gov/nchs/nvss/fhir/vital-records-messaging</a> (<a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">history</a>))</p>
+ <p>Generated Tue Nov 25 14:20:25 EST 2025, FHIR version 4.0.1 for vital-records-fhir-messaging#3.0.0-Preview1 (canonical = <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging">http://cdc.gov/nchs/nvss/fhir/vital-records-messaging</a> (<a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -78,6 +78,13 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
@@ -132,18 +139,11 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs--0|3.0.0-Preview1</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs|3.0.0-Preview1</td>
+    <td>[http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs, http://terminology.hl7.org/CodeSystem/v3-NullFlavor, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
@@ -153,11 +153,25 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs|3.0.0-Preview1</td>
+    <td>[http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs, http://terminology.hl7.org/CodeSystem/v3-NullFlavor, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs--0|3.0.0-Preview1</td>
+    <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs|3.0.0-Preview1</td>
+    <td>[http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs, http://terminology.hl7.org/CodeSystem/v3-NullFlavor, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
@@ -169,8 +183,15 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-PregnancyOutcomes-vs--0|3.0.0-Preview1</td>
-    <td>http://snomed.info/sct</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-codes|4.0.1</td>
+    <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
@@ -204,7 +225,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 21. Code Systems used: </p>
+<p>Use Count: 24. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -222,19 +243,38 @@
   </tr>
   <tr>
     <td>http://loinc.org</td>
-    <td>0</td>
+    <td>2</td>
     <td>12</td>
     <td>
-      <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>0</td>
-    <td>10</td>
+    <td>1</td>
+    <td>7</td>
     <td>
-      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
+      <a href="http://tx.fhir.org/r4/ValueSet/snomedct">SNOMED CT (all versions)</a>
     </td>
+  </tr>
+</table>
+<h2>Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 3. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
   </tr>
 </table>
 </body>

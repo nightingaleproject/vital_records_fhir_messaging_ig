@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7fcf9f70-14fe-4745-a2e4-dc09122a12f2"/>
+  <id value="c1857d57-ef44-45bd-861c-fcc61eb16756"/>
   <meta>
-    <lastUpdated value="2025-08-11T15:03:59.389-04:00"/>
+    <lastUpdated value="2025-11-25T14:04:25.368-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,49 +16,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-Payload-version-cs.html">codesystem Payload Version Identifier Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU3_0"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU3_0"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU3_0">VRDR_STU3_0</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
                 <td>VRDRSTU3.0</td>
-                <td>VRDR STU3.0</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;VRDR_STU3_0&quot;, &quot;display&quot;: &quot;VRDRSTU3.0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;VRDR_STU3_0&quot;&gt;&lt;display value=&quot;VRDRSTU3.0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_2"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_2"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_2">VRDR_STU2_2</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
                 <td>VRDRSTU2.2</td>
-                <td>VRDR STU2.2</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;VRDR_STU2_2&quot;, &quot;display&quot;: &quot;VRDRSTU2.2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;VRDR_STU2_2&quot;&gt;&lt;display value=&quot;VRDRSTU2.2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU2_0"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU2_0"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU2_0">BFDR_STU2_0</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td>
                 <td>BFDRSTU2.0</td>
-                <td>BFDR STU2.0</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;BFDR_STU2_0&quot;, &quot;display&quot;: &quot;BFDRSTU2.0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;BFDR_STU2_0&quot;&gt;&lt;display value=&quot;BFDRSTU2.0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -69,12 +108,16 @@
         <title value="Payload Version Identifier Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:90926042-bfd4-459e-8cbc-7f841c256c8e"/>
-          <timestamp value="2025-08-11T15:11:05-04:00"/>
+          <identifier value="urn:uuid:a8f78f4d-c17f-40d4-8276-441385847dfe"/>
+          <timestamp value="2025-11-25T14:14:55-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -120,49 +163,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_acknowledgement"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_acknowledgement"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_acknowledgement">http://nchs.cdc.gov/vrdr_acknowledgement</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Acknowledgement</td>
-                <td>Indicates this is  an  acknowledgement of a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_acknowledgement&quot;, &quot;display&quot;: &quot;VRDR Acknowledgement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_acknowledgement&quot;&gt;&lt;display value=&quot;VRDR Acknowledgement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_acknowledgement"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_acknowledgement"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_acknowledgement">http://nchs.cdc.gov/fd_acknowledgement</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Acknowledgement</td>
-                <td>Indicates this is an  acknowledgement for a Fetal Death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_acknowledgement&quot;, &quot;display&quot;: &quot;Fetal Acknowledgement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_acknowledgement&quot;&gt;&lt;display value=&quot;Fetal Acknowledgement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_acknowledgement"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_acknowledgement"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_acknowledgement">http://nchs.cdc.gov/birth_acknowledgement</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
-                <td>VRDR Acknowledgement</td>
-                <td>Indicates this is  an  acknowledgement for a birth report</td>
+                <td>Birth Acknowledgement</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_acknowledgement&quot;, &quot;display&quot;: &quot;Birth Acknowledgement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_acknowledgement&quot;&gt;&lt;display value=&quot;Birth Acknowledgement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -173,12 +255,16 @@
         <title value="Acknowledgement MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:994d1989-3c26-48e4-a123-5bfbb7fcffad"/>
-          <timestamp value="2025-08-11T15:11:06-04:00"/>
+          <identifier value="urn:uuid:25a1b3b7-3f9a-4403-91d0-3e46491762be"/>
+          <timestamp value="2025-11-25T14:14:55-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -208,7 +294,7 @@
           <contains>
             <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
             <code value="http://nchs.cdc.gov/birth_acknowledgement"/>
-            <display value="VRDR Acknowledgement"/>
+            <display value="Birth Acknowledgement"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -224,40 +310,68 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 2 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding">http://nchs.cdc.gov/vrdr_causeofdeath_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Cause of Death Coding</td>
-                <td>Indicates that this is an initial cause of death coding of a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_causeofdeath_coding&quot;, &quot;display&quot;: &quot;VRDR Cause of Death Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_causeofdeath_coding&quot;&gt;&lt;display value=&quot;VRDR Cause of Death Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding">http://nchs.cdc.gov/fd_causeofdeath_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Cause of Fetal Death Submission</td>
-                <td>Indicates that this is an initial fetal cause of death</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_causeofdeath_coding&quot;, &quot;display&quot;: &quot;Cause of Fetal Death Submission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_causeofdeath_coding&quot;&gt;&lt;display value=&quot;Cause of Fetal Death Submission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -268,12 +382,16 @@
         <title value="Cause of Death Coding MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:27cf4762-a594-4a60-af5f-1c8932643a47"/>
-          <timestamp value="2025-08-11T15:11:06-04:00"/>
+          <identifier value="urn:uuid:51039f98-521c-4059-8368-b7fc041d4523"/>
+          <timestamp value="2025-11-25T14:14:55-05:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -314,40 +432,68 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 2 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Cause of Death Coding Update</td>
-                <td>Indicates that this is an updated cause of death coding</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_causeofdeath_coding_update&quot;, &quot;display&quot;: &quot;VRDR Cause of Death Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_causeofdeath_coding_update&quot;&gt;&lt;display value=&quot;VRDR Cause of Death Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding_update">http://nchs.cdc.gov/fd_causeofdeath_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Cause of Fetal Death Update</td>
-                <td>Indicates that this is an updated fetal cause of death</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_causeofdeath_coding_update&quot;, &quot;display&quot;: &quot;Cause of Fetal Death Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_causeofdeath_coding_update&quot;&gt;&lt;display value=&quot;Cause of Fetal Death Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -358,12 +504,16 @@
         <title value="Cause of Death Coding Update MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:82fe991f-3394-4a6a-ab1f-fe61ff16dcd7"/>
-          <timestamp value="2025-08-11T15:11:07-04:00"/>
+          <identifier value="urn:uuid:bd18fa55-ab5c-42a0-926b-f49b190a7a99"/>
+          <timestamp value="2025-11-25T14:14:55-05:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -407,52 +557,90 @@
               <ul>
                 <li>
                   <a href="http://hl7.org/fhir/R4/v2/0136/index.html">codesystem v2 Y/N Indicator v2.9 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v2-0136|2.9" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
                 </li>
               </ul>
             </div>
             <p>This value set contains 4 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
                   <b>Definition</b>
                 </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-Y"> </a>  
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-Y"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v2-0136</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-Y">Y</a>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0136</td>
                 <td>Yes</td>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;, &quot;version&quot;: &quot;2.9&quot;, &quot;code&quot;: &quot;Y&quot;, &quot;display&quot;: &quot;Yes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;&gt;&lt;version value=&quot;2.9&quot;&gt;&lt;code value=&quot;Y&quot;&gt;&lt;display value=&quot;Yes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-N"> </a>  
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-N"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v2-0136</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-N">N</a>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0136</td>
                 <td>No</td>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;, &quot;version&quot;: &quot;2.9&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;No&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;&gt;&lt;version value=&quot;2.9&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;No&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
                 <td>Unknown</td>
                 <td>
                   <div>
@@ -472,19 +660,41 @@
 
                   </div>
                 </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAV"> </a>  
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAV"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
+                </td>
                 <td>Temporarily unavailable</td>
                 <td>
                   <div>
                     <p>Information is not available at this time but it is expected that it will be available later.</p>
 
                   </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NAV&quot;, &quot;display&quot;: &quot;Temporarily unavailable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NAV&quot;&gt;&lt;display value=&quot;Temporarily unavailable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
             </table>
@@ -496,12 +706,16 @@
         <title value="Certificate Available Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:11c2595f-d028-4cfc-b5ba-48586b9e4b83"/>
-          <timestamp value="2025-08-11T15:11:07-04:00"/>
+          <identifier value="urn:uuid:cde3e04e-f0ed-4e20-8c0d-4d6e3b7c2f1d"/>
+          <timestamp value="2025-11-25T14:14:52-05:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -556,49 +770,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding">http://nchs.cdc.gov/vrdr_demographics_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Demographics Coding</td>
-                <td>Indicates that this is an initial demographics coding of a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_demographics_coding&quot;, &quot;display&quot;: &quot;VRDR Demographics Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_demographics_coding&quot;&gt;&lt;display value=&quot;VRDR Demographics Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding">http://nchs.cdc.gov/fd_demographics_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Parental Demographics Coding</td>
-                <td>Indicates that this is an initial demographics coding of a fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_demographics_coding&quot;, &quot;display&quot;: &quot;Fetal Death Parental Demographics Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_demographics_coding&quot;&gt;&lt;display value=&quot;Fetal Death Parental Demographics Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding">http://nchs.cdc.gov/birth_demographics_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Parental Demographics Coding</td>
-                <td>Indicates that this is an initial demographics coding of a birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_demographics_coding&quot;, &quot;display&quot;: &quot;Birth Parental Demographics Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_demographics_coding&quot;&gt;&lt;display value=&quot;Birth Parental Demographics Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -609,12 +862,16 @@
         <title value="Demographics Coding  MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:cd8cad60-b52c-430b-b4a3-e2e1cff63159"/>
-          <timestamp value="2025-08-11T15:11:07-04:00"/>
+          <identifier value="urn:uuid:9a4eaf1b-7299-460f-897a-597d12f5f614"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -660,49 +917,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding_update">http://nchs.cdc.gov/vrdr_demographics_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Demographics Coding Update</td>
-                <td>Indicates that this is an updated demographics coding of a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_demographics_coding_update&quot;, &quot;display&quot;: &quot;VRDR Demographics Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_demographics_coding_update&quot;&gt;&lt;display value=&quot;VRDR Demographics Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding_update">http://nchs.cdc.gov/fd_demographics_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Parental Demographics Coding Update</td>
-                <td>Indicates that this is an updated demographics coding of a fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_demographics_coding_update&quot;, &quot;display&quot;: &quot;Fetal Death Parental Demographics Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_demographics_coding_update&quot;&gt;&lt;display value=&quot;Fetal Death Parental Demographics Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding_update">http://nchs.cdc.gov/birth_demographics_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
-                <td>Bith Parental Demographics Coding Update</td>
-                <td>Indicates that this is an updated demographics coding of a birth report</td>
+                <td>Birth Parental Demographics Coding Update</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_demographics_coding_update&quot;, &quot;display&quot;: &quot;Birth Parental Demographics Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_demographics_coding_update&quot;&gt;&lt;display value=&quot;Birth Parental Demographics Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -713,12 +1009,16 @@
         <title value="Demographics Coding Update MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:63c9fb2d-d238-49a3-8dd9-f2c28b5a8902"/>
-          <timestamp value="2025-08-11T15:11:08-04:00"/>
+          <identifier value="urn:uuid:5b0b0dd9-4524-4a31-8618-6283d62bd16e"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -748,7 +1048,7 @@
           <contains>
             <system value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs"/>
             <code value="http://nchs.cdc.gov/birth_demographics_coding_update"/>
-            <display value="Bith Parental Demographics Coding Update"/>
+            <display value="Birth Parental Demographics Coding Update"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -764,49 +1064,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_extraction_error"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_extraction_error"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_extraction_error">http://nchs.cdc.gov/vrdr_extraction_error</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Extraction Error</td>
-                <td>Indicates that this is an extraction error on a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_extraction_error&quot;, &quot;display&quot;: &quot;VRDR Extraction Error&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_extraction_error&quot;&gt;&lt;display value=&quot;VRDR Extraction Error&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_extraction_error"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_extraction_error"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_extraction_error">http://nchs.cdc.gov/fd_extraction_error</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Extraction Error</td>
-                <td>Indicates that this is an extraction error for a Fetal Death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_extraction_error&quot;, &quot;display&quot;: &quot;Fetal Death Extraction Error&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_extraction_error&quot;&gt;&lt;display value=&quot;Fetal Death Extraction Error&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_extraction_error"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_extraction_error"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_extraction_error">http://nchs.cdc.gov/birth_extraction_error</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Extraction Error</td>
-                <td>Indicates that this is an extraction error for a Birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_extraction_error&quot;, &quot;display&quot;: &quot;Birth Extraction Error&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_extraction_error&quot;&gt;&lt;display value=&quot;Birth Extraction Error&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -817,12 +1156,16 @@
         <title value="ExtractionError MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:a6b6af88-776c-4aa1-8d8b-c86022307f7d"/>
-          <timestamp value="2025-08-11T15:11:08-04:00"/>
+          <identifier value="urn:uuid:5bf25e25-41f4-4b04-84d6-961a6af75210"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -868,49 +1211,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding">http://nchs.cdc.gov/vrdr_industryoccupation_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Industry Occupation Coding</td>
-                <td>Indicates that this is an initial industry occupation coding</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_industryoccupation_coding&quot;, &quot;display&quot;: &quot;VRDR Industry Occupation Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_industryoccupation_coding&quot;&gt;&lt;display value=&quot;VRDR Industry Occupation Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding">http://nchs.cdc.gov/fd_industryoccupation_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Industry Occupation Coding</td>
-                <td>Indicates that this is an initial industry occupation coding of the mother on a fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_industryoccupation_coding&quot;, &quot;display&quot;: &quot;Fetal Death Industry Occupation Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_industryoccupation_coding&quot;&gt;&lt;display value=&quot;Fetal Death Industry Occupation Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding">http://nchs.cdc.gov/birth_industryoccupation_coding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Industry Occupation Coding</td>
-                <td>Indicates that this is an initial industry occupation coding of the mother on a birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_industryoccupation_coding&quot;, &quot;display&quot;: &quot;Birth Industry Occupation Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_industryoccupation_coding&quot;&gt;&lt;display value=&quot;Birth Industry Occupation Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -921,12 +1303,16 @@
         <title value="Industry and Occupation MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:0b2c29f3-8fc4-4dfd-83d1-b6297b72be96"/>
-          <timestamp value="2025-08-11T15:11:09-04:00"/>
+          <identifier value="urn:uuid:c307067b-faa0-4932-86c5-d6ea71483e1f"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -972,49 +1358,88 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Industry Occupation Coding Update</td>
-                <td>Indicates that this is an updated industry occupation coding</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_industryoccupation_coding_update&quot;, &quot;display&quot;: &quot;VRDR Industry Occupation Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_industryoccupation_coding_update&quot;&gt;&lt;display value=&quot;VRDR Industry Occupation Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding_update">http://nchs.cdc.gov/fd_industryoccupation_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Industry Occupation Coding Update</td>
-                <td>Indicates that this is an updated industry occupation coding of the mother on a fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_industryoccupation_coding_update&quot;, &quot;display&quot;: &quot;Fetal Death Industry Occupation Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_industryoccupation_coding_update&quot;&gt;&lt;display value=&quot;Fetal Death Industry Occupation Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding_update">http://nchs.cdc.gov/birth_industryoccupation_coding_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth  Industry Occupation Coding Update</td>
-                <td>Indicates that this is an updated industry occupation coding of the mother on a birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_industryoccupation_coding_update&quot;, &quot;display&quot;: &quot;Birth  Industry Occupation Coding Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_industryoccupation_coding_update&quot;&gt;&lt;display value=&quot;Birth  Industry Occupation Coding Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1025,12 +1450,16 @@
         <title value="Industry and Occupation Update MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:ed19ba94-943b-4a52-8b04-a73b5b779035"/>
-          <timestamp value="2025-08-11T15:11:09-04:00"/>
+          <identifier value="urn:uuid:ec7a60d6-24a4-4c00-8acc-8772d0722a87"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1079,24 +1508,34 @@
               <ul>
                 <li>
                   <a href="CodeSystem-VRM-coded-pregnancy-status-cs.html">codesystem Local Coded Pregnancy Status v3.0.0-Preview1 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
                 </li>
-                <li>SNOMED CT United States edition 01-Mar 2025</li>
+                <li>SNOMED CT United States edition 01-Mar 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20250301" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
                 <li>
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
                 </li>
               </ul>
             </div>
             <p>This value set contains 9 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display (en-US)</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
                   <b>Inactive</b>
@@ -1104,83 +1543,175 @@
                 <td>
                   <b>Definition</b>
                 </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-276507005"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-276507005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/276507005">276507005</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Fetal death</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;276507005&quot;, &quot;display&quot;: &quot;Fetal death&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;276507005&quot;&gt;&lt;display value=&quot;Fetal death&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-281050002"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-281050002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/281050002">281050002</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Livebirth</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;281050002&quot;, &quot;display&quot;: &quot;Livebirth&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;281050002&quot;&gt;&lt;display value=&quot;Livebirth&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-17369002"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-17369002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/17369002">17369002</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Spontaneous abortion</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;17369002&quot;, &quot;display&quot;: &quot;Spontaneous abortion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;17369002&quot;&gt;&lt;display value=&quot;Spontaneous abortion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-57797005"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-57797005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/57797005">57797005</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Induced abortion</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;57797005&quot;, &quot;display&quot;: &quot;Induced abortion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;57797005&quot;&gt;&lt;display value=&quot;Induced abortion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-34801009"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-34801009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/34801009">34801009</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Ectopic pregnancy</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;34801009&quot;, &quot;display&quot;: &quot;Ectopic pregnancy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;34801009&quot;&gt;&lt;display value=&quot;Ectopic pregnancy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-44782008"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-44782008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/44782008">44782008</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Molar pregnancy</td>
                 <td>inactive</td>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;44782008&quot;, &quot;display&quot;: &quot;Molar pregnancy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;44782008&quot;&gt;&lt;display value=&quot;Molar pregnancy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-coded-pregnancy-status-cs.html#VRM-coded-pregnancy-status-cs-live-birth-and-fetal-death">live-birth-and-fetal-death</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs</td>
                 <td>Live birth(s) and fetal death(s)</td>
                 <td/>
                 <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;live-birth-and-fetal-death&quot;, &quot;display&quot;: &quot;Live birth(s) and fetal death(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;live-birth-and-fetal-death&quot;&gt;&lt;display value=&quot;Live birth(s) and fetal death(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
                 <td>Unknown</td>
                 <td/>
                 <td>
@@ -1201,13 +1732,25 @@
 
                   </div>
                 </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-OTH"> </a>  
-                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-OTH"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
                 <td>Other</td>
                 <td/>
                 <td>
@@ -1222,6 +1765,16 @@
 
                   </div>
                 </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;OTH&quot;, &quot;display&quot;: &quot;Other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;OTH&quot;&gt;&lt;display value=&quot;Other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1231,12 +1784,16 @@
         <name value="PregnancyOutcomesVS"/>
         <title value="Pregnancy Outcome Values"/>
         <status value="draft"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:1b627d24-2044-438e-a6cc-01721e184038"/>
-          <timestamp value="2025-08-11T15:11:10-04:00"/>
+          <identifier value="urn:uuid:91c6f4ba-016f-4260-82cd-8a397e9f7467"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="9"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1248,6 +1805,10 @@
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -1333,31 +1894,48 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 1 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_request"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_request"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47maternal_linkage_request">http://nchs.cdc.gov/maternal_linkage_request</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Maternal Linkage Request</td>
-                <td>NCHS requests that a jurisdiction submit maternal linkage data</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/maternal_linkage_request&quot;, &quot;display&quot;: &quot;Maternal Linkage Request&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/maternal_linkage_request&quot;&gt;&lt;display value=&quot;Maternal Linkage Request&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1368,12 +1946,16 @@
         <title value="Request MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:cd17b2dc-2112-4a4c-a867-a866d861a55e"/>
-          <timestamp value="2025-08-11T15:11:10-04:00"/>
+          <identifier value="urn:uuid:598ffa2f-8206-4478-9668-c1ce4a0da011"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="1"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1409,107 +1991,147 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-Status-cs.html">codesystem Status Codes Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 6 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding">manualCauseOfDeathCoding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>Manual Cause of Death Coding</td>
                 <td>
-                  <div>
-                    <p>The death record has been sent for manual cause of death coding.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;manualCauseOfDeathCoding&quot;, &quot;display&quot;: &quot;Manual Cause of Death Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;manualCauseOfDeathCoding&quot;&gt;&lt;display value=&quot;Manual Cause of Death Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding">manualDemographicCoding</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>Manual Demographic  Coding</td>
                 <td>
-                  <div>
-                    <p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;manualDemographicCoding&quot;, &quot;display&quot;: &quot;Manual Demographic  Coding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;manualDemographicCoding&quot;&gt;&lt;display value=&quot;Manual Demographic  Coding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate">noCodingNeeded_Duplicate</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>No Coding Needed - Duplicate</td>
                 <td>
-                  <div>
-                    <p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;noCodingNeeded_Duplicate&quot;, &quot;display&quot;: &quot;No Coding Needed - Duplicate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;noCodingNeeded_Duplicate&quot;&gt;&lt;display value=&quot;No Coding Needed - Duplicate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update">manualCodingCanceled_Update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>Manual Coding Canceled - Update</td>
                 <td>
-                  <div>
-                    <p>An update has been submitted for a death record that is queued for manual coding.  The manual coding
-has been canceled for the original record.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;manualCodingCanceled_Update&quot;, &quot;display&quot;: &quot;Manual Coding Canceled - Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;manualCodingCanceled_Update&quot;&gt;&lt;display value=&quot;Manual Coding Canceled - Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void">manualCodingCanceled_Void</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>Manual Coding Canceled - Void</td>
                 <td>
-                  <div>
-                    <p>A void request has been received for a death record that is queued for manual coding.  The manual coding
-has been canceled for the original record.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;manualCodingCanceled_Void&quot;, &quot;display&quot;: &quot;Manual Coding Canceled - Void&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;manualCodingCanceled_Void&quot;&gt;&lt;display value=&quot;Manual Coding Canceled - Void&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-nonCodeable"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-nonCodeable"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-nonCodeable">nonCodeable</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
                 <td>Non Codeable</td>
                 <td>
-                  <div>
-                    <p>The fetal death record does not meet the criteria for fetal cause of death coding.</p>
-
-                  </div>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;nonCodeable&quot;, &quot;display&quot;: &quot;Non Codeable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;nonCodeable&quot;&gt;&lt;display value=&quot;Non Codeable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
                 </td>
               </tr>
             </table>
@@ -1521,12 +2143,16 @@ has been canceled for the original record.</p>
         <title value="Status Codes Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:352ef54f-c185-473e-b39d-8d8e626fb9f6"/>
-          <timestamp value="2025-08-11T15:11:10-04:00"/>
+          <identifier value="urn:uuid:d8057f2b-2cce-4f23-9d8d-dc622341efd4"/>
+          <timestamp value="2025-11-25T14:14:56-05:00"/>
           <total value="6"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1587,49 +2213,88 @@ has been canceled for the original record.</p>
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_status"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_status"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_status">http://nchs.cdc.gov/vrdr_status</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Status</td>
-                <td>Indicates that this is a status for a previously submitted death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_status&quot;, &quot;display&quot;: &quot;VRDR Status&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_status&quot;&gt;&lt;display value=&quot;VRDR Status&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_status"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_status"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_status">http://nchs.cdc.gov/fd_status</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Status</td>
-                <td>Indicates that this is a status for a previously submitted Fetal Death Record</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_status&quot;, &quot;display&quot;: &quot;Fetal Death Status&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_status&quot;&gt;&lt;display value=&quot;Fetal Death Status&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_status"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_status"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_status">http://nchs.cdc.gov/birth_status</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Status</td>
-                <td>Indicates that this is a status for a previously submitted birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_status&quot;, &quot;display&quot;: &quot;Birth Status&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_status&quot;&gt;&lt;display value=&quot;Birth Status&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1640,12 +2305,16 @@ has been canceled for the original record.</p>
         <title value="Status MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:c5fea6ad-12b5-4236-94e6-8264f6108192"/>
-          <timestamp value="2025-08-11T15:11:11-04:00"/>
+          <identifier value="urn:uuid:38fe6e03-635d-4427-8706-151e97abc18a"/>
+          <timestamp value="2025-11-25T14:14:57-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1691,58 +2360,108 @@ has been canceled for the original record.</p>
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 4 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission">http://nchs.cdc.gov/vrdr_submission</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Submission</td>
-                <td>Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_submission&quot;, &quot;display&quot;: &quot;VRDR Submission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_submission&quot;&gt;&lt;display value=&quot;VRDR Submission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission">http://nchs.cdc.gov/fd_submission</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Submission</td>
-                <td>Indicates that the payload is an initial submission of a  fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_submission&quot;, &quot;display&quot;: &quot;Fetal Death Submission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_submission&quot;&gt;&lt;display value=&quot;Fetal Death Submission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission">http://nchs.cdc.gov/birth_submission</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Submission</td>
-                <td>Indicates that this is an initial submission of a BFDR birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_submission&quot;, &quot;display&quot;: &quot;Birth Submission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_submission&quot;&gt;&lt;display value=&quot;Birth Submission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_submission"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_submission"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47maternal_linkage_submission">http://nchs.cdc.gov/maternal_linkage_submission</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Maternal Linkage Submission</td>
-                <td>Indicates that the payload is an initial submission of a maternal linkage</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/maternal_linkage_submission&quot;, &quot;display&quot;: &quot;Maternal Linkage Submission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/maternal_linkage_submission&quot;&gt;&lt;display value=&quot;Maternal Linkage Submission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1752,12 +2471,16 @@ has been canceled for the original record.</p>
         <name value="SubmissionURIVS"/>
         <title value="Submission MessageHeader URI Values"/>
         <status value="draft"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:f4d18762-7387-4bc9-9362-a320c1e1e9ba"/>
-          <timestamp value="2025-08-11T15:11:11-04:00"/>
+          <identifier value="urn:uuid:273b1254-6f4e-496e-88c5-fb0c9e70367f"/>
+          <timestamp value="2025-11-25T14:14:57-05:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1808,58 +2531,108 @@ has been canceled for the original record.</p>
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 4 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update">http://nchs.cdc.gov/vrdr_submission_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Update</td>
-                <td>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_submission_update&quot;, &quot;display&quot;: &quot;VRDR Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_submission_update&quot;&gt;&lt;display value=&quot;VRDR Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_update">http://nchs.cdc.gov/fd_submission_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Update</td>
-                <td>Indicates that the payload is an updated submission of a  fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_submission_update&quot;, &quot;display&quot;: &quot;Fetal Death Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_submission_update&quot;&gt;&lt;display value=&quot;Fetal Death Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_update">http://nchs.cdc.gov/birth_submission_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Update</td>
-                <td>Indicates that this is an updated submission of a birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_submission_update&quot;, &quot;display&quot;: &quot;Birth Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_submission_update&quot;&gt;&lt;display value=&quot;Birth Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_update"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/maternal_linkage_update"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47maternal_linkage_update">http://nchs.cdc.gov/maternal_linkage_update</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Maternal Linkage Update</td>
-                <td>Jurisdiction updating previously submitted maternal linkage</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/maternal_linkage_update&quot;, &quot;display&quot;: &quot;Maternal Linkage Update&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/maternal_linkage_update&quot;&gt;&lt;display value=&quot;Maternal Linkage Update&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1870,12 +2643,16 @@ has been canceled for the original record.</p>
         <title value="Update MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:9d72cb80-deb4-43bd-a2fd-115d93011166"/>
-          <timestamp value="2025-08-11T15:11:11-04:00"/>
+          <identifier value="urn:uuid:8c489bc7-bff2-47a8-84c5-c3708e81a140"/>
+          <timestamp value="2025-11-25T14:14:57-05:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1926,49 +2703,88 @@ has been canceled for the original record.</p>
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-MessageHeaderURI-cs.html">codesystem MessageHeader URI Values v3.0.0-Preview1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs|3.0.0-Preview1" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
             <p>This value set contains 3 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>JSON</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_void"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_void"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_void">http://nchs.cdc.gov/vrdr_submission_void</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>VRDR Void</td>
-                <td>Indicates this is  void  of  a  death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/vrdr_submission_void&quot;, &quot;display&quot;: &quot;VRDR Void&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/vrdr_submission_void&quot;&gt;&lt;display value=&quot;VRDR Void&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_void"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_void"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_void">http://nchs.cdc.gov/fd_submission_void</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Fetal Death Submission Void</td>
-                <td>Indicates this is  void  of  a  fetal death report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/fd_submission_void&quot;, &quot;display&quot;: &quot;Fetal Death Submission Void&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/fd_submission_void&quot;&gt;&lt;display value=&quot;Fetal Death Submission Void&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_void"> </a>  
+                <td>
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_void"> </a>
+                  <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_void">http://nchs.cdc.gov/birth_submission_void</a>
                 </td>
-                <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td>
                 <td>Birth Submission Void</td>
-                <td>Indicates that this is void of a submitted  birth report</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;, &quot;version&quot;: &quot;3.0.0-Preview1&quot;, &quot;code&quot;: &quot;http://nchs.cdc.gov/birth_submission_void&quot;, &quot;display&quot;: &quot;Birth Submission Void&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs&quot;&gt;&lt;version value=&quot;3.0.0-Preview1&quot;&gt;&lt;code value=&quot;http://nchs.cdc.gov/birth_submission_void&quot;&gt;&lt;display value=&quot;Birth Submission Void&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -1979,12 +2795,16 @@ has been canceled for the original record.</p>
         <title value="Void MessageHeader URI Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-08-11T15:01:09-04:00"/>
+        <date value="2025-11-25T14:04:25-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:d1683342-4d01-4fe2-ae8f-fd314fe6373b"/>
-          <timestamp value="2025-08-11T15:11:12-04:00"/>
+          <identifier value="urn:uuid:c77cf9f6-c053-4585-bcfe-669fc7ebac85"/>
+          <timestamp value="2025-11-25T14:14:57-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>

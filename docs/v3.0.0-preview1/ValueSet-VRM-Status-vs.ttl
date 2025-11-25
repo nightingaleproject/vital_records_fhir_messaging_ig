@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "VRM-Status-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VRM-Status-vs</b></p><a name=\"VRM-Status-vs\"> </a><a name=\"hcVRM-Status-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VRM-Status-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VRM-Status-vs</b></p><a name=\"VRM-Status-vs\"> </a><a name=\"hcVRM-Status-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VRM-Status-cs.html\"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?3.0.0-Preview1</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"^^xsd:anyURI ;
+     fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs>
+  ] ; # 
   fhir:version [ fhir:v "3.0.0-Preview1"] ; # 
   fhir:name [ fhir:v "StatusVS"] ; # 
   fhir:title [ fhir:v "Status Codes Values"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-08-11T15:01:09-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T14:04:25-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;
@@ -31,7 +34,10 @@
   fhir:description [ fhir:v "Status Codes Values"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs"^^xsd:anyURI ;
+         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs>
+       ]
      ] )
   ] . # 
 

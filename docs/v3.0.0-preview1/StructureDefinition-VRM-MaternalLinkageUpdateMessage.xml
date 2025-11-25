@@ -21,7 +21,7 @@
   <name value="MaternalLinkageUpdateMessage"/>
   <title value="Maternal Linkage Update Message"/>
   <status value="draft"/>
-  <date value="2025-08-11T15:01:09-04:00"/>
+  <date value="2025-11-25T14:04:25-05:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -270,7 +270,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
     </element>
     <element id="Bundle.identifier">

@@ -1,0 +1,69 @@
+# AcknowledgementHeader-Example1 - Vital Records FHIR Messaging (VRFM) IG v3.0.0-Preview1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **AcknowledgementHeader-Example1**
+
+## Example MessageHeader: AcknowledgementHeader-Example1
+
+Profile: [Acknowledgement Header](StructureDefinition-VRM-AcknowledgementHeader.md)
+
+**event**: [http://nchs.cdc.gov/vrdr_acknowledgement](http://nchs.cdc.gov/vrdr_acknowledgement)
+
+### Destinations
+
+| | |
+| :--- | :--- |
+| - | **Endpoint** |
+| * | [https://sos.ny.gov/vitalrecords](https://sos.ny.gov/vitalrecords) |
+
+### Sources
+
+| | |
+| :--- | :--- |
+| - | **Endpoint** |
+| * | [http://nchs.cdc.gov/vrdr_acknowledgement](http://nchs.cdc.gov/vrdr_acknowledgement) |
+
+### Responses
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Identifier** | **Code** |
+| * | SubmissionHeader-Example1 | OK |
+
+**focus**: [Parameters: cert_no, jurisdiction_id, event_year, state_auxiliary_id, payload_version_id](Bundle-AcknowledgementMessage-Example1.md#http-//www.example.org/fhir/Parameters/Parameters-Example1)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "MessageHeader",
+  "id" : "AcknowledgementHeader-Example1",
+  "meta" : {
+    "profile" : [
+      "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-AcknowledgementHeader"
+    ]
+  },
+  "eventUri" : "http://nchs.cdc.gov/vrdr_acknowledgement",
+  "destination" : [
+    {
+      "endpoint" : "https://sos.ny.gov/vitalrecords"
+    }
+  ],
+  "source" : {
+    "endpoint" : "http://nchs.cdc.gov/vrdr_acknowledgement"
+  },
+  "response" : {
+    "identifier" : "SubmissionHeader-Example1",
+    "code" : "ok"
+  },
+  "focus" : [
+    {
+      "reference" : "http://www.example.org/fhir/Parameters/Parameters-Example1"
+    }
+  ]
+}
+
+```
