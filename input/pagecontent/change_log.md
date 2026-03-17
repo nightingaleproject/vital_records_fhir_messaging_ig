@@ -5,6 +5,8 @@
 * Enhanced [AcknowledgementMessage] to include optional content warnings.
 * Reorganized FSH content to align with BFDR and VRDR.
 * Added value in the "Status Codes Values" codeystem for "non-codeable."
+* Added the following sections to birth business rules page: race and ethnicity required fields, validation errors, and internal validation errors.
+* Corrected cardinality in Message Parameters from 0..1 to 1..1 for Jurisdiction ID and corrected encoding or type in table for cert_no, death and event year.
 
 ### Version 1.0.1
 * Simplified examples of VRDR data used by the VRFM IG.  These were a constant battle to maintain as the IG publisher's validation process evolved.  The examples have been stripped down to the absolute minimum.  No changes should have occured to the technical content of this IG, only to the VRDR-based examples used to illustrate the exchange of content.

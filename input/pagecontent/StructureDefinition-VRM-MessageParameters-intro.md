@@ -6,12 +6,12 @@ Note that in v2.0 of this IG, the message parameters have been consolidated -- t
 
 Parameters included:
 
-| **IJE Name** | **Description** | **Parameter **  |  **Encoding or Type**  |
+| **IJE Name** | **Description** | **Parameter**  |  **Encoding or Type**  |
 | ---------- | ---------------| ------------- |
-|  DSTATE, BSTATE or FDSTATE    | State, U.S. Territory or Canadian Province of Event - code | jurisdiction_id  | string(2) from [JurisdictionVS](https://build.fhir.org/ig/HL7/vrdr//ValueSet-vrdr-jurisdiction-vs.html)   |
-|  FILENO    | Certificate Number | cert_no   | string(6)   |
-|  DOD_YR    | Date of Death--Year | death_year(allowed, but being phased out)  | string(4)   |
-|  DOD_YR, DOB_YR, FDOB_YR   | Date of event--Year | event_year (preferred)  | string(4)   |
+|  DSTATE, BSTATE or FDSTATE    | State, U.S. Territory or Canadian Province of Event - code | jurisdiction_id  | string(2) from [JurisdictionVS](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-jurisdiction-vr.html)   |
+|  FILENO    | Certificate Number | cert_no   | unsignedInt  |
+|  DOD_YR    | Date of Death--Year | death_year(allowed, but being phased out)  | unsignedInt  |
+|  DOD_YR, IDOB_YR, FDOB_YR   | Date of event--Year | event_year (preferred)  | unsignedInt |
 |  AUXNO    | Auxiliary State file number | state_auxiliary_id   | string(12)   |
 |  -    | Payload Version ID | payload_version_id   | string from [PayloadVersionVS]   |
 {: .grid }

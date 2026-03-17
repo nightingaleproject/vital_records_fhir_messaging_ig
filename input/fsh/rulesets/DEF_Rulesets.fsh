@@ -52,7 +52,7 @@ RuleSet: ParameterSlicing
 RuleSet: BaseMessageParameters
 * insert ParameterSlicing
 * parameter contains
-    jurisdiction_id 0..1 and
+    jurisdiction_id 1..1 and
     cert_no 1..1 and   // cert_no / FILENO
     death_year 0..1 and   // death_year / DOD_YR -- for compabilitility with v1.0.1
     event_year 0..1 and   // DOD_YR, DOB_YR, FDOD_YR -- preferred
@@ -64,7 +64,7 @@ RuleSet: BaseMessageParameters
 * parameter[jurisdiction_id].value[x] from ValueSetJurisdictionVitalRecords (required)
 * insert ParameterNameType(cert_no, unsignedInt,FILENO death certificate number , death certificate number ) 
 * insert ParameterNameType(death_year, unsignedInt, DOD_YR death year, four digit death year)  
-* insert ParameterNameType(event_year, unsignedInt, DOD_YR or DOB_YR or FDOD_YR event year, four digit event year) 
+* insert ParameterNameType(event_year, unsignedInt, DOD_YR or IDOB_YR or FDOD_YR event year, four digit event year) 
 * insert ParameterNameType(state_auxiliary_id, string, AUXNO state auxiliary identifier, state auxiliary identifier) 
 
 RuleSet: addentry(type, id)
