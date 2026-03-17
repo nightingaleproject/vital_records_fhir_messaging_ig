@@ -150,3 +150,15 @@ groups:
     - MaternalLinkageRequestMessage
     - MaternalLinkageSubmissionMessage
     - MaternalLinkageUpdateMessage
+  
+  Geocode:
+    name: NCHSGeocoded
+    description: Geocode Location Profiles and Components
+    resources:
+    - NCHSGeocodedLocation
+    - NCHSVitalRecordKeyParameters
+    - VitalRecordCertTypeCS
+    - VitalRecordCertTypeVS
+    - NCHSGeocodeAddrTypeCS
+    - NCHSGeocodeAddrTypeVS
+    - NCHSGeocode
