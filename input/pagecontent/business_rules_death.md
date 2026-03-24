@@ -362,7 +362,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		</tr>
 		<tr>
 			<td>BSTATE</td>
-			<td>Error: FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
+			<td>FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
 			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
 		</tr>
 		<tr>
@@ -372,21 +372,21 @@ There are additional Errors that may be returned when a record cannot be accepte
 		</tr>
 		<tr>
 			<td>DETHNICE</td>
-			<td>Error: Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
+			<td>Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
 			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
 		</tr>
 		<tr>
 			<td>DINSTI</td>
-			<td>Error: FHIR field DeathLocationName contains string too long for IJE field DINSTI of length 30</td>
+			<td>FHIR field DeathLocationName contains string too long for IJE field DINSTI of length 30</td>
 			<td>The location of death string exceeds the 30-character limit for this field.</td>
 		</tr>
 		<tr>
 			<td rowspan ="2">DSTATE</td>
-			<td rowspan ="1">Error: FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
+			<td rowspan ="1">FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
 			<td colspan="1" rowspan ="2">DSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
         </tr>
 		<tr>
-			<td>Error: JurisdictionID was not identified</td>
+			<td>JurisdictionID was not identified</td>
 		</tr>
 		<tr>
 			<td>DOD_YR</td>
@@ -419,17 +419,17 @@ There are additional Errors that may be returned when a record cannot be accepte
 		</tr>
 		<tr>
 			<td>IDOB_YR</td>
-			<td>Error: FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
+			<td>FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
 			<td>The year of birth must be a valid 4-digit numeric year (YYYY).</td>
 		</tr>
 		<tr>
 			<td>INDUST</td>
-			<td>Error: FHIR field UsualIndustry contains string …. too long for IJE field INDUST of length 40</td>
+			<td>FHIR field UsualIndustry contains string …. too long for IJE field INDUST of length 40</td>
 			<td>The decedent's industry literal exceeds the 40-character limit for this field.</td>
 		</tr>
 		<tr>
 			<td>OCCUP</td>
-			<td>Error: FHIR field UsualOccupation contains string … too long for IJE field OCCUP of length 40</td>
+			<td>FHIR field UsualOccupation contains string … too long for IJE field OCCUP of length 40</td>
 			<td>The decedent's occupation literal exceeds the 40-character limit for this field.</td>
 		</tr>
 		<tr>
@@ -439,7 +439,7 @@ There are additional Errors that may be returned when a record cannot be accepte
 		</tr>
 		<tr>
 			<td>SSN</td>
-			<td>Error: FHIR field SSN contains string …. which is not the expected length (without dashes or spaces) for IJE field SSN of length 9</td>
+			<td>FHIR field SSN contains string …. which is not the expected length (without dashes or spaces) for IJE field SSN of length 9</td>
 			<td>The Social Security Number (SSN) must be 9 numeric digits long (without dashes or spaces) to be accepted.</td>
 		</tr>
 	</tbody>
