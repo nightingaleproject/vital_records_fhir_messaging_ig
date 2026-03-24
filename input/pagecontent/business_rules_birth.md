@@ -54,7 +54,7 @@ An Error Message with a format of "Error: Unable to find _IJE Field_ required el
 	</tbody>
 </table>
 
-The FHIR profile [ObservationInputRaceandEthnicityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU2/StructureDefinition-input-race-and-ethnicity-vr.html) is used for Mother and Father race and ethnicity fields below.
+The FHIR profile [ObservationInputRaceandEthnicityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU2/StructureDefinition-input-race-and-ethnicity-vr.html) is used for Mother and Father race and ethnicity fields below. Follow IJE requirements if father's info is not available.
 
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
   <colgroup>
@@ -191,17 +191,17 @@ Records that contain the minimal set of required fields will be processed by NCH
 
 For many fields, the value provided must be one that is found in the corresponding Vital Records Common Library FHIR IG Value Set for the field. Otherwise, the following Error Message will be returned for each violation:
 
-- `Error: Unable to find IJE Field mapping for FHIR Component field value 'string'`
+- `Unable to find IJE Field mapping for FHIR Component field value 'string'`
 
 There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
 
 | **IJE Field** | **Error Message** | **Clarification** |
 | --- | --- | --- |
-| BSTATE | Error: FHIR field BirthRecordState too long for IJE field BSTATE of length 2 | The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). [Value Set - States, Territories and Provinces Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) |
-| METHNICE, FETHNICE | Error: Unable to find IJE METHNICE or FETHNICE mapping for FHIR HispanicCode field value 'string' | METHNICE and FETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. State Field: [Value Set - HispanicOrigin Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-hispanic-origin-vr.html), or [Value Set - Jurisdictions Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-jurisdiction-vr.html) for extension |
-| BSTATE | Error: FHIR field contains string too long for IJE field BSTATE of length 2 | BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
-| BSTATE | Error: JurisdictionID was not identified |  BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
-| IDOB_YR (represented by event_year) | Error: FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4 | The year of the event must be a valid 4 numeric digit year (YYYY) without special characters or blanks. |
+| BSTATE | FHIR field BirthRecordState too long for IJE field BSTATE of length 2 | The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). [Value Set - States, Territories and Provinces Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) |
+| METHNICE, FETHNICE | Unable to find IJE METHNICE or FETHNICE mapping for FHIR HispanicCode field value 'string' | METHNICE and FETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. State Field: [Value Set - HispanicOrigin Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-hispanic-origin-vr.html), or [Value Set - Jurisdictions Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-jurisdiction-vr.html) for extension |
+| BSTATE | FHIR field contains string too long for IJE field BSTATE of length 2 | BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
+| BSTATE | JurisdictionID was not identified |  BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). |
+| IDOB_YR (represented by event_year) | FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4 | The year of the event must be a valid 4 numeric digit year (YYYY) without special characters or blanks. |
 | Event Year | FHIR cannot process records from EventYear year; please resubmit via IJE | Until the 2022 data year is closed, NVSS may not be able to process older years via FHIR. |
 | FHIR Bundle Event Year | FHIR BUNDLE Parameter event year should match the birth record Year. | IDOB_YR must agree with the year included in the FHIR BUNDLE parameter. |
 | FHIR Bundle Source Endpoint | FHIR Bundle Source Endpoint is missing | The actual message source address or id needs to be specified for the endpoint. |
