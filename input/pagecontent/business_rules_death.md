@@ -258,7 +258,7 @@ The following fields are required for a valid death record submission. An Error 
 
 #### Additional Logical Checks
 
-The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Error: Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
+The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Invalid combination of _Field 1_ and _Field 2_" will be returned for each invalid combination reported.
 
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
@@ -349,7 +349,7 @@ If an InjuryIncident profile instance is provided, fields can be considered 'not
 
 #### Validation Errors
 
-For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Error: Unable to find _IJE Field_ mapping for _FHIR Component_ field value '_string_'" will be returned for each violation.
+For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Unable to find _IJE Field_ mapping for _FHIR Component_ field value '_string_'" will be returned for each violation.
 
 There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
 
