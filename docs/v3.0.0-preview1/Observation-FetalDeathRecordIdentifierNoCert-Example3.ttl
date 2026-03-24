@@ -12,20 +12,17 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifierNoCert-Example3</b></p><a name=\"FetalDeathRecordIdentifierNoCert-Example3\"> </a><a name=\"hcFetalDeathRecordIdentifierNoCert-Example3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifierNoCert-Example3</b></p><a name=\"FetalDeathRecordIdentifierNoCert-Example3\"> </a><a name=\"hcFetalDeathRecordIdentifierNoCert-Example3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ;
-         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs>
-       ] ;
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "fetaldeathrecordidentifier" ]
      ] )
   ] ; # 
@@ -38,10 +35,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "N" ] ;
          fhir:display [ fhir:v "No" ]
        ] )
@@ -53,7 +47,7 @@
        ] )
      ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] ) . # 

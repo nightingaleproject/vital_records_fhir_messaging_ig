@@ -11,18 +11,15 @@
   fhir:id [ fhir:v "Payload-version-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Payload-version-cs</b></p><a name=\"Payload-version-cs\"> </a><a name=\"hcPayload-version-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU3_0<a name=\"Payload-version-cs-VRDR_STU3_0\"> </a></td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_2<a name=\"Payload-version-cs-VRDR_STU2_2\"> </a></td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU2_0<a name=\"Payload-version-cs-BFDR_STU2_0\"> </a></td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Payload-version-cs</b></p><a name=\"Payload-version-cs\"> </a><a name=\"hcPayload-version-cs\"> </a><p>This case-sensitive code system <code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU3_0<a name=\"Payload-version-cs-VRDR_STU3_0\"> </a></td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\">VRDR_STU2_2<a name=\"Payload-version-cs-VRDR_STU2_2\"> </a></td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\">BFDR_STU2_0<a name=\"Payload-version-cs-BFDR_STU2_0\"> </a></td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [
-     fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"^^xsd:anyURI ;
-     fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs>
-  ] ; # 
+  fhir:url [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.0-Preview1"] ; # 
   fhir:name [ fhir:v "PayloadVersionCS"] ; # 
   fhir:title [ fhir:v "Payload Version Identifier Values"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-11-25T14:04:25-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-24T12:23:49-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;

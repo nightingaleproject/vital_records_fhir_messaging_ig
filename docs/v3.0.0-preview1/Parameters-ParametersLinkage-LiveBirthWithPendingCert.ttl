@@ -13,13 +13,13 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "notes" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Live Birth With Pending Certificate"
      ]
   ] [
@@ -28,10 +28,7 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:281050002 ;
-         fhir:system [
-           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-           fhir:l <http://snomed.info/sct>
-         ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "281050002" ] ;
          fhir:display [ fhir:v "Livebirth" ]
        ] )
@@ -39,19 +36,19 @@
   ] [
      fhir:name [ fhir:v "birth_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 1
      ]
   ] [
      fhir:name [ fhir:v "fetal_death_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 0
      ]
   ] [
      fhir:name [ fhir:v "preg_status_is_correct" ] ;
      fhir:value [
-       a fhir:Boolean ;
+       a fhir:boolean ;
        fhir:v false
      ]
   ] [
@@ -59,10 +56,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "4" ] ;
          fhir:display [ fhir:v "Not pregnant, but pregnant 43 days to 1 year before death" ]
        ] )

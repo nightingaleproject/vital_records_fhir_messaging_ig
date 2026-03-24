@@ -10,7 +10,7 @@
   "name" : "CauseOfDeathCodingUpdateMessage",
   "title" : "Cause Of Death Coding Update Message",
   "status" : "draft",
-  "date" : "2025-11-25T14:04:25-05:00",
+  "date" : "2026-03-24T12:23:49-04:00",
   "publisher" : "CDC NCHS",
   "contact" : [{
     "name" : "CDC NCHS",
@@ -268,7 +268,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
     {

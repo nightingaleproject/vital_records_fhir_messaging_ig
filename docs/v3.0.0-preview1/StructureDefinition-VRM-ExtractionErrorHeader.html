@@ -275,7 +275,7 @@
         
           Draft
           
-            as of 2025-11-25
+            as of 2026-03-24
           
         
       </td>
@@ -450,7 +450,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..2</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-VRM-MessageParameters.html">Message Parameters</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The actual content of the message<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderK'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderK-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderK'));
 document.getElementById('cbVRM-ExtractionErrorHeaderK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -460,55 +460,10 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderK'), 'obligation', 
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Path</b>
-    </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="One of the message events defined as part of this version of FHIR.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.event[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="One of the message events defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a><div><code>http://hl7.org/fhir/ValueSet/message-events</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
 </table>
 
         
@@ -518,91 +473,15 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderK'), 'obligation', 
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-2</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
-    <td>
-      <code>contained.contained.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-3</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
-    <td>
-      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-4</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
-    <td>
-      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-5</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
-    <td>
-      <code>contained.meta.security.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-6</td>
-    <td>best practice</td>
-    <td>MessageHeader</td>
-    <td>A resource should have narrative for robust management</td>
-    <td>
-      <code>text.`div`.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -666,7 +545,7 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderK'), 'obligation', 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..2</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-VRM-MessageParameters.html">Message Parameters</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The actual content of the message</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderD'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderD-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderD'));
 document.getElementById('cbVRM-ExtractionErrorHeaderD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -677,40 +556,9 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderD'), 'obligation', 
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Path</b>
-    </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 0.5" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
 </table>
 
         
@@ -946,7 +794,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">canonical</a>(<a href="http://hl7.org/fhir/R4/messagedefinition.html">MessageDefinition</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Link to the definition for this message</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderS'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderS-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderS'));
 document.getElementById('cbVRM-ExtractionErrorHeaderS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -956,100 +804,29 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderS'), 'obligation', 
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list" data-fhir="generated-heirarchy">
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
   <tr>
-    <td>
-      <b>Path</b>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
     </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
+    <td style="font-size: 11px">Purpose</td>
   </tr>
   <tr>
-    <td>MessageHeader.language</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
     </td>
-    <td title="A human language.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
     </td>
   </tr>
-  <tr>
-    <td>MessageHeader.event[x]</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="One of the message events defined as part of this version of FHIR.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
-  <tr>
-    <td>MessageHeader.reason</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="Reason for event occurrence.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-reason-encounter.html">Example Message Reason Codes</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-reason-encounter|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.response.​code</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td title="The kind of response to a message.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-response-code.html">ResponseType</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/response-code|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
+</table>
+</td></tr>
+<tr><td>MessageHeader.event[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="One of the message events defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a><div><code>http://hl7.org/fhir/ValueSet/message-events</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
+<tr><td>MessageHeader.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Reason for event occurrence."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-reason-encounter.html">ExampleMessageReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/message-reason-encounter</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-reason-encounter"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.response.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The kind of response to a message.">Fixed Value: fatal-error<div><code>http://hl7.org/fhir/ValueSet/response-code|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/response-code|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
@@ -1059,91 +836,15 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderS'), 'obligation', 
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-2</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
-    <td>
-      <code>contained.contained.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-3</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
-    <td>
-      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-4</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
-    <td>
-      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-5</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
-    <td>
-      <code>contained.meta.security.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-6</td>
-    <td>best practice</td>
-    <td>MessageHeader</td>
-    <td>A resource should have narrative for robust management</td>
-    <td>
-      <code>text.`div`.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -1186,13 +887,13 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderS'), 'obligation', 
       "extension": [
       ],
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.name" title="Human-readable name for the target system" class="dict"><span style="text-decoration: underline">name</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Name of system</span>
-      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.target" title="Identifies the target end system in situations where the initial message transmission is to an intermediary system" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Device|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Particular delivery destination within the destination</span>
+      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.target" title="Identifies the target end system in situations where the initial message transmission is to an intermediary system" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/device.html">Device</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Particular delivery destination within the destination</span>
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.endpoint" title="Indicates where the message should be routed to" class="dict"><span style="text-decoration: underline">endpoint</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Actual destination address or id</span>
-      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.receiver" title="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn't sufficient" class="dict"><span style="text-decoration: underline">receiver</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Intended &quot;real-world&quot; recipient for the data</span>
+      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.receiver" title="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn't sufficient" class="dict"><span style="text-decoration: underline">receiver</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Intended &quot;real-world&quot; recipient for the data</span>
     }],
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.enterer" title="The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions" class="dict"><span style="text-decoration: underline">enterer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the data entry</span>
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.author" title="The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.enterer" title="The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions" class="dict"><span style="text-decoration: underline">enterer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the data entry</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.author" title="The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
       "extension": [
       ],
@@ -1202,7 +903,7 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderS'), 'obligation', 
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source.contact" title="An e-mail, phone, website or other contact point to use to resolve issues with message communications" class="dict"><span style="text-decoration: underline">contact</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Human contact for problems</span>
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source.endpoint" title="Identifies the routing target to send acknowledgements to" class="dict"><span style="text-decoration: underline">endpoint</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Actual message source address or id</span>
     },
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.responsible" title="The person or organization that accepts overall responsibility for the contents of the message. The implication is that the message event happened under the policies of the responsible party" class="dict"><span style="text-decoration: underline">responsible</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Final responsibility for event</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.responsible" title="The person or organization that accepts overall responsibility for the contents of the message. The implication is that the message event happened under the policies of the responsible party" class="dict"><span style="text-decoration: underline">responsible</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Final responsibility for event</span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.reason" title="Coded indication of the cause for the event - indicates  a reason for the occurrence of the event that is a focus of this message" class="dict"><span style="text-decoration: underline">reason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Cause of event</a></span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.response" title="Information about the message that this message is a response to.  Only present if this message is a response" class="dict"><span style="text-decoration: underline">response</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">If this is a reply to prior message</span>
       "extension": [
@@ -1339,7 +1040,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..2</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-VRM-MessageParameters.html">Message Parameters</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The actual content of the message<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderKA'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderKA-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderKA'));
 document.getElementById('cbVRM-ExtractionErrorHeaderKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1349,55 +1050,10 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderKA'), 'obligation',
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Path</b>
-    </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="One of the message events defined as part of this version of FHIR.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.event[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="One of the message events defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a><div><code>http://hl7.org/fhir/ValueSet/message-events</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
 </table>
 
         
@@ -1407,91 +1063,15 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderKA'), 'obligation',
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-2</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
-    <td>
-      <code>contained.contained.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-3</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
-    <td>
-      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-4</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
-    <td>
-      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-5</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
-    <td>
-      <code>contained.meta.security.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-6</td>
-    <td>best practice</td>
-    <td>MessageHeader</td>
-    <td>A resource should have narrative for robust management</td>
-    <td>
-      <code>text.`div`.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -1555,7 +1135,7 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderKA'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..2</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-VRM-MessageParameters.html">Message Parameters</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The actual content of the message</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderDA'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderDA-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderDA'));
 document.getElementById('cbVRM-ExtractionErrorHeaderDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1565,40 +1145,9 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderDA'), 'obligation',
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Path</b>
-    </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 0.5" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
 </table>
 
         
@@ -1834,7 +1383,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">canonical</a>(<a href="http://hl7.org/fhir/R4/messagedefinition.html">MessageDefinition</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Link to the definition for this message</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e7f4a295-2a3e-4c51-9d95-c6abc385d420
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f46995b5-f6d5-4ca2-93d7-680b8b8bb9bd
 document.getElementById('cbVRM-ExtractionErrorHeaderSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('VRM-ExtractionErrorHeaderSA'), 'binding', document.getElementById('cbVRM-ExtractionErrorHeaderSA-binding').checked, document.getElementById('ppVRM-ExtractionErrorHeaderSA'));
 document.getElementById('cbVRM-ExtractionErrorHeaderSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1844,100 +1393,29 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderSA'), 'obligation',
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list" data-fhir="generated-heirarchy">
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
+<tr><td>MessageHeader.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
   <tr>
-    <td>
-      <b>Path</b>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
     </td>
-    <td>
-      <b>Status</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>ValueSet</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
+    <td style="font-size: 11px">Purpose</td>
   </tr>
   <tr>
-    <td>MessageHeader.language</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
     </td>
-    <td title="A human language.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
     </td>
   </tr>
-  <tr>
-    <td>MessageHeader.event[x]</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="One of the message events defined as part of this version of FHIR.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.event[x]:eventUri</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionError MessageHeader URI Values</a>
-      <button data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.0.0-Preview1</td>
-    <td>This IG</td>
-  </tr>
-  <tr>
-    <td>MessageHeader.reason</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
-    </td>
-    <td title="Reason for event occurrence.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-reason-encounter.html">Example Message Reason Codes</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/message-reason-encounter|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
-  <tr>
-    <td>MessageHeader.response.​code</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
-    </td>
-    <td title="The kind of response to a message.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-response-code.html">ResponseType</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/response-code|4.0.1" title="Click to copy URL" class="btn-copy"></button>
-    </td>
-    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
-    <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
-    </td>
-  </tr>
+</table>
+</td></tr>
+<tr><td>MessageHeader.event[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="One of the message events defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-events.html">MessageEvent</a><div><code>http://hl7.org/fhir/ValueSet/message-events</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-events"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.event[x]:eventUri</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-VRM-ExtractionErrorHeaderURI-vs.html">ExtractionErrorHeaderURIVS</a><div><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs"></button></div><div>From this IG</div></td></tr>
+<tr><td>MessageHeader.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Reason for event occurrence."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-message-reason-encounter.html">ExampleMessageReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/message-reason-encounter</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/message-reason-encounter"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>MessageHeader.response.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The kind of response to a message.">Fixed Value: fatal-error<div><code>http://hl7.org/fhir/ValueSet/response-code|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/response-code|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
@@ -1947,91 +1425,15 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderSA'), 'obligation',
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-2</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
-    <td>
-      <code>contained.contained.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-3</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
-    <td>
-      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-4</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
-    <td>
-      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-5</td>
-    <td>error</td>
-    <td>MessageHeader</td>
-    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
-    <td>
-      <code>contained.meta.security.empty()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>dom-6</td>
-    <td>best practice</td>
-    <td>MessageHeader</td>
-    <td>A resource should have narrative for robust management</td>
-    <td>
-      <code>text.`div`.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -2074,13 +1476,13 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderSA'), 'obligation',
       "extension": [
       ],
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.name" title="Human-readable name for the target system" class="dict"><span style="text-decoration: underline">name</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Name of system</span>
-      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.target" title="Identifies the target end system in situations where the initial message transmission is to an intermediary system" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Device|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Particular delivery destination within the destination</span>
+      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.target" title="Identifies the target end system in situations where the initial message transmission is to an intermediary system" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/device.html">Device</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Particular delivery destination within the destination</span>
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.endpoint" title="Indicates where the message should be routed to" class="dict"><span style="text-decoration: underline">endpoint</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Actual destination address or id</span>
-      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.receiver" title="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn't sufficient" class="dict"><span style="text-decoration: underline">receiver</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Intended &quot;real-world&quot; recipient for the data</span>
+      "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.destination.receiver" title="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn't sufficient" class="dict"><span style="text-decoration: underline">receiver</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Intended &quot;real-world&quot; recipient for the data</span>
     }],
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.enterer" title="The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions" class="dict"><span style="text-decoration: underline">enterer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the data entry</span>
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.author" title="The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.enterer" title="The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions" class="dict"><span style="text-decoration: underline">enterer</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the data entry</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.author" title="The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
       "extension": [
       ],
@@ -2090,7 +1492,7 @@ filterDesc(document.getElementById('VRM-ExtractionErrorHeaderSA'), 'obligation',
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source.contact" title="An e-mail, phone, website or other contact point to use to resolve issues with message communications" class="dict"><span style="text-decoration: underline">contact</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Human contact for problems</span>
       "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.source.endpoint" title="Identifies the routing target to send acknowledgements to" class="dict"><span style="text-decoration: underline">endpoint</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Actual message source address or id</span>
     },
-    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.responsible" title="The person or organization that accepts overall responsibility for the contents of the message. The implication is that the message event happened under the policies of the responsible party" class="dict"><span style="text-decoration: underline">responsible</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Practitioner|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Final responsibility for event</span>
+    "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.responsible" title="The person or organization that accepts overall responsibility for the contents of the message. The implication is that the message event happened under the policies of the responsible party" class="dict"><span style="text-decoration: underline">responsible</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Final responsibility for event</span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.reason" title="Coded indication of the cause for the event - indicates  a reason for the occurrence of the event that is a focus of this message" class="dict"><span style="text-decoration: underline">reason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Cause of event</a></span>
     "<a href="StructureDefinition-VRM-ExtractionErrorHeader.html#MessageHeader.response" title="Information about the message that this message is a response to.  Only present if this message is a response" class="dict"><span style="text-decoration: underline">response</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">If this is a reply to prior message</span>
       "extension": [
@@ -2176,7 +1578,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#3.0.0-Preview1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:04-0500">2025-11-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#3.0.0-Preview1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 24, 2026 12:26-0400">2026-03-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

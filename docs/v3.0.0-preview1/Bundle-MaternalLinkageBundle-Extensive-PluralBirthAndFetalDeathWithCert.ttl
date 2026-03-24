@@ -13,35 +13,26 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-maternal-linkage-content-bundle>
      ] )
   ] ; # 
   fhir:identifier [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:String ;
+         a fhir:string ;
          fhir:v "000182"
        ]
      ] [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:String ;
+         a fhir:string ;
          fhir:v "000000000001"
        ]
      ] [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:String ;
+         a fhir:string ;
          fhir:v "100000000001"
        ]
      ] ) ;
@@ -49,34 +40,19 @@
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [
-       fhir:v "http://www.example.org/fhir/Parameter/ParametersLinkage-Extensive-PluralBirthAndFetalDeath"^^xsd:anyURI ;
-       fhir:l <http://www.example.org/fhir/Parameter/ParametersLinkage-Extensive-PluralBirthAndFetalDeath>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Parameter/ParametersLinkage-Extensive-PluralBirthAndFetalDeath"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Parameter/ParametersLinkage-Extensive-PluralBirthAndFetalDeath> )
   ] [
-     fhir:fullUrl [
-       fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample1"^^xsd:anyURI ;
-       fhir:l <http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample1>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample1"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample1> )
   ] [
-     fhir:fullUrl [
-       fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample2"^^xsd:anyURI ;
-       fhir:l <http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample2>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample2"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Observation/BirthRecordIdentifierChild-ExtensiveExample2> )
   ] [
-     fhir:fullUrl [
-       fhir:v "http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtensiveExample1"^^xsd:anyURI ;
-       fhir:l <http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtensiveExample1>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtensiveExample1"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtensiveExample1> )
   ] [
-     fhir:fullUrl [
-       fhir:v "http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtesnvieExample2"^^xsd:anyURI ;
-       fhir:l <http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtesnvieExample2>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtesnvieExample2"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Observation/FetalDeathRecordIdentifier-ExtesnvieExample2> )
   ] ) . # 
 
@@ -85,13 +61,13 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "notes" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "This is a long example of notes to use all characters. Long example of notes to use characters. Test"
      ]
   ] [
@@ -99,10 +75,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ;
-           fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs>
-         ] ;
+         fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "live-birth-and-fetal-death" ] ;
          fhir:display [ fhir:v "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" ]
        ] )
@@ -110,19 +83,19 @@
   ] [
      fhir:name [ fhir:v "birth_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
      fhir:name [ fhir:v "fetal_death_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
      fhir:name [ fhir:v "preg_status_is_correct" ] ;
      fhir:value [
-       a fhir:Boolean ;
+       a fhir:boolean ;
        fhir:v false
      ]
   ] [
@@ -130,10 +103,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "4" ] ;
          fhir:display [ fhir:v "Not pregnant, but pregnant 43 days to 1 year before death" ]
        ] )
@@ -145,55 +115,46 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChild-ExtensiveExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChild-ExtensiveExample1</b></p><a name=\"BirthRecordIdentifierChild-ExtensiveExample1\"> </a><a name=\"hcBirthRecordIdentifierChild-ExtensiveExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><p><b>value</b>: 717171</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21842-0}\">Birthplace</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 80904-6}\">Birth year</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChild-ExtensiveExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChild-ExtensiveExample1</b></p><a name=\"BirthRecordIdentifierChild-ExtensiveExample1\"> </a><a name=\"hcBirthRecordIdentifierChild-ExtensiveExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><p><b>value</b>: 717171</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21842-0}\">Birthplace</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 80904-6}\">Birth year</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ;
-         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs>
-       ] ;
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "birthrecordidentifier" ]
      ] )
   ] ; # 
   fhir:value [
-     a fhir:String ;
+     a fhir:string ;
      fhir:v "717171"
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a loinc:21842-0 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "21842-0" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "YC"
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a loinc:80904-6 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "80904-6" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:DateTime ;
+       a fhir:dateTime ;
        fhir:v "2024"^^xsd:gYear
      ]
   ] [
@@ -203,7 +164,7 @@
        ] )
      ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 1
      ]
   ] [
@@ -215,10 +176,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "Y" ] ;
          fhir:display [ fhir:v "Yes" ]
        ] )
@@ -230,55 +188,46 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-birth-record-identifier-child>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChild-ExtensiveExample2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChild-ExtensiveExample2</b></p><a name=\"BirthRecordIdentifierChild-ExtensiveExample2\"> </a><a name=\"hcBirthRecordIdentifierChild-ExtensiveExample2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><p><b>value</b>: 717172</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21842-0}\">Birthplace</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 80904-6}\">Birth year</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthRecordIdentifierChild-ExtensiveExample2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthRecordIdentifierChild-ExtensiveExample2</b></p><a name=\"BirthRecordIdentifierChild-ExtensiveExample2\"> </a><a name=\"hcBirthRecordIdentifierChild-ExtensiveExample2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-birth-record-identifier-child.html\">Birth Record Identifier Child</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs birthrecordidentifier}\">Birth Record Record Identifier</span></p><p><b>value</b>: 717172</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21842-0}\">Birthplace</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 80904-6}\">Birth year</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ;
-         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs>
-       ] ;
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "birthrecordidentifier" ]
      ] )
   ] ; # 
   fhir:value [
-     a fhir:String ;
+     a fhir:string ;
      fhir:v "717172"
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a loinc:21842-0 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "21842-0" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "YC"
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a loinc:80904-6 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "80904-6" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:DateTime ;
+       a fhir:dateTime ;
        fhir:v "2024"^^xsd:gYear
      ]
   ] [
@@ -288,7 +237,7 @@
        ] )
      ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
@@ -300,10 +249,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "Y" ] ;
          fhir:display [ fhir:v "Yes" ]
        ] )
@@ -315,55 +261,46 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FetalDeathRecordIdentifier-ExtensiveExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifier-ExtensiveExample1</b></p><a name=\"FetalDeathRecordIdentifier-ExtensiveExample1\"> </a><a name=\"hcFetalDeathRecordIdentifier-ExtensiveExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><p><b>value</b>: 100001</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 77969-4}\">Jurisdiction code</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81954-0}\">Date of death [Date]</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FetalDeathRecordIdentifier-ExtensiveExample1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifier-ExtensiveExample1</b></p><a name=\"FetalDeathRecordIdentifier-ExtensiveExample1\"> </a><a name=\"hcFetalDeathRecordIdentifier-ExtensiveExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><p><b>value</b>: 100001</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 77969-4}\">Jurisdiction code</span></p><p><b>value</b>: YC</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81954-0}\">Date of death [Date]</span></p><p><b>value</b>: 2024</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ;
-         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs>
-       ] ;
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "fetaldeathrecordidentifier" ]
      ] )
   ] ; # 
   fhir:value [
-     a fhir:String ;
+     a fhir:string ;
      fhir:v "100001"
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a loinc:77969-4 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "77969-4" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "YC"
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a loinc:81954-0 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "81954-0" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:DateTime ;
+       a fhir:dateTime ;
        fhir:v "2024"^^xsd:gYear
      ]
   ] [
@@ -373,7 +310,7 @@
        ] )
      ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 1
      ]
   ] [
@@ -385,10 +322,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "Y" ] ;
          fhir:display [ fhir:v "Yes" ]
        ] )
@@ -400,20 +334,17 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-fetal-death-record-identifier>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifier-ExtesnvieExample2</b></p><a name=\"FetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><a name=\"hcFetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FetalDeathRecordIdentifier-ExtesnvieExample2</b></p><a name=\"FetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><a name=\"hcFetalDeathRecordIdentifier-ExtesnvieExample2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-fetal-death-record-identifier.html\">Fetal Death Record Identifier</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs fetaldeathrecordidentifier}\">Fetal Death Record Identifier</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">index</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">availability</span></p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ;
-         fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs>
-       ] ;
+       fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-observation-cs"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "fetaldeathrecordidentifier" ]
      ] )
   ] ; # 
@@ -424,7 +355,7 @@
        ] )
      ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
@@ -436,10 +367,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "N" ] ;
          fhir:display [ fhir:v "No" ]
        ] )

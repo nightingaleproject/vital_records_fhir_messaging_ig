@@ -15,12 +15,12 @@
           <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"/>
         </meta>
         <parameter>
-          <name value="cert_no"/>
-          <valueUnsignedInt value="111111"/>
-        </parameter>
-        <parameter>
           <name value="jurisdiction_id"/>
           <valueString value="NY"/>
+        </parameter>
+        <parameter>
+          <name value="cert_no"/>
+          <valueUnsignedInt value="111111"/>
         </parameter>
         <parameter>
           <name value="state_auxiliary_id"/>

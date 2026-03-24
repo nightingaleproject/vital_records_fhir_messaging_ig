@@ -21,7 +21,7 @@
   <name value="CauseOfDeathCodingMessage"/>
   <title value="Cause of Death Coding Message"/>
   <status value="draft"/>
-  <date value="2025-11-25T14:04:25-05:00"/>
+  <date value="2026-03-24T12:23:49-04:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -270,7 +270,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
     </element>
     <element id="Bundle.identifier">

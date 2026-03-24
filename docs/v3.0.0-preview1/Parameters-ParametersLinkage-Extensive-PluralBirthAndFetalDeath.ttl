@@ -12,13 +12,13 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "notes" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "This is a long example of notes to use all characters. Long example of notes to use characters. Test"
      ]
   ] [
@@ -26,10 +26,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ;
-           fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs>
-         ] ;
+         fhir:system [ fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-coded-pregnancy-status-cs"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "live-birth-and-fetal-death" ] ;
          fhir:display [ fhir:v "Multiple Outcomes (Live Birth(s) and Fetal Death(s))" ]
        ] )
@@ -37,19 +34,19 @@
   ] [
      fhir:name [ fhir:v "birth_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
      fhir:name [ fhir:v "fetal_death_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 2
      ]
   ] [
      fhir:name [ fhir:v "preg_status_is_correct" ] ;
      fhir:value [
-       a fhir:Boolean ;
+       a fhir:boolean ;
        fhir:v false
      ]
   ] [
@@ -57,10 +54,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/CodeSystem-death-pregnancy-status"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "4" ] ;
          fhir:display [ fhir:v "Not pregnant, but pregnant 43 days to 1 year before death" ]
        ] )

@@ -13,13 +13,13 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters"^^xsd:anyURI ;
-       fhir:l <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
+       fhir:link <http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-RecentPregnancyParameters>
      ] )
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "notes" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Ectopic Pregnancy"
      ]
   ] [
@@ -28,10 +28,7 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:34801009 ;
-         fhir:system [
-           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-           fhir:l <http://snomed.info/sct>
-         ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "34801009" ] ;
          fhir:display [ fhir:v "Ectopic Pregnancy" ]
        ] )
@@ -39,19 +36,19 @@
   ] [
      fhir:name [ fhir:v "birth_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 0
      ]
   ] [
      fhir:name [ fhir:v "fetal_death_plurality" ] ;
      fhir:value [
-       a fhir:Integer ;
+       a fhir:integer ;
        fhir:v 0
      ]
   ] [
      fhir:name [ fhir:v "preg_status_is_correct" ] ;
      fhir:value [
-       a fhir:Boolean ;
+       a fhir:boolean ;
        fhir:v true
      ]
   ] ) . # 

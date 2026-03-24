@@ -19,7 +19,7 @@
   <name value="CauseOfDeathCodingHeader"/>
   <title value="Cause of Death Coding Header"/>
   <status value="draft"/>
-  <date value="2025-11-25T14:04:25-05:00"/>
+  <date value="2026-03-24T12:23:49-04:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>
@@ -233,7 +233,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
     </element>
     <element id="MessageHeader.text">
@@ -417,7 +417,7 @@
         </extension>
         <strength value="example"/>
         <description value="One of the message events defined as part of this version of FHIR."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/message-events|4.0.1"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/message-events"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -671,7 +671,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -737,9 +737,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -783,9 +783,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -829,8 +829,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -870,8 +870,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1224,9 +1224,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1282,7 +1282,7 @@
         </extension>
         <strength value="example"/>
         <description value="Reason for event occurrence."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/message-reason-encounter|4.0.1"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/message-reason-encounter"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1531,7 +1531,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1567,7 +1567,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1598,7 +1598,7 @@
       </base>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MessageDefinition|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MessageDefinition"/>
       </type>
       <constraint>
         <key value="ele-1"/>
