@@ -42,12 +42,12 @@
         "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
       },
       "parameter" : [{
-        "name" : "cert_no",
-        "valueUnsignedInt" : 111111
-      },
-      {
         "name" : "jurisdiction_id",
         "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 111111
       },
       {
         "name" : "state_auxiliary_id",
@@ -73,12 +73,12 @@
             "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
           },
           "parameter" : [{
-            "name" : "cert_no",
-            "valueUnsignedInt" : 111111
-          },
-          {
             "name" : "jurisdiction_id",
             "valueString" : "NY"
+          },
+          {
+            "name" : "cert_no",
+            "valueUnsignedInt" : 111111
           },
           {
             "name" : "state_auxiliary_id",

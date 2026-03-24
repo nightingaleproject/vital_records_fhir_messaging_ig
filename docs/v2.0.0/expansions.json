@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3eba0e33-8b23-41b2-92fe-55fca117c428",
+  "id" : "0f499443-6982-48ea-97eb-f4342d43b48b",
   "meta" : {
-    "lastUpdated" : "2025-08-11T16:12:27.982-04:00"
+    "lastUpdated" : "2026-03-24T10:41:00.783-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-Payload-version-cs.html\">codesystem Payload Version Identifier Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU3_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU3_0\">VRDR_STU3_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_2\">VRDR_STU2_2</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU2_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU2_0\">BFDR_STU2_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-Payload-version-cs.html\">codesystem Payload Version Identifier Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU3_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU3_0\">VRDR_STU3_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU3.0</td><td>VRDR STU3.0</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-VRDR_STU2_2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-VRDR_STU2_2\">VRDR_STU2_2</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>VRDRSTU2.2</td><td>VRDR STU2.2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs-BFDR_STU2_0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Payload-version-cs.html#Payload-version-cs-BFDR_STU2_0\">BFDR_STU2_0</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/Payload-version-cs</td><td>BFDRSTU2.0</td><td>BFDR STU2.0</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/Payload-version-vs",
       "version" : "2.0.0",
@@ -19,13 +19,17 @@
       "title" : "Payload Version Identifier Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:59630a96-2563-4255-977e-057792c2dc60",
-        "timestamp" : "2025-08-11T16:18:28-04:00",
+        "identifier" : "urn:uuid:85132f14-6e61-4f5c-9a0a-bfa5ea2514d5",
+        "timestamp" : "2026-03-24T10:43:00-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -65,7 +69,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_acknowledgement\">http://nchs.cdc.gov/vrdr_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_acknowledgement\">http://nchs.cdc.gov/fd_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Acknowledgement</td><td>Indicates this is an  acknowledgement for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_acknowledgement\">http://nchs.cdc.gov/birth_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement for a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_acknowledgement\">http://nchs.cdc.gov/vrdr_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_acknowledgement\">http://nchs.cdc.gov/fd_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Acknowledgement</td><td>Indicates this is an  acknowledgement for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_acknowledgement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_acknowledgement\">http://nchs.cdc.gov/birth_acknowledgement</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Acknowledgement</td><td>Indicates this is  an  acknowledgement for a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-AcknowledgementHeaderURI-vs",
       "version" : "2.0.0",
@@ -73,13 +77,17 @@
       "title" : "Acknowledgement MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:76dc4a26-5f84-44a0-abfe-f1211928c305",
-        "timestamp" : "2025-08-11T16:18:29-04:00",
+        "identifier" : "urn:uuid:97476f3c-957f-46fd-b0d6-25ed60302822",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -119,7 +127,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding\">http://nchs.cdc.gov/vrdr_causeofdeath_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Cause of Death Coding</td><td>Indicates that this is an initial cause of death coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding\">http://nchs.cdc.gov/fd_causeofdeath_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Cause of Fetal Death Submission</td><td>Indicates that this is an initial fetal cause of death</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding\">http://nchs.cdc.gov/vrdr_causeofdeath_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Cause of Death Coding</td><td>Indicates that this is an initial cause of death coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding\">http://nchs.cdc.gov/fd_causeofdeath_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Cause of Fetal Death Submission</td><td>Indicates that this is an initial fetal cause of death</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingHeaderURI-vs",
       "version" : "2.0.0",
@@ -127,13 +135,17 @@
       "title" : "Cause of Death Coding MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7457d0e7-fc8f-4d62-8956-f9a6934fe110",
-        "timestamp" : "2025-08-11T16:18:29-04:00",
+        "identifier" : "urn:uuid:dbc290a7-6b10-4740-8c80-02c7a57ca7ef",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -168,7 +180,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update\">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Cause of Death Coding Update</td><td>Indicates that this is an updated cause of death coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding_update\">http://nchs.cdc.gov/fd_causeofdeath_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Cause of Fetal Death Update</td><td>Indicates that this is an updated fetal cause of death</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_causeofdeath_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_causeofdeath_coding_update\">http://nchs.cdc.gov/vrdr_causeofdeath_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Cause of Death Coding Update</td><td>Indicates that this is an updated cause of death coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_causeofdeath_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_causeofdeath_coding_update\">http://nchs.cdc.gov/fd_causeofdeath_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Cause of Fetal Death Update</td><td>Indicates that this is an updated fetal cause of death</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-CauseOfDeathCodingUpdateHeaderURI-vs",
       "version" : "2.0.0",
@@ -176,13 +188,17 @@
       "title" : "Cause of Death Coding Update MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ac5a9f7e-787a-4447-b989-d6e2f28a10eb",
-        "timestamp" : "2025-08-11T16:18:29-04:00",
+        "identifier" : "urn:uuid:668c660c-4326-4f74-a51f-2a9790f74a73",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -217,7 +233,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding\">http://nchs.cdc.gov/vrdr_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Demographics Coding</td><td>Indicates that this is an initial demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding\">http://nchs.cdc.gov/fd_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding\">http://nchs.cdc.gov/birth_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding\">http://nchs.cdc.gov/vrdr_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Demographics Coding</td><td>Indicates that this is an initial demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding\">http://nchs.cdc.gov/fd_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding\">http://nchs.cdc.gov/birth_demographics_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Parental Demographics Coding</td><td>Indicates that this is an initial demographics coding of a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-DemographicsCodingHeaderURI-vs",
       "version" : "2.0.0",
@@ -225,13 +241,17 @@
       "title" : "Demographics Coding  MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:db9c5efb-d9d4-4fcb-9793-c06b4cb1d187",
-        "timestamp" : "2025-08-11T16:18:30-04:00",
+        "identifier" : "urn:uuid:cc31dc64-59ab-4497-b494-5a340b9a5932",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -271,7 +291,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding_update\">http://nchs.cdc.gov/vrdr_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding_update\">http://nchs.cdc.gov/fd_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding_update\">http://nchs.cdc.gov/birth_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Bith Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_demographics_coding_update\">http://nchs.cdc.gov/vrdr_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_demographics_coding_update\">http://nchs.cdc.gov/fd_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_demographics_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_demographics_coding_update\">http://nchs.cdc.gov/birth_demographics_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Bith Parental Demographics Coding Update</td><td>Indicates that this is an updated demographics coding of a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-DemographicsCodingUpdateHeaderURI-vs",
       "version" : "2.0.0",
@@ -279,13 +299,17 @@
       "title" : "Demographics Coding Update MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:32dca1cf-f2ad-42f9-9532-d923eecdeb58",
-        "timestamp" : "2025-08-11T16:18:30-04:00",
+        "identifier" : "urn:uuid:1d76ed18-99dd-475a-a4e1-5702ae3584b4",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -325,7 +349,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_extraction_error\">http://nchs.cdc.gov/vrdr_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Extraction Error</td><td>Indicates that this is an extraction error on a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_extraction_error\">http://nchs.cdc.gov/fd_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Extraction Error</td><td>Indicates that this is an extraction error for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_extraction_error\">http://nchs.cdc.gov/birth_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Extraction Error</td><td>Indicates that this is an extraction error for a Birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_extraction_error\">http://nchs.cdc.gov/vrdr_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Extraction Error</td><td>Indicates that this is an extraction error on a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_extraction_error\">http://nchs.cdc.gov/fd_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Extraction Error</td><td>Indicates that this is an extraction error for a Fetal Death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_extraction_error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_extraction_error\">http://nchs.cdc.gov/birth_extraction_error</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Extraction Error</td><td>Indicates that this is an extraction error for a Birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-ExtractionErrorHeaderURI-vs",
       "version" : "2.0.0",
@@ -333,13 +357,17 @@
       "title" : "ExtractionError MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7cb0d150-3c90-41ff-8e72-eb4390bf3a6e",
-        "timestamp" : "2025-08-11T16:18:31-04:00",
+        "identifier" : "urn:uuid:81e6b430-9ee7-4bbe-a147-2c8c51ffeb26",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -379,7 +407,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding\">http://nchs.cdc.gov/vrdr_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding\">http://nchs.cdc.gov/fd_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding\">http://nchs.cdc.gov/birth_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding\">http://nchs.cdc.gov/vrdr_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding\">http://nchs.cdc.gov/fd_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding\">http://nchs.cdc.gov/birth_industryoccupation_coding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Industry Occupation Coding</td><td>Indicates that this is an initial industry occupation coding of the mother on a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationHeaderURI-vs",
       "version" : "2.0.0",
@@ -387,13 +415,17 @@
       "title" : "Industry and Occupation MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a3966f6e-a879-484f-ac3b-f1ef7c1e7b69",
-        "timestamp" : "2025-08-11T16:18:31-04:00",
+        "identifier" : "urn:uuid:6795a876-b682-4f70-8b6e-038abaf3e933",
+        "timestamp" : "2026-03-24T10:43:01-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -433,7 +465,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update\">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding_update\">http://nchs.cdc.gov/fd_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding_update\">http://nchs.cdc.gov/birth_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth  Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_industryoccupation_coding_update\">http://nchs.cdc.gov/vrdr_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_industryoccupation_coding_update\">http://nchs.cdc.gov/fd_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_industryoccupation_coding_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_industryoccupation_coding_update\">http://nchs.cdc.gov/birth_industryoccupation_coding_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth  Industry Occupation Coding Update</td><td>Indicates that this is an updated industry occupation coding of the mother on a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-IndustryOccupationUpdateHeaderURI-vs",
       "version" : "2.0.0",
@@ -441,13 +473,17 @@
       "title" : "Industry and Occupation Update MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:95edd6e2-cc71-41da-9267-88c986d58973",
-        "timestamp" : "2025-08-11T16:18:31-04:00",
+        "identifier" : "urn:uuid:b2af8d0c-f5dd-470a-bd3e-1822a2275ca6",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -487,7 +523,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-Status-cs.html\">codesystem Status Codes Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding\">manualCauseOfDeathCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding\">manualDemographicCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate\">noCodingNeeded_Duplicate</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update\">manualCodingCanceled_Update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void\">manualCodingCanceled_Void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-nonCodeable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-nonCodeable\">nonCodeable</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Non Codeable</td><td><div><p>The fetal death record does not meet the criteria for fetal cause of death coding.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-Status-cs.html\">codesystem Status Codes Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding\">manualCauseOfDeathCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Cause of Death Coding</td><td><div><p>The death record has been sent for manual cause of death coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding\">manualDemographicCoding</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Demographic  Coding</td><td><div><p>The death record has been sent for manual demographic (race/ethnicity) coding.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate\">noCodingNeeded_Duplicate</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>No Coding Needed - Duplicate</td><td><div><p>The death record is a duplicate of a previously submitted record, no coding will be performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update\">manualCodingCanceled_Update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Update</td><td><div><p>An update has been submitted for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void\">manualCodingCanceled_Void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Manual Coding Canceled - Void</td><td><div><p>A void request has been received for a death record that is queued for manual coding.  The manual coding\nhas been canceled for the original record.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-nonCodeable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-Status-cs.html#VRM-Status-cs-nonCodeable\">nonCodeable</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td><td>Non Codeable</td><td><div><p>The fetal death record does not meet the criteria for fetal cause of death coding.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs",
       "version" : "2.0.0",
@@ -495,13 +531,17 @@
       "title" : "Status Codes Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:72b1cc8f-bff4-41bf-9af8-da24c94fc887",
-        "timestamp" : "2025-08-11T16:18:32-04:00",
+        "identifier" : "urn:uuid:f91da41e-a760-4338-bea4-8c25b67d8a74",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -556,7 +596,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_status\">http://nchs.cdc.gov/vrdr_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Status</td><td>Indicates that this is a status for a previously submitted death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_status\">http://nchs.cdc.gov/fd_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Status</td><td>Indicates that this is a status for a previously submitted Fetal Death Record</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_status\">http://nchs.cdc.gov/birth_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Status</td><td>Indicates that this is a status for a previously submitted birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_status\">http://nchs.cdc.gov/vrdr_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Status</td><td>Indicates that this is a status for a previously submitted death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_status\">http://nchs.cdc.gov/fd_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Status</td><td>Indicates that this is a status for a previously submitted Fetal Death Record</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_status\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_status\">http://nchs.cdc.gov/birth_status</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Status</td><td>Indicates that this is a status for a previously submitted birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-StatusHeaderURI-vs",
       "version" : "2.0.0",
@@ -564,13 +604,17 @@
       "title" : "Status MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:08f81c76-b38e-4532-804b-c15e09e15a1e",
-        "timestamp" : "2025-08-11T16:18:32-04:00",
+        "identifier" : "urn:uuid:dc58072e-3098-4a73-bbe9-4acbdf447f93",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -610,20 +654,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Submission</td><td>Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission\">http://nchs.cdc.gov/fd_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Submission</td><td>Indicates that the payload is an initial submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission\">http://nchs.cdc.gov/birth_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Submission</td><td>Indicates that this is an initial submission of a BFDR birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Submission</td><td>Indicates that the payload is an initial (or retransmission of an unacknowledged) submission of a death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission\">http://nchs.cdc.gov/fd_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Submission</td><td>Indicates that the payload is an initial submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission\">http://nchs.cdc.gov/birth_submission</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Submission</td><td>Indicates that this is an initial submission of a BFDR birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-SubmissionHeaderURI-vs",
       "version" : "2.0.0",
       "name" : "SubmissionURIVS",
       "title" : "Submission MessageHeader URI Values",
       "status" : "active",
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:59f6493c-686f-4bbf-9be6-32245f079786",
-        "timestamp" : "2025-08-11T16:18:32-04:00",
+        "identifier" : "urn:uuid:d05a25d5-e1ac-45b5-83f7-4864a67f7658",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -663,7 +711,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update\">http://nchs.cdc.gov/vrdr_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Update</td><td>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_update\">http://nchs.cdc.gov/fd_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Update</td><td>Indicates that the payload is an updated submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_update\">http://nchs.cdc.gov/birth_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Update</td><td>Indicates that this is an updated submission of a birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_update\">http://nchs.cdc.gov/vrdr_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Update</td><td>Indicates this is  an  update  to  a  previously  acknowledged  submission  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_update\">http://nchs.cdc.gov/fd_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Update</td><td>Indicates that the payload is an updated submission of a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_update\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_update\">http://nchs.cdc.gov/birth_submission_update</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Update</td><td>Indicates that this is an updated submission of a birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-UpdateHeaderURI-vs",
       "version" : "2.0.0",
@@ -671,13 +719,17 @@
       "title" : "Update MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:71828ba1-02b6-41b8-a199-60186c68ef02",
-        "timestamp" : "2025-08-11T16:18:33-04:00",
+        "identifier" : "urn:uuid:e0747ee5-bf04-4e7b-b06b-2715607ae12d",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -717,7 +769,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_void\">http://nchs.cdc.gov/vrdr_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Void</td><td>Indicates this is  void  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_void\">http://nchs.cdc.gov/fd_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Submission Void</td><td>Indicates this is  void  of  a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_void\">http://nchs.cdc.gov/birth_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Submission Void</td><td>Indicates that this is void of a submitted  birth report</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html\">codesystem MessageHeader URI Values v2.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/vrdr_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47vrdr_submission_void\">http://nchs.cdc.gov/vrdr_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>VRDR Void</td><td>Indicates this is  void  of  a  death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/fd_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47fd_submission_void\">http://nchs.cdc.gov/fd_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Fetal Death Submission Void</td><td>Indicates this is  void  of  a  fetal death report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs-http://nchs.cdc.gov/birth_submission_void\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VRM-MessageHeaderURI-cs.html#VRM-MessageHeaderURI-cs-http.58.47.47nchs.46cdc.46gov.47birth_submission_void\">http://nchs.cdc.gov/birth_submission_void</a></td><td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-MessageHeaderURI-cs</td><td>Birth Submission Void</td><td>Indicates that this is void of a submitted  birth report</td></tr></table></div>"
       },
       "url" : "http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-VOIDHeaderURI-vs",
       "version" : "2.0.0",
@@ -725,13 +777,17 @@
       "title" : "Void MessageHeader URI Values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-08-11T16:10:00-04:00",
+      "date" : "2026-03-24T10:39:59-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e971703f-654f-41ac-9226-9c48a28b9b9a",
-        "timestamp" : "2025-08-11T16:18:33-04:00",
+        "identifier" : "urn:uuid:829f23ab-efc9-4651-ab3c-fe7a9d89d593",
+        "timestamp" : "2026-03-24T10:43:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },

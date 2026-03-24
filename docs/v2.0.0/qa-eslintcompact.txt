@@ -1,7 +1,9 @@
 VitalRecordsFHIRMessagingIG
 =========================================
 
-C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\StructureDefinition-VRM-AcknowledgementHeader.json: line 1, col 30539, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead' (BUSINESSRULE)
+C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\ImplementationGuide-vital-records-fhir-messaging.json: line 1, col 1762, Warning - The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 5.2.0. This reference is getting old and the more recent version should be considered (BUSINESSRULE)
+C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\ImplementationGuide-vital-records-fhir-messaging.json: line 1, col 1910, Warning - The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered (BUSINESSRULE)
+C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\StructureDefinition-VRM-AcknowledgementHeader.json: line 1, col 30539, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note Use additionalBinding extension or element instead (BUSINESSRULE)
 
-err = 0, warn = 0, info = 1
-IG Publisher Version: 2.0.13
+err = 0, warn = 2, info = 1
+IG Publisher Version: 2.0.12

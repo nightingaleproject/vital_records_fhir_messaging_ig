@@ -43,12 +43,12 @@
         "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-MessageParameters"]
       },
       "parameter" : [{
-        "name" : "cert_no",
-        "valueUnsignedInt" : 123456
-      },
-      {
         "name" : "jurisdiction_id",
         "valueString" : "NY"
+      },
+      {
+        "name" : "cert_no",
+        "valueUnsignedInt" : 123456
       },
       {
         "name" : "event_year",

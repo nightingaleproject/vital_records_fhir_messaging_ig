@@ -16,16 +16,16 @@
      ] )
   ] ; # 
   fhir:parameter ( [
-     fhir:name [ fhir:v "cert_no" ] ;
-     fhir:value [
-       a fhir:unsignedInt ;
-       fhir:v "123456"^^xsd:nonNegativeInteger
-     ]
-  ] [
      fhir:name [ fhir:v "jurisdiction_id" ] ;
      fhir:value [
        a fhir:string ;
        fhir:v "NY"
+     ]
+  ] [
+     fhir:name [ fhir:v "cert_no" ] ;
+     fhir:value [
+       a fhir:unsignedInt ;
+       fhir:v "123456"^^xsd:nonNegativeInteger
      ]
   ] [
      fhir:name [ fhir:v "event_year" ] ;

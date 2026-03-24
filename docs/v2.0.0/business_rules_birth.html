@@ -187,15 +187,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="business-rules-for-birth-record-submissions">Business Rules for Birth Record Submissions</h3>
 
-<p>Version 0.1</p>
+<p>Version 1.0</p>
 
-<p><strong>Last updated</strong> : August 9, 2024</p>
+<p><strong>Last updated</strong> : March 10, 2026</p>
 
 <p><strong>Table of Content</strong></p>
 
 <p><a href="#required-fields">Required Fields</a></p>
 
 <p><a href="#additional-checks">Additional Checks</a></p>
+
+<p><a href="#validation-errors">Validation Errors</a></p>
 
 <p><a href="#internal-validation-errors">Internal Validation Errors</a></p>
 
@@ -214,12 +216,12 @@ An Error Message with a format of "Error: Unable to find <em>IJE Field</em> requ
 			<td style="background-color:#D0F0C0;"><b>Field Description</b></td>
 			<td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
 			<td style="background-color:#D0F0C0;"><b>FHIR Profile</b></td>
-            <td style="background-color:#D0F0C0;"><b>FHIR Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>FHIR Field</b></td>
 		</tr>
 		<tr>
-			<td>State, U.S. Territory or Canadian Province of Death - code</td>
-			<td>BSTATE</td>
 			<td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td>
+			<td>BSTATE</td>
+			<td>PatientChildVitalRecords</td>
             <td>address.state <strong>or</strong> address.state.extension[nationalReportingJurisdictionId] 
             <br /><br />If both are provided, the extension will override. Unless you are NYC, recommend using address.state <strong>only.</strong></td>
 		</tr>
@@ -230,29 +232,218 @@ An Error Message with a format of "Error: Unable to find <em>IJE Field</em> requ
             <td>identifier.extension[certificateNumber].value</td>
 		</tr>
 		<tr>
-			<td>Date of Birth (Infant)--Year</td>
-			<td>IDOB_YR</td>
-			<td>PatientChildVitalRecords</td>
-            <td>birthDate.value</td>
-		</tr>
-		<tr>
-			<td>Date of Birth (Infant)--Month</td>
-			<td>IDOB_MO</td>
-			<td>PatientChildVitalRecords</td>
-            <td>birthDate.value</td>
-		</tr>
-		<tr>
-			<td>Date of Birth (Infant)--Day</td>
-			<td>IDOB_DY</td>
+			<td>Date of Birth (Infant)</td>
+			<td>IDOB_YR, IDOB_MO, IDOB_DY</td>
 			<td>PatientChildVitalRecords</td>
             <td>birthDate.value</td>
 		</tr>
 	</tbody>
 </table>
 
+<p>The FHIR profile <a href="https://hl7.org/fhir/us/vr-common-library/STU2/StructureDefinition-input-race-and-ethnicity-vr.html">ObservationInputRaceandEthnicityVitalRecords</a> is used for Mother and Father race and ethnicity fields below. Follow IJE requirements if father's info is not available.</p>
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col span="1" style="width: 40%;" />
+    <col span="1" style="width: 15%;" />
+    <col span="1" style="width: 45%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="background-color:#D0F0C0;"><b>Mother and Father Ethnicity Fields</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>FHIR Field</b></td>
+    </tr>
+    <tr>
+      <td>Mother of Hispanic Origin?--Mexican,<br />Father of Hispanic Origin?--Mexican</td>
+      <td>METHNIC1, <br />FETHNIC1</td>
+      <td>component[HispanicMexican].valueCoding</td>
+    </tr>
+    <tr>
+      <td>Mother of Hispanic Origin?--Puerto Rican, <br />Father of Hispanic Origin?--Puerto Rican</td>
+      <td>METHNIC2, <br />FETHNIC2</td>
+      <td>component[HispanicPuertoRican].valueCoding</td>
+    </tr>
+    <tr>
+      <td>Mother of Hispanic Origin?--Cuban, <br />Father of Hispanic Origin?--Cuban</td>
+      <td>METHNIC3, <br />FETHNIC3</td>
+      <td>component[HispanicCuban].valueCoding</td>
+    </tr>
+    <tr>
+      <td>Mother of Hispanic Origin?--Other, <br />Father of Hispanic Origin?--Other</td>
+      <td>METHNIC4, <br />FETHNIC4</td>
+      <td>component[HispanicOther].valueCoding</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /></p>
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col span="1" style="width: 40%;" />
+    <col span="1" style="width: 15%;" />
+    <col span="1" style="width: 45%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="background-color:#D0F0C0;"><b>Mother and Father Race Fields</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>FHIR Field</b></td>
+    </tr>
+   <tr>
+      <td>Mother’s Race--White,<br />Father’s Race--White</td>
+      <td>MRACE1,<br />FRACE1</td>
+      <td>component[White].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Black or African American,<br />Father’s Race--Black or African American</td>
+      <td>MRACE2,<br />FRACE2</td>
+      <td>component[BlackOrAfricanAmerican].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--American Indian or Alaska Native,<br />Father’s Race--American Indian or Alaska Native</td>
+      <td>MRACE3,<br />FRACE3</td>
+      <td>component[AmericanIndianOrAlaskanNative].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Asian Indian,<br />Father’s Race--Asian Indian</td>
+      <td>MRACE4,<br />FRACE4</td>
+      <td>component[AsianIndian].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Chinese,<br />Father’s Race--Chinese</td>
+      <td>MRACE5,<br />FRACE5</td>
+      <td>component[Chinese].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Filipino,<br />Father’s Race--Filipino</td>
+      <td>MRACE6,<br />FRACE6</td>
+      <td>component[Filipino].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Japanese,<br />Father’s Race--Japanese</td>
+      <td>MRACE7,<br />FRACE7</td>
+      <td>component[Japanese].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Korean,<br />Father’s Race--Korean</td>
+      <td>MRACE8,<br />FRACE8</td>
+      <td>component[Korean].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Vietnamese,<br />Father’s Race--Vietnamese</td>
+      <td>MRACE9,<br />FRACE9</td>
+      <td>component[Vietnamese].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Other Asian,<br />Father’s Race--Other Asian</td>
+      <td>MRACE10,<br />FRACE10</td>
+      <td>component[OtherAsian].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Native Hawaiian,<br />Father’s Race--Native Hawaiian</td>
+      <td>MRACE11,<br />FRACE11</td>
+      <td>component[NativeHawaiian].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Guamanian or Chamorro,<br />Father’s Race--Guamanian or Chamorro</td>
+      <td>MRACE12,<br />FRACE12</td>
+      <td>component[GuamanianOrChamorro].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Samoan,<br />Father’s Race--Samoan</td>
+      <td>MRACE13,<br />FRACE13</td>
+      <td>component[Samoan].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Other Pacific Islander,<br />Father’s Race--Other Pacific Islander</td>
+      <td>MRACE14,<br />FRACE14</td>
+      <td>component[OtherPacificIslander].valueBoolean</td>
+    </tr>
+    <tr>
+      <td>Mother’s Race--Other,<br />Father’s Race--Other</td>
+      <td>MRACE15,<br />FRACE15</td>
+      <td>component[OtherRace].valueBoolean</td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="additional-checks">Additional Checks</h4>
 
 <p>Records that contain the minimal set of required fields will be processed by NCHS.  Reports on the completeness of each record will be shared with jurisdictions through the same channels as is done for IJE-formatted records.  This process may be revised to introduce more stringent checking of submissions as NCHS and Jurisdictions gain experience with the process.</p>
+
+<h4 id="validation-errors">Validation Errors</h4>
+
+<p>For many fields, the value provided must be one that is found in the corresponding Vital Records Common Library FHIR IG Value Set for the field. Otherwise, the following Error Message will be returned for each violation:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Unable to find IJE Field mapping for FHIR Component field value 'string'</code></li>
+</ul>
+
+<p>There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>IJE Field</strong></th>
+      <th><strong>Error Message</strong></th>
+      <th><strong>Clarification</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BSTATE</td>
+      <td>FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
+      <td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html">Value Set - States, Territories and Provinces Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0</a></td>
+    </tr>
+    <tr>
+      <td>METHNICE, FETHNICE</td>
+      <td>Unable to find IJE METHNICE or FETHNICE mapping for FHIR HispanicCode field value 'string'</td>
+      <td>METHNICE and FETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. State Field: <a href="https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-hispanic-origin-vr.html">Value Set - HispanicOrigin Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0</a>, or <a href="https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-jurisdiction-vr.html">Value Set - Jurisdictions Vital Records - Vital Records Common Library (VRCL) FHIR Implementation Guide v2.0.0</a> for extension</td>
+    </tr>
+    <tr>
+      <td>BSTATE</td>
+      <td>FHIR field contains string too long for IJE field BSTATE of length 2</td>
+      <td>BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
+    </tr>
+    <tr>
+      <td>BSTATE</td>
+      <td>JurisdictionID was not identified</td>
+      <td>BSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
+    </tr>
+    <tr>
+      <td>IDOB_YR (represented by event_year)</td>
+      <td>FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
+      <td>The year of the event must be a valid 4 numeric digit year (YYYY) without special characters or blanks.</td>
+    </tr>
+    <tr>
+      <td>Event Year</td>
+      <td>FHIR cannot process records from EventYear year; please resubmit via IJE</td>
+      <td>Until the 2022 data year is closed, NVSS may not be able to process older years via FHIR.</td>
+    </tr>
+    <tr>
+      <td>FHIR Bundle Event Year</td>
+      <td>FHIR BUNDLE Parameter event year should match the birth record Year.</td>
+      <td>IDOB_YR must agree with the year included in the FHIR BUNDLE parameter.</td>
+    </tr>
+    <tr>
+      <td>FHIR Bundle Source Endpoint</td>
+      <td>FHIR Bundle Source Endpoint is missing</td>
+      <td>The actual message source address or id needs to be specified for the endpoint.</td>
+    </tr>
+    <tr>
+      <td>FILENO (certificate number)</td>
+      <td>Certificate Number is missing, or the certificate length is greater than 6</td>
+      <td>FILENO is a required field and must be exactly 6 digits in length. Only positive numbers are allowed for this field.</td>
+    </tr>
+    <tr>
+      <td>FILENO (certificate number)</td>
+      <td>Certificate Number exceeds expected value</td>
+      <td>If the Certificate Number is not within the expected range for the Jurisdiction/Year/Event then it will be rejected. You must first contact your VSS to adjust your expected range or ranges before re-submitting these records in order for them to be accepted.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="internal-validation-errors">Internal Validation Errors</h4>
 
@@ -283,6 +474,21 @@ An Error Message with a format of "Error: Unable to find <em>IJE Field</em> requ
   </tbody>
 </table>
 
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>Error Message</strong></th>
+      <th><strong>Clarification</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The IJE version of the FHIR message did not reach the required length or fields required.</td>
+      <td>The Birth Record could not be used to generate a completed IJE record. Review the record to determine which fields are being flagged and are causing the issue.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -302,7 +508,7 @@ An Error Message with a format of "Error: Unable to find <em>IJE Field</em> requ
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 11, 2025 16:12-0400">2025-08-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 24, 2026 10:41-0400">2026-03-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

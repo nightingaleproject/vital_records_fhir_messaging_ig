@@ -1,9 +1,9 @@
 VitalRecordsFHIRMessagingIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 1
-IG Publisher Version: 2.0.13
-Generated Mon Aug 11 16:25:07 EDT 2025. FHIR version 4.0.1 for vital-records-fhir-messaging#2.0.0 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
+err = 0, warn = 2, info = 1
+IG Publisher Version: 2.0.12 Out of date - current version is 2.2.2
+Generated Tue Mar 24 10:45:18 EDT 2026. FHIR version 4.0.1 for vital-records-fhir-messaging#2.0.0 (canonical = http://cdc.gov/nchs/nvss/fhir/vital-records-messaging)
  Build Errors : 0 / 0 / 0
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\Bundle-AcknowledgementMessage-Example1 : 0 / 2 / 7
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\Bundle-AcknowledgementMessage-Example2 : 0 / 2 / 10
@@ -32,7 +32,7 @@ Generated Mon Aug 11 16:25:07 EDT 2025. FHIR version 4.0.1 for vital-records-fhi
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\CodeSystem-Payload-version-cs : 0 / 0 / 1
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\CodeSystem-VRM-MessageHeaderURI-cs : 0 / 0 / 1
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\CodeSystem-VRM-Status-cs : 0 / 0 / 1
- C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\ImplementationGuide-vital-records-fhir-messaging : 0 / 1 / 1
+ C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\ImplementationGuide-vital-records-fhir-messaging : 0 / 2 / 1
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\MessageHeader-AcknowledgementHeader-Example1 : 0 / 1 / 1
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\MessageHeader-AcknowledgementHeader-Example2 : 0 / 1 / 1
  C:\Users\pdz1\Git\vital_records_fhir_messaging_ig\fsh-generated\resources\MessageHeader-AliasHeader-Example1 : 0 / 1 / 1
@@ -147,6 +147,8 @@ Generated Mon Aug 11 16:25:07 EDT 2025. FHIR version 4.0.1 for vital-records-fhi
 == fsh-generated\resources\CodeSystem-VRM-MessageHeaderURI-cs.json ==
 == fsh-generated\resources\CodeSystem-VRM-Status-cs.json ==
 == fsh-generated\resources\ImplementationGuide-vital-records-fhir-messaging.json ==
+WARNING: ImplementationGuide/vital-records-fhir-messaging: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 5.2.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/vital-records-fhir-messaging: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered
 == fsh-generated\resources\MessageHeader-AcknowledgementHeader-Example1.json ==
 == fsh-generated\resources\MessageHeader-AcknowledgementHeader-Example2.json ==
 == fsh-generated\resources\MessageHeader-AliasHeader-Example1.json ==
@@ -180,7 +182,7 @@ Generated Mon Aug 11 16:25:07 EDT 2025. FHIR version 4.0.1 for vital-records-fhi
 == fsh-generated\resources\Parameters-StatusParameters-Example1.json ==
 == fsh-generated\resources\Parameters-VoidParameters-Example1.json ==
 == fsh-generated\resources\StructureDefinition-VRM-AcknowledgementHeader.json ==
-INFORMATION: StructureDefinition/VRM-AcknowledgementHeader: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: StructureDefinition/VRM-AcknowledgementHeader: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note Use additionalBinding extension or element instead
 == fsh-generated\resources\StructureDefinition-VRM-AcknowledgementMessage.json ==
 == fsh-generated\resources\StructureDefinition-VRM-AliasHeader.json ==
 == fsh-generated\resources\StructureDefinition-VRM-AliasParameters.json ==

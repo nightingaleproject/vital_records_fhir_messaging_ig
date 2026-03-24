@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "VoidMessage"] ; # 
   fhir:title [ fhir:v "Void Message (for mortality, birth, and fetal death)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-11T16:10:00-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-24T10:39:59-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CDC NCHS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CDC NCHS" ] ;

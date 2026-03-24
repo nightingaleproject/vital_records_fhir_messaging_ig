@@ -43,16 +43,16 @@
         "profile" : ["http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusParameters"]
       },
       "parameter" : [{
+        "name" : "jurisdiction_id",
+        "valueString" : "NY"
+      },
+      {
         "name" : "cert_no",
         "valueUnsignedInt" : 123456
       },
       {
         "name" : "status",
         "valueString" : "manualCauseOfDeathCoding"
-      },
-      {
-        "name" : "jurisdiction_id",
-        "valueString" : "NY"
       },
       {
         "name" : "event_year",

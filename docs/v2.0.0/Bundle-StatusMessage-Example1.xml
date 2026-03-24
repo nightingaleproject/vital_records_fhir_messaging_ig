@@ -44,16 +44,16 @@
           <profile value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/StructureDefinition/VRM-StatusParameters"/>
         </meta>
         <parameter>
+          <name value="jurisdiction_id"/>
+          <valueString value="NY"/>
+        </parameter>
+        <parameter>
           <name value="cert_no"/>
           <valueUnsignedInt value="123456"/>
         </parameter>
         <parameter>
           <name value="status"/>
           <valueString value="manualCauseOfDeathCoding"/>
-        </parameter>
-        <parameter>
-          <name value="jurisdiction_id"/>
-          <valueString value="NY"/>
         </parameter>
         <parameter>
           <name value="event_year"/>
