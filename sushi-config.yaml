@@ -21,6 +21,7 @@ dependencies:
   hl7.fhir.us.vr-common-library: current   # Jurisdiction valueset
   hl7.fhir.us.vrdr: current   # Pregnancy Status ValueSet
   #hl7.fhir.us.bfdr: current
+
  
 parameters:
   show-inherited-invariants: false
@@ -155,10 +156,12 @@ groups:
     name: NCHSGeocoded
     description: Geocode Location Profiles and Components
     resources:
-    - NCHSGeocodedLocation
-    - NCHSVitalRecordKeyParameters
     - VitalRecordCertTypeCS
     - VitalRecordCertTypeVS
-    - NCHSGeocodeAddrTypeCS
-    - NCHSGeocodeAddrTypeVS
-    - NCHSGeocode
+    - GeocodeAddrTypeCS
+    - GeocodeAddrTypeVS
+    - GeocodeResultVR
+    - GeocodedLocationVr
+    - VitalRecordGeocodeParameters
+    - VitalRecordGeocodeBundle
+    

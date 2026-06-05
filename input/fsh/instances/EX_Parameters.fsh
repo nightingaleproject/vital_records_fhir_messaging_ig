@@ -165,19 +165,3 @@ Description: "RecentPregnancyParameters - PluralBirthAndFetalDeathWithCert - ext
 * parameter[fetal_death_plurality].valueInteger = 2
 * parameter[preg_status_is_correct].valueBoolean = false 
 * parameter[corrected_pregnancy_status].valueCodeableConcept = DeathPregnancyStatusCS#4 "Not pregnant, but pregnant 43 days to 1 year before death"
-
-Instance: ExampleNCHSVitalRecordKeyParameters
-InstanceOf: NCHSVitalRecordKeyParameters
-Usage: #example
-Title: "Example NCHS Vital Record Key Parameters"
-Description: "Example Parameters carrying certificate key fields and the associated geocoded Location."
-* parameter[certYear].name = "certYear"
-* parameter[certYear].valueDate = "2022"
-* parameter[jurisdictionId].name = "jurisdictionId"
-* parameter[jurisdictionId].valueString = "CT"
-* parameter[certNum].name = "certNum"
-* parameter[certNum].valueString = "000123"
-* parameter[certType].name = "certType"
-* parameter[certType].valueCode = #MOR
-* parameter[location].name = "location"
-* parameter[location].resource = ExampleNCHSGeocodedLocation

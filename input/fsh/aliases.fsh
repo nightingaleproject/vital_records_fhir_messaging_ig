@@ -8,3 +8,4 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $IJE = http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr
+Alias: $LocationVR = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-vr
