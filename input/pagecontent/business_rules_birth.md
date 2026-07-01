@@ -10,6 +10,8 @@ Version 1.0
 
 [Additional Checks](#additional-checks)
 
+[Medical Logic Checks](#medical-logic-checks)
+
 [Validation Errors](#validation-errors)
 
 [Internal Validation Errors](#internal-validation-errors)
@@ -187,6 +189,296 @@ The FHIR profile [ObservationInputRaceandEthnicityVitalRecords](https://hl7.org/
 
 Records that contain the minimal set of required fields will be processed by NCHS.  Reports on the completeness of each record will be shared with jurisdictions through the same channels as is done for IJE-formatted records.  This process may be revised to introduce more stringent checking of submissions as NCHS and Jurisdictions gain experience with the process.
 
+#### Medical Logic Checks
+
+The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Invalid combination of Field 1 and Field 2" will be returned for each invalid combination reported.
+
+##### Facility, Prenatal Care, and Pregnancy History
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 24%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="background-color:#D0F0C0;"><b>Field 1 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Field 2 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Why It Should Error</b></td>
+    </tr>
+    <tr>
+      <td>Place where birth occurred</td>
+      <td>BPLACE</td>
+      <td>Any value except Hospital<br>(including Home intended / Home not intended)</td>
+      <td>Mother transferred for delivery</td>
+      <td>TRAN</td>
+      <td>Yes / hosp-trans</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">home-to-hospital does not count as maternal transfer, and if TRAN=Yes, the place of birth must be Hospital.</a></td>
+    </tr>
+    <tr>
+      <td>Mother transferred for delivery</td>
+      <td>TRAN</td>
+      <td>No</td>
+      <td>Facility mother transferred from</td>
+      <td>NFACL</td>
+      <td>Populated</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">If transfer status is No, the source-facility name must be blank.</a></td>
+    </tr>
+    <tr>
+      <td>Mother transferred for delivery</td>
+      <td>TRAN</td>
+      <td>Yes</td>
+      <td>Facility mother transferred from</td>
+      <td>NFACL</td>
+      <td>Blank</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">If transfer status is Yes, enter name of facility. If name of facility is not known, enter "Unknown".</a></td>
+    </tr>
+    <tr>
+      <td>No prenatal care</td>
+      <td>PNC</td>
+      <td>No prenatal care</td>
+      <td>Total prenatal visits / first prenatal date</td>
+      <td>NPREV / DOFP_*</td>
+      <td>NPREV&gt;0 or actual date entered</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/06.htm">Inconsistent. “No prenatal care” requires visits = 0, and the first-prenatal-visit date should not be an actual date.</a></td>
+    </tr>
+    <tr>
+      <td>Total prenatal visits</td>
+      <td>NPREV</td>
+      <td>0</td>
+      <td>No prenatal care / first prenatal date</td>
+      <td>PNC / DOFP_*</td>
+      <td>No-prenatal box not checked or<br>actual date entered</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/07.htm">If visits = 0, the no-prenatal-care box should be checked; CDC edit text also flags a date + 0 visits as inconsistent.</a></td>
+    </tr>
+    <tr>
+      <td>Previous live births now living + now dead</td>
+      <td>PLBL + PLBD</td>
+      <td>0 total / none</td>
+      <td>Date of last live birth</td>
+      <td>MLLB / YLLB</td>
+      <td>Populated</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Non-applicable. The last-live-birth date is only collected if there were previous live-born infants.</a></td>
+    </tr>
+    <tr>
+      <td>Other pregnancy outcomes</td>
+      <td>POPO</td>
+      <td>0 / none</td>
+      <td>Date of last other pregnancy outcome</td>
+      <td>MOPO / YOPO</td>
+      <td>Populated</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Non-applicable. The last-other-pregnancy-outcome date is only collected if prior other outcomes exist.</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+##### Risk Factors, Infections, and Delivery Method
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 24%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="background-color:#D0F0C0;"><b>Field 1 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Field 2 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Why It Should Error</b></td>
+    </tr>
+    <tr>
+      <td>Prepregnancy diabetes</td>
+      <td>PDIAB</td>
+      <td>Yes</td>
+      <td>Gestational diabetes</td>
+      <td>GDIAB</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/14.htm">Select either prepregnancy or gestational diabetes, not both.</a></td>
+    </tr>
+    <tr>
+      <td>Prepregnancy hypertension</td>
+      <td>PHYPE</td>
+      <td>Yes</td>
+      <td>Gestational hypertension</td>
+      <td>GHYPE</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/14.htm">Select either prepregnancy or gestational hypertension, not both.</a></td>
+    </tr>
+    <tr>
+      <td>None of the above (risk factors)</td>
+      <td>NOA01</td>
+      <td>Yes</td>
+      <td>Any specific risk factor</td>
+      <td>PDIAB / GDIAB / PHYPE / GHYPE / EHYPE / PPB / INFT / PCES</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">“None of the above” cannot be selected with a specific risk factor.</a></td>
+    </tr>
+    <tr>
+      <td>Previous cesarean</td>
+      <td>PCES</td>
+      <td>Yes</td>
+      <td>Number of previous cesareans</td>
+      <td>NPCES</td>
+      <td>Blank or 0</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">If previous cesarean is checked, a number must be entered.</a></td>
+    </tr>
+    <tr>
+      <td>None of the above (infections)</td>
+      <td>NOA02</td>
+      <td>Yes</td>
+      <td>Any infection</td>
+      <td>GON / SYPH / CHAM / HEPB / HEPC</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">“None of the above” cannot be selected with a specific infection.</a></td>
+    </tr>
+    <tr>
+      <td>Successful external cephalic version</td>
+      <td>ECVS</td>
+      <td>Yes</td>
+      <td>Failed external cephalic version</td>
+      <td>ECVF</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Successful and failed ECV cannot both be selected.</a></td>
+    </tr>
+    <tr>
+      <td>Final route and method of delivery</td>
+      <td>ROUT</td>
+      <td>Anything except Cesarean</td>
+      <td>Trial of labor attempted</td>
+      <td>TLAB</td>
+      <td>Yes or No</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Non-applicable. TLAB only applies when the final route is Cesarean.</a></td>
+    </tr>
+    <tr>
+      <td>Final route and method of delivery</td>
+      <td>ROUT</td>
+      <td>Cesarean</td>
+      <td>Trial of labor attempted</td>
+      <td>TLAB</td>
+      <td>Blank</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">When Cesarean is selected, a Yes/No or unknown response for trial of labor is required.</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+##### Newborn Items
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 16%;">
+    <col span="1" style="width: 9%;">
+    <col span="1" style="width: 13%;">
+    <col span="1" style="width: 24%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="background-color:#D0F0C0;"><b>Field 1 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Field 2 Description</b></td>
+      <td style="background-color:#D0F0C0;"><b>IJE Field</b></td>
+      <td style="background-color:#D0F0C0;"><b>Selected Value</b></td>
+      <td style="background-color:#D0F0C0;"><b>Why It Should Error</b></td>
+    </tr>
+    <tr>
+      <td>Apgar at 5 minutes</td>
+      <td>APGAR5</td>
+      <td>6–10</td>
+      <td>Apgar at 10 minutes</td>
+      <td>APGAR10</td>
+      <td>Entered</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/32.htm">Non-applicable. 10-minute score when the 5-minute score is &lt; 6 or unknown.</a></td>
+    </tr>
+    <tr>
+      <td>Plurality</td>
+      <td>PLUR</td>
+      <td>1</td>
+      <td>Set order</td>
+      <td>SORD</td>
+      <td>Any entered value</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/34.htm">Non-applicable. For a singleton, set order is left blank / coded not applicable.</a></td>
+    </tr>
+    <tr>
+      <td>Plurality</td>
+      <td>PLUR</td>
+      <td>1</td>
+      <td>Number of infants in delivery born alive</td>
+      <td>LIVEB</td>
+      <td>Any entered value</td>
+      <td><a href="https://www.cdc.gov/nchs/nvss/facility-worksheets-guide/35.htm">Non-applicable. For a singleton, LIVEB is left blank / coded not applicable.</a></td>
+    </tr>
+    <tr>
+      <td>Plurality</td>
+      <td>PLUR</td>
+      <td>&gt;1</td>
+      <td>Set order / live born</td>
+      <td>SORD / LIVEB</td>
+      <td>Greater than PLUR</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">For multiples, set order must be &lt;= PLUR, and live born cannot exceed plurality.</a></td>
+    </tr>
+    <tr>
+      <td>None of the above (congenital anomalies)</td>
+      <td>NOA55</td>
+      <td>Yes</td>
+      <td>Any congenital anomaly</td>
+      <td>ANEN / MNSB / CCHD / CDH / OMPH / GAST / LIMB / CL / CP / DOWN / CDIS / HYPO</td>
+      <td>Yes</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">“None of the above” cannot be selected with a listed anomaly.</a></td>
+    </tr>
+    <tr>
+      <td>Karyotype status selected</td>
+      <td>DOWC / DOWP / CDIC / CDIP</td>
+      <td>Yes</td>
+      <td>Parent anomaly not selected</td>
+      <td>DOWN / CDIS</td>
+      <td>No</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Karyotype confirmed/pending cannot be checked unless the corresponding parent anomaly is checked.</a></td>
+    </tr>
+    <tr>
+      <td>Infant transferred within 24 hours</td>
+      <td>ITRAN</td>
+      <td>No</td>
+      <td>Facility infant transferred to</td>
+      <td>FTRAN</td>
+      <td>Populated</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">If infant transfer status is No, the destination-facility field must be blank.</a></td>
+    </tr>
+    <tr>
+      <td>Infant transferred within 24 hours</td>
+      <td>ITRAN</td>
+      <td>Yes</td>
+      <td>Facility infant transferred to</td>
+      <td>FTRAN</td>
+      <td>Blank</td>
+      <td><a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">If infant transfer status is Yes, enter name of facility. If name of facility is not known, enter "Unknown".</a></td>
+    </tr>
+  </tbody>
+</table>
+
 #### Validation Errors
 
 For many fields, the value provided must be one that is found in the corresponding Vital Records Common Library FHIR IG Value Set for the field. Otherwise, the following Error Message will be returned for each violation:
@@ -226,4 +518,3 @@ The following error messages are internal validation errors and if you receive a
 | --- | --- |
 | The IJE version of the FHIR message did not reach the required length or fields required. | The Birth Record could not be used to generate a completed IJE record. Review the record to determine which fields are being flagged and are causing the issue. |
 {:.grid}
-
