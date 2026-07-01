@@ -1,8 +1,8 @@
 ### Business Rules for Birth Record Submissions
 
-Version 1.0
+Version 2.0
 
-**Last updated** : March 10, 2026
+**Last updated** : July 1, 2026
 
 **Table of Content**
 
