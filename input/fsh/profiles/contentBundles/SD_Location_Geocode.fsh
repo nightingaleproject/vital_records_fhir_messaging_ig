@@ -211,7 +211,7 @@ Description: "A collection Bundle that packages one coded header, one Parameters
 * ^status = #draft
 
 * type 1..1
-* type = #collection
+* type = #Message
 
 // Three required slices: header + params + location
 * entry 3..3 MS

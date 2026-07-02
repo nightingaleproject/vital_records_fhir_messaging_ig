@@ -7,7 +7,7 @@ Usage: #example
 Title: "Example Geocoded Location (VRCL)"
 Description: "Example Location with VRCL USPS components and ESRI geocode result metadata."
 
-* id = "loc1"
+* id = "locGeocode"
 * status = #active
 * name = "275 N Main St NW (Geocoded)"
 
@@ -58,7 +58,7 @@ Usage: #example
 Title: "Example Vital Record Geocode Parameters"
 Description: "Example Parameters with certificate key fields and a reference to the geocoded Location."
 
-* id = "params1"
+* id = "paramGeocode"
 
 * parameter[certYear].name = "certYear"
 * parameter[certYear].valueDate = "2022"
@@ -84,7 +84,7 @@ Usage: #example
 Title: "Example Geocode Coded Header"
 Description: "Example MessageHeader for a vital record geocode coded response."
 
-* id = "header1"
+* id = "headerGeocode"
 
 // Pick one URI from GeocodeURIVS.
 // Mortality / VRDR geocode example:
@@ -114,8 +114,8 @@ Description: "Example MessageHeader for a vital record geocode coded response."
 // Focus can point to the geocode payload resources in the same Bundle.
 // If your profile later constrains focus only Reference(Bundle), replace these
 // with a single Reference(Bundle/your-content-bundle-id).
-* focus[0] = Reference(Parameters/params1)
-* focus[1] = Reference(Location/loc1)
+* focus[0] = Reference(http://www.example.org/fhir/Parameters/paramGeocode)
+* focus[1] = Reference(http://www.example.org/fhir/Location/locGeocode)
 
 // ===============================================================
 // Example Bundle instance (contains Parameters + Location + Header)
@@ -126,14 +126,14 @@ Usage: #example
 Title: "Example Vital Record Geocode Bundle"
 Description: "Collection Bundle packaging the coded header, Parameters, and geocoded Location."
 
-* id = "bundle1"
-* type = #collection
+* id = "GeocodeBundle"
+* type = #Message
 
-* entry[header].fullUrl = "Header/header1"
+* entry[header].fullUrl = "http://www.example.org/fhir/Header/headerGeocode"
 * entry[header].resource = ExampleGeocodeCodedHeader
 
-* entry[params].fullUrl = "Parameters/params1"
+* entry[params].fullUrl = "http://www.example.org/fhir/Parameters/paramGeocode"
 * entry[params].resource = ExampleVitalRecordGeocodeParameters
 
-* entry[location].fullUrl = "Location/loc1"
+* entry[location].fullUrl = "http://www.example.org/fhir/Location/locGeocode"
 * entry[location].resource = ExampleGeocodedLocationVr
