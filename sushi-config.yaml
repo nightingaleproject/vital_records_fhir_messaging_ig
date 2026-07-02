@@ -164,4 +164,6 @@ groups:
     - GeocodedLocationVr
     - VitalRecordGeocodeParameters
     - VitalRecordGeocodeBundle
+    - GeocodeCodedHeader
+    - GeocodeURIVS
     

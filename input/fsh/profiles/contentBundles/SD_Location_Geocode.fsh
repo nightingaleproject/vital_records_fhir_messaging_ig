@@ -3,7 +3,6 @@
 // ===============================================================
 Alias: $LocationVR = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-vr
 
-
 // ===============================================================
 // Vital record cert type (for Parameters.certType)
 // ===============================================================
@@ -178,7 +177,7 @@ Description: "Carries vital-record certificate key fields and a reference to an 
 * parameter[certYear].value[x] only date
 * parameter[certYear].resource 0..0
 
-* parameter[jurisdictionId].name = "jurisdictionId"
+* parameter[jurisdictionId].value[x] from ValueSetJurisdictionVitalRecords (required)
 * parameter[jurisdictionId].value[x] 1..1
 * parameter[jurisdictionId].value[x] only string
 * parameter[jurisdictionId].resource 0..0
@@ -208,26 +207,54 @@ Profile: VitalRecordGeocodeBundle
 Parent: Bundle
 Id: vital-record-geocode-bundle
 Title: "Vital Record Geocode Bundle"
-Description: "A collection Bundle that packages one Parameters resource and one ESRI geocoded Location resource."
+Description: "A collection Bundle that packages one coded header, one Parameters resource, and one geocoded Location resource."
 * ^status = #draft
 
 * type 1..1
 * type = #collection
 
-* entry 2..2 MS
+// Three required slices: header + params + location
+* entry 3..3 MS
 * entry.fullUrl 1..1 MS
 * entry.resource 1..1 MS
 
-// Slice entries by resource type
-* entry ^slicing.discriminator[0].type = #type
+// Slice entries by resource PROFILE, not just resource TYPE.
+// This is safer when two entries may share the same base resource type.
+* entry ^slicing.discriminator[0].type = #profile
 * entry ^slicing.discriminator[0].path = "resource"
 * entry ^slicing.rules = #closed
+* entry ^slicing.ordered = false
 
 * entry contains
+    header   1..1 MS and
     params   1..1 MS and
     location 1..1 MS
 
+* entry[header].resource only GeocodeCodedHeader
 * entry[params].resource only VitalRecordGeocodeParameters
 * entry[location].resource only GeocodedLocationVr
 
+
+// ===============================================================
+// Profile: MessageHeader + valueset for geocode
+// ===============================================================
+Profile:  GeocodeCodedHeader
+Parent: MessageHeader
+Id: Geocode-Coded-Header
+Title:  "Geocode Coding Header"
+Description:   "Message header for Geocode"
+* eventUri from GeocodeURIVS (required)
+* insert CommonHeaderStuff
+* insert HeaderResponseID
+* response.identifier ^short = "The value of the MessageHeader.id Record message that is being coded"
+// * focus only Reference(Bundle )
+
+ValueSet: GeocodeURIVS
+Id: Geocode-Coded-HeaderURI-vs
+Title: "Geocode MessageHeader URI Values"
+Description: "Geocode MessageHeader URI Values"
+* MessageHeaderURICS#http://nchs.cdc.gov/vrdr_geocode
+* MessageHeaderURICS#http://nchs.cdc.gov/fd_geocode 
+* MessageHeaderURICS#http://nchs.cdc.gov/birth_geocode
+* ^experimental = false
 

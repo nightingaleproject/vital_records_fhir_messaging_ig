@@ -41,4 +41,7 @@ Description: "MessageHeader URI Values"
 * #http://nchs.cdc.gov/maternal_linkage_request "Maternal Linkage Request" "NCHS requests that a jurisdiction submit maternal linkage data"
 * #http://nchs.cdc.gov/maternal_linkage_submission "Maternal Linkage Submission" "Indicates that the payload is an initial submission of a maternal linkage"
 * #http://nchs.cdc.gov/maternal_linkage_update "Maternal Linkage Update" "Jurisdiction updating previously submitted maternal linkage"
+* #http://nchs.cdc.gov/vrdr_geocode "VRDR Gecode" "Indicates that this is an initial geocode coding for death report"
+* #http://nchs.cdc.gov/fd_geocode "Fetal Death Gecode" "Indicates that this is an initial geocode coding for fetal death report"
+* #http://nchs.cdc.gov/birth_geocode "Birth Gecode" "Indicates that this is an initial geocode coding for birth report"
 * ^experimental = false

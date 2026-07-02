@@ -218,7 +218,7 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 
 #### Fetal Death Specific
 
-| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from VRFM) |
 |------------------------------|--------|--------|------------|------|
 | [FetalDeathReportMessage] | In | [SubmissionHeader] | [MessageParameters] | BundleDocumentBFDR  |
 | [FetalDeathReportUpdateMessage] | In | [UpdateHeader] | [MessageParameters] | BundleDocumentBFDR |
@@ -226,5 +226,11 @@ Most messages are used for multiple use cases.  The Event URI used for each use 
 | [CodedCauseOfFetalDeathUpdateMessage] | Out | [CauseOfDeathCodingUpdateHeader] | [MessageParameters] | BundleDocumentCodedCauseOfFetalDeathUpdate |
 {: .grid }
 
+#### Geocode Specific
+
+| *Type* | *Dir* | *Header* | *Parameters* | *Body* (from BFDR) |
+|------------------------------|--------|--------|------------|------|
+| [VitalRecordGeocodeBundle] | Out | [GeocodeCodedHeader] | [VitalRecordGeocodeParameters] | [GeocodedLocationVr]  |
+{: .grid }
 
 {% include markdown-link-references.md %}

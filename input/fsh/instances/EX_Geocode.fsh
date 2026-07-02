@@ -75,18 +75,62 @@ Description: "Example Parameters with certificate key fields and a reference to 
 * parameter[geocodedLocation].name = "geocodedLocation"
 * parameter[geocodedLocation].valueReference = Reference(Location/loc1)
 
+// ===============================================================
+// Example Geocode Header
+// ===============================================================
+Instance: ExampleGeocodeCodedHeader
+InstanceOf: GeocodeCodedHeader
+Usage: #example
+Title: "Example Geocode Coded Header"
+Description: "Example MessageHeader for a vital record geocode coded response."
+
+* id = "header1"
+
+// Pick one URI from GeocodeURIVS.
+// Mortality / VRDR geocode example:
+* eventUri = "http://nchs.cdc.gov/vrdr_geocode"
+
+// Optional but useful display/routing metadata.
+// Replace these placeholder endpoints with your actual sender/receiver endpoints.
+* destination[0].name = "Jurisdiction Vital Records System"
+* destination[0].endpoint = "http://example.org/fhir/jurisdiction-vr"
+
+* source.name = "NCHS Geocoding Service"
+* source.software = "Vital Records Geocoding Service"
+* source.version = "1.0.0"
+* source.endpoint = "http://nchs.cdc.gov/fhir/geocode"
+
+// Logical sender/receiver. These can be References to actual Organization resources
+// if you include those Organizations in the Bundle.
+* sender.display = "NCHS"
+* destination[0].receiver.display = "Jurisdiction Vital Records System"
+
+// HeaderResponseID appears to make this a response-style MessageHeader.
+// response.identifier should be the MessageHeader.id of the original record message
+// that is being coded.
+* response.identifier = "record-message-123"
+* response.code = #ok
+
+// Focus can point to the geocode payload resources in the same Bundle.
+// If your profile later constrains focus only Reference(Bundle), replace these
+// with a single Reference(Bundle/your-content-bundle-id).
+* focus[0] = Reference(Parameters/params1)
+* focus[1] = Reference(Location/loc1)
 
 // ===============================================================
-// Example Bundle instance (contains BOTH Parameters + Location)
+// Example Bundle instance (contains Parameters + Location + Header)
 // ===============================================================
 Instance: ExampleVitalRecordGeocodeBundle
 InstanceOf: VitalRecordGeocodeBundle
 Usage: #example
 Title: "Example Vital Record Geocode Bundle"
-Description: "Collection Bundle packaging the Parameters and the geocoded Location."
+Description: "Collection Bundle packaging the coded header, Parameters, and geocoded Location."
 
 * id = "bundle1"
 * type = #collection
+
+* entry[header].fullUrl = "Header/header1"
+* entry[header].resource = ExampleGeocodeCodedHeader
 
 * entry[params].fullUrl = "Parameters/params1"
 * entry[params].resource = ExampleVitalRecordGeocodeParameters
