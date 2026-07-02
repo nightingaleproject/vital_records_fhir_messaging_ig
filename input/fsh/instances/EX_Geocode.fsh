@@ -73,7 +73,7 @@ Description: "Example Parameters with certificate key fields and a reference to 
 * parameter[certType].valueCode = #MOR
 
 * parameter[geocodedLocation].name = "geocodedLocation"
-* parameter[geocodedLocation].valueReference = Reference(Location/loc1)
+* parameter[geocodedLocation].valueReference = Reference(http://www.example.org/fhir/Location/locGeocode)
 
 // ===============================================================
 // Example Geocode Header
