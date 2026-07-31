@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,7 +19,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"DeathCertificate-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;DeathCertificate-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Filing Format</b>: Electronic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-filing-format-cs.html\">Filing Formats CodeSystem</a>#electronic)</span></p><p><b>Replacement Status of a Death Record (deprecated)</b>: original record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-replace-status-cs.html\">Replacement Status of Death Record Submission</a>#original)</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: <span>: Display</span></p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td>2020-11-14 16:39:40-0500</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><span>: Procedure</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition DeathCertificate-Example1</b></p><a name=\"DeathCertificate-Example1\"> </a><a name=\"hcDeathCertificate-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>Filing Format</b>: <span title=\"Codes:{http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-filing-format-cs electronic}\">Electronic</span></p><p><b>Replacement Status of a Death Record (deprecated)</b>: <span title=\"Codes:{http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-replace-status-cs original}\">original record</span></p><p><b>State Specific Field</b>: State Specific Content</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 64297-5}\">Death certificate</span></p><p><b>date</b>: 2020-11-15 16:39:54-0500</p><p><b>author</b>: Display</p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2020-11-14 16:39:40-0500</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 103693007}\">103693007</span></td><td>Procedure</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat"^^xsd:anyURI ] ;
@@ -40,7 +41,10 @@
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "State Specific Content" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "State Specific Content"
+     ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
@@ -98,7 +102,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] [
      fhir:code [
@@ -109,7 +113,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] [
      fhir:code [
@@ -120,7 +124,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] ) . # 
 

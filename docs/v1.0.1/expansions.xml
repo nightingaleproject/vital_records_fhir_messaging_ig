@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1547006f-9350-4df4-b16a-236c9548b8b4"/>
+  <id value="8870df75-604d-4bdd-8e71-b24fa25e2788"/>
   <meta>
-    <lastUpdated value="2023-12-28T14:40:35.421-05:00"/>
+    <lastUpdated value="2026-07-28T16:35:33.274-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,7 +13,8 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-VRM-Status-cs.html">codesystem Status Codes Values v1.0.1 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -26,7 +27,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -34,7 +35,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCauseOfDeathCoding"> </a>  
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCauseOfDeathCoding"> </a>  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCauseOfDeathCoding">manualCauseOfDeathCoding</a>
                 </td>
                 <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
@@ -48,7 +49,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualDemographicCoding"> </a>  
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualDemographicCoding"> </a>  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualDemographicCoding">manualDemographicCoding</a>
                 </td>
                 <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
@@ -62,7 +63,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-noCodingNeeded-Duplicate"> </a>  
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-noCodingNeeded_Duplicate"> </a>  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-noCodingNeeded_Duplicate">noCodingNeeded_Duplicate</a>
                 </td>
                 <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
@@ -76,7 +77,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Update"> </a>  
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Update"> </a>  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Update">manualCodingCanceled_Update</a>
                 </td>
                 <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
@@ -91,7 +92,7 @@ has been canceled for the original record.</p>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---cdc.gov-nchs-nvss-fhir-vital-records-messaging-CodeSystem-VRM-Status-cs-manualCodingCanceled-Void"> </a>  
+                  <a name="x-http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs-manualCodingCanceled_Void"> </a>  
                   <a href="CodeSystem-VRM-Status-cs.html#VRM-Status-cs-manualCodingCanceled_Void">manualCodingCanceled_Void</a>
                 </td>
                 <td>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</td>
@@ -113,11 +114,24 @@ has been canceled for the original record.</p>
         <title value="Status Codes Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-12-28T14:40:35-05:00"/>
+        <date value="2026-07-28T16:33:36-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:13b2eb57-5158-4331-b35d-35e88022f453"/>
-          <timestamp value="2023-12-28T14:41:35-05:00"/>
+          <identifier value="urn:uuid:76ad078f-a81e-4880-8673-be8b0208be68"/>
+          <timestamp value="2026-07-28T16:38:30-04:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

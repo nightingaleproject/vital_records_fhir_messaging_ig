@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VRM-Status-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-VRM-Status-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VRM-Status-vs</b></p><a name="VRM-Status-vs"> </a><a name="hcVRM-Status-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-VRM-Status-cs.html"><code>http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/CodeSystem/VRM-Status-cs</code></a></li></ul></div>
   </text>
   <url value="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/ValueSet/VRM-Status-vs"/>
   <version value="1.0.1"/>
@@ -11,7 +11,7 @@
   <title value="Status Codes Values"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-12-28T14:40:35-05:00"/>
+  <date value="2026-07-28T16:33:36-04:00"/>
   <publisher value="CDC NCHS"/>
   <contact>
     <name value="CDC NCHS"/>

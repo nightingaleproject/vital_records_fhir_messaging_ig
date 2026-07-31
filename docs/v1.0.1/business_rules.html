@@ -203,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>NCHS Error Messages</h2>
   
 
@@ -224,9 +224,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="business-rules-for-death-record-submissions">Business Rules for Death Record Submissions</h3>
 
-<p>Version 2.1</p>
+<p>Version 2.2</p>
 
-<p><strong>Last updated</strong> : November 1, 2023</p>
+<p><strong>Last updated</strong> : June 11, 2024</p>
 
 <p><strong>Table of Content</strong></p>
 
@@ -240,7 +240,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="required-fields">Required Fields</h4>
 
-<p>The following fields are required for a valid death record submission. An Error Message with a format of “Error: Unable to find <em>IJE Field</em> required element” will be returned for each missing field.</p>
+<p>The following fields are required for a valid death record submission. An Error Message with a format of "Error: Unable to find <em>IJE Field</em> required element" will be returned for each missing field.</p>
 
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
     <colgroup>
@@ -482,7 +482,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="additional-logical-checks">Additional Logical Checks</h4>
 
-<p>The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of “Error: Invalid combination of <em>Field 1</em> and <em>Field 2</em>” will be returned for each invalid combination reported.</p>
+<p>The following combinations of field values will also result in an error being returned for a submission. An Error Message with a format of "Invalid combination of <em>Field 1</em> and <em>Field 2</em>" will be returned for each invalid combination reported.</p>
 
 <table align="left" border="1" cellpadding="1" cellspacing="1" style="width:100%;">
 <thead>
@@ -526,7 +526,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>No</td>
 <td>Were Autopsy Findings Available to Complete the Cause of Death?</td>
 <td>AUTOPF</td>
-<td><strong>Not</strong>&#39;Not Applicable&#39;</td>
+<td><strong>Not</strong> &#39;Not Applicable&#39;</td>
 </tr>
 <tr>
 <td>Date of Injury</td>
@@ -564,16 +564,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <p>The fields DOI_YR, DOI_MO, DOI_DY, POILTRL and HOWINJ all map to the VRDR InjuryIncident profile.
-These fields are considered ‘not provided’ if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.
-If the Manner of Death requires information about an injury incident, and none is available, providing an instance of an Injury Incident profile with ‘unknown’ values for the required fields satisfies the data requirement.</p>
+These fields are considered 'not provided' if no instance of the InjuryIncident profile is provided as part of the DeathRecord submission.
+If the Manner of Death requires information about an injury incident, and none is available, providing an instance of an Injury Incident profile with 'unknown' values for the required fields satisfies the data requirement.</p>
 
-<p>If an InjuryIncident profile instance is provided, fields can be considered ‘not provided’ if:<br />
+<p>If an InjuryIncident profile instance is provided, fields can be considered 'not provided' if:<br />
 1) The date of injury is considered ‘not provided’ if the effective time value is missing, or it includes a PartialDateTime extension and any component of the date has a data absent reason of “temp-unknown” (equivalent to an IJE blank). A data absent reason with the code “unknown” (equivalent to all 9’s in IJE) will not cause this data validation check to fail.  <br />
-2) The literal string fields HOWINJ and POILTRL are considered ‘not provided’ if an instance of the profile is provided, and the value (HOWINJ) or the component[ placeOfInjury].value (POILTRL) are not provided, or their value is blank.</p>
+2) The literal string fields HOWINJ and POILTRL are considered 'not provided' if an instance of the profile is provided, and the value (HOWINJ) or the component[ placeOfInjury].value (POILTRL) are not provided, or their value is blank.</p>
 
 <h4 id="validation-errors">Validation Errors</h4>
 
-<p>For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of “Error: Unable to find <em>IJE Field</em> mapping for <em>FHIR Component</em> field value ‘<em>string</em>’” will be returned for each violation.</p>
+<p>For many fields, the value provided must be one that is found in the corresponding VRDR Value Set for the field. Otherwise, an Error Message with a format of "Unable to find <em>IJE Field</em> mapping for <em>FHIR Component</em> field value '<em>string</em>'" will be returned for each violation.</p>
 
 <p>There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.</p>
 
@@ -586,8 +586,8 @@ If the Manner of Death requires information about an injury incident, and none i
 		</tr>
 		<tr>
 			<td>BSTATE</td>
-			<td>Error: FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
-			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
+			<td>FHIR field BirthRecordState too long for IJE field BSTATE of length 2</td>
+			<td>The birth state must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks). <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-jurisdictions-provinces-vs</a></td>
 		</tr>
 		<tr>
 			<td>COD1A and OTHERCONDITION</td>
@@ -596,21 +596,21 @@ If the Manner of Death requires information about an injury incident, and none i
 		</tr>
 		<tr>
 			<td>DETHNICE</td>
-			<td>Error: Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
-			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
+			<td>Unable to find IJE DETHNICE mapping for FHIR HispanicCode field value <em>'string'</em></td>
+			<td>DETHNICE is a field that is returned to the jurisdictions in the multi-race file. If including in records to share as part of IJE, the values reported must be valid. <a href="https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs">https://hl7.org/fhir/us/vrdr/ValueSet/vrdr-hispanic-origin-vs</a></td>
 		</tr>
 		<tr>
 			<td>DINSTI</td>
-			<td>Error: FHIR field DeathLocationName contains string too long for IJE field DINSTI of length 30</td>
+			<td>FHIR field DeathLocationName contains string too long for IJE field DINSTI of length 30</td>
 			<td>The location of death string exceeds the 30-character limit for this field.</td>
 		</tr>
 		<tr>
 			<td rowspan="2">DSTATE</td>
-			<td rowspan="1">Error: FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
+			<td rowspan="1">FHIR field DeathLocationJurisdiction contains string too long for IJE field DSTATE of length 2</td>
 			<td colspan="1" rowspan="2">DSTATE is a required field, and the value must be a valid 2-character (alphabetic) state/jurisdiction (without special characters and blanks).</td>
         </tr>
 		<tr>
-			<td>Error: JurisdictionID was not identified</td>
+			<td>JurisdictionID was not identified</td>
 		</tr>
 		<tr>
 			<td>DOD_YR</td>
@@ -633,26 +633,27 @@ If the Manner of Death requires information about an injury incident, and none i
 			<td>The actual message source address or id needs to be specified for the endpoint.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">FILENO</td>
+			<td rowspan="2">FILENO (certificate number)</td>
 			<td rowspan="1">Certificate Number is missing, or the certificate length is greater than 6</td>
-			<td colspan="1" rowspan="2">FILENO is a required field and must be exactly 6 digits in length. 000000 and 999999 are not valid. In general, Certificate Numbers beginning with 9 are used for Jurisdictional purposes, so they may also be rejected.</td>
+			<td colspan="1" rowspan="1">FILENO is a required field and must be exactly 6 digits in length.  Only positive numbers are allowed for this field.</td>
 		</tr>
 		<tr>
-			<td>Only Numeric and positive digits are allowed for Certificate Number</td>
+			<td rowspan="1">Certificate Number exceeds expected value</td>
+			<td colspan="1" rowspan="1">Unexpected high Certificate Numbers may be accepted for Medical Processing, but then rejected for Demographic Processing if the Certificate Number is not within the typical range for the Jurisdiction/Year/Event being submitted.  You must first contact your VSS to adjust your expected ranges before re-submitting these records in order for them to be included in your Demographic File.</td>
 		</tr>
 		<tr>
 			<td>IDOB_YR</td>
-			<td>Error: FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
+			<td>FHIR field BirthRecordYear contains string too long for IJE field IDOB_YR of length 4</td>
 			<td>The year of birth must be a valid 4-digit numeric year (YYYY).</td>
 		</tr>
 		<tr>
 			<td>INDUST</td>
-			<td>Error: FHIR field UsualIndustry contains string …. too long for IJE field INDUST of length 40</td>
+			<td>FHIR field UsualIndustry contains string …. too long for IJE field INDUST of length 40</td>
 			<td>The decedent's industry literal exceeds the 40-character limit for this field.</td>
 		</tr>
 		<tr>
 			<td>OCCUP</td>
-			<td>Error: FHIR field UsualOccupation contains string … too long for IJE field OCCUP of length 40</td>
+			<td>FHIR field UsualOccupation contains string … too long for IJE field OCCUP of length 40</td>
 			<td>The decedent's occupation literal exceeds the 40-character limit for this field.</td>
 		</tr>
 		<tr>
@@ -662,7 +663,7 @@ If the Manner of Death requires information about an injury incident, and none i
 		</tr>
 		<tr>
 			<td>SSN</td>
-			<td>Error: FHIR field SSN contains string …. which is not the expected length (without dashes or spaces) for IJE field SSN of length 9</td>
+			<td>FHIR field SSN contains string …. which is not the expected length (without dashes or spaces) for IJE field SSN of length 9</td>
 			<td>The Social Security Number (SSN) must be 9 numeric digits long (without dashes or spaces) to be accepted.</td>
 		</tr>
 	</tbody>
@@ -709,20 +710,14 @@ If the Manner of Death requires information about an injury incident, and none i
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 28, 2023 14:40-0500">2023-12-28</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 28, 2026 16:35-0400">2026-07-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -740,7 +735,7 @@ If the Manner of Death requires information about an injury incident, and none i
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -750,16 +745,7 @@ If the Manner of Death requires information about an injury incident, and none i
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

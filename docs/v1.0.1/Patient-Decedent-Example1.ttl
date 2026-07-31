@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Madelyn Patel (OFFICIAL)</b> female, DoB:  ( Social Beneficiary Identifier: <a href=\"http://terminology.hl7.org/3.1.0/NamingSystem-ssn.html\">#</a>987654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\">Never Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">5590 Lockwood Drive Danville VA US </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Friend of family\">Friend of family:</td><td colspan=\"3\"><ul><li>Joe Smith</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex on visual inspection at the time of death by the funeral home\"><a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-NVSS-SexAtDeath.html\">NVSS SexAtDeath:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://hl7.org/fhir/administrative-gender unknown}\">Unknown</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Spouse is Alive.\"><a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-SpouseAlive.html\">Spouse Is Alive:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-birthplace.html\">Birth Place:</a></td><td colspan=\"3\"><ul><li>Roanoke VA US </li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Decedent-Example1</b></p><a name=\"Decedent-Example1\"> </a><a name=\"hcDecedent-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-decedent.html\">Decedent</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Madelyn Patel (official) Female, DoB:  ( Social Beneficiary Identifier: United States Social Security Number#987654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\">Never Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">5590 Lockwood Drive Danville VA US </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Unknown\">Unknown:</td><td colspan=\"3\"><ul><li>Joe Smith</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex on visual inspection at the time of death by the funeral home\"><a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-NVSS-SexAtDeath.html\">NVSS SexAtDeath</a></td><td colspan=\"3\"><span title=\"Codes:{http://hl7.org/fhir/administrative-gender unknown}\">Unknown</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Spouse is Alive.\"><a href=\"http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-SpouseAlive.html\">Spouse Is Alive</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Roanoke VA US </td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive"^^xsd:anyURI ] ;
@@ -67,13 +68,22 @@
      fhir:extension ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "10"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "10"^^xsd:nonNegativeInteger
+         ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "2004"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "2004"^^xsd:nonNegativeInteger
+         ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "11"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "11"^^xsd:nonNegativeInteger
+         ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"^^xsd:anyURI ]
      ] )
@@ -89,21 +99,30 @@
        ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Lockwood" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Lockwood"
+       ]
      ] ) ;
      fhir:line ( [ fhir:v "5590 Lockwood Drive" ] ) ;
      fhir:city [
        fhir:v "Danville" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "1234"^^xsd:positiveInteger ]
+         fhir:value [
+           a fhir:positiveInt ;
+           fhir:v "1234"^^xsd:positiveInteger
+         ]
        ] )
      ] ;
      fhir:district [
        fhir:v "Fairfax" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "321"^^xsd:positiveInteger ]
+         fhir:value [
+           a fhir:positiveInt ;
+           fhir:v "321"^^xsd:positiveInteger
+         ]
        ] )
      ] ;
      fhir:state [ fhir:v "VA" ] ;

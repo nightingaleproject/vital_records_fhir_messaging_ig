@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -39,9 +40,12 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"SubmissionHeader-Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;SubmissionHeader-Example1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-SubmissionHeader.html\">Death Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"#Bundle_DeathCertificateDocument-Example1\">See above (http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1)</a></li><li><a href=\"#Parameters_Parameters-Example1\">See above (http://www.example.org/fhir/Parameters/Parameters-Example1)</a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_SubmissionHeader-Example1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader SubmissionHeader-Example1</b></p><a name=\"SubmissionHeader-Example1\"> </a><a name=\"hcSubmissionHeader-Example1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VRM-SubmissionHeader.html\">Death Message Header</a></p></div><p><b>event</b>: <a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://nchs.cdc.gov/vrdr_submission\">http://nchs.cdc.gov/vrdr_submission</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://sos.ny.gov/vitalrecords\">https://sos.ny.gov/vitalrecords</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-DeathRecordSubmissionMessage-Example1.html#http-//www.example.org/fhir/Bundle/DeathCertificateDocument-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li><li><a href=\"Bundle-AcknowledgementMessage-Example1.html#http-//www.example.org/fhir/Parameters/Parameters-Example1\">Bundle: type = message; timestamp = 2021-05-20 00:00:00+0000</a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:event [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI] ; # 
+  fhir:event [
+     a fhir:uri ;
+     fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI
+  ] ; # 
   fhir:destination ( [
      fhir:endpoint [ fhir:v "http://nchs.cdc.gov/vrdr_submission"^^xsd:anyURI ]
   ] ) ; # 
@@ -66,16 +70,28 @@
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "jurisdiction_id" ] ;
-     fhir:value [ fhir:v "NY" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "NY"
+     ]
   ] [
      fhir:name [ fhir:v "cert_no" ] ;
-     fhir:value [ fhir:v "123456"^^xsd:nonNegativeInteger ]
+     fhir:value [
+       a fhir:unsignedInt ;
+       fhir:v "123456"^^xsd:nonNegativeInteger
+     ]
   ] [
      fhir:name [ fhir:v "death_year" ] ;
-     fhir:value [ fhir:v "2018"^^xsd:nonNegativeInteger ]
+     fhir:value [
+       a fhir:unsignedInt ;
+       fhir:v "2018"^^xsd:nonNegativeInteger
+     ]
   ] [
      fhir:name [ fhir:v "state_auxiliary_id" ] ;
-     fhir:value [ fhir:v "abcdef10" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "abcdef10"
+     ]
   ] ) . # 
 
 <http://www.example.org/fhir/Bundle/DeathCertificateDocument-Example1> a fhir:Bundle ;
@@ -89,13 +105,22 @@
   fhir:identifier [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "000182" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "000182"
+       ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "000000000001" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "000000000001"
+       ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier2"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "100000000001" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "100000000001"
+       ]
      ] ) ;
      fhir:system [ fhir:v "http://nchs.cdc.gov/vrdr_id"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "2020NY000182" ]
@@ -138,7 +163,10 @@
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "State Specific Content" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "State Specific Content"
+     ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
@@ -196,7 +224,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] [
      fhir:code [
@@ -207,7 +235,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] [
      fhir:code [
@@ -218,7 +246,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Empty</div>"^^rdf:XMLLiteral
      ]
   ] ) . # 
 
@@ -279,13 +307,22 @@
      fhir:extension ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "10"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "10"^^xsd:nonNegativeInteger
+         ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "2004"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "2004"^^xsd:nonNegativeInteger
+         ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "11"^^xsd:nonNegativeInteger ]
+         fhir:value [
+           a fhir:unsignedInt ;
+           fhir:v "11"^^xsd:nonNegativeInteger
+         ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"^^xsd:anyURI ]
      ] )
@@ -301,21 +338,30 @@
        ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Lockwood" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Lockwood"
+       ]
      ] ) ;
      fhir:line ( [ fhir:v "5590 Lockwood Drive" ] ) ;
      fhir:city [
        fhir:v "Danville" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "1234"^^xsd:positiveInteger ]
+         fhir:value [
+           a fhir:positiveInt ;
+           fhir:v "1234"^^xsd:positiveInteger
+         ]
        ] )
      ] ;
      fhir:district [
        fhir:v "Fairfax" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "321"^^xsd:positiveInteger ]
+         fhir:value [
+           a fhir:positiveInt ;
+           fhir:v "321"^^xsd:positiveInteger
+         ]
        ] )
      ] ;
      fhir:state [ fhir:v "VA" ] ;

@@ -203,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Vital Records FHIR Messaging (VRFM) IG - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://cdc.gov/nchs/nvss/fhir/vital-records-messaging/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -278,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This FHIR Implementation Guide supersedes a previous description of the Vital Records FHIR Messaging interface that can be found <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging">here</a>.  All maintenance of content since November 2021 is taking place in this document only and is managed via <a href="https://github.com/nightingaleproject/vital_records_fhir_messaging_ig">github</a>.</p>
 
-<p>This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in an Vital Records Death Reporting FHIR Implementation Guide<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup>.</p>
+<p>This document will evolve in response to community feedback as well as changes to the VRDR IG or business requirements.  NCHS may decide, at its sole discretion, to transition this content into a FHIR Implementation Guide under HL7 auspices.  This initial version of this IG under NCHS auspices is an initial step towards modernization of the exchange of Vital records data.  The content with the highest value for secondary use has been included in an Vital Records Death Reporting FHIR Implementation Guide<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
 
 <h3 id="requirements">Requirements</h3>
 
@@ -422,7 +422,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ol>
   <li>Coding and Coding Update messages have been split into Demographics (Race and Ethnicity) coding messages and Cause of Death messages.</li>
-  <li>All fields that are sent to jurisdictions as MRE or TRX messages are now sent as part of coding messages.   These include some fields that are sent from EDRS to NCHS (so-called ‘regurgigated fields’).</li>
+  <li>All fields that are sent to jurisdictions as MRE or TRX messages are now sent as part of coding messages.   These include some fields that are sent from EDRS to NCHS (so-called 'regurgigated fields').</li>
   <li>Field names that are named and documented as part of the IJE, MRE, and/or TRX documentation have the same names and encodings in this guide. Please refer to the below-referenced documentation.</li>
 </ol>
 
@@ -440,9 +440,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="understanding-this-guide">Understanding this Guide</h3>
 
-<p>The Vital Records FHIR Messaging Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained <a href="https://www.hl7.org/fhir/formats.html">in the FHIR documentation</a>. In viewing a profile page, note that there are multiple views. The “Differential Table” view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide. The “Snapshot Table” represents the entire profile, with all elements.</p>
+<p>The Vital Records FHIR Messaging Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained <a href="https://www.hl7.org/fhir/formats.html">in the FHIR documentation</a>. In viewing a profile page, note that there are multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide. The "Snapshot Table" represents the entire profile, with all elements.</p>
 
-<p>In the event there are differences between the page renderings in this IG and the associated FHIR artifacts, the FHIR artifacts should be taken as the source of truth. In the unlikely event that an artifact’s snapshot is inconsistent with its differential, the differential should be taken as the source of truth.</p>
+<p>In the event there are differences between the page renderings in this IG and the associated FHIR artifacts, the FHIR artifacts should be taken as the source of truth. In the unlikely event that an artifact's snapshot is inconsistent with its differential, the differential should be taken as the source of truth.</p>
 
 <h3 id="contributions">Contributions</h3>
 
@@ -456,14 +456,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="contact-information">Contact Information</h3>
 
-<p>Questions or comments about this IG can be directed to <a href="https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR">“Death on FHIR” zulip stream</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup>.</p>
+<p>Questions or comments about this IG can be directed to <a href="https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR">"Death on FHIR" zulip stream</a><sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:2" role="doc-endnote">
+    <li id="fn:2">
       <p>https://build.fhir.org/ig/HL7/ <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>https://chat.fhir.org/#narrow/stream/179301-Death-on.20FHIR <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
@@ -480,20 +480,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 28, 2023 14:40-0500">2023-12-28</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cdc.gov/nchs">CDC NCHS</a>.  Package vital-records-fhir-messaging#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 28, 2026 16:35-0400">2026-07-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -511,7 +505,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -521,16 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

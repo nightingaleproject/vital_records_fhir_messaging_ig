@@ -107,8 +107,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/message-reasons-encounter",
-      "version" : "0.1.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ExampleMessageReasonCodes",
       "title" : "Example Message Reason Codes",
       "description" : "Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update.",
@@ -119,8 +119,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/operation-outcome",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "4.0.0",
+      "status" : "active",
       "name" : "OperationOutcomeCodes",
       "title" : "Operation Outcome Codes",
       "description" : "Operation Outcome codes used by FHIR test servers (see Implementation file translations.xml)",
@@ -131,7 +131,7 @@
     },
     {
       "url" : "urn:ietf:bcp:47",
-      "version" : "2.0.0",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "Ietf3066",
       "title" : "Tags for the Identification of Languages",
