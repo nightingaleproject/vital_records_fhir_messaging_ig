@@ -1,35 +1,113 @@
 == Suppressed Messages ==
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
+# (And include comments like  this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 
-# These are event IDs, basically operation identifiers, and aren't expected to be found in the bundle 
+# These are event IDs, basically operation identifiers, and aren't expected to be found  in the bundle 
 INFORMATION: Bundle/AcknowledgementMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_acknowledgement' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/AcknowledgementMessage-Example2: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_acknowledgement' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/CauseOfDeathCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/CauseOfDeathCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/DeathRecordAliasMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_alias' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission' in the bundle (Bundle.entry[0].resource.event[x])
-INFORMATION: Bundle/DeathRecordVoidMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_void' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/DemographicsCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_demographics_coding' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/DemographicsCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_demographics_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/ExtractionErrorMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_extraction_error' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/StatusMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_status' in the bundle (Bundle.entry[0].resource.event[x])
 INFORMATION: Bundle/UpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/IndustryOccupationCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_industryoccupation_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_industryoccupation_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/BirthReportMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/birth_submission' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/BirthReportUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/birth_submission_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CodedCauseOfFetalDeathMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/fd_causeofdeath_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/CodedCauseOfFetalDeathUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/fd_causeofdeath_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/FetalDeathReportMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/fd_submission' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/FetalDeathReportUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/fd_submission_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/ParentalDemographicsCodingMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/birth_demographics_coding' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/ParentalDemographicsCodingUpdateMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/birth_demographics_coding_update' in the bundle (Bundle.entry[0].resource.event[x])
+INFORMATION: Bundle/VoidMessage-Example1: Bundle: Can't find 'http://nchs.cdc.gov/vrdr_submission_void' in the bundle (Bundle.entry[0].resource.event[x])
 
-# Code not active -- not relevant to VRFM
-INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[0].resource/*Composition/DeathCertificate-Example2*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource/*Composition/DeathCertificate-Example1*/.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Composition/DeathCertificate-Example1: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
-INFORMATION: Composition/DeathCertificate-Example2: Composition.event[0].code[0].coding[0]: The code '103693007' is valid but is not active
 
-# dom-6 -- this is probably an IG Publisher issue
-WARNING: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[2].resource.entry[0].resource: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+# Not necessary for this IG
+WARNING: Bundle/AcknowledgementMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: Bundle/AcknowledgementMessage-Example1: Bundle.entry[0].resource/*MessageHeader/AcknowledgementHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: Bundle/AcknowledgementMessage-Example2: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: Bundle/AcknowledgementMessage-Example2: Bundle.entry[0].resource/*MessageHeader/AcknowledgementHeader-Example2*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: Bundle/BirthReportMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission'
+WARNING: Bundle/BirthReportMessage-Example1: Bundle.entry[0].resource/*MessageHeader/BirthReportHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission'
+WARNING: Bundle/BirthReportUpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission_update'
+WARNING: Bundle/BirthReportUpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/BirthReportUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission_update'
+WARNING: Bundle/CauseOfDeathCodingMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding'
+WARNING: Bundle/CauseOfDeathCodingMessage-Example1: Bundle.entry[0].resource/*MessageHeader/CauseOfDeathCodingHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding'
+WARNING: Bundle/CauseOfDeathCodingUpdateMessage1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update'
+WARNING: Bundle/CauseOfDeathCodingUpdateMessage1: Bundle.entry[0].resource/*MessageHeader/CauseOfDeathCodingUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update'
+WARNING: Bundle/CodedCauseOfFetalDeathMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding'
+WARNING: Bundle/CodedCauseOfFetalDeathMessage-Example1: Bundle.entry[0].resource/*MessageHeader/CodedCauseOfFetalDeathHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding'
+WARNING: Bundle/CodedCauseOfFetalDeathUpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding_update'
+WARNING: Bundle/CodedCauseOfFetalDeathUpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/CodedCauseOfFetalDeathUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding_update'
+WARNING: Bundle/DeathRecordAliasMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_alias'
+WARNING: Bundle/DeathRecordAliasMessage-Example1: Bundle.entry[0].resource/*MessageHeader/AliasHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_alias'
+WARNING: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission'
+WARNING: Bundle/DeathRecordSubmissionMessage-Example1: Bundle.entry[0].resource/*MessageHeader/DeathRecordSubmissionHeaderExample1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission'
+WARNING: Bundle/DemographicsCodingMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding'
+WARNING: Bundle/DemographicsCodingMessage-Example1: Bundle.entry[0].resource/*MessageHeader/DemographicsCodingHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding'
+WARNING: Bundle/DemographicsCodingUpdateMessage1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding_update'
+WARNING: Bundle/DemographicsCodingUpdateMessage1: Bundle.entry[0].resource/*MessageHeader/DemographicsCodingUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding_update'
+WARNING: Bundle/ExtractionErrorMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_extraction_error'
+WARNING: Bundle/ExtractionErrorMessage-Example1: Bundle.entry[0].resource/*MessageHeader/ExtractionErrorHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_extraction_error'
+WARNING: Bundle/FetalDeathReportMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission'
+WARNING: Bundle/FetalDeathReportMessage-Example1: Bundle.entry[0].resource/*MessageHeader/FetalDeathReportHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission'
+WARNING: Bundle/FetalDeathReportUpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission_update'
+WARNING: Bundle/FetalDeathReportUpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/FetalDeathReportUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission_update'
+WARNING: Bundle/IndustryOccupationCodingMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding'
+WARNING: Bundle/IndustryOccupationCodingMessage-Example1: Bundle.entry[0].resource/*MessageHeader/IndustryOccupationCodingHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding'
+WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding_update'
+WARNING: Bundle/IndustryOccupationCodingUpdateMessage1: Bundle.entry[0].resource/*MessageHeader/IndustryOccupationCodingUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding_update'
+WARNING: Bundle/ParentalDemographicsCodingMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding'
+WARNING: Bundle/ParentalDemographicsCodingMessage-Example1: Bundle.entry[0].resource/*MessageHeader/ParentalDemographicsCodingHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding'
+WARNING: Bundle/ParentalDemographicsCodingUpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding_update'
+WARNING: Bundle/ParentalDemographicsCodingUpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/ParentalDemographicsCodingUpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding_update'
+WARNING: Bundle/StatusMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_status'
+WARNING: Bundle/StatusMessage-Example1: Bundle.entry[0].resource/*MessageHeader/StatusHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_status'
+WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_update'
+WARNING: Bundle/UpdateMessage-Example1: Bundle.entry[0].resource/*MessageHeader/UpdateHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_update'
+WARNING: Bundle/VoidMessage-Example1: Bundle.entry[0].resource.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_void'
+WARNING: Bundle/VoidMessage-Example1: Bundle.entry[0].resource/*MessageHeader/VoidHeader-Example1*/.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_void'
+WARNING: MessageHeader/AcknowledgementHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: MessageHeader/AcknowledgementHeader-Example2: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_acknowledgement'
+WARNING: MessageHeader/AliasHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_alias'
+WARNING: MessageHeader/BirthReportHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission'
+WARNING: MessageHeader/BirthReportUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_submission_update'
+WARNING: MessageHeader/CauseOfDeathCodingHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding'
+WARNING: MessageHeader/CauseOfDeathCodingUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_causeofdeath_coding_update'
+WARNING: MessageHeader/CodedCauseOfFetalDeathHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding'
+WARNING: MessageHeader/CodedCauseOfFetalDeathUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_causeofdeath_coding_update'
+WARNING: MessageHeader/DeathRecordSubmissionHeaderExample1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission'
+WARNING: MessageHeader/DemographicsCodingHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding'
+WARNING: MessageHeader/DemographicsCodingUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_demographics_coding_update'
+WARNING: MessageHeader/ExtractionErrorHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_extraction_error'
+WARNING: MessageHeader/FetalDeathReportHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission'
+WARNING: MessageHeader/FetalDeathReportUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/fd_submission_update'
+WARNING: MessageHeader/IndustryOccupationCodingHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding'
+WARNING: MessageHeader/IndustryOccupationCodingUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_industryoccupation_coding_update'
+WARNING: MessageHeader/ParentalDemographicsCodingHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding'
+WARNING: MessageHeader/ParentalDemographicsCodingUpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/birth_demographics_coding_update'
+WARNING: MessageHeader/StatusHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_status'
+WARNING: MessageHeader/SubmissionHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission'
+WARNING: MessageHeader/UpdateHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_update'
+WARNING: MessageHeader/VoidHeader-Example1: MessageHeader.event.ofType(uri): No definition could be found for URL value 'http://nchs.cdc.gov/vrdr_submission_void'
+WARNING: ValueSet/VRM-SubmissionHeaderURI-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+INFORMATION: StructureDefinition/VRM-AcknowledgementHeader: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: ImplementationGuide/vital-records-fhir-messaging: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+
+
+
+
+
+
+
+
+
+
