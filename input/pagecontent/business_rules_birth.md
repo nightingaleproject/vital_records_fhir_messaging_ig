@@ -1,8 +1,8 @@
 ### Business Rules for Birth Record Submissions
 
-Version 1.0
+Version 1.0.1
 
-**Last updated** : March 10, 2026
+**Last updated** : October 13, 2026
 
 **Table of Content**
 
@@ -193,6 +193,12 @@ For many fields, the value provided must be one that is found in the correspondi
 
 - `Unable to find IJE Field mapping for FHIR Component field value 'string'`
 
+For example, if an IJE code of '1' is sent instead of the expected FHIR code of 'ELEM' for education level then the following validation error will be sent:
+
+- `Unable to find IJE MEDUC mapping for FHIR MotherEducationLevel field value '1'.`
+
+There are concept maps within the HL7 FHIR IGs that display the source code (IJE) mapped to the target code (FHIR). Example of concept map for [Education Level Vital Records](https://hl7.org/fhir/us/vr-common-library/STU2/ConceptMap-ConceptMapEducationLevelVitalRecords.html)
+
 There are additional Errors that may be returned when a record cannot be accepted, including some IJE fields that are not retained by NCHS, but must be valid if provided.
 
 | **IJE Field** | **Error Message** | **Clarification** |
@@ -226,4 +232,3 @@ The following error messages are internal validation errors and if you receive a
 | --- | --- |
 | The IJE version of the FHIR message did not reach the required length or fields required. | The Birth Record could not be used to generate a completed IJE record. Review the record to determine which fields are being flagged and are causing the issue. |
 {:.grid}
-
